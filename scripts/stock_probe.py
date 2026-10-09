@@ -100,18 +100,60 @@ def pexels(term, key):
     return None
 
 
+def _relevant(term, hit):
+    """Whether the clip is actually OF the thing, not merely found by searching for it.
+
+    Commons taught this first: searching "dolphin" returned satellite footage of Typhoon
+    Dolphin, and "whale" an empty swimming pool, because a free-text search matches a file's
+    title and description. Pixabay tags each clip with what is in it, which is better - but
+    the search ORs the words, so a first version of this that accepted ANY word of the term
+    let "school bus" through on a clip of a SCHOOL of fish, and "sea turtle" would have taken
+    anything at sea.
+
+    So the head noun has to be there: the last word of the term, which in English is the
+    thing itself and not what kind of thing it is - bus, turtle, truck, car. A singular that
+    only appears as a plural counts, and the other way round.
+    """
+    tags = {t.strip().lower() for t in (hit.get("tags") or "").split(",")}
+    words = {w for tag in tags for w in tag.split()}
+    head = term.lower().split()[-1]
+    forms = {head, head + "s", head.rstrip("s")}
+    if head.endswith("y"):
+        forms.add(head[:-1] + "ies")
+    if head.endswith("ies"):
+        forms.add(head[:-3] + "y")
+    return bool(forms & (tags | words))
+
+
 def pixabay(term, key):
-    """Pixabay Content Licence: free for commercial use, no attribution required."""
-    url = ("https://pixabay.com/api/videos/?per_page=5&video_type=film&q="
+    """Pixabay Content Licence: free for commercial use, no attribution required.
+
+    Three of the flags Pixabay returns decide more here than the licence does:
+
+    isAiGenerated  refused. The entire premise of this channel is that a real whale swimming
+                   beats a drawing of one for a two-year-old. A generated clip is a drawing
+                   with extra steps, and we have our own generator for the cards that need one.
+    isGRated       required. A channel made for children cannot gamble on this.
+    isLowQuality   refused. The uploader's own judgement, and it costs nothing to believe it.
+    """
+    url = ("https://pixabay.com/api/videos/?per_page=12&video_type=film&safesearch=true&q="
            + urllib.parse.quote(term) + "&key=" + key)
     data = get_json(url)
     for v in data.get("hits", []):
+        if v.get("isAiGenerated") or v.get("isLowQuality") or v.get("isGRated") is False:
+            continue
+        if not _relevant(term, v):
+            continue
         streams = [s for s in (v.get("videos") or {}).values()
                    if (s.get("width") or 0) >= MIN_WIDTH]
         if streams and (v.get("duration") or 0) >= MIN_SECONDS:
+            best = max(streams, key=lambda s: s["width"])
             return {"id": v["id"], "url": v.get("pageURL"), "seconds": v["duration"],
-                    "width": max(s["width"] for s in streams),
-                    "licence": "Pixabay Content Licence", "attribution_required": False}
+                    "width": best["width"], "licence": "Pixabay Content Licence",
+                    "attribution_required": False, "tags": v.get("tags"),
+                    "thumbnail": best.get("thumbnail"),
+                    "clip": (v.get("videos", {}).get("small")
+                             or v.get("videos", {}).get("tiny") or {}).get("url")}
     return None
 
 

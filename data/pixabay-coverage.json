@@ -1,0 +1,839 @@
+{
+  "min_seconds": 8,
+  "min_width": 1280,
+  "sources": [
+    "pixabay"
+  ],
+  "subjects": {
+    "cow": {
+      "theme": "farm animals",
+      "pixabay": {
+        "id": 174452,
+        "url": "https://pixabay.com/videos/id-174452/",
+        "seconds": 19,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "cow herd, cows, farm, animals, drone, vietnam",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/03/174452-851475304_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/08/03/174452-851475304_small.mp4"
+      }
+    },
+    "pig": {
+      "theme": "farm animals",
+      "pixabay": {
+        "id": 72323,
+        "url": "https://pixabay.com/videos/id-72323/",
+        "seconds": 12,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "wool pig, pig, piglet, agriculture, livestock",
+        "thumbnail": "https://cdn.pixabay.com/video/2021/04/26/72323-541904817_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2021/04/26/72323-541904817_small.mp4"
+      }
+    },
+    "sheep": {
+      "theme": "farm animals",
+      "pixabay": {
+        "id": 120739,
+        "url": "https://pixabay.com/videos/id-120739/",
+        "seconds": 19,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "lamb, farm animal, sheep, wool, animals, eating, nature, landscape, livestock, countryside",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/19/120739-724673230_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/06/19/120739-724673230_small.mp4"
+      }
+    },
+    "horse": {
+      "theme": "farm animals",
+      "pixabay": {
+        "id": 6574,
+        "url": "https://pixabay.com/videos/id-6574/",
+        "seconds": 19,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "horse, animals, head, eyes, equine",
+        "thumbnail": "https://cdn.pixabay.com/video/2016/11/27/6574-193379308_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2016/11/27/6574-193379308_small.mp4"
+      }
+    },
+    "chicken": {
+      "theme": "farm animals",
+      "pixabay": {
+        "id": 190144,
+        "url": "https://pixabay.com/videos/id-190144/",
+        "seconds": 48,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "rooster, chicken, chick, feathered animal, chicken feathers, animal",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/22/190144-887464241_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/11/22/190144-887464241_small.mp4"
+      }
+    },
+    "duck": {
+      "theme": "farm animals",
+      "pixabay": {
+        "id": 265501,
+        "url": "https://pixabay.com/videos/id-265501/",
+        "seconds": 31,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "duck, baby, bird, nature, animal, ornithology, beak, chick, feathers, fauna, grass",
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/18/265501_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2025/03/18/265501_small.mp4"
+      }
+    },
+    "goat": {
+      "theme": "farm animals",
+      "pixabay": {
+        "id": 113681,
+        "url": "https://pixabay.com/videos/id-113681/",
+        "seconds": 16,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "goat, mammal, white, domestic goat, chew, wind, wildlife",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/12/113681-698820576_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/04/12/113681-698820576_small.mp4"
+      }
+    },
+    "rooster": {
+      "theme": "farm animals",
+      "pixabay": {
+        "id": 190144,
+        "url": "https://pixabay.com/videos/id-190144/",
+        "seconds": 48,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "rooster, chicken, chick, feathered animal, chicken feathers, animal",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/22/190144-887464241_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/11/22/190144-887464241_small.mp4"
+      }
+    },
+    "lion": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 114145,
+        "url": "https://pixabay.com/videos/id-114145/",
+        "seconds": 15,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "lion animal, wild animal, handsome lion, lion king, look lion",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/17/114145-700585495_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/04/17/114145-700585495_small.mp4"
+      }
+    },
+    "elephant": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 219323,
+        "url": "https://pixabay.com/videos/id-219323/",
+        "seconds": 9,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "elephants, herd, family, elephant, pachyderm",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/03/219323_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/07/03/219323_small.mp4"
+      }
+    },
+    "tiger": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 145320,
+        "url": "https://pixabay.com/videos/id-145320/",
+        "seconds": 21,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "tiger, predator, dangerous, carnivores, big cat, wildlife, slow motion",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/04/145320-786403437_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/01/04/145320-786403437_small.mp4"
+      }
+    },
+    "bear": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 168896,
+        "url": "https://pixabay.com/videos/id-168896/",
+        "seconds": 16,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "bear, brown bear, furry, predator, mammal, wildlife",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/06/26/168896-839912975_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/06/26/168896-839912975_small.mp4"
+      }
+    },
+    "monkey": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 171518,
+        "url": "https://pixabay.com/videos/id-171518/",
+        "seconds": 19,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "monkey, trees, forest, animal, landscape, nature",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/14/171518-845606414_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/07/14/171518-845606414_small.mp4"
+      }
+    },
+    "giraffe": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 227950,
+        "url": "https://pixabay.com/videos/id-227950/",
+        "seconds": 29,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "giraffe, mammal, wildlife, safari, africa, nature, animal",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/08/23/227950_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/08/23/227950_small.mp4"
+      }
+    },
+    "zebra": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 44236,
+        "url": "https://pixabay.com/videos/id-44236/",
+        "seconds": 13,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "zebra, animal, strip, striped, black-and-white, nature, wildlife, stripe pattern, plains zebra, group",
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/08/44236-438612236_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2020/07/08/44236-438612236_small.mp4"
+      }
+    },
+    "wolf": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 27400,
+        "url": "https://pixabay.com/videos/id-27400/",
+        "seconds": 26,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "wolf, animal, mammal, nature wild, predator, wolves, nature, wild, wildlife, atmospheric, hunter, atmosphere, carnivores, fur, canine",
+        "thumbnail": "https://cdn.pixabay.com/video/2019/09/30/27400-363524230_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2019/09/30/27400-363524230_small.mp4"
+      }
+    },
+    "fox": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 287503,
+        "url": "https://pixabay.com/videos/id-287503/",
+        "seconds": 24,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "fox, nature, animal, wildlife, winter, wild, predator, snow, wilderness, white, forest, fur",
+        "thumbnail": "https://cdn.pixabay.com/video/2025/06/24/287503_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2025/06/24/287503_small.mp4"
+      }
+    },
+    "kangaroo": {
+      "theme": "wild animals",
+      "pixabay": {
+        "id": 181314,
+        "url": "https://pixabay.com/videos/id-181314/",
+        "seconds": 49,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "marsupials, mammal, wildlife, animal, mother, pouch, wild, cute, herbivore, australian, nature, kangaroo, kangaroos",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/19/181314-866094614_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/09/19/181314-866094614_small.mp4"
+      }
+    },
+    "whale": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 244188,
+        "url": "https://pixabay.com/videos/id-244188/",
+        "seconds": 8,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "whale, animal, ocean, wildlife, sea, safari, nature",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/01/244188_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/12/01/244188_small.mp4"
+      }
+    },
+    "dolphin": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 30968,
+        "url": "https://pixabay.com/videos/id-30968/",
+        "seconds": 11,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "aquarium, dolphin, exhibit, zoo, tourist, fish, sea, ocean, dolphins, mammal, aquatic, marine, wildlife, nature, sight, cool, animal, crowd, people, pictures",
+        "thumbnail": "https://cdn.pixabay.com/video/2020/01/06/30968-384234019_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2020/01/06/30968-384234019_small.mp4"
+      }
+    },
+    "shark": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 110734,
+        "url": "https://pixabay.com/videos/id-110734/",
+        "seconds": 14,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "skate, sport, water, action, exercise, flying, guy, jump, reflection, underwater, wave, cool, athlete, 3d illustration, floating, dynamic, dramatic, shark, skill, surf, play, hipster, loop, enjoy, diving, live wallpaper",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/14/110734-688648666_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/03/14/110734-688648666_small.mp4"
+      }
+    },
+    "octopus": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 119818,
+        "url": "https://pixabay.com/videos/id-119818/",
+        "seconds": 33,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "fair, folk festival, octopus, carousel, ride, fairground",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/10/119818-719443755_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/06/10/119818-719443755_small.mp4"
+      }
+    },
+    "sea turtle": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 244754,
+        "url": "https://pixabay.com/videos/id-244754/",
+        "seconds": 30,
+        "width": 2560,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "turtle, ocean, tortoise, wildlife, underwater, snorkeling, marine life, sea life",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/03/244754_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/12/03/244754_small.mp4"
+      }
+    },
+    "jellyfish": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 213616,
+        "url": "https://pixabay.com/videos/id-213616/",
+        "seconds": 14,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "jellyfish, aquarium, exhibition, beautiful, water, magical",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/05/25/213616_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/05/25/213616_small.mp4"
+      }
+    },
+    "crab": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 92545,
+        "url": "https://pixabay.com/videos/id-92545/",
+        "seconds": 57,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "crab, sand, crustacean, beach, ocean, shore crab, wildlife, ghost crab, nature, red crab, red",
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/19/92545-636709870_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2021/10/19/92545-636709870_small.mp4"
+      }
+    },
+    "starfish": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 234721,
+        "url": "https://pixabay.com/videos/id-234721/",
+        "seconds": 59,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "starfish, sea, foot, sandy, ocean, beach, waves, coast, sun, tropical, trip, holiday, paradise, calm, resort, hotel, tourism, nature",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/04/234721_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/10/04/234721_small.mp4"
+      }
+    },
+    "seahorse": {
+      "theme": "sea animals",
+      "pixabay": null
+    },
+    "penguin": {
+      "theme": "sea animals",
+      "pixabay": {
+        "id": 327101,
+        "url": "https://pixabay.com/videos/id-327101/",
+        "seconds": 13,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "penguin, nature, animal, wildlife, fauna, winter, birds, snow, cold, antarctica",
+        "thumbnail": "https://cdn.pixabay.com/video/2026/01/11/327101_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2026/01/11/327101_small.mp4"
+      }
+    },
+    "eagle": {
+      "theme": "birds",
+      "pixabay": {
+        "id": 222030,
+        "url": "https://pixabay.com/videos/id-222030/",
+        "seconds": 10,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "bird, eagle, bald eagle, heraldic animal, wildlife, eyes, beak, animal",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/19/222030_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/07/19/222030_small.mp4"
+      }
+    },
+    "owl": {
+      "theme": "birds",
+      "pixabay": {
+        "id": 18244,
+        "url": "https://pixabay.com/videos/id-18244/",
+        "seconds": 20,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "owl, animal, bird, nature, feather, head, eagle owl, raptor, sitting, eyes, bill, animal world",
+        "thumbnail": "https://cdn.pixabay.com/video/2018/09/15/18244-290348856_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2018/09/15/18244-290348856_small.mp4"
+      }
+    },
+    "parrot": {
+      "theme": "birds",
+      "pixabay": {
+        "id": 46026,
+        "url": "https://pixabay.com/videos/id-46026/",
+        "seconds": 15,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "bird, parrot, nature, animal, colorful, fauna, macaw, ave",
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/30/46026-447087782_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2020/07/30/46026-447087782_small.mp4"
+      }
+    },
+    "flamingo": {
+      "theme": "birds",
+      "pixabay": {
+        "id": 15922,
+        "url": "https://pixabay.com/videos/id-15922/",
+        "seconds": 28,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "flamingo, flamingos, birds, dancing, animals, pink, summer, exotic, pond, zoo",
+        "thumbnail": "https://cdn.pixabay.com/video/2018/04/30/15922-267503898_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2018/04/30/15922-267503898_small.mp4"
+      }
+    },
+    "peacock": {
+      "theme": "birds",
+      "pixabay": {
+        "id": 112877,
+        "url": "https://pixabay.com/videos/id-112877/",
+        "seconds": 13,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "peacock, bird, plumage, feathers, peacock dance, nature, dance",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/04/112877-696349005_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/04/04/112877-696349005_small.mp4"
+      }
+    },
+    "swan": {
+      "theme": "birds",
+      "pixabay": {
+        "id": 221780,
+        "url": "https://pixabay.com/videos/id-221780/",
+        "seconds": 29,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "swan, young swan, plumage, water, lake, water bird, wildlife",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/18/221780_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/07/18/221780_small.mp4"
+      }
+    },
+    "butterfly": {
+      "theme": "insects",
+      "pixabay": {
+        "id": 364251,
+        "url": "https://pixabay.com/videos/id-364251/",
+        "seconds": 60,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "bluish, butterfly, insect, nature",
+        "thumbnail": "https://cdn.pixabay.com/video/2026/07/15/364251_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2026/07/15/364251_small.mp4"
+      }
+    },
+    "bee": {
+      "theme": "insects",
+      "pixabay": {
+        "id": 39116,
+        "url": "https://pixabay.com/videos/id-39116/",
+        "seconds": 12,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "bee, honey, insect, beehive, nature, hive, close-up, honey bee, beeswax, macro, summer, flying, slowly, garden, world bee day, bee keeper, honeycomb, bee video, bee farming",
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/15/39116-420985147_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2020/05/15/39116-420985147_small.mp4"
+      }
+    },
+    "ant": {
+      "theme": "insects",
+      "pixabay": {
+        "id": 2800,
+        "url": "https://pixabay.com/videos/id-2800/",
+        "seconds": 18,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "ant, nighttime, active, red ant, red, bite",
+        "thumbnail": "https://cdn.pixabay.com/video/2016/04/14/2800-162896281_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2016/04/14/2800-162896281_small.mp4"
+      }
+    },
+    "ladybug": {
+      "theme": "insects",
+      "pixabay": {
+        "id": 120355,
+        "url": "https://pixabay.com/videos/id-120355/",
+        "seconds": 11,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "ladybug, insect, beetle, close up",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/14/120355-720505117_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/06/14/120355-720505117_small.mp4"
+      }
+    },
+    "dragonfly": {
+      "theme": "insects",
+      "pixabay": {
+        "id": 39109,
+        "url": "https://pixabay.com/videos/id-39109/",
+        "seconds": 20,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "dragonfly, insect, macro, nature, yellow winged darter dragonfly, flying insect, colorful, creature, detail, delicate, bug, animal, wildlife, damselfly, four wings, transparent, close up, wings, fauna, darter dragonfly, wild",
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/15/39109-420274299_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2020/05/15/39109-420274299_small.mp4"
+      }
+    },
+    "spider": {
+      "theme": "insects",
+      "pixabay": {
+        "id": 7795,
+        "url": "https://pixabay.com/videos/id-7795/",
+        "seconds": 11,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "spider, arachnid, insect, octapod, animal, walking spider, wood trunk",
+        "thumbnail": "https://cdn.pixabay.com/video/2017/02/12/7795-204506406_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2017/02/12/7795-204506406_small.mp4"
+      }
+    },
+    "tractor": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 232561,
+        "url": "https://pixabay.com/videos/id-232561/",
+        "seconds": 19,
+        "width": 2560,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "tractor, field, wheat, harvest, combine, agriculture, grain, farming, summer, machine, technology, equipment, landscape",
+        "thumbnail": "https://cdn.pixabay.com/video/2024/09/21/232561_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2024/09/21/232561_small.mp4"
+      }
+    },
+    "fire truck": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 8872,
+        "url": "https://pixabay.com/videos/id-8872/",
+        "seconds": 8,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "firefighters, emergency, fire, safety, rescue, danger, fireman, protection, department, helmet, equipment, fighter, truck, red, uniform, engine, firefighting, water, alarm, hose, man, people, hero, person, help, flame, burn, ladder, service, smoke, mask, dangerous, hat, protective, white",
+        "thumbnail": "https://cdn.pixabay.com/video/2017/04/28/8872-215589218_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2017/04/28/8872-215589218_small.mp4"
+      }
+    },
+    "train": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 367164,
+        "url": "https://pixabay.com/videos/id-367164/",
+        "seconds": 19,
+        "width": 2160,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "landscape, evening, river, railway bridge, osaka suburbs, train, bats, japan",
+        "thumbnail": "https://cdn.pixabay.com/video/2026/07/29/367164_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2026/07/29/367164_small.mp4"
+      }
+    },
+    "airplane": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 32975,
+        "url": "https://pixabay.com/videos/id-32975/",
+        "seconds": 30,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "plane, sky, airplane, fly, flight",
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/27/32975-394513987_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2020/02/27/32975-394513987_small.mp4"
+      }
+    },
+    "helicopter": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 170300,
+        "url": "https://pixabay.com/videos/id-170300/",
+        "seconds": 24,
+        "width": 4096,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "helicopter, military, army, czech, fight, flying, sky, prague, transport",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/06/170300-843059179_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/07/06/170300-843059179_small.mp4"
+      }
+    },
+    "excavator": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 149810,
+        "url": "https://pixabay.com/videos/id-149810/",
+        "seconds": 30,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "excavator bucket, excavator, stone, earthworks",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/08/149810-797189152_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/02/08/149810-797189152_small.mp4"
+      }
+    },
+    "school bus": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 142755,
+        "url": "https://pixabay.com/videos/id-142755/",
+        "seconds": 45,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "bus, riding, passenger, race, city bus, republic of korea",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/13/142755-780943401_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/12/13/142755-780943401_small.mp4"
+      }
+    },
+    "police car": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 135480,
+        "url": "https://pixabay.com/videos/id-135480/",
+        "seconds": 11,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "road, cars, trees, palm trees, mountain, sea, rock, beach, police car, cyclist",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/18/135480-762107101_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/10/18/135480-762107101_small.mp4"
+      }
+    },
+    "boat": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 181376,
+        "url": "https://pixabay.com/videos/id-181376/",
+        "seconds": 15,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "boat, man, fishing boat, wooden boat, water, lake, mountains, landscape, zille, hallst\u00e4ttersee, hallstatt, austria",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/20/181376-866506956_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/09/20/181376-866506956_small.mp4"
+      }
+    },
+    "motorcycle": {
+      "theme": "transport",
+      "pixabay": {
+        "id": 1083,
+        "url": "https://pixabay.com/videos/id-1083/",
+        "seconds": 10,
+        "width": 1280,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "stunt, motorbikes, synchronous, extreme, motorcycle, biker, sport, professional, helmet, lifestyle, protection, two, show, ramp, jump, risk, 134477942",
+        "thumbnail": "https://cdn.pixabay.com/video/2015/10/18/1083-142790258_medium.jpg",
+        "clip": "https://cdn.pixabay.com/video/2015/10/18/1083-142790258_small.mp4"
+      }
+    },
+    "banana": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 149478,
+        "url": "https://pixabay.com/videos/id-149478/",
+        "seconds": 21,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "woman, banana, fruit, joy",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/05/149478-796096130_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/02/05/149478-796096130_small.mp4"
+      }
+    },
+    "apple": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 127737,
+        "url": "https://pixabay.com/videos/id-127737/",
+        "seconds": 20,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "apple, fruit, tree, apple tree, ripe, healthy, vitamins, fresh, food",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/13/127737-739309170_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/08/13/127737-739309170_small.mp4"
+      }
+    },
+    "orange": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 185947,
+        "url": "https://pixabay.com/videos/id-185947/",
+        "seconds": 35,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "trees, leaves, foliage, orange leaves, autumn, fall, nature",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/10/21/185947-876963225_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/10/21/185947-876963225_small.mp4"
+      }
+    },
+    "strawberry": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 275052,
+        "url": "https://pixabay.com/videos/id-275052/",
+        "seconds": 9,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "strawberry, sugar, macro, wooden board, cute, yummy, food, meal, nourishment, healthy, vitamins, tasty",
+        "thumbnail": "https://cdn.pixabay.com/video/2025/04/27/275052_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2025/04/27/275052_small.mp4"
+      }
+    },
+    "watermelon": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 33249,
+        "url": "https://pixabay.com/videos/id-33249/",
+        "seconds": 10,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "fruit, cutting, food, cut, healthy, pomegranate, mature, watermelon, vitamins, fresh, vegetables, sliced, banana, fig, seeds, sweet, very nice, poop, red, nutrition, juicy, eat",
+        "thumbnail": "https://cdn.pixabay.com/video/2020/03/05/33249-396487938_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2020/03/05/33249-396487938_small.mp4"
+      }
+    },
+    "carrot": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 128125,
+        "url": "https://pixabay.com/videos/id-128125/",
+        "seconds": 40,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "blossom, bloom, white flower, flower, carrot, wild carrot",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/17/128125-740854555_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/08/17/128125-740854555_small.mp4"
+      }
+    },
+    "tomato": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 180204,
+        "url": "https://pixabay.com/videos/id-180204/",
+        "seconds": 31,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "tomatoes, tomato tree, vegetables, plant, healthy, food, nourishment, fresh, shrub, slow motion",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/12/180204-863654699_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/09/12/180204-863654699_small.mp4"
+      }
+    },
+    "broccoli": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 1489,
+        "url": "https://pixabay.com/videos/id-1489/",
+        "seconds": 14,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "broccoli, cutting, cooking, knife, wok, kitchen, food, food preparation",
+        "thumbnail": "https://cdn.pixabay.com/video/2015/12/03/1489-147827940_medium.jpg",
+        "clip": "https://cdn.pixabay.com/video/2015/12/03/1489-147827940_small.mp4"
+      }
+    },
+    "grapes": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 176238,
+        "url": "https://pixabay.com/videos/id-176238/",
+        "seconds": 12,
+        "width": 3840,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "leaf, grape leaf, grapes, grapevine, fruit, nature",
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/16/176238-855196254_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2023/08/16/176238-855196254_small.mp4"
+      }
+    },
+    "pineapple": {
+      "theme": "fruit and vegetables",
+      "pixabay": {
+        "id": 133760,
+        "url": "https://pixabay.com/videos/id-133760/",
+        "seconds": 59,
+        "width": 1920,
+        "licence": "Pixabay Content Licence",
+        "attribution_required": false,
+        "tags": "pineapple, fruit, peel, food, pineapple juice",
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/06/133760-758327895_large.jpg",
+        "clip": "https://cdn.pixabay.com/video/2022/10/06/133760-758327895_small.mp4"
+      }
+    }
+  }
+}
