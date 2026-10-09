@@ -1,0 +1,45 @@
+{
+  "channel": "yt-kids",
+  "language": "en-US",
+  "cards_per_video": 25,
+  "card_seconds_min": 12,
+  "card_seconds_max": 18,
+  "target_duration_min": 8,
+  "length_gate": {
+    "min_minutes": 6,
+    "max_minutes": 10,
+    "attempts": 3
+  },
+  "voice": "en-US-AriaNeural",
+  "voice_rate": "-18%",
+  "pause_before_name_ms": 450,
+  "pause_after_name_ms": 900,
+  "pause_between_cards_ms": 700,
+  "music_gain_db": -22,
+  "sound_gain_db": -6,
+  "fade_in_s": 2,
+  "fade_out_s": 3,
+  "publish_time": "16:00",
+  "publish_days_ahead": 3,
+  "schedule_publish": true,
+  "timezone": "Europe/Kiev",
+  "youtube_publish": true,
+  "privacy_status": "private",
+  "made_for_kids": true,
+  "image_style": "bright colourful children's book illustration, bold saturated colours, high contrast, simple clear shapes, cheerful, soft rounded forms, plain uncluttered background, no text, no lettering, no watermark, no logo, no branding",
+  "images": {
+    "provider": "cloudflare",
+    "cloudflare": {
+      "model": "@cf/black-forest-labs/flux-1-schnell",
+      "steps": 4
+    }
+  },
+  "stock": {
+    "min_seconds": 8,
+    "min_width": 1280,
+    "prefer": [
+      "pexels",
+      "pixabay"
+    ]
+  }
+}

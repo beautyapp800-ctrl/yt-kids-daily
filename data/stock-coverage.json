@@ -1,0 +1,459 @@
+{
+  "min_seconds": 8,
+  "min_width": 1280,
+  "sources": [
+    "commons"
+  ],
+  "subjects": {
+    "cow": {
+      "theme": "farm animals",
+      "commons": null
+    },
+    "pig": {
+      "theme": "farm animals",
+      "commons": null
+    },
+    "sheep": {
+      "theme": "farm animals",
+      "commons": null
+    },
+    "horse": {
+      "theme": "farm animals",
+      "commons": {
+        "id": "File:A grazing horse at the \u00c9comus\u00e9e de la Bintinais.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:A_grazing_horse_at_the_%C3%89comus%C3%A9e_de_la_Bintinais.webm",
+        "seconds": 37,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "chicken": {
+      "theme": "farm animals",
+      "commons": null
+    },
+    "duck": {
+      "theme": "farm animals",
+      "commons": {
+        "id": "File:Duck and Cover (1951).webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Duck_and_Cover_(1951).webm",
+        "seconds": 551,
+        "width": 1440,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "goat": {
+      "theme": "farm animals",
+      "commons": null
+    },
+    "rooster": {
+      "theme": "farm animals",
+      "commons": null
+    },
+    "lion": {
+      "theme": "wild animals",
+      "commons": null
+    },
+    "elephant": {
+      "theme": "wild animals",
+      "commons": null
+    },
+    "tiger": {
+      "theme": "wild animals",
+      "commons": {
+        "id": "File:Siberian tiger (Panthera tigris altaica) pacing around.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Siberian_tiger_(Panthera_tigris_altaica)_pacing_around.webm",
+        "seconds": 16,
+        "width": 1280,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "bear": {
+      "theme": "wild animals",
+      "commons": {
+        "id": "File:2025-09-20-vdk-skt-bears-124611.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:2025-09-20-vdk-skt-bears-124611.webm",
+        "seconds": 19,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "monkey": {
+      "theme": "wild animals",
+      "commons": {
+        "id": "File:Boucle 1-lot3 sansperf.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Boucle_1-lot3_sansperf.webm",
+        "seconds": 32,
+        "width": 3540,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "giraffe": {
+      "theme": "wild animals",
+      "commons": null
+    },
+    "zebra": {
+      "theme": "wild animals",
+      "commons": null
+    },
+    "wolf": {
+      "theme": "wild animals",
+      "commons": {
+        "id": "File:Wolf Creek Falls Trail (25586566421).webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Wolf_Creek_Falls_Trail_(25586566421).webm",
+        "seconds": 11,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "fox": {
+      "theme": "wild animals",
+      "commons": null
+    },
+    "kangaroo": {
+      "theme": "wild animals",
+      "commons": null
+    },
+    "whale": {
+      "theme": "sea animals",
+      "commons": {
+        "id": "File:Arctic Cove Delphinapterus leucas beluga whale Marineland Niagara Falls Canada 2022-08-15 4.00.34PM.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Arctic_Cove_Delphinapterus_leucas_beluga_whale_Marineland_Niagara_Falls_Canada_2022-08-15_4.00.34PM.webm",
+        "seconds": 74,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "dolphin": {
+      "theme": "sea animals",
+      "commons": {
+        "id": "File:Typhoon Dolphin Crosses the Ogasawara Islands (CIRA 2026-08-04 - labels).webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Typhoon_Dolphin_Crosses_the_Ogasawara_Islands_(CIRA_2026-08-04_-_labels).webm",
+        "seconds": 8,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "shark": {
+      "theme": "sea animals",
+      "commons": {
+        "id": "File:Bull Shark 26-1 Coast Guard (987033).webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Bull_Shark_26-1_Coast_Guard_(987033).webm",
+        "seconds": 38,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "octopus": {
+      "theme": "sea animals",
+      "commons": {
+        "id": "File:OctopusFeedingCSS.mpg",
+        "url": "https://commons.wikimedia.org/wiki/File:OctopusFeedingCSS.mpg",
+        "seconds": 46,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "sea turtle": {
+      "theme": "sea animals",
+      "commons": null
+    },
+    "jellyfish": {
+      "theme": "sea animals",
+      "commons": null
+    },
+    "crab": {
+      "theme": "sea animals",
+      "commons": null
+    },
+    "starfish": {
+      "theme": "sea animals",
+      "commons": null
+    },
+    "seahorse": {
+      "theme": "sea animals",
+      "commons": null
+    },
+    "penguin": {
+      "theme": "sea animals",
+      "commons": {
+        "id": "File:Penguin was sleeping.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Penguin_was_sleeping.webm",
+        "seconds": 11,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "eagle": {
+      "theme": "birds",
+      "commons": null
+    },
+    "owl": {
+      "theme": "birds",
+      "commons": {
+        "id": "File:2025-09-20-vdk-skt-owls-135358.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:2025-09-20-vdk-skt-owls-135358.webm",
+        "seconds": 22,
+        "width": 1934,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "parrot": {
+      "theme": "birds",
+      "commons": {
+        "id": "File:\u041a\u043e\u0440\u0435\u043b\u043b\u0430.mpg",
+        "url": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D1%80%D0%B5%D0%BB%D0%BB%D0%B0.mpg",
+        "seconds": 18,
+        "width": 3840,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "flamingo": {
+      "theme": "birds",
+      "commons": null
+    },
+    "peacock": {
+      "theme": "birds",
+      "commons": {
+        "id": "File:Peacock walking and eating.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Peacock_walking_and_eating.webm",
+        "seconds": 15,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "swan": {
+      "theme": "birds",
+      "commons": null
+    },
+    "butterfly": {
+      "theme": "insects",
+      "commons": null
+    },
+    "bee": {
+      "theme": "insects",
+      "commons": {
+        "id": "File:Abeille repos.ogv",
+        "url": "https://commons.wikimedia.org/wiki/File:Abeille_repos.ogv",
+        "seconds": 31,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "ant": {
+      "theme": "insects",
+      "commons": null
+    },
+    "ladybug": {
+      "theme": "insects",
+      "commons": {
+        "id": "File:Cleopatra (1917) fragment - J. Gordon Edwards.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Cleopatra_(1917)_fragment_-_J._Gordon_Edwards.webm",
+        "seconds": 16,
+        "width": 1440,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "dragonfly": {
+      "theme": "insects",
+      "commons": {
+        "id": "File:Dragonfly-EDL-Final2.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Dragonfly-EDL-Final2.webm",
+        "seconds": 71,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "spider": {
+      "theme": "insects",
+      "commons": null
+    },
+    "tractor": {
+      "theme": "transport",
+      "commons": {
+        "id": "File:Heinamaa tasandamine 2021.ogv",
+        "url": "https://commons.wikimedia.org/wiki/File:Heinamaa_tasandamine_2021.ogv",
+        "seconds": 126,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "fire truck": {
+      "theme": "transport",
+      "commons": null
+    },
+    "train": {
+      "theme": "transport",
+      "commons": null
+    },
+    "airplane": {
+      "theme": "transport",
+      "commons": {
+        "id": "File:\u0421\u0430\u043c\u043e\u043b\u0451\u0442\u044b. \u041f\u0430\u0440\u0430\u0434 9 \u041c\u0430\u044f.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D1%8B._%D0%9F%D0%B0%D1%80%D0%B0%D0%B4_9_%D0%9C%D0%B0%D1%8F.webm",
+        "seconds": 10,
+        "width": 1908,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "helicopter": {
+      "theme": "transport",
+      "commons": null
+    },
+    "excavator": {
+      "theme": "transport",
+      "commons": {
+        "id": "File:Ksc-20220728-mh-ilw02-0001-isru-pilot-excavator-3309859.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Ksc-20220728-mh-ilw02-0001-isru-pilot-excavator-3309859.webm",
+        "seconds": 72,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "school bus": {
+      "theme": "transport",
+      "commons": {
+        "id": "File:2023\u20132024 MCPS school bus violator compilation.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:2023%E2%80%932024_MCPS_school_bus_violator_compilation.webm",
+        "seconds": 34,
+        "width": 1280,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "police car": {
+      "theme": "transport",
+      "commons": {
+        "id": "File:Dashcam Shows Sacramento Police Car Striking Teen Fleeing Officers.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Dashcam_Shows_Sacramento_Police_Car_Striking_Teen_Fleeing_Officers.webm",
+        "seconds": 785,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "boat": {
+      "theme": "transport",
+      "commons": null
+    },
+    "motorcycle": {
+      "theme": "transport",
+      "commons": {
+        "id": "File:Stories From the Collection - 1993 Harley Davidson Motorcycle (KihSsvF4gBA).ogg",
+        "url": "https://commons.wikimedia.org/wiki/File:Stories_From_the_Collection_-_1993_Harley_Davidson_Motorcycle_(KihSsvF4gBA).ogg",
+        "seconds": 191,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "banana": {
+      "theme": "fruit and vegetables",
+      "commons": {
+        "id": "File:Abejas en la flor del platano.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Abejas_en_la_flor_del_platano.webm",
+        "seconds": 34,
+        "width": 3840,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "apple": {
+      "theme": "fruit and vegetables",
+      "commons": null
+    },
+    "orange": {
+      "theme": "fruit and vegetables",
+      "commons": null
+    },
+    "strawberry": {
+      "theme": "fruit and vegetables",
+      "commons": {
+        "id": "File:Fragaria vesca - natural growth area.ogv",
+        "url": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_-_natural_growth_area.ogv",
+        "seconds": 97,
+        "width": 1280,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "watermelon": {
+      "theme": "fruit and vegetables",
+      "commons": {
+        "id": "File:20160715-AMS-LSC-9001-Farmers Market-Food Demo-Watermelon Salad.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:20160715-AMS-LSC-9001-Farmers_Market-Food_Demo-Watermelon_Salad.webm",
+        "seconds": 131,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    },
+    "carrot": {
+      "theme": "fruit and vegetables",
+      "commons": {
+        "id": "File:Preparation-du-poulet-realisatrice-marcko-wiki-loves-africa-cote-divoire-fan-club.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Preparation-du-poulet-realisatrice-marcko-wiki-loves-africa-cote-divoire-fan-club.webm",
+        "seconds": 264,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "tomato": {
+      "theme": "fruit and vegetables",
+      "commons": {
+        "id": "File:\u1001\u101b\u1019\u103a\u1038\u1001\u103b\u1025\u103a\u101e\u102e\u1038.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:%E1%80%81%E1%80%9B%E1%80%99%E1%80%BA%E1%80%B8%E1%80%81%E1%80%BB%E1%80%A5%E1%80%BA%E1%80%9E%E1%80%AE%E1%80%B8.webm",
+        "seconds": 90,
+        "width": 1920,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "broccoli": {
+      "theme": "fruit and vegetables",
+      "commons": null
+    },
+    "grapes": {
+      "theme": "fruit and vegetables",
+      "commons": {
+        "id": "File:2024 Historic Sonoma Valley Grape Stomp - Sarah Stierch.webm",
+        "url": "https://commons.wikimedia.org/wiki/File:2024_Historic_Sonoma_Valley_Grape_Stomp_-_Sarah_Stierch.webm",
+        "seconds": 234,
+        "width": 1280,
+        "licence": "CC0",
+        "attribution_required": false
+      }
+    },
+    "pineapple": {
+      "theme": "fruit and vegetables",
+      "commons": {
+        "id": "File:Pineapple Express Bombards Pacific Northwest with Heavy Rain (CIRA 2023-12-05 - labels).webm",
+        "url": "https://commons.wikimedia.org/wiki/File:Pineapple_Express_Bombards_Pacific_Northwest_with_Heavy_Rain_(CIRA_2023-12-05_-_labels).webm",
+        "seconds": 9,
+        "width": 1920,
+        "licence": "Public domain",
+        "attribution_required": false
+      }
+    }
+  }
+}

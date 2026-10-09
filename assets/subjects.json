@@ -1,0 +1,76 @@
+{
+  "farm animals": [
+    "cow",
+    "pig",
+    "sheep",
+    "horse",
+    "chicken",
+    "duck",
+    "goat",
+    "rooster"
+  ],
+  "wild animals": [
+    "lion",
+    "elephant",
+    "tiger",
+    "bear",
+    "monkey",
+    "giraffe",
+    "zebra",
+    "wolf",
+    "fox",
+    "kangaroo"
+  ],
+  "sea animals": [
+    "whale",
+    "dolphin",
+    "shark",
+    "octopus",
+    "sea turtle",
+    "jellyfish",
+    "crab",
+    "starfish",
+    "seahorse",
+    "penguin"
+  ],
+  "birds": [
+    "eagle",
+    "owl",
+    "parrot",
+    "flamingo",
+    "peacock",
+    "swan"
+  ],
+  "insects": [
+    "butterfly",
+    "bee",
+    "ant",
+    "ladybug",
+    "dragonfly",
+    "spider"
+  ],
+  "transport": [
+    "tractor",
+    "fire truck",
+    "train",
+    "airplane",
+    "helicopter",
+    "excavator",
+    "school bus",
+    "police car",
+    "boat",
+    "motorcycle"
+  ],
+  "fruit and vegetables": [
+    "banana",
+    "apple",
+    "orange",
+    "strawberry",
+    "watermelon",
+    "carrot",
+    "tomato",
+    "broccoli",
+    "grapes",
+    "pineapple"
+  ]
+}
