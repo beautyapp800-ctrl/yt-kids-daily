@@ -17,7 +17,7 @@ Two rules shape the choice of subjects:
 import random
 from pathlib import Path
 
-from core import db
+from core import db, soundcheck
 from core.logger import get_logger
 from pipeline import catalogue
 
@@ -142,8 +142,15 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
         sound = None
         if theme_of(subject, groups) in SOUNDED_THEMES:
             try:
-                found = sounds_module.search(subject, _sound_query(subject))
-                sound = found[0] if found else None
+                found = sounds_module.search_many(subject, _sound_queries(subject))
+                # Every candidate is put to a judge before it is used. Taking the first hit
+                # put the click of a push-button torch made by a company called Dolphin on the
+                # dolphin card, a MIDI of "Baby Shark" on the shark card, and a person
+                # reciting "O is for octopus" on the octopus card - all three titles contain
+                # the subject's name, which was the only thing the old filter asked for.
+                sound, refused = soundcheck.first_real(subject, found, account, token)
+                for bad in refused:
+                    log.info("  %s: refused %r - %s", subject, bad["title"][:48], bad["why"][:60])
             except Exception as e:                               # noqa: BLE001
                 log.warning("no sound for %s: %s", subject, str(e)[:80])
         if sound is None:
@@ -202,3 +209,17 @@ SOUND_QUERIES = {
 
 def _sound_query(subject):
     return SOUND_QUERIES.get(subject.lower(), subject)
+
+
+def _sound_queries(subject):
+    """Several ways of asking, because the judge refuses most of what one query returns."""
+    low = subject.lower()
+    named = SOUND_QUERIES.get(low)
+    out = [named] if named else []
+    out += [f"{low} sound", f"{low} call", low]
+    seen, unique = set(), []
+    for q in out:
+        if q and q not in seen:
+            seen.add(q)
+            unique.append(q)
+    return unique

@@ -115,6 +115,27 @@ def search(subject, query=None, page_size=20):
     return out
 
 
+def search_many(subject, queries, page_size=20):
+    """Pool several searches, best licence first, without duplicates.
+
+    One query is not enough once a judge is refusing most of what comes back: "dolphin click"
+    returned a single candidate and it was a torch. Asking three or four ways finds the
+    recording that exists under a word I did not think of.
+    """
+    seen, pooled = set(), []
+    for query in queries:
+        try:
+            for record in search(subject, query, page_size):
+                if record["id"] in seen:
+                    continue
+                seen.add(record["id"])
+                pooled.append(record)
+        except Exception:                                        # noqa: BLE001
+            continue
+    pooled.sort(key=lambda s: (s["licence"] != "cc0", s["licence"] != "pdm"))
+    return pooled
+
+
 def attribution_line(sound):
     """The line that goes in the description for a sound that needs one."""
     if not sound.get("attribution_required"):

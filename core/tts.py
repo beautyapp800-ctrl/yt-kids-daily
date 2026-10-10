@@ -127,12 +127,12 @@ def duration(path):
 # How each piece of a card is said. Name: slower and higher, the way a word is offered to a
 # child. Question: higher, so it rises. Answer: warm and a little quicker. Fact: normal.
 VOICING = {
-    "cue":      {"rate": "-10%", "pitch": "+30Hz"},
-    "name":     {"rate": "-30%", "pitch": "+22Hz"},
-    "question": {"rate": "-12%", "pitch": "+28Hz"},
-    "answer":   {"rate": "-12%", "pitch": "+18Hz"},
-    "fact":     {"rate": "-16%", "pitch": "+6Hz"},
-    "plain":    {"rate": "-16%", "pitch": "+0Hz"},
+    "cue":      {"rate": "+14%", "pitch": "+40Hz"},
+    "name":     {"rate": "-12%", "pitch": "+34Hz"},
+    "question": {"rate": "+6%",  "pitch": "+38Hz"},
+    "answer":   {"rate": "+12%", "pitch": "+30Hz"},
+    "fact":     {"rate": "+8%",  "pitch": "+20Hz"},
+    "plain":    {"rate": "+4%",  "pitch": "+12Hz"},
 }
 
 
