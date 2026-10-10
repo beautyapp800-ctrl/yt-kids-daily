@@ -43,8 +43,11 @@ REFUSED_REASON = {"by-sa": "share-alike would put the whole video under it",
 # Words that mean the sound is not the real thing, however well the title matches.
 NOT_THE_REAL_THING = {"toy", "synth", "synthesized", "synthesised", "imitation", "imitating",
                       "fake", "remix", "cover", "song", "music", "melody", "ringtone", "meme",
-                      "zombie", "monster", "dragon", "cartoon", "voice", "human", "man",
-                      "woman", "scream", "8-bit", "chiptune", "sample pack"}
+                      "zombie", "monster", "dragon", "cartoon", "human", "scream",
+                      "8-bit", "chiptune", "sample pack"}
+# "song" was on that list and threw away every recording called "Humpback Whale Song", which
+# is what the sound is actually called. The words that matter are the ones that mean a person
+# made the sound up, not the ones that describe an animal making it.
 
 # Wikimedia's pronunciation recordings - "LL-Q1860 (eng)-Flame, not lame-Chinese broccoli" -
 # are a person saying the word. Searching "broccoli" returned one, and it would have played a
@@ -52,7 +55,12 @@ NOT_THE_REAL_THING = {"toy", "synth", "synthesized", "synthesised", "imitation",
 PRONUNCIATION = re.compile(r"^LL-Q\d+|\(eng\)-|pronunciation|\bsays?\b", re.I)
 
 MIN_SECONDS = 1.0
-MAX_SECONDS = 30.0
+# A long recording is not a problem: four seconds are taken out of the middle of it (see
+# core.tts.normalise). The old 30-second ceiling refused every field recording of a whale,
+# a penguin colony and a dawn chorus - which is most of what exists - while trimming them
+# anyway. A ceiling is still wanted so a half-hour soundscape is not downloaded for four
+# seconds of use.
+MAX_SECONDS = 420.0
 
 
 class SoundError(Exception):

@@ -68,8 +68,11 @@ def search(subject, key, wanted=catalogue.CANDIDATES_PER_SUBJECT):
         out.append({"id": v["id"], "url": v.get("pageURL"), "seconds": v["duration"],
                     "width": best["width"], "licence": "Pixabay Content Licence",
                     "attribution_required": False, "thumbnail": best.get("thumbnail"),
-                    "clip": (v.get("videos", {}).get("small")
-                             or v.get("videos", {}).get("tiny") or {}).get("url")})
+                    # The stream that is actually big enough, not the small one. The first
+                    # version stored videos.small or videos.tiny - 960x540 or 640x360 - and
+                    # the render then upscaled them to 1080p: worse pictures, and one 640x360
+                    # clip took 146 seconds to render against 8 for the others.
+                    "clip": best.get("url")})
         if len(out) >= wanted:
             break
     return out

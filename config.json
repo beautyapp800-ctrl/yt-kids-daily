@@ -3,7 +3,7 @@
   "language": "en-US",
   "cards_per_video": 25,
   "card_seconds_min": 12,
-  "card_seconds_max": 18,
+  "card_seconds_max": 24,
   "target_duration_min": 8,
   "length_gate": {
     "min_minutes": 6,
@@ -42,5 +42,8 @@
       "pixabay"
     ]
   },
-  "voice_chosen_why": "picked by ear from three 30-second samples: friendly, gentle, comforting"
+  "voice_chosen_why": "picked by ear from three 30-second samples: friendly, gentle, comforting",
+  "pause_to_think_ms": 1100,
+  "sound_lufs": -14,
+  "sound_max_seconds": 4
 }

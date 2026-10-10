@@ -98,24 +98,86 @@ def card_video(card, seconds, out_path, font=None):
 
 
 def card_audio(card, seconds, out_path, cfg, sound_path=None):
-    """The card's narration, with the real sound laid in after the name."""
+    """The card's narration, padded to the card's length.
+
+    The animal sound is NOT mixed here any more. It used to be laid under the voice at a
+    fixed -6 dB, and since the source files are themselves -23 to -27 LUFS it arrived 8 to 12
+    dB below the narration - which is to say, inaudible. It is now a segment of the narration
+    itself, in its own gap, normalised to its own loudness; see core/tts.py. `sound_path` is
+    kept only so an older call site does not break silently.
+    """
     out_path = Path(out_path)
-    voice = str(card["audio_path"])
-    if not sound_path:
-        _run(["ffmpeg", "-y", "-i", voice, "-af",
-              f"apad=whole_dur={seconds:.3f}", "-t", f"{seconds:.3f}",
-              "-ar", "44100", "-ac", "2", str(out_path)], TIMEOUT_PER_CARD)
-        return out_path
-    gain = float(cfg.get("sound_gain_db", -6))
-    # Delayed to land in the gap after the name, where the child is already listening for it.
-    delay = int(float(cfg.get("pause_before_name_ms", 450)) + 900)
-    _run(["ffmpeg", "-y", "-i", voice, "-i", str(sound_path), "-filter_complex",
-          f"[1:a]adelay={delay}|{delay},volume={gain}dB[s];"
-          f"[0:a][s]amix=inputs=2:duration=first:normalize=0[a];"
-          f"[a]apad=whole_dur={seconds:.3f}[out]",
-          "-map", "[out]", "-t", f"{seconds:.3f}", "-ar", "44100", "-ac", "2",
-          str(out_path)], TIMEOUT_PER_CARD)
+    _run(["ffmpeg", "-y", "-i", str(card["audio_path"]), "-af",
+          f"apad=whole_dur={seconds:.3f}", "-t", f"{seconds:.3f}",
+          "-ar", "44100", "-ac", "2", str(out_path)], TIMEOUT_PER_CARD)
     return out_path
+
+
+# Short transitions, cycled by card so no two neighbours share one and the video does not
+# settle into a rhythm. All are xfade modes, all cheap at this length - the cost is measured
+# in scripts/transition_cost.py rather than guessed at, because an xfade chain over long
+# clips is what took two hours in yt-factory. These cards are twenty seconds, not ten
+# minutes, and the join happens once per pair rather than over a growing chain.
+TRANSITIONS = ["slideleft", "wiperight", "fade", "slideup", "circleopen", "wipeleft",
+               "dissolve", "slideright"]
+TRANSITION_SECONDS = 0.4
+
+
+def transition_for(index):
+    return TRANSITIONS[index % len(TRANSITIONS)]
+
+
+def join_with_transitions(paths, out_path, seconds=TRANSITION_SECONDS, timeout=3600):
+    """Join cards with a short transition between each pair, in time linear in the cards.
+
+    The obvious way - xfade the running video onto the next card, over and over - re-encodes
+    everything accumulated so far at every step, so the work grows with the square of the card
+    count. Measured on six eighteen-second cards: 372 seconds, against 0.5 for a plain concat.
+    On twenty-five cards it would have been the two-hour disaster yt-factory had.
+
+    So nothing long is ever re-encoded. Each card is cut into the part that plays on its own,
+    the transitions are built from the half-second of tail and head either side of each join,
+    and the result is stream-copied together. Each xfade is 0.4 seconds of video.
+
+    Every card must have been rendered `seconds` longer than its slot, which card_video does,
+    so the overlap is paid for out of that and the finished video is exactly as long as the
+    narration. Card i's slot is its own piece plus the transition out of it.
+    """
+    paths = [Path(p) for p in paths]
+    if len(paths) < 2:
+        return paths[0] if paths else None
+    out_path = Path(out_path)
+    work = out_path.parent / "_joins"
+    work.mkdir(parents=True, exist_ok=True)
+
+    lengths = [probe_duration(p) for p in paths]
+    encode = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p",
+              "-r", str(FPS), "-an"]
+    pieces = []
+    for i, src in enumerate(paths):
+        slot = lengths[i] - seconds
+        begin = 0.0 if i == 0 else seconds
+        length = (slot - seconds) if i == 0 else (
+            lengths[i] - seconds if i == len(paths) - 1 else slot - seconds)
+        piece = work / f"p{i:02d}.mp4"
+        if not piece.exists():
+            _run(["ffmpeg", "-y", "-ss", f"{begin:.3f}", "-i", str(src),
+                  "-t", f"{max(length, 0.2):.3f}", *encode, str(piece)], timeout)
+        pieces.append(piece)
+
+        if i < len(paths) - 1:
+            trans = work / f"t{i:02d}.mp4"
+            if not trans.exists():
+                tail_at = max(lengths[i] - seconds, 0.0)
+                _run(["ffmpeg", "-y", "-ss", f"{tail_at:.3f}", "-t", f"{seconds:.3f}",
+                      "-i", str(src), "-t", f"{seconds:.3f}", "-i", str(paths[i + 1]),
+                      "-filter_complex",
+                      f"[0:v][1:v]xfade=transition={transition_for(i)}"
+                      f":duration={seconds}:offset=0",
+                      *encode, str(trans)], timeout)
+            pieces.append(trans)
+
+    return concat(pieces, out_path, timeout)
 
 
 def concat(paths, out_path, timeout=1800):
@@ -159,7 +221,8 @@ def probe_duration(path):
         raise RenderError(f"ffprobe could not read {path}")
 
 
-def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None):
+def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None,
+        transitions=True):
     out = Path(output_dir)
     work = out / "cards"
     work.mkdir(parents=True, exist_ok=True)
@@ -170,7 +233,10 @@ def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None):
     clips_dir, images_dir = out / "clips", out / "images"
     videos, audios = [], []
     for card in cards:
-        seconds = float(card["duration_s"] or cfg.get("card_seconds_min", 12))
+        slot = float(card["duration_s"] or cfg.get("card_seconds_min", 12))
+        # One transition longer than the slot: the overlap is paid out of this, so the
+        # finished video stays exactly as long as the narration.
+        seconds = slot + (TRANSITION_SECONDS if transitions else 0.0)
         stem = f"{card['idx']:02d}"
         clip = clips_dir / f"{stem}_{card['subject'].replace(' ', '_')}.mp4"
         row = {**card, "clip_path": str(clip) if clip.exists() else None}
@@ -179,15 +245,41 @@ def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None):
         if not vpath.exists():
             card_video(row, seconds, vpath)
         if not apath.exists():
-            sound = None
-            if sounds_dir and card["sound_id"]:
-                found = list(Path(sounds_dir).glob(f"{stem}_*"))
-                sound = found[0] if found else None
-            card_audio(row, seconds, apath, cfg, sound)
+            card_audio(row, seconds, apath, cfg)
         videos.append(vpath)
         audios.append(apath)
 
-    silent = concat(videos, out / "_video.mp4")
+    # The intro and outro are stills over the first and last card's picture, so the video
+    # starts and ends on something rather than cutting straight in.
+    intro, outro = out / "audio" / "_intro.mp3", out / "audio" / "_outro.mp3"
+    if intro.exists():
+        from core import tts as _tts
+        bookend = {"subject": "", "clip_path": None,
+                   "image_path": None, "audio_path": str(intro)}
+        first = {**cards[0], "clip_path": str(clips_dir /
+                 f"00_{cards[0]['subject'].replace(' ', '_')}.mp4")}
+        for name, speech, source in (("intro", intro, first), ("outro", outro, first)):
+            if not speech.exists():
+                continue
+            seconds = _tts.duration(speech) + 0.6
+            vpath = work / f"_{name}_v.mp4"
+            apath = work / f"_{name}_a.m4a"
+            blank = {**source, "subject": ""}
+            if not vpath.exists():
+                card_video(blank, seconds, vpath)
+            if not apath.exists():
+                card_audio({"audio_path": str(speech)}, seconds, apath, cfg)
+            if name == "intro":
+                videos.insert(0, vpath)
+                audios.insert(0, apath)
+            else:
+                videos.append(vpath)
+                audios.append(apath)
+
+    if transitions and len(videos) > 1:
+        silent = join_with_transitions(videos, out / "_video.mp4")
+    else:
+        silent = concat(videos, out / "_video.mp4")
     track = concat(audios, out / "_audio.m4a")
     final = mux(silent, track, out / "final.mp4", cfg, music)
 
