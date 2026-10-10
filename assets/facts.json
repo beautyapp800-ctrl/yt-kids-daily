@@ -1,4 +1,276 @@
 {
+  "airplane": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An airplane flies in the air."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An airplane has big wings."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An airplane carries many people."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An airplane has a loud engine."
+      }
+    ],
+    "refused": []
+  },
+  "ant": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An ant carries food home."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An ant has six legs."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An ant lives in a nest."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An ant runs on the ground."
+      }
+    ],
+    "refused": []
+  },
+  "apple": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An apple grows on a tree."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An apple has a skin."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An apple has a core."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An apple has seeds inside."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An apple is sweet to eat.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all apples are sweet to eat, some can be sour or tart"
+      }
+    ]
+  },
+  "banana": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A banana is yellow."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A banana is sweet."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A banana has a skin."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A banana is eaten by people."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A banana grows on a plant.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A banana grows on a tree, not a plant. Bananas are the world's largest herb and grow on large plants that resemble trees."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A banana is juicy.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: the peel of a banana is not juicy"
+      }
+    ]
+  },
+  "bear": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A bear has sharp claws."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A bear eats honey."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A bear climbs trees."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A bear has soft fur."
+      }
+    ],
+    "refused": []
+  },
+  "bee": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A bee flies around flowers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A bee collects nectar from flowers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A bee has a big behind."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A bee has a loud buzz."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A bee has yellow hair.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: bees do not have hair, they have a fuzzy exterior"
+      }
+    ]
+  },
+  "boat": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A boat sails on water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A boat carries people across water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A boat floats on the sea."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A boat has a captain."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A boat has a big sail.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all boats have a sail"
+      }
+    ]
+  },
+  "broccoli": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "Broccoli has little green trees."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "Broccoli is good to eat."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "Broccoli has a big stem."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "Broccoli has green buds."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "Broccoli grows in the ground.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Broccoli grows on a plant above the ground, with its roots in the ground"
+      }
+    ]
+  },
+  "butterfly": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A butterfly flies around flowers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A butterfly has pretty wings."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A butterfly sips nectar from flowers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A butterfly lands on a leaf."
+      }
+    ],
+    "refused": []
+  },
+  "carrot": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A carrot is orange."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A carrot grows in the ground."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A carrot is good to eat."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A carrot has a sweet taste."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A carrot has a green top.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all carrots have a green top, some may be harvested before the green top grows or may be varieties that do not produce a green top"
+      }
+    ]
+  },
+  "chicken": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A chicken has soft feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A chicken lays eggs."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A chicken goes cluck."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A chicken scratches the ground."
+      }
+    ],
+    "refused": []
+  },
   "cow": {
     "facts": [
       {
@@ -26,6 +298,347 @@
       }
     ]
   },
+  "crab": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A crab has big claws."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A crab lives in the water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A crab walks sideways."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A crab hides in a hole."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A crab eats small fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Crabs are primarily omnivores and their diet consists of algae, plankton, and small invertebrates like clams and worms, not typically small fish"
+      }
+    ]
+  },
+  "dolphin": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A dolphin swims in the water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A dolphin jumps out of water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A dolphin eats fish."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A dolphin plays with friends."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A dolphin has a big smile.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Dolphins do not smile like humans do, their facial expression is often misinterpreted as a smile due to the curve of their mouth"
+      }
+    ]
+  },
+  "dragonfly": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A dragonfly flies fast."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A dragonfly has big eyes."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A dragonfly catches bugs."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A dragonfly has shiny wings."
+      }
+    ],
+    "refused": []
+  },
+  "duck": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A duck swims in water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A duck has soft feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A duck has a beak."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A duck goes quack."
+      }
+    ],
+    "refused": []
+  },
+  "eagle": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An eagle flies high."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An eagle has sharp claws."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An eagle builds a nest."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An eagle has big wings."
+      }
+    ],
+    "refused": []
+  },
+  "elephant": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An elephant has a big trunk."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An elephant has big ears."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An elephant has a long tail."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An elephant eats big plants."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An elephant has big teeth.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Elephants have big tusks, not big teeth"
+      }
+    ]
+  },
+  "excavator": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An excavator digs the ground."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An excavator has a big bucket."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An excavator moves big rocks."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An excavator has a long arm."
+      }
+    ],
+    "refused": []
+  },
+  "fire truck": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A fire truck sprays water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A fire truck has big wheels."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A fire truck drives to help people."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A fire truck carries strong hoses."
+      }
+    ],
+    "refused": []
+  },
+  "flamingo": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A flamingo has pink feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A flamingo stands on one leg."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A flamingo lives with friends."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A flamingo has a long neck."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A flamingo eats fish from water.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Flamingos primarily eat brine shrimp, algae, and small crustaceans, not fish."
+      }
+    ]
+  },
+  "fox": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A fox runs fast."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A fox has sharp teeth."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A fox has soft fur."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A fox has a bushy tail."
+      }
+    ],
+    "refused": []
+  },
+  "giraffe": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A giraffe eats leaves."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A giraffe has a long neck."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A giraffe runs very fast."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A giraffe has big spots."
+      }
+    ],
+    "refused": []
+  },
+  "goat": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A goat eats grass."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A goat climbs on rocks."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A goat runs in a field."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A goat has a loud voice."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A goat has soft fur.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Goats have hair, not fur"
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A goat gives us milk.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all goats give milk, only female goats do"
+      }
+    ]
+  },
+  "grapes": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "Grapes grow on a vine."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "Grapes are sweet to eat."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "Grapes have soft skin."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "Grapes grow in big bunches."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "Grapes have juicy seeds.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Grapes have seeds, but they are not typically juicy. The juicy part of a grape is the pulp."
+      }
+    ]
+  },
+  "helicopter": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A helicopter flies up high."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A helicopter carries people inside."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A helicopter makes a loud noise."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A helicopter lands on the ground."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A helicopter has big spinning wings.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A helicopter's spinning wings are called blades, not wings"
+      }
+    ]
+  },
   "horse": {
     "facts": [
       {
@@ -47,6 +660,155 @@
     ],
     "refused": []
   },
+  "jellyfish": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A jellyfish swims in the water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A jellyfish has a soft body."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A jellyfish has a sting."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A jellyfish lives in the ocean."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A jellyfish moves its arms.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Jellyfish do not have arms, they have tentacles"
+      }
+    ]
+  },
+  "kangaroo": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A kangaroo hops around."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A kangaroo has a baby in its pouch."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A kangaroo eats grass."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A kangaroo carries its baby."
+      }
+    ],
+    "refused": []
+  },
+  "ladybug": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A ladybug flies around flowers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A ladybug eats bad bugs."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A ladybug has little legs."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A ladybug lands on a leaf."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A ladybug has black spots.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The statement is incorrect because it implies all ladybugs have black spots, but most ladybugs have red and black coloration, with the spots typically being black on a red background."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A ladybug has red wings.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Ladybugs have red wing cases, not red wings"
+      }
+    ]
+  },
+  "lion": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A lion roars very loud."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A lion runs very fast."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A lion eats its food."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A lion sleeps in sun."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A lion has a big mane.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: not all lions have a big mane, only males typically do"
+      }
+    ]
+  },
+  "monkey": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A monkey climbs trees."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A monkey has a tail."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A monkey eats food."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A monkey plays outside."
+      }
+    ],
+    "refused": []
+  },
+  "motorcycle": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A motorcycle goes very fast."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A motorcycle has two wheels."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A motorcycle makes a loud noise."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A motorcycle has a seat."
+      }
+    ],
+    "refused": []
+  },
   "octopus": {
     "facts": [
       {
@@ -64,6 +826,117 @@
       {
         "checked": "2026-10-10",
         "fact": "An octopus catches fish to eat."
+      }
+    ],
+    "refused": []
+  },
+  "orange": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An orange is juicy."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An orange has a skin."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An orange grows on trees."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An orange is sweet."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An orange has seeds inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Many oranges are seedless"
+      }
+    ]
+  },
+  "owl": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An owl flies at night."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An owl has big eyes."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An owl has soft feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An owl makes a loud hoot."
+      }
+    ],
+    "refused": []
+  },
+  "parrot": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A parrot has bright feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A parrot can fly high."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A parrot says what it hears."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A parrot eats food with its beak."
+      }
+    ],
+    "refused": []
+  },
+  "peacock": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A peacock has bright feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A peacock spreads its tail."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A peacock makes loud noises."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A peacock walks on its legs."
+      }
+    ],
+    "refused": []
+  },
+  "penguin": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A penguin swims in water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A penguin has soft feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A penguin waddles on land."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A penguin eats fish."
       }
     ],
     "refused": []
@@ -92,6 +965,123 @@
         "checked": "2026-10-10",
         "fact": "A pig has a curly tail.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Not all pigs have curly tails"
+      }
+    ]
+  },
+  "pineapple": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A pineapple grows on a plant."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A pineapple has a tough skin."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A pineapple has sweet juice."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A pineapple has a prickly top."
+      }
+    ],
+    "refused": []
+  },
+  "police car": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A police car helps people."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A police car has flashing lights."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A police car drives on roads."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A police car has a loud horn."
+      }
+    ],
+    "refused": []
+  },
+  "rooster": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A rooster has bright feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A rooster wakes people up."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A rooster lives on a farm."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A rooster flaps its wings."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A rooster says cock a doodle.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A rooster says 'cock-a-doodle-doo'"
+      }
+    ]
+  },
+  "school bus": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A school bus takes kids to school."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A school bus has big wheels."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A school bus carries many kids."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A school bus has many seats."
+      }
+    ],
+    "refused": []
+  },
+  "sea turtle": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A sea turtle swims in the sea."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A sea turtle has a hard shell."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A sea turtle lays eggs."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A sea turtle has big flippers."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A sea turtle eats fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Sea turtles do not typically eat fish. They primarily eat seaweed, seagrass, and jellyfish, with some species eating crustaceans or other marine animals."
       }
     ]
   },
@@ -127,6 +1117,27 @@
       }
     ]
   },
+  "shark": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A shark swims in the water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A shark has sharp teeth."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A shark has a big tail."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A shark eats fish."
+      }
+    ],
+    "refused": []
+  },
   "sheep": {
     "facts": [
       {
@@ -151,6 +1162,331 @@
         "checked": "2026-10-10",
         "fact": "A sheep gives us milk.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Sheep are not typically raised for milk, cows and goats are more common milk-producing animals"
+      }
+    ]
+  },
+  "spider": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A spider has legs."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A spider spins a web."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A spider catches flies."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A spider has a big belly."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A spider runs very fast.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Spiders do not run, they walk or crawl"
+      }
+    ]
+  },
+  "starfish": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A starfish lives in the sea."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A starfish finds food on rocks."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A starfish moves very slowly."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A starfish has little legs.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A starfish has tube feet, not little legs."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A starfish eats small fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Starfish typically eat clams, mussels, and other shellfish, not small fish."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A starfish has a hard body.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A starfish has a soft and flexible body, not hard."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A starfish catches small bugs.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Starfish do not catch bugs, they are marine animals that typically feed on clams, mussels, and other shellfish."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A starfish has many little eyes.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A starfish does not have many little eyes, it has eye spots that can detect light and dark"
+      }
+    ]
+  },
+  "strawberry": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A strawberry is sweet."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A strawberry grows on a plant."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A strawberry has seeds outside."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A strawberry has a green top."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A strawberry is red.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: some strawberries are white or yellow"
+      }
+    ]
+  },
+  "swan": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A swan swims in water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A swan has soft feathers."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A swan waddles on land."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A swan eats food from the water."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A swan has a big beak.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A swan's beak is relatively small."
+      }
+    ]
+  },
+  "tiger": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A tiger has sharp claws."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tiger has bright eyes."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tiger runs very fast."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tiger has soft fur."
+      }
+    ],
+    "refused": []
+  },
+  "tomato": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A tomato grows on a plant."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tomato has a stem."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tomato has seeds inside."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tomato gets ripe on the vine."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A tomato is red and juicy.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: some tomatoes are yellow, green, or other colors"
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tomato has a soft skin.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The skin of a tomato is not soft, it's slightly firm"
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tomato is sweet to eat.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Tomatoes are often savory rather than sweet"
+      }
+    ]
+  },
+  "tractor": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A tractor drives on a farm."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tractor pulls a big trailer."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tractor has big wheels."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A tractor makes a loud noise."
+      }
+    ],
+    "refused": []
+  },
+  "train": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A train carries people."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A train has big wheels."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A train blows a loud horn."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A train goes on tracks."
+      }
+    ],
+    "refused": []
+  },
+  "watermelon": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A watermelon is sweet."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A watermelon has a green skin."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A watermelon grows in a field."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A watermelon has juicy flesh."
+      }
+    ],
+    "refused": []
+  },
+  "whale": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A whale swims in the water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A whale jumps out of water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A whale sings a loud song."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A whale lives with friends."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A whale eats fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all whales eat fish, some whales eat plankton or krill"
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A whale has a big mouth.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Whales are mammals and do not have a mouth like fish, they have a blowhole on top of their head and feed through baleen plates"
+      }
+    ]
+  },
+  "wolf": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A wolf runs in the woods."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A wolf has sharp teeth."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A wolf has a fluffy tail."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A wolf eats meat."
+      }
+    ],
+    "refused": []
+  },
+  "zebra": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A zebra runs very fast."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A zebra eats grass."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A zebra lives with friends."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A zebra kicks its legs."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A zebra has black stripes.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A zebra has both black and white stripes."
       }
     ]
   }

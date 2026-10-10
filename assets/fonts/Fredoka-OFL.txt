@@ -1,0 +1,3 @@
+Fredoka, by Milena Brandao and Hafontia.
+Licensed under the SIL Open Font Licence 1.1, which allows commercial use and
+redistribution with the font. Source: github.com/google/fonts/tree/main/ofl/fredoka

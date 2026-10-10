@@ -98,11 +98,18 @@ def main(argv=None):
         return 0
 
     print(f"{len(wanted)} subject(s) to verify")
+    unreachable = []
     for subject in wanted:
         try:
             hits = search(subject, key)
         except Exception as e:                                   # noqa: BLE001
-            print(f"  {subject:14} search failed: {str(e)[:70]}")
+            # NOT recorded as a subject with no clips. The network went away during the
+            # first full build and fourteen subjects came back "search failed", which the
+            # summary then counted as absent footage - the same mistake the coverage probe
+            # made with HTTP 429. A question that could not be asked has no answer, in
+            # either direction.
+            print(f"  {subject:14} COULD NOT ASK: {str(e)[:60]}")
+            unreachable.append(subject)
             continue
         kept, rejected = catalogue.verify_subject(subject, hits, account, token, WORK, vision)
         data[subject] = {"clips": kept, "rejected": rejected,
@@ -114,13 +121,18 @@ def main(argv=None):
         catalogue.save(data)
 
     covered = [s for s in all_subjects if data.get(s, {}).get("clips")]
-    print(f"\n{len(covered)} of {len(all_subjects)} subjects have at least one verified clip "
-          f"({100 * len(covered) / len(all_subjects):.0f}%)")
+    asked = len(all_subjects) - len(unreachable)
+    print(f"\n{len(covered)} of {asked} subjects asked about have at least one "
+          f"verified clip ({100 * len(covered) / max(asked, 1):.0f}%)")
+    if unreachable:
+        print(f"COULD NOT ASK about {len(unreachable)}, so they are in neither figure "
+              f"and have no entry: {', '.join(unreachable)}")
     thin = [s for s in covered if len(data[s]["clips"]) < 2]
     if thin:
         print(f"only one clip, so two cards in a video could collide: {', '.join(thin)}")
     print(f"written to {catalogue.CATALOGUE}")
-    return 0
+    # Non-zero so a half-finished build cannot be mistaken for a complete one.
+    return 1 if unreachable else 0
 
 
 if __name__ == "__main__":

@@ -156,6 +156,7 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
             video_source="stock" if clip else "drawn",
             sound_id=(sound or {}).get("id"),
             sound_licence=(sound or {}).get("licence"),
+            sound_url=(sound or {}).get("url"),
             sound_attribution=sounds_module.attribution_line(sound) if sound else None)
 
     db.remember_subjects(video_id, [s for s, _ in plan])

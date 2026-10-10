@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS cards (
     video_source TEXT,
     sound_id TEXT,
     sound_licence TEXT,
+    sound_url TEXT,
     sound_attribution TEXT,
     audio_path TEXT,
     duration_s REAL
@@ -69,7 +70,13 @@ _VIDEO_FIELDS = {"theme", "status", "title", "seo_title", "description", "tags",
                  "video_path", "thumbnail_path", "youtube_id", "published_at", "error",
                  "attempts"}
 _CARD_FIELDS = {"fact", "clip_id", "clip_url", "clip_licence", "image_path", "video_source",
-                "sound_id", "sound_licence", "sound_attribution", "audio_path", "duration_s"}
+                "sound_id", "sound_licence", "sound_url", "sound_attribution", "audio_path", "duration_s"}
+
+# Columns added after a database already existed. CREATE TABLE IF NOT EXISTS does not add a
+# column to a table that is already there, and this database is committed to git and outlives
+# every schema change, so new columns arrive here. Caught on the first one: sound_url was
+# added to the schema and the existing file carried on without it until an INSERT failed.
+_MIGRATIONS = [("cards", "sound_url", "TEXT")]
 
 MAX_ATTEMPTS = 3
 
@@ -93,6 +100,15 @@ def init_db():
     Path(DB_PATH).parent.mkdir(parents=True, exist_ok=True)
     with _connect() as conn:
         conn.executescript(SCHEMA)
+        _migrate(conn)
+
+
+def _migrate(conn):
+    """Add columns an older database predates. Safe to run on every start."""
+    for table, column, decl in _MIGRATIONS:
+        existing = {r["name"] for r in conn.execute(f"PRAGMA table_info({table})")}
+        if column not in existing:
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
 
 
 def create_video(theme):
