@@ -1,0 +1,89 @@
+{
+  "dolphin": {
+    "candidates_seen": 10,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-10",
+        "creator": "jfournier18",
+        "id": "3a946190-883e-42b3-b818-ecd3bf90a7e5",
+        "is": "a dolphin making its own sound",
+        "licence": "cc0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/jfournier18/sounds/456151",
+        "seconds": 2.6,
+        "source": "freesound",
+        "title": "Dolphin Noise-.wav",
+        "url": "https://cdn.freesound.org/previews/456/456151_9126235-hq.mp3"
+      }
+    ]
+  },
+  "octopus": {
+    "candidates_seen": 1,
+    "refused": [],
+    "silent": true,
+    "sounds": [],
+    "why": "silent: every candidate was a game sound or an alphabet recording"
+  },
+  "penguin": {
+    "candidates_seen": 13,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": true,
+        "checked": "2026-10-10",
+        "creator": "Mikeybear",
+        "id": "ce78dfa7-a20b-40a9-8ed5-736713a30abf",
+        "is": "a Little Penguin making calls",
+        "licence": "by",
+        "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+        "licence_version": "3.0",
+        "page": "https://commons.wikimedia.org/w/index.php?curid=8525129",
+        "seconds": 84.6,
+        "source": "wikimedia_audio",
+        "title": "20091121 Little Penguin calls at St Kilda Breakwater",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/20091121_Little_Penguin_calls_at_St_Kilda_Breakwater.ogg"
+      }
+    ]
+  },
+  "seahorse": {
+    "candidates_seen": 1,
+    "refused": [],
+    "silent": true,
+    "sounds": [],
+    "why": "silent: no candidates at all"
+  },
+  "shark": {
+    "candidates_seen": 1,
+    "refused": [],
+    "silent": true,
+    "sounds": [],
+    "why": "silent: every candidate was a song, a mimic or a pronunciation"
+  },
+  "whale": {
+    "candidates_seen": 16,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-10",
+        "creator": "KEVOY",
+        "id": "8166bd25-d58b-4f61-8023-5ff43a63e4a4",
+        "is": "a whale making its own sound",
+        "licence": "cc0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/KEVOY/sounds/82325",
+        "seconds": 60.1,
+        "source": "freesound",
+        "title": "Diving with whales.wav",
+        "url": "https://cdn.freesound.org/previews/82/82325_1299633-hq.mp3"
+      }
+    ]
+  }
+}
