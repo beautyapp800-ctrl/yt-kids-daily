@@ -38,8 +38,21 @@ def test_imagenet_labels_match_the_subject_they_mean():
     for subject, label in [("shark", "tiger shark, galeocerdo cuvieri"), ("airplane", "airliner"),
                            ("train", "electric locomotive"), ("fire truck", "fire engine"),
                            ("cow", "ox"), ("chicken", "hen"), ("sea turtle", "loggerhead turtle"),
-                           ("whale", "grey whale, gray whale"), ("school bus", "minibus")]:
+                           ("whale", "grey whale, gray whale"), ("tomato", "tomatoes"),
+                           ("butterfly", "butterflies"), ("school bus", "school buses")]:
         check(vision.names_subject(subject, label), f"{label!r} counts as {subject}")
+
+
+def test_the_word_in_front_is_the_subject_for_a_few_of_them():
+    """A child learning "school bus" has to see a school bus. The inside of a city bus
+    teaches the wrong word, and that is the clip Pixabay returned."""
+    print("test_the_word_in_front_is_the_subject_for_a_few_of_them")
+    for subject, label in [("school bus", "minibus"), ("school bus", "bus"),
+                           ("police car", "car"), ("fire truck", "truck")]:
+        check(not vision.names_subject(subject, label),
+              f"{label!r} is not enough for {subject}")
+    check(vision.names_subject("sea turtle", "turtle"),
+          "but any turtle will do for a sea turtle - the list is short on purpose")
 
 
 def test_the_frames_that_fooled_the_tags_do_not_fool_this():
@@ -80,6 +93,7 @@ def test_a_model_that_falls_over_does_not_stop_the_pipeline():
 if __name__ == "__main__":
     test_every_subject_has_a_synonym_entry()
     test_imagenet_labels_match_the_subject_they_mean()
+    test_the_word_in_front_is_the_subject_for_a_few_of_them()
     test_the_frames_that_fooled_the_tags_do_not_fool_this()
     test_a_low_score_guess_is_not_evidence()
     test_a_model_that_falls_over_does_not_stop_the_pipeline()

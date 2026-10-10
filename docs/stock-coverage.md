@@ -38,3 +38,33 @@ public. A daily run picks from that catalogue and never searches live.
 Subjects with no good clip are drawn instead. On the first pass that is roughly one in five,
 and it falls as the catalogue is filled in, because most subjects have a good clip somewhere
 in the first dozen results - the first result just is not it.
+
+## Can the "is it really a whale" step be automated?
+
+Measured on the same 59 frames, against the verdict in `data/human-verdict.json` which was
+written down before any model was asked.
+
+| policy | catches the 12 wrong frames | loses good frames (of 29) |
+|---|---|---|
+| vision-language model alone | **9** | **0** |
+| classifier (resnet-50) alone | 8 | 5 |
+| either model says yes | 8 | 0 |
+| both must say yes | 9 | 5 |
+
+So the describer decides and the classifier stands in only when the describer cannot be
+reached. The classifier's failure is structural: it must return one of a thousand classes, so
+it cannot say "this is a sunset, not an orange" - it says "rapeseed, 0.6" and sounds sure.
+
+Of the three it still lets through, none is really the model being wrong about the subject:
+the airplane clip is a wing filmed from inside the cabin, the bee clip is a beekeeper's frame
+with bees on it, and the starfish clip does have a starfish in it, a few pixels across. All
+three are bad framing, not the wrong thing, and framing is a separate measurement - subject
+size in frame - not something a classifier has any business ruling on.
+
+Two of the twelve are also arguable in the other direction: "chicken" returned a rooster,
+which is a chicken, and the model was right to pass it. It was only wrong for us because the
+same shot already serves the rooster card.
+
+**The catalogue can therefore grow by itself.** New subjects are searched, every candidate
+frame is put to the describer, and only those it confirms enter `assets/clips.json`. Nothing
+is thrown away silently: a rejected clip is recorded with what the model said it was.

@@ -165,13 +165,70 @@ def describe(image_path, account, token, model=DESCRIBER):
     return re.sub(r"[^a-z ]", " ", str(text).lower()).strip()
 
 
+# Subjects where the word in front is the subject, not a kind of it. A child learning
+# "school bus" has to see a yellow school bus; the inside of a city bus teaches the wrong
+# word, and the head-noun fallback let exactly that through. For "sea turtle" the opposite is
+# true - any turtle will do - so this is a short list and not a rule about compound words.
+STRICT_PHRASE = {"school bus", "police car", "fire truck"}
+
+
+def _forms(word):
+    """A word and the plural or singular a model is as likely to use.
+
+    Written out rather than left as word + "s", which is what it was: the describer answered
+    "tomatoes" for a frame of tomatoes and the check compared it against "tomatos", so a
+    perfectly good clip was thrown away by a spelling rule. That was the only good frame lost
+    in the whole measurement - the models had not made a single mistake on it.
+    """
+    w = word.lower()
+    out = {w}
+    if w.endswith(("s", "x", "z", "ch", "sh")):
+        out.add(w + "es")
+    elif w.endswith("y") and len(w) > 1 and w[-2] not in "aeiou":
+        out.add(w[:-1] + "ies")
+    elif w.endswith("o"):
+        out.update({w + "es", w + "s"})
+    elif w.endswith("fe"):
+        out.add(w[:-2] + "ves")
+    elif w.endswith("f"):
+        out.add(w[:-1] + "ves")
+    else:
+        out.add(w + "s")
+    for suffix, back in (("ies", "y"), ("oes", "o"), ("ves", "f"), ("es", ""), ("s", "")):
+        if w.endswith(suffix) and len(w) > len(suffix):
+            out.add(w[:-len(suffix)] + back)
+    return {f for f in out if f}
+
+
+def _phrase_forms(phrase):
+    """The phrase, and the phrase with its last word pluralised - "school buses", not "buses"."""
+    parts = phrase.split()
+    if not parts:
+        return set()
+    return {" ".join(parts[:-1] + [f]) for f in _forms(parts[-1])}
+
+
 def names_subject(subject, text):
-    """Whether `text` names the subject, allowing for the words a model would really use."""
-    words = SYNONYMS.get(subject.lower(), [subject.lower()])
-    if subject.lower() not in words:
-        words = words + [subject.lower()]
-    head = subject.lower().split()[-1]
-    words = words + [head, head + "s", head.rstrip("s")]
+    """Whether `text` names the subject, allowing for the words a model would really use.
+
+    For most subjects the head noun is enough and is wanted: any turtle will do for "sea
+    turtle". For the few in STRICT_PHRASE it is not, and only multi-word forms count - the
+    first version of this filtered the bare head out and then put it straight back by adding
+    the plural forms of every synonym's last word, so "bus" still matched "school bus".
+    """
+    low_subject = subject.lower()
+    given = set(SYNONYMS.get(low_subject, [])) | {low_subject}
+    if low_subject in STRICT_PHRASE:
+        words = set()
+        for w in given:
+            if len(w.split()) > 1:
+                words |= _phrase_forms(w)
+        words |= _phrase_forms(low_subject)
+    else:
+        words = set(given)
+        words |= _forms(low_subject.split()[-1])
+        words |= {f for w in given for f in _forms(w.split()[-1])}
+        words |= {f for w in given if len(w.split()) > 1 for f in _phrase_forms(w)}
     low = f" {text} "
     return any(re.search(rf"\b{re.escape(w)}\b", low) for w in words if w)
 
@@ -194,6 +251,12 @@ def verify(image_path, subject, account, token, use_describer=True):
             out["by_describer"] = names_subject(subject, out["description"])
         except VisionError as e:
             out["errors"].append(str(e)[:160])
-    votes = [v for v in (out["by_classifier"], out["by_describer"]) if v is not None]
-    out["shows_it"] = any(votes) if votes else None
+    # Measured on 59 frames already judged by eye: the describer alone rejected 9 of the 12
+    # frames that showed the wrong thing and threw away none of the 29 good ones, while the
+    # classifier threw away 5 good ones - it has no way to say "nothing much", so a sunset
+    # comes back as a confident guess at something. Taking either vote as a pass was worse
+    # than the describer alone. So the describer decides, and the classifier only stands in
+    # when the describer could not be reached.
+    out["shows_it"] = (out["by_describer"] if out["by_describer"] is not None
+                       else out["by_classifier"])
     return out

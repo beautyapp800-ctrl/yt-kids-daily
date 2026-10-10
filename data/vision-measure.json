@@ -1,0 +1,1845 @@
+{
+  "caught": [
+    "carrot",
+    "chicken",
+    "motorcycle",
+    "octopus",
+    "orange",
+    "police car",
+    "school bus",
+    "shark",
+    "train"
+  ],
+  "lost": [],
+  "results": {
+    "airplane": {
+      "human": "wrong",
+      "subject": "airplane",
+      "labels": [
+        [
+          "wing",
+          0.9999990463256836
+        ],
+        [
+          "volcano",
+          3.8542728475476906e-07
+        ],
+        [
+          "alp",
+          2.87397398324174e-07
+        ],
+        [
+          "valley",
+          2.597171828710998e-07
+        ],
+        [
+          "parachute",
+          1.5356202709426725e-07
+        ]
+      ],
+      "description": "airplane",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "ant": {
+      "human": "weak",
+      "subject": "ant",
+      "labels": [
+        [
+          "ant",
+          0.9999996423721313
+        ],
+        [
+          "isopod",
+          1.4418631621992972e-07
+        ],
+        [
+          "centipede",
+          1.0010132456272913e-07
+        ],
+        [
+          "nail",
+          5.823554616313231e-08
+        ],
+        [
+          "cockroach",
+          3.907534917857447e-08
+        ]
+      ],
+      "description": "ant",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "apple": {
+      "human": "strong",
+      "subject": "apple",
+      "labels": [
+        [
+          "granny smith",
+          0.9867913722991943
+        ],
+        [
+          "lemon",
+          0.010786859318614006
+        ],
+        [
+          "fig",
+          0.001141425920650363
+        ],
+        [
+          "pomegranate",
+          0.0006563384085893631
+        ],
+        [
+          "hip",
+          0.0006241047522053123
+        ]
+      ],
+      "description": "apple",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "banana": {
+      "human": "weak",
+      "subject": "banana",
+      "labels": [
+        [
+          "banana",
+          0.9772903919219971
+        ],
+        [
+          "maillot",
+          0.009376977570354939
+        ],
+        [
+          "maillot",
+          0.007609685882925987
+        ],
+        [
+          "gown",
+          0.0031507015228271484
+        ],
+        [
+          "bikini",
+          0.0025721958372741938
+        ]
+      ],
+      "description": "woman",
+      "by_classifier": true,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "bear": {
+      "human": "strong",
+      "subject": "bear",
+      "labels": [
+        [
+          "brown bear",
+          0.999992847442627
+        ],
+        [
+          "sloth bear",
+          5.834193416376365e-06
+        ],
+        [
+          "giant panda",
+          7.188211839093128e-07
+        ],
+        [
+          "laptop",
+          4.222987968205416e-07
+        ],
+        [
+          "crane",
+          2.9529326184274396e-07
+        ]
+      ],
+      "description": "bear",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "bee": {
+      "human": "wrong",
+      "subject": "bee",
+      "labels": [
+        [
+          "honeycomb",
+          0.9992679953575134
+        ],
+        [
+          "apiary",
+          0.000639367091935128
+        ],
+        [
+          "bee",
+          4.655788143281825e-05
+        ],
+        [
+          "ear",
+          2.704962571442593e-05
+        ],
+        [
+          "ant",
+          1.9096713003818877e-05
+        ]
+      ],
+      "description": "bees",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "boat": {
+      "human": "weak",
+      "subject": "boat",
+      "labels": [
+        [
+          "canoe",
+          0.9962085485458374
+        ],
+        [
+          "lakeside",
+          0.002304603811353445
+        ],
+        [
+          "paddle",
+          0.001069168676622212
+        ],
+        [
+          "alp",
+          0.0002856950450222939
+        ],
+        [
+          "sandbar",
+          0.00013192107144277543
+        ]
+      ],
+      "description": "boat",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "broccoli": {
+      "human": "strong",
+      "subject": "broccoli",
+      "labels": [
+        [
+          "broccoli",
+          0.9968047142028809
+        ],
+        [
+          "cauliflower",
+          0.002613939344882965
+        ],
+        [
+          "cucumber",
+          0.00021947328059468418
+        ],
+        [
+          "head cabbage",
+          0.00018673356680665165
+        ],
+        [
+          "meat loaf",
+          0.00017512560589239
+        ]
+      ],
+      "description": "broccoli",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "butterfly": {
+      "human": "strong",
+      "subject": "butterfly",
+      "labels": [
+        [
+          "lycaenid",
+          0.9999911785125732
+        ],
+        [
+          "ringlet",
+          3.6024628116138047e-06
+        ],
+        [
+          "cabbage butterfly",
+          2.3510315259045456e-06
+        ],
+        [
+          "sulphur butterfly",
+          2.0562283680192195e-06
+        ],
+        [
+          "dragonfly",
+          8.359875778296555e-07
+        ]
+      ],
+      "description": "butterfly",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "carrot": {
+      "human": "wrong",
+      "subject": "carrot",
+      "labels": [
+        [
+          "pot",
+          0.4481053352355957
+        ],
+        [
+          "vase",
+          0.19560955464839935
+        ],
+        [
+          "cabbage butterfly",
+          0.1918998658657074
+        ],
+        [
+          "hair slide",
+          0.13303373754024506
+        ],
+        [
+          "hummingbird",
+          0.03135151416063309
+        ]
+      ],
+      "description": "flower",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "chicken": {
+      "human": "wrong",
+      "subject": "chicken",
+      "labels": [
+        [
+          "rooster",
+          0.6719546318054199
+        ],
+        [
+          "hen",
+          0.31840378046035767
+        ],
+        [
+          "kite",
+          0.00797066930681467
+        ],
+        [
+          "partridge",
+          0.0010538750793784857
+        ],
+        [
+          "vulture",
+          0.0006170172709971666
+        ]
+      ],
+      "description": "rooster",
+      "by_classifier": true,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "cow": {
+      "human": "weak",
+      "subject": "cow",
+      "labels": [
+        [
+          "ibizan hound",
+          0.6771780252456665
+        ],
+        [
+          "english foxhound",
+          0.2460515946149826
+        ],
+        [
+          "brittany spaniel",
+          0.03498551622033119
+        ],
+        [
+          "welsh springer spaniel",
+          0.021750785410404205
+        ],
+        [
+          "basset",
+          0.020034078508615494
+        ]
+      ],
+      "description": "cow",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "crab": {
+      "human": "weak",
+      "subject": "crab",
+      "labels": [
+        [
+          "fiddler crab",
+          1.0
+        ],
+        [
+          "wreck",
+          2.8175852762046816e-09
+        ],
+        [
+          "cinema",
+          2.2114639008918857e-09
+        ],
+        [
+          "sandbar",
+          2.0105750397902966e-09
+        ],
+        [
+          "shovel",
+          1.343963385025404e-09
+        ]
+      ],
+      "description": "crab",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "dolphin": {
+      "human": "weak",
+      "subject": "dolphin",
+      "labels": [
+        [
+          "sea lion",
+          0.9960921406745911
+        ],
+        [
+          "electric ray",
+          0.0017677213763818145
+        ],
+        [
+          "killer whale",
+          0.0013252898352220654
+        ],
+        [
+          "king penguin",
+          0.0005778776830993593
+        ],
+        [
+          "scuba diver",
+          0.00023690111993346363
+        ]
+      ],
+      "description": "dolphin",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "dragonfly": {
+      "human": "strong",
+      "subject": "dragonfly",
+      "labels": [
+        [
+          "dragonfly",
+          0.9995668530464172
+        ],
+        [
+          "damselfly",
+          0.00039788999129086733
+        ],
+        [
+          "fly",
+          1.542062273074407e-05
+        ],
+        [
+          "cicada",
+          1.0353114703320898e-05
+        ],
+        [
+          "lacewing",
+          9.585601219441742e-06
+        ]
+      ],
+      "description": "dragonfly",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "duck": {
+      "human": "strong",
+      "subject": "duck",
+      "labels": [
+        [
+          "goose",
+          0.8286556005477905
+        ],
+        [
+          "hen",
+          0.09585430473089218
+        ],
+        [
+          "weasel",
+          0.05387305095791817
+        ],
+        [
+          "vulture",
+          0.012818217277526855
+        ],
+        [
+          "american coot",
+          0.008798877708613873
+        ]
+      ],
+      "description": "duck",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "eagle": {
+      "human": "strong",
+      "subject": "eagle",
+      "labels": [
+        [
+          "bald eagle",
+          0.9990537762641907
+        ],
+        [
+          "kite",
+          0.00044268372585065663
+        ],
+        [
+          "vulture",
+          0.0003481562016531825
+        ],
+        [
+          "great grey owl",
+          0.0001052758379955776
+        ],
+        [
+          "hen",
+          5.0096448831027374e-05
+        ]
+      ],
+      "description": "eagle",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "elephant": {
+      "human": "weak",
+      "subject": "elephant",
+      "labels": [
+        [
+          "african elephant",
+          0.9348708987236023
+        ],
+        [
+          "indian elephant",
+          0.04871217533946037
+        ],
+        [
+          "tusker",
+          0.014862003736197948
+        ],
+        [
+          "zebra",
+          0.0009239373612217605
+        ],
+        [
+          "african crocodile",
+          0.0006310200551524758
+        ]
+      ],
+      "description": "elephant",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "excavator": {
+      "human": "strong",
+      "subject": "excavator",
+      "labels": [
+        [
+          "amphibian",
+          0.48727020621299744
+        ],
+        [
+          "crane",
+          0.2870957851409912
+        ],
+        [
+          "tank",
+          0.11944945156574249
+        ],
+        [
+          "wreck",
+          0.06888502091169357
+        ],
+        [
+          "jeep",
+          0.03729953244328499
+        ]
+      ],
+      "description": "bulldozer",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "fire truck": {
+      "human": "weak",
+      "subject": "fire truck",
+      "labels": [
+        [
+          "traffic light",
+          0.8860666155815125
+        ],
+        [
+          "trailer truck",
+          0.053449422121047974
+        ],
+        [
+          "tow truck",
+          0.0418170690536499
+        ],
+        [
+          "fire engine",
+          0.017832832410931587
+        ],
+        [
+          "ambulance",
+          0.0008340877830050886
+        ]
+      ],
+      "description": "fire truck",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "flamingo": {
+      "human": "strong",
+      "subject": "flamingo",
+      "labels": [
+        [
+          "flamingo",
+          0.9921854138374329
+        ],
+        [
+          "american egret",
+          0.005471819546073675
+        ],
+        [
+          "lakeside",
+          0.0008678577723912895
+        ],
+        [
+          "crane",
+          0.0008643391192890704
+        ],
+        [
+          "white stork",
+          0.0006106123910285532
+        ]
+      ],
+      "description": "flamingo",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "fox": {
+      "human": "strong",
+      "subject": "fox",
+      "labels": [
+        [
+          "red fox",
+          0.9999333620071411
+        ],
+        [
+          "grey fox",
+          3.3997628634097055e-05
+        ],
+        [
+          "arctic fox",
+          1.7851960365078412e-05
+        ],
+        [
+          "kit fox",
+          9.7769761850941e-06
+        ],
+        [
+          "coyote",
+          5.014913767809048e-06
+        ]
+      ],
+      "description": "fox",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "giraffe": {
+      "human": "strong",
+      "subject": "giraffe",
+      "labels": [
+        [
+          "leopard",
+          0.6749019026756287
+        ],
+        [
+          "cheetah",
+          0.13465574383735657
+        ],
+        [
+          "zebra",
+          0.10175721347332001
+        ],
+        [
+          "jaguar",
+          0.07492000609636307
+        ],
+        [
+          "ostrich",
+          0.013765173964202404
+        ]
+      ],
+      "description": "giraffe",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "goat": {
+      "human": "strong",
+      "subject": "goat",
+      "labels": [
+        [
+          "ram",
+          0.37067127227783203
+        ],
+        [
+          "borzoi",
+          0.3697398900985718
+        ],
+        [
+          "collie",
+          0.09393049776554108
+        ],
+        [
+          "papillon",
+          0.08291928470134735
+        ],
+        [
+          "ibex",
+          0.08273902535438538
+        ]
+      ],
+      "description": "goat",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "grapes": {
+      "human": "weak",
+      "subject": "grapes",
+      "labels": [
+        [
+          "spider web",
+          0.5025429725646973
+        ],
+        [
+          "fig",
+          0.4459925889968872
+        ],
+        [
+          "spaghetti squash",
+          0.03290083259344101
+        ],
+        [
+          "leaf beetle",
+          0.011987568810582161
+        ],
+        [
+          "chainlink fence",
+          0.006576077546924353
+        ]
+      ],
+      "description": "leaf",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "helicopter": {
+      "human": "weak",
+      "subject": "helicopter",
+      "labels": [
+        [
+          "warplane",
+          0.7507365345954895
+        ],
+        [
+          "wing",
+          0.16209562122821808
+        ],
+        [
+          "airliner",
+          0.03430817276239395
+        ],
+        [
+          "parachute",
+          0.02899196930229664
+        ],
+        [
+          "pole",
+          0.023867590352892876
+        ]
+      ],
+      "description": "helicopter",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "horse": {
+      "human": "weak",
+      "subject": "horse",
+      "labels": [
+        [
+          "sorrel",
+          0.8189561367034912
+        ],
+        [
+          "redbone",
+          0.10226525366306305
+        ],
+        [
+          "gazelle",
+          0.039705824106931686
+        ],
+        [
+          "ox",
+          0.022097542881965637
+        ],
+        [
+          "rhodesian ridgeback",
+          0.016975222155451775
+        ]
+      ],
+      "description": "horse",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "jellyfish": {
+      "human": "strong",
+      "subject": "jellyfish",
+      "labels": [
+        [
+          "jellyfish",
+          1.0
+        ],
+        [
+          "lacewing",
+          9.112741117256462e-10
+        ],
+        [
+          "garden spider",
+          7.342880747884806e-10
+        ],
+        [
+          "cockroach",
+          7.021367931514533e-10
+        ],
+        [
+          "sea slug",
+          6.355969639493253e-10
+        ]
+      ],
+      "description": "jellyfish",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "kangaroo": {
+      "human": "strong",
+      "subject": "kangaroo",
+      "labels": [
+        [
+          "wallaby",
+          0.9999998807907104
+        ],
+        [
+          "rock python",
+          8.114327698649504e-08
+        ],
+        [
+          "banjo",
+          5.275603953691643e-08
+        ],
+        [
+          "custard apple",
+          3.3951074840388173e-08
+        ],
+        [
+          "zebra",
+          2.0314413262667586e-08
+        ]
+      ],
+      "description": "kangaroo",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "ladybug": {
+      "human": "weak",
+      "subject": "ladybug",
+      "labels": [
+        [
+          "ladybug",
+          0.9919930696487427
+        ],
+        [
+          "leaf beetle",
+          0.007329294458031654
+        ],
+        [
+          "ant",
+          0.00034897978184744716
+        ],
+        [
+          "leafhopper",
+          0.0002066487359115854
+        ],
+        [
+          "strawberry",
+          0.0001220907870447263
+        ]
+      ],
+      "description": "ladybug",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "lion": {
+      "human": "strong",
+      "subject": "lion",
+      "labels": [
+        [
+          "lion",
+          0.9998743534088135
+        ],
+        [
+          "jaguar",
+          4.660599370254204e-05
+        ],
+        [
+          "cougar",
+          4.384190833661705e-05
+        ],
+        [
+          "tiger",
+          1.8505306798033416e-05
+        ],
+        [
+          "tiger cat",
+          1.6668735042912886e-05
+        ]
+      ],
+      "description": "lion",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "monkey": {
+      "human": "strong",
+      "subject": "monkey",
+      "labels": [
+        [
+          "macaque",
+          0.9935243129730225
+        ],
+        [
+          "guenon",
+          0.002243492752313614
+        ],
+        [
+          "langur",
+          0.002071474213153124
+        ],
+        [
+          "titi",
+          0.001538692507892847
+        ],
+        [
+          "baboon",
+          0.0006220838986337185
+        ]
+      ],
+      "description": "monkey",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "motorcycle": {
+      "human": "wrong",
+      "subject": "motorcycle",
+      "labels": [
+        [
+          "bobsled",
+          0.6835524439811707
+        ],
+        [
+          "racer",
+          0.17529691755771637
+        ],
+        [
+          "sports car",
+          0.08071010559797287
+        ],
+        [
+          "amphibian",
+          0.04244706407189369
+        ],
+        [
+          "crash helmet",
+          0.017993446439504623
+        ]
+      ],
+      "description": "flag",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "octopus": {
+      "human": "wrong",
+      "subject": "octopus",
+      "labels": [
+        [
+          "toyshop",
+          0.40897175669670105
+        ],
+        [
+          "packet",
+          0.30853065848350525
+        ],
+        [
+          "tray",
+          0.12040214240550995
+        ],
+        [
+          "confectionery",
+          0.10405378043651581
+        ],
+        [
+          "comic book",
+          0.0580415353178978
+        ]
+      ],
+      "description": "carousel",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "orange": {
+      "human": "wrong",
+      "subject": "orange",
+      "labels": [
+        [
+          "seashore",
+          0.8275953531265259
+        ],
+        [
+          "drilling platform",
+          0.11121923476457596
+        ],
+        [
+          "ice bear",
+          0.04230934754014015
+        ],
+        [
+          "beacon",
+          0.01138205174356699
+        ],
+        [
+          "schooner",
+          0.007493955083191395
+        ]
+      ],
+      "description": "sun",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "owl": {
+      "human": "weak",
+      "subject": "owl",
+      "labels": [
+        [
+          "hen",
+          0.6107672452926636
+        ],
+        [
+          "hornbill",
+          0.1454368233680725
+        ],
+        [
+          "kite",
+          0.11439667642116547
+        ],
+        [
+          "quail",
+          0.09770826250314713
+        ],
+        [
+          "vulture",
+          0.03169095143675804
+        ]
+      ],
+      "description": "owl",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "parrot": {
+      "human": "strong",
+      "subject": "parrot",
+      "labels": [
+        [
+          "macaw",
+          0.9999995231628418
+        ],
+        [
+          "syringe",
+          1.5378442697056016e-07
+        ],
+        [
+          "cockatoo",
+          1.5328819813476002e-07
+        ],
+        [
+          "toucan",
+          1.290326139269382e-07
+        ],
+        [
+          "rhinoceros beetle",
+          1.262331608131717e-07
+        ]
+      ],
+      "description": "parrot",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "peacock": {
+      "human": "strong",
+      "subject": "peacock",
+      "labels": [
+        [
+          "peacock",
+          1.0
+        ],
+        [
+          "triceratops",
+          2.9587081229465184e-08
+        ],
+        [
+          "cuirass",
+          2.461859160973745e-08
+        ],
+        [
+          "pole",
+          1.1770971752866899e-08
+        ],
+        [
+          "hoopskirt",
+          1.1447660597241338e-08
+        ]
+      ],
+      "description": "peacock",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "penguin": {
+      "human": "strong",
+      "subject": "penguin",
+      "labels": [
+        [
+          "king penguin",
+          0.836704432964325
+        ],
+        [
+          "oystercatcher",
+          0.15219566226005554
+        ],
+        [
+          "magpie",
+          0.009748673997819424
+        ],
+        [
+          "lakeside",
+          0.0007874493021517992
+        ],
+        [
+          "alp",
+          0.0005637742578983307
+        ]
+      ],
+      "description": "penguin",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "pig": {
+      "human": "strong",
+      "subject": "pig",
+      "labels": [
+        [
+          "hog",
+          0.9972578883171082
+        ],
+        [
+          "wild boar",
+          0.0021021238062530756
+        ],
+        [
+          "beagle",
+          0.000233559389016591
+        ],
+        [
+          "otterhound",
+          0.00022688141325488687
+        ],
+        [
+          "border terrier",
+          0.0001794971467461437
+        ]
+      ],
+      "description": "pig",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "pineapple": {
+      "human": "weak",
+      "subject": "pineapple",
+      "labels": [
+        [
+          "plastic bag",
+          0.9921254515647888
+        ],
+        [
+          "pineapple",
+          0.00272125331684947
+        ],
+        [
+          "cauliflower",
+          0.0018840127158910036
+        ],
+        [
+          "bagel",
+          0.0018542652251198888
+        ],
+        [
+          "bakery",
+          0.0014150026254355907
+        ]
+      ],
+      "description": "pineapple",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "police car": {
+      "human": "wrong",
+      "subject": "police car",
+      "labels": [
+        [
+          "flagpole",
+          0.6290768980979919
+        ],
+        [
+          "seashore",
+          0.16285493969917297
+        ],
+        [
+          "breakwater",
+          0.15683497488498688
+        ],
+        [
+          "dock",
+          0.031061898916959763
+        ],
+        [
+          "sundial",
+          0.020171260461211205
+        ]
+      ],
+      "description": "wall",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "rooster": {
+      "human": "strong",
+      "subject": "rooster",
+      "labels": [
+        [
+          "rooster",
+          0.6719546318054199
+        ],
+        [
+          "hen",
+          0.31840378046035767
+        ],
+        [
+          "kite",
+          0.00797066930681467
+        ],
+        [
+          "partridge",
+          0.0010538750793784857
+        ],
+        [
+          "vulture",
+          0.0006170172709971666
+        ]
+      ],
+      "description": "rooster",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "school bus": {
+      "human": "wrong",
+      "subject": "school bus",
+      "labels": [
+        [
+          "streetcar",
+          0.9500880837440491
+        ],
+        [
+          "passenger car",
+          0.030554931610822678
+        ],
+        [
+          "trolleybus",
+          0.011792303062975407
+        ],
+        [
+          "barber chair",
+          0.003851015819236636
+        ],
+        [
+          "turnstile",
+          0.003713697660714388
+        ]
+      ],
+      "description": "bus",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "sea turtle": {
+      "human": "strong",
+      "subject": "sea turtle",
+      "labels": [
+        [
+          "loggerhead",
+          0.9842661619186401
+        ],
+        [
+          "leatherback turtle",
+          0.009578400291502476
+        ],
+        [
+          "terrapin",
+          0.002380878198891878
+        ],
+        [
+          "coral reef",
+          0.0021829514298588037
+        ],
+        [
+          "scuba diver",
+          0.0015915523981675506
+        ]
+      ],
+      "description": "turtle",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "shark": {
+      "human": "wrong",
+      "subject": "shark",
+      "labels": [
+        [
+          "killer whale",
+          0.47840064764022827
+        ],
+        [
+          "king penguin",
+          0.18103328347206116
+        ],
+        [
+          "seashore",
+          0.15992464125156403
+        ],
+        [
+          "grey whale",
+          0.11565370857715607
+        ],
+        [
+          "sea lion",
+          0.06498780101537704
+        ]
+      ],
+      "description": "surfer",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "sheep": {
+      "human": "weak",
+      "subject": "sheep",
+      "labels": [
+        [
+          "weimaraner",
+          0.8723103404045105
+        ],
+        [
+          "english setter",
+          0.041567981243133545
+        ],
+        [
+          "hare",
+          0.03250877559185028
+        ],
+        [
+          "ibizan hound",
+          0.03143782541155815
+        ],
+        [
+          "labrador retriever",
+          0.022175101563334465
+        ]
+      ],
+      "description": "dog",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "spider": {
+      "human": "weak",
+      "subject": "spider",
+      "labels": [
+        [
+          "tiger beetle",
+          0.4666883945465088
+        ],
+        [
+          "long-horned beetle",
+          0.1913786679506302
+        ],
+        [
+          "ant",
+          0.16223028302192688
+        ],
+        [
+          "harvestman",
+          0.14257675409317017
+        ],
+        [
+          "fly",
+          0.037125974893569946
+        ]
+      ],
+      "description": "stick",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "starfish": {
+      "human": "wrong",
+      "subject": "starfish",
+      "labels": [
+        [
+          "starfish",
+          0.6563723683357239
+        ],
+        [
+          "seashore",
+          0.15609803795814514
+        ],
+        [
+          "sandbar",
+          0.09663636237382889
+        ],
+        [
+          "leatherback turtle",
+          0.0779620110988617
+        ],
+        [
+          "conch",
+          0.012931179255247116
+        ]
+      ],
+      "description": "starfish",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "strawberry": {
+      "human": "strong",
+      "subject": "strawberry",
+      "labels": [
+        [
+          "strawberry",
+          0.9999033212661743
+        ],
+        [
+          "paper towel",
+          6.696420314256102e-05
+        ],
+        [
+          "trifle",
+          1.0577708962955512e-05
+        ],
+        [
+          "chocolate sauce",
+          1.0577063221717253e-05
+        ],
+        [
+          "hip",
+          8.408669600612484e-06
+        ]
+      ],
+      "description": "strawberry",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "swan": {
+      "human": "strong",
+      "subject": "swan",
+      "labels": [
+        [
+          "goose",
+          0.9056963920593262
+        ],
+        [
+          "black swan",
+          0.08508481830358505
+        ],
+        [
+          "american coot",
+          0.0042868442833423615
+        ],
+        [
+          "drake",
+          0.002527258824557066
+        ],
+        [
+          "american egret",
+          0.002404622733592987
+        ]
+      ],
+      "description": "swan",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "tiger": {
+      "human": "strong",
+      "subject": "tiger",
+      "labels": [
+        [
+          "tiger",
+          0.8466181755065918
+        ],
+        [
+          "tiger cat",
+          0.15124505758285522
+        ],
+        [
+          "lynx",
+          0.0012312165927141905
+        ],
+        [
+          "jaguar",
+          0.00045575006515718997
+        ],
+        [
+          "leopard",
+          0.0004497862537391484
+        ]
+      ],
+      "description": "tiger",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "tomato": {
+      "human": "strong",
+      "subject": "tomato",
+      "labels": [
+        [
+          "grocery store",
+          0.43683740496635437
+        ],
+        [
+          "orange",
+          0.29266223311424255
+        ],
+        [
+          "bell pepper",
+          0.16750141978263855
+        ],
+        [
+          "banana",
+          0.05868878960609436
+        ],
+        [
+          "cucumber",
+          0.044310227036476135
+        ]
+      ],
+      "description": "tomatoes",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "tractor": {
+      "human": "weak",
+      "subject": "tractor",
+      "labels": [
+        [
+          "switch",
+          0.9585264921188354
+        ],
+        [
+          "fountain",
+          0.018263336271047592
+        ],
+        [
+          "mosquito net",
+          0.009519900195300579
+        ],
+        [
+          "pay-phone",
+          0.009238459169864655
+        ],
+        [
+          "padlock",
+          0.004451741464436054
+        ]
+      ],
+      "description": "tractor",
+      "by_classifier": false,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "train": {
+      "human": "wrong",
+      "subject": "train",
+      "labels": [
+        [
+          "steel arch bridge",
+          0.909173846244812
+        ],
+        [
+          "pier",
+          0.08250432461500168
+        ],
+        [
+          "breakwater",
+          0.0036600781604647636
+        ],
+        [
+          "sandbar",
+          0.002961687510833144
+        ],
+        [
+          "container ship",
+          0.001700040651485324
+        ]
+      ],
+      "description": "bridge",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "watermelon": {
+      "human": "weak",
+      "subject": "watermelon",
+      "labels": [
+        [
+          "seat belt",
+          0.9506643414497375
+        ],
+        [
+          "burrito",
+          0.01682134158909321
+        ],
+        [
+          "candle",
+          0.012096967548131943
+        ],
+        [
+          "fig",
+          0.010913670063018799
+        ],
+        [
+          "orange",
+          0.009503741748631
+        ]
+      ],
+      "description": "apple",
+      "by_classifier": false,
+      "by_describer": false,
+      "errors": [],
+      "shows_it": false
+    },
+    "whale": {
+      "human": "strong",
+      "subject": "whale",
+      "labels": [
+        [
+          "grey whale",
+          0.9991212487220764
+        ],
+        [
+          "leatherback turtle",
+          0.00042059036786668
+        ],
+        [
+          "loggerhead",
+          0.0003187800757586956
+        ],
+        [
+          "jellyfish",
+          8.293912833323702e-05
+        ],
+        [
+          "dugong",
+          5.6488363043172285e-05
+        ]
+      ],
+      "description": "whale",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "wolf": {
+      "human": "strong",
+      "subject": "wolf",
+      "labels": [
+        [
+          "timber wolf",
+          0.975925862789154
+        ],
+        [
+          "dingo",
+          0.009789356961846352
+        ],
+        [
+          "red wolf",
+          0.008218370378017426
+        ],
+        [
+          "white wolf",
+          0.0037960554473102093
+        ],
+        [
+          "coyote",
+          0.002270373748615384
+        ]
+      ],
+      "description": "wolf",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    },
+    "zebra": {
+      "human": "strong",
+      "subject": "zebra",
+      "labels": [
+        [
+          "zebra",
+          1.0
+        ],
+        [
+          "ostrich",
+          8.260709449814385e-09
+        ],
+        [
+          "impala",
+          6.124616369618252e-09
+        ],
+        [
+          "jaguar",
+          4.1977896714229246e-09
+        ],
+        [
+          "hartebeest",
+          3.781299717786624e-09
+        ]
+      ],
+      "description": "zebra",
+      "by_classifier": true,
+      "by_describer": true,
+      "errors": [],
+      "shows_it": true
+    }
+  }
+}
