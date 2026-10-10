@@ -88,7 +88,7 @@ def card_video(card, seconds, out_path, font=None):
     if card.get("clip_path"):
         # -stream_loop so a short clip fills a long card without being slowed down.
         args = ["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(card["clip_path"]),
-                "-i", str(label), "-t", f"{seconds:.3f}", "-filter_complex",
+                "-loop", "1", "-i", str(label), "-t", f"{seconds:.3f}", "-filter_complex",
                 f"[0:v]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
                 f"crop={WIDTH}:{HEIGHT},eq=saturation=1.30:contrast=1.10,"
                 f"zoompan=z='min(zoom+0.00035,1.08)':d=1:s={WIDTH}x{HEIGHT}:fps={FPS}[v];"
@@ -98,7 +98,7 @@ def card_video(card, seconds, out_path, font=None):
         zoom = (f"zoompan=z='min(zoom+0.0006,1.12)':d={int(seconds * FPS)}"
                 f":s={WIDTH}x{HEIGHT}:fps={FPS}")
         args = ["ffmpeg", "-y", "-loop", "1", "-i", str(card["image_path"]),
-                "-i", str(label), "-t", f"{seconds:.3f}", "-filter_complex",
+                "-loop", "1", "-i", str(label), "-t", f"{seconds:.3f}", "-filter_complex",
                 f"[0:v]scale={WIDTH * 2}:-1,{zoom},eq=saturation=1.15[v];{overlay}"]
     args += ["-an", "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
              "-pix_fmt", "yuv420p", str(out_path)]
