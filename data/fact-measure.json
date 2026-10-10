@@ -1,0 +1,650 @@
+[
+  {
+    "subject": "cow",
+    "fact": "A cow gives us milk.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "pig",
+    "fact": "A pig rolls in mud.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "sheep",
+    "fact": "A sheep has soft wool.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "horse",
+    "fact": "A horse runs very fast.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A horse does not always run very fast. Horses can walk, trot, canter, and gallop.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "chicken",
+    "fact": "A chicken lays eggs.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A chicken lays eggs. Chickens are male, but only hens lay eggs.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "duck",
+    "fact": "A duck swims in water.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "goat",
+    "fact": "A goat climbs high.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A goat does not always climb high. Goats can climb, but they can also walk or run.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "rooster",
+    "fact": "A rooster makes loud noise.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "lion",
+    "fact": "A lion has sharp teeth.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "elephant",
+    "fact": "An elephant has a long trunk.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "tiger",
+    "fact": "A tiger has bright stripes.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A tiger has bright stripes. It should be 'orange and black stripes' or simply 'orange and black stripes' to be more accurate.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "bear",
+    "fact": "A bear is very strong.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "monkey",
+    "fact": "A monkey swings from trees.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A monkey does not always swing from trees.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "giraffe",
+    "fact": "A giraffe has a long neck.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "zebra",
+    "fact": "A zebra has black stripes.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: A zebra has both black and white stripes.; llama-3.1-8b-instruct: A zebra has black and white stripes.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "wolf",
+    "fact": "A wolf runs in a pack.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "fox",
+    "fact": "A fox is very sneaky.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "whale",
+    "fact": "A whale swims in the sea.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "dolphin",
+    "fact": "A dolphin jumps out water.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A dolphin jumps out of water.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "shark",
+    "fact": "A shark has sharp teeth.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "octopus",
+    "fact": "An octopus has eight arms.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "sea turtle",
+    "fact": "A sea turtle swims slow.",
+    "actually_true": false,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Sea turtles can swim fast when they need to; llama-3.1-8b-instruct: A sea turtle swims slow. (Sea turtles can swim at speeds of up to 25 miles per hour.)",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "jellyfish",
+    "fact": "A jellyfish stings us.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Not all jellyfish sting humans; llama-3.1-8b-instruct: A jellyfish stings us. (Jellyfish sting other animals, not humans.)",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "crab",
+    "fact": "A crab has big claws.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "starfish",
+    "fact": "A starfish has five arms.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A starfish has five arms, but the number can vary.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "seahorse",
+    "fact": "A seahorse swims upside down.",
+    "actually_true": false,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Seahorses swim upright, not upside down; llama-3.1-8b-instruct: A seahorse swims upside down. Seahorses swim upright.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "penguin",
+    "fact": "A penguin swims but not fly.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A penguin swims but not fly. (Penguins can fly, but not very well.)",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "eagle",
+    "fact": "An eagle flies very high.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "owl",
+    "fact": "An owl sees in the dark.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Owls don't actually see in complete darkness, they see better in low light conditions due to their large eyes and sensitive retinas; llama-3.1-8b-instruct: An owl sees in the dark. It actually sees in low light.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "parrot",
+    "fact": "A parrot talks like us.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Parrots mimic human speech, but do not truly talk like humans; llama-3.1-8b-instruct: A parrot does not talk like us, it mimics human speech.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "flamingo",
+    "fact": "A flamingo has pink feathers.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A flamingo has feathers that are not always pink.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "peacock",
+    "fact": "A peacock has bright feathers.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "swan",
+    "fact": "A swan glides on water.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "butterfly",
+    "fact": "A butterfly has pretty wings.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "bee",
+    "fact": "A bee makes sweet honey.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: A bee does not make honey. Bees collect nectar and transform it into honey.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "ant",
+    "fact": "An ant carries heavy things.",
+    "actually_true": true,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.1-8b-instruct: An ant does not carry heavy things. Ants carry small to medium-sized objects.",
+    "verdicts": [
+      true,
+      false
+    ]
+  },
+  {
+    "subject": "ladybug",
+    "fact": "A ladybug has red spots.",
+    "actually_true": false,
+    "source": "written",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: The spots are black; the wing cases are red.; llama-3.1-8b-instruct: The spots are black; the wing cases are red.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "dragonfly",
+    "fact": "A dragonfly flies very fast.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "spider",
+    "fact": "A spider makes a web.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "kangaroo",
+    "fact": "A kangaroo hops around.",
+    "actually_true": true,
+    "source": "written",
+    "passed": true,
+    "why": "",
+    "verdicts": [
+      true,
+      true
+    ]
+  },
+  {
+    "subject": "octopus",
+    "fact": "An octopus has six arms.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: An octopus has eight arms, not six.; llama-3.1-8b-instruct: An octopus has eight arms.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "spider",
+    "fact": "A spider has six legs.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: A spider has eight legs",
+    "verdicts": [
+      false,
+      true
+    ]
+  },
+  {
+    "subject": "bee",
+    "fact": "A bee has eight legs.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: A bee has six legs.; llama-3.1-8b-instruct: A bee has eight legs. A bee has six legs.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "butterfly",
+    "fact": "A butterfly has eight wings.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: A butterfly has two wings, not eight.; llama-3.1-8b-instruct: A butterfly has eight wings. It should be 'A butterfly has two pairs of wings.'",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "penguin",
+    "fact": "A penguin lives at the North Pole.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Penguins do not live at the North Pole, they live in the Southern Hemisphere; llama-3.1-8b-instruct: A penguin lives at the North Pole.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "whale",
+    "fact": "A whale is a very big fish.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: a whale is a mammal, not a fish; llama-3.1-8b-instruct: A whale is not a fish.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "shark",
+    "fact": "A shark is a mammal.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Sharks are fish, not mammals; llama-3.1-8b-instruct: A shark is not a mammal. Sharks are fish.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "zebra",
+    "fact": "A zebra has blue stripes.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Zebras have black and white stripes, not blue; llama-3.1-8b-instruct: A zebra has black and white stripes.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "owl",
+    "fact": "An owl sleeps at night.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Owls are actually nocturnal, meaning they are awake at night and sleep during the day",
+    "verdicts": [
+      false,
+      true
+    ]
+  },
+  {
+    "subject": "bat",
+    "fact": "A bat is a kind of bird.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Bats are not birds, they are mammals.; llama-3.1-8b-instruct: A bat is a kind of bird. Bats are actually mammals.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "cow",
+    "fact": "A cow eats meat.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Cows are herbivores and do not eat meat; llama-3.1-8b-instruct: A cow eats meat. Cows are herbivores and primarily eat plants.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "duck",
+    "fact": "A duck has four legs.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: A duck has two legs.; llama-3.1-8b-instruct: A duck has two legs.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "starfish",
+    "fact": "A starfish is a fish.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: a starfish is not a fish, it's a marine invertebrate; llama-3.1-8b-instruct: A starfish is not a fish.",
+    "verdicts": [
+      false,
+      false
+    ]
+  },
+  {
+    "subject": "elephant",
+    "fact": "An elephant drinks through its trunk.",
+    "actually_true": false,
+    "source": "planted",
+    "passed": false,
+    "why": "llama-3.3-70b-instruct-fp8-fast: Elephants use their trunks to suck up water and then pour it into their mouths to drink.; llama-3.1-8b-instruct: An elephant drinks through its trunk, but it also drinks through its mouth.",
+    "verdicts": [
+      false,
+      false
+    ]
+  }
+]

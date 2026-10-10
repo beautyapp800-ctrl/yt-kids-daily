@@ -1,0 +1,202 @@
+{
+  "cow": {
+    "fact": "A cow gives us milk.",
+    "true": true,
+    "why": ""
+  },
+  "pig": {
+    "fact": "A pig rolls in mud.",
+    "true": true,
+    "why": ""
+  },
+  "sheep": {
+    "fact": "A sheep has soft wool.",
+    "true": true,
+    "why": ""
+  },
+  "horse": {
+    "fact": "A horse runs very fast.",
+    "true": true,
+    "why": ""
+  },
+  "chicken": {
+    "fact": "A chicken lays eggs.",
+    "true": true,
+    "why": ""
+  },
+  "duck": {
+    "fact": "A duck swims in water.",
+    "true": true,
+    "why": ""
+  },
+  "goat": {
+    "fact": "A goat climbs high.",
+    "true": true,
+    "why": ""
+  },
+  "rooster": {
+    "fact": "A rooster makes loud noise.",
+    "true": true,
+    "why": ""
+  },
+  "lion": {
+    "fact": "A lion has sharp teeth.",
+    "true": true,
+    "why": ""
+  },
+  "elephant": {
+    "fact": "An elephant has a long trunk.",
+    "true": true,
+    "why": ""
+  },
+  "tiger": {
+    "fact": "A tiger has bright stripes.",
+    "true": true,
+    "why": ""
+  },
+  "bear": {
+    "fact": "A bear is very strong.",
+    "true": true,
+    "why": ""
+  },
+  "monkey": {
+    "fact": "A monkey swings from trees.",
+    "true": true,
+    "why": ""
+  },
+  "giraffe": {
+    "fact": "A giraffe has a long neck.",
+    "true": true,
+    "why": ""
+  },
+  "zebra": {
+    "fact": "A zebra has black stripes.",
+    "true": true,
+    "why": ""
+  },
+  "wolf": {
+    "fact": "A wolf runs in a pack.",
+    "true": true,
+    "why": ""
+  },
+  "fox": {
+    "fact": "A fox is very sneaky.",
+    "true": true,
+    "why": ""
+  },
+  "whale": {
+    "fact": "A whale swims in the sea.",
+    "true": true,
+    "why": ""
+  },
+  "dolphin": {
+    "fact": "A dolphin jumps out water.",
+    "true": true,
+    "why": ""
+  },
+  "shark": {
+    "fact": "A shark has sharp teeth.",
+    "true": true,
+    "why": ""
+  },
+  "octopus": {
+    "fact": "An octopus has eight arms.",
+    "true": true,
+    "why": ""
+  },
+  "sea turtle": {
+    "fact": "A sea turtle swims slow.",
+    "true": false,
+    "why": "sea turtles are fast in water - slow is their reputation on land"
+  },
+  "jellyfish": {
+    "fact": "A jellyfish stings us.",
+    "true": true,
+    "why": ""
+  },
+  "crab": {
+    "fact": "A crab has big claws.",
+    "true": true,
+    "why": ""
+  },
+  "starfish": {
+    "fact": "A starfish has five arms.",
+    "true": true,
+    "why": ""
+  },
+  "seahorse": {
+    "fact": "A seahorse swims upside down.",
+    "true": false,
+    "why": "seahorses swim upright, not upside down"
+  },
+  "penguin": {
+    "fact": "A penguin swims but not fly.",
+    "true": true,
+    "why": ""
+  },
+  "eagle": {
+    "fact": "An eagle flies very high.",
+    "true": true,
+    "why": ""
+  },
+  "owl": {
+    "fact": "An owl sees in the dark.",
+    "true": true,
+    "why": ""
+  },
+  "parrot": {
+    "fact": "A parrot talks like us.",
+    "true": true,
+    "why": ""
+  },
+  "flamingo": {
+    "fact": "A flamingo has pink feathers.",
+    "true": true,
+    "why": ""
+  },
+  "peacock": {
+    "fact": "A peacock has bright feathers.",
+    "true": true,
+    "why": ""
+  },
+  "swan": {
+    "fact": "A swan glides on water.",
+    "true": true,
+    "why": ""
+  },
+  "butterfly": {
+    "fact": "A butterfly has pretty wings.",
+    "true": true,
+    "why": ""
+  },
+  "bee": {
+    "fact": "A bee makes sweet honey.",
+    "true": true,
+    "why": ""
+  },
+  "ant": {
+    "fact": "An ant carries heavy things.",
+    "true": true,
+    "why": ""
+  },
+  "ladybug": {
+    "fact": "A ladybug has red spots.",
+    "true": false,
+    "why": "the spots are black; the wing cases are red"
+  },
+  "dragonfly": {
+    "fact": "A dragonfly flies very fast.",
+    "true": true,
+    "why": ""
+  },
+  "spider": {
+    "fact": "A spider makes a web.",
+    "true": true,
+    "why": ""
+  },
+  "kangaroo": {
+    "fact": "A kangaroo hops around.",
+    "true": true,
+    "why": ""
+  }
+}
