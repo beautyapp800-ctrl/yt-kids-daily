@@ -1,4 +1,191 @@
 {
+  "bear": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/06/26/168896-839912975_small.mp4",
+        "id": 168896,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bear",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/06/26/168896-839912975_large.jpg",
+        "url": "https://pixabay.com/videos/id-168896/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/09/19/89031-610952476_small.mp4",
+        "id": 89031,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bear",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/09/19/89031-610952476_large.jpg",
+        "url": "https://pixabay.com/videos/id-89031/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/25/43109-434409239_small.mp4",
+        "id": 43109,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bear",
+        "seconds": 75,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/25/43109-434409239_large.jpg",
+        "url": "https://pixabay.com/videos/id-43109/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/10/17/92352-635675612_small.mp4",
+        "id": 92352,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bear",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/17/92352-635675612_large.jpg",
+        "url": "https://pixabay.com/videos/id-92352/",
+        "width": 3840
+      }
+    ],
+    "rejected": []
+  },
+  "chicken": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/13/188986-884171293_small.mp4",
+        "id": 188986,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.988,
+        "said": "chicken",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/13/188986-884171293_large.jpg",
+        "url": "https://pixabay.com/videos/id-188986/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/22/190142-887464235_small.mp4",
+        "id": 190142,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.475,
+        "said": "chicken",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/22/190142-887464235_large.jpg",
+        "url": "https://pixabay.com/videos/id-190142/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/05/29/118648-715427099_small.mp4",
+        "id": 118648,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.073,
+        "said": "chicken",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/05/29/118648-715427099_large.jpg",
+        "url": "https://pixabay.com/videos/id-118648/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/07/7129-198606864_small.mp4",
+        "id": 7129,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.044,
+        "said": "chicken",
+        "seconds": 50,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/07/7129-198606864_large.jpg",
+        "url": "https://pixabay.com/videos/id-7129/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/22/190144-887464241_small.mp4",
+        "id": 190144,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.318,
+        "said": "rooster",
+        "seconds": 48,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/22/190144-887464241_large.jpg",
+        "url": "https://pixabay.com/videos/id-190144/",
+        "why": "the model called it rooster",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/07/16/10685-226624850_small.mp4",
+        "id": 10685,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.987,
+        "said": "rooster",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/07/16/10685-226624850_large.jpg",
+        "url": "https://pixabay.com/videos/id-10685/",
+        "why": "the model called it rooster",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/26/147982-793140573_small.mp4",
+        "id": 147982,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.163,
+        "said": "rooster",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/26/147982-793140573_large.jpg",
+        "url": "https://pixabay.com/videos/id-147982/",
+        "why": "the model called it rooster",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/08/18/227131_small.mp4",
+        "id": 227131,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "pan",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/08/18/227131_large.jpg",
+        "url": "https://pixabay.com/videos/id-227131/",
+        "why": "the model called it pan",
+        "width": 4096
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/30/165148-832090850_small.mp4",
+        "id": 165148,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.001,
+        "said": "rooster",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/30/165148-832090850_large.jpg",
+        "url": "https://pixabay.com/videos/id-165148/",
+        "why": "the model called it rooster",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/16/189279-885344888_small.mp4",
+        "id": 189279,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.62,
+        "said": "rooster",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/16/189279-885344888_large.jpg",
+        "url": "https://pixabay.com/videos/id-189279/",
+        "why": "the model called it rooster",
+        "width": 1920
+      }
+    ]
+  },
   "cow": {
     "candidates_seen": 12,
     "clips": [
@@ -80,6 +267,290 @@
       }
     ]
   },
+  "duck": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/02/05/64194-509543011_small.mp4",
+        "id": 64194,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.767,
+        "said": "duck",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/05/64194-509543011_large.jpg",
+        "url": "https://pixabay.com/videos/id-64194/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/19/217302_small.mp4",
+        "id": 217302,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.606,
+        "said": "duck",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/19/217302_large.jpg",
+        "url": "https://pixabay.com/videos/id-217302/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/03/18/265501_small.mp4",
+        "id": 265501,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "duck",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/18/265501_large.jpg",
+        "url": "https://pixabay.com/videos/id-265501/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/02/119018-716626064_small.mp4",
+        "id": 119018,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "duck",
+        "seconds": 50,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/02/119018-716626064_large.jpg",
+        "url": "https://pixabay.com/videos/id-119018/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
+  },
+  "elephant": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/08/215845_small.mp4",
+        "id": 215845,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "elephant",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/08/215845_large.jpg",
+        "url": "https://pixabay.com/videos/id-215845/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/03/219323_small.mp4",
+        "id": 219323,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.935,
+        "said": "elephant",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/03/219323_large.jpg",
+        "url": "https://pixabay.com/videos/id-219323/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/31/126216-735676477_small.mp4",
+        "id": 126216,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.93,
+        "said": "elephant",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/31/126216-735676477_large.jpg",
+        "url": "https://pixabay.com/videos/id-126216/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/31/126215-735676475_small.mp4",
+        "id": 126215,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.529,
+        "said": "elephant",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/31/126215-735676475_large.jpg",
+        "url": "https://pixabay.com/videos/id-126215/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
+  },
+  "fox": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/06/24/287503_small.mp4",
+        "id": 287503,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "fox",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/06/24/287503_large.jpg",
+        "url": "https://pixabay.com/videos/id-287503/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/12/04/319743_small.mp4",
+        "id": 319743,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.854,
+        "said": "fox",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/12/04/319743_large.jpg",
+        "url": "https://pixabay.com/videos/id-319743/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/04/12/70862-536317071_small.mp4",
+        "id": 70862,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.697,
+        "said": "fox",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/04/12/70862-536317071_large.jpg",
+        "url": "https://pixabay.com/videos/id-70862/",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/10/30/28480-370050277_small.mp4",
+        "id": 28480,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fox",
+        "seconds": 43,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/10/30/28480-370050277_large.jpg",
+        "url": "https://pixabay.com/videos/id-28480/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/02/21/108482-680697635_small.mp4",
+        "id": 108482,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.014,
+        "said": "wolf",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/02/21/108482-680697635_large.jpg",
+        "url": "https://pixabay.com/videos/id-108482/",
+        "why": "the model called it wolf",
+        "width": 1920
+      }
+    ]
+  },
+  "giraffe": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/08/23/227950_small.mp4",
+        "id": 227950,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "giraffe",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/08/23/227950_large.jpg",
+        "url": "https://pixabay.com/videos/id-227950/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/19/85689-591865341_small.mp4",
+        "id": 85689,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "giraffe",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/19/85689-591865341_large.jpg",
+        "url": "https://pixabay.com/videos/id-85689/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/19/85690-591865446_small.mp4",
+        "id": 85690,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "giraffe",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/19/85690-591865446_large.jpg",
+        "url": "https://pixabay.com/videos/id-85690/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/19/85687-591865503_small.mp4",
+        "id": 85687,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "giraffe",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/19/85687-591865503_large.jpg",
+        "url": "https://pixabay.com/videos/id-85687/",
+        "width": 3840
+      }
+    ],
+    "rejected": []
+  },
+  "goat": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/12/25/102422-660253828_small.mp4",
+        "id": 102422,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.996,
+        "said": "goat",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/12/25/102422-660253828_large.jpg",
+        "url": "https://pixabay.com/videos/id-102422/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/15/39156-420257072_small.mp4",
+        "id": 39156,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.226,
+        "said": "goat",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/15/39156-420257072_large.jpg",
+        "url": "https://pixabay.com/videos/id-39156/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/15/171641-845805098_small.mp4",
+        "id": 171641,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.191,
+        "said": "goat",
+        "seconds": 47,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/15/171641-845805098_large.jpg",
+        "url": "https://pixabay.com/videos/id-171641/",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/12/113681-698820576_small.mp4",
+        "id": 113681,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.083,
+        "said": "goat",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/12/113681-698820576_large.jpg",
+        "url": "https://pixabay.com/videos/id-113681/",
+        "width": 3840
+      }
+    ],
+    "rejected": []
+  },
   "horse": {
     "candidates_seen": 12,
     "clips": [
@@ -133,6 +604,182 @@
       }
     ],
     "rejected": []
+  },
+  "kangaroo": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/19/181314-866094614_small.mp4",
+        "id": 181314,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "kangaroo",
+        "seconds": 49,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/19/181314-866094614_large.jpg",
+        "url": "https://pixabay.com/videos/id-181314/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/03/24/267194_small.mp4",
+        "id": 267194,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "kangaroo",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/24/267194_large.jpg",
+        "url": "https://pixabay.com/videos/id-267194/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/09/240501_small.mp4",
+        "id": 240501,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "kangaroo",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/09/240501_large.jpg",
+        "url": "https://pixabay.com/videos/id-240501/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/07/08/80672-572853714_small.mp4",
+        "id": 80672,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "kangaroo",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/07/08/80672-572853714_large.jpg",
+        "url": "https://pixabay.com/videos/id-80672/",
+        "width": 3840
+      }
+    ],
+    "rejected": []
+  },
+  "lion": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/17/114145-700585495_small.mp4",
+        "id": 114145,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "lion",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/17/114145-700585495_large.jpg",
+        "url": "https://pixabay.com/videos/id-114145/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/01/6970-197914397_small.mp4",
+        "id": 6970,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "lion",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/01/6970-197914397_large.jpg",
+        "url": "https://pixabay.com/videos/id-6970/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/09/14/303922_small.mp4",
+        "id": 303922,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "lion",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/09/14/303922_large.jpg",
+        "url": "https://pixabay.com/videos/id-303922/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/11/13/29044-373138314_small.mp4",
+        "id": 29044,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "lion",
+        "seconds": 63,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/11/13/29044-373138314_large.jpg",
+        "url": "https://pixabay.com/videos/id-29044/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
+  },
+  "monkey": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/11/02/137485-766532563_small.mp4",
+        "id": 137485,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "monkey",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/11/02/137485-766532563_large.jpg",
+        "url": "https://pixabay.com/videos/id-137485/",
+        "width": 4096
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/14/171518-845606414_small.mp4",
+        "id": 171518,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.994,
+        "said": "monkey",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/14/171518-845606414_large.jpg",
+        "url": "https://pixabay.com/videos/id-171518/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/10/127476-743515472_small.mp4",
+        "id": 127476,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.988,
+        "said": "monkey",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/10/127476-743515472_large.jpg",
+        "url": "https://pixabay.com/videos/id-127476/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/15/180691-864967723_small.mp4",
+        "id": 180691,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.627,
+        "said": "monkey",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/15/180691-864967723_large.jpg",
+        "url": "https://pixabay.com/videos/id-180691/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/25/164517-830865498_small.mp4",
+        "id": 164517,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "giraffe",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/25/164517-830865498_large.jpg",
+        "url": "https://pixabay.com/videos/id-164517/",
+        "why": "the model called it giraffe",
+        "width": 1920
+      }
+    ]
   },
   "pig": {
     "candidates_seen": 12,
@@ -227,6 +874,60 @@
         "width": 3840
       }
     ]
+  },
+  "rooster": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/01/21/105226-669669053_small.mp4",
+        "id": 105226,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "rooster",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/01/21/105226-669669053_large.jpg",
+        "url": "https://pixabay.com/videos/id-105226/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/14/154675-808146451_small.mp4",
+        "id": 154675,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.99,
+        "said": "rooster",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/14/154675-808146451_large.jpg",
+        "url": "https://pixabay.com/videos/id-154675/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/07/16/10685-226624850_small.mp4",
+        "id": 10685,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.987,
+        "said": "rooster",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/07/16/10685-226624850_large.jpg",
+        "url": "https://pixabay.com/videos/id-10685/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/22/190144-887464241_small.mp4",
+        "id": 190144,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.672,
+        "said": "rooster",
+        "seconds": 48,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/22/190144-887464241_large.jpg",
+        "url": "https://pixabay.com/videos/id-190144/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
   },
   "sheep": {
     "candidates_seen": 12,
@@ -347,5 +1048,167 @@
         "width": 3840
       }
     ]
+  },
+  "tiger": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/08/06/174896-852206029_small.mp4",
+        "id": 174896,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.95,
+        "said": "tiger",
+        "seconds": 27,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/06/174896-852206029_large.jpg",
+        "url": "https://pixabay.com/videos/id-174896/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/03/26/267689_small.mp4",
+        "id": 267689,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.931,
+        "said": "tiger",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/26/267689_large.jpg",
+        "url": "https://pixabay.com/videos/id-267689/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/22/143892-784164228_small.mp4",
+        "id": 143892,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.928,
+        "said": "tiger",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/22/143892-784164228_large.jpg",
+        "url": "https://pixabay.com/videos/id-143892/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/04/145320-786403437_small.mp4",
+        "id": 145320,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.847,
+        "said": "tiger",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/04/145320-786403437_large.jpg",
+        "url": "https://pixabay.com/videos/id-145320/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
+  },
+  "wolf": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/12/14/100593-657153188_small.mp4",
+        "id": 100593,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.981,
+        "said": "wolf",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/12/14/100593-657153188_large.jpg",
+        "url": "https://pixabay.com/videos/id-100593/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/09/30/27400-363524230_small.mp4",
+        "id": 27400,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.976,
+        "said": "wolf",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/09/30/27400-363524230_large.jpg",
+        "url": "https://pixabay.com/videos/id-27400/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/02/15/65300-513091384_small.mp4",
+        "id": 65300,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.816,
+        "said": "wolf",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/15/65300-513091384_large.jpg",
+        "url": "https://pixabay.com/videos/id-65300/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/02/21/108482-680697635_small.mp4",
+        "id": 108482,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.746,
+        "said": "wolf",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/02/21/108482-680697635_large.jpg",
+        "url": "https://pixabay.com/videos/id-108482/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
+  },
+  "zebra": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/07/08/44236-438612236_small.mp4",
+        "id": 44236,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "zebra",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/08/44236-438612236_large.jpg",
+        "url": "https://pixabay.com/videos/id-44236/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/21/111435-690743411_small.mp4",
+        "id": 111435,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "zebra",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/21/111435-690743411_large.jpg",
+        "url": "https://pixabay.com/videos/id-111435/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/09/01/87161-601077104_small.mp4",
+        "id": 87161,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "zebra",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/09/01/87161-601077104_large.jpg",
+        "url": "https://pixabay.com/videos/id-87161/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/08/25/228140_small.mp4",
+        "id": 228140,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.994,
+        "said": "zebra",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/08/25/228140_large.jpg",
+        "url": "https://pixabay.com/videos/id-228140/",
+        "width": 2560
+      }
+    ],
+    "rejected": []
   }
 }

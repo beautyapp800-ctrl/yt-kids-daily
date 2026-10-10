@@ -10,7 +10,7 @@
     "max_minutes": 10,
     "attempts": 3
   },
-  "voice": "en-US-AriaNeural",
+  "voice": "en-US-JennyNeural",
   "voice_rate": "-18%",
   "pause_before_name_ms": 450,
   "pause_after_name_ms": 900,
@@ -41,5 +41,6 @@
       "pexels",
       "pixabay"
     ]
-  }
+  },
+  "voice_chosen_why": "picked by ear from three 30-second samples: friendly, gentle, comforting"
 }
