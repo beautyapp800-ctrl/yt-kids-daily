@@ -46,6 +46,11 @@ NOT_THE_REAL_THING = {"toy", "synth", "synthesized", "synthesised", "imitation",
                       "zombie", "monster", "dragon", "cartoon", "voice", "human", "man",
                       "woman", "scream", "8-bit", "chiptune", "sample pack"}
 
+# Wikimedia's pronunciation recordings - "LL-Q1860 (eng)-Flame, not lame-Chinese broccoli" -
+# are a person saying the word. Searching "broccoli" returned one, and it would have played a
+# second voice over the narrator's. They are a whole family of files with a fixed name shape.
+PRONUNCIATION = re.compile(r"^LL-Q\d+|\(eng\)-|pronunciation|\bsays?\b", re.I)
+
 MIN_SECONDS = 1.0
 MAX_SECONDS = 30.0
 
@@ -69,6 +74,8 @@ def title_is_honest(subject, title):
     words = set(re.findall(r"[a-z0-9+']+", (title or "").lower()))
     head = subject.lower().split()[-1]
     if not ({head, head + "s", head.rstrip("s")} & words):
+        return False
+    if PRONUNCIATION.search(title or ""):
         return False
     return not (words & NOT_THE_REAL_THING)
 

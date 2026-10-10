@@ -267,6 +267,128 @@
       }
     ]
   },
+  "crab": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/10/19/92545-636709870_small.mp4",
+        "id": 92545,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "crab",
+        "seconds": 57,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/19/92545-636709870_large.jpg",
+        "url": "https://pixabay.com/videos/id-92545/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/10/25/136463-764399888_small.mp4",
+        "id": 136463,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "crab",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/25/136463-764399888_large.jpg",
+        "url": "https://pixabay.com/videos/id-136463/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/23/47896-452144075_small.mp4",
+        "id": 47896,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.998,
+        "said": "crab",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/23/47896-452144075_large.jpg",
+        "url": "https://pixabay.com/videos/id-47896/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/27/243619_small.mp4",
+        "id": 243619,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.418,
+        "said": "crab",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/27/243619_large.jpg",
+        "url": "https://pixabay.com/videos/id-243619/",
+        "width": 2560
+      }
+    ],
+    "rejected": []
+  },
+  "dolphin": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/01/06/30968-384234019_small.mp4",
+        "id": 30968,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "dolphin",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/01/06/30968-384234019_large.jpg",
+        "url": "https://pixabay.com/videos/id-30968/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/08/23/372241_small.mp4",
+        "id": 372241,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "dolphins",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/08/23/372241_large.jpg",
+        "url": "https://pixabay.com/videos/id-372241/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/09/110317-688187576_small.mp4",
+        "id": 110317,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "dolphin",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/09/110317-688187576_large.jpg",
+        "url": "https://pixabay.com/videos/id-110317/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/06/06/166115-835290832_small.mp4",
+        "id": 166115,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "dolphin",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/06/06/166115-835290832_large.jpg",
+        "url": "https://pixabay.com/videos/id-166115/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/05/22/74891-553847221_small.mp4",
+        "id": 74891,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "ocean",
+        "seconds": 42,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/05/22/74891-553847221_large.jpg",
+        "url": "https://pixabay.com/videos/id-74891/",
+        "why": "the model called it ocean",
+        "width": 3840
+      }
+    ]
+  },
   "duck": {
     "candidates_seen": 12,
     "clips": [
@@ -605,6 +727,60 @@
     ],
     "rejected": []
   },
+  "jellyfish": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/05/25/213616_small.mp4",
+        "id": 213616,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "jellyfish",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/05/25/213616_large.jpg",
+        "url": "https://pixabay.com/videos/id-213616/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/09/12/26818-361092071_small.mp4",
+        "id": 26818,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "jellyfish",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/09/12/26818-361092071_large.jpg",
+        "url": "https://pixabay.com/videos/id-26818/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/15/110877-689510466_small.mp4",
+        "id": 110877,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "jellyfish",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/15/110877-689510466_large.jpg",
+        "url": "https://pixabay.com/videos/id-110877/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/07/04/10480-224857514_small.mp4",
+        "id": 10480,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "jellyfish",
+        "seconds": 112,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/07/04/10480-224857514_large.jpg",
+        "url": "https://pixabay.com/videos/id-10480/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
+  },
   "kangaroo": {
     "candidates_seen": 12,
     "clips": [
@@ -781,6 +957,128 @@
       }
     ]
   },
+  "octopus": {
+    "candidates_seen": 7,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/10/27/1198-143842689_small.mp4",
+        "id": 1198,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "octopus",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/10/27/1198-143842689_large.jpg",
+        "url": "https://pixabay.com/videos/id-1198/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/02/27/152482-802877601_small.mp4",
+        "id": 152482,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "octopus",
+        "seconds": 52,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/27/152482-802877601_large.jpg",
+        "url": "https://pixabay.com/videos/id-152482/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/25/173219-848955057_small.mp4",
+        "id": 173219,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "octopus",
+        "seconds": 41,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/25/173219-848955057_large.jpg",
+        "url": "https://pixabay.com/videos/id-173219/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11702-231758991_small.mp4",
+        "id": 11702,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "squid",
+        "seconds": 27,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11702-231758991_large.jpg",
+        "url": "https://pixabay.com/videos/id-11702/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/10/119818-719443755_small.mp4",
+        "id": 119818,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "carousel",
+        "seconds": 33,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/10/119818-719443755_large.jpg",
+        "url": "https://pixabay.com/videos/id-119818/",
+        "why": "the model called it carousel",
+        "width": 1920
+      }
+    ]
+  },
+  "penguin": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/18/114415-701051090_small.mp4",
+        "id": 114415,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "penguin",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/18/114415-701051090_large.jpg",
+        "url": "https://pixabay.com/videos/id-114415/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/18/114413-701051082_small.mp4",
+        "id": 114413,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "penguin",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/18/114413-701051082_large.jpg",
+        "url": "https://pixabay.com/videos/id-114413/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/26/115178-703930496_small.mp4",
+        "id": 115178,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "penguin",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/26/115178-703930496_large.jpg",
+        "url": "https://pixabay.com/videos/id-115178/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/01/11/327101_small.mp4",
+        "id": 327101,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.837,
+        "said": "penguin",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/01/11/327101_large.jpg",
+        "url": "https://pixabay.com/videos/id-327101/",
+        "width": 3840
+      }
+    ],
+    "rejected": []
+  },
   "pig": {
     "candidates_seen": 12,
     "clips": [
@@ -929,6 +1227,158 @@
     ],
     "rejected": []
   },
+  "sea turtle": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/03/244754_small.mp4",
+        "id": 244754,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.984,
+        "said": "turtle",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/03/244754_large.jpg",
+        "url": "https://pixabay.com/videos/id-244754/",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/01/11/251961_small.mp4",
+        "id": 251961,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.982,
+        "said": "turtle",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/01/11/251961_large.jpg",
+        "url": "https://pixabay.com/videos/id-251961/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/15/120390-720880496_small.mp4",
+        "id": 120390,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.955,
+        "said": "turtle",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/15/120390-720880496_large.jpg",
+        "url": "https://pixabay.com/videos/id-120390/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/17/131645-750753097_small.mp4",
+        "id": 131645,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.154,
+        "said": "turtle",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/17/131645-750753097_large.jpg",
+        "url": "https://pixabay.com/videos/id-131645/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
+  },
+  "seahorse": {
+    "candidates_seen": 2,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/09/32136-390688065_small.mp4",
+        "id": 32136,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/09/32136-390688065_large.jpg",
+        "url": "https://pixabay.com/videos/id-32136/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/10/245968_small.mp4",
+        "id": 245968,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/10/245968_large.jpg",
+        "url": "https://pixabay.com/videos/id-245968/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
+  },
+  "shark": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/12/06/6681-194868557_small.mp4",
+        "id": 6681,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "shark",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/12/06/6681-194868557_large.jpg",
+        "url": "https://pixabay.com/videos/id-6681/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/16/114099-700074124_small.mp4",
+        "id": 114099,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "shark",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/16/114099-700074124_large.jpg",
+        "url": "https://pixabay.com/videos/id-114099/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/29/182914-869766924_small.mp4",
+        "id": 182914,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.927,
+        "said": "shark",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/29/182914-869766924_large.jpg",
+        "url": "https://pixabay.com/videos/id-182914/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/04/18/208492_small.mp4",
+        "id": 208492,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.764,
+        "said": "shark",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/04/18/208492_large.jpg",
+        "url": "https://pixabay.com/videos/id-208492/",
+        "width": 3840
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/14/110734-688648666_small.mp4",
+        "id": 110734,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "surfer",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/14/110734-688648666_large.jpg",
+        "url": "https://pixabay.com/videos/id-110734/",
+        "why": "the model called it surfer",
+        "width": 3840
+      }
+    ]
+  },
   "sheep": {
     "candidates_seen": 12,
     "clips": [
@@ -1049,6 +1499,100 @@
       }
     ]
   },
+  "starfish": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/05/05/350693_small.mp4",
+        "id": 350693,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.999,
+        "said": "starfish",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/05/05/350693_large.jpg",
+        "url": "https://pixabay.com/videos/id-350693/",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/09/32140-390688083_small.mp4",
+        "id": 32140,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.909,
+        "said": "coral",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/09/32140-390688083_large.jpg",
+        "url": "https://pixabay.com/videos/id-32140/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/09/32139-390688079_small.mp4",
+        "id": 32139,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.708,
+        "said": "coral",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/09/32139-390688079_large.jpg",
+        "url": "https://pixabay.com/videos/id-32139/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/04/234721_small.mp4",
+        "id": 234721,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.656,
+        "said": "starfish",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/04/234721_large.jpg",
+        "url": "https://pixabay.com/videos/id-234721/",
+        "width": 3840
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/06/08/76864-560684336_small.mp4",
+        "id": 76864,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.035,
+        "said": "water",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/06/08/76864-560684336_large.jpg",
+        "url": "https://pixabay.com/videos/id-76864/",
+        "why": "the model called it water",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/06/08/76868-560684330_small.mp4",
+        "id": 76868,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "island",
+        "seconds": 38,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/06/08/76868-560684330_large.jpg",
+        "url": "https://pixabay.com/videos/id-76868/",
+        "why": "the model called it island",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/09/09/18166-289376365_small.mp4",
+        "id": 18166,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.208,
+        "said": "water",
+        "seconds": 38,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/09/09/18166-289376365_large.jpg",
+        "url": "https://pixabay.com/videos/id-18166/",
+        "why": "the model called it water",
+        "width": 1920
+      }
+    ]
+  },
   "tiger": {
     "candidates_seen": 12,
     "clips": [
@@ -1102,6 +1646,153 @@
       }
     ],
     "rejected": []
+  },
+  "whale": {
+    "candidates_seen": 11,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/04/244904_small.mp4",
+        "id": 244904,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "whale",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/04/244904_large.jpg",
+        "url": "https://pixabay.com/videos/id-244904/",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/01/244188_small.mp4",
+        "id": 244188,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.999,
+        "said": "whale",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/01/244188_large.jpg",
+        "url": "https://pixabay.com/videos/id-244188/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/22/147535-791696855_small.mp4",
+        "id": 147535,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.319,
+        "said": "whale",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/22/147535-791696855_large.jpg",
+        "url": "https://pixabay.com/videos/id-147535/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/06/161954-824638223_small.mp4",
+        "id": 161954,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/06/161954-824638223_large.jpg",
+        "url": "https://pixabay.com/videos/id-161954/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/09/110312-688187565_small.mp4",
+        "id": 110312,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.927,
+        "said": "dolphin",
+        "seconds": 27,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/09/110312-688187565_large.jpg",
+        "url": "https://pixabay.com/videos/id-110312/",
+        "why": "the model called it dolphin",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/09/110315-688187573_small.mp4",
+        "id": 110315,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.973,
+        "said": "dolphin",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/09/110315-688187573_large.jpg",
+        "url": "https://pixabay.com/videos/id-110315/",
+        "why": "the model called it dolphin",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/01/109182-683572870_small.mp4",
+        "id": 109182,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/01/109182-683572870_large.jpg",
+        "url": "https://pixabay.com/videos/id-109182/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/11/23/98725-649311204_small.mp4",
+        "id": 98725,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "shadow",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/11/23/98725-649311204_large.jpg",
+        "url": "https://pixabay.com/videos/id-98725/",
+        "why": "the model called it shadow",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/12/19/30367-380729070_small.mp4",
+        "id": 30367,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "shark",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/12/19/30367-380729070_large.jpg",
+        "url": "https://pixabay.com/videos/id-30367/",
+        "why": "the model called it shark",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/16/32451-392248983_small.mp4",
+        "id": 32451,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "surfer",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/16/32451-392248983_large.jpg",
+        "url": "https://pixabay.com/videos/id-32451/",
+        "why": "the model called it surfer",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/07/23/365684_small.mp4",
+        "id": 365684,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "sun",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/07/23/365684_large.jpg",
+        "url": "https://pixabay.com/videos/id-365684/",
+        "why": "the model called it sun",
+        "width": 1920
+      }
+    ]
   },
   "wolf": {
     "candidates_seen": 12,
