@@ -46,6 +46,12 @@ UA = "yt-kids/0.1 (coverage measurement; contact via the repository)"
 # shorter than MIN_SECONDS cannot fill one without a loop so obvious a child sees it.
 MIN_SECONDS = 8
 MIN_WIDTH = 1280
+# Pixabay's isLowQuality is not a quality signal: it is True on 1920x1080 clips with eleven
+# thousand downloads, and refusing it threw away 17 of the 18 whale clips. Only isAiGenerated
+# (this channel exists to show a real whale) and isGRated are believed. Portrait clips are
+# refused instead, which isLowQuality was accidentally catching some of: a 1080x1920 clip in a
+# 16:9 frame is two black bars and a letterbox.
+LANDSCAPE_RATIO = 1.2
 
 # Commons licences we may use on a monetised channel without a burden we cannot carry.
 # CC0 and PD need no attribution; BY and BY-SA do, and the description can carry it, so they
@@ -140,12 +146,13 @@ def pixabay(term, key):
            + urllib.parse.quote(term) + "&key=" + key)
     data = get_json(url)
     for v in data.get("hits", []):
-        if v.get("isAiGenerated") or v.get("isLowQuality") or v.get("isGRated") is False:
+        if v.get("isAiGenerated") or v.get("isGRated") is False:
             continue
         if not _relevant(term, v):
             continue
         streams = [s for s in (v.get("videos") or {}).values()
-                   if (s.get("width") or 0) >= MIN_WIDTH]
+                   if (s.get("width") or 0) >= MIN_WIDTH
+                   and (s.get("width") or 0) >= (s.get("height") or 1) * LANDSCAPE_RATIO]
         if streams and (v.get("duration") or 0) >= MIN_SECONDS:
             best = max(streams, key=lambda s: s["width"])
             return {"id": v["id"], "url": v.get("pageURL"), "seconds": v["duration"],

@@ -1,0 +1,351 @@
+{
+  "cow": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/02/18/108077-679386057_small.mp4",
+        "id": 108077,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "cow",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/02/18/108077-679386057_large.jpg",
+        "url": "https://pixabay.com/videos/id-108077/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/15/180690-864967716_small.mp4",
+        "id": 180690,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.997,
+        "said": "cow",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/15/180690-864967716_large.jpg",
+        "url": "https://pixabay.com/videos/id-180690/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/05/179207-861403607_small.mp4",
+        "id": 179207,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.122,
+        "said": "cow",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/05/179207-861403607_large.jpg",
+        "url": "https://pixabay.com/videos/id-179207/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/10/23/186195-877323695_small.mp4",
+        "id": 186195,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/10/23/186195-877323695_large.jpg",
+        "url": "https://pixabay.com/videos/id-186195/",
+        "width": 3840
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/08/03/174452-851475304_small.mp4",
+        "id": 174452,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horses",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/03/174452-851475304_large.jpg",
+        "url": "https://pixabay.com/videos/id-174452/",
+        "why": "the model called it horses",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/03/28/268290_small.mp4",
+        "id": 268290,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bull",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/28/268290_large.jpg",
+        "url": "https://pixabay.com/videos/id-268290/",
+        "why": "the model called it bull",
+        "width": 1920
+      }
+    ]
+  },
+  "horse": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/29/132996-755379429_small.mp4",
+        "id": 132996,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "horse",
+        "seconds": 34,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/29/132996-755379429_large.jpg",
+        "url": "https://pixabay.com/videos/id-132996/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/14/62028-502737559_small.mp4",
+        "id": 62028,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.998,
+        "said": "horses",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/14/62028-502737559_large.jpg",
+        "url": "https://pixabay.com/videos/id-62028/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/30/239034_small.mp4",
+        "id": 239034,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.874,
+        "said": "horse",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/30/239034_large.jpg",
+        "url": "https://pixabay.com/videos/id-239034/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/07/07/25016-347958009_small.mp4",
+        "id": 25016,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.775,
+        "said": "horse",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/07/07/25016-347958009_large.jpg",
+        "url": "https://pixabay.com/videos/id-25016/",
+        "width": 3840
+      }
+    ],
+    "rejected": []
+  },
+  "pig": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/04/26/72323-541904817_small.mp4",
+        "id": 72323,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.997,
+        "said": "pig",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/04/26/72323-541904817_large.jpg",
+        "url": "https://pixabay.com/videos/id-72323/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/17/124427-730817645_small.mp4",
+        "id": 124427,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.918,
+        "said": "pig",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/17/124427-730817645_large.jpg",
+        "url": "https://pixabay.com/videos/id-124427/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/08/07/174988-852541208_small.mp4",
+        "id": 174988,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.904,
+        "said": "pig",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/07/174988-852541208_large.jpg",
+        "url": "https://pixabay.com/videos/id-174988/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/11/18/139512-772542558_small.mp4",
+        "id": 139512,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.894,
+        "said": "pig",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/11/18/139512-772542558_large.jpg",
+        "url": "https://pixabay.com/videos/id-139512/",
+        "width": 3840
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/06/23/360310_small.mp4",
+        "id": 360310,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.956,
+        "said": "bear",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/06/23/360310_large.jpg",
+        "url": "https://pixabay.com/videos/id-360310/",
+        "why": "the model called it bear",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/10/03/90725-624026225_small.mp4",
+        "id": 90725,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.927,
+        "said": "bear",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/03/90725-624026225_large.jpg",
+        "url": "https://pixabay.com/videos/id-90725/",
+        "why": "the model called it bear",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/01/04/103364-662525716_small.mp4",
+        "id": 103364,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.899,
+        "said": "bear",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/01/04/103364-662525716_large.jpg",
+        "url": "https://pixabay.com/videos/id-103364/",
+        "why": "the model called it bear",
+        "width": 3840
+      }
+    ]
+  },
+  "sheep": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/06/27/79168-568252365_small.mp4",
+        "id": 79168,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.998,
+        "said": "sheep",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/06/27/79168-568252365_large.jpg",
+        "url": "https://pixabay.com/videos/id-79168/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/11/240860_small.mp4",
+        "id": 240860,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.659,
+        "said": "sheep",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/11/240860_large.jpg",
+        "url": "https://pixabay.com/videos/id-240860/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/11/28/57647-486227472_small.mp4",
+        "id": 57647,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.536,
+        "said": "sheep",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/11/28/57647-486227472_large.jpg",
+        "url": "https://pixabay.com/videos/id-57647/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/07/11/81031-574269781_small.mp4",
+        "id": 81031,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.346,
+        "said": "sheep",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/07/11/81031-574269781_large.jpg",
+        "url": "https://pixabay.com/videos/id-81031/",
+        "width": 3840
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/19/120739-724673230_small.mp4",
+        "id": 120739,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "dog",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/19/120739-724673230_large.jpg",
+        "url": "https://pixabay.com/videos/id-120739/",
+        "why": "the model called it dog",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/11/04/28690-371200522_small.mp4",
+        "id": 28690,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "trees",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/11/04/28690-371200522_large.jpg",
+        "url": "https://pixabay.com/videos/id-28690/",
+        "why": "the model called it trees",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/14/189057-884476457_small.mp4",
+        "id": 189057,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.229,
+        "said": "goat",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/14/189057-884476457_large.jpg",
+        "url": "https://pixabay.com/videos/id-189057/",
+        "why": "the model called it goat",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/04/21/208809_small.mp4",
+        "id": 208809,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.811,
+        "said": "goat",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/04/21/208809_large.jpg",
+        "url": "https://pixabay.com/videos/id-208809/",
+        "why": "the model called it goat",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/11/127505-738829483_small.mp4",
+        "id": 127505,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.865,
+        "said": "lamb",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/11/127505-738829483_large.jpg",
+        "url": "https://pixabay.com/videos/id-127505/",
+        "why": "the model called it lamb",
+        "width": 3840
+      }
+    ]
+  }
+}

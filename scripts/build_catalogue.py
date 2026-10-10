@@ -1,0 +1,127 @@
+"""Fill assets/clips.json: search, verify with the model, keep what it confirms.
+
+    python scripts/build_catalogue.py                    # every subject not done yet
+    python scripts/build_catalogue.py --subject whale    # one, repeatable
+    python scripts/build_catalogue.py --refresh          # everything, from scratch
+
+Run when a new theme is added. It is the only part of the project that searches a stock
+library; the daily run reads the catalogue and never searches, because search returns a clip
+tagged "train" that shows a bridge at sunset and nothing downstream can notice.
+"""
+import argparse
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from core import vision
+from pipeline import catalogue
+import stock_probe
+
+WORK = ROOT / "data" / "candidate-frames"
+
+
+def credentials():
+    import os
+    account = os.environ.get("CLOUDFLARE_ACCOUNT_ID")
+    token = os.environ.get("CLOUDFLARE_API_TOKEN")
+    env = ROOT / ".env"
+    if env.exists():
+        for line in env.read_text(encoding="utf-8").splitlines():
+            if "=" in line and not line.strip().startswith("#"):
+                k, v = line.split("=", 1)
+                v = v.strip().strip('"').strip("'")
+                if k.strip() == "CLOUDFLARE_ACCOUNT_ID" and not account:
+                    account = v
+                if k.strip() == "CLOUDFLARE_API_TOKEN" and not token:
+                    token = v
+    return account, token
+
+
+def search(subject, key, wanted=catalogue.CANDIDATES_PER_SUBJECT):
+    """Every Pixabay hit that passes the cheap checks, before the model is spent on it."""
+    import urllib.parse
+    url = ("https://pixabay.com/api/videos/?per_page=60&video_type=film&safesearch=true&q="
+           + urllib.parse.quote(subject) + "&key=" + key)
+    data = stock_probe.get_json(url)
+    # Tag matching used to be the gate. It was a crutch from before there was a model that
+    # could look at the frame, and as a gate it costs more than it saves: "whale" left one
+    # single candidate, and a subject with one clip cannot fill two cards in a video without
+    # repeating itself. It is now only an ordering - hits whose tags name the subject are put
+    # to the model first - and the model decides, which is what it is for.
+    ranked = sorted(data.get("hits", []),
+                    key=lambda v: not stock_probe._relevant(subject, v))
+    out = []
+    for v in ranked:
+        if v.get("isAiGenerated") or v.get("isGRated") is False:
+            continue
+        streams = [s for s in (v.get("videos") or {}).values()
+                   if (s.get("width") or 0) >= stock_probe.MIN_WIDTH
+                   and (s.get("width") or 0)
+                   >= (s.get("height") or 1) * stock_probe.LANDSCAPE_RATIO]
+        if not streams or (v.get("duration") or 0) < stock_probe.MIN_SECONDS:
+            continue
+        best = max(streams, key=lambda s: s["width"])
+        out.append({"id": v["id"], "url": v.get("pageURL"), "seconds": v["duration"],
+                    "width": best["width"], "licence": "Pixabay Content Licence",
+                    "attribution_required": False, "thumbnail": best.get("thumbnail"),
+                    "clip": (v.get("videos", {}).get("small")
+                             or v.get("videos", {}).get("tiny") or {}).get("url")})
+        if len(out) >= wanted:
+            break
+    return out
+
+
+def main(argv=None):
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--subject", action="append")
+    parser.add_argument("--refresh", action="store_true")
+    args = parser.parse_args(argv)
+
+    account, token = credentials()
+    key = stock_probe.key_for("pixabay")
+    if not (account and token and key):
+        print("needs PIXABAY_API_KEY, CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN in .env")
+        return 2
+
+    groups = json.loads((ROOT / "assets" / "subjects.json").read_text(encoding="utf-8"))
+    all_subjects = [s for g in groups.values() for s in g]
+    data = {} if args.refresh else catalogue.load()
+    wanted = args.subject or [s for s in all_subjects if s not in data]
+    if not wanted:
+        print(f"nothing to do: all {len(all_subjects)} subjects are in the catalogue")
+        return 0
+
+    print(f"{len(wanted)} subject(s) to verify")
+    for subject in wanted:
+        try:
+            hits = search(subject, key)
+        except Exception as e:                                   # noqa: BLE001
+            print(f"  {subject:14} search failed: {str(e)[:70]}")
+            continue
+        kept, rejected = catalogue.verify_subject(subject, hits, account, token, WORK, vision)
+        data[subject] = {"clips": kept, "rejected": rejected,
+                         "candidates_seen": len(hits)}
+        best = f"{kept[0]['prominence']:.2f}" if kept else "-"
+        print(f"  {subject:14} {len(kept)} kept of {len(hits)} looked at, "
+              f"best framing {best}"
+              f"{'  <- NOTHING, will be drawn' if not kept else ''}", flush=True)
+        catalogue.save(data)
+
+    covered = [s for s in all_subjects if data.get(s, {}).get("clips")]
+    print(f"\n{len(covered)} of {len(all_subjects)} subjects have at least one verified clip "
+          f"({100 * len(covered) / len(all_subjects):.0f}%)")
+    thin = [s for s in covered if len(data[s]["clips"]) < 2]
+    if thin:
+        print(f"only one clip, so two cards in a video could collide: {', '.join(thin)}")
+    print(f"written to {catalogue.CATALOGUE}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
