@@ -1,4 +1,58 @@
 {
+  "ant": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/04/14/2800-162896281_small.mp4",
+        "id": 2800,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "ant",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/04/14/2800-162896281_large.jpg",
+        "url": "https://pixabay.com/videos/id-2800/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/17/146883-790222882_small.mp4",
+        "id": 146883,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "ant",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/17/146883-790222882_large.jpg",
+        "url": "https://pixabay.com/videos/id-146883/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/20/111394-690743292_small.mp4",
+        "id": 111394,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.208,
+        "said": "ant",
+        "seconds": 50,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/20/111394-690743292_large.jpg",
+        "url": "https://pixabay.com/videos/id-111394/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/04/09/35564-406021916_small.mp4",
+        "id": 35564,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.16,
+        "said": "ants",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/04/09/35564-406021916_large.jpg",
+        "url": "https://pixabay.com/videos/id-35564/",
+        "width": 3840
+      }
+    ],
+    "rejected": []
+  },
   "bear": {
     "candidates_seen": 12,
     "clips": [
@@ -537,6 +591,74 @@
       }
     ]
   },
+  "dragonfly": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/15/39109-420274299_small.mp4",
+        "id": 39109,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "dragonfly",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/15/39109-420274299_large.jpg",
+        "url": "https://pixabay.com/videos/id-39109/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/21/39710-423345351_small.mp4",
+        "id": 39710,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "dragonfly",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/21/39710-423345351_large.jpg",
+        "url": "https://pixabay.com/videos/id-39710/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/10/01/380061_small.mp4",
+        "id": 380061,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.994,
+        "said": "dragonfly",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/10/01/380061_large.jpg",
+        "url": "https://pixabay.com/videos/id-380061/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/02/02/63886-507822999_small.mp4",
+        "id": 63886,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.808,
+        "said": "dragonfly",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/02/63886-507822999_large.jpg",
+        "url": "https://pixabay.com/videos/id-63886/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/21/222298_small.mp4",
+        "id": 222298,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "log",
+        "seconds": 39,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/21/222298_large.jpg",
+        "url": "https://pixabay.com/videos/id-222298/",
+        "why": "the model called it log",
+        "width": 1920
+      }
+    ]
+  },
   "duck": {
     "candidates_seen": 12,
     "clips": [
@@ -751,6 +873,168 @@
       }
     ],
     "rejected": []
+  },
+  "fire truck": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/04/28/8872-215589218_small.mp4",
+        "id": 8872,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.018,
+        "said": "fire truck",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/04/28/8872-215589218_large.jpg",
+        "url": "https://pixabay.com/videos/id-8872/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/21/242476_small.mp4",
+        "id": 242476,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "traffic",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/21/242476_large.jpg",
+        "url": "https://pixabay.com/videos/id-242476/",
+        "why": "the model called it traffic",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_small.mp4",
+        "id": 47516,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_large.jpg",
+        "url": "https://pixabay.com/videos/id-47516/",
+        "why": "the model called it truck",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/18/143479-782374009_small.mp4",
+        "id": 143479,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/18/143479-782374009_large.jpg",
+        "url": "https://pixabay.com/videos/id-143479/",
+        "why": "the model called it truck",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/28/53582-475000650_small.mp4",
+        "id": 53582,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "highway",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/28/53582-475000650_large.jpg",
+        "url": "https://pixabay.com/videos/id-53582/",
+        "why": "the model called it highway",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/05/27/282082_small.mp4",
+        "id": 282082,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "road",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/05/27/282082_large.jpg",
+        "url": "https://pixabay.com/videos/id-282082/",
+        "why": "the model called it road",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47515-451623699_small.mp4",
+        "id": 47515,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "house",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47515-451623699_large.jpg",
+        "url": "https://pixabay.com/videos/id-47515/",
+        "why": "the model called it house",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/12/200276-912384794_small.mp4",
+        "id": 200276,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/12/200276-912384794_large.jpg",
+        "url": "https://pixabay.com/videos/id-200276/",
+        "why": "the model called it truck",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/12/41826-431406547_small.mp4",
+        "id": 41826,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crane",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/12/41826-431406547_large.jpg",
+        "url": "https://pixabay.com/videos/id-41826/",
+        "why": "the model called it crane",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/19/52888-471156118_small.mp4",
+        "id": 52888,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "construction",
+        "seconds": 32,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/19/52888-471156118_large.jpg",
+        "url": "https://pixabay.com/videos/id-52888/",
+        "why": "the model called it construction",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/19/217279_small.mp4",
+        "id": 217279,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/19/217279_large.jpg",
+        "url": "https://pixabay.com/videos/id-217279/",
+        "why": "the model called it truck",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/04/19/8764-214077340_small.mp4",
+        "id": 8764,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/04/19/8764-214077340_large.jpg",
+        "url": "https://pixabay.com/videos/id-8764/",
+        "why": "the model called it truck",
+        "width": 1920
+      }
+    ]
   },
   "flamingo": {
     "candidates_seen": 12,
@@ -1140,6 +1424,60 @@
         "thumbnail": "https://cdn.pixabay.com/video/2021/07/08/80672-572853714_large.jpg",
         "url": "https://pixabay.com/videos/id-80672/",
         "width": 3840
+      }
+    ],
+    "rejected": []
+  },
+  "ladybug": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/02/119059-716626190_small.mp4",
+        "id": 119059,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "ladybug",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/02/119059-716626190_large.jpg",
+        "url": "https://pixabay.com/videos/id-119059/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/14/120355-720505117_small.mp4",
+        "id": 120355,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.992,
+        "said": "ladybug",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/14/120355-720505117_large.jpg",
+        "url": "https://pixabay.com/videos/id-120355/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/03/27/34391-402333346_small.mp4",
+        "id": 34391,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.989,
+        "said": "ladybug",
+        "seconds": 46,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/03/27/34391-402333346_large.jpg",
+        "url": "https://pixabay.com/videos/id-34391/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/04/28/2907-164600373_small.mp4",
+        "id": 2907,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.84,
+        "said": "ladybug",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/04/28/2907-164600373_large.jpg",
+        "url": "https://pixabay.com/videos/id-2907/",
+        "width": 1920
       }
     ],
     "rejected": []
@@ -1984,6 +2322,74 @@
       }
     ]
   },
+  "spider": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/18/85446-588675589_small.mp4",
+        "id": 85446,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "spider web",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/18/85446-588675589_large.jpg",
+        "url": "https://pixabay.com/videos/id-85446/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/12/01/19666-304076009_small.mp4",
+        "id": 19666,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.924,
+        "said": "spider",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/12/01/19666-304076009_large.jpg",
+        "url": "https://pixabay.com/videos/id-19666/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/20/132034-751915476_small.mp4",
+        "id": 132034,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.851,
+        "said": "spider",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/20/132034-751915476_large.jpg",
+        "url": "https://pixabay.com/videos/id-132034/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/09/7199-198727626_small.mp4",
+        "id": 7199,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.483,
+        "said": "spider",
+        "seconds": 28,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/09/7199-198727626_large.jpg",
+        "url": "https://pixabay.com/videos/id-7199/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/02/12/7795-204506406_small.mp4",
+        "id": 7795,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "stick",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/02/12/7795-204506406_large.jpg",
+        "url": "https://pixabay.com/videos/id-7795/",
+        "why": "the model called it stick",
+        "width": 1920
+      }
+    ]
+  },
   "starfish": {
     "candidates_seen": 12,
     "clips": [
@@ -2196,6 +2602,60 @@
         "thumbnail": "https://cdn.pixabay.com/video/2023/01/04/145320-786403437_large.jpg",
         "url": "https://pixabay.com/videos/id-145320/",
         "width": 1920
+      }
+    ],
+    "rejected": []
+  },
+  "tractor": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/06/22/168398-839215136_small.mp4",
+        "id": 168398,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.997,
+        "said": "tractor",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/06/22/168398-839215136_large.jpg",
+        "url": "https://pixabay.com/videos/id-168398/",
+        "width": 2560
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/16/180909-865216913_small.mp4",
+        "id": 180909,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.973,
+        "said": "tractor",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/16/180909-865216913_large.jpg",
+        "url": "https://pixabay.com/videos/id-180909/",
+        "width": 3840
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/11/07/12799-241717767_small.mp4",
+        "id": 12799,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.64,
+        "said": "tractor",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/11/07/12799-241717767_large.jpg",
+        "url": "https://pixabay.com/videos/id-12799/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/09/21/232561_small.mp4",
+        "id": 232561,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/09/21/232561_large.jpg",
+        "url": "https://pixabay.com/videos/id-232561/",
+        "width": 2560
       }
     ],
     "rejected": []

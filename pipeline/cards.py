@@ -34,6 +34,15 @@ LONG_WORD = 10
 
 # Units mean nothing to a three-year-old, and a number they cannot count to means nothing
 # either. Both are the same mistake: a fact stated in a scale the child does not own.
+# The model writes "twenty", not "20", so a check that only reads digits reads nothing. Ten
+# and below are left alone: a three-year-old is learning to count to ten, and "an octopus has
+# eight arms" is exactly the kind of fact this channel is for.
+BIG_NUMBER_WORDS = {"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
+                    "seventeen", "eighteen", "nineteen", "twenty", "thirty", "forty",
+                    "fifty", "sixty", "seventy", "eighty", "ninety", "hundred", "hundreds",
+                    "thousand", "thousands", "million", "millions", "billion", "billions",
+                    "dozen", "dozens"}
+
 UNITS = {"tonne", "tonnes", "ton", "tons", "kilogram", "kilograms", "kg", "pound", "pounds",
          "metre", "metres", "meter", "meters", "centimetre", "centimetres", "foot", "feet",
          "inch", "inches", "mile", "miles", "kilometre", "kilometres", "km", "litre",
@@ -54,6 +63,33 @@ Write the way a parent speaks to a child on their lap: short, warm, certain, pre
 LIKE_A_TEMPLATE = re.compile(r"^(the|a|an)\s+[\w\s]+?\s+(is|are|has|have)\s+[\w\s]*?\s*"
                              r"like\s+(a|an|the)\s+\w+\s*\.$", re.I)
 FILLER_END = re.compile(r"\b(now|too|also|as well|very much)\s*\.$", re.I)
+
+
+SMALL_WORDS = {"a", "an", "the", "is", "are", "has", "have", "in", "on", "at", "of", "to",
+               "and", "it", "its", "very", "with", "from", "for"}
+
+
+def is_near_duplicate(fact, existing, overlap=0.7):
+    """Whether this says the same thing as one already kept.
+
+    "A seahorse swims in the water." and "A seahorse swims in water." were both kept by an
+    exact-match check, which is not variety. Small words are dropped and what is left is
+    compared as a set, so a rewording counts as the same fact.
+    """
+    def meat(text):
+        return {w.lower() for w in _words(text)} - SMALL_WORDS
+
+    mine = meat(fact)
+    if not mine:
+        return True
+    for other in existing:
+        theirs = meat(other)
+        if not theirs:
+            continue
+        shared = len(mine & theirs) / max(len(mine), len(theirs))
+        if shared >= overlap:
+            return True
+    return False
 
 
 def _words(text):
@@ -83,6 +119,9 @@ def fact_problems(fact, subject):
         if int(number) > 10:
             out.append(f'"{text}" says {number}, past what a three-year-old can count to')
             break
+    big = [w for w in words if w.lower() in BIG_NUMBER_WORDS]
+    if big:
+        out.append(f'"{text}" says {", ".join(big)}, past what a three-year-old can count to')
     if subject.lower().split()[-1] not in text.lower():
         out.append(f'"{text}" does not mention the {subject}')
     if LIKE_A_TEMPLATE.match(text):
@@ -95,7 +134,7 @@ def fact_problems(fact, subject):
     return out
 
 
-def _prompt(subjects, complaints=()):
+def _prompt(subjects, complaints=(), avoid=()):
     listed = "\n".join(f"- {s}" for s in subjects)
     prompt = f"""Write one fact about each of these, for a child of three:
 
@@ -126,6 +165,11 @@ Rules, all of them hard:
 - Every fact different from the others: not twenty-five sentences of the same shape.
 
 Return JSON: {{"facts": {{"subject": "the fact.", ...}}}} with one entry per subject above."""
+    if avoid:
+        said = "\n".join(f"- {a}" for a in list(avoid)[:8])
+        prompt += ("\n\nThese have already been written for this subject. Say something "
+                   f"different - a different part of the thing, or something else it does. "
+                   f"Not a rewording of one of these:\n{said}")
     if complaints:
         listed = "\n".join(f"- {c}" for c in complaints[:8])
         prompt += ("\n\nYour previous answer had these faults. Fix every one and introduce "
@@ -133,7 +177,7 @@ Return JSON: {{"facts": {{"subject": "the fact.", ...}}}} with one entry per sub
     return prompt
 
 
-def write_facts(subjects, account, token, attempts=ATTEMPTS):
+def write_facts(subjects, account, token, attempts=ATTEMPTS, avoid=()):
     """({subject: fact}, [subjects that could not be written]).
 
     Asked in one call for all of them, because the model writing twenty-five facts at once
@@ -144,7 +188,7 @@ def write_facts(subjects, account, token, attempts=ATTEMPTS):
     for attempt in range(1, attempts + 1):
         if not wanted:
             break
-        data = complete_json(_prompt(wanted, complaints), SYSTEM, account, token,
+        data = complete_json(_prompt(wanted, complaints, avoid), SYSTEM, account, token,
                              max_tokens=120 + 60 * len(wanted), temperature=0.85)
         got = (data or {}).get("facts") if isinstance(data, dict) else None
         if not isinstance(got, dict):

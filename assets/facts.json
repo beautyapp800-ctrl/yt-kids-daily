@@ -1,0 +1,157 @@
+{
+  "cow": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A cow gives us milk."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A cow eats grass."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A cow has a soft nose."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A cow goes moo."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A cow has a fluffy tail.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A cow's tail is typically hairy, not fluffy"
+      }
+    ]
+  },
+  "horse": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A horse runs very fast."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A horse has a long tail."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A horse eats grass."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A horse has a soft nose."
+      }
+    ],
+    "refused": []
+  },
+  "octopus": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "An octopus has eight arms."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An octopus swims in the water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An octopus hides in a hole."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "An octopus catches fish to eat."
+      }
+    ],
+    "refused": []
+  },
+  "pig": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A pig eats food."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A pig lives on a farm."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A pig gives a loud oink."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A pig rolls in mud."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A pig has a curly tail.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all pigs have curly tails"
+      }
+    ]
+  },
+  "seahorse": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A seahorse swims in the water."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A seahorse hides behind coral."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A seahorse carries its baby."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A seahorse uses its tail to hold on."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A seahorse has a curly tail.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Seahorses have a prehensile tail, not a curly one"
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A seahorse eats tiny fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Seahorses do not typically eat tiny fish, they eat small crustaceans, plankton, and brine shrimp."
+      }
+    ]
+  },
+  "sheep": {
+    "facts": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A sheep has soft wool."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A sheep eats grass."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A sheep lives on a farm."
+      },
+      {
+        "checked": "2026-10-10",
+        "fact": "A sheep goes baa."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-10",
+        "fact": "A sheep gives us milk.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Sheep are not typically raised for milk, cows and goats are more common milk-producing animals"
+      }
+    ]
+  }
+}

@@ -15,10 +15,10 @@ Two rules shape the choice of subjects:
   worse than a repeated lion.
 """
 import random
+from pathlib import Path
 
 from core import db
 from core.logger import get_logger
-from pipeline import cards as card_writer
 from pipeline import catalogue
 
 log = get_logger("plan")
@@ -87,10 +87,12 @@ def dominant_theme(subjects, groups, fallback):
     return best[0] if best[1] >= len(subjects) / 2 else "animals and machines"
 
 
-def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None, rng=None):
+def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
+        rng=None, facts=None):
     """Write the whole plan into the database. Returns True, or raises with a reason."""
     rng = rng or random.Random(int(video_id) * 7919)
     clips = clips if clips is not None else catalogue.load()
+    fact_book = facts if facts is not None else _load_facts()
     wanted = int(cfg.get("cards_per_video", 25))
     # The floor is relative: a configuration asking for eight cards means eight, and should
     # not be refused by a constant written for the full-length format.
@@ -117,11 +119,22 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None, r
         raise RuntimeError(f"only {len(plan)} cards could be planned for theme {theme!r}, "
                            f"and a video needs at least {floor}")
 
-    facts, failed = card_writer.write_facts([s for s, _ in plan], account, token)
+    # Facts come from assets/facts.json, checked once when they were added. The daily run
+    # does not write a fact: three of the first forty the model wrote were false, and every
+    # one passed the structural rules, so the check belongs where a rejection costs a retry
+    # rather than a published video. A subject with no checked fact is simply not used.
+    facts, missing = {}, []
+    for subject, _clip in plan:
+        choices = (fact_book.get(subject) or {}).get("facts") or []
+        if choices:
+            facts[subject] = choices[rng.randrange(len(choices))]["fact"]
+        else:
+            missing.append(subject)
     plan = [(s, c) for s, c in plan if s in facts]
     if len(plan) < floor:
-        raise RuntimeError(f"only {len(plan)} cards had a usable fact (failed: "
-                           f"{', '.join(failed)}), and a video needs {floor}")
+        raise RuntimeError(f"only {len(plan)} cards had a checked fact (no fact for: "
+                           f"{', '.join(missing)}), and a video needs {floor}. "
+                           f"Run scripts/build_facts.py")
 
     sounds_module = sounds_module or _default_sounds()
     silent = []
@@ -155,6 +168,12 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None, r
                  f"{len(plan)} cards on {theme}: {sum(1 for _, c in plan if c)} filmed, "
                  f"{len(drawn)} drawn, {len(silent)} silent")
     return True
+
+
+def _load_facts():
+    import json
+    path = Path(__file__).resolve().parent.parent / "assets" / "facts.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
 def _default_sounds():
