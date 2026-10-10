@@ -28,6 +28,8 @@ WIDTH, HEIGHT, FPS = 1920, 1080, 30
 FONT = Path(__file__).resolve().parent.parent / "assets" / "fonts" / "Fredoka-Bold.ttf"
 LABEL_SIZE = 110
 LABEL_MARGIN = 70
+LABEL_FADE = 0.3                 # how long the name takes to arrive
+LABEL_RISE = 40                  # and how far it slides up while it does
 STROKE = 10
 TIMEOUT_PER_CARD = 600
 
@@ -77,13 +79,20 @@ def card_video(card, seconds, out_path, font=None):
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     label = label_image(card["subject"], out_path.with_suffix(".label.png"), font)
-    overlay = f"[v][1:v]overlay=(W-w)/2:H-h-{LABEL_MARGIN}"
+    # The name does not sit there for the whole card: it slides up and fades in over a
+    # quarter of a second, roughly as it is spoken. A still label on a still frame is what
+    # made the first cut look dead, and this is the cheapest thing that fixes it.
+    overlay = (f"[1:v]format=rgba,fade=t=in:st=0:d={LABEL_FADE}:alpha=1[lab];"
+               f"[v][lab]overlay=(W-w)/2:"
+               f"'H-h-{LABEL_MARGIN}+max(0,({LABEL_RISE}-{LABEL_RISE}*t/{LABEL_FADE}))'")
     if card.get("clip_path"):
         # -stream_loop so a short clip fills a long card without being slowed down.
         args = ["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(card["clip_path"]),
                 "-i", str(label), "-t", f"{seconds:.3f}", "-filter_complex",
                 f"[0:v]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
-                f"crop={WIDTH}:{HEIGHT},eq=saturation=1.25:contrast=1.08[v];{overlay}"]
+                f"crop={WIDTH}:{HEIGHT},eq=saturation=1.30:contrast=1.10,"
+                f"zoompan=z='min(zoom+0.00035,1.08)':d=1:s={WIDTH}x{HEIGHT}:fps={FPS}[v];"
+                f"{overlay}"]
     else:
         # A still gets a slow push in, so the frame is not dead for fourteen seconds.
         zoom = (f"zoompan=z='min(zoom+0.0006,1.12)':d={int(seconds * FPS)}"

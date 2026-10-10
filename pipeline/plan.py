@@ -88,11 +88,12 @@ def dominant_theme(subjects, groups, fallback):
 
 
 def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
-        rng=None, facts=None):
+        rng=None, facts=None, sound_book=None):
     """Write the whole plan into the database. Returns True, or raises with a reason."""
     rng = rng or random.Random(int(video_id) * 7919)
     clips = clips if clips is not None else catalogue.load()
     fact_book = facts if facts is not None else _load_facts()
+    sound_book = sound_book if sound_book is not None else _load_sounds()
     wanted = int(cfg.get("cards_per_video", 25))
     # The floor is relative: a configuration asking for eight cards means eight, and should
     # not be refused by a constant written for the full-length format.
@@ -139,20 +140,15 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
     sounds_module = sounds_module or _default_sounds()
     silent = []
     for idx, (subject, clip) in enumerate(plan):
+        # From the catalogue, checked once when it was added. The daily run asks no model
+        # about sounds at all: judging three or four candidates for twenty-five cards is a
+        # hundred model calls a day for an answer that never changes, and it was what
+        # exhausted the 10,000-neuron allowance mid-run.
         sound = None
-        if theme_of(subject, groups) in SOUNDED_THEMES:
-            try:
-                found = sounds_module.search_many(subject, _sound_queries(subject))
-                # Every candidate is put to a judge before it is used. Taking the first hit
-                # put the click of a push-button torch made by a company called Dolphin on the
-                # dolphin card, a MIDI of "Baby Shark" on the shark card, and a person
-                # reciting "O is for octopus" on the octopus card - all three titles contain
-                # the subject's name, which was the only thing the old filter asked for.
-                sound, refused = soundcheck.first_real(subject, found, account, token)
-                for bad in refused:
-                    log.info("  %s: refused %r - %s", subject, bad["title"][:48], bad["why"][:60])
-            except Exception as e:                               # noqa: BLE001
-                log.warning("no sound for %s: %s", subject, str(e)[:80])
+        entry = sound_book.get(subject) or {}
+        choices = entry.get("sounds") or []
+        if choices:
+            sound = choices[rng.randrange(len(choices))]
         if sound is None:
             silent.append(subject)
         db.add_card(
@@ -176,6 +172,12 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
                  f"{len(plan)} cards on {theme}: {sum(1 for _, c in plan if c)} filmed, "
                  f"{len(drawn)} drawn, {len(silent)} silent")
     return True
+
+
+def _load_sounds():
+    import json
+    path = Path(__file__).resolve().parent.parent / "assets" / "sounds.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
 def _load_facts():
