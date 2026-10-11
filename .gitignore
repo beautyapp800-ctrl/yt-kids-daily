@@ -22,3 +22,8 @@ credentials.json
 preflight-problems.txt
 secrets/
 output/
+
+# Working frames the catalogue builder pulls from stock to show a model; 200 MB and rebuildable.
+data/candidate-frames/
+data/music-cc0-*.json
+output_full/
