@@ -21,6 +21,8 @@ import subprocess
 from pathlib import Path
 
 from core.logger import get_logger
+from core import music as music_lib
+from pipeline import grid
 
 log = get_logger("render")
 
@@ -200,16 +202,16 @@ def concat(paths, out_path, timeout=1800):
 
 
 def mux(video, audio, out_path, cfg, music=None, timeout=1800):
-    """Video, narration-and-sounds, and the music bed under both."""
+    """Video, narration-and-sounds, and the music bed under both.
+
+    `music` arrives already normalised, faded and at the gain the measurement chose, so
+    nothing is applied to it here - a second gain in this function is how the measured level
+    stops being the level.
+    """
     out_path = Path(out_path)
     if music and Path(music).exists():
-        gain = float(cfg.get("music_gain_db", -22))
-        fade_out = float(cfg.get("fade_out_s", 3))
-        args = ["ffmpeg", "-y", "-i", str(video), "-i", str(audio),
-                "-stream_loop", "-1", "-i", str(music), "-filter_complex",
-                f"[2:a]volume={gain}dB,afade=t=in:st=0:d={cfg.get('fade_in_s', 2)}[m];"
-                f"[1:a][m]amix=inputs=2:duration=first:normalize=0,"
-                f"afade=t=out:st=0:d={fade_out}:curve=tri[a]",
+        args = ["ffmpeg", "-y", "-i", str(video), "-i", str(audio), "-i", str(music),
+                "-filter_complex", "[1:a][2:a]amix=inputs=2:duration=first:normalize=0[a]",
                 "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
                 "-shortest", str(out_path)]
     else:
@@ -230,71 +232,211 @@ def probe_duration(path):
         raise RenderError(f"ffprobe could not read {path}")
 
 
-def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None,
-        transitions=True):
+
+# --- the board ---------------------------------------------------------------------------
+
+BOARD_OPEN = 2.2         # how long the whole board is held at the start
+BOARD_HOLD = 0.5         # and between cards, after a tick lands
+ZOOM_IN = 0.6
+ZOOM_OUT = 0.5
+
+
+def _still(clip_path, dst, at=2.0):
+    """One bright frame from a clip, for its cell on the board."""
+    dst = Path(dst)
+    if dst.exists():
+        return dst
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    _run(["ffmpeg", "-y", "-ss", f"{at}", "-i", str(clip_path), "-frames:v", "1",
+          "-vf", "scale=640:360,eq=saturation=1.35:contrast=1.08", str(dst)], 300)
+    return dst
+
+
+def still_for(card, clips_dir, images_dir, work):
+    """The picture that stands for this card on the board."""
+    stem = f"{card['idx']:02d}"
+    clip = Path(clips_dir) / f"{stem}_{card['subject'].replace(' ', '_')}.mp4"
+    dst = Path(work) / f"still_{stem}.jpg"
+    if clip.exists():
+        return _still(clip, dst)
+    if card.get("image_path"):
+        if not dst.exists():
+            _run(["ffmpeg", "-y", "-i", str(card["image_path"]),
+                  "-vf", "scale=640:360,eq=saturation=1.35", str(dst)], 300)
+        return dst
+    raise RenderError(f"card {card['idx']} has neither a clip nor a picture")
+
+
+def _still_clip(image, seconds, out_path, vf=None):
+    """A still held for `seconds`, optionally through a filter."""
+    out_path = Path(out_path)
+    if out_path.exists():
+        return out_path
+    args = ["ffmpeg", "-y", "-loop", "1", "-i", str(image), "-t", f"{seconds:.3f}"]
+    args += ["-vf", vf or f"scale={WIDTH}:{HEIGHT}"]
+    args += ["-an", "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
+             "-pix_fmt", "yuv420p", str(out_path)]
+    _run(args, TIMEOUT_PER_CARD)
+    return out_path
+
+
+def board_pieces(cards, stills, labels, work, cfg):
+    """[(video, seconds, kind, card_index)] - the board moments around every card.
+
+    The board is what makes the video a game rather than a list: it opens on every subject at
+    once, each card is a cell growing to fill the screen, and the cell comes back with a tick
+    on it. A child who cannot count can still see the board filling up.
+    """
+    work = Path(work)
+    work.mkdir(parents=True, exist_ok=True)
+    _c, _r, _cw, _ch, boxes = grid.layout(len(cards))
+    out = []
+
+    opening = grid.board(stills, set(), work / "board_open.jpg", None, labels)
+    out.append((_still_clip(opening, BOARD_OPEN, work / "open.mp4"), BOARD_OPEN, "board", -1))
+
+    for i, _card in enumerate(cards):
+        before = grid.board(stills, set(range(i)), work / f"board_{i:02d}_in.jpg", i, labels)
+        out.append((_still_clip(before, ZOOM_IN, work / f"zin_{i:02d}.mp4",
+                                grid.zoom_filter(boxes[i], ZOOM_IN, FPS, into=True)),
+                    ZOOM_IN, "zoom_in", i))
+        out.append((None, None, "card", i))
+        after = grid.board(stills, set(range(i + 1)), work / f"board_{i:02d}_out.jpg",
+                           None, labels)
+        out.append((_still_clip(after, ZOOM_OUT, work / f"zout_{i:02d}.mp4",
+                                grid.zoom_filter(boxes[i], ZOOM_OUT, FPS, into=False)),
+                    ZOOM_OUT, "zoom_out", i))
+        if i < len(cards) - 1:
+            out.append((_still_clip(after, BOARD_HOLD, work / f"hold_{i:02d}.mp4"),
+                        BOARD_HOLD, "board", i))
+    return out
+
+
+def silent_audio(seconds, out_path):
+    out_path = Path(out_path)
+    if out_path.exists():
+        return out_path
+    _run(["ffmpeg", "-y", "-f", "lavfi", "-i",
+          "anullsrc=channel_layout=stereo:sample_rate=44100",
+          "-t", f"{seconds:.3f}", "-c:a", "aac", "-b:a", "192k", str(out_path)], 300)
+    return out_path
+
+
+def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None, board=True):
+    """Build final.mp4.
+
+    With `board` on, the video is played on the grid: it opens on every subject at once, each
+    card is a cell growing to fill the screen, and the cell comes back ticked. The zooms are
+    the transitions, so the xfade joins are not used as well - two kinds of transition at the
+    same join is one too many, and the zoom is the one that carries meaning.
+    """
     out = Path(output_dir)
     work = out / "cards"
     work.mkdir(parents=True, exist_ok=True)
     cards = db.get_cards(video_id)
     if not cards:
         raise RenderError("there are no cards to render")
-
     clips_dir, images_dir = out / "clips", out / "images"
-    videos, audios = [], []
+
+    # The cards themselves.
+    card_video_for, card_audio_for = {}, {}
     for card in cards:
         slot = float(card["duration_s"] or cfg.get("card_seconds_min", 12))
-        # One transition longer than the slot: the overlap is paid out of this, so the
-        # finished video stays exactly as long as the narration.
-        seconds = slot + (TRANSITION_SECONDS if transitions else 0.0)
+        seconds = slot if board else slot + TRANSITION_SECONDS
         stem = f"{card['idx']:02d}"
         clip = clips_dir / f"{stem}_{card['subject'].replace(' ', '_')}.mp4"
         row = {**card, "clip_path": str(clip) if clip.exists() else None}
-        vpath = work / f"{stem}_v.mp4"
-        apath = work / f"{stem}_a.m4a"
+        vpath, apath = work / f"{stem}_v.mp4", work / f"{stem}_a.m4a"
         if not vpath.exists():
             card_video(row, seconds, vpath)
         if not apath.exists():
             card_audio(row, seconds, apath, cfg)
-        videos.append(vpath)
-        audios.append(apath)
+        card_video_for[card["idx"]] = vpath
+        card_audio_for[card["idx"]] = apath
 
-    # The intro and outro are stills over the first and last card's picture, so the video
-    # starts and ends on something rather than cutting straight in.
+    videos, audios = [], []
+
+    def add(video, audio):
+        videos.append(video)
+        audios.append(audio)
+
+    # The opening is spoken over the whole board, so the child is looking at what is coming
+    # while being told what it is.
     intro, outro = out / "audio" / "_intro.mp3", out / "audio" / "_outro.mp3"
-    if intro.exists():
+    if board:
         from core import tts as _tts
-        bookend = {"subject": "", "clip_path": None,
-                   "image_path": None, "audio_path": str(intro)}
-        first = {**cards[0], "clip_path": str(clips_dir /
-                 f"00_{cards[0]['subject'].replace(' ', '_')}.mp4")}
-        for name, speech, source in (("intro", intro, first), ("outro", outro, first)):
-            if not speech.exists():
-                continue
-            seconds = _tts.duration(speech) + 0.6
-            vpath = work / f"_{name}_v.mp4"
-            apath = work / f"_{name}_a.m4a"
-            blank = {**source, "subject": ""}
-            if not vpath.exists():
-                card_video(blank, seconds, vpath)
-            if not apath.exists():
-                card_audio({"audio_path": str(speech)}, seconds, apath, cfg)
-            if name == "intro":
-                videos.insert(0, vpath)
-                audios.insert(0, apath)
-            else:
-                videos.append(vpath)
-                audios.append(apath)
+        stills = [still_for(c, clips_dir, images_dir, work) for c in cards]
+        labels = [c["subject"] for c in cards]
+        pieces = board_pieces(cards, stills, labels, work / "board", cfg)
 
-    if transitions and len(videos) > 1:
-        silent = join_with_transitions(videos, out / "_video.mp4")
+        opening = pieces[0]
+        if intro.exists():
+            speech = _tts.duration(intro) + 0.4
+            open_board = grid.board(stills, set(), work / "board" / "board_open.jpg",
+                                    None, labels)
+            vpath = work / "board" / "open_long.mp4"
+            if not vpath.exists():
+                _still_clip(open_board, speech, vpath)
+            apath = work / "_intro_a.m4a"
+            if not apath.exists():
+                card_audio({"audio_path": str(intro)}, speech, apath, cfg)
+            add(vpath, apath)
+        else:
+            add(opening[0], silent_audio(opening[1], work / "board" / "open_a.m4a"))
+
+        for video, seconds, kind, index in pieces[1:]:
+            if kind == "card":
+                add(card_video_for[cards[index]["idx"]], card_audio_for[cards[index]["idx"]])
+            else:
+                add(video, silent_audio(seconds, work / "board" / f"{Path(video).stem}_a.m4a"))
+
+        if outro.exists():
+            speech = _tts.duration(outro) + 0.5
+            done_board = grid.board(stills, set(range(len(cards))),
+                                    work / "board" / "board_done.jpg", None, labels)
+            vpath = work / "board" / "done_long.mp4"
+            if not vpath.exists():
+                _still_clip(done_board, speech, vpath)
+            apath = work / "_outro_a.m4a"
+            if not apath.exists():
+                card_audio({"audio_path": str(outro)}, speech, apath, cfg)
+            add(vpath, apath)
     else:
+        for card in cards:
+            add(card_video_for[card["idx"]], card_audio_for[card["idx"]])
+
+    if board:
         silent = concat(videos, out / "_video.mp4")
+    else:
+        silent = (join_with_transitions(videos, out / "_video.mp4") if len(videos) > 1
+                  else concat(videos, out / "_video.mp4"))
     track = concat(audios, out / "_audio.m4a")
-    final = mux(silent, track, out / "final.mp4", cfg, music)
+
+    # The music level is measured, not chosen. Both the narration and the track are read in
+    # LUFS and the gain is whatever puts the bed the configured number of decibels under the
+    # voice; the gap is then read back off the finished mix and logged, because a filter that
+    # silently does something else is exactly how a bed ends up on top of the lesson.
+    bed = None
+    chosen = music or music_lib.pick(video_id)
+    if chosen and Path(chosen).exists():
+        try:
+            under = float(cfg.get("music_under_voice_db", music_lib.GAIN_UNDER_VOICE_DB))
+            gain = music_lib.pick_gain(chosen, track, under)
+            bed = music_lib.bed(chosen, probe_duration(silent),
+                                out / "_music.m4a", gain)
+            log.info("music %s at %+.1f dB (%.1f LUFS track, %.1f LUFS narration, "
+                     "wanted %.0f dB under)", Path(chosen).name, gain,
+                     music_lib.loudness(chosen), music_lib.loudness(track), under)
+        except Exception as e:                                   # noqa: BLE001
+            log.warning("no music bed: %s", str(e)[:120])
+            bed = None
+    final = mux(silent, track, out / "final.mp4", cfg, bed)
 
     length = probe_duration(final)
-    log.info("rendered %d cards into %.1f minutes (%s)", len(cards), length / 60, final.name)
+    log.info("rendered %d cards into %.1f minutes (%s)%s", len(cards), length / 60,
+             final.name, " on the board" if board else "")
     db.update_video(video_id, video_path=str(final), duration_s=round(length, 2))
     db.log_event(video_id, "render", "info",
-                 f"{len(cards)} cards, {length / 60:.1f} minutes")
+                 f"{len(cards)} cards, {length / 60:.1f} minutes"
+                 + (", played on the board" if board else ""))
     return True

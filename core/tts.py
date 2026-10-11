@@ -126,20 +126,39 @@ def duration(path):
 
 # How each piece of a card is said. Name: slower and higher, the way a word is offered to a
 # child. Question: higher, so it rises. Answer: warm and a little quicker. Fact: normal.
+# Which config value each part of a card takes its pace from. The name has its own, because
+# it is the one word the child is meant to catch and repeat and it reads well slowed down,
+# while the rest was being read at an adult's speed. Both are in config so they can be moved
+# without touching this file.
 VOICING = {
-    "cue":      {"rate": "+14%", "pitch": "+40Hz"},
-    "name":     {"rate": "-12%", "pitch": "+34Hz"},
-    "question": {"rate": "+6%",  "pitch": "+38Hz"},
-    "answer":   {"rate": "+12%", "pitch": "+30Hz"},
-    "fact":     {"rate": "+8%",  "pitch": "+20Hz"},
-    "plain":    {"rate": "+4%",  "pitch": "+12Hz"},
+    "cue":      {"rate": "rate_speech", "pitch": "pitch_speech", "rate_shift": +6},
+    "name":     {"rate": "rate_name",   "pitch": "pitch_name",   "rate_shift": 0},
+    "question": {"rate": "rate_speech", "pitch": "pitch_speech", "rate_shift": +4},
+    "answer":   {"rate": "rate_speech", "pitch": "pitch_speech", "rate_shift": +2},
+    "fact":     {"rate": "rate_speech", "pitch": "pitch_speech", "rate_shift": 0},
+    "plain":    {"rate": "rate_speech", "pitch": "pitch_speech", "rate_shift": 0},
 }
+
+DEFAULTS = {"rate_name": "-12%", "rate_speech": "-14%",
+            "pitch_name": "+34Hz", "pitch_speech": "+18Hz"}
+
+
+def _percent(value, shift):
+    """Nudge a rate like '-14%' by a few points, keeping the form edge-tts wants."""
+    try:
+        base = int(str(value).strip().rstrip("%"))
+    except ValueError:
+        base = 0
+    total = base + shift
+    return f"{'+' if total >= 0 else ''}{total}%"
 
 
 def say_part(text, kind, out_path, cfg, voice=None):
     voicing = VOICING.get(kind, VOICING["plain"])
+    rate = cfg.get(voicing["rate"], DEFAULTS[voicing["rate"]])
+    pitch = cfg.get(voicing["pitch"], DEFAULTS[voicing["pitch"]])
     return speak(text, out_path, voice or cfg.get("voice", DEFAULT_VOICE),
-                 voicing["rate"], voicing["pitch"])
+                 _percent(rate, voicing["rate_shift"]), pitch)
 
 
 def build(segments, out_path, cfg, work, voice=None):

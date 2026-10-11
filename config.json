@@ -11,11 +11,9 @@
     "attempts": 3
   },
   "voice": "en-US-JennyNeural",
-  "voice_rate": "+8%",
   "pause_before_name_ms": 450,
   "pause_after_name_ms": 700,
   "pause_between_cards_ms": 350,
-  "music_gain_db": -22,
   "sound_gain_db": -6,
   "fade_in_s": 2,
   "fade_out_s": 3,
@@ -45,5 +43,10 @@
   "voice_chosen_why": "picked by ear from three 30-second samples: friendly, gentle, comforting",
   "pause_to_think_ms": 900,
   "sound_lufs": -14,
-  "sound_max_seconds": 2.5
+  "sound_max_seconds": 2.5,
+  "rate_name": "-12%",
+  "rate_speech": "-14%",
+  "pitch_name": "+34Hz",
+  "pitch_speech": "+18Hz",
+  "music_under_voice_db": 12
 }

@@ -9,6 +9,7 @@ pictures elsewhere in the project apply here too - no hands, no faces, no letter
 a different reason: a child does not need a cartoon hand holding the banana, and generated
 lettering is garbled whatever the audience.
 """
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -26,21 +27,43 @@ class MediaError(Exception):
     pass
 
 
-def download(url, dst, timeout=DOWNLOAD_TIMEOUT):
-    """Fetch a clip. Returns the path; raises MediaError on anything that is not a video."""
+DOWNLOAD_ATTEMPTS = 4
+
+
+def download(url, dst, timeout=DOWNLOAD_TIMEOUT, attempts=DOWNLOAD_ATTEMPTS):
+    """Fetch a clip. Returns the path; raises MediaError on anything that is not a video.
+
+    Retried, because the first version gave up on the first error and the first error was a
+    DNS blip: the seahorse card lost its footage to one failed lookup and fell through to
+    being drawn. A clip that is in the catalogue has been checked by a model and is worth
+    more than a drawing, so it is worth asking again for.
+    """
     dst = Path(dst)
     if dst.exists() and dst.stat().st_size > 10000:
         return dst
     dst.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            kind = resp.headers.get("Content-Type", "")
-            if "video" not in kind and "octet-stream" not in kind:
-                raise MediaError(f"{url} returned {kind!r}, not a video")
-            data = resp.read(MAX_CLIP_BYTES + 1)
-    except urllib.error.URLError as e:
-        raise MediaError(f"{url}: {e.reason}") from e
+    last = None
+    for attempt in range(1, attempts + 1):
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                kind = resp.headers.get("Content-Type", "")
+                if "video" not in kind and "octet-stream" not in kind:
+                    raise MediaError(f"{url} returned {kind!r}, not a video")
+                data = resp.read(MAX_CLIP_BYTES + 1)
+            break
+        except MediaError:
+            raise
+        except urllib.error.URLError as e:
+            last = e.reason
+        except Exception as e:                                   # noqa: BLE001
+            last = str(e)[:120]
+        if attempt == attempts:
+            raise MediaError(f"{url}: {last} (after {attempts} attempts)")
+        wait = min(2 ** attempt, 15)
+        log.info("clip download failed (%d/%d), waiting %ds: %s",
+                 attempt, attempts, wait, str(last)[:70])
+        time.sleep(wait)
     if len(data) > MAX_CLIP_BYTES:
         raise MediaError(f"{url} is over {MAX_CLIP_BYTES // (1024 * 1024)} MB")
     if len(data) < 10000:
