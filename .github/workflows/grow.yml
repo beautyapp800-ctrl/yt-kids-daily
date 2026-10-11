@@ -1,0 +1,88 @@
+name: grow
+
+# Keeps the catalogues from running dry. Sixty subjects is two videos; after that the plan would
+# reuse subjects and a weekly viewer would see the same lion again, and the only cure is more
+# subjects - found, verified and checked, which used to be a person looking at frames.
+#
+# Every run starts with a free question: how many videos' worth of fresh subjects are left? If
+# there are at least three, it stops there and costs nothing. Otherwise it asks the language
+# model for new subjects in the thinnest themes and runs the same builders that made the first
+# sixty - clips confirmed by a vision model, facts by a judge, sounds read at their source.
+#
+# The free Cloudflare allowance is 10,000 neurons a day and the daily video run also draws on
+# it, so this stops cleanly when the allowance runs out, keeps what it finished, and carries on
+# the next day. A subject only joins the list once it has come out of the builders complete.
+
+on:
+  schedule:
+    - cron: "47 13 * * *"         # after the daily production runs, so they do not compete
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Grow even if there is plenty of headroom"
+        type: boolean
+        default: false
+
+concurrency:
+  group: grow
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  grow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      PYTHONUNBUFFERED: "1"
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - run: pip install -r requirements.txt
+
+      - name: Grow the catalogues if they are running low
+        id: grow
+        continue-on-error: true
+        run: |
+          if [ "${{ inputs.force }}" = "true" ]; then flag="--force"; else flag=""; fi
+          python scripts/grow.py $flag | tee grow.log
+
+      - name: Commit what was added
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/subjects.json assets/clips.json assets/facts.json assets/sounds.json
+          if git diff --cached --quiet; then
+            echo "nothing new"
+            exit 0
+          fi
+          git commit -m "Grow the catalogues (${{ steps.grow.outcome }})"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${{ github.ref_name }}" || true
+            if git push origin "HEAD:${{ github.ref_name }}"; then exit 0; fi
+            sleep $((attempt * 10))
+          done
+          echo "::error::could not push the new catalogue entries"
+          exit 1
+
+      - name: Say so only when it failed
+        if: steps.grow.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          number=$(gh issue list --label run-log --state open --json number --jq '.[0].number // empty')
+          if [ -z "$number" ]; then exit 0; fi
+          gh issue comment "$number" --body "@${{ github.repository_owner }} **Growing the catalogues failed.** The daily video run is not affected, but the supply of new subjects is not being replenished. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

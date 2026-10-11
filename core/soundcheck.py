@@ -24,7 +24,7 @@ thousands of.
 import re
 from pathlib import Path
 
-from core.llm import complete_json, LLMError
+from core.llm import complete_json, LLMError, QuotaExhausted
 from core.logger import get_logger
 
 log = get_logger("soundcheck")
@@ -89,6 +89,8 @@ def check(subject, record, account, token, model=JUDGE):
                                      record.get("description", "")),
                              SYSTEM, account, token, model=model,
                              max_tokens=160, temperature=0.1)
+    except QuotaExhausted:
+        raise
     except LLMError as e:
         log.warning("could not judge %r: %s", record.get("title"), str(e)[:90])
         return {"ok": None, "why": "the judge could not be reached"}

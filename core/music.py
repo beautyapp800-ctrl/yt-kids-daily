@@ -100,15 +100,51 @@ def pick_gain(track, narration, under_db=GAIN_UNDER_VOICE_DB):
     return round(loudness(narration) - under_db - loudness(track), 1)
 
 
+JOIN_FADE = 1.0        # seconds of overlap where the track meets itself
+
+
 def bed(track, seconds, out_path, gain_db, fade_in=FADE_IN, fade_out=FADE_OUT):
-    """The track, looped to length, faded at both ends, at the gain asked for."""
+    """The track, repeated to length with each repeat crossfaded into the next, faded at both
+    ends, at the gain asked for.
+
+    The tracks are 58 and 80 seconds and a video is eight to ten minutes, so each is heard
+    seven to ten times. ffmpeg's -stream_loop would cut from the last sample to the first, and
+    that join is a click every minute for the whole video - which is exactly the kind of thing
+    a parent hears and a measurement of loudness does not. So the repeats are chained through
+    acrossfade instead. Audio only, so even ten inputs cost a second or two.
+    """
     out_path = Path(out_path)
+    length = duration(track)
+    step = max(length - JOIN_FADE, 1.0)
+    count = max(int(seconds // step) + 2, 1)
+    count = min(count, 40)
     start_out = max(seconds - fade_out, 0.1)
-    # -vn because the track carries embedded album art, which ffmpeg treats as a video
-    # stream; without it the filter graph builds a video thread that fails on the still and
-    # the whole bed comes out as "Invalid argument" with nothing written.
-    _ffmpeg(["-stream_loop", "-1", "-i", str(track), "-t", f"{seconds:.3f}", "-vn",
-             "-af", f"volume={gain_db}dB,afade=t=in:st=0:d={fade_in},"
-                    f"afade=t=out:st={start_out:.2f}:d={fade_out}",
-             "-ar", "44100", "-ac", "2", str(out_path)])
+
+    inputs = []
+    for _ in range(count):
+        inputs += ["-i", str(track)]
+    if count == 1:
+        graph = "[0:a]anull[loop]"
+    else:
+        steps, last = [], "0:a"
+        for i in range(1, count):
+            steps.append(f"[{last}][{i}:a]acrossfade=d={JOIN_FADE}:c1=tri:c2=tri[x{i}]")
+            last = f"x{i}"
+        graph = ";".join(steps) + f";[{last}]anull[loop]"
+    graph += (f";[loop]atrim=0:{seconds:.3f},volume={gain_db}dB,"
+              f"afade=t=in:st=0:d={fade_in},afade=t=out:st={start_out:.2f}:d={fade_out}[bed]")
+    # -vn on every input: the tracks carry embedded album art, which ffmpeg treats as a video
+    # stream and then fails on with "Invalid argument" and nothing written.
+    _ffmpeg([*inputs, "-filter_complex", graph, "-map", "[bed]", "-vn",
+             "-ar", "44100", "-ac", "2", str(out_path)], timeout=900)
     return out_path
+
+
+def duration(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                          "-of", "default=nw=1:nk=1", str(path)],
+                         capture_output=True, text=True, timeout=120)
+    try:
+        return float(out.stdout.strip())
+    except ValueError:
+        raise MusicError(f"ffprobe could not read the length of {path}")

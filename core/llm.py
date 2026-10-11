@@ -27,6 +27,12 @@ class LLMError(Exception):
     pass
 
 
+class QuotaExhausted(LLMError):
+    """The daily free allocation is spent. Retrying cannot help and costs a minute each time,
+    so callers that loop - the catalogue builders - stop on this instead of grinding through
+    four waits per candidate and then recording every subject as having nothing."""
+
+
 def complete(prompt, system, account, token, model=MODEL, max_tokens=400, temperature=0.8):
     """One answer, as text. Retries a throttle or a gateway error, nothing else."""
     url = API.format(account=account, model=model)
@@ -42,7 +48,10 @@ def complete(prompt, system, account, token, model=MODEL, max_tokens=400, temper
                 payload = json.load(resp)
             break
         except urllib.error.HTTPError as e:
-            last = LLMError(f"HTTP {e.code}: {e.read()[:200]}")
+            detail = e.read()[:300]
+            last = LLMError(f"HTTP {e.code}: {detail[:200]}")
+            if e.code == 429 and (b"daily free allocation" in detail or b"neurons" in detail):
+                raise QuotaExhausted(f"HTTP 429: {detail[:160]}") from e
             if e.code not in (429, 500, 502, 503, 504):
                 raise last from e
         except urllib.error.URLError as e:

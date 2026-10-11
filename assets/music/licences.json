@@ -1,11 +1,34 @@
 [
   {
-    "title": "Childrens Time -FREE MUSIC",
-    "creator": "ANtarcticbreeze",
-    "page": "https://www.jamendo.com/track/1210823",
-    "licence": "by",
-    "version": "3.0",
-    "file": "childrens-time.mp3",
-    "seconds": 76
+    "title": "Upbeat loop",
+    "creator": "mistermender",
+    "page": "https://freesound.org/people/mistermender/sounds/512340",
+    "licence": "cc0",
+    "licence_checked_at_source": true,
+    "evidence": "the page links the CC0 deed and no other licence",
+    "file": "upbeat-loop.mp3",
+    "seconds": 58,
+    "measured": {
+      "brightness_hz": 1727,
+      "bpm": 123,
+      "notes_per_s": 3.1,
+      "level_variation": 0.24
+    }
+  },
+  {
+    "title": "bird on a fence song - 120bpm",
+    "creator": "elaineaeris",
+    "page": "https://freesound.org/people/elaineaeris/sounds/505686",
+    "licence": "cc0",
+    "licence_checked_at_source": true,
+    "evidence": "the page links the CC0 deed and no other licence",
+    "file": "bird-on-a-fence.mp3",
+    "seconds": 80,
+    "measured": {
+      "brightness_hz": 838,
+      "bpm": 96,
+      "notes_per_s": 5.4,
+      "level_variation": 0.42
+    }
   }
 ]

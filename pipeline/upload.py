@@ -1,0 +1,487 @@
+"""Stage 8: upload the finished video to YouTube (Data API v3), then set its thumbnail.
+
+Ported from yt-factory, which has run this against the real API: the resumable upload, the
+retry and resume-across-processes logic, the quota notes and the queue-driven scheduling are
+all that project's, and the changes are the ones that make this channel a different thing in
+law.
+
+MADE FOR KIDS. Every upload sets status.selfDeclaredMadeForKids = true. That is a legal
+requirement under COPPA for a channel whose audience is children, not a preference, so like
+yt-factory's two compliance flags it is a constant here rather than a config value: no edit
+to config.json can switch it off, it is asserted on the request immediately before sending,
+and the value YouTube stores is compared with the one sent.
+
+What follows from it, none of which this code relies on: comments are switched off by
+YouTube on a made-for-kids video, end screens and cards do not work, subscribers are not
+notified of a new upload, and personalised ads are off. There is deliberately no code here
+that sets, reads or waits for any of them.
+
+containsSyntheticMedia stays true as in yt-factory. The narration is a synthetic voice, the
+footage is real, and over-declaring is the safe direction.
+
+Scheduling follows the queue, not the clock: the next slot is the day after the last slot
+already booked, because GitHub's free runners start scheduled jobs hours late and "now plus
+three days" skipped days when a run slipped past local midnight. Publication is at config
+.publish_time (16:00) in config.timezone, converted through the real zone.
+"""
+import http.client
+import json
+import random
+import socket
+import time
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+from core import db
+from core.config import output_dir
+from core.logger import get_logger
+
+log = get_logger("upload")
+
+# Set on every upload, not read from config: see the module docstring.
+MADE_FOR_KIDS = True             # COPPA: see the module docstring
+CONTAINS_SYNTHETIC_MEDIA = True
+
+CATEGORY_ID = "27"               # Education
+DEFAULT_PUBLISH_TIME = "16:00"   # local, config.publish_time: morning in the US, when
+                                 # a parent turns the tablet on
+DEFAULT_PUBLISH_TIMEZONE = "Europe/Kiev"
+DEFAULT_DAYS_AHEAD = 3
+# How close to now a slot may be once the queue is driving the choice. One day, so a video
+# always has a night of YouTube processing behind it before anyone is sent to it, and a run
+# that arrives six hours late still books the same evening as one that arrived on time.
+MIN_LEAD_DAYS = 1
+MIN_LEAD_MINUTES = 30            # and never a slot YouTube would read as already past
+DEFAULT_LANGUAGE = "en"
+PRIVACY = ("private", "unlisted", "public")
+DEFAULT_CHUNK_MB = 8             # must be a multiple of 256 KiB; 8 MiB is
+MAX_RETRIES = 10                 # consecutive failures with no progress before giving up
+MAX_BACKOFF_S = 60
+RETRIABLE_STATUS = (500, 502, 503, 504)
+
+MAX_TITLE = 100                  # YouTube's limits
+MAX_DESCRIPTION_BYTES = 5000
+MAX_TAGS_CHARS = 500
+MAX_THUMBNAIL_BYTES = 2 * 1024 * 1024
+
+QUOTA_NOTE = ("videos.insert: documented as 1 unit in the separate uploads bucket (100 a "
+              "day). thumbnails.set: documented as ~50 of the 10,000 general units a day. "
+              "The API does not report usage; the real figure is in Google Cloud Console > "
+              "APIs & Services > YouTube Data API v3 > Quotas & System limits.")
+
+
+class UploadError(Exception):
+    pass
+
+
+# --- what is sent ----------------------------------------------------------------
+
+def publish_at(cfg, now=None, last_scheduled=None):
+    """When YouTube should make this video public, as RFC 3339 UTC.
+
+    The slot is the day after the last slot already taken - not a fixed distance from the
+    moment this run happens to be executing. That distinction is the whole point: GitHub's
+    free runners start scheduled jobs when they have room, and every scheduled run of this
+    repository so far has started between 2h55 and 5h44 after its cron. A run that slips past
+    local midnight would, under "now + 3 days", book the slot a day later than the one before
+    it asked for - a hole on the channel - and two runs on the same day would book the same
+    minute twice. Counting from the queue instead, the slots are strictly one a day whatever
+    time the runner wakes up, and a day lost to a failure costs buffer rather than leaving a
+    gap: the videos after it keep going out daily.
+
+    `last_scheduled` is the latest publishAt already handed to YouTube (db.last_scheduled_
+    publish()). With no queue at all - the first video ever, or after a long outage - the slot
+    is config.publish_days_ahead out, which is what builds the buffer back up.
+
+    The conversion is done through the real zone, not a fixed offset: Kyiv is UTC+3 in
+    summer and UTC+2 in winter, so 21:00 local is 18:00Z for part of the year and 19:00Z for
+    the rest, and an offset written down once would be wrong for half of it.
+    """
+    zone = ZoneInfo(cfg.get("timezone") or DEFAULT_PUBLISH_TIMEZONE)
+    hour, _, minute = (cfg.get("publish_time") or DEFAULT_PUBLISH_TIME).partition(":")
+    days = int(cfg.get("publish_days_ahead", DEFAULT_DAYS_AHEAD))
+    local = (now or datetime.now(timezone.utc)).astimezone(zone)
+
+    def at_publish_time(moment):
+        return moment.replace(hour=int(hour), minute=int(minute or 0), second=0, microsecond=0)
+
+    # The buffer the configuration asks for, measured from today.
+    when = at_publish_time(local + timedelta(days=days))
+
+    if last_scheduled is not None:
+        if isinstance(last_scheduled, str):
+            last_scheduled = datetime.fromisoformat(last_scheduled.replace("Z", "+00:00"))
+        last_local = last_scheduled.astimezone(zone)
+        # A queue that ran dry longer ago than the buffer itself is not a queue any more:
+        # the channel is already out of rhythm, so the buffer is built again from today
+        # rather than chased. Otherwise the next free slot is taken, which keeps the videos
+        # one a day and spends buffer - not continuity - on a day that was lost.
+        if last_local >= local - timedelta(days=days):
+            after_queue = at_publish_time(last_local + timedelta(days=1))
+            floor = at_publish_time(local + timedelta(days=MIN_LEAD_DAYS))
+            when = max(after_queue, floor)
+
+    while when <= local + timedelta(minutes=MIN_LEAD_MINUTES):
+        when += timedelta(days=1)
+    return when.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
+def build_body(video, cfg, now=None):
+    """The videos.insert request body for this video."""
+    privacy = cfg.get("privacy_status", "private")
+    if privacy not in PRIVACY:
+        raise UploadError(f"privacy_status {privacy!r} in config.json must be one of {PRIVACY}")
+    yt = cfg.get("youtube") or {}
+    tags = video.get("tags")
+    tags = json.loads(tags) if isinstance(tags, str) and tags else (tags or [])
+    status = {
+        "privacyStatus": privacy,
+        "selfDeclaredMadeForKids": MADE_FOR_KIDS,
+        "containsSyntheticMedia": CONTAINS_SYNTHETIC_MEDIA,
+    }
+    if cfg.get("schedule_publish", True):
+        # YouTube requires a scheduled video to go up private; it makes it public itself at
+        # publishAt. Asking for public AND a schedule is rejected, so privacy is forced here
+        # rather than left to trip the upload.
+        status["privacyStatus"] = "private"
+        status["publishAt"] = publish_at(cfg, now, last_scheduled=db.last_scheduled_publish())
+    return {
+        "snippet": {
+            "title": video.get("seo_title") or video.get("title") or "",
+            "description": video.get("description") or "",
+            "tags": tags,
+            "categoryId": str(yt.get("category_id", CATEGORY_ID)),
+            "defaultLanguage": yt.get("default_language", DEFAULT_LANGUAGE),
+        },
+        "status": status,
+    }
+
+
+def assert_mandatory_flags(body):
+    """The two compliance flags, checked on the request itself just before it goes out."""
+    status = body.get("status") or {}
+    if status.get("selfDeclaredMadeForKids") is not True:
+        raise UploadError("status.selfDeclaredMadeForKids must be true on every upload: this "
+                          "channel is made for children and COPPA requires it")
+    if status.get("containsSyntheticMedia") is not True:
+        raise UploadError("status.containsSyntheticMedia must be true on every upload: "
+                          "the narration is a synthetic voice")
+
+
+def check_metadata(body, video_path, thumbnail_path):
+    """Everything YouTube would reject, found before spending an upload on it."""
+    problems = []
+    snippet = body["snippet"]
+    if not snippet["title"].strip():
+        problems.append("the video has no title (did the seo stage run?)")
+    if len(snippet["title"]) > MAX_TITLE:
+        problems.append(f"title is {len(snippet['title'])} characters, YouTube allows {MAX_TITLE}")
+    if not snippet["description"].strip():
+        problems.append("the video has no description (did the seo stage run?)")
+    if len(snippet["description"].encode("utf-8")) > MAX_DESCRIPTION_BYTES:
+        problems.append(f"description is over {MAX_DESCRIPTION_BYTES} bytes")
+    if sum(len(t) + 1 for t in snippet["tags"]) > MAX_TAGS_CHARS:
+        problems.append(f"tags are over {MAX_TAGS_CHARS} characters in total")
+    if not video_path or not Path(video_path).exists():
+        problems.append(f"the video file {video_path} does not exist (did render run?)")
+    if thumbnail_path and Path(thumbnail_path).exists() and \
+            Path(thumbnail_path).stat().st_size > MAX_THUMBNAIL_BYTES:
+        problems.append(f"the thumbnail is over {MAX_THUMBNAIL_BYTES // 1024 // 1024} MB")
+    return problems
+
+
+# --- the upload --------------------------------------------------------------------
+
+def _retriable_exceptions():
+    import httplib2
+    return (httplib2.HttpLib2Error, IOError, socket.timeout, http.client.IncompleteRead,
+            http.client.ImproperConnectionState, http.client.CannotSendRequest,
+            http.client.CannotSendHeader, http.client.ResponseNotReady,
+            http.client.BadStatusLine)
+
+
+def explain_http_error(error):
+    """A sentence a person can act on for the errors an upload actually meets."""
+    from googleapiclient.errors import HttpError
+    status = getattr(error.resp, "status", "?") if isinstance(error, HttpError) else "?"
+    try:
+        detail = json.loads(error.content.decode("utf-8"))["error"]
+        reasons = [e.get("reason", "") for e in detail.get("errors", [])]
+        message = detail.get("message", "")
+    except (ValueError, KeyError, AttributeError, TypeError):
+        reasons, message = [], str(error)
+
+    if "quotaExceeded" in reasons or "dailyLimitExceeded" in reasons:
+        return (f"YouTube says the daily quota is used up (HTTP {status}, {message}). The "
+                "uploads bucket resets daily at midnight Pacific time; try again after that.")
+    if "uploadLimitExceeded" in reasons:
+        return f"YouTube says this channel has reached its upload limit for now ({message})"
+    if "youtubeSignupRequired" in reasons:
+        return "the Google account has no YouTube channel; create one at youtube.com first"
+    if "forbidden" in reasons or status == 403:
+        return (f"YouTube refused the request (HTTP 403: {message}). For a thumbnail this "
+                "usually means the channel is not phone-verified, which custom thumbnails "
+                "and videos over 15 minutes both require.")
+    if status == 401:
+        return "YouTube rejected the credentials (HTTP 401); run scripts/youtube_auth.py again"
+    return f"YouTube returned HTTP {status}: {message}"
+
+
+def _load_session(state_path, media_path):
+    """The saved session if it belongs to this very file, else None."""
+    state_path = Path(state_path)
+    if not state_path.exists():
+        return None
+    try:
+        saved = json.loads(state_path.read_text(encoding="utf-8"))
+        stat = Path(media_path).stat()
+        if saved["size"] == stat.st_size and saved["mtime"] == int(stat.st_mtime) and saved["uri"]:
+            return saved
+    except (ValueError, KeyError, OSError):
+        pass
+    log.warning("an old upload session exists but does not match the file; ignoring it")
+    state_path.unlink(missing_ok=True)
+    return None
+
+
+def _save_session(state_path, media_path, uri):
+    stat = Path(media_path).stat()
+    Path(state_path).write_text(json.dumps(
+        {"uri": uri, "size": stat.st_size, "mtime": int(stat.st_mtime)}), encoding="utf-8")
+
+
+def probe_session(http, uri, size):
+    """Ask YouTube what it holds of an upload session. Returns ("done", response_body),
+    ("partial", bytes_received) or ("gone", None)."""
+    resp, content = http.request(uri, "PUT",
+                                 headers={"Content-Range": f"bytes */{size}",
+                                          "Content-Length": "0"})
+    if resp.status in (200, 201):
+        return "done", json.loads(content)
+    if resp.status == 308:
+        received = resp.get("range")             # "bytes=0-1048575", absent if nothing yet
+        return "partial", (int(received.split("-")[1]) + 1 if received else 0)
+    if resp.status in (404, 410):
+        return "gone", None
+    raise UploadError(f"YouTube answered HTTP {resp.status} when asked about the upload "
+                      "session")
+
+
+def upload_video(service, body, media_path, state_path, chunk_mb=DEFAULT_CHUNK_MB,
+                 sleep=time.sleep):
+    """Send the file and return (response, stats). Retries and resumes as described in the
+    module docstring."""
+    from googleapiclient.errors import HttpError
+    from googleapiclient.http import MediaFileUpload
+
+    size = Path(media_path).stat().st_size
+    media = MediaFileUpload(str(media_path), chunksize=chunk_mb * 1024 * 1024, resumable=True)
+    try:
+        return _upload(service, body, media, media_path, state_path, size, sleep)
+    finally:
+        # MediaFileUpload keeps the video open until it is garbage collected; closing it
+        # here means a failed upload does not hold the file (and on Windows, lock it).
+        handle = getattr(media, "_fd", None)
+        if handle:
+            handle.close()
+
+
+def _upload(service, body, media, media_path, state_path, size, sleep):
+    from googleapiclient.errors import HttpError
+
+    request = service.videos().insert(part="snippet,status", body=body, media_body=media)
+    stats = {"bytes": size, "resumed_from": 0, "retries": 0, "chunks": 0,
+             "insert_calls": 1, "started": time.time()}
+
+    saved = _load_session(state_path, media_path)
+    if saved:
+        kind, value = probe_session(request.http, saved["uri"], size)
+        if kind == "done":
+            log.info("the saved upload session had already completed; collecting its result")
+            stats["resumed_from"] = size
+            Path(state_path).unlink(missing_ok=True)
+            return value, stats
+        if kind == "partial":
+            request.resumable_uri = saved["uri"]
+            request.resumable_progress = value
+            stats["resumed_from"] = value
+            stats["insert_calls"] = 0                  # no second videos.insert request
+            log.info("resuming the upload from byte %d of %d (%.0f%%)", value, size,
+                     100 * value / size)
+        else:
+            log.warning("YouTube no longer knows the saved upload session; starting over")
+            Path(state_path).unlink(missing_ok=True)
+
+    retriable = _retriable_exceptions()
+    response, failures, last_logged = None, 0, -1
+    while response is None:
+        before = request.resumable_progress
+        try:
+            status, response = request.next_chunk(num_retries=2)
+        except HttpError as e:
+            if e.resp.status not in RETRIABLE_STATUS:
+                raise UploadError(explain_http_error(e)) from e
+            error = e
+        except retriable as e:
+            error = e
+        else:
+            failures = 0
+            stats["chunks"] += 1
+            if request.resumable_uri and saved is None:
+                _save_session(state_path, media_path, request.resumable_uri)
+                saved = {"uri": request.resumable_uri}
+            if status:
+                percent = int(status.progress() * 100)
+                if percent // 10 != last_logged // 10:
+                    log.info("uploaded %d%%", percent)
+                    last_logged = percent
+            continue
+
+        # a retriable failure: wait, then carry on from what the server has
+        if request.resumable_progress > before:
+            failures = 0
+        failures += 1
+        stats["retries"] += 1
+        if failures > MAX_RETRIES:
+            raise UploadError(f"the upload kept failing ({error}); gave up after "
+                              f"{MAX_RETRIES} attempts in a row. Run publish again to "
+                              "resume from where it stopped.") from error
+        wait = min(MAX_BACKOFF_S, 2 ** failures) * random.uniform(0.5, 1.0)
+        log.warning("upload hit %s (attempt %d/%d), waiting %.1fs then resuming",
+                    type(error).__name__, failures, MAX_RETRIES, wait)
+        sleep(wait)
+
+    Path(state_path).unlink(missing_ok=True)
+    stats["seconds"] = round(time.time() - stats["started"], 1)
+    return response, stats
+
+
+def set_thumbnail(service, youtube_id, thumbnail_path):
+    from googleapiclient.errors import HttpError
+    from googleapiclient.http import MediaFileUpload
+    media = MediaFileUpload(str(thumbnail_path), mimetype="image/jpeg")
+    try:
+        service.thumbnails().set(videoId=youtube_id, media_body=media).execute()
+    except HttpError as e:
+        raise UploadError(explain_http_error(e)) from e
+    finally:
+        handle = getattr(media, "_fd", None)
+        if handle:
+            handle.close()
+
+
+# --- the stage -----------------------------------------------------------------------
+
+def run(video_id, cfg, service=None, sleep=time.sleep):
+    video = db.get_video(video_id) or {}
+    if video.get("youtube_id"):
+        log.info("video %s is already on YouTube as %s; not uploading it again",
+                 video_id, video["youtube_id"])
+        db.update_video(video_id, status="published")
+        return True
+
+    body = build_body(video, cfg)
+    assert_mandatory_flags(body)
+    media_path, thumb_path = video.get("video_path"), video.get("thumbnail_path")
+    problems = check_metadata(body, media_path, thumb_path)
+    if problems:
+        raise UploadError("; ".join(problems))
+
+    if service is None:
+        from core import youtube
+        try:
+            service = youtube.build_service(youtube.load_credentials())
+        except youtube.AuthError as e:
+            raise UploadError(str(e)) from e
+
+    out = output_dir(video_id)
+    privacy = body["status"]["privacyStatus"]
+    scheduled = body["status"].get("publishAt")
+    size_mb = Path(media_path).stat().st_size / 1e6
+    log.info("uploading %s (%.0f MB) as %r, privacy %s%s", Path(media_path).name, size_mb,
+             body["snippet"]["title"], privacy,
+             f", going public at {scheduled}" if scheduled else "")
+
+    chunk_mb = int((cfg.get("youtube") or {}).get("chunk_mb", DEFAULT_CHUNK_MB))
+    response, stats = upload_video(service, body, media_path, out / "upload_session.json",
+                                   chunk_mb, sleep)
+    youtube_id = response.get("id")
+    if not youtube_id:
+        raise UploadError(f"YouTube accepted the upload but returned no video id: {response}")
+    # Written before anything else can go wrong: this is what stops a second upload.
+    db.update_video(video_id, youtube_id=youtube_id)
+    log.info("uploaded: https://youtu.be/%s in %ss (%d chunks, %d retries%s)", youtube_id,
+             stats.get("seconds", "?"), stats["chunks"], stats["retries"],
+             f", resumed from byte {stats['resumed_from']}" if stats["resumed_from"] else "")
+
+    _compare_with_response(video_id, response, privacy)
+
+    thumb_calls = 0
+    if thumb_path and Path(thumb_path).exists():
+        thumb_calls = 1
+        try:
+            set_thumbnail(service, youtube_id, thumb_path)
+            log.info("thumbnail set")
+        except UploadError as e:
+            # The video is up; a missing thumbnail is fixable by hand and not worth failing
+            # the stage over, which would make the next run look like an unfinished upload.
+            log.warning("the video is uploaded but its thumbnail was not set: %s", e)
+            db.log_event(video_id, "upload", "warning", f"thumbnail not set: {e}")
+    else:
+        log.warning("no thumbnail file to set")
+
+    returned_schedule = (response.get("status") or {}).get("publishAt")
+    if scheduled and not returned_schedule:
+        msg = ("YouTube did not echo publishAt, so the video may not be scheduled; an "
+               "unaudited API project cannot schedule, and the video will sit private "
+               "until it is published by hand")
+        log.warning(msg)
+        db.log_event(video_id, "upload", "warning", msg)
+
+    db.update_video(video_id, status="published",
+                    published_at=returned_schedule or scheduled
+                    or datetime.now(timezone.utc).isoformat(timespec="seconds"))
+
+    spent = {"videos.insert": stats["insert_calls"], "thumbnails.set": thumb_calls}
+    log.info("quota: requests that cost quota this run %s. %s", spent, QUOTA_NOTE)
+    (out / "upload.json").write_text(json.dumps({
+        "youtube_id": youtube_id, "privacy_requested": privacy,
+        "privacy_returned": (response.get("status") or {}).get("privacyStatus"),
+        "publish_at_requested": scheduled, "publish_at_returned": returned_schedule,
+        "bytes": stats["bytes"], "seconds": stats.get("seconds"), "chunks": stats["chunks"],
+        "retries": stats["retries"], "resumed_from": stats["resumed_from"],
+        "quota_costing_requests": spent, "quota_note": QUOTA_NOTE}, indent=2), encoding="utf-8")
+    db.log_event(video_id, "upload", "info",
+                 f"https://youtu.be/{youtube_id}, privacy {privacy}, "
+                 f"{'public at ' + scheduled if scheduled else 'no schedule'}, "
+                 f"{size_mb:.0f} MB, {stats['retries']} retries; quota requests {spent}")
+    return True
+
+
+def _compare_with_response(video_id, response, requested_privacy):
+    """What YouTube says it stored, against what was asked for."""
+    status = response.get("status") or {}
+    problems = []
+    if status.get("privacyStatus") and status["privacyStatus"] != requested_privacy:
+        problems.append(f"privacy was requested as {requested_privacy} but YouTube set it to "
+                        f"{status['privacyStatus']} (an unaudited API project is forced to "
+                        "private; publish by hand in YouTube Studio until it passes audit)")
+    if "selfDeclaredMadeForKids" in status and status["selfDeclaredMadeForKids"] is not MADE_FOR_KIDS:
+        problems.append("YouTube stored selfDeclaredMadeForKids as "
+                        f"{status['selfDeclaredMadeForKids']}, not true - this is a COPPA "
+                        "matter, fix it in YouTube Studio today")
+    if "madeForKids" in status and status["madeForKids"] is not True:
+        problems.append("YouTube's own determination is madeForKids = "
+                        f"{status['madeForKids']}; it can override the declaration, and a "
+                        "video it does not treat as made for kids has comments, notifications "
+                        "and personalised ads this channel is not set up for")
+    if "containsSyntheticMedia" in status and status["containsSyntheticMedia"] is not CONTAINS_SYNTHETIC_MEDIA:
+        problems.append("YouTube stored containsSyntheticMedia as "
+                        f"{status['containsSyntheticMedia']}, not true - fix it in YouTube Studio")
+    elif "containsSyntheticMedia" not in status:
+        log.warning("YouTube's response did not echo containsSyntheticMedia, so it could "
+                    "not be confirmed; check the video's 'altered content' setting in Studio")
+    for p in problems:
+        log.warning("%s", p)
+        db.log_event(video_id, "upload", "warning", p)

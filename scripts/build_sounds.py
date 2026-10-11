@@ -27,7 +27,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from core import config, sounds, soundcheck
+from core import config, licence, sounds, soundcheck
+from core.llm import QuotaExhausted
 from pipeline.plan import SOUNDED_THEMES, _sound_queries, theme_of
 
 CATALOGUE = ROOT / "assets" / "sounds.json"
@@ -43,20 +44,44 @@ def save(data, path=CATALOGUE):
     Path(path).write_text(json.dumps(data, indent=2, sort_keys=True), encoding="utf-8")
 
 
+MAX_JUDGED = 5            # model calls per subject: the allowance is 10,000 neurons a day
+
+
 def fill(subject, account, token, keep=KEEP):
-    """(kept, refused) for one subject."""
+    """(kept, refused, seen, unjudged) for one subject.
+
+    Two checks, cheapest first. The licence is read from the hosting page - free, and it
+    caught Openverse calling a CC BY-NC track CC0 - and only a candidate that survives it is
+    shown to the model, which costs neurons. CC0 and public domain only: this channel is
+    monetised and the repository is public, and an attribution line is one more thing to get
+    wrong.
+
+    `unjudged` counts candidates the model could not be asked about. A subject whose
+    candidates all went unjudged has NOT been found silent, and the caller must not say so.
+    """
     found = sounds.search_many(subject, _sound_queries(subject))
-    kept, refused = [], []
+    kept, refused, judged, unjudged = [], [], 0, 0
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    for record in found[:10]:
+    for record in found:
+        lic, evidence = licence.verify(record)
+        if not licence.usable(lic):
+            refused.append({"title": record.get("title"),
+                            "why": f"licence at the source is {lic}: {evidence}"})
+            continue
+        if judged >= MAX_JUDGED:
+            break
+        judged += 1
         verdict = soundcheck.check(subject, record, account, token)
         if verdict["ok"] is True:
-            kept.append({**record, "is": verdict["why"], "checked": stamp})
+            kept.append({**record, "licence": lic, "licence_checked_at_source": True,
+                         "licence_evidence": evidence, "is": verdict["why"], "checked": stamp})
             if len(kept) >= keep:
                 break
         elif verdict["ok"] is False:
             refused.append({"title": record.get("title"), "why": verdict["why"]})
-    return kept, refused, len(found)
+        else:
+            unjudged += 1
+    return kept, refused, len(found), unjudged
 
 
 def main(argv=None):
@@ -84,14 +109,25 @@ def main(argv=None):
     unreachable = []
     for subject in wanted:
         try:
-            kept, refused, seen = fill(subject, account, token)
+            kept, refused, seen, unjudged = fill(subject, account, token)
+        except QuotaExhausted:
+            print(f"\nthe daily Cloudflare allowance is spent; stopping at {subject}. "
+                  f"Everything done so far is saved - run this again after the reset.")
+            unreachable.append(subject)
+            break
         except Exception as e:                                   # noqa: BLE001
             # Not written as "no sound": a question that could not be asked has no answer.
             print(f"  {subject:12} COULD NOT ASK: {str(e)[:60]}")
             unreachable.append(subject)
             continue
+        if not kept and unjudged:
+            # Not "silent": the model could not be asked about some of the candidates, so
+            # nothing is known. Left out of the catalogue so the next run asks again.
+            print(f"  {subject:12} COULD NOT JUDGE {unjudged} candidate(s); not recorded")
+            unreachable.append(subject)
+            continue
         data[subject] = {"sounds": kept, "refused": refused, "candidates_seen": seen,
-                         "silent": not kept and seen > 0}
+                         "silent": not kept}
         note = kept[0]["title"][:40] if kept else (
             "silent - nothing usable exists" if seen else "no candidates at all")
         print(f"  {subject:12} {len(kept)} kept, {len(refused)} refused | {note}", flush=True)

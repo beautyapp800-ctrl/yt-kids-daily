@@ -1,0 +1,114 @@
+[
+ {
+  "title": "cartoon_flute.aif",
+  "lic": "cc0",
+  "secs": 56,
+  "url": "https://cdn.freesound.org/previews/341/341952_2196245-hq.mp3",
+  "creator": "frosthardr",
+  "page": "https://freesound.org/people/frosthardr/sounds/341952",
+  "source": "freesound",
+  "genres": [],
+  "tags": [
+   "breath",
+   "cartoon",
+   "flute",
+   "funny",
+   "joke",
+   "kids-istrument"
+  ],
+  "centroid": 1802,
+  "bpm": 112,
+  "notes_per_s": 1.9,
+  "level_var": 0.55,
+  "file": "C:\\Users\\PC\\AppData\\Local\\Temp\\musiccand\\1b362b6b.mp3"
+ },
+ {
+  "title": "Happy FROG",
+  "lic": "cc0",
+  "secs": 91,
+  "url": "https://cdn.freesound.org/previews/514/514581_5235550-hq.mp3",
+  "creator": "Mativve",
+  "page": "https://freesound.org/people/Mativve/sounds/514581",
+  "source": "freesound",
+  "genres": [],
+  "tags": [
+   "jumpy",
+   "kids",
+   "song",
+   "rythmic",
+   "music",
+   "loop"
+  ],
+  "centroid": 1748,
+  "bpm": 99,
+  "notes_per_s": 1.7,
+  "level_var": 0.53,
+  "file": "C:\\Users\\PC\\AppData\\Local\\Temp\\musiccand\\a3acbc4f.mp3"
+ },
+ {
+  "title": "Little, happy tune - 22.10.2015",
+  "lic": "cc0",
+  "secs": 40,
+  "url": "https://cdn.freesound.org/previews/335/335361_5450487-hq.mp3",
+  "creator": "cabled_mess",
+  "page": "https://freesound.org/people/cabled_mess/sounds/335361",
+  "source": "freesound",
+  "genres": [],
+  "tags": [
+   "8-bit",
+   "80s",
+   "90s",
+   "achievement",
+   "adventure",
+   "cartoon"
+  ],
+  "centroid": 1193,
+  "bpm": 81,
+  "notes_per_s": 3.7,
+  "level_var": 0.36,
+  "file": "C:\\Users\\PC\\AppData\\Local\\Temp\\musiccand\\aee98c09.mp3"
+ },
+ {
+  "title": "playful modular sounds.wav",
+  "lic": "cc0",
+  "secs": 72,
+  "url": "https://cdn.freesound.org/previews/348/348565_1391542-hq.mp3",
+  "creator": "gis_sweden",
+  "page": "https://freesound.org/people/gis_sweden/sounds/348565",
+  "source": "freesound",
+  "genres": [],
+  "tags": [
+   "eurorack",
+   "modular",
+   "patch",
+   "playful",
+   "random",
+   "synth"
+  ],
+  "centroid": 619,
+  "bpm": 112,
+  "notes_per_s": 3.4,
+  "level_var": 0.05,
+  "file": "C:\\Users\\PC\\AppData\\Local\\Temp\\musiccand\\b1bd1da9.mp3"
+ },
+ {
+  "title": "Happy Guitar",
+  "lic": "cc0",
+  "secs": 92,
+  "url": "https://cdn.freesound.org/previews/207/207558_2376154-hq.mp3",
+  "creator": "edtijo",
+  "page": "https://freesound.org/people/edtijo/sounds/207558",
+  "source": "freesound",
+  "genres": [],
+  "tags": [
+   "guitar",
+   "happy",
+   "jaming"
+  ],
+  "centroid": 649,
+  "bpm": 185,
+  "notes_per_s": 3.2,
+  "level_var": 0.31,
+  "file": "C:\\Users\\PC\\AppData\\Local\\Temp\\musiccand\\e44f2aa4.mp3"
+ }
+]

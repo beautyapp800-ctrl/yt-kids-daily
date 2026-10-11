@@ -17,3 +17,8 @@ __pycache__/
 # The YouTube token, which is a credential even though it is a file.
 token.json
 credentials.json
+
+# Per-run artifact the email reads; not state.
+preflight-problems.txt
+secrets/
+output/

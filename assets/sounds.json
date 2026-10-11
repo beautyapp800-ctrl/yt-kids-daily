@@ -1,16 +1,378 @@
 {
-  "dolphin": {
-    "candidates_seen": 10,
+  "airplane": {
+    "candidates_seen": 30,
     "refused": [],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-10",
+        "checked": "2026-10-11",
+        "creator": "smokinghotdog",
+        "id": "632b9937-6c58-4af9-9b80-5a4a4537cd9e",
+        "is": "an airplane flying at an airport",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/smokinghotdog/sounds/584227",
+        "seconds": 73.9,
+        "source": "freesound",
+        "title": "Airplane Flying Airport",
+        "url": "https://cdn.freesound.org/previews/584/584227_3115103-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Joaofmms",
+        "id": "fc6604dc-2f9d-4b50-b794-21c8a6691e80",
+        "is": "an airplane flying",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Joaofmms/sounds/424739",
+        "seconds": 23.3,
+        "source": "freesound",
+        "title": "Airplane flying",
+        "url": "https://cdn.freesound.org/previews/424/424739_8524423-hq.mp3"
+      }
+    ]
+  },
+  "ant": {
+    "candidates_seen": 14,
+    "refused": [
+      {
+        "title": "ANT SOUND",
+        "why": "unknown or unspecified sound, possibly a generated or synthetic representation of an ant sound"
+      },
+      {
+        "title": "Screaming Ant Sound effect",
+        "why": "a sound effect, possibly a person or animal screaming, not an actual ant making a sound"
+      },
+      {
+        "title": "ANMLInsect_BR Serrinha do alambari Ants walking on contact mics in a nest loudness -16_Melia Roger_Contacts.wav",
+        "why": "ants walking on contact microphones in a nest, likely an experimental sound recording"
+      },
+      {
+        "title": "Ants with contact microphones",
+        "why": "an experimental music recording using contact microphones"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "crooner",
+        "id": "0476c707-e4b1-447d-b768-d1339aa3e13a",
+        "is": "the sound of ants",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/crooner/sounds/195487",
+        "seconds": 110.8,
+        "source": "freesound",
+        "title": "Ants. Hormigas",
+        "url": "https://cdn.freesound.org/previews/195/195487_149018-hq.mp3"
+      }
+    ]
+  },
+  "bear": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "teddy bear sound",
+        "why": "a toy or a person imitating a bear sound, likely related to a stuffed animal or a child's toy"
+      },
+      {
+        "title": "Sing_a_Ma_Jig-Blue_and_Green_Bear-43-Phrase_02.wav",
+        "why": "a toy or electronic device, likely a Sing-a-Ma-Jig, making a sound"
+      },
+      {
+        "title": "Bear growl",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "Pooh Bear attacks me for a treat.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Bear Last Audio.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "bear 2 reverb.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Nivatius",
+        "id": "7796453e-7290-4941-a61c-dc631198a5a5",
+        "is": "a bear growling",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Nivatius/sounds/519599",
+        "seconds": 54.0,
+        "source": "freesound",
+        "title": "Grizzly Bear growl eating",
+        "url": "https://cdn.freesound.org/previews/519/519599_7143328-hq.mp3"
+      }
+    ]
+  },
+  "bee": {
+    "candidates_seen": 38,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "JonCon_Library",
+        "id": "a8602ffb-14db-4174-91fd-db3f7f94f2fc",
+        "is": "a bee buzzing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/JonCon_Library/sounds/481647",
+        "seconds": 2.5,
+        "source": "freesound",
+        "title": "Bee Buzzing",
+        "url": "https://cdn.freesound.org/previews/481/481647_9580304-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "kiwimana",
+        "id": "1cbc43c2-fed3-416f-a342-3ea4ae740c6f",
+        "is": "the sound of honey bees buzzing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kiwimana/sounds/341639",
+        "seconds": 51.7,
+        "source": "freesound",
+        "title": "Honey Bees Buzzing",
+        "url": "https://cdn.freesound.org/previews/341/341639_3361932-hq.mp3"
+      }
+    ]
+  },
+  "boat": {
+    "candidates_seen": 33,
+    "refused": [
+      {
+        "title": "boat engine throaty.flac",
+        "why": "a boat engine"
+      },
+      {
+        "title": "Sea \u200b\u200bwaves in the foreground boat engine in background.wav",
+        "why": "sea waves with a boat engine in the background"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "kyles",
+        "id": "4892f873-0029-4552-98e4-dd6cc1590714",
+        "is": "a small ferry boat engine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/452924",
+        "seconds": 38.8,
+        "source": "freesound",
+        "title": "boat engine small ferry bassy NYC, USA.flac",
+        "url": "https://cdn.freesound.org/previews/452/452924_612689-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "kyles",
+        "id": "e8570640-42b3-4f78-a717-96374315b7b3",
+        "is": "a fishing boat engine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/451395",
+        "seconds": 138.3,
+        "source": "freesound",
+        "title": "fishing boat engine onboard medium speed left side and gentle waves splash India.flac",
+        "url": "https://cdn.freesound.org/previews/451/451395_612689-hq.mp3"
+      }
+    ]
+  },
+  "butterfly": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Butterfly Wings Fluttering 1.wav",
+        "why": "a synthesized or artificial sound of wings fluttering, likely intended to represent a butterfly"
+      },
+      {
+        "title": "Flutter By, Butterfly",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "chicken": {
+    "candidates_seen": 26,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "sampa.sp.br",
+        "id": "503f1d08-4a9d-43a9-b25d-54f552872973",
+        "is": "a chicken clucking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/sampa.sp.br/sounds/155145",
+        "seconds": 13.9,
+        "source": "freesound",
+        "title": "chicken-clucking-shortened.mp3",
+        "url": "https://cdn.freesound.org/previews/155/155145_791700-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Garuda1982",
+        "id": "57c6b33c-d30e-448a-b7c5-2756f24b8325",
+        "is": "chickens clucking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Garuda1982/sounds/708175",
+        "seconds": 64.0,
+        "source": "freesound",
+        "title": "Chickens cluck in the village",
+        "url": "https://cdn.freesound.org/previews/708/708175_2061858-hq.mp3"
+      }
+    ]
+  },
+  "cow": {
+    "candidates_seen": 41,
+    "refused": [
+      {
+        "title": "herd of cows, mooing",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "JarredGibb",
+        "id": "d267f9f3-0a07-43ab-ac34-d4770a503fdc",
+        "is": "a cow mooing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/JarredGibb/sounds/233134",
+        "seconds": 3.0,
+        "source": "freesound",
+        "title": "Cow - Moo 5 - 96kHz.wav",
+        "url": "https://cdn.freesound.org/previews/233/233134_4056007-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "JarredGibb",
+        "id": "cdd0b0fb-4a16-4728-b02c-c17b8a3a36ef",
+        "is": "a cow mooing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/JarredGibb/sounds/233129",
+        "seconds": 2.2,
+        "source": "freesound",
+        "title": "Cow - Moo 2 - 96kHz.wav",
+        "url": "https://cdn.freesound.org/previews/233/233129_4056007-hq.mp3"
+      }
+    ]
+  },
+  "crab": {
+    "candidates_seen": 12,
+    "refused": [
+      {
+        "title": "Korg Mono-Poly - Crab Rock 125bpm - C3 (14 - Crab Rock-48-127-4EML.aif)",
+        "why": "an electronic music synthesizer sound, specifically a Korg Mono-Poly"
+      },
+      {
+        "title": "Korg Mono-Poly - Crab Cakes - C6 (53 - Crab Cakes-84-127.aif)",
+        "why": "a Korg Mono-Poly synthesizer playing a sound"
+      },
+      {
+        "title": "Korg Mono-Poly - Crab Rock 125bpm - D4 (14 - Crab Rock-62-127-UOA5.aif)",
+        "why": "an electronic music synthesizer sound, specifically a Korg Mono-Poly"
+      },
+      {
+        "title": "Korg Mono-Poly - Crab Rock 125bpm - C#6 (14 - Crab Rock-85-127-OB3A.aif)",
+        "why": "a musical synthesizer sound, specifically a Korg Mono-Poly playing a rock pattern"
+      },
+      {
+        "title": "Korg Mono-Poly - Crab Rock 125bpm - A#4 (14 - Crab Rock-70-127-QWMR.aif)",
+        "why": "an electronic music synthesizer sound"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "dolphin": {
+    "candidates_seen": 10,
+    "refused": [
+      {
+        "title": "dolphin torch locking push button.wav",
+        "why": "a torch being clicked"
+      },
+      {
+        "title": "Amazonian Dolphins",
+        "why": "a song or a mislabeled sound, possibly of a different animal or a musical piece about Amazonian dolphins"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
         "creator": "jfournier18",
         "id": "3a946190-883e-42b3-b818-ecd3bf90a7e5",
-        "is": "a dolphin making its own sound",
+        "is": "dolphin",
         "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
         "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "licence_version": "1.0",
         "page": "https://freesound.org/people/jfournier18/sounds/456151",
@@ -18,64 +380,1450 @@
         "source": "freesound",
         "title": "Dolphin Noise-.wav",
         "url": "https://cdn.freesound.org/previews/456/456151_9126235-hq.mp3"
-      }
-    ]
-  },
-  "octopus": {
-    "candidates_seen": 1,
-    "refused": [],
-    "silent": true,
-    "sounds": [],
-    "why": "silent: every candidate was a game sound or an alphabet recording"
-  },
-  "penguin": {
-    "candidates_seen": 13,
-    "refused": [],
-    "silent": false,
-    "sounds": [
+      },
       {
-        "attribution_required": true,
-        "checked": "2026-10-10",
-        "creator": "Mikeybear",
-        "id": "ce78dfa7-a20b-40a9-8ed5-736713a30abf",
-        "is": "a Little Penguin making calls",
-        "licence": "by",
-        "licence_url": "https://creativecommons.org/licenses/by/3.0/",
-        "licence_version": "3.0",
-        "page": "https://commons.wikimedia.org/w/index.php?curid=8525129",
-        "seconds": 84.6,
-        "source": "wikimedia_audio",
-        "title": "20091121 Little Penguin calls at St Kilda Breakwater",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/20091121_Little_Penguin_calls_at_St_Kilda_Breakwater.ogg"
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "geraldfiebig",
+        "id": "270c549f-5326-4cfd-af57-cc2baaab4a78",
+        "is": "dolphins",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/geraldfiebig/sounds/385796",
+        "seconds": 180.1,
+        "source": "freesound",
+        "title": "Atlantic Spotted Dolphins off the coast of La Gomera, Canary Islands",
+        "url": "https://cdn.freesound.org/previews/385/385796_4438201-hq.mp3"
       }
     ]
   },
-  "seahorse": {
-    "candidates_seen": 1,
-    "refused": [],
-    "silent": true,
-    "sounds": [],
-    "why": "silent: no candidates at all"
-  },
-  "shark": {
-    "candidates_seen": 1,
-    "refused": [],
-    "silent": true,
-    "sounds": [],
-    "why": "silent: every candidate was a song, a mimic or a pronunciation"
-  },
-  "whale": {
-    "candidates_seen": 16,
+  "dragonfly": {
+    "candidates_seen": 3,
     "refused": [],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-10",
+        "checked": "2026-10-11",
+        "creator": "antoineopeng",
+        "id": "55584940-3af6-45e2-884f-1cd521e77d3a",
+        "is": "a dragonfly making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/antoineopeng/sounds/447319",
+        "seconds": 24.5,
+        "source": "freesound",
+        "title": "Dragonfly.wav",
+        "url": "https://cdn.freesound.org/previews/447/447319_6400805-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "RatBird",
+        "id": "c423a0ee-89ad-420f-9e03-d65cb4a52e58",
+        "is": "a dragonfly flying by",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/RatBird/sounds/570203",
+        "seconds": 1.9,
+        "source": "freesound",
+        "title": "Dragonfly Flying By.wav",
+        "url": "https://cdn.freesound.org/previews/570/570203_12508711-hq.mp3"
+      }
+    ]
+  },
+  "duck": {
+    "candidates_seen": 25,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "zulfint",
+        "id": "66b164c8-c3af-40fe-9bc0-e0b9de3dec44",
+        "is": "a duck quacking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/zulfint/sounds/238593",
+        "seconds": 100.0,
+        "source": "freesound",
+        "title": "Ducks quacking",
+        "url": "https://cdn.freesound.org/previews/238/238593_4253783-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Tabby+Gus.",
+        "id": "94e48b2a-c6e1-4339-97bb-c2ee18f56a90",
+        "is": "a duck quacking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Tabby+Gus./sounds/515408",
+        "seconds": 3.1,
+        "source": "freesound",
+        "title": "Duck Quack - Sound Effect (HD).mp3",
+        "url": "https://cdn.freesound.org/previews/515/515408_10319640-hq.mp3"
+      }
+    ]
+  },
+  "eagle": {
+    "candidates_seen": 14,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "GreenW03",
+        "id": "bb880951-975d-4b02-ad76-1422c7407553",
+        "is": "an eagle making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/GreenW03/sounds/635419",
+        "seconds": 30.9,
+        "source": "freesound",
+        "title": "Eagle Sound Effect.mp3",
+        "url": "https://cdn.freesound.org/previews/635/635419_14002098-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "CCCanary",
+        "id": "e50b6374-94ab-4359-9b7b-b9fe1c4fa8d6",
+        "is": "a bald eagle making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/CCCanary/sounds/350753",
+        "seconds": 16.3,
+        "source": "freesound",
+        "title": "Bald Eagle.wav",
+        "url": "https://cdn.freesound.org/previews/350/350753_4119059-hq.mp3"
+      }
+    ]
+  },
+  "elephant": {
+    "candidates_seen": 18,
+    "refused": [
+      {
+        "title": "S01-19_Lion growls & elephant trumpets in distance.wav",
+        "why": "lion growls with elephant trumpets in the distance"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "D.jones",
+        "id": "7875a74c-d97a-45aa-a3ee-53c174f2fe62",
+        "is": "an elephant making trumpeting and growling sounds",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/D.jones/sounds/527845",
+        "seconds": 2.0,
+        "source": "freesound",
+        "title": "Elephant Trumpets Growls.flac",
+        "url": "https://cdn.freesound.org/previews/527/527845_11431915-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "\u0ba4\u0b95\u0bb5\u0bb2\u0bc1\u0bb4\u0bb5\u0ba9\u0bcd",
+        "id": "f8d272e1-8bc3-471d-bbb6-df5d541663df",
+        "is": "an elephant trumpeting",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "Commons says: cc0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "licence_version": "1.0",
+        "page": "https://commons.wikimedia.org/w/index.php?curid=12880761",
+        "seconds": 1.4,
+        "source": "wikimedia_audio",
+        "title": "Elephant voice - trumpeting",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Elephant_voice_-_trumpeting.ogg"
+      }
+    ]
+  },
+  "excavator": {
+    "candidates_seen": 20,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "eZZin",
+        "id": "ec90a992-1fd4-4425-a2a3-a07fb49b6522",
+        "is": "an excavator",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/eZZin/sounds/606942",
+        "seconds": 103.4,
+        "source": "freesound",
+        "title": "Excavator.wav",
+        "url": "https://cdn.freesound.org/previews/606/606942_2175308-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "eZZin",
+        "id": "1f6c491a-3e6c-4bbb-9a7d-2b52168384ef",
+        "is": "an excavator",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/eZZin/sounds/606940",
+        "seconds": 30.1,
+        "source": "freesound",
+        "title": "Excavator 3.wav",
+        "url": "https://cdn.freesound.org/previews/606/606940_2175308-hq.mp3"
+      }
+    ]
+  },
+  "fire truck": {
+    "candidates_seen": 20,
+    "refused": [
+      {
+        "title": "Parisian fire truck siren",
+        "why": "a siren, possibly not from a fire truck, in Paris"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "contramundum",
+        "id": "c12513b1-7393-41c1-94b2-bed639ba7f68",
+        "is": "a fire truck siren",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/contramundum/sounds/315758",
+        "seconds": 21.0,
+        "source": "freesound",
+        "title": "Fire Truck Siren",
+        "url": "https://cdn.freesound.org/previews/315/315758_5028876-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "felix.blume",
+        "id": "cb0aa7d7-00f3-436d-b0b4-e57a46a956cb",
+        "is": "a fire truck siren passing by",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/502997",
+        "seconds": 28.9,
+        "source": "freesound",
+        "title": "Fire truck siren passing by in Valparaiso (Chile)",
+        "url": "https://cdn.freesound.org/previews/502/502997_1661766-hq.mp3"
+      }
+    ]
+  },
+  "flamingo": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "flamingo_glass_speedmarker.mp3",
+        "why": "a speedmarker or marker pen with 'flamingo' in its brand or product name"
+      },
+      {
+        "title": "chilean_flamingo.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "american_flamingo.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "Atmos Flamingo",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Ambience Flamingo",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "flamingos",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Breviceps",
+        "id": "bbc9885d-b724-454f-adbf-61565721bec6",
+        "is": "a flamingo making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Breviceps/sounds/535778",
+        "seconds": 17.0,
+        "source": "freesound",
+        "title": "Flamingos",
+        "url": "https://cdn.freesound.org/previews/535/535778_9159316-hq.mp3"
+      }
+    ]
+  },
+  "fox": {
+    "candidates_seen": 14,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "timsc",
+        "id": "b79c9bd0-3281-4af1-9104-cd3fab0db1ea",
+        "is": "a fox making its call",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/timsc/sounds/546948",
+        "seconds": 48.4,
+        "source": "freesound",
+        "title": "urban fox call",
+        "url": "https://cdn.freesound.org/previews/546/546948_266678-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Simon Spiers",
+        "id": "fc3ec2fe-f059-4bfd-b502-44f2a055e897",
+        "is": "a fox making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Simon%20Spiers/sounds/431302",
+        "seconds": 46.0,
+        "source": "freesound",
+        "title": "Fox Cry.wav",
+        "url": "https://cdn.freesound.org/previews/431/431302_213249-hq.mp3"
+      }
+    ]
+  },
+  "giraffe": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "goat": {
+    "candidates_seen": 25,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Kinoton",
+        "id": "71871b74-4a6f-46ed-b29c-d9f3e5d6b543",
+        "is": "a goat bleating",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Kinoton/sounds/581240",
+        "seconds": 4.0,
+        "source": "freesound",
+        "title": "Single Goat Bleating 2x",
+        "url": "https://cdn.freesound.org/previews/581/581240_2247456-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "leosalom",
+        "id": "2255be44-4808-454b-ab8f-261d8f7f4150",
+        "is": "a goat making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/leosalom/sounds/234286",
+        "seconds": 89.2,
+        "source": "freesound",
+        "title": "Goat.wav",
+        "url": "https://cdn.freesound.org/previews/234/234286_3120802-hq.mp3"
+      }
+    ]
+  },
+  "helicopter": {
+    "candidates_seen": 25,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "qubodup",
+        "id": "b157c4c7-82e8-496f-9ba9-e6b8e2ccf3c7",
+        "is": "a helicopter rotor",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/qubodup/sounds/187681",
+        "seconds": 6.3,
+        "source": "freesound",
+        "title": "Helicopter Rotor Loop.flac",
+        "url": "https://cdn.freesound.org/previews/187/187681_71257-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "UnderlinedDesigns",
+        "id": "d634a0bb-813c-416b-b0a0-b342fc2d4ceb",
+        "is": "a helicopter rotor",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/UnderlinedDesigns/sounds/436449",
+        "seconds": 30.0,
+        "source": "freesound",
+        "title": "helicopter rotor",
+        "url": "https://cdn.freesound.org/previews/436/436449_2213158-hq.mp3"
+      }
+    ]
+  },
+  "horse": {
+    "candidates_seen": 30,
+    "refused": [
+      {
+        "title": "delicate horse",
+        "why": "music or a poetic description, not an actual horse sound"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "felix.blume",
+        "id": "d20ca537-347f-42dd-a958-daf0cae42da6",
+        "is": "a horse neighing in the distance, along with other ambient desert sounds",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/653946",
+        "seconds": 301.0,
+        "source": "freesound",
+        "title": "Quiet breeze with bird singing softly, insect noises, a horse neighs far sometimes recorded at the desert near Tres Bellotas road",
+        "url": "https://cdn.freesound.org/previews/653/653946_1661766-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Lydmakeren",
+        "id": "a47592ea-7f8c-44df-baad-567b5e07ba53",
+        "is": "a horse neighing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Lydmakeren/sounds/510903",
+        "seconds": 10.9,
+        "source": "freesound",
+        "title": "Horse_neighing.wav",
+        "url": "https://cdn.freesound.org/previews/510/510903_11157357-hq.mp3"
+      }
+    ]
+  },
+  "jellyfish": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Jellyfish",
+        "why": "silence or ambient noise, jellyfish do not make audible sounds"
+      },
+      {
+        "title": "Jellyfish in Space (ISRC USUAN1500030)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "kangaroo": {
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "K is for kangaroo",
+        "why": "an alphabet recording, which is a person saying the word"
+      },
+      {
+        "title": "Bouncing Kangaroo Boing",
+        "why": "a sound effect, possibly a cartoon or video game sound"
+      },
+      {
+        "title": "Nl-kangaroo-islandemoes",
+        "why": "a demo or sound related to Kangaroo Island"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "ladybug": {
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "Tin Toys: ladybug normal functioning",
+        "why": "a toy ladybug"
+      },
+      {
+        "title": "Dance of the LadyBug",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Tin Toys: ladybug wind-up",
+        "why": "a wind-up toy"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "lion": {
+    "candidates_seen": 14,
+    "refused": [
+      {
+        "title": "mgm (lion roar).mp3",
+        "why": "licence at the source is unknown: page could not be read: HTTP Error 404: Not Found"
+      },
+      {
+        "title": "lion roar",
+        "why": "licence at the source is unknown: page could not be read: HTTP Error 404: Not Found"
+      },
+      {
+        "title": "Lion roaring like Burping",
+        "why": "a person burping"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "_justMonke_",
+        "id": "3c3c7090-8e27-4bfb-ae4b-0c71685aeae7",
+        "is": "a lion roaring",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/_justMonke_/sounds/611721",
+        "seconds": 6.5,
+        "source": "freesound",
+        "title": "Big Lion Roar",
+        "url": "https://cdn.freesound.org/previews/611/611721_13511310-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Bidone",
+        "id": "a32890aa-bcdc-44cb-be89-4884c747b6d7",
+        "is": "a lion making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Bidone/sounds/69570",
+        "seconds": 47.7,
+        "source": "freesound",
+        "title": "Lion loud.mp3",
+        "url": "https://cdn.freesound.org/previews/69/69570_706955-hq.mp3"
+      }
+    ]
+  },
+  "monkey": {
+    "candidates_seen": 25,
+    "refused": [
+      {
+        "title": "Jungle Night Geko or Monkey Call Creepy",
+        "why": "a gecko or possibly a sound effect"
+      },
+      {
+        "title": "honda-monkey-sound-9",
+        "why": "a Honda motorcycle or vehicle sound"
+      },
+      {
+        "title": "Ghost monkey sound effect",
+        "why": "a sound effect, possibly a fictional or created sound"
+      },
+      {
+        "title": "Dinosaur monkey sound",
+        "why": "a dinosaur sound effect"
+      },
+      {
+        "title": "honda-monkey-sound-8",
+        "why": "a Honda Monkey motorcycle sound"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "motorcycle": {
+    "candidates_seen": 27,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Sonoticai",
+        "id": "33abf45d-cd84-408e-b54b-50c7e71de3a8",
+        "is": "a motorcycle or car engine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Sonoticai/sounds/524624",
+        "seconds": 42.0,
+        "source": "freesound",
+        "title": "Car/Motorcycle engine #2.wav",
+        "url": "https://cdn.freesound.org/previews/524/524624_11606638-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "gamer500",
+        "id": "eb63a27d-4eb6-42af-bb40-f8b42307663e",
+        "is": "a motorcycle engine starting",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/gamer500/sounds/679416",
+        "seconds": 2.9,
+        "source": "freesound",
+        "title": "MotorCycle Engine Start",
+        "url": "https://cdn.freesound.org/previews/679/679416_14220036-hq.mp3"
+      }
+    ]
+  },
+  "octopus": {
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "octopus unwrapping a cellophane-covered bathtub",
+        "why": "a person unwrapping a cellophane-covered bathtub, possibly with sound effects"
+      },
+      {
+        "title": "O is for octopus",
+        "why": "an alphabet recording, which is a person saying the word"
+      },
+      {
+        "title": "Octopus Game",
+        "why": "a sound effect from the Octopus Game, likely a digital or synthesized sound"
+      },
+      {
+        "title": "Octopus in Vezo",
+        "why": "a place or region, possibly with ambient or environmental sounds"
+      },
+      {
+        "title": "Death of an Octopus - slowed 20 percent",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "owl": {
+    "candidates_seen": 32,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "gadzooks",
+        "id": "ab3862c1-589c-4d27-a9d7-2a1aea657ffd",
+        "is": "an owl hooting",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/gadzooks/sounds/326350",
+        "seconds": 61.9,
+        "source": "freesound",
+        "title": "owl hoot",
+        "url": "https://cdn.freesound.org/previews/326/326350_44431-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "gfrog",
+        "id": "cd6f7529-a402-4f01-bcc5-c3b013632152",
+        "is": "an owl hooting with background noise of a dog barking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/gfrog/sounds/159726",
+        "seconds": 8.0,
+        "source": "freesound",
+        "title": "Owl Hooting with far away dog barking",
+        "url": "https://cdn.freesound.org/previews/159/159726_401105-hq.mp3"
+      }
+    ]
+  },
+  "parrot": {
+    "candidates_seen": 15,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "OroborosNZ",
+        "id": "3019904a-73c3-4813-80cc-fcd1b9e421a6",
+        "is": "parrots in a tree making their sounds",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/OroborosNZ/sounds/141252",
+        "seconds": 54.9,
+        "source": "freesound",
+        "title": "Parrots in tree",
+        "url": "https://cdn.freesound.org/previews/141/141252_2051721-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "mannhawks",
+        "id": "07202922-7f6b-494a-9b7d-740540d0e23b",
+        "is": "a parrot talking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/mannhawks/sounds/241300",
+        "seconds": 18.5,
+        "source": "freesound",
+        "title": "parrot_talking.wav",
+        "url": "https://cdn.freesound.org/previews/241/241300_2028587-hq.mp3"
+      }
+    ]
+  },
+  "peacock": {
+    "candidates_seen": 6,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Kinoton",
+        "id": "4f34fd98-5db1-4f02-8ef4-188e038bd7fb",
+        "is": "a peacock making its call",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Kinoton/sounds/688203",
+        "seconds": 5.9,
+        "source": "freesound",
+        "title": "Bird, Peacock Call",
+        "url": "https://cdn.freesound.org/previews/688/688203_2247456-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "craigsmith",
+        "id": "dbc04a8c-c6da-4d33-84d4-0044b35d22a9",
+        "is": "a peacock making calls",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/craigsmith/sounds/675965",
+        "seconds": 12.7,
+        "source": "freesound",
+        "title": "S29-22 Peacock calls.wav",
+        "url": "https://cdn.freesound.org/previews/675/675965_2524442-hq.mp3"
+      }
+    ]
+  },
+  "penguin": {
+    "candidates_seen": 13,
+    "refused": [
+      {
+        "title": "Penguin at Brown Bluff",
+        "why": "ambient or environmental sounds at Brown Bluff, possibly including wind, water, or other animals, but not necessarily a penguin"
+      },
+      {
+        "title": "20091121 Little Penguin calls at St Kilda Breakwater",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "penguin.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "Yellow-eyed-penguin",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      },
+      {
+        "title": "Penguin Pizza Thanks Voice [CC-BY 3, Freesound.org]",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Ding (Penguin Snow Globe Game)",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Footsteps (Penguin Snow Globe Game)",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Penguin Exhibit at Zoo",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Chime (Penguin Snow Globe Game)",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Beep (Penguin Snow Globe Game)",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Door Creak (Penguin Snow Globe Game)",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "TV static (Penguin Snow Globe Game)",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "African penguins at Boulders Beach",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "pig": {
+    "candidates_seen": 19,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "zachrau",
+        "id": "44595271-097d-4f97-ade6-dab7f565e6f0",
+        "is": "a pig oinking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/zachrau/sounds/449577",
+        "seconds": 10.9,
+        "source": "freesound",
+        "title": "Pigs oinking",
+        "url": "https://cdn.freesound.org/previews/449/449577_676927-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "JarredGibb",
+        "id": "c2a59b93-814d-47b2-95a9-9c480ab92525",
+        "is": "pigs snorting",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/JarredGibb/sounds/233183",
+        "seconds": 1.7,
+        "source": "freesound",
+        "title": "Pig - Multiple Snorts 2 (2 pigs) - 96kHz.wav",
+        "url": "https://cdn.freesound.org/previews/233/233183_4056007-hq.mp3"
+      }
+    ]
+  },
+  "police car": {
+    "candidates_seen": 19,
+    "refused": [
+      {
+        "title": "Fire Brigade Siren - Street - Cars",
+        "why": "a fire brigade siren"
+      },
+      {
+        "title": "Police highway chase - car theft_kevman.wav",
+        "why": "a car chase scene, possibly from a movie or video game"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Felfa",
+        "id": "093ebfe7-171e-4ab0-8441-cc0aabbefcf1",
+        "is": "a police car siren",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Felfa/sounds/264408",
+        "seconds": 36.0,
+        "source": "freesound",
+        "title": "police_car_siren-esp.wav",
+        "url": "https://cdn.freesound.org/previews/264/264408_2103589-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "goose278",
+        "id": "3f4a138f-f663-4fd8-894b-b5398cac377b",
+        "is": "police cars passing with sirens",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/goose278/sounds/165166",
+        "seconds": 22.1,
+        "source": "freesound",
+        "title": "8 police cars passing w sirens.WAV",
+        "url": "https://cdn.freesound.org/previews/165/165166_2994289-hq.mp3"
+      }
+    ]
+  },
+  "rooster": {
+    "candidates_seen": 27,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "jsbarrett",
+        "id": "b8015ab8-a0ac-48cb-a976-eb010a07b982",
+        "is": "a rooster crowing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/jsbarrett/sounds/200339",
+        "seconds": 4.8,
+        "source": "freesound",
+        "title": "Rooster crow",
+        "url": "https://cdn.freesound.org/previews/200/200339_3159560-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "BenjaminNelan",
+        "id": "54be5564-ed71-4d68-8b06-d186434fd2a6",
+        "is": "a rooster crowing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/BenjaminNelan/sounds/435507",
+        "seconds": 2.0,
+        "source": "freesound",
+        "title": "Rooster Crow 2",
+        "url": "https://cdn.freesound.org/previews/435/435507_1196020-hq.mp3"
+      }
+    ]
+  },
+  "school bus": {
+    "candidates_seen": 18,
+    "refused": [
+      {
+        "title": "Driveway-Bus.wav",
+        "why": "a car or vehicle driving up a driveway"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "kyles",
+        "id": "428fe403-7273-4bce-9b07-06e31f2daaf7",
+        "is": "a truck's idle engine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/451667",
+        "seconds": 35.2,
+        "source": "freesound",
+        "title": "school bus truck ext idle engine close1.flac",
+        "url": "https://cdn.freesound.org/previews/451/451667_612689-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "kyles",
+        "id": "cb46bf5f-f19a-4026-a129-c0fde6ed6630",
+        "is": "a truck's idle engine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/451668",
+        "seconds": 36.0,
+        "source": "freesound",
+        "title": "school bus truck ext idle engine close2.flac",
+        "url": "https://cdn.freesound.org/previews/451/451668_612689-hq.mp3"
+      }
+    ]
+  },
+  "sea turtle": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "Siddhartha - 08 - Deep Sea Turtle",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "seahorse": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "shark": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "Shark eats fish.m4a",
+        "why": "a person or sound effects artist imitating or describing a shark eating fish, possibly with added sound effects"
+      },
+      {
+        "title": "Crazy Shark Intro.m4a",
+        "why": "an intro music or sound effect, likely from a song or video titled 'Crazy Shark'"
+      },
+      {
+        "title": "Baby Shark",
+        "why": ".mid is not a recording, it is a score for a synthesiser"
+      },
+      {
+        "title": "En-us-carpet shark",
+        "why": "a carpet shark, which is likely a type of carpet, not an actual shark sound"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "sheep": {
+    "candidates_seen": 41,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "zachrau",
+        "id": "cc3ae599-79d4-4d0b-a30a-d2dab919df7c",
+        "is": "a sheep bleating",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/zachrau/sounds/362283",
+        "seconds": 15.5,
+        "source": "freesound",
+        "title": "Sheep bleating",
+        "url": "https://cdn.freesound.org/previews/362/362283_676927-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "cognito perceptu",
+        "id": "8f15cda6-3954-4785-a6ab-cb53cfdb5c5f",
+        "is": "a sheep bleating",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/cognito%20perceptu/sounds/88423",
+        "seconds": 33.2,
+        "source": "freesound",
+        "title": "sheep bleating dry grass.wav",
+        "url": "https://cdn.freesound.org/previews/88/88423_57789-hq.mp3"
+      }
+    ]
+  },
+  "spider": {
+    "candidates_seen": 8,
+    "refused": [
+      {
+        "title": "23_Boca_Ara\u00f1a3.wav (Spider Sound)",
+        "why": "unknown or unspecified sound, possibly a person or instrument imitating a spider or a different sound altogether"
+      },
+      {
+        "title": "Ferrari 360 Spider - engine sound",
+        "why": "a Ferrari 360 Spider car engine"
+      },
+      {
+        "title": "Spider Call.wav",
+        "why": "a bird or other animal call, possibly a musical or synthesized sound, as spiders do not make audible calls"
+      },
+      {
+        "title": "13.Cabeza ara\u00f1a Spider head.wav",
+        "why": "a person saying 'cabeza ara\u00f1a' which is Spanish for 'spider head', possibly with no actual spider sound"
+      },
+      {
+        "title": "Spider Voice.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Spider_Foley_01.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Spider_Foley_03.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Spider_Killed_Foley_01.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "starfish": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Starfish 1",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "starfish dream",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "swan": {
+    "candidates_seen": 19,
+    "refused": [
+      {
+        "title": "MusicBox Swan Lake (Tchaikovsky)",
+        "why": "music from Tchaikovsky's Swan Lake"
+      },
+      {
+        "title": "Black Swan call (Cygnus atratus)",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      },
+      {
+        "title": "<div class='fn'> Whooper Swan (Cygnus cygnus)</div>",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      },
+      {
+        "title": "whooper_swans_01_48khz.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Laulujoutsen, joutsen, huutoja, kev\u00e4t / A whooper, whooper swan, a few swans trumpeting on a pond in the spring, echo, small birds in the bg",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "hissing swan animal field recording",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Laulujoutsen, joutsen, toitotus, lentoonl\u00e4ht\u00f6 vedest\u00e4 / A whooper, whooper swan takes wing from the water trumpeting, wings splashing water, calls at a distance, spring, echo, other birds in the bg",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Laulujoutsen, joutsen, parvi, lentoonl\u00e4ht\u00f6 vedest\u00e4 / A whooper, whooper swan, a flock of swans takes wing from the water trumpeting at a distance, wings splashing water, later another flock leaves, spring, echo, other birds in the bg",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Laulujoutsen, joutsen, parvi, huutoja, kev\u00e4t / A whooper, whooper swan, a small flock of swans trumpeting on a pond in the spring, echo, small birds in the bg",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Ducks, Swans and Geese Being Fed",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Swan at lake late at night.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Ducks, swans and gulls by the river",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "swan flying over 150419_0630.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "swans fly by 191218_0099.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "swans over windy river.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Swan - fly over me.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Birds swans and cars passing.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "The Raven and the Swan",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "TRP",
+        "id": "70d10624-5221-4e64-bd40-53726531f555",
+        "is": "Trumpeter Swans making loud calls",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/TRP/sounds/574430",
+        "seconds": 72.0,
+        "source": "freesound",
+        "title": "Trumpeter Swans fly land splash loud calls 2pm TTP A 190401.flac",
+        "url": "https://cdn.freesound.org/previews/574/574430_97550-hq.mp3"
+      }
+    ]
+  },
+  "tiger": {
+    "candidates_seen": 4,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "peenois",
+        "id": "bd30fd55-94ee-4689-ac3d-803acce86bde",
+        "is": "a tiger growling",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/peenois/sounds/496131",
+        "seconds": 17.2,
+        "source": "freesound",
+        "title": "Tiger Growl",
+        "url": "https://cdn.freesound.org/previews/496/496131_10765102-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "lauramellis",
+        "id": "5a7123d0-2978-416d-af79-53416da5105b",
+        "is": "a tiger roaring",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/lauramellis/sounds/263115",
+        "seconds": 11.4,
+        "source": "freesound",
+        "title": "Tiger Roar",
+        "url": "https://cdn.freesound.org/previews/263/263115_672090-hq.mp3"
+      }
+    ]
+  },
+  "tractor": {
+    "candidates_seen": 30,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "radwoc",
+        "id": "4b2c7c5b-3282-40e0-b74f-0feee2c6480b",
+        "is": "a tractor engine starting",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/radwoc/sounds/256808",
+        "seconds": 8.4,
+        "source": "freesound",
+        "title": "tractor-engine-start.wav",
+        "url": "https://cdn.freesound.org/previews/256/256808_876304-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "lucasfuchs",
+        "id": "8bc3cc91-29e9-4ad9-8584-aeb04b5b888f",
+        "is": "a tractor engine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/lucasfuchs/sounds/518294",
+        "seconds": 43.7,
+        "source": "freesound",
+        "title": "Tractor Engine",
+        "url": "https://cdn.freesound.org/previews/518/518294_8270369-hq.mp3"
+      }
+    ]
+  },
+  "train": {
+    "candidates_seen": 44,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "L83",
+        "id": "e8336875-5d58-476b-b942-664f02ebbe4b",
+        "is": "a train horn",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/L83/sounds/455157",
+        "seconds": 10.0,
+        "source": "freesound",
+        "title": "Train horn",
+        "url": "https://cdn.freesound.org/previews/455/455157_5900016-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "OroborosNZ",
+        "id": "d3fb4ad5-e1a7-48e0-9807-a4c6e541ade4",
+        "is": "a train horn sounding as it departs",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/OroborosNZ/sounds/141273",
+        "seconds": 24.4,
+        "source": "freesound",
+        "title": "Train horn, Departs",
+        "url": "https://cdn.freesound.org/previews/141/141273_2051721-hq.mp3"
+      }
+    ]
+  },
+  "whale": {
+    "candidates_seen": 16,
+    "refused": [
+      {
+        "title": "Robot Whale Sounds",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "electronic Whales.aiff",
+        "why": "an electronic sound"
+      },
+      {
+        "title": "Disturbing Horror Whale Ambiance",
+        "why": "horror ambiance sound effects"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
         "creator": "KEVOY",
         "id": "8166bd25-d58b-4f61-8023-5ff43a63e4a4",
-        "is": "a whale making its own sound",
+        "is": "a whale",
         "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
         "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "licence_version": "1.0",
         "page": "https://freesound.org/people/KEVOY/sounds/82325",
@@ -83,7 +1831,88 @@
         "source": "freesound",
         "title": "Diving with whales.wav",
         "url": "https://cdn.freesound.org/previews/82/82325_1299633-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "claretcanelon",
+        "id": "f2e51aa8-ec7d-4059-96aa-6b12bdfcbec3",
+        "is": "a whale making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/claretcanelon/sounds/458626",
+        "seconds": 6.6,
+        "source": "freesound",
+        "title": "Whale.wav",
+        "url": "https://cdn.freesound.org/previews/458/458626_1096807-hq.mp3"
       }
     ]
+  },
+  "wolf": {
+    "candidates_seen": 14,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "betchkal",
+        "id": "0548b17a-9c61-438e-b96c-27470cc9a52f",
+        "is": "a wolf howling",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/betchkal/sounds/500646",
+        "seconds": 55.4,
+        "source": "freesound",
+        "title": "Cooper Creek 20160313_014852 solitary wolf howl very clear.wav",
+        "url": "https://cdn.freesound.org/previews/500/500646_339183-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-11",
+        "creator": "Borgory",
+        "id": "21ad44f6-0a87-4c59-94a5-862aa6d1f22c",
+        "is": "a wolf howling",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Borgory/sounds/651193",
+        "seconds": 102.3,
+        "source": "freesound",
+        "title": "Wolfes howl howling Wolf Pack heulen",
+        "url": "https://cdn.freesound.org/previews/651/651193_801011-hq.mp3"
+      }
+    ]
+  },
+  "zebra": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "Massive Zebra Drone",
+        "why": "a drone"
+      },
+      {
+        "title": "Z is for zebra",
+        "why": "an alphabet recording, which is a person saying the word"
+      },
+      {
+        "title": "zebra crossing.mp3",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Zebra Ms20 filter very analog",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   }
 }
