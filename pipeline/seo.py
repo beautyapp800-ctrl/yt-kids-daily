@@ -36,6 +36,9 @@ THEME_WORDS = {
     "insects": ("Bugs and Insects", "Learn Insect Names for Toddlers"),
     "transport": ("Vehicles", "Learn Cars, Trucks and Machines"),
     "fruit and vegetables": ("Fruits and Vegetables", "Learn Healthy Food Names"),
+    "animals": ("Animals", "Learn Animal Names and Real Animal Sounds"),
+    "vehicles": ("Vehicles", "Learn Cars, Trucks and Machines"),
+    "food": ("Fruits and Vegetables", "Learn Healthy Food Names"),
     "animals and machines": ("Animals and Vehicles", "Learn First Words with Real Sounds"),
 }
 

@@ -1,9 +1,9 @@
 {
   "channel": "yt-kids",
   "language": "en-US",
-  "cards_per_video": 25,
-  "card_seconds_min": 9,
-  "card_seconds_max": 13,
+  "cards_per_video": 30,
+  "card_seconds_min": 10,
+  "card_seconds_max": 14,
   "target_duration_min": 8,
   "length_gate": {
     "min_minutes": 6,

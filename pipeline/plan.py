@@ -34,31 +34,68 @@ MIN_CARDS = 18          # below this a full-length video is too short to be wort
 SUBJECT_POOL = 3.0      # how many candidates to consider per card wanted
 
 
-def choose_theme(groups, video_id):
-    """Deterministic from the video number, so the same run always plans the same video and
-    a rerun after a failure does not quietly become a different video."""
-    names = sorted(groups)
-    return names[int(video_id) % len(names)]
+# Themes that belong together on one video. A video is thirty cards, and no single theme has
+# thirty subjects, so a video of "farm animals" used to be eight farm animals and twenty-two
+# things picked from anywhere - which the title then had to call "Animals and Vehicles". Lions
+# beside a tractor is not a theme. A family is the unit a video is built from, and subjects are
+# drawn from every theme in it, so thirty animals are called thirty animals.
+FAMILIES = {
+    "animals": ["farm animals", "wild animals", "sea animals", "birds", "insects"],
+    "vehicles": ["transport"],
+    "food": ["fruit and vegetables"],
+}
 
 
-def choose_subjects(groups, theme, wanted, avoid, rng):
-    """`wanted` subjects for the theme, preferring ones the recent videos did not use.
+def family_of(theme):
+    for name, themes in FAMILIES.items():
+        if theme in themes:
+            return name
+    return None
 
-    Falls back to the whole theme, and then to every theme, rather than returning a short
-    list: a video of twelve cards is a worse outcome than one that reuses a subject.
+
+def choose_family(groups, video_id, wanted):
+    """The family this video is made from.
+
+    Deterministic from the video number, so a rerun after a failure plans the same video. A
+    family is skipped if it cannot supply a whole video by itself - vehicles and food have ten
+    subjects each - and that is not a hole in the design but the plain state of the catalogue,
+    which the grow job is there to change. If no family can, the video is a mixture and says so.
     """
-    pool = list(groups.get(theme, []))
+    names = sorted(FAMILIES)
+    start = int(video_id) % len(names)
+    for offset in range(len(names)):
+        family = names[(start + offset) % len(names)]
+        available = sum(len(groups.get(t, [])) for t in FAMILIES[family])
+        if available >= wanted:
+            return family
+    return None
+
+
+def choose_theme(groups, video_id):
+    """Kept for callers that want a single theme: the first of the chosen family's."""
+    family = choose_family(groups, video_id, 1)
+    themes = FAMILIES.get(family) or sorted(groups)
+    return themes[int(video_id) % len(themes)]
+
+
+def choose_subjects(groups, family, wanted, avoid, rng):
+    """`wanted` subjects from the family, preferring ones recent videos did not use.
+
+    Falls back to subjects the recent videos did use, and then to every theme, rather than
+    returning a short list: a video of twelve cards is worse than one that repeats a lion.
+    """
+    themes = FAMILIES.get(family) or sorted(groups)
+    pool = [s for t in themes for s in groups.get(t, [])]
     rng.shuffle(pool)
-    fresh = [s for s in pool if s not in avoid]
-    chosen = fresh[:wanted]
+    chosen = [s for s in pool if s not in avoid][:wanted]
     if len(chosen) < wanted:
         chosen += [s for s in pool if s not in chosen][:wanted - len(chosen)]
     if len(chosen) < wanted:
-        others = [s for g, items in sorted(groups.items()) if g != theme for s in items]
+        others = [s for t, items in sorted(groups.items()) if t not in themes for s in items]
         rng.shuffle(others)
         chosen += [s for s in others if s not in chosen][:wanted - len(chosen)]
-        log.info("theme %r has only %d subjects; %d came from other themes",
-                 theme, len(pool), wanted - len(pool))
+        log.info("family %r has only %d subjects; %d came from elsewhere",
+                 family, len(pool), wanted - len(pool))
     return chosen
 
 
@@ -70,21 +107,23 @@ def theme_of(subject, groups):
 
 
 def dominant_theme(subjects, groups, fallback):
-    """The theme most of the chosen subjects actually belong to.
+    """What the video is actually about, for the title.
 
-    Not the theme that was asked for. When the catalogue has no clips yet for the intended
-    theme the plan fills up from the others, and a video of lions titled "8 Fruit And
-    Vegetables for Kids" is a lie a viewer notices in the thumbnail.
+    Judged from the subjects that ended up on cards, not from what was intended: when the
+    catalogue could not supply enough of one kind the plan fills up from others, and a video
+    of lions titled "Fruit And Vegetables for Kids" is a lie a viewer sees in the thumbnail.
+    Every card from one theme names that theme; every card from one family names the family;
+    anything else is called what it is, a mixture.
     """
-    counted = {}
-    for s in subjects:
-        name = theme_of(s, groups)
-        if name:
-            counted[name] = counted.get(name, 0) + 1
-    if not counted:
+    themes = {theme_of(s, groups) for s in subjects} - {""}
+    if not themes:
         return fallback
-    best = max(counted.items(), key=lambda kv: (kv[1], kv[0]))
-    return best[0] if best[1] >= len(subjects) / 2 else "animals and machines"
+    if len(themes) == 1:
+        return next(iter(themes))
+    families = {family_of(t) for t in themes}
+    if len(families) == 1 and None not in families:
+        return next(iter(families))
+    return "animals and machines"
 
 
 def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
@@ -99,10 +138,11 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
     # not be refused by a constant written for the full-length format.
     floor = min(MIN_CARDS, wanted)
 
-    theme = choose_theme(groups, video_id)
+    family = choose_family(groups, video_id, wanted)
+    theme = family or "animals and machines"
     avoid = db.subjects_used_recently()
-    subjects = choose_subjects(groups, theme, int(wanted * SUBJECT_POOL), avoid, rng)
-    log.info("video %s: theme %r, %d candidate subjects", video_id, theme, len(subjects))
+    subjects = choose_subjects(groups, family, int(wanted * SUBJECT_POOL), avoid, rng)
+    log.info("video %s: family %r, %d candidate subjects", video_id, family, len(subjects))
 
     # The clip comes before the fact: a subject with no clip and no drawing is no card, and
     # writing a fact for it would be work thrown away.

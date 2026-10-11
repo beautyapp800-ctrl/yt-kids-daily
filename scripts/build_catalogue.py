@@ -58,13 +58,9 @@ def search(subject, key, wanted=catalogue.CANDIDATES_PER_SUBJECT):
     for v in ranked:
         if v.get("isAiGenerated") or v.get("isGRated") is False:
             continue
-        streams = [s for s in (v.get("videos") or {}).values()
-                   if (s.get("width") or 0) >= stock_probe.MIN_WIDTH
-                   and (s.get("width") or 0)
-                   >= (s.get("height") or 1) * stock_probe.LANDSCAPE_RATIO]
-        if not streams or (v.get("duration") or 0) < stock_probe.MIN_SECONDS:
+        best = stock_probe.best_stream(list((v.get("videos") or {}).values()))
+        if not best or (v.get("duration") or 0) < stock_probe.MIN_SECONDS:
             continue
-        best = max(streams, key=lambda s: s["width"])
         out.append({"id": v["id"], "url": v.get("pageURL"), "seconds": v["duration"],
                     "width": best["width"], "licence": "Pixabay Content Licence",
                     "attribution_required": False, "thumbnail": best.get("thumbnail"),

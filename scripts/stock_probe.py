@@ -106,6 +106,24 @@ def pexels(term, key):
     return None
 
 
+def best_stream(streams, target=1920):
+    """The stream to download: the smallest landscape one at least `target` wide.
+
+    The catalogue first stored the WIDEST stream, which on Pixabay is 3840 pixels and runs to
+    well over 100 MB for a ten-second clip. Two cards of the first thirty-card video were
+    refused as too big, the downloads took nineteen minutes, and the render then scaled all
+    of it down to the 1920 it was always going to be shown at. 4K buys nothing in a 1080p
+    video. The stream before that (1280) was too small, which is the opposite mistake, so the
+    rule is the smallest that is big enough.
+    """
+    good = [s for s in streams if (s.get("width") or 0) >= (s.get("height") or 1) * LANDSCAPE_RATIO]
+    big = sorted((s for s in good if s["width"] >= target), key=lambda s: s["width"])
+    if big:
+        return big[0]
+    ok = sorted((s for s in good if s["width"] >= MIN_WIDTH), key=lambda s: -s["width"])
+    return ok[0] if ok else None
+
+
 def _relevant(term, hit):
     """Whether the clip is actually OF the thing, not merely found by searching for it.
 
@@ -150,11 +168,8 @@ def pixabay(term, key):
             continue
         if not _relevant(term, v):
             continue
-        streams = [s for s in (v.get("videos") or {}).values()
-                   if (s.get("width") or 0) >= MIN_WIDTH
-                   and (s.get("width") or 0) >= (s.get("height") or 1) * LANDSCAPE_RATIO]
-        if streams and (v.get("duration") or 0) >= MIN_SECONDS:
-            best = max(streams, key=lambda s: s["width"])
+        best = best_stream(list((v.get("videos") or {}).values()))
+        if best and (v.get("duration") or 0) >= MIN_SECONDS:
             return {"id": v["id"], "url": v.get("pageURL"), "seconds": v["duration"],
                     "width": best["width"], "licence": "Pixabay Content Licence",
                     "attribution_required": False, "tags": v.get("tags"),
