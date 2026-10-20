@@ -257,6 +257,55 @@ def check_sound_runs_the_whole_way(path):
     return video_seconds, audio_seconds
 
 
+# How much louder the finished mix must be than the narration alone, in the moments where the
+# narration is quiet. The bed sits 12 dB under the voice, so in a gap it is the only thing
+# there and the difference is large; 3 dB is well clear of codec noise and well under what a
+# real bed gives.
+MUSIC_IN_GAPS_DB = 3.0
+
+
+def _levels_per_second(path, rate=8000):
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-ac", "1",
+                          "-ar", str(rate), "-f", "s16le", "-"],
+                         capture_output=True, timeout=600).stdout
+    samples = np.frombuffer(raw, dtype="<i2").astype(np.float32) / 32768.0
+    seconds = len(samples) // rate
+    if seconds < 2:
+        return np.zeros(0)
+    block = samples[:seconds * rate].reshape(seconds, rate)
+    return 20 * np.log10(np.maximum(np.sqrt((block ** 2).mean(axis=1)), 1e-7))
+
+
+def check_music_is_audible(narration, final, want_db=MUSIC_IN_GAPS_DB):
+    """Prove the bed is really in the mix, by comparing the two files second by second.
+
+    A log line saying a bed was built is not evidence that it reached the viewer: the filter
+    could drop it, the gain could be wrong, the mux could take the wrong input. So the quietest
+    tenth of the narration - the gaps between sentences, where the bed is the only thing
+    playing - is measured in both files. In the finished mix those seconds have to be clearly
+    louder than they are in the narration alone, across the whole video and not just at the
+    start.
+    """
+    import numpy as np
+    speech, mixed = _levels_per_second(narration), _levels_per_second(final)
+    span = min(len(speech), len(mixed))
+    if span < 10:
+        raise RenderError("the mix is too short to check the music in")
+    speech, mixed = speech[:span], mixed[:span]
+    quiet = np.argsort(speech)[:max(span // 10, 5)]
+    lift = float(np.median(mixed[quiet] - speech[quiet]))
+    # And in both halves, so a bed that stops in the middle is caught as well.
+    halves = [float(np.median(mixed[q] - speech[q]))
+              for q in (quiet[quiet < span // 2], quiet[quiet >= span // 2]) if len(q) >= 2]
+    if lift < want_db or any(h < want_db for h in halves):
+        raise RenderError(
+            f"the music is not in the mix: in the quietest seconds it lifts the sound by "
+            f"{lift:.1f} dB (halves: {', '.join(f'{h:.1f}' for h in halves)}), and a bed "
+            f"{MUSIC_IN_GAPS_DB:.0f} dB under the voice should give far more")
+    return {"lift_db": round(lift, 1), "halves_db": [round(h, 1) for h in halves]}
+
+
 def probe_duration(path):
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                           "-of", "default=nw=1:nk=1", str(path)],
@@ -483,21 +532,30 @@ def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None, board=True):
     # LUFS and the gain is whatever puts the bed the configured number of decibels under the
     # voice; the gap is then read back off the finished mix and logged, because a filter that
     # silently does something else is exactly how a bed ends up on top of the lesson.
-    bed = None
+    # Not optional. The first version skipped the bed whenever there was no track to use and
+    # logged nothing at all, so a blanket *.mp3 in .gitignore left the runner with an empty
+    # folder and video 1 was published silent - the one fault of this whole build that reached
+    # a viewer. A missing bed is now a failed render: the video is rebuilt in twelve minutes,
+    # and a published video cannot be quietly replaced.
     chosen = music or music_lib.pick(video_id)
-    if chosen and Path(chosen).exists():
-        try:
-            under = float(cfg.get("music_under_voice_db", music_lib.GAIN_UNDER_VOICE_DB))
-            gain = music_lib.pick_gain(chosen, track, under)
-            bed = music_lib.bed(chosen, probe_duration(silent),
-                                out / "_music.m4a", gain)
-            log.info("music %s at %+.1f dB (%.1f LUFS track, %.1f LUFS narration, "
-                     "wanted %.0f dB under)", Path(chosen).name, gain,
-                     music_lib.loudness(chosen), music_lib.loudness(track), under)
-        except Exception as e:                                   # noqa: BLE001
-            log.warning("no music bed: %s", str(e)[:120])
-            bed = None
+    if not chosen:
+        raise RenderError(
+            f"there is no music to score this with: {music_lib.ASSETS} has no audio file. "
+            "Check that the tracks are committed - .gitignore once excluded them.")
+    if not Path(chosen).exists():
+        raise RenderError(f"the music track {chosen} is named but not on disk")
+    under = float(cfg.get("music_under_voice_db", music_lib.GAIN_UNDER_VOICE_DB))
+    gain = music_lib.pick_gain(chosen, track, under)
+    bed = music_lib.bed(chosen, probe_duration(silent), out / "_music.m4a", gain)
+    log.info("music %s at %+.1f dB (%.1f LUFS track, %.1f LUFS narration, "
+             "wanted %.0f dB under)", Path(chosen).name, gain,
+             music_lib.loudness(chosen), music_lib.loudness(track), under)
+
     final = mux(silent, track, out / "final.mp4", cfg, bed)
+    heard = check_music_is_audible(track, final)
+    log.info("music measured in the finished mix: it lifts the quietest seconds by %.1f dB "
+             "(%s per half)", heard["lift_db"],
+             ", ".join(f"{h:.1f}" for h in heard["halves_db"]))
 
     length = probe_duration(final)
     log.info("rendered %d cards into %.1f minutes (%s)%s", len(cards), length / 60,

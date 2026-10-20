@@ -9,6 +9,12 @@ logs/
 *.mp3
 *.wav
 
+# ...except the music the videos are scored with. It is CC0, it is small, and a blanket *.mp3
+# kept it out of the repository: the runner had no tracks, the render said nothing about it,
+# and video 1 went up silent.
+!assets/music/*.mp3
+!assets/music/*.ogg
+
 # Python
 __pycache__/
 *.pyc

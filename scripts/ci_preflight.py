@@ -87,6 +87,21 @@ def main():
             f"and 7.2.8 was refused outright - check {_tts_version()} against "
             f"requirements.txt) or Microsoft refusing the runner's address.")
 
+    # The music, because it is checked out rather than built, and a .gitignore rule once kept
+    # it out of the repository: video 1 was published with no bed at all and nothing said so.
+    try:
+        from core import music
+        found = music.tracks()
+        if found:
+            print(f"music: {len(found)} track(s) - {', '.join(p.name for p in found)}")
+        else:
+            print("music: FAILED: no tracks")
+            problems.append(f"there is no music in {music.ASSETS}; the videos would be "
+                            "silent under the voice. Are the tracks committed?")
+    except Exception as e:                                       # noqa: BLE001
+        print(f"music: FAILED: {e}")
+        problems.append(f"the music could not be read: {e}")
+
     try:
         from pipeline import catalogue
         book = catalogue.load()
