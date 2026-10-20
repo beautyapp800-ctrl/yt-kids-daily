@@ -34,6 +34,14 @@ sys.path.insert(0, str(ROOT))
 PROBLEMS_PATH = ROOT / "preflight-problems.txt"
 
 
+def _tts_version():
+    try:
+        from importlib.metadata import version
+        return f"installed {version('edge-tts')}"
+    except Exception:                                            # noqa: BLE001
+        return "version unknown"
+
+
 def main():
     import shutil
     problems = []
@@ -73,8 +81,11 @@ def main():
         print("edge-tts: spoke a test sentence")
     except Exception as e:                                       # noqa: BLE001
         print(f"edge-tts: FAILED: {e}")
-        problems.append(f"edge-tts cannot speak from this machine: {e}. If this is a 403, "
-                        "Microsoft is refusing the runner's address.")
+        problems.append(
+            f"edge-tts cannot speak from this machine: {e}. A 403 here means the handshake "
+            f"was refused, which is either a stale edge-tts (Microsoft rotates a token in it "
+            f"and 7.2.8 was refused outright - check {_tts_version()} against "
+            f"requirements.txt) or Microsoft refusing the runner's address.")
 
     try:
         from pipeline import catalogue
