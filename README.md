@@ -92,11 +92,14 @@ Setup, including exactly what to click: `docs/setup.md`.
 
 ## Known limits
 
-- **The thumbnail does not cut the subject out.** Lifting an animal out of real stock footage
-  was measured and does not work well enough: the model lifted a shark's eye, a whale's tail
-  with part of a platform, penguins that were see-through where their bellies are white. The
-  tile is the frame in a thick white card on a drawn acid background, with a hook that is not
-  the title. A drawn subject on a plain background is the way to do it properly.
+- **The cover is the board, not a cut-out.** Lifting an animal out of stock footage was
+  measured and does not work (a shark's eye, a whale's tail with part of a platform). The cover
+  is the video's own board cut down to eight cells, chosen for colour, for how far the middle
+  of the frame stands out from its edge, and for being an animal a two-year-old knows. Nothing
+  here can see how big the animal is in the frame or whether there are people in it, so a
+  show-pool whale or an aquarium dolphin can still be picked; `thumbnail.TINY` pushes down the
+  creatures that are a speck in any frame. The names under the cells are drawn only when they
+  measure 11 px at 210x118, which with eight cells they do not, so they are off.
 - **Sounds are judged by words, not by ears.** There is no free classifier that listens to four
   seconds and says "dolphin"; the judge reads the title and tags. It catches a torch, a MIDI and
   an alphabet recording, and would miss a recording of the sea filed as "shark swimming".
