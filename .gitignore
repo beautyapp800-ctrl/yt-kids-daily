@@ -27,3 +27,6 @@ output/
 data/candidate-frames/
 data/music-cc0-*.json
 output_full/
+
+# Demo covers made by hand while designing; the pipeline writes its own into output/.
+output_cover/
