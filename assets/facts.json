@@ -250,6 +250,10 @@
       }
     ]
   },
+  "caterpillar": {
+    "facts": [],
+    "refused": []
+  },
   "chicken": {
     "facts": [
       {
@@ -324,6 +328,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Crabs are primarily omnivores and their diet consists of algae, plankton, and small invertebrates like clams and worms, not typically small fish"
       }
     ]
+  },
+  "deer": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A deer runs in the park."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A deer has big brown eyes."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A deer eats grass."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A deer has soft fur."
+      }
+    ],
+    "refused": []
   },
   "dolphin": {
     "facts": [
@@ -484,6 +509,27 @@
     ],
     "refused": []
   },
+  "firefly": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A firefly shines at night."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A firefly has a special light."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A firefly flies around."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A firefly flashes its light."
+      }
+    ],
+    "refused": []
+  },
   "flamingo": {
     "facts": [
       {
@@ -528,6 +574,27 @@
       {
         "checked": "2026-10-10",
         "fact": "A fox has a bushy tail."
+      }
+    ],
+    "refused": []
+  },
+  "frog": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A frog jumps on the ground."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A frog has big round eyes."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A frog catches flies with its tongue."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A frog has a long sticky tongue."
       }
     ],
     "refused": []
@@ -611,6 +678,10 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Grapes have seeds, but they are not typically juicy. The juicy part of a grape is the pulp."
       }
     ]
+  },
+  "grasshopper": {
+    "facts": [],
+    "refused": []
   },
   "helicopter": {
     "facts": [
@@ -787,6 +858,33 @@
       }
     ],
     "refused": []
+  },
+  "mosquito": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A mosquito flies around."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A mosquito bites people."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A mosquito has tiny wings."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A mosquito has little legs."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A mosquito makes a buzzing sound.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Mosquitoes make a high-pitched whining or humming sound, not a buzzing sound"
+      }
+    ]
   },
   "motorcycle": {
     "facts": [
@@ -1010,6 +1108,54 @@
     ],
     "refused": []
   },
+  "praying mantis": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A praying mantis has big eyes."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A praying mantis catches flies."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A praying mantis hides on leaves."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A praying mantis holds its legs tight."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A praying mantis moves slowly.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Praying mantises can move quickly when hunting or threatened"
+      }
+    ]
+  },
+  "rabbit": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A rabbit has soft fur."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A rabbit hops on its legs."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A rabbit eats fresh food."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A rabbit has big ears."
+      }
+    ],
+    "refused": []
+  },
   "rooster": {
     "facts": [
       {
@@ -1165,6 +1311,33 @@
       }
     ]
   },
+  "snake": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A snake slithers on the ground."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A snake curls up tight."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A snake has shiny skin."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A snake eats small animals."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A snake has sharp teeth.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Snakes do not have teeth, they have fangs or venom-delivery systems"
+      }
+    ]
+  },
   "spider": {
     "facts": [
       {
@@ -1191,6 +1364,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Spiders do not run, they walk or crawl"
       }
     ]
+  },
+  "squirrel": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A squirrel climbs trees."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A squirrel has a fluffy tail."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A squirrel finds nuts."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A squirrel runs quickly."
+      }
+    ],
+    "refused": []
   },
   "starfish": {
     "facts": [
@@ -1234,6 +1428,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: A starfish does not have many little eyes, it has eye spots that can detect light and dark"
       }
     ]
+  },
+  "stick insect": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A stick insect has legs."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A stick insect eats leaves."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A stick insect hides on a tree."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A stick insect walks slowly."
+      }
+    ],
+    "refused": []
   },
   "strawberry": {
     "facts": [
@@ -1346,6 +1561,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Tomatoes are often savory rather than sweet"
       }
     ]
+  },
+  "tortoise": {
+    "facts": [
+      {
+        "checked": "2026-10-20",
+        "fact": "A tortoise has a hard shell."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A tortoise walks very slowly."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A tortoise eats leaves."
+      },
+      {
+        "checked": "2026-10-20",
+        "fact": "A tortoise carries its home."
+      }
+    ],
+    "refused": []
   },
   "tractor": {
     "facts": [

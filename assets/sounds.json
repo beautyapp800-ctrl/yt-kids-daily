@@ -236,6 +236,12 @@
     "silent": true,
     "sounds": []
   },
+  "caterpillar": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "chicken": {
     "candidates_seen": 26,
     "refused": [],
@@ -347,6 +353,12 @@
         "why": "an electronic music synthesizer sound"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "deer": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -656,6 +668,12 @@
       }
     ]
   },
+  "firefly": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "flamingo": {
     "candidates_seen": 7,
     "refused": [
@@ -746,6 +764,12 @@
       }
     ]
   },
+  "frog": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "giraffe": {
     "candidates_seen": 0,
     "refused": [],
@@ -792,6 +816,12 @@
         "url": "https://cdn.freesound.org/previews/234/234286_3120802-hq.mp3"
       }
     ]
+  },
+  "grasshopper": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "helicopter": {
     "candidates_seen": 25,
@@ -1011,6 +1041,12 @@
         "why": "a Honda Monkey motorcycle sound"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "mosquito": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -1355,6 +1391,18 @@
       }
     ]
   },
+  "praying mantis": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "rabbit": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "rooster": {
     "candidates_seen": 27,
     "refused": [],
@@ -1523,6 +1571,12 @@
       }
     ]
   },
+  "snake": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "spider": {
     "candidates_seen": 8,
     "refused": [
@@ -1562,6 +1616,12 @@
     "silent": true,
     "sounds": []
   },
+  "squirrel": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "starfish": {
     "candidates_seen": 2,
     "refused": [
@@ -1574,6 +1634,12 @@
         "why": "licence at the source is unknown: no verifier for www.jamendo.com"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "stick insect": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -1714,6 +1780,12 @@
         "url": "https://cdn.freesound.org/previews/263/263115_672090-hq.mp3"
       }
     ]
+  },
+  "tortoise": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "tractor": {
     "candidates_seen": 30,

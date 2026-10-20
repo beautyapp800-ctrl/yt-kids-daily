@@ -1,4 +1,12 @@
 {
+  "birds": [
+    "eagle",
+    "owl",
+    "parrot",
+    "flamingo",
+    "peacock",
+    "swan"
+  ],
   "farm animals": [
     "cow",
     "pig",
@@ -9,17 +17,26 @@
     "goat",
     "rooster"
   ],
-  "wild animals": [
-    "lion",
-    "elephant",
-    "tiger",
-    "bear",
-    "monkey",
-    "giraffe",
-    "zebra",
-    "wolf",
-    "fox",
-    "kangaroo"
+  "fruit and vegetables": [
+    "banana",
+    "apple",
+    "orange",
+    "strawberry",
+    "watermelon",
+    "carrot",
+    "tomato",
+    "broccoli",
+    "grapes",
+    "pineapple"
+  ],
+  "insects": [
+    "ant",
+    "bee",
+    "butterfly",
+    "dragonfly",
+    "ladybug",
+    "mosquito",
+    "spider"
   ],
   "sea animals": [
     "whale",
@@ -33,22 +50,6 @@
     "seahorse",
     "penguin"
   ],
-  "birds": [
-    "eagle",
-    "owl",
-    "parrot",
-    "flamingo",
-    "peacock",
-    "swan"
-  ],
-  "insects": [
-    "butterfly",
-    "bee",
-    "ant",
-    "ladybug",
-    "dragonfly",
-    "spider"
-  ],
   "transport": [
     "tractor",
     "fire truck",
@@ -61,16 +62,21 @@
     "boat",
     "motorcycle"
   ],
-  "fruit and vegetables": [
-    "banana",
-    "apple",
-    "orange",
-    "strawberry",
-    "watermelon",
-    "carrot",
-    "tomato",
-    "broccoli",
-    "grapes",
-    "pineapple"
+  "wild animals": [
+    "bear",
+    "deer",
+    "elephant",
+    "fox",
+    "frog",
+    "giraffe",
+    "kangaroo",
+    "lion",
+    "monkey",
+    "rabbit",
+    "snake",
+    "squirrel",
+    "tiger",
+    "wolf",
+    "zebra"
   ]
 }
