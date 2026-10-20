@@ -18,6 +18,7 @@ not finish in two hours, and the same mistake is not worth making twice.
 """
 import json
 import subprocess
+import tempfile
 from pathlib import Path
 
 from core.logger import get_logger
@@ -314,6 +315,40 @@ def _still_clip(image, seconds, out_path, vf=None):
     return out_path
 
 
+def _zoom_clip(board_image, box, seconds, out_path, into=True):
+    """The flight between the board and one cell, drawn frame by frame and piped to ffmpeg.
+
+    Raw frames over a pipe rather than a folder of PNGs: a 0.6 s flight is 18 frames of
+    1920x1080, and writing then re-reading them would cost more than making them.
+    """
+    out_path = Path(out_path)
+    if out_path.exists():
+        return out_path
+    frames = max(int(round(seconds * FPS)), 2)
+    args = ["ffmpeg", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
+            "-s", f"{WIDTH}x{HEIGHT}", "-r", str(FPS), "-i", "-", "-an",
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
+            "-pix_fmt", "yuv420p", "-loglevel", "error", str(out_path)]
+    with tempfile.TemporaryFile() as errors:
+        proc = subprocess.Popen(args, stdin=subprocess.PIPE, stdout=subprocess.DEVNULL,
+                                stderr=errors)
+        try:
+            for frame in grid.zoom_frames(board_image, box, frames, into):
+                proc.stdin.write(frame)
+        except BrokenPipeError:
+            pass
+        finally:
+            try:
+                proc.stdin.close()
+            except BrokenPipeError:
+                pass
+        if proc.wait(timeout=TIMEOUT_PER_CARD) != 0:
+            errors.seek(0)
+            raise RenderError(f"ffmpeg failed on the flight into {box}: "
+                              f"{errors.read()[-500:].decode('utf-8', 'replace')}")
+    return out_path
+
+
 def board_pieces(cards, stills, labels, work, cfg):
     """[(video, seconds, kind, card_index)] - the board moments around every card.
 
@@ -331,15 +366,13 @@ def board_pieces(cards, stills, labels, work, cfg):
 
     for i, _card in enumerate(cards):
         before = grid.board(stills, set(range(i)), work / f"board_{i:02d}_in.jpg", i, labels)
-        out.append((_still_clip(before, ZOOM_IN, work / f"zin_{i:02d}.mp4",
-                                grid.zoom_filter(boxes[i], ZOOM_IN, FPS, into=True)),
-                    ZOOM_IN, "zoom_in", i))
+        out.append((_zoom_clip(before, boxes[i], ZOOM_IN, work / f"zin_{i:02d}.mp4",
+                               into=True), ZOOM_IN, "zoom_in", i))
         out.append((None, None, "card", i))
         after = grid.board(stills, set(range(i + 1)), work / f"board_{i:02d}_out.jpg",
                            None, labels)
-        out.append((_still_clip(after, ZOOM_OUT, work / f"zout_{i:02d}.mp4",
-                                grid.zoom_filter(boxes[i], ZOOM_OUT, FPS, into=False)),
-                    ZOOM_OUT, "zoom_out", i))
+        out.append((_zoom_clip(after, boxes[i], ZOOM_OUT, work / f"zout_{i:02d}.mp4",
+                               into=False), ZOOM_OUT, "zoom_out", i))
         if i < len(cards) - 1:
             out.append((_still_clip(after, BOARD_HOLD, work / f"hold_{i:02d}.mp4"),
                         BOARD_HOLD, "board", i))
