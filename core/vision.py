@@ -260,3 +260,106 @@ def verify(image_path, subject, account, token, use_describer=True):
     out["shows_it"] = (out["by_describer"] if out["by_describer"] is not None
                        else out["by_classifier"])
     return out
+
+
+# --- what else is in the frame -------------------------------------------------------------
+
+DETECTOR = "@cf/facebook/detr-resnet-50"
+DETECT_MIN_SCORE = 0.5
+PERSON_MIN_SCORE = 0.8
+
+# Words the describer uses for something built. A fence is not on the list: a tiger in front of
+# a blurred zoo fence is still a tiger, and the frame was the best of thirty on the cover.
+STRUCTURE_WORDS = {"building", "buildings", "house", "houses", "wall", "walls", "platform",
+                   "window", "windows", "roof", "tower", "stadium", "stage", "skyscraper",
+                   "aquarium", "tank", "pool", "glass", "bridge", "street", "city"}
+
+
+# Words the describer uses for a person. A person counts only when the detector AND the
+# describer both see one: on its own the detector counted twelve "people" in a colony of king
+# penguins, and a person on a spider's web.
+PEOPLE_WORDS = {"man", "men", "woman", "women", "person", "people", "child", "children",
+                "boy", "girl", "baby", "kid", "kids", "hand", "hands", "visitor", "visitors",
+                "trainer", "trainers", "crowd", "tourist", "tourists", "chef", "cook",
+                "worker", "workers", "pilot", "rider", "driver", "fisherman"}
+
+
+def detect(image_path, account, token, model=DETECTOR):
+    """[(label, score, (x0, y0, x1, y1) as fractions of the frame)], from an object detector.
+
+    The labels are often wrong - it calls a lion a dog and a tiger a cat, because its classes
+    are COCO's eighty - but the boxes are right, and the box is what is used: how much of the
+    frame the main thing fills, and whether there are people in it besides.
+    """
+    from PIL import Image
+    with Image.open(image_path) as im:
+        width, height = im.size
+    rows = _call(account, token, model, Path(image_path).read_bytes(), binary=True) or []
+    out = []
+    for row in rows:
+        box = row.get("box") or {}
+        score = float(row.get("score") or 0)
+        if score < DETECT_MIN_SCORE or not box:
+            continue
+        out.append((str(row.get("label", "")).lower(), score,
+                    (box["xmin"] / width, box["ymin"] / height,
+                     box["xmax"] / width, box["ymax"] / height)))
+    return out
+
+
+def _area(box):
+    return max(0.0, box[2] - box[0]) * max(0.0, box[3] - box[1])
+
+
+def _inside(inner, outer):
+    cx, cy = (inner[0] + inner[2]) / 2, (inner[1] + inner[3]) / 2
+    return outer[0] <= cx <= outer[2] and outer[1] <= cy <= outer[3]
+
+
+def frame_contents(detections, listed=""):
+    """{subject_area, people, structures} from a detection and the describer's list.
+
+    subject_area  the largest box that is not a person, as a share of the frame - or None when
+                  the detector recognised nothing. That is not the same as small: its classes
+                  are COCO's eighty, so a strawberry filling the screen, a jellyfish or a whale
+                  get no box at all. Checked by eye on all 216 catalogue frames: below 2% with
+                  a box, the thing really is a speck (a cow across a valley, a tractor from the
+                  air); above it the box under-measures (a lion filling a quarter of the frame
+                  reads 4%), so the number is a floor and not a scale;
+    people        persons the detector is sure of, outside the subject's own box (the man
+                  rowing belongs to the boat), and only if the describer also names a person.
+                  Either alone is wrong too often: the detector counts penguins as people, the
+                  describer invents a woman at an orca show where there were trainers anyway;
+    structures    built things the describer names. The noisiest of the three - it says
+                  "building" for a chicken in an empty field - so it lowers a frame's chances
+                  rather than ruling it out.
+    """
+    things = [(l, s, b) for l, s, b in detections if l != "person"]
+    subject = max(things, key=lambda d: _area(d[2]), default=None)
+    subject_box = subject[2] if subject else None
+    seen = [b for l, s, b in detections if l == "person" and s >= PERSON_MIN_SCORE
+            and not (subject_box and _inside(b, subject_box))]
+    words = set(re.findall(r"[a-z]+", (listed or "").lower()))
+    confirmed = bool(words & PEOPLE_WORDS)
+    return {"subject_area": round(_area(subject_box), 4) if subject_box else None,
+            "people": len(seen) if confirmed else 0,
+            "people_detected": len(seen),
+            "structures": sorted(words & STRUCTURE_WORDS)}
+
+
+def list_contents(image_path, account, token, model=DESCRIBER):
+    """Everything the describer says it sees, as it said it. An open question again: asked
+    "are there people?" it agrees; asked for a list, it has to produce one."""
+    payload = {"image": list(Path(image_path).read_bytes()),
+               "prompt": "List every kind of thing you can see in this photograph, "
+                         "separated by commas. Include the background.",
+               "max_tokens": 60}
+    result = _call(account, token, model, payload)
+    return str((result or {}).get("description") or (result or {}).get("response") or "")
+
+
+def inspect_frame(image_path, account, token, list_structures=True):
+    """frame_contents for one picture, calling the two models it needs."""
+    detections = detect(image_path, account, token)
+    listed = list_contents(image_path, account, token) if list_structures else ""
+    return {**frame_contents(detections, listed), "listed": listed[:400]}

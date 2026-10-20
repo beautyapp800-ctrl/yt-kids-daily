@@ -85,14 +85,62 @@ FAMILIAR = {
     "apple", "carrot", "strawberry", "watermelon",
 }
 
-# Creatures that are a few millimetres long and so a speck in any frame a person can film at
-# a distance that keeps the background in. The measure above cannot see how big the animal is
-# in the frame - a ladybug on leaves scored third of thirty - so this is said outright: these
-# are fine cards in a video, where the card is the whole screen, and poor covers, where a cell
-# is 47 px wide in the feed. A lift down, not a ban, so a frame that really fills the cell
-# with one still has a chance.
-TINY = {"ladybug", "ant", "bee", "spider", "dragonfly", "seahorse"}
-TINY_PENALTY = 0.4
+# What the catalogue measured about each clip's frame when the clip was added (see
+# core/vision.frame_contents): how much of it the main thing fills, how many people stand
+# about in it, and what built things the describer named. Read here; never asked again.
+#
+# SMALL_SUBJECT is a share of the frame, and it is the line below which a thing is a speck in a
+# cell 47 px wide in the feed. Set from the catalogue's own distribution - see docs/cover.md.
+SMALL_SUBJECT = 0.02
+# Built things matter on an animal - an orca on a show platform, a dolphin behind aquarium
+# glass - and not on a vehicle, which belongs on a street or at a station. See built_penalty.
+BUILT_IS_FINE = {"transport"}
+
+
+def frame_facts(subject, clip_id, book=None):
+    """The catalogue's measurement for this clip, or None if it was never measured."""
+    if book is None:
+        try:
+            from pipeline import catalogue
+            book = catalogue.load()
+        except Exception:                                        # noqa: BLE001
+            return None
+    for clip in (book.get(subject) or {}).get("clips", []):
+        if str(clip.get("id")) == str(clip_id) and "subject_area" in clip:
+            return clip
+    return None
+
+
+def _theme_of(subject):
+    try:
+        import json
+        groups = json.loads((Path(__file__).resolve().parent.parent / "assets" /
+                             "subjects.json").read_text(encoding="utf-8"))
+    except Exception:                                            # noqa: BLE001
+        return ""
+    return next((t for t, items in groups.items() if subject in items), "")
+
+
+def unfit_for_cover(subject, facts):
+    """Why this frame should not be on a cover, or "" if nothing is known against it."""
+    if not facts:
+        return ""
+    if facts.get("people", 0) > 0 and _theme_of(subject) not in BUILT_IS_FINE:
+        # On a vehicle a person is the driver, the rider, the man rowing: part of the thing.
+        return f"{facts['people']} people in the frame"
+    area = facts.get("subject_area")
+    if area is not None and area < SMALL_SUBJECT:
+        return f"fills {area:.1%} of the frame"
+    return ""
+
+
+def built_penalty(subject, facts):
+    """Built things behind an animal lower a frame's chances; they do not rule it out, because
+    the describer that reports them also reports a building beside a chicken in an empty
+    field."""
+    if facts and facts.get("structures") and _theme_of(subject) not in BUILT_IS_FINE:
+        return 0.3
+    return 0.0
 
 
 def palette_for(video_id):
@@ -164,28 +212,46 @@ def clutter(hsv):
     return max(0.0, (rest - bottom) - 0.20) * 3.0
 
 
-def choose_frames(candidates, count):
+def choose_frames(candidates, count, book=None):
     """The `count` best of [(subject, still_path, clip_id)], as [(subject, path, score)].
 
-    Greedy: each pick takes the best remaining, less a penalty for every frame already picked
-    of nearly the same hue. Without that, a catalogue with a lot of green leaves gives a cover
-    of green rectangles.
+    Frames the catalogue measured as unfit - people about, built things behind an animal, a
+    subject that fills almost none of the frame - are set aside first, and only come back if
+    there would otherwise not be enough to fill the board. Among the rest, greedy: each pick
+    takes the best remaining, less a penalty for every frame already picked of nearly the same
+    hue. Without that, a catalogue with a lot of green leaves gives a cover of green rectangles.
     """
-    scored = []
-    for subject, path, _clip_id in candidates:
+    if book is None:
+        try:
+            from pipeline import catalogue
+            book = catalogue.load()
+        except Exception:                                        # noqa: BLE001
+            book = {}
+    fit, unfit = [], []
+    for subject, path, clip_id in candidates:
         base, hue = appeal(path)
-        score = base + (0.12 if subject in FAMILIAR else 0) - (TINY_PENALTY if subject in TINY else 0)
-        scored.append([score, hue, subject, path])
+        facts = frame_facts(subject, clip_id, book)
+        score = base + (0.12 if subject in FAMILIAR else 0)
+        if facts and facts.get("subject_area") is not None:
+            # A little for size: the box under-measures, so this is a nudge and not a ranking.
+            score += 0.15 * min(facts["subject_area"] / 0.10, 1.0)
+        score -= built_penalty(subject, facts)
+        why = unfit_for_cover(subject, facts)
+        (unfit if why else fit).append([score, hue, subject, path, why])
+    if len(fit) < count:
+        log.info("only %d frames are fit for a cover; %d unfit ones fill the rest",
+                 len(fit), count - len(fit))
+        fit += sorted(unfit, key=lambda r: -r[0])[:count - len(fit)]
     chosen = []
-    while scored and len(chosen) < count:
+    while fit and len(chosen) < count:
         def adjusted(item):
             close = sum(1 for c in chosen
                         if min(abs(item[1] - c[1]), 1 - abs(item[1] - c[1])) < 0.07)
             return item[0] - 0.09 * close
-        best = max(scored, key=adjusted)
-        scored.remove(best)
+        best = max(fit, key=adjusted)
+        fit.remove(best)
         chosen.append(best)
-    return [(s, p, sc) for sc, _h, s, p in chosen]
+    return [(s, p, sc) for sc, _h, s, p, _w in chosen]
 
 
 # --- the picture ---------------------------------------------------------------------------

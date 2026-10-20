@@ -110,6 +110,12 @@ def verify_subject(subject, hits, account, token, work_dir, vision, keep=KEEP_PE
                "prominence": round(prominence(check.get("labels") or [], subject,
                                               vision.names_subject), 3)}
         if check.get("shows_it"):
+            # Looked at once, here, and stored: the cover reads these and never asks again.
+            try:
+                row.update(vision.inspect_frame(frame, account, token))
+            except Exception as e:                               # noqa: BLE001
+                log.warning("%s clip %s: what else is in the frame could not be measured: %s",
+                            subject, hit["id"], e)
             kept.append(row)
         else:
             rejected.append({**row, "why": "the model called it "

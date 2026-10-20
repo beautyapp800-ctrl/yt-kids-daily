@@ -117,6 +117,63 @@ def test_black_bars_are_cropped_out_of_a_cell():
     check(t._without_bars(plain).size == (640, 360), "a plain dark frame is left alone")
 
 
+def test_people_and_size_are_read_off_the_detector():
+    print("test_people_and_size_are_read_off_the_detector")
+    from core import vision
+    boat = (0.30, 0.40, 0.70, 0.60)
+    rower = (0.45, 0.42, 0.50, 0.55)                 # stands inside the boat's box
+    visitor = (0.05, 0.70, 0.12, 0.98)               # stands at the glass, outside it
+    facts = vision.frame_contents([("boat", 0.99, boat), ("person", 0.99, rower)], "")
+    check(facts["people"] == 0, "the man rowing the boat belongs to the boat")
+    check(abs(facts["subject_area"] - 0.08) < 1e-9, f"the boat fills {facts['subject_area']:.0%}")
+    facts = vision.frame_contents([("bird", 0.92, boat), ("person", 0.97, visitor),
+                                   ("person", 0.6, visitor)], "a dolphin, a woman, a building, a window")
+    check(facts["people"] == 1, "a visitor outside the subject counts; an unsure one does not")
+    check(facts["structures"] == ["building", "window"], f"built things: {facts['structures']}")
+    penguins = vision.frame_contents([("person", 0.99, visitor)] * 12, "penguins, rocks, snow")
+    check(penguins["people"] == 0 and penguins["people_detected"] == 12,
+          "twelve 'people' the describer does not name are penguins, not people")
+    check(vision.frame_contents([], "")["subject_area"] is None,
+          "nothing recognised is unknown, not a subject filling 0% - a strawberry gets no box")
+
+
+def test_what_keeps_a_frame_off_a_cover():
+    print("test_what_keeps_a_frame_off_a_cover")
+    check(t.unfit_for_cover("whale", {"people": 5, "structures": [], "subject_area": 0.3}),
+          "people at an orca show")
+    check(not t.unfit_for_cover("dolphin", {"people": 0, "structures": ["glass"], "subject_area": 0.2})
+          and t.built_penalty("dolphin", {"structures": ["glass"]}) > 0,
+          "aquarium glass behind an animal costs points but does not rule the frame out")
+    check(not t.unfit_for_cover("boat", {"people": 1, "structures": [], "subject_area": 0.1}),
+          "the man rowing the boat is part of the boat")
+    check(not t.unfit_for_cover("jellyfish", {"people": 0, "structures": [], "subject_area": None}),
+          "a frame the detector recognised nothing in is not called small")
+    check(not t.unfit_for_cover("train", {"people": 0, "structures": ["building"],
+                                          "subject_area": 0.3}),
+          "a station behind a train is where a train belongs")
+    check(t.unfit_for_cover("ladybug", {"people": 0, "structures": [], "subject_area": 0.001}),
+          "a ladybug filling 0.1% of the frame is a speck: measured, not listed")
+    check(not t.unfit_for_cover("ladybug", {"people": 0, "structures": [], "subject_area": 0.3}),
+          "and a ladybug filling the frame is welcome")
+    check(t.unfit_for_cover("lion", None) == "", "a clip never measured is not held against")
+
+
+def test_unfit_frames_only_fill_in_when_there_are_not_enough():
+    print("test_unfit_frames_only_fill_in_when_there_are_not_enough")
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        names = [f"a{i}" for i in range(10)]
+        cands = candidates(tmp, names, [(40 + 20 * i, 120, 200 - 15 * i) for i in range(10)])
+        book = {n: {"clips": [{"id": str(i), "subject_area": 0.3, "people": 0,
+                               "structures": []}]} for i, n in enumerate(names)}
+        book["a0"]["clips"][0]["people"] = 3
+        book["a1"]["clips"][0]["subject_area"] = 0.001
+        picked = [s for s, _p, _x in t.choose_frames(cands, 8, book)]
+        check("a0" not in picked and "a1" not in picked, f"both unfit frames left out: {picked}")
+        picked = [s for s, _p, _x in t.choose_frames(cands[:8], 8, book)]
+        check(len(picked) == 8, "with only eight to choose from, they fill the board anyway")
+
+
 if __name__ == "__main__":
     test_the_title_is_number_theme_and_audience()
     test_the_board_has_between_8_and_12_big_cells()
@@ -124,4 +181,7 @@ if __name__ == "__main__":
     test_long_names_turn_the_labels_off_and_short_ones_may_not()
     test_frames_are_not_all_one_colour()
     test_black_bars_are_cropped_out_of_a_cell()
+    test_people_and_size_are_read_off_the_detector()
+    test_what_keeps_a_frame_off_a_cover()
+    test_unfit_frames_only_fill_in_when_there_are_not_enough()
     print("ALL COVER TESTS PASSED")

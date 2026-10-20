@@ -92,14 +92,14 @@ Setup, including exactly what to click: `docs/setup.md`.
 
 ## Known limits
 
-- **The cover is the board, not a cut-out.** Lifting an animal out of stock footage was
-  measured and does not work (a shark's eye, a whale's tail with part of a platform). The cover
-  is the video's own board cut down to eight cells, chosen for colour, for how far the middle
-  of the frame stands out from its edge, and for being an animal a two-year-old knows. Nothing
-  here can see how big the animal is in the frame or whether there are people in it, so a
-  show-pool whale or an aquarium dolphin can still be picked; `thumbnail.TINY` pushes down the
-  creatures that are a speck in any frame. The names under the cells are drawn only when they
-  measure 11 px at 210x118, which with eight cells they do not, so they are off.
+- **The cover is the board, not a cut-out.** The video's own board cut down to eight cells.
+  Which eight is decided by what the catalogue measured once per clip when it was added
+  (`scripts/inspect_frames.py`, docs/cover.md): an object detector for how much of the frame
+  the subject fills and for people, the describer for people and built things. Each signal
+  alone was checked by eye on all 216 frames and found wrong in a known way - the detector
+  counts penguins as people and gives a strawberry no box at all, the describer puts a building
+  beside a chicken in an empty field - so people need both models to agree, "no box" is
+  unknown rather than small, and built things lower a frame's chances without ruling it out.
 - **Sounds are judged by words, not by ears.** There is no free classifier that listens to four
   seconds and says "dolphin"; the judge reads the title and tags. It catches a torch, a MIDI and
   an alphabet recording, and would miss a recording of the sea filed as "shark swimming".
