@@ -468,10 +468,32 @@ def run(video_id, cfg, service=None, sleep=time.sleep):
     return True
 
 
+STORED_FIELDS = ("privacyStatus", "publishAt", "selfDeclaredMadeForKids", "madeForKids",
+                 "containsSyntheticMedia", "embeddable", "license")
+
+
+def describe_stored(response):
+    """One line of what YouTube says it kept, and where: the channel, and each status field or
+    "not echoed" for one it left out.
+
+    A comparison that only runs on fields present in the response cannot tell "YouTube agrees"
+    from "YouTube did not say", and for the made-for-kids flag the difference is the whole
+    point. So absence is written down rather than skipped, and the channel is named, since the
+    upload token cannot read the channel any other way.
+    """
+    status = response.get("status") or {}
+    snippet = response.get("snippet") or {}
+    parts = [f"channel {snippet.get('channelId', 'not echoed')} "
+             f"({snippet.get('channelTitle', 'untitled')})"]
+    parts += [f"{k}={status[k] if k in status else 'not echoed'}" for k in STORED_FIELDS]
+    return "; ".join(parts)
+
+
 def _compare_with_response(video_id, response, requested_privacy):
     """What YouTube says it stored, against what was asked for."""
     status = response.get("status") or {}
     problems = []
+    log.info("YouTube stored: %s", describe_stored(response))
     if status.get("privacyStatus") and status["privacyStatus"] != requested_privacy:
         problems.append(f"privacy was requested as {requested_privacy} but YouTube set it to "
                         f"{status['privacyStatus']} (an unaudited API project is forced to "
@@ -491,6 +513,7 @@ def _compare_with_response(video_id, response, requested_privacy):
     elif "containsSyntheticMedia" not in status:
         log.warning("YouTube's response did not echo containsSyntheticMedia, so it could "
                     "not be confirmed; check the video's 'altered content' setting in Studio")
+    db.log_event(video_id, "upload", "info", "YouTube stored: " + describe_stored(response))
     for p in problems:
         log.warning("%s", p)
         db.log_event(video_id, "upload", "warning", p)

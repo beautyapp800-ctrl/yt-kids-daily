@@ -106,6 +106,19 @@ def test_nothing_in_the_upload_code_depends_on_what_kids_videos_lose():
         check(forbidden not in body, f"no reference to {forbidden}")
 
 
+def test_what_youtube_stored_is_written_down_including_what_it_left_out():
+    print("test_what_youtube_stored_is_written_down_including_what_it_left_out")
+    from pipeline import upload
+    said = upload.describe_stored({
+        "snippet": {"channelId": "UC123", "channelTitle": "Moo Toot"},
+        "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": True}})
+    check("channel UC123 (Moo Toot)" in said, f"names the channel: {said[:60]}")
+    check("selfDeclaredMadeForKids=True" in said, "the made-for-kids flag as stored")
+    check("madeForKids=not echoed" in said,
+          "and a field YouTube left out is written as not echoed, not skipped")
+    check("channel not echoed" in upload.describe_stored({}), "an empty response does not crash")
+
+
 if __name__ == "__main__":
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
@@ -114,4 +127,5 @@ if __name__ == "__main__":
         test_a_scheduled_video_goes_up_private_for_16_00_kyiv(tmp)
         test_the_slot_follows_the_queue_not_the_clock()
         test_nothing_in_the_upload_code_depends_on_what_kids_videos_lose()
+    test_what_youtube_stored_is_written_down_including_what_it_left_out()
     print("ALL UPLOAD TESTS PASSED")
