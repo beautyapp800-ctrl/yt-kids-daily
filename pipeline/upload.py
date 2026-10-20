@@ -185,6 +185,15 @@ def check_metadata(body, video_path, thumbnail_path):
         problems.append(f"tags are over {MAX_TAGS_CHARS} characters in total")
     if not video_path or not Path(video_path).exists():
         problems.append(f"the video file {video_path} does not exist (did render run?)")
+    else:
+        # The last gate before the file leaves the machine. A video whose audio stream ends
+        # early uploads without complaint and plays silence over the remaining pictures, and
+        # a published video cannot be quietly replaced.
+        try:
+            from pipeline.render import check_sound_runs_the_whole_way
+            check_sound_runs_the_whole_way(video_path)
+        except Exception as e:                                        # noqa: BLE001
+            problems.append(str(e))
     if thumbnail_path and Path(thumbnail_path).exists() and \
             Path(thumbnail_path).stat().st_size > MAX_THUMBNAIL_BYTES:
         problems.append(f"the thumbnail is over {MAX_THUMBNAIL_BYTES // 1024 // 1024} MB")

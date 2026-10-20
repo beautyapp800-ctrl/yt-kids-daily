@@ -219,7 +219,41 @@ def mux(video, audio, out_path, cfg, music=None, timeout=1800):
                 "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest",
                 str(out_path)]
     _run(args, timeout)
+    check_sound_runs_the_whole_way(out_path)
     return out_path
+
+
+# How much shorter the sound may be than the picture before the file is refused. A frame or
+# two is the normal rounding between a video stream and an AAC stream; a second is not.
+SOUND_SHORTFALL = 0.5
+
+
+def check_sound_runs_the_whole_way(path):
+    """Refuse a file whose audio stops before its picture does.
+
+    A muxer does not complain about this and neither does a player: it shows the pictures to
+    the end and plays silence. It was found by ear, in a sample where the audio stream was two
+    minutes against six and a half of video, and by ear it reads as "the music stopped" rather
+    than as a broken file - which is exactly why it has to be measured here instead of watched
+    for. Stream durations, not the container's, because the container reports the longest one.
+    """
+    out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0",
+                          "-show_entries", "stream=duration", "-of", "default=nw=1:nk=1",
+                          str(path)], capture_output=True, text=True, timeout=120)
+    audio = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0",
+                            "-show_entries", "stream=duration", "-of", "default=nw=1:nk=1",
+                            str(path)], capture_output=True, text=True, timeout=120)
+    try:
+        video_seconds = float(out.stdout.strip())
+        audio_seconds = float(audio.stdout.strip())
+    except ValueError:
+        raise RenderError(f"{Path(path).name} has no video or no audio stream to measure")
+    if video_seconds - audio_seconds > SOUND_SHORTFALL:
+        raise RenderError(
+            f"{Path(path).name} would play {video_seconds - audio_seconds:.1f} s of pictures "
+            f"in silence: the audio stream is {audio_seconds:.1f} s against "
+            f"{video_seconds:.1f} s of video")
+    return video_seconds, audio_seconds
 
 
 def probe_duration(path):
