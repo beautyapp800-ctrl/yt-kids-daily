@@ -1,21 +1,24 @@
 {
   "birds": [
     "eagle",
+    "flamingo",
+    "hawk",
     "owl",
     "parrot",
-    "flamingo",
     "peacock",
     "swan"
   ],
   "farm animals": [
-    "cow",
-    "pig",
-    "sheep",
-    "horse",
     "chicken",
+    "cow",
+    "donkey",
     "duck",
     "goat",
-    "rooster"
+    "horse",
+    "lamb",
+    "pig",
+    "rooster",
+    "sheep"
   ],
   "fruit and vegetables": [
     "banana",

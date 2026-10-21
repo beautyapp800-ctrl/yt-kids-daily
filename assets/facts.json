@@ -377,6 +377,33 @@
       }
     ]
   },
+  "donkey": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A donkey eats grass."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A donkey has a loud voice."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A donkey has a soft nose."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A donkey has big ears."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A donkey carries people.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: donkeys are not typically used to carry people, they are often used as pack animals to carry goods"
+      }
+    ]
+  },
   "dragonfly": {
     "facts": [
       {
@@ -487,6 +514,60 @@
       }
     ],
     "refused": []
+  },
+  "falcon": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A falcon flies very high."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A falcon has sharp claws."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A falcon catches small birds."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A falcon has bright eyes."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A falcon builds a nest.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Falcons do not build nests, they typically nest on cliff ledges or take over nests built by other birds"
+      }
+    ]
+  },
+  "finch": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A finch sings a happy song."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A finch flies in the air."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A finch eats small seeds."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A finch lives in a nest."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A finch has bright feathers.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all finches have bright feathers"
+      }
+    ]
   },
   "fire truck": {
     "facts": [
@@ -652,6 +733,27 @@
       }
     ]
   },
+  "goose": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A goose has soft feathers."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A goose flies in the air."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A goose swims in water."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A goose has a loud call."
+      }
+    ],
+    "refused": []
+  },
   "grapes": {
     "facts": [
       {
@@ -681,6 +783,27 @@
   },
   "grasshopper": {
     "facts": [],
+    "refused": []
+  },
+  "hawk": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A hawk flies high."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A hawk has sharp eyes."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A hawk catches small animals."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A hawk has strong wings."
+      }
+    ],
     "refused": []
   },
   "helicopter": {
@@ -727,6 +850,23 @@
       {
         "checked": "2026-10-10",
         "fact": "A horse has a soft nose."
+      }
+    ],
+    "refused": []
+  },
+  "horseback rider": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A horseback rider sits on a horse."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A horseback rider holds the reins."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A horseback rider wears a special hat."
       }
     ],
     "refused": []
@@ -810,6 +950,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Ladybugs have red wing cases, not red wings"
       }
     ]
+  },
+  "lamb": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A lamb goes baa."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A lamb has soft wool."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A lamb eats grass."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A lamb runs with its mom."
+      }
+    ],
+    "refused": []
   },
   "lion": {
     "facts": [
@@ -1108,6 +1269,27 @@
     ],
     "refused": []
   },
+  "pony": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A pony runs in a field."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A pony has a fluffy tail."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A pony eats nice grass."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A pony carries people on its back."
+      }
+    ],
+    "refused": []
+  },
   "praying mantis": {
     "facts": [
       {
@@ -1155,6 +1337,33 @@
       }
     ],
     "refused": []
+  },
+  "robin": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A robin sings a song."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A robin flies in the air."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A robin eats small bugs."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A robin builds a nest."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A robin has red feathers.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The robin's feathers are not all red, only its breast is red"
+      }
+    ]
   },
   "rooster": {
     "facts": [
@@ -1337,6 +1546,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Snakes do not have teeth, they have fangs or venom-delivery systems"
       }
     ]
+  },
+  "sparrow": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A sparrow flies in the air."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A sparrow sings a song."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A sparrow has soft feathers."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A sparrow eats small seeds."
+      }
+    ],
+    "refused": []
   },
   "spider": {
     "facts": [
@@ -1624,6 +1854,33 @@
       }
     ],
     "refused": []
+  },
+  "turkey": {
+    "facts": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A turkey has soft feathers."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A turkey has a loud call."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A turkey runs on its legs."
+      },
+      {
+        "checked": "2026-10-21",
+        "fact": "A turkey eats food from ground."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-21",
+        "fact": "A turkey has a big tail.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A turkey has a big fan of feathers, but it is not a tail in the classical sense, it is called a 'tail fan' or 'train'"
+      }
+    ]
   },
   "watermelon": {
     "facts": [

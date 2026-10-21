@@ -412,6 +412,12 @@
       }
     ]
   },
+  "donkey": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "dragonfly": {
     "candidates_seen": 3,
     "refused": [],
@@ -622,6 +628,18 @@
       }
     ]
   },
+  "falcon": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "finch": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "fire truck": {
     "candidates_seen": 20,
     "refused": [
@@ -817,7 +835,46 @@
       }
     ]
   },
+  "goose": {
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "Rusty Metal Squeak goose.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Goose passes.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-21",
+        "creator": "sarena6487528",
+        "id": "89f43356-ac9a-4ed5-9401-c888cf921aac",
+        "is": "a goose making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/sarena6487528/sounds/474945",
+        "seconds": 30.9,
+        "source": "freesound",
+        "title": "Goose 1.wav",
+        "url": "https://cdn.freesound.org/previews/474/474945_10104750-hq.mp3"
+      }
+    ]
+  },
   "grasshopper": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "hawk": {
     "candidates_seen": 0,
     "refused": [],
     "silent": true,
@@ -910,6 +967,12 @@
       }
     ]
   },
+  "horseback rider": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "jellyfish": {
     "candidates_seen": 2,
     "refused": [
@@ -960,6 +1023,12 @@
         "why": "a wind-up toy"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "lamb": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -1391,6 +1460,12 @@
       }
     ]
   },
+  "pony": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "praying mantis": {
     "candidates_seen": 0,
     "refused": [],
@@ -1398,6 +1473,12 @@
     "sounds": []
   },
   "rabbit": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "robin": {
     "candidates_seen": 0,
     "refused": [],
     "silent": true,
@@ -1572,6 +1653,12 @@
     ]
   },
   "snake": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "sparrow": {
     "candidates_seen": 0,
     "refused": [],
     "silent": true,
@@ -1868,6 +1955,12 @@
         "url": "https://cdn.freesound.org/previews/141/141273_2051721-hq.mp3"
       }
     ]
+  },
+  "turkey": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "whale": {
     "candidates_seen": 16,
