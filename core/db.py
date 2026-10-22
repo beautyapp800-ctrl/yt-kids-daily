@@ -76,7 +76,8 @@ _CARD_FIELDS = {"fact", "clip_id", "clip_url", "clip_licence", "image_path", "vi
 # column to a table that is already there, and this database is committed to git and outlives
 # every schema change, so new columns arrive here. Caught on the first one: sound_url was
 # added to the schema and the existing file carried on without it until an INSERT failed.
-_MIGRATIONS = [("cards", "sound_url", "TEXT")]
+_MIGRATIONS = [("cards", "sound_url", "TEXT"),
+               ("videos", "cover_subjects", "TEXT")]
 
 MAX_ATTEMPTS = 3
 
@@ -196,6 +197,50 @@ def subjects_used_recently(videos_back=6):
             "SELECT subject FROM used_subjects WHERE video_id IN "
             "(SELECT id FROM videos ORDER BY id DESC LIMIT ?)", (videos_back,)).fetchall()
     return {r["subject"] for r in rows}
+
+
+def recent_videos(limit=12):
+    """The last few videos, newest first - what they were about, what they were called, and
+    which pictures were on their covers. One query, so the planner, the titles and the cover
+    all judge variety from the same list."""
+    import json as _json
+    with _connect() as conn:
+        rows = conn.execute(
+            "SELECT id, theme, seo_title, cover_subjects FROM videos "
+            "ORDER BY id DESC LIMIT ?", (limit,)).fetchall()
+    out = []
+    for r in rows:
+        try:
+            cover = _json.loads(r["cover_subjects"]) if r["cover_subjects"] else []
+        except ValueError:
+            cover = []
+        out.append({"id": r["id"], "theme": r["theme"], "seo_title": r["seo_title"],
+                    "cover_subjects": cover})
+    return out
+
+
+def subjects_used_in_last(videos_back):
+    """{subject: how many videos ago it was used}, 1 being the video just made.
+
+    A set of "recently used" cannot say how recently, and the rule is a distance: a subject
+    may come back after five videos. So the distance is what is returned.
+    """
+    with _connect() as conn:
+        ids = [r["id"] for r in conn.execute(
+            "SELECT id FROM videos ORDER BY id DESC LIMIT ?", (videos_back,))]
+        if not ids:
+            return {}
+        marks = ",".join("?" * len(ids))
+        rows = conn.execute(
+            f"SELECT subject, video_id FROM used_subjects WHERE video_id IN ({marks})",
+            ids).fetchall()
+    place = {vid: n + 1 for n, vid in enumerate(ids)}
+    out = {}
+    for r in rows:
+        distance = place.get(r["video_id"])
+        if distance and (r["subject"] not in out or distance < out[r["subject"]]):
+            out[r["subject"]] = distance
+    return out
 
 
 def remember_subjects(video_id, subjects):

@@ -34,68 +34,72 @@ MIN_CARDS = 18          # below this a full-length video is too short to be wort
 SUBJECT_POOL = 3.0      # how many candidates to consider per card wanted
 
 
-# Themes that belong together on one video. A video is thirty cards, and no single theme has
-# thirty subjects, so a video of "farm animals" used to be eight farm animals and twenty-two
-# things picked from anywhere - which the title then had to call "Animals and Vehicles". Lions
-# beside a tractor is not a theme. A family is the unit a video is built from, and subjects are
-# drawn from every theme in it, so thirty animals are called thirty animals.
-FAMILIES = {
-    "animals": ["farm animals", "wild animals", "sea animals", "birds", "insects"],
-    "vehicles": ["transport"],
-    "food": ["fruit and vegetables"],
-}
+# A video is one theme. It used to be a family - every kind of animal together - and three
+# videos running came out called "30 Animals for Kids", sharing twenty subjects out of thirty.
+# From a viewer's seat that is the same video three times; from YouTube's, it is repetition.
+#
+# One theme per video also spaces the subjects out on its own, with no extra rule: with seven
+# themes in rotation a theme comes round every seventh video, so nothing inside it can return
+# sooner than that. The arithmetic the family approach could never satisfy - thirty cards and
+# no repeat within five videos needs 150 distinct subjects, and the animals family has 52.
+
+THEME_REST = 7           # videos a theme sits out before it can come round again
+SUBJECT_REST = 5         # videos a subject sits out, as asked
+MIN_THEME_CARDS = 10     # below this a themed video is too thin to be worth making
 
 
-def family_of(theme):
-    for name, themes in FAMILIES.items():
-        if theme in themes:
-            return name
-    return None
+def theme_sizes(groups, clips, facts):
+    """{theme: how many of its subjects could actually be a card today}."""
+    return {theme: sum(1 for s in items
+                       if (clips.get(s) or {}).get("clips") and (facts.get(s) or {}).get("facts"))
+            for theme, items in groups.items()}
 
 
-def choose_family(groups, video_id, wanted):
-    """The family this video is made from.
+def choose_theme(groups, recent, sizes, floor=MIN_THEME_CARDS):
+    """The theme for this video: the one that has waited longest and can fill a video.
 
-    Deterministic from the video number, so a rerun after a failure plans the same video. A
-    family is skipped if it cannot supply a whole video by itself - vehicles and food have ten
-    subjects each - and that is not a hole in the design but the plain state of the catalogue,
-    which the grow job is there to change. If no family can, the video is a mixture and says so.
+    `recent` is the newest-first list of what the last videos were about. Least recently used,
+    because a fixed cycle through sorted names would put the thin themes in the same place
+    every week and a theme that grows past the floor would have to wait for its slot.
     """
-    names = sorted(FAMILIES)
-    start = int(video_id) % len(names)
-    for offset in range(len(names)):
-        family = names[(start + offset) % len(names)]
-        available = sum(len(groups.get(t, [])) for t in FAMILIES[family])
-        if available >= wanted:
-            return family
-    return None
+    ready = sorted(t for t, n in sizes.items() if n >= floor)
+    if not ready:
+        # Nothing can fill a video on its own. Say which was closest rather than silently
+        # falling back to a mixture, because the mixture is the thing being fixed.
+        best = max(sizes.items(), key=lambda kv: kv[1], default=("nothing", 0))
+        raise RuntimeError(
+            f"no theme has {floor} subjects with both a clip and a checked fact; the largest "
+            f"is {best[0]} with {best[1]}. Run scripts/grow.py, or lower min_theme_cards.")
+    used = [v.get("theme") for v in recent[:THEME_REST]]
+    # How long ago each was used: 0 is the video just made, and a theme not in the list at all
+    # has waited longer than the window can see.
+    ago = {}
+    for distance, name in enumerate(used):
+        ago.setdefault(name, distance)
+    unseen = len(used) + 1
+    # Waited longest first; then the fullest theme, so a long video beats a thin one; then by
+    # name, so the choice is the same on a rerun.
+    return sorted(ready, key=lambda t: (-ago.get(t, unseen), -sizes[t], t))[0]
 
 
-def choose_theme(groups, video_id):
-    """Kept for callers that want a single theme: the first of the chosen family's."""
-    family = choose_family(groups, video_id, 1)
-    themes = FAMILIES.get(family) or sorted(groups)
-    return themes[int(video_id) % len(themes)]
+def choose_subjects(groups, theme, wanted, distances, rng, rest=SUBJECT_REST):
+    """Subjects of `theme` for this video, the ones that have rested longest first.
 
-
-def choose_subjects(groups, family, wanted, avoid, rng):
-    """`wanted` subjects from the family, preferring ones recent videos did not use.
-
-    Falls back to subjects the recent videos did use, and then to every theme, rather than
-    returning a short list: a video of twelve cards is worse than one that repeats a lion.
+    A subject used within the last `rest` videos is held back. If holding them all back leaves
+    too few, the ones held back come in by distance - the one used longest ago first - because
+    a short video is a worse answer than a lion a child saw four videos ago.
     """
-    themes = FAMILIES.get(family) or sorted(groups)
-    pool = [s for t in themes for s in groups.get(t, [])]
+    pool = list(groups.get(theme, []))
     rng.shuffle(pool)
-    chosen = [s for s in pool if s not in avoid][:wanted]
+    fresh = [s for s in pool if distances.get(s, rest + 1) > rest]
+    chosen = fresh[:wanted]
     if len(chosen) < wanted:
-        chosen += [s for s in pool if s not in chosen][:wanted - len(chosen)]
-    if len(chosen) < wanted:
-        others = [s for t, items in sorted(groups.items()) if t not in themes for s in items]
-        rng.shuffle(others)
-        chosen += [s for s in others if s not in chosen][:wanted - len(chosen)]
-        log.info("family %r has only %d subjects; %d came from elsewhere",
-                 family, len(pool), wanted - len(pool))
+        held = sorted((s for s in pool if s not in chosen),
+                      key=lambda s: -distances.get(s, rest + 1))
+        short = wanted - len(chosen)
+        chosen += held[:short]
+        log.info("theme %r could only offer %d subjects rested %d videos; %d came back early",
+                 theme, len(fresh), rest, min(short, len(held)))
     return chosen
 
 
@@ -107,23 +111,20 @@ def theme_of(subject, groups):
 
 
 def dominant_theme(subjects, groups, fallback):
-    """What the video is actually about, for the title.
+    """What the video is actually about, for the title: the theme most of its cards belong to.
 
-    Judged from the subjects that ended up on cards, not from what was intended: when the
-    catalogue could not supply enough of one kind the plan fills up from others, and a video
-    of lions titled "Fruit And Vegetables for Kids" is a lie a viewer sees in the thumbnail.
-    Every card from one theme names that theme; every card from one family names the family;
-    anything else is called what it is, a mixture.
+    Kept even though a video is now planned as one theme, because the title must describe the
+    cards that were made and not the intention behind them.
     """
-    themes = {theme_of(s, groups) for s in subjects} - {""}
-    if not themes:
+    counted = {}
+    for s in subjects:
+        name = theme_of(s, groups)
+        if name:
+            counted[name] = counted.get(name, 0) + 1
+    if not counted:
         return fallback
-    if len(themes) == 1:
-        return next(iter(themes))
-    families = {family_of(t) for t in themes}
-    if len(families) == 1 and None not in families:
-        return next(iter(families))
-    return "animals and machines"
+    best = max(counted.items(), key=lambda kv: (kv[1], kv[0]))
+    return best[0] if best[1] >= len(subjects) * 0.7 else fallback
 
 
 def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
@@ -138,11 +139,19 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
     # not be refused by a constant written for the full-length format.
     floor = min(MIN_CARDS, wanted)
 
-    family = choose_family(groups, video_id, wanted)
-    theme = family or "animals and machines"
-    avoid = db.subjects_used_recently()
-    subjects = choose_subjects(groups, family, int(wanted * SUBJECT_POOL), avoid, rng)
-    log.info("video %s: family %r, %d candidate subjects", video_id, family, len(subjects))
+    recent = db.recent_videos(max(THEME_REST, SUBJECT_REST) + 1)
+    sizes = theme_sizes(groups, clips, fact_book)
+    theme = cfg.get("theme") or choose_theme(
+        groups, recent, sizes, int(cfg.get("min_theme_cards", MIN_THEME_CARDS)))
+    # Never more cards than the theme has: a themed video is as long as its theme allows, and
+    # padding it from elsewhere is what produced three identical videos.
+    wanted = min(wanted, sizes[theme])
+    floor = min(floor, wanted)
+    distances = db.subjects_used_in_last(SUBJECT_REST)
+    subjects = choose_subjects(groups, theme, int(wanted * SUBJECT_POOL), distances, rng)
+    log.info("video %s: theme %r (%d subjects ready, last %d videos were %s), asking for %d cards",
+             video_id, theme, sizes[theme], len(recent),
+             ", ".join(v.get("theme") or "?" for v in recent[:THEME_REST]) or "none", wanted)
 
     # The clip comes before the fact: a subject with no clip and no drawing is no card, and
     # writing a fact for it would be work thrown away.

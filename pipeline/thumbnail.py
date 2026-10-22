@@ -212,7 +212,10 @@ def clutter(hsv):
     return max(0.0, (rest - bottom) - 0.20) * 3.0
 
 
-def choose_frames(candidates, count, book=None):
+COVER_REST = 10          # videos a subject sits out before it can be on a cover again
+
+
+def choose_frames(candidates, count, book=None, avoid=()):
     """The `count` best of [(subject, still_path, clip_id)], as [(subject, path, score)].
 
     Frames the catalogue measured as unfit - people about, built things behind an animal, a
@@ -227,7 +230,12 @@ def choose_frames(candidates, count, book=None):
             book = catalogue.load()
         except Exception:                                        # noqa: BLE001
             book = {}
-    fit, unfit = [], []
+    # Subjects on the last few covers go to the back of the queue. Three videos running showed
+    # the same lions and the same eagle in the same cells, which from a feed is one video three
+    # times. They are not banned outright: a thin theme has only so many subjects, and a board
+    # with a gap in it is worse than a lion a viewer saw ten videos ago.
+    avoid = set(avoid)
+    fit, unfit, seen_lately = [], [], []
     for subject, path, clip_id in candidates:
         base, hue = appeal(path)
         facts = frame_facts(subject, clip_id, book)
@@ -237,7 +245,18 @@ def choose_frames(candidates, count, book=None):
             score += 0.15 * min(facts["subject_area"] / 0.10, 1.0)
         score -= built_penalty(subject, facts)
         why = unfit_for_cover(subject, facts)
-        (unfit if why else fit).append([score, hue, subject, path, why])
+        row = [score, hue, subject, path, why]
+        if subject in avoid:
+            seen_lately.append(row)
+        elif why:
+            unfit.append(row)
+        else:
+            fit.append(row)
+    if len(fit) < count and seen_lately:
+        short = count - len(fit)
+        log.info("only %d subjects have not been on a recent cover; %d come back early",
+                 len(fit), min(short, len(seen_lately)))
+        fit += sorted(seen_lately, key=lambda r: -r[0])[:short]
     if len(fit) < count:
         log.info("only %d frames are fit for a cover; %d unfit ones fill the rest",
                  len(fit), count - len(fit))
@@ -479,14 +498,14 @@ def title_check(img, fill_mask, whole_mask, font_big):
 
 # --- putting it together -------------------------------------------------------------------
 
-def make(candidates, video_id, theme, count, out_dir):
+def make(candidates, video_id, theme, count, out_dir, avoid=()):
     """Build the cover from [(subject, still_path, clip_id)]; returns a report dict."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     img = background(video_id)
     fill_mask, whole_mask, band_bottom, size, f_big = draw_title(img, video_id, theme, count)
     cols, rows, boxes = layout(len(candidates), band_bottom + 14)
-    chosen = choose_frames(candidates, len(boxes))
+    chosen = choose_frames(candidates, len(boxes), avoid=avoid)
     draw_cells(img, chosen, boxes)
 
     label_size, label_cap = fit_labels(chosen, boxes)
@@ -537,7 +556,9 @@ def run(video_id, cfg, db, output_dir):
         raise RuntimeError(f"only {len(candidates)} pictures to build a cover from, "
                            f"a board needs {MIN_CELLS}")
     video = db.get_video(video_id) or {}
-    result = make(candidates, video_id, video.get("theme"), len(cards), out)
+    recent = db.recent_videos(COVER_REST + 1)
+    avoid = {s for v in recent if v["id"] != video_id for s in v.get("cover_subjects") or []}
+    result = make(candidates, video_id, video.get("theme"), len(cards), out, avoid=avoid)
 
     check = result["readability"]
     message = (f"{result['palette']}, {result['grid']} cells, title {result['title_size']}px, "
@@ -552,6 +573,7 @@ def run(video_id, cfg, db, output_dir):
         db.log_event(video_id, "thumbnail", "warning", message)
     (out / "thumbnail.json").write_text(
         json.dumps({k: str(v) for k, v in result.items()}, indent=2), encoding="utf-8")
-    db.update_video(video_id, thumbnail_path=str(result["path"]))
+    db.update_video(video_id, thumbnail_path=str(result["path"]),
+                    cover_subjects=json.dumps(result["subjects"], ensure_ascii=False))
     db.log_event(video_id, "thumbnail", "info", message)
     return True

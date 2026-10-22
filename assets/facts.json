@@ -854,27 +854,6 @@
     ],
     "refused": []
   },
-  "horse cart": {
-    "facts": [
-      {
-        "checked": "2026-10-22",
-        "fact": "A horse cart carries people."
-      },
-      {
-        "checked": "2026-10-22",
-        "fact": "A horse cart has wheels."
-      },
-      {
-        "checked": "2026-10-22",
-        "fact": "A horse cart is pulled by horses."
-      },
-      {
-        "checked": "2026-10-22",
-        "fact": "A horse cart has a seat."
-      }
-    ],
-    "refused": []
-  },
   "horseback rider": {
     "facts": [
       {

@@ -75,11 +75,33 @@ The voice is Microsoft's `en-US-JennyNeural`, chosen by ear from three samples. 
 `config.json` - `rate_name` and `rate_speech` - so the name and everything else can be tuned
 separately.
 
+## One video, one theme
+
+A video is one theme - farm animals, or birds, or vehicles - and never a mixture. The first
+three videos were planned from a whole family of themes, and all three came out called "30
+Animals for Kids", sharing twenty subjects of thirty and showing the same lions on the same
+covers. From a viewer's seat that is one video three times.
+
+One theme per video also spaces the subjects out with no further rule: with seven themes in
+rotation a theme returns every seventh video, so nothing inside it can come back sooner. The
+arithmetic the old way could never satisfy - thirty cards and no repeat within five videos
+needs 150 distinct subjects, and the animals family has 52.
+
+A video is therefore as long as its theme allows: `cards_per_video` is a ceiling, the theme's
+own size is the number, and `min_theme_cards` is the floor below which a theme is skipped.
+Titles rotate through six shapes and are checked against the last ten in the database; cover
+cells avoid the subjects on the last ten covers.
+
 ## Staying supplied
 
-Sixty subjects is two videos. `scripts/grow.py` (the `grow` workflow) counts how many videos'
-worth of fresh subjects are left; below three it asks for new subjects in the thinnest themes
-and runs the same three builders on them. The daily self-check warns when the supply is low.
+`scripts/grow.py` (the `grow` workflow) fills the themes that cannot yet fill a video, neediest
+first. Candidates come from `assets/subject-pool.json`, written by hand rather than asked of a
+model: the model proposed "horse cart" as a farm animal, and it proposed species no verifier
+can confirm - sparrow, finch, toucan and hummingbird all came back from the describer as
+"bird", goose as "duck", pony as "horse". Those refusals are correct, so the pool is written at
+the level a small child names things. Where a subject's own name finds the wrong thing in a
+stock library - "turkey" returned Istanbul twelve frames running - `search_terms` in the same
+file says what to type instead.
 
 ## Automation
 

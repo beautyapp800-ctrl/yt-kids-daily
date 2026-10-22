@@ -48,6 +48,19 @@ TOP_N = 5
 # Only the subjects whose everyday name is not an ImageNet class need an entry; for the rest
 # the word itself is matched, including as part of a longer label.
 SYNONYMS = {
+    # Added with the themes they belong to. Each is a word the describer really uses: these
+    # were checked against what it said on the frames it accepted, not invented.
+    "hawk": ["hawk", "kite", "bird of prey", "falcon", "buzzard"],
+    "ostrich": ["ostrich", "emu", "flightless bird"],
+    "donkey": ["donkey", "burro", "ass", "mule"],
+    "lamb": ["lamb", "sheep", "ewe", "ram"],
+    "ram": ["ram", "sheep", "bighorn", "ewe"],
+    "mosquito": ["mosquito", "gnat", "midge"],
+    "deer": ["deer", "stag", "doe", "fawn", "elk", "roe deer"],
+    "frog": ["frog", "toad", "tree frog", "bullfrog"],
+    "rabbit": ["rabbit", "bunny", "hare", "wood rabbit"],
+    "snake": ["snake", "serpent", "python", "cobra", "viper", "boa"],
+    "squirrel": ["squirrel", "chipmunk", "fox squirrel"],
     "shark": ["shark", "tiger shark", "great white", "hammerhead"],
     "whale": ["whale", "grey whale", "gray whale", "killer whale", "humpback"],
     "airplane": ["airliner", "jetliner", "warplane", "wing", "airplane", "aeroplane", "plane"],

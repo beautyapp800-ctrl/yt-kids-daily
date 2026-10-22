@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config.json"
 OUTPUT_DIR = ROOT / "output"
 
-REQUIRED = ["cards_per_video", "card_seconds_min", "card_seconds_max", "voice",
+REQUIRED = ["cards_per_video", "min_theme_cards", "card_seconds_min",
+            "card_seconds_max", "voice",
             "rate_name", "rate_speech", "pitch_name", "pitch_speech",
             "publish_time", "publish_days_ahead", "timezone", "made_for_kids", "image_style"]
 

@@ -50,6 +50,25 @@ machine. Not an idea, not a place, not a person, not a brand, not a species name
 biologist uses."""
 
 
+POOL_FILE = ROOT / "assets" / "subject-pool.json"
+
+
+def from_pool(theme, existing, count):
+    """Candidates from the curated pool, which costs nothing and is the right granularity.
+
+    The model used to propose these. It offered "horse cart" as a farm animal, and it offered
+    species no verifier can confirm: sparrow, finch, toucan and hummingbird all came back from
+    the describer as "bird", goose as "duck", pony as "horse". Those refusals are correct - a
+    clip we cannot show IS a finch must not be labelled finch to a three-year-old - so the
+    answer was not a looser check but a pool written at the level a small child names things.
+    """
+    try:
+        pool = json.loads(POOL_FILE.read_text(encoding="utf-8")).get("pool") or {}
+    except Exception:                                            # noqa: BLE001
+        return []
+    return [s for s in pool.get(theme, []) if s not in existing][:count]
+
+
 def propose(theme, existing, count, account, token):
     prompt = f"""Theme: {theme}
 
@@ -92,8 +111,21 @@ def main(argv=None):
         print(f"at least {HEADROOM_VIDEOS} videos of headroom; nothing to do")
         return 0
 
-    themes = headroom.thinnest_themes(groups, recent)
-    print(f"thinnest themes: {', '.join(themes)}")
+    # The themes that cannot fill a video, neediest first - not the thinnest overall. A video
+    # is one theme now, so a theme below the floor is a video that cannot be made, while the
+    # total count across all themes says nothing about whether tomorrow has a video in it.
+    from pipeline import catalogue as _cat, plan as _plan
+    sizes = _plan.theme_sizes(groups, _cat.load(), json.loads(
+        (ROOT / "assets" / "facts.json").read_text(encoding="utf-8")))
+    floor = int(cfg.get("min_theme_cards", _plan.MIN_THEME_CARDS))
+    target = int(cfg.get("cards_per_video", 25))
+    short = sorted(((n, t) for t, n in sizes.items() if n < target), key=lambda r: r[0])
+    themes = [t for _n, t in short[:2]] or headroom.thinnest_themes(groups, recent)
+    print("theme sizes: " + ", ".join(f"{t} {n}" for t, n in
+                                      sorted(sizes.items(), key=lambda kv: kv[1])))
+    print(f"below the {floor}-card floor: "
+          f"{', '.join(t for t, n in sizes.items() if n < floor) or 'none'}")
+    print(f"growing: {', '.join(themes)}")
     if args.dry_run:
         return 0
 
@@ -107,7 +139,12 @@ def main(argv=None):
     added = {}
     try:
         for theme in themes:
-            new = propose(theme, existing, per_theme, account, token)
+            new = from_pool(theme, existing, per_theme)
+            if len(new) < per_theme:
+                # The pool is finite. When a theme runs through it, the model fills in - with
+                # the same rules, and the verifier still has the last word.
+                new += [s for s in propose(theme, existing | set(new), per_theme - len(new),
+                                           account, token) if s not in new]
             if new:
                 added[theme] = new
                 existing.update(new)

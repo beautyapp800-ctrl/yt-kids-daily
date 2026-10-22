@@ -174,6 +174,32 @@ def test_unfit_frames_only_fill_in_when_there_are_not_enough():
         check(len(picked) == 8, "with only eight to choose from, they fill the board anyway")
 
 
+def test_subjects_from_recent_covers_go_to_the_back():
+    print("test_subjects_from_recent_covers_go_to_the_back")
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        names = [f"a{i}" for i in range(16)]
+        cands = candidates(tmp, names, [(30 + 14 * i, 120, 220 - 12 * i) for i in range(16)])
+        book = {n: {"clips": [{"id": str(i), "subject_area": 0.3, "people": 0,
+                               "structures": []}]} for i, n in enumerate(names)}
+        was_on = set(names[:6])
+        picked = set(s for s, _p, _x in t.choose_frames(cands, 8, book, avoid=was_on))
+        check(not (picked & was_on),
+              f"none of the last cover's six subjects is used again: {sorted(picked)}")
+
+
+def test_a_thin_theme_may_reuse_rather_than_leave_a_gap():
+    print("test_a_thin_theme_may_reuse_rather_than_leave_a_gap")
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        names = [f"b{i}" for i in range(9)]
+        cands = candidates(tmp, names, [(30 + 20 * i, 120, 220 - 15 * i) for i in range(9)])
+        book = {n: {"clips": [{"id": str(i), "subject_area": 0.3, "people": 0,
+                               "structures": []}]} for i, n in enumerate(names)}
+        picked = t.choose_frames(cands, 8, book, avoid=set(names[:7]))
+        check(len(picked) == 8, "eight cells are filled even though only two subjects are free")
+
+
 if __name__ == "__main__":
     test_the_title_is_number_theme_and_audience()
     test_the_board_has_between_8_and_12_big_cells()
@@ -184,4 +210,6 @@ if __name__ == "__main__":
     test_people_and_size_are_read_off_the_detector()
     test_what_keeps_a_frame_off_a_cover()
     test_unfit_frames_only_fill_in_when_there_are_not_enough()
+    test_subjects_from_recent_covers_go_to_the_back()
+    test_a_thin_theme_may_reuse_rather_than_leave_a_gap()
     print("ALL COVER TESTS PASSED")

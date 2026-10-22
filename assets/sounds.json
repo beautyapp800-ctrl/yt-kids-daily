@@ -1002,43 +1002,6 @@
       }
     ]
   },
-  "horse cart": {
-    "candidates_seen": 4,
-    "refused": [
-      {
-        "title": "cart horse dirt-track men 1154 AM 241031_0934",
-        "why": "licence at the source is by: the page links by 4.0"
-      },
-      {
-        "title": "20110220_passing.cart.wav",
-        "why": "licence at the source is by: the page links by 4.0"
-      },
-      {
-        "title": "Horse and cart.mp3",
-        "why": "licence at the source is by: the page links by 4.0"
-      }
-    ],
-    "silent": false,
-    "sounds": [
-      {
-        "attribution_required": false,
-        "checked": "2026-10-22",
-        "creator": "bruno.auzet",
-        "id": "bffce324-5f0a-4536-b51f-b202e52de6c2",
-        "is": "a horse with an old cart",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/bruno.auzet/sounds/538438",
-        "seconds": 33.4,
-        "source": "freesound",
-        "title": "horse with old cart.wav",
-        "url": "https://cdn.freesound.org/previews/538/538438_11519060-hq.mp3"
-      }
-    ]
-  },
   "horseback rider": {
     "candidates_seen": 0,
     "refused": [],

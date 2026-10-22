@@ -41,11 +41,26 @@ def credentials():
     return account, token
 
 
+def search_term(subject):
+    """What to type into the library for this subject.
+
+    Usually the subject's own name. Sometimes the name means something else to a stock
+    library: "turkey" returned Istanbul twelve frames running - a man, a city, a bridge, a
+    mosque - and the subject was filed as having no footage. The exceptions live in
+    assets/subject-pool.json next to the subjects themselves.
+    """
+    try:
+        book = json.loads((ROOT / "assets" / "subject-pool.json").read_text(encoding="utf-8"))
+        return (book.get("search_terms") or {}).get(subject, subject)
+    except Exception:                                            # noqa: BLE001
+        return subject
+
+
 def search(subject, key, wanted=catalogue.CANDIDATES_PER_SUBJECT):
     """Every Pixabay hit that passes the cheap checks, before the model is spent on it."""
     import urllib.parse
     url = ("https://pixabay.com/api/videos/?per_page=60&video_type=film&safesearch=true&q="
-           + urllib.parse.quote(subject) + "&key=" + key)
+           + urllib.parse.quote(search_term(subject)) + "&key=" + key)
     data = stock_probe.get_json(url)
     # Tag matching used to be the gate. It was a crutch from before there was a model that
     # could look at the frame, and as a gate it costs more than it saves: "whale" left one
@@ -53,7 +68,7 @@ def search(subject, key, wanted=catalogue.CANDIDATES_PER_SUBJECT):
     # repeating itself. It is now only an ordering - hits whose tags name the subject are put
     # to the model first - and the model decides, which is what it is for.
     ranked = sorted(data.get("hits", []),
-                    key=lambda v: not stock_probe._relevant(subject, v))
+                    key=lambda v: not stock_probe._relevant(search_term(subject), v))
     out = []
     for v in ranked:
         if v.get("isAiGenerated") or v.get("isGRated") is False:

@@ -48,5 +48,6 @@
   "rate_speech": "-14%",
   "pitch_name": "+34Hz",
   "pitch_speech": "+18Hz",
-  "music_under_voice_db": 12
+  "music_under_voice_db": 12,
+  "min_theme_cards": 10
 }

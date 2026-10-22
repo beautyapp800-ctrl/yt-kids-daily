@@ -48,16 +48,66 @@ BASE_TAGS = ["learning videos for toddlers", "toddler learning", "first words",
              "toddler vocabulary"]
 
 
-def title_for(theme, card_count, with_sounds):
-    """number + what + who for + hook, inside YouTube's 100 characters."""
-    what, hook = THEME_WORDS.get(theme.lower(),
-                                 (theme.title(), "Learn First Words for Toddlers"))
+# Several shapes for a title, so a channel page is not one sentence repeated. Each still
+# carries the number, the thing and who it is for; they differ in which comes first and what
+# the hook is. The shape is picked by the video number, and then by what has not been used
+# lately - three videos running called "30 Animals for Kids | Learn Animal Names and Real
+# Animal Sounds" is what this exists to stop.
+TITLE_SHAPES = [
+    "{n} {what} for Kids | {hook}",
+    "Learn {what} for Toddlers | {n} {things} with Real Sounds",
+    "{n} {what} for Kids | Can You Name Them All?",
+    "{what} for Kids | Learn {n} {things} and Their Sounds",
+    "Guess the {one} Sound! | {n} {what} for Toddlers",
+    "{n} {what} for Babies and Toddlers | First Words",
+]
+
+# The singular, for the shapes that need one ("Guess the Bird Sound!").
+ONE_OF = {"animals": "Animal", "farm animals": "Farm Animal", "wild animals": "Wild Animal",
+          "sea animals": "Sea Animal", "birds": "Bird", "insects": "Bug",
+          "transport": "Vehicle", "vehicles": "Vehicle",
+          "fruit and vegetables": "Food", "food": "Food"}
+
+
+def title_options(theme, card_count, with_sounds):
+    """Every title this video could have, best first."""
+    key = (theme or "").lower()
+    what, hook = THEME_WORDS.get(key, ((theme or "First Words").title(),
+                                       "Learn First Words for Toddlers"))
     if not with_sounds:
-        hook = hook.replace(" with Real Sounds", "")
-    title = f"{card_count} {what} for Kids | {hook}"
-    if len(title) > MAX_TITLE:
-        title = f"{card_count} {what} for Kids"
-    return title
+        hook = hook.replace(" with Real Sounds", "").replace(" and Real Animal Sounds", "")
+    one = ONE_OF.get(key, what.rstrip("s") or what)
+    out = []
+    for shape in TITLE_SHAPES:
+        if "{hook}" in shape and not hook:
+            continue
+        if ("Sound" in shape) and not with_sounds:
+            continue
+        title = shape.format(n=card_count, what=what, hook=hook, things=what, one=one)
+        if len(title) <= MAX_TITLE and title not in out:
+            out.append(title)
+    if not out:
+        out = [f"{card_count} {what} for Kids"]
+    return out
+
+
+def title_for(theme, card_count, with_sounds, video_id=0, recent_titles=()):
+    """A title that none of the recent videos used.
+
+    The shape rotates with the video number so neighbours differ even on the same theme, and
+    anything a recent video was actually called is skipped - checked against the database
+    rather than assumed, because the rotation alone cannot know a video failed and was remade.
+    """
+    options = title_options(theme, card_count, with_sounds)
+    taken = {t.strip().lower() for t in recent_titles if t}
+    start = int(video_id) % len(options)
+    ordered = options[start:] + options[:start]
+    for title in ordered:
+        if title.strip().lower() not in taken:
+            return title
+    # Every shape is spoken for. Say so in the title rather than repeat one silently: the
+    # count makes it true and different.
+    return ordered[0]
 
 
 def description_for(theme, cards, attributions):
@@ -112,7 +162,11 @@ def run(video_id, cfg, db, output_dir=None):
     theme = video.get("theme") or "animals and machines"
     with_sounds = any(c.get("sound_id") for c in cards)
 
-    title = title_for(theme, len(cards), with_sounds)
+    recent = [v.get("seo_title") for v in db.recent_videos(10)]
+    title = title_for(theme, len(cards), with_sounds, video_id, recent)
+    if title.strip().lower() in {t.strip().lower() for t in recent if t}:
+        log.warning("this title has been used by a recent video and no other shape was free: "
+                    "%r", title)
     attributions = [c["sound_attribution"] for c in cards
                     if c.get("sound_attribution")]
     description = description_for(theme, cards, attributions)
