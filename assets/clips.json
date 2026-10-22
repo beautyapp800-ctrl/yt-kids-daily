@@ -2500,19 +2500,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2023/09/11/180153-863760373_small.mp4",
-        "id": 180153,
-        "licence": "Pixabay Content Licence",
-        "prominence": 1.0,
-        "said": "bird",
-        "seconds": 12,
-        "thumbnail": "https://cdn.pixabay.com/video/2023/09/11/180153-863760373_small.jpg",
-        "url": "https://pixabay.com/videos/id-180153/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2016/02/24/2243-156683815_medium.mp4",
         "id": 2243,
         "licence": "Pixabay Content Licence",
@@ -2526,6 +2513,19 @@
       },
       {
         "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/11/180153-863760373_small.mp4",
+        "id": 180153,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/11/180153-863760373_small.jpg",
+        "url": "https://pixabay.com/videos/id-180153/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2016/04/28/2909-164600380_large.mp4",
         "id": 2909,
         "licence": "Pixabay Content Licence",
@@ -2534,19 +2534,6 @@
         "seconds": 15,
         "thumbnail": "https://cdn.pixabay.com/video/2016/04/28/2909-164600380_large.jpg",
         "url": "https://pixabay.com/videos/id-2909/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2020/05/18/39416-422718858_small.mp4",
-        "id": 39416,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "bird",
-        "seconds": 25,
-        "thumbnail": "https://cdn.pixabay.com/video/2020/05/18/39416-422718858_small.jpg",
-        "url": "https://pixabay.com/videos/id-39416/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -2573,6 +2560,19 @@
         "seconds": 24,
         "thumbnail": "https://cdn.pixabay.com/video/2016/05/07/3064-165796688_large.jpg",
         "url": "https://pixabay.com/videos/id-3064/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/18/39416-422718858_small.mp4",
+        "id": 39416,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/18/39416-422718858_small.jpg",
+        "url": "https://pixabay.com/videos/id-39416/",
         "why": "the model called it bird",
         "width": 1920
       }
@@ -3263,19 +3263,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2021/02/27/66451-517685605_large.mp4",
-        "id": 66451,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.931,
-        "said": "duck",
-        "seconds": 31,
-        "thumbnail": "https://cdn.pixabay.com/video/2021/02/27/66451-517685605_large.jpg",
-        "url": "https://pixabay.com/videos/id-66451/",
-        "why": "the model called it duck",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2023/09/04/179073-861022187_small.mp4",
         "id": 179073,
         "licence": "Pixabay Content Licence",
@@ -3289,14 +3276,14 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2024/07/22/222344_large.mp4",
-        "id": 222344,
+        "clip": "https://cdn.pixabay.com/video/2021/02/27/66451-517685605_large.mp4",
+        "id": 66451,
         "licence": "Pixabay Content Licence",
-        "prominence": 0.909,
+        "prominence": 0.931,
         "said": "duck",
-        "seconds": 32,
-        "thumbnail": "https://cdn.pixabay.com/video/2024/07/22/222344_large.jpg",
-        "url": "https://pixabay.com/videos/id-222344/",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/27/66451-517685605_large.jpg",
+        "url": "https://pixabay.com/videos/id-66451/",
         "why": "the model called it duck",
         "width": 1920
       },
@@ -3315,16 +3302,29 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2016/05/11/3102-166264629_medium.mp4",
-        "id": 3102,
+        "clip": "https://cdn.pixabay.com/video/2024/07/22/222344_large.mp4",
+        "id": 222344,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.909,
+        "said": "duck",
+        "seconds": 32,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/22/222344_large.jpg",
+        "url": "https://pixabay.com/videos/id-222344/",
+        "why": "the model called it duck",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/01/15/104509-666958107_small.mp4",
+        "id": 104509,
         "licence": "Pixabay Content Licence",
         "prominence": 0.999,
         "said": "duck",
-        "seconds": 19,
-        "thumbnail": "https://cdn.pixabay.com/video/2016/05/11/3102-166264629_medium.jpg",
-        "url": "https://pixabay.com/videos/id-3102/",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/01/15/104509-666958107_small.jpg",
+        "url": "https://pixabay.com/videos/id-104509/",
         "why": "the model called it duck",
-        "width": 1280
+        "width": 1920
       }
     ]
   },
@@ -4006,6 +4006,180 @@
     ],
     "rejected": []
   },
+  "horse cart": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/12/21/1735-149749903_large.mp4",
+        "id": 1735,
+        "licence": "Pixabay Content Licence",
+        "listed": "People, shopping carts, red and white signs, a man wearing a brown coat, a woman wearing a brown coat, a man wearing a blue coat, a woman wearing a blue coat, a man wearing a black coat, a woman wearing a black coat,",
+        "people": 11,
+        "people_detected": 11,
+        "prominence": 0.979,
+        "said": "shopping cart",
+        "seconds": 18,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/12/21/1735-149749903_large.jpg",
+        "url": "https://pixabay.com/videos/id-1735/",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/07/22/45301-442657794_small.mp4",
+        "id": 45301,
+        "licence": "Pixabay Content Licence",
+        "listed": "A man, a golf cart, a mountain, a house, a tree, a car, a person, a golf course, a building, a road, a fence, a car, a person, a golf cart, a mountain, a house, a tree, a car, a person",
+        "people": 1,
+        "people_detected": 1,
+        "prominence": 0.0,
+        "said": "golf cart",
+        "seconds": 25,
+        "structures": [
+          "building",
+          "house"
+        ],
+        "subject_area": 0.0001,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/22/45301-442657794_small.jpg",
+        "url": "https://pixabay.com/videos/id-45301/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/03/31/343657_small.mp4",
+        "id": 343657,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "horse",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/03/31/343657_small.jpg",
+        "url": "https://pixabay.com/videos/id-343657/",
+        "why": "the model called it horse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/03/23/341917_small.mp4",
+        "id": 341917,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.931,
+        "said": "horses",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/03/23/341917_small.jpg",
+        "url": "https://pixabay.com/videos/id-341917/",
+        "why": "the model called it horses",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/11/27/6574-193379308_large.mp4",
+        "id": 6574,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/11/27/6574-193379308_large.jpg",
+        "url": "https://pixabay.com/videos/id-6574/",
+        "why": "the model called it horse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/30/239034_small.mp4",
+        "id": 239034,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/30/239034_small.jpg",
+        "url": "https://pixabay.com/videos/id-239034/",
+        "why": "the model called it horse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/20/222134_small.mp4",
+        "id": 222134,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/20/222134_small.jpg",
+        "url": "https://pixabay.com/videos/id-222134/",
+        "why": "the model called it horse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/14/62028-502737559_small.mp4",
+        "id": 62028,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horses",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/14/62028-502737559_small.jpg",
+        "url": "https://pixabay.com/videos/id-62028/",
+        "why": "the model called it horses",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/07/07/25016-347958009_small.mp4",
+        "id": 25016,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/07/07/25016-347958009_small.jpg",
+        "url": "https://pixabay.com/videos/id-25016/",
+        "why": "the model called it horse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/08/26/26296-357839005_small.mp4",
+        "id": 26296,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/08/26/26296-357839005_small.jpg",
+        "url": "https://pixabay.com/videos/id-26296/",
+        "why": "the model called it horse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/03/122967-726547939_small.mp4",
+        "id": 122967,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/03/122967-726547939_small.jpg",
+        "url": "https://pixabay.com/videos/id-122967/",
+        "why": "the model called it horse",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/25/173154-848555654_small.mp4",
+        "id": 173154,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/25/173154-848555654_small.jpg",
+        "url": "https://pixabay.com/videos/id-173154/",
+        "why": "the model called it horse",
+        "width": 1920
+      }
+    ]
+  },
   "horseback rider": {
     "candidates_seen": 12,
     "clips": [],
@@ -4164,6 +4338,168 @@
         "thumbnail": "https://cdn.pixabay.com/video/2025/11/17/316450_small.jpg",
         "url": "https://pixabay.com/videos/id-316450/",
         "why": "the model called it horse",
+        "width": 1920
+      }
+    ]
+  },
+  "hummingbird": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/12/110462-689510229_small.mp4",
+        "id": 110462,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/12/110462-689510229_small.jpg",
+        "url": "https://pixabay.com/videos/id-110462/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/12/84863-586995619_small.mp4",
+        "id": 84863,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.921,
+        "said": "bird",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84863-586995619_small.jpg",
+        "url": "https://pixabay.com/videos/id-84863/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/03/08/263456_small.mp4",
+        "id": 263456,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "flower",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/08/263456_small.jpg",
+        "url": "https://pixabay.com/videos/id-263456/",
+        "why": "the model called it flower",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/10/19/92600-637274858_small.mp4",
+        "id": 92600,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.998,
+        "said": "bird",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/19/92600-637274858_small.jpg",
+        "url": "https://pixabay.com/videos/id-92600/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/11/10/56128-478755466_large.mp4",
+        "id": 56128,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/11/10/56128-478755466_large.jpg",
+        "url": "https://pixabay.com/videos/id-56128/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/30/144777-785282850_medium.mp4",
+        "id": 144777,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.252,
+        "said": "bird",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/30/144777-785282850_medium.jpg",
+        "url": "https://pixabay.com/videos/id-144777/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/09/17/26973-361107938_small.mp4",
+        "id": 26973,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.028,
+        "said": "banana",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/09/17/26973-361107938_small.jpg",
+        "url": "https://pixabay.com/videos/id-26973/",
+        "why": "the model called it banana",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/18/221904_small.mp4",
+        "id": 221904,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.011,
+        "said": "flower",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/18/221904_small.jpg",
+        "url": "https://pixabay.com/videos/id-221904/",
+        "why": "the model called it flower",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/12/84860-586995599_small.mp4",
+        "id": 84860,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84860-586995599_small.jpg",
+        "url": "https://pixabay.com/videos/id-84860/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.mp4",
+        "id": 84861,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.jpg",
+        "url": "https://pixabay.com/videos/id-84861/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/05/18/16281-270577603_small.mp4",
+        "id": 16281,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.644,
+        "said": "bird",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/05/18/16281-270577603_small.jpg",
+        "url": "https://pixabay.com/videos/id-16281/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.mp4",
+        "id": 180811,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.jpg",
+        "url": "https://pixabay.com/videos/id-180811/",
+        "why": "the model called it bird",
         "width": 1920
       }
     ]
@@ -4958,6 +5294,116 @@
       }
     ]
   },
+  "mule": {
+    "candidates_seen": 8,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/25/190643-888327682_large.mp4",
+        "id": 190643,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "donkey",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/25/190643-888327682_large.jpg",
+        "url": "https://pixabay.com/videos/id-190643/",
+        "why": "the model called it donkey",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/10/20/92648-637274955_small.mp4",
+        "id": 92648,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/20/92648-637274955_small.jpg",
+        "url": "https://pixabay.com/videos/id-92648/",
+        "why": "the model called it cow",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/10/26/18914-297379558_large.mp4",
+        "id": 18914,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "deer",
+        "seconds": 39,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/10/26/18914-297379558_large.jpg",
+        "url": "https://pixabay.com/videos/id-18914/",
+        "why": "the model called it deer",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/11/246188_small.mp4",
+        "id": 246188,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "donkey",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/11/246188_small.jpg",
+        "url": "https://pixabay.com/videos/id-246188/",
+        "why": "the model called it donkey",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/18/242036_small.mp4",
+        "id": 242036,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "donkey",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/18/242036_small.jpg",
+        "url": "https://pixabay.com/videos/id-242036/",
+        "why": "the model called it donkey",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/28/243812_small.mp4",
+        "id": 243812,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "donkey",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/28/243812_small.jpg",
+        "url": "https://pixabay.com/videos/id-243812/",
+        "why": "the model called it donkey",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/03/244551_small.mp4",
+        "id": 244551,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "donkey",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/03/244551_small.jpg",
+        "url": "https://pixabay.com/videos/id-244551/",
+        "why": "the model called it donkey",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/12/11/100314-657132691_small.mp4",
+        "id": 100314,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "glass",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/12/11/100314-657132691_small.jpg",
+        "url": "https://pixabay.com/videos/id-100314/",
+        "why": "the model called it glass",
+        "width": 1920
+      }
+    ]
+  },
   "octopus": {
     "candidates_seen": 7,
     "clips": [
@@ -5212,6 +5658,84 @@
         "width": 4096
       }
     ]
+  },
+  "ostrich": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/07/05/80296-572395692_small.mp4",
+        "id": 80296,
+        "licence": "Pixabay Content Licence",
+        "listed": "A large, fluffy ostrich, a bird with a long neck and legs, standing in a dry grass field.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "ostrich",
+        "seconds": 10,
+        "structures": [],
+        "subject_area": 0.1087,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/07/05/80296-572395692_small.jpg",
+        "url": "https://pixabay.com/videos/id-80296/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/11/127526-743515501_large.mp4",
+        "id": 127526,
+        "licence": "Pixabay Content Licence",
+        "listed": "A bird, a fence, a tree, a wall, a branch, a leaf, a mouth, a beak, a tongue, a nose, an eye, a feather, a head, a neck, a beak, a branch, a leaf, a tree, a f",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "ostrich",
+        "seconds": 11,
+        "structures": [
+          "wall"
+        ],
+        "subject_area": 0.0977,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/11/127526-743515501_large.jpg",
+        "url": "https://pixabay.com/videos/id-127526/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/08/07/175029-852559052_large.mp4",
+        "id": 175029,
+        "licence": "Pixabay Content Licence",
+        "listed": "An ostrich, a tree, a fence, a bird, a rock, a dirt ground, a fence post, a person, a building, a tree branch, a fence wire, a bird in the background, a fence post in the background, a bird in",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "ostrich",
+        "seconds": 24,
+        "structures": [
+          "building"
+        ],
+        "subject_area": 0.3961,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/07/175029-852559052_large.jpg",
+        "url": "https://pixabay.com/videos/id-175029/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/07/31/83405-584710953_small.mp4",
+        "id": 83405,
+        "licence": "Pixabay Content Licence",
+        "listed": "An ostrich, a body of water, a tree, a reflection, a branch, a sky, a pond, a bird, a reflection of a tree, a reflection of a branch, a reflection of a sky, a reflection of a pond, a reflection of a bird.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "ostrich",
+        "seconds": 20,
+        "structures": [],
+        "subject_area": 0.1321,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/07/31/83405-584710953_small.jpg",
+        "url": "https://pixabay.com/videos/id-83405/",
+        "width": 1920
+      }
+    ],
+    "rejected": []
   },
   "owl": {
     "candidates_seen": 12,
@@ -6041,6 +6565,19 @@
       },
       {
         "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/14/62028-502737559_small.mp4",
+        "id": 62028,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/14/62028-502737559_small.jpg",
+        "url": "https://pixabay.com/videos/id-62028/",
+        "why": "the model called it horse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2024/10/23/237725_small.mp4",
         "id": 237725,
         "licence": "Pixabay Content Licence",
@@ -6050,19 +6587,6 @@
         "thumbnail": "https://cdn.pixabay.com/video/2024/10/23/237725_small.jpg",
         "url": "https://pixabay.com/videos/id-237725/",
         "why": "the model called it horse",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2021/01/14/62028-502737559_small.mp4",
-        "id": 62028,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "horses",
-        "seconds": 16,
-        "thumbnail": "https://cdn.pixabay.com/video/2021/01/14/62028-502737559_small.jpg",
-        "url": "https://pixabay.com/videos/id-62028/",
-        "why": "the model called it horses",
         "width": 1920
       },
       {
@@ -6080,19 +6604,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2022/08/23/128863-742316221_large.mp4",
-        "id": 128863,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "horse",
-        "seconds": 20,
-        "thumbnail": "https://cdn.pixabay.com/video/2022/08/23/128863-742316221_large.jpg",
-        "url": "https://pixabay.com/videos/id-128863/",
-        "why": "the model called it horse",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2021/09/06/87666-602317730_small.mp4",
         "id": 87666,
         "licence": "Pixabay Content Licence",
@@ -6101,6 +6612,19 @@
         "seconds": 16,
         "thumbnail": "https://cdn.pixabay.com/video/2021/09/06/87666-602317730_small.jpg",
         "url": "https://pixabay.com/videos/id-87666/",
+        "why": "the model called it horse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/23/128863-742316221_large.mp4",
+        "id": 128863,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/23/128863-742316221_large.jpg",
+        "url": "https://pixabay.com/videos/id-128863/",
         "why": "the model called it horse",
         "width": 1920
       },
@@ -6380,6 +6904,173 @@
         "thumbnail": "https://cdn.pixabay.com/video/2021/07/12/81204-575216196_small.jpg",
         "url": "https://pixabay.com/videos/id-81204/",
         "why": "the model called it bunny",
+        "width": 1920
+      }
+    ]
+  },
+  "ram": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/06/28/361063_large.mp4",
+        "id": 361063,
+        "licence": "Pixabay Content Licence",
+        "listed": "A ram, a tree, a forest, a grassy field, a log, a pine tree, a bush, a grassy area, a tree trunk, a tree stump, a pine tree, a tree trunk, a tree stump, a pine tree,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.003,
+        "said": "ram",
+        "seconds": 8,
+        "structures": [],
+        "subject_area": 0.021,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/06/28/361063_large.jpg",
+        "url": "https://pixabay.com/videos/id-361063/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/27/238543_small.mp4",
+        "id": 238543,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "castle",
+        "seconds": 56,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/27/238543_small.jpg",
+        "url": "https://pixabay.com/videos/id-238543/",
+        "why": "the model called it castle",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/27/238537_small.mp4",
+        "id": 238537,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "castle",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/27/238537_small.jpg",
+        "url": "https://pixabay.com/videos/id-238537/",
+        "why": "the model called it castle",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/27/238539_small.mp4",
+        "id": 238539,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "castle",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/27/238539_small.jpg",
+        "url": "https://pixabay.com/videos/id-238539/",
+        "why": "the model called it castle",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/09/145897-787718767_large.mp4",
+        "id": 145897,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.991,
+        "said": "sheep",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/09/145897-787718767_large.jpg",
+        "url": "https://pixabay.com/videos/id-145897/",
+        "why": "the model called it sheep",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/09/123610-728487713_small.mp4",
+        "id": 123610,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "butterfly",
+        "seconds": 27,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/09/123610-728487713_small.jpg",
+        "url": "https://pixabay.com/videos/id-123610/",
+        "why": "the model called it butterfly",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/20/124838-731960043_small.mp4",
+        "id": 124838,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "flower",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/20/124838-731960043_small.jpg",
+        "url": "https://pixabay.com/videos/id-124838/",
+        "why": "the model called it flower",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/08/07/175008-852541251_small.mp4",
+        "id": 175008,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.138,
+        "said": "goat",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/07/175008-852541251_small.jpg",
+        "url": "https://pixabay.com/videos/id-175008/",
+        "why": "the model called it goat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/10/119876-719283318_small.mp4",
+        "id": 119876,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "flower",
+        "seconds": 27,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/10/119876-719283318_small.jpg",
+        "url": "https://pixabay.com/videos/id-119876/",
+        "why": "the model called it flower",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/20/124839-731960047_small.mp4",
+        "id": 124839,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "flower",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/20/124839-731960047_small.jpg",
+        "url": "https://pixabay.com/videos/id-124839/",
+        "why": "the model called it flower",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/04/119250-717336791_small.mp4",
+        "id": 119250,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "flower",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/04/119250-717336791_small.jpg",
+        "url": "https://pixabay.com/videos/id-119250/",
+        "why": "the model called it flower",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/09/41573-429661414_large.mp4",
+        "id": 41573,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "spider",
+        "seconds": 49,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/09/41573-429661414_large.jpg",
+        "url": "https://pixabay.com/videos/id-41573/",
+        "why": "the model called it spider",
         "width": 1920
       }
     ]
@@ -7250,6 +7941,19 @@
       },
       {
         "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/02/01/63771-507822918_large.mp4",
+        "id": 63771,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/01/63771-507822918_large.jpg",
+        "url": "https://pixabay.com/videos/id-63771/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2022/02/15/107816-678526681_large.mp4",
         "id": 107816,
         "licence": "Pixabay Content Licence",
@@ -7271,19 +7975,6 @@
         "seconds": 10,
         "thumbnail": "https://cdn.pixabay.com/video/2021/02/21/65917-516089030_large.jpg",
         "url": "https://pixabay.com/videos/id-65917/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2021/02/01/63771-507822918_large.mp4",
-        "id": 63771,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "bird",
-        "seconds": 15,
-        "thumbnail": "https://cdn.pixabay.com/video/2021/02/01/63771-507822918_large.jpg",
-        "url": "https://pixabay.com/videos/id-63771/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -8305,6 +8996,168 @@
       }
     ]
   },
+  "toucan": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/11/03/94468-643067856_small.mp4",
+        "id": 94468,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/11/03/94468-643067856_small.jpg",
+        "url": "https://pixabay.com/videos/id-94468/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/11/113631-698820445_large.mp4",
+        "id": 113631,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 41,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/11/113631-698820445_large.jpg",
+        "url": "https://pixabay.com/videos/id-113631/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/02/14/150714-800210367_large.mp4",
+        "id": 150714,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/14/150714-800210367_large.jpg",
+        "url": "https://pixabay.com/videos/id-150714/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/12/171255-846731186_large.mp4",
+        "id": 171255,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/12/171255-846731186_large.jpg",
+        "url": "https://pixabay.com/videos/id-171255/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/11/03/94467-643067854_small.mp4",
+        "id": 94467,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/11/03/94467-643067854_small.jpg",
+        "url": "https://pixabay.com/videos/id-94467/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/06/15/77788-564423260_large.mp4",
+        "id": 77788,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/06/15/77788-564423260_large.jpg",
+        "url": "https://pixabay.com/videos/id-77788/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/06/15/77786-564423256_large.mp4",
+        "id": 77786,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/06/15/77786-564423256_large.jpg",
+        "url": "https://pixabay.com/videos/id-77786/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/02/14/150716-800210370_large.mp4",
+        "id": 150716,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/14/150716-800210370_large.jpg",
+        "url": "https://pixabay.com/videos/id-150716/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/09/09/49448-459436886_large.mp4",
+        "id": 49448,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/09/09/49448-459436886_large.jpg",
+        "url": "https://pixabay.com/videos/id-49448/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/16/236548_large.mp4",
+        "id": 236548,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/16/236548_large.jpg",
+        "url": "https://pixabay.com/videos/id-236548/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/18/39424-422737429_large.mp4",
+        "id": 39424,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "plant",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/18/39424-422737429_large.jpg",
+        "url": "https://pixabay.com/videos/id-39424/",
+        "why": "the model called it plant",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/04/27/37400-413555990_large.mp4",
+        "id": 37400,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "leaf",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/04/27/37400-413555990_large.jpg",
+        "url": "https://pixabay.com/videos/id-37400/",
+        "why": "the model called it leaf",
+        "width": 1920
+      }
+    ]
+  },
   "tractor": {
     "candidates_seen": 12,
     "clips": [
@@ -8521,11 +9374,11 @@
         "id": 245071,
         "licence": "Pixabay Content Licence",
         "prominence": 0.0,
-        "said": "bridge",
+        "said": "boat",
         "seconds": 26,
         "thumbnail": "https://cdn.pixabay.com/video/2024/12/05/245071_small.jpg",
         "url": "https://pixabay.com/videos/id-245071/",
-        "why": "the model called it bridge",
+        "why": "the model called it boat",
         "width": 1920
       },
       {
@@ -8569,19 +9422,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2022/09/04/130215-746395293_large.mp4",
-        "id": 130215,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "building",
-        "seconds": 49,
-        "thumbnail": "https://cdn.pixabay.com/video/2022/09/04/130215-746395293_large.jpg",
-        "url": "https://pixabay.com/videos/id-130215/",
-        "why": "the model called it building",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2023/03/11/154313-807166998_small.mp4",
         "id": 154313,
         "licence": "Pixabay Content Licence",
@@ -8591,6 +9431,19 @@
         "thumbnail": "https://cdn.pixabay.com/video/2023/03/11/154313-807166998_small.jpg",
         "url": "https://pixabay.com/videos/id-154313/",
         "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/04/130215-746395293_large.mp4",
+        "id": 130215,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "building",
+        "seconds": 49,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/04/130215-746395293_large.jpg",
+        "url": "https://pixabay.com/videos/id-130215/",
+        "why": "the model called it building",
         "width": 1920
       },
       {
@@ -9048,6 +9901,51 @@
       }
     ],
     "rejected": []
+  },
+  "yak": {
+    "candidates_seen": 3,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/29/33054-395456569_large.mp4",
+        "id": 33054,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bull",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/29/33054-395456569_large.jpg",
+        "url": "https://pixabay.com/videos/id-33054/",
+        "why": "the model called it bull",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/24/164378-830461308_small.mp4",
+        "id": 164378,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bull",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/24/164378-830461308_small.jpg",
+        "url": "https://pixabay.com/videos/id-164378/",
+        "why": "the model called it bull",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/24/164372-830461287_small.mp4",
+        "id": 164372,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/24/164372-830461287_small.jpg",
+        "url": "https://pixabay.com/videos/id-164372/",
+        "why": "the model called it cow",
+        "width": 1920
+      }
+    ]
   },
   "zebra": {
     "candidates_seen": 12,

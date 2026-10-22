@@ -635,10 +635,37 @@
     "sounds": []
   },
   "finch": {
-    "candidates_seen": 0,
-    "refused": [],
-    "silent": true,
-    "sounds": []
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "Crow and finch",
+        "why": "a crow"
+      },
+      {
+        "title": "Finch and woodpecker 190329_1326.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "petebuchwald",
+        "id": "6771a8fb-2167-4a72-a4b5-bcda4acc9128",
+        "is": "a finch in a cage",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/petebuchwald/sounds/271357",
+        "seconds": 309.9,
+        "source": "freesound",
+        "title": "Zebra Finch in Cage (stereo).wav",
+        "url": "https://cdn.freesound.org/previews/271/271357_2367139-hq.mp3"
+      }
+    ]
   },
   "fire truck": {
     "candidates_seen": 20,
@@ -836,22 +863,13 @@
     ]
   },
   "goose": {
-    "candidates_seen": 3,
-    "refused": [
-      {
-        "title": "Rusty Metal Squeak goose.wav",
-        "why": "licence at the source is by: the page links by 4.0"
-      },
-      {
-        "title": "Goose passes.wav",
-        "why": "licence at the source is by: the page links by 4.0"
-      }
-    ],
+    "candidates_seen": 11,
+    "refused": [],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-21",
+        "checked": "2026-10-22",
         "creator": "sarena6487528",
         "id": "89f43356-ac9a-4ed5-9401-c888cf921aac",
         "is": "a goose making its sound",
@@ -865,6 +883,23 @@
         "source": "freesound",
         "title": "Goose 1.wav",
         "url": "https://cdn.freesound.org/previews/474/474945_10104750-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "Gr\u00e9goire Chauvot",
+        "id": "7802e123-f536-4c7d-892c-a39f0d8fc59c",
+        "is": "a Red-breasted Goose call",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "Commons says: cc0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+        "licence_version": "1.0",
+        "page": "https://commons.wikimedia.org/w/index.php?curid=179436201",
+        "seconds": 36.0,
+        "source": "wikimedia_audio",
+        "title": "Red-breasted Goose call (Branta ruficollis)",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Red-breasted_Goose_call_%28Branta_ruficollis%29.ogg"
       }
     ]
   },
@@ -967,9 +1002,61 @@
       }
     ]
   },
+  "horse cart": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "cart horse dirt-track men 1154 AM 241031_0934",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "20110220_passing.cart.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Horse and cart.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "bruno.auzet",
+        "id": "bffce324-5f0a-4536-b51f-b202e52de6c2",
+        "is": "a horse with an old cart",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/bruno.auzet/sounds/538438",
+        "seconds": 33.4,
+        "source": "freesound",
+        "title": "horse with old cart.wav",
+        "url": "https://cdn.freesound.org/previews/538/538438_11519060-hq.mp3"
+      }
+    ]
+  },
   "horseback rider": {
     "candidates_seen": 0,
     "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "hummingbird": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "hummingbird fight and call.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "hummingbird-at-feeder.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1160,6 +1247,12 @@
       }
     ]
   },
+  "mule": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "octopus": {
     "candidates_seen": 5,
     "refused": [
@@ -1184,6 +1277,12 @@
         "why": "licence at the source is by: the page links by 4.0"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "ostrich": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -1461,8 +1560,17 @@
     ]
   },
   "pony": {
-    "candidates_seen": 0,
-    "refused": [],
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Ponys - galoppierend.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Pony-Hufe auskratzen 03.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1477,6 +1585,30 @@
     "refused": [],
     "silent": true,
     "sounds": []
+  },
+  "ram": {
+    "candidates_seen": 1,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "ReadeOnly",
+        "id": "a0967379-7983-4e29-adfb-16fd471a942f",
+        "is": "an angry ram making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/ReadeOnly/sounds/186921",
+        "seconds": 5.7,
+        "source": "freesound",
+        "title": "Angry Ram",
+        "url": "https://cdn.freesound.org/previews/186/186921_545448-hq.mp3"
+      }
+    ]
   },
   "robin": {
     "candidates_seen": 0,
@@ -1659,10 +1791,45 @@
     "sounds": []
   },
   "sparrow": {
-    "candidates_seen": 0,
+    "candidates_seen": 6,
     "refused": [],
-    "silent": true,
-    "sounds": []
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "felix.blume",
+        "id": "b7f7cd94-27d5-4310-a295-d46e342ae17b",
+        "is": "a sparrow singing and flying in the bush",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/177787",
+        "seconds": 178.9,
+        "source": "freesound",
+        "title": "Little sparrow singing and flying in the bush (Patagonia, Argentina)",
+        "url": "https://cdn.freesound.org/previews/177/177787_1661766-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "JPBILLINGSLEYJR",
+        "id": "a071c4e8-2d9e-456d-81b0-979a2f50fec8",
+        "is": "a chipping sparrow making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/JPBILLINGSLEYJR/sounds/465889",
+        "seconds": 33.0,
+        "source": "freesound",
+        "title": "Chipping sparrow",
+        "url": "https://cdn.freesound.org/previews/465/465889_9786444-hq.mp3"
+      }
+    ]
   },
   "spider": {
     "candidates_seen": 8,
@@ -1874,6 +2041,59 @@
     "silent": true,
     "sounds": []
   },
+  "toucan": {
+    "candidates_seen": 8,
+    "refused": [
+      {
+        "title": "Toco Toucan call (Ramphastos toco)",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      },
+      {
+        "title": "Red-Billed Toucan",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "red_billed_toucan.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "Toucans",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "keel_billed_toucan.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "Chesnut-mandibled toucan",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "Chesnut Mandibled Toucan",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "felix.blume",
+        "id": "2331b723-a4b9-4870-aaf4-ea779a35e9e1",
+        "is": "a toucan screaming in the Amazon Forest",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/376669",
+        "seconds": 69.1,
+        "source": "freesound",
+        "title": "Toucan screaming in the Amazon Forest (Venezuela)",
+        "url": "https://cdn.freesound.org/previews/376/376669_1661766-hq.mp3"
+      }
+    ]
+  },
   "tractor": {
     "candidates_seen": 30,
     "refused": [],
@@ -1957,10 +2177,58 @@
     ]
   },
   "turkey": {
-    "candidates_seen": 0,
-    "refused": [],
-    "silent": true,
-    "sounds": []
+    "candidates_seen": 12,
+    "refused": [
+      {
+        "title": "Prayer calls in Anatolia (Turkey)",
+        "why": "prayer calls in Anatolia, a region in Turkey"
+      },
+      {
+        "title": "Turkey Herding Call.wav",
+        "why": "a herding call, likely made by a human"
+      },
+      {
+        "title": "Strong wind blowing in the plain in Anatolia (Turkey)",
+        "why": "strong wind blowing"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "pesticideX",
+        "id": "b864d003-956c-4afc-829f-2b705ea3f440",
+        "is": "a turkey making its call",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/pesticideX/sounds/678192",
+        "seconds": 1.5,
+        "source": "freesound",
+        "title": "turkey call",
+        "url": "https://cdn.freesound.org/previews/678/678192_2243933-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "DrDufus",
+        "id": "025e1181-c9ef-4f14-8db8-5b070bc55773",
+        "is": "turkeys gobbling",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/DrDufus/sounds/417327",
+        "seconds": 2.3,
+        "source": "freesound",
+        "title": "Turkeys gobbling in barn.mp3",
+        "url": "https://cdn.freesound.org/previews/417/417327_4474247-hq.mp3"
+      }
+    ]
   },
   "whale": {
     "candidates_seen": 16,
@@ -2056,6 +2324,21 @@
         "url": "https://cdn.freesound.org/previews/651/651193_801011-hq.mp3"
       }
     ]
+  },
+  "yak": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Yak Letily Bugai (banjo-version)",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "02 - Yak Demonium",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "zebra": {
     "candidates_seen": 4,

@@ -854,6 +854,27 @@
     ],
     "refused": []
   },
+  "horse cart": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A horse cart carries people."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A horse cart has wheels."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A horse cart is pulled by horses."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A horse cart has a seat."
+      }
+    ],
+    "refused": []
+  },
   "horseback rider": {
     "facts": [
       {
@@ -869,6 +890,10 @@
         "fact": "A horseback rider wears a special hat."
       }
     ],
+    "refused": []
+  },
+  "hummingbird": {
+    "facts": [],
     "refused": []
   },
   "jellyfish": {
@@ -1068,6 +1093,33 @@
     ],
     "refused": []
   },
+  "mule": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A mule has a big body."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A mule eats grass."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A mule has a long tail."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A mule has big ears."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A mule carries people.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: not all mules carry people"
+      }
+    ]
+  },
   "octopus": {
     "facts": [
       {
@@ -1115,6 +1167,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Many oranges are seedless"
       }
     ]
+  },
+  "ostrich": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "An ostrich runs very fast."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "An ostrich has big strong legs."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "An ostrich has soft feathers."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "An ostrich eats food from ground."
+      }
+    ],
+    "refused": []
   },
   "owl": {
     "facts": [
@@ -1334,6 +1407,27 @@
       {
         "checked": "2026-10-20",
         "fact": "A rabbit has big ears."
+      }
+    ],
+    "refused": []
+  },
+  "ram": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A ram has big horns."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A ram runs in a field."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A ram eats grass."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A ram lives on a farm."
       }
     ],
     "refused": []
@@ -1813,6 +1907,27 @@
     ],
     "refused": []
   },
+  "toucan": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A toucan has a big beak."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A toucan eats fruit."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A toucan flies in trees."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A toucan has bright feathers."
+      }
+    ],
+    "refused": []
+  },
   "tractor": {
     "facts": [
       {
@@ -1955,6 +2070,33 @@
       }
     ],
     "refused": []
+  },
+  "yak": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A yak has soft fur."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A yak eats grass."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A yak has a big head."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A yak has sharp horns."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A yak gives us warm milk.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Yaks are not typically milked for human consumption, and their milk is not commonly used as a source of warmth"
+      }
+    ]
   },
   "zebra": {
     "facts": [
