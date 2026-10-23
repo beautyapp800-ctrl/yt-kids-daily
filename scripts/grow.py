@@ -39,7 +39,8 @@ from core.logger import get_logger
 log = get_logger("grow")
 
 HEADROOM_VIDEOS = 3        # below this many fresh videos' worth, grow
-BATCH = 12                 # new subjects per run: enough to matter, few enough to finish
+BATCH = 16                 # new subjects per run: enough to matter, few enough to finish
+HIT_RATE = 0.4             # share of curated candidates that end up with footage, measured
 SUBJECTS = ROOT / "assets" / "subjects.json"
 
 SYSTEM = """You list things for a learning video for children aged two to six.
@@ -119,8 +120,20 @@ def main(argv=None):
         (ROOT / "assets" / "facts.json").read_text(encoding="utf-8")))
     floor = int(cfg.get("min_theme_cards", _plan.MIN_THEME_CARDS))
     target = int(cfg.get("cards_per_video", 25))
-    short = sorted(((n, t) for t, n in sizes.items() if n < target), key=lambda r: r[0])
-    themes = [t for _n, t in short[:2]] or headroom.thinnest_themes(groups, recent)
+    # Closest to the floor first, not thinnest: a theme two short of fifteen is a video next
+    # week, one seven short is not, and every theme over the line is a day that has a video.
+    short = sorted(((floor - n, t) for t, n in sizes.items() if n < floor), key=lambda r: r)
+    # How many candidates each needs: the shortfall, over the hit rate the curated pool has
+    # measured (6 of 12 for insects, 3 of 15 for birds), rounded up and capped by the batch.
+    plan_for = {}
+    budget = args.batch
+    for missing, theme in short:
+        want = min(budget, max(3, int(missing / HIT_RATE + 0.999)))
+        if want <= 0:
+            break
+        plan_for[theme] = want
+        budget -= want
+    themes = list(plan_for) or headroom.thinnest_themes(groups, recent)
     print("theme sizes: " + ", ".join(f"{t} {n}" for t, n in
                                       sorted(sizes.items(), key=lambda kv: kv[1])))
     print(f"below the {floor}-card floor: "
@@ -135,10 +148,10 @@ def main(argv=None):
         return 2
 
     existing = {s for items in groups.values() for s in items}
-    per_theme = max(args.batch // len(themes), 3)
     added = {}
     try:
         for theme in themes:
+            per_theme = plan_for.get(theme, 3)
             new = from_pool(theme, existing, per_theme)
             if len(new) < per_theme:
                 # The pool is finite. When a theme runs through it, the model fills in - with
