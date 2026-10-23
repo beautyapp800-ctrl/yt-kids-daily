@@ -17,15 +17,18 @@
     "cat",
     "chicken",
     "cow",
+    "dog",
     "donkey",
     "duck",
     "goat",
     "horse",
     "lamb",
+    "llama",
     "pig",
     "ram",
     "rooster",
-    "sheep"
+    "sheep",
+    "turkey"
   ],
   "fruit and vegetables": [
     "banana",
@@ -47,9 +50,11 @@
     "caterpillar",
     "cricket",
     "dragonfly",
+    "dung beetle",
     "grasshopper",
     "ladybug",
     "mosquito",
+    "scorpion",
     "snail",
     "spider",
     "worm"

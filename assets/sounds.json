@@ -236,6 +236,56 @@
       }
     ]
   },
+  "bumblebee": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "Bumblebee_flowers_noises.mp3",
+        "why": "a mixture of sounds including possibly a bumblebee but also flowers and other noises"
+      },
+      {
+        "title": "Birdsounds and bumblebee",
+        "why": "bird sounds"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "Breviceps",
+        "id": "4285ffeb-4f6e-4a79-9b55-ffe61713fe4d",
+        "is": "a bumblebee making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Breviceps/sounds/466795",
+        "seconds": 4.2,
+        "source": "freesound",
+        "title": "Bumblebee",
+        "url": "https://cdn.freesound.org/previews/466/466795_9159316-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "EilasSFX",
+        "id": "62a03d19-b16c-48dc-952a-da5e46162eef",
+        "is": "a bumblebee making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/EilasSFX/sounds/665147",
+        "seconds": 6.4,
+        "source": "freesound",
+        "title": "Bumblebee",
+        "url": "https://cdn.freesound.org/previews/665/665147_10842514-hq.mp3"
+      }
+    ]
+  },
   "butterfly": {
     "candidates_seen": 2,
     "refused": [
@@ -386,6 +436,39 @@
       }
     ]
   },
+  "cockroach": {
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "\u0422\u0430\u0440\u0430\u043a\u0430\u043d ( Cockroach)",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Delicious-cockroach-puree_Apocalyptic_Radio_by_OnlyTheGhosts.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "Spoxe",
+        "id": "aec8931a-8ac9-460e-bf34-45588a854f8a",
+        "is": "a hissing cockroach",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Spoxe/sounds/459476",
+        "seconds": 10.2,
+        "source": "freesound",
+        "title": "Hissing Cockroach",
+        "url": "https://cdn.freesound.org/previews/459/459476_6232598-hq.mp3"
+      }
+    ]
+  },
   "cow": {
     "candidates_seen": 41,
     "refused": [
@@ -517,6 +600,47 @@
     "refused": [],
     "silent": true,
     "sounds": []
+  },
+  "dog": {
+    "candidates_seen": 17,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "BonnyOrbit",
+        "id": "2a9daea6-efe2-42fe-a1bb-07cef400ed22",
+        "is": "dogs barking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/BonnyOrbit/sounds/442485",
+        "seconds": 59.3,
+        "source": "freesound",
+        "title": "Dogs barking in small town",
+        "url": "https://cdn.freesound.org/previews/442/442485_5902878-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "SergioJbs",
+        "id": "21f68585-2ed5-451f-942c-36e19d012f68",
+        "is": "a dog barking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/SergioJbs/sounds/580932",
+        "seconds": 19.5,
+        "source": "freesound",
+        "title": "ladridos_perros_bark_dogs.wav",
+        "url": "https://cdn.freesound.org/previews/580/580932_8392567-hq.mp3"
+      }
+    ]
   },
   "dolphin": {
     "candidates_seen": 10,
@@ -656,6 +780,12 @@
       }
     ]
   },
+  "dung beetle": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "eagle": {
     "candidates_seen": 14,
     "refused": [],
@@ -744,8 +874,33 @@
     ]
   },
   "emu": {
-    "candidates_seen": 0,
-    "refused": [],
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "into the EMU(MS-mic)",
+        "why": "a microphone (MS-mic) being used to record something, possibly with the word EMU in the filename or project name, but not an actual emu sound"
+      },
+      {
+        "title": "Big Emu War Explosion.wav",
+        "why": "an explosion"
+      },
+      {
+        "title": "Nl-EMU",
+        "why": "a computer emulator or possibly an NL-EMU brand product"
+      },
+      {
+        "title": "Nl-EMU-norm",
+        "why": "a computer or electronic device emulating or related to EMU, possibly a sound effect or a notification sound"
+      },
+      {
+        "title": "Nl-EMU-normen",
+        "why": "a discussion or reading about Dutch standards or norms, likely unrelated to the sound of an emu"
+      },
+      {
+        "title": "Emu Rockhole Night Atmos",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1407,6 +1562,21 @@
       }
     ]
   },
+  "llama": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "40. Madre llama a claire Mom calling Claire.wav",
+        "why": "a person, presumably a mother, calling out to someone named Claire"
+      },
+      {
+        "title": "Como Se Llama",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "macaw": {
     "candidates_seen": 4,
     "refused": [
@@ -1441,6 +1611,52 @@
         "source": "freesound",
         "title": "Macaw Parrot screaming in a park",
         "url": "https://cdn.freesound.org/previews/504/504988_1661766-hq.mp3"
+      }
+    ]
+  },
+  "magpie": {
+    "candidates_seen": 14,
+    "refused": [
+      {
+        "title": "magpie_sqwarks_24_96_stereo.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "dbache",
+        "id": "b19a2f96-374f-4f17-af01-d2448cf8f580",
+        "is": "an Australian Magpie making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/dbache/sounds/353060",
+        "seconds": 41.5,
+        "source": "freesound",
+        "title": "Australian Magpie",
+        "url": "https://cdn.freesound.org/previews/353/353060_2290525-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "naturenotesuk",
+        "id": "98307d76-7b65-4727-be54-f9a1a364267a",
+        "is": "a Eurasian Magpie calling",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/naturenotesuk/sounds/555096",
+        "seconds": 44.0,
+        "source": "freesound",
+        "title": "Eurasian Magpie Calling",
+        "url": "https://cdn.freesound.org/previews/555/555096_7455632-hq.mp3"
       }
     ]
   },
@@ -1557,6 +1773,52 @@
     "silent": true,
     "sounds": []
   },
+  "nightingale": {
+    "candidates_seen": 8,
+    "refused": [
+      {
+        "title": "Nightingale - Fairy Tale Forest-001.wav",
+        "why": "a music or sound effect file from a fictional or fantasy setting, possibly a synthesized or composed nightingale sound"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "MATRIXXX_",
+        "id": "b386b88d-37f3-4233-817f-f6b7819b748d",
+        "is": "a thrush nightingale bird making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/MATRIXXX_/sounds/365663",
+        "seconds": 5.2,
+        "source": "freesound",
+        "title": "Bird, Thrush Nightingale 02.wav",
+        "url": "https://cdn.freesound.org/previews/365/365663_6142149-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "MATRIXXX_",
+        "id": "5b95291d-2288-4d1d-8b1d-eb77b1381339",
+        "is": "a thrush nightingale bird making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/MATRIXXX_/sounds/365664",
+        "seconds": 5.5,
+        "source": "freesound",
+        "title": "Bird, Thrush Nightingale 03.wav",
+        "url": "https://cdn.freesound.org/previews/365/365664_6142149-hq.mp3"
+      }
+    ]
+  },
   "octopus": {
     "candidates_seen": 5,
     "refused": [
@@ -1671,6 +1933,25 @@
         "url": "https://cdn.freesound.org/previews/241/241300_2028587-hq.mp3"
       }
     ]
+  },
+  "partridge": {
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "Grey Partridge field 844PM 220624_0431.flac",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "fields Grey Partridge NL 8.57 PM 220624_0431.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Grey Partridge ambient 9.00 PM 220624_0431",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "peacock": {
     "candidates_seen": 6,
@@ -1895,6 +2176,23 @@
     "silent": true,
     "sounds": []
   },
+  "puffin": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "quail": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "Quail Sound.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "rabbit": {
     "candidates_seen": 0,
     "refused": [],
@@ -1926,10 +2224,45 @@
     ]
   },
   "robin": {
-    "candidates_seen": 0,
-    "refused": [],
-    "silent": true,
-    "sounds": []
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "Oriental magpie-robin call",
+        "why": "an Oriental magpie-robin"
+      },
+      {
+        "title": "Bird Whistling, Robin, Single, 13.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Sea tide Waves At Robin Hoods Bay 24/07/2013",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Robin - Monkey",
+        "why": "licence at the source is by: the page links by 3.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "fiezewarthog",
+        "id": "91feca4f-a61a-4996-9ea6-b150886404fe",
+        "is": "a robin making its call",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/fiezewarthog/sounds/504923",
+        "seconds": 10.0,
+        "source": "freesound",
+        "title": "Robin Calling.wav",
+        "url": "https://cdn.freesound.org/previews/504/504923_10950637-hq.mp3"
+      }
+    ]
   },
   "rooster": {
     "candidates_seen": 27,
@@ -2017,6 +2350,29 @@
         "url": "https://cdn.freesound.org/previews/451/451668_612689-hq.mp3"
       }
     ]
+  },
+  "scorpion": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "scorpion - get over here.mp3",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "SNORING SCORPION",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Fr-scorpion",
+        "why": "licence at the source is by: Commons says: cc by 2.0 fr"
+      },
+      {
+        "title": "Scorpion",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "sea turtle": {
     "candidates_seen": 1,
@@ -2262,6 +2618,59 @@
         "source": "freesound",
         "title": "village, field, meadow, storks clapping beaks, wind in trees and grass, very distant construction, birds, Czechia [Stereo].wav",
         "url": "https://cdn.freesound.org/previews/476/476464_5804919-hq.mp3"
+      }
+    ]
+  },
+  "swallow": {
+    "candidates_seen": 8,
+    "refused": [
+      {
+        "title": "swallow water.wav",
+        "why": "the sound of drinking or pouring water"
+      },
+      {
+        "title": "Sip of coffee, swallow then 'ah'",
+        "why": "a person swallowing coffee"
+      },
+      {
+        "title": "Drinking Sip Swallow Gasp 2.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Drinking Sip Swallow Gasp.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Long Slurp & Swallow",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Swallows nesting.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "<div class='fn'> Lesser Striped Swallow (Cecropis abyssinica)</div>",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "emanuele.caro",
+        "id": "04976ab0-fa1f-4299-ad92-2758ee1fe467",
+        "is": "a swallow making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/emanuele.caro/sounds/393804",
+        "seconds": 170.9,
+        "source": "freesound",
+        "title": "Swallow",
+        "url": "https://cdn.freesound.org/previews/393/393804_7152236-hq.mp3"
       }
     ]
   },
@@ -2545,7 +2954,7 @@
     ]
   },
   "turkey": {
-    "candidates_seen": 12,
+    "candidates_seen": 4,
     "refused": [
       {
         "title": "Prayer calls in Anatolia (Turkey)",
@@ -2556,15 +2965,15 @@
         "why": "a herding call, likely made by a human"
       },
       {
-        "title": "Strong wind blowing in the plain in Anatolia (Turkey)",
-        "why": "strong wind blowing"
+        "title": "2024.05.11 Taclaban farmyard birds including a turkey and rooster",
+        "why": "licence at the source is by: the page links by 4.0"
       }
     ],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-22",
+        "checked": "2026-10-23",
         "creator": "pesticideX",
         "id": "b864d003-956c-4afc-829f-2b705ea3f440",
         "is": "a turkey making its call",
@@ -2578,23 +2987,6 @@
         "source": "freesound",
         "title": "turkey call",
         "url": "https://cdn.freesound.org/previews/678/678192_2243933-hq.mp3"
-      },
-      {
-        "attribution_required": false,
-        "checked": "2026-10-22",
-        "creator": "DrDufus",
-        "id": "025e1181-c9ef-4f14-8db8-5b070bc55773",
-        "is": "turkeys gobbling",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/DrDufus/sounds/417327",
-        "seconds": 2.3,
-        "source": "freesound",
-        "title": "Turkeys gobbling in barn.mp3",
-        "url": "https://cdn.freesound.org/previews/417/417327_4474247-hq.mp3"
       }
     ]
   },

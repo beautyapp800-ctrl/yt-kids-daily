@@ -223,6 +223,38 @@
       }
     ]
   },
+  "bumblebee": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A bumblebee flies around flowers."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A bumblebee collects sweet food."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A bumblebee makes a loud buzz."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A bumblebee has soft furry body."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A bumblebee has yellow hair.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Bumblebees do not have hair, they have a fuzzy appearance due to their dense body hair-like setae"
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A bumblebee has big black spots.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Bumblebees typically have yellow and black stripes, not big black spots"
+      }
+    ]
+  },
   "butterfly": {
     "facts": [
       {
@@ -393,6 +425,27 @@
     ],
     "refused": []
   },
+  "cockroach": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A cockroach runs fast."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A cockroach has six legs."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A cockroach hides in dark places."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A cockroach eats old food."
+      }
+    ],
+    "refused": []
+  },
   "cow": {
     "facts": [
       {
@@ -552,6 +605,27 @@
     ],
     "refused": []
   },
+  "dog": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A dog wags its tail."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dog is very good at barking."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dog runs quickly."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dog licks its face."
+      }
+    ],
+    "refused": []
+  },
   "dolphin": {
     "facts": [
       {
@@ -647,6 +721,49 @@
       }
     ],
     "refused": []
+  },
+  "dung beetle": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A dung beetle rolls a ball."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dung beetle carries food home."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dung beetle has big strong legs."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A dung beetle pushes dirt.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A dung beetle pushes dung, not dirt."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dung beetle lives in the ground.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Dung beetles do not typically live in the ground, they are often found on or near dung"
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dung beetle eats old dung.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Dung beetles do not eat dung, they use it to lay their eggs in or to make into balls for food for their larvae"
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dung beetle flies at night.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Most dung beetles fly during the day, not at night"
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A dung beetle makes a big pile.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Dung beetles do not make big piles, they roll and bury dung"
+      }
+    ]
   },
   "eagle": {
     "facts": [
@@ -1333,6 +1450,27 @@
       }
     ]
   },
+  "llama": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A llama has soft fur."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A llama eats grass."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A llama carries things on its back."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A llama gives warm wool."
+      }
+    ],
+    "refused": []
+  },
   "macaw": {
     "facts": [
       {
@@ -1353,6 +1491,38 @@
       }
     ],
     "refused": []
+  },
+  "magpie": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A magpie builds a nest."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A magpie finds food on the ground."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A magpie flies in the sky."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A magpie has a loud call."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A magpie has black feathers.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A magpie has black and white feathers, not just black feathers."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A magpie sings a loud song.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Magpies do not sing songs like most birds, they make other sounds"
+      }
+    ]
   },
   "monkey": {
     "facts": [
@@ -1477,6 +1647,33 @@
       }
     ]
   },
+  "nightingale": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A nightingale sings a song."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A nightingale has soft feathers."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A nightingale builds a nest."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A nightingale eats small bugs."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A nightingale flies in trees.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Nightingales do not typically fly in trees, they fly in the air and may perch or nest in trees"
+      }
+    ]
+  },
   "octopus": {
     "facts": [
       {
@@ -1587,6 +1784,33 @@
       }
     ],
     "refused": []
+  },
+  "partridge": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A partridge has soft feathers."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A partridge lays eggs."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A partridge flies through air."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A partridge has a beak."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A partridge builds a nest.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Partridges do not build nests, they lay their eggs in a scrape or depression on the ground"
+      }
+    ]
   },
   "peacock": {
     "facts": [
@@ -1768,6 +1992,60 @@
       }
     ]
   },
+  "puffin": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A puffin has black feathers."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A puffin flies over water."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A puffin catches fish."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A puffin lives on a rock."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A puffin has a big beak.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A puffin's beak is actually fairly small, but very colorful and distinctive."
+      }
+    ]
+  },
+  "quail": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A quail has soft feathers."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A quail flies in the air."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A quail eats seeds."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A quail runs on the ground."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A quail lives in a nest.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Quails do not always live in nests, they often live on or near the ground"
+      }
+    ]
+  },
   "rabbit": {
     "facts": [
       {
@@ -1884,6 +2162,33 @@
       }
     ],
     "refused": []
+  },
+  "scorpion": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A scorpion has a big tail."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A scorpion runs on the ground."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A scorpion catches small bugs."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A scorpion hides in dark places."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A scorpion has sharp claws.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Scorpions have pedipalps, which are appendages that resemble claws, but they do not have sharp claws like other animals. They do have a sharp stinger at the end of their tail."
+      }
+    ]
   },
   "sea turtle": {
     "facts": [
@@ -2264,6 +2569,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: some strawberries are white or yellow"
       }
     ]
+  },
+  "swallow": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A swallow flies in the air."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A swallow builds a nest."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A swallow finds food to eat."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A swallow has soft feathers."
+      }
+    ],
+    "refused": []
   },
   "swan": {
     "facts": [
