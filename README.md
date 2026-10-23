@@ -62,18 +62,31 @@ back off the finished mix.
 
 ## The video
 
-The card is a move on a board (`pipeline/grid.py`). The video opens on every subject at once;
-each card is its cell lighting up, growing to fill the screen, becoming the footage, and coming
-back with a green tick. A child who cannot count still sees the board fill up. All stills and
-ffmpeg, and measured: the board render is faster than the xfade joins it replaced, because the
-zooms are the transitions and nothing long is re-encoded twice.
+Six and a half minutes, every video, in two halves.
 
-Pace was measured against a competitor with 4.5 million views: ten seconds a card, metronomic,
-no talk between cards. A question is kept for every fourth card, as a change of pace.
+**Learn.** The video opens on a board of the fifteen subjects. Each card is a cell growing to
+fill the screen, the real footage, the name, the real sound where it has one, one short fact,
+and back to the board with a green tick. Pace measured against a competitor with 4.5 million
+views: about ten seconds a card.
 
-The voice is Microsoft's `en-US-JennyNeural`, chosen by ear from three samples. Two rates in
-`config.json` - `rate_name` and `rate_speech` - so the name and everything else can be tuned
-separately.
+**Guess who?** A full-screen card and a short CC0 sting, then the same fifteen in a shuffled
+order (`pipeline/game.py`). Each turn: a riddle, the real sound, a question, a countdown 3-2-1
+with a tick, the reveal with a whoosh or a pop and confetti, "Yes! It's a lion!" with the name
+on screen, the sound again. The riddle is a frozen frame of a second clip of the subject, cut
+to a detail of it - stripes, a face, a fan of feathers; where the detail would be a piece of
+background (the catalogue measured the subject as small) or there is nothing in it to see, the
+whole frame heavily blurred. At the reveal the camera pulls back over that frozen frame with
+the same eased affine flight the board uses, and the clip starts playing from that frame.
+
+The length is held by the game: everything before it is built and measured, the fifteen turns
+share what is left to reach 390 seconds, and each turn's closing hold moves by the same amount.
+Measured on the first build: learning 190.0 s, the card 5.8 s, fifteen turns 182.6 s, the
+goodbye 11.5 s - 390.0 s, picture and sound within 0.02 s of each other.
+
+Levels are measured on the mixed turns, not assumed: the voice is the same in both halves
+(-18.8 and -19.4 dBFS), ticks sit 13.5-15.2 dB under it, the whoosh and pop 6-12 dB under, the
+sting 4 dB under. The effects are CC0, each licence read on its Freesound page
+(`assets/sfx/licences.json`, found by `scripts/find_sfx.py`).
 
 ## One video, one theme
 

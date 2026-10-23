@@ -120,9 +120,12 @@ def card_audio(card, seconds, out_path, cfg, sound_path=None):
     kept only so an older call site does not break silently.
     """
     out_path = Path(out_path)
+    # Mono narration copied to both channels at full level. "-ac 2" did the upmix at -3 dB a
+    # channel, which nobody noticed until the game - mixed the other way - came out 2.4 dB
+    # louder than the cards before it. Both halves now put the same voice at the same level.
     _run(["ffmpeg", "-y", "-i", str(card["audio_path"]), "-af",
-          f"apad=whole_dur={seconds:.3f}", "-t", f"{seconds:.3f}",
-          "-ar", "44100", "-ac", "2", str(out_path)], TIMEOUT_PER_CARD)
+          f"pan=stereo|c0=c0|c1=c0,apad=whole_dur={seconds:.3f}", "-t", f"{seconds:.3f}",
+          "-ar", "44100", str(out_path)], TIMEOUT_PER_CARD)
     return out_path
 
 
@@ -439,6 +442,91 @@ def silent_audio(seconds, out_path):
     return out_path
 
 
+TARGET_SECONDS = 390.0           # 6.5 minutes, every video
+HOLD_RANGE = (-1.5, 2.5)         # how far a turn's closing hold may move to get there
+
+
+def play_game(video_id, cards, cfg, out, work, videos, audios, outro_seconds):
+    """Append the "Guess who?" card and one turn per subject to the running piece lists.
+
+    The length is held here. Everything before the game is already built and measured, the
+    outro's length is known, and the fifteen turns share whatever is left to reach the
+    target - each turn's closing hold moves by the same amount, inside HOLD_RANGE. A video
+    whose learning half ran long gets slightly shorter turns, not a different number of them.
+    """
+    import json as _json
+    from core import tts as _tts
+    from pipeline import game, narrate as _narrate
+
+    from pipeline import catalogue as _catalogue
+    book = _catalogue.load()
+    gwork = work / "game"
+    gwork.mkdir(parents=True, exist_ok=True)
+    lines = out / "audio" / "game"
+    order = game.order(cards, video_id)
+
+    turns = []
+    for turn, card in enumerate(order):
+        raw = _narrate.game_sound(card, out / "sounds")
+        sound = None
+        if raw is not None:
+            sound = gwork / f"sound_{card['idx']:02d}.mp3"
+            if not sound.exists():
+                _tts.normalise(raw, sound, float(cfg.get("sound_lufs", _tts.SOUND_LUFS)),
+                               game.SOUND_SECONDS)
+        stem = f"{card['idx']:02d}_{card['subject'].replace(' ', '_')}"
+        source = next((p for p in (out / "game_clips" / f"{stem}.mp4",
+                                   out / "clips" / f"{stem}.mp4") if p.exists()),
+                      card.get("image_path"))
+        if not source:
+            raise RenderError(f"no picture for the game turn of {card['subject']}")
+        # What the catalogue measured, once, of how much of THIS clip's frame the subject fills.
+        clip_id = card.get("game_clip_id") if "game_clips" in str(source) else card.get("clip_id")
+        area = next((c.get("subject_area") for c in (book.get(card["subject"]) or {}).get("clips", [])
+                     if str(c.get("id")) == str(clip_id)), None)
+        turns.append({"card": card, "sound": sound, "source": source, "area": area,
+                      "q": lines / f"q_{turn:02d}.mp3", "a": lines / f"a_{turn:02d}.mp3"})
+
+    voice_db = game.active_db(turns[0]["q"])
+    before = sum(probe_duration(a) for a in audios)
+    guess_line = lines / "_guess.mp3"
+    guess_video, guess_audio, guess_seconds = game.build_guess_card(guess_line, gwork, voice_db)
+    base = sum(game.timeline(_tts.duration(t["q"]), _tts.duration(t["a"]),
+                             t["sound"] is not None)["end"] for t in turns)
+    target = float(cfg.get("target_seconds", TARGET_SECONDS))
+    wanted = (target - before - guess_seconds - outro_seconds - base) / max(len(turns), 1)
+    hold = min(max(wanted, HOLD_RANGE[0]), HOLD_RANGE[1])
+    if hold != wanted:
+        log.warning("the video cannot be held at %.0f s: each turn would need %+.2f s and "
+                    "may move only %+.1f to %+.1f", target, wanted, *HOLD_RANGE)
+    videos.append(guess_video)
+    audios.append(guess_audio)
+
+    reports = []
+    for turn, t in enumerate(turns):
+        label = label_image(t["card"]["subject"], gwork / f"label_{t['card']['idx']:02d}.png")
+        parts, audio, report = game.build_turn(turn, t["card"], t["source"], t["sound"],
+                                               t["q"], t["a"], label, hold, gwork, voice_db,
+                                               subject_area=t["area"])
+        videos.extend(parts)
+        audios.append(audio)
+        reports.append(report)
+
+    pieces = sum(r["seconds"] for r in reports)
+    log.info("the game: %d turns, %.1f s, %d riddles by a detail and %d blurred; each turn "
+             "held %+.2f s to bring the video to %.0f s (learning %.1f s, card %.1f s, "
+             "outro %.1f s)", len(reports), pieces,
+             sum(1 for r in reports if r["riddle"] == "piece"),
+             sum(1 for r in reports if r["riddle"] == "blur"), hold, target, before,
+             guess_seconds, outro_seconds)
+    (out / "game.json").write_text(_json.dumps(
+        {"hold": hold, "target": target, "learning": before, "guess_card": guess_seconds,
+         "outro": outro_seconds, "voice_db": voice_db,
+         "turns": [{k: v for k, v in r.items() if k != "timeline"} for r in reports]},
+        indent=2), encoding="utf-8")
+    return reports
+
+
 def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None, board=True):
     """Build final.mp4.
 
@@ -507,13 +595,19 @@ def run(video_id, cfg, db, output_dir, sounds_dir=None, music=None, board=True):
             else:
                 add(video, silent_audio(seconds, work / "board" / f"{Path(video).stem}_a.m4a"))
 
+        # The game: the same subjects again, hidden, guessed, revealed. Then the goodbye.
+        outro_seconds = (_tts.duration(outro) + 0.5) if outro.exists() else 0.0
+        play_game(video_id, cards, cfg, out, work, videos, audios, outro_seconds)
+
         if outro.exists():
-            speech = _tts.duration(outro) + 0.5
+            speech = outro_seconds
             done_board = grid.board(stills, set(range(len(cards))),
                                     work / "board" / "board_done.jpg", None, labels)
             vpath = work / "board" / "done_long.mp4"
             if not vpath.exists():
-                _still_clip(done_board, speech, vpath)
+                # In from the brand colour every turn of the game ends on.
+                _still_clip(done_board, speech, vpath,
+                            f"scale={WIDTH}:{HEIGHT},fade=t=in:st=0:d=0.4:color=0x2EC4FF")
             apath = work / "_outro_a.m4a"
             if not apath.exists():
                 card_audio({"audio_path": str(outro)}, speech, apath, cfg)

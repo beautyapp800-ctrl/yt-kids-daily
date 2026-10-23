@@ -10,9 +10,11 @@
     "peacock",
     "pelican",
     "seagull",
-    "swan"
+    "swan",
+    "vulture"
   ],
   "farm animals": [
+    "cat",
     "chicken",
     "cow",
     "donkey",
@@ -42,15 +44,15 @@
     "bee",
     "beetle",
     "butterfly",
+    "caterpillar",
     "cricket",
     "dragonfly",
+    "grasshopper",
     "ladybug",
     "mosquito",
     "snail",
     "spider",
-    "worm",
-    "grasshopper",
-    "caterpillar"
+    "worm"
   ],
   "sea animals": [
     "whale",

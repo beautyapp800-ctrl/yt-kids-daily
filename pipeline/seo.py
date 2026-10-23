@@ -162,7 +162,8 @@ def run(video_id, cfg, db, output_dir=None):
     theme = video.get("theme") or "animals and machines"
     with_sounds = any(c.get("sound_id") for c in cards)
 
-    recent = [v.get("seo_title") for v in db.recent_videos(10)]
+    # Not this video's own earlier title: a rerun must not avoid itself.
+    recent = [v.get("seo_title") for v in db.recent_videos(11) if v["id"] != video_id]
     title = title_for(theme, len(cards), with_sounds, video_id, recent)
     if title.strip().lower() in {t.strip().lower() for t in recent if t}:
         log.warning("this title has been used by a recent video and no other shape was free: "

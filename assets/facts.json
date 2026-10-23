@@ -271,6 +271,33 @@
       }
     ]
   },
+  "cat": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A cat has sharp claws."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A cat likes to sleep."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A cat has soft fur."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A cat eats food every day."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A cat purrs when happy.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Cats also purr when stressed, scared, or self-soothing"
+      }
+    ]
+  },
   "caterpillar": {
     "facts": [
       {
@@ -668,6 +695,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Elephants have big tusks, not big teeth"
       }
     ]
+  },
+  "emu": {
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "An emu runs very fast."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "An emu has soft feathers."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "An emu has big strong legs."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "An emu eats seeds and bugs."
+      }
+    ],
+    "refused": []
   },
   "excavator": {
     "facts": [

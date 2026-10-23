@@ -26,8 +26,10 @@ LOOK_CUES = ["Look!", "Look at this!", "Oh, look!", "Wow, look!"]
 SOUND_QUESTIONS = ["Who makes that sound?", "What was that?", "Who could that be?"]
 NAME_QUESTIONS = ["Do you know this one?", "What is this?", "Can you say it?"]
 
-INTRO = "Hello! Let's learn some {theme}. Are you ready? Let's go!"
-OUTRO = "That was all of them! You did so well. Bye bye!"
+INTRO = ("Hello! Let's learn some {theme}, and then we'll play a guessing game. "
+         "Are you ready? Let's go!")
+# Said after the game now, so it praises the guessing rather than the watching.
+OUTRO = "Great job! You guessed them all. You are so clever! See you next time. Bye bye!"
 
 
 def _article(name):

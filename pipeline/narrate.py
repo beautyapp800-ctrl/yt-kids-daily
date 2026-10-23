@@ -12,7 +12,7 @@ from pathlib import Path
 
 from core import tts
 from core.logger import get_logger
-from pipeline import talk
+from pipeline import game, talk
 
 log = get_logger("narrate")
 
@@ -24,6 +24,36 @@ def card_length(speech_seconds, cfg):
     high = float(cfg.get("card_seconds_max", 18))
     wanted = speech_seconds + TAIL
     return max(low, min(high, wanted)), wanted > high
+
+
+def game_sound(card, sounds_dir):
+    """The card's own downloaded sound, or None. The game asks "who makes this sound?" only
+    where this returns something."""
+    if not card.get("sound_id"):
+        return None
+    found = sorted(Path(sounds_dir).glob(f"{card['idx']:02d}.*"))
+    return found[0] if found else None
+
+
+def speak_game(video_id, cards, cfg, out, audio_dir):
+    """Every line of the guessing game, said once and kept: a question and an answer per turn,
+    and the line on the "Guess who?" card. Returns a rough length for the log; the render
+    stage measures the real one."""
+    work = audio_dir / "game"
+    work.mkdir(parents=True, exist_ok=True)
+    total = 0.0
+    line = work / "_guess.mp3"
+    if not (line.exists() and line.stat().st_size > 1000):
+        tts.say_part(game.GUESS_LINE, "cue", line, cfg)
+    for turn, card in enumerate(game.order(cards, video_id)):
+        has_sound = game_sound(card, out / "sounds") is not None
+        q, a = work / f"q_{turn:02d}.mp3", work / f"a_{turn:02d}.mp3"
+        if not (q.exists() and q.stat().st_size > 1000):
+            tts.say_part(game.question_for(turn, has_sound), "question", q, cfg)
+        if not (a.exists() and a.stat().st_size > 1000):
+            tts.say_part(game.answer_for(turn, card["subject"]), "answer", a, cfg)
+        total += game.timeline(tts.duration(q), tts.duration(a), has_sound)["end"]
+    return total + tts.duration(line) + 1.0
 
 
 def run(video_id, cfg, db, output_dir):
@@ -59,6 +89,8 @@ def run(video_id, cfg, db, output_dir):
         if not (path.exists() and path.stat().st_size > 1000):
             tts.build(segments, path, cfg, audio_dir / "_parts")
         total += tts.duration(path)
+
+    total += speak_game(video_id, cards, cfg, out, audio_dir)
 
     minutes = total / 60
     log.info("%d cards narrated with an intro and an outro, %.1f minutes (%.1f s a card)",

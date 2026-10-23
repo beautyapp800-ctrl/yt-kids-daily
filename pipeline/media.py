@@ -158,6 +158,21 @@ def run(video_id, cfg, account, token, db, output_dir, images_module=None):
     if missing:
         raise MediaError(f"no picture at all for: {', '.join(missing)}")
 
+    # The game's own clips. Not fatal either: a turn without its second clip uses the card's
+    # first, which is still the right animal.
+    game_dir = out / "game_clips"
+    second = 0
+    for card in db.get_cards(video_id):
+        if not card.get("game_clip_url"):
+            continue
+        dst = game_dir / f"{card['idx']:02d}_{card['subject'].replace(' ', '_')}.mp4"
+        try:
+            download(card["game_clip_url"], dst)
+            second += 1
+        except MediaError as e:
+            log.warning("card %d (%s): the game's clip would not download (%s); the game "
+                        "will use the card's own", card["idx"], card["subject"], str(e)[:80])
+
     with_sound = 0
     for card in db.get_cards(video_id):
         if fetch_sound(card, sounds_dir):
@@ -169,8 +184,8 @@ def run(video_id, cfg, account, token, db, output_dir, images_module=None):
                            sound_attribution=None)
 
     filmed = sum(1 for c in db.get_cards(video_id) if c["video_source"] == "stock")
-    log.info("media ready: %d filmed, %d drawn, %d with their own sound",
-             filmed, len(cards) - filmed, with_sound)
+    log.info("media ready: %d filmed, %d drawn, %d with their own sound, %d with a second "
+             "clip for the game", filmed, len(cards) - filmed, with_sound, second)
     db.log_event(video_id, "media", "info",
                  f"{filmed} clips, {len(cards) - filmed} drawn, {with_sound} sounds")
     return True

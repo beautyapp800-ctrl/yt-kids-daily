@@ -220,6 +220,18 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
             sound_url=(sound or {}).get("url"),
             sound_attribution=sounds_module.attribution_line(sound) if sound else None)
 
+    # The game shows every subject a second time. A clip is used in a video once - the rule
+    # that came from the rooster - so the game takes a different clip of the same subject
+    # where the catalogue has one, and the same clip only where it has no other.
+    used = {str(c["id"]) for _s, c in plan if c}
+    for card in db.get_cards(video_id):
+        options = (clips.get(card["subject"]) or {}).get("clips") or []
+        other = next((c for c in options if str(c["id"]) not in used), None)
+        if other:
+            used.add(str(other["id"]))
+            db.update_card(card["id"], game_clip_id=str(other["id"]),
+                           game_clip_url=other.get("clip"))
+
     db.remember_subjects(video_id, [s for s, _ in plan])
     shown = dominant_theme([s for s, _ in plan], groups, theme)
     db.update_video(video_id, theme=shown,

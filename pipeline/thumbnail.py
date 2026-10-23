@@ -323,12 +323,12 @@ def _title_size(big, small_text):
     return 40
 
 
-def draw_title(img, video_id, theme, count):
+def draw_title(img, video_id, theme, count, fill=None):
     """Draw the title; returns (fill mask, whole mask, band bottom, size, font) to measure it."""
     big, small_text = title_text(video_id, theme, count)
     size = _title_size(big, small_text)
     f_big, f_small = _font(size), _font(round(size * 0.58))
-    accent = palette_for(video_id)[3]
+    accent = fill or palette_for(video_id)[3]
     probe = ImageDraw.Draw(Image.new("RGB", (4, 4)))
     a = probe.textbbox((0, 0), big, font=f_big, stroke_width=STROKE)
     b = probe.textbbox((0, 0), small_text, font=f_small, stroke_width=STROKE)
@@ -502,8 +502,16 @@ def make(candidates, video_id, theme, count, out_dir, avoid=()):
     """Build the cover from [(subject, still_path, clip_id)]; returns a report dict."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    img = background(video_id)
-    fill_mask, whole_mask, band_bottom, size, f_big = draw_title(img, video_id, theme, count)
+    # The palette's own accent first. A longer title ("15 WILD ANIMALS") is set smaller, and
+    # at the smaller size pink on lime came out 4.3:1 against its outline, under the 4.5 the
+    # check asks for - so the cover tries the palette's accent, then yellow, then white, and
+    # keeps the first that reads.
+    for fill in (palette_for(video_id)[3], (255, 222, 0), (255, 255, 255)):
+        img = background(video_id)
+        fill_mask, whole_mask, band_bottom, size, f_big = draw_title(img, video_id, theme,
+                                                                     count, fill)
+        if title_check(img, fill_mask, whole_mask, f_big)["ok"]:
+            break
     cols, rows, boxes = layout(len(candidates), band_bottom + 14)
     chosen = choose_frames(candidates, len(boxes), avoid=avoid)
     draw_cells(img, chosen, boxes)

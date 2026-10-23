@@ -103,6 +103,14 @@ def test_the_tracks_are_in_the_repository():
           f"every track on disk is in the repository ({len(audio)} of {len(music.tracks())})")
 
 
+def test_the_effects_are_in_the_repository():
+    print("test_the_effects_are_in_the_repository")
+    listed = subprocess.run(["git", "ls-files", "assets/sfx"], cwd=ROOT,
+                            capture_output=True, text=True).stdout.split()
+    for name in ("pop", "whoosh", "tick", "sting"):
+        check(f"assets/sfx/{name}.wav" in listed, f"{name}.wav is committed, not only on disk")
+
+
 if __name__ == "__main__":
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
@@ -110,4 +118,5 @@ if __name__ == "__main__":
         test_a_bed_that_stops_halfway_is_caught(tmp)
         test_an_empty_music_folder_stops_the_render(tmp)
         test_the_tracks_are_in_the_repository()
+        test_the_effects_are_in_the_repository()
     print("ALL MUSIC-IN-MIX TESTS PASSED")

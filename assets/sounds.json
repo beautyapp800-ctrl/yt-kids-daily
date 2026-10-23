@@ -251,6 +251,47 @@
     "silent": true,
     "sounds": []
   },
+  "cat": {
+    "candidates_seen": 7,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "lextrack",
+        "id": "a6dea9af-fff5-4e9d-9f62-b21823ae1fce",
+        "is": "a cat meowing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/lextrack/sounds/333916",
+        "seconds": 1.4,
+        "source": "freesound",
+        "title": "Cat Meowing.mp3",
+        "url": "https://cdn.freesound.org/previews/333/333916_4930786-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "Trautwein",
+        "id": "f9ec729d-1751-4389-ac72-181f7ab817c6",
+        "is": "a cat purring",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Trautwein/sounds/260881",
+        "seconds": 60.1,
+        "source": "freesound",
+        "title": "Cat purr.wav",
+        "url": "https://cdn.freesound.org/previews/260/260881_525245-hq.mp3"
+      }
+    ]
+  },
   "caterpillar": {
     "candidates_seen": 0,
     "refused": [],
@@ -305,10 +346,45 @@
     ]
   },
   "cockatoo": {
-    "candidates_seen": 0,
+    "candidates_seen": 13,
     "refused": [],
-    "silent": true,
-    "sounds": []
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "Metalman101",
+        "id": "9ad0c58d-334a-4672-8469-239d5a63ccb3",
+        "is": "a cockatoo flying by",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Metalman101/sounds/231303",
+        "seconds": 14.3,
+        "source": "freesound",
+        "title": "Cockatoo flyby - 01.wav",
+        "url": "https://cdn.freesound.org/previews/231/231303_2210464-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "Breviceps",
+        "id": "3626c2a2-f2b6-452c-8b36-5fe5a02e9c14",
+        "is": "a Black Cockatoo (Calyptorhynchus banksii) making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Breviceps/sounds/535815",
+        "seconds": 4.7,
+        "source": "freesound",
+        "title": "Black Cockatoo (Calyptorhynchus banksii)",
+        "url": "https://cdn.freesound.org/previews/535/535815_9159316-hq.mp3"
+      }
+    ]
   },
   "cow": {
     "candidates_seen": 41,
@@ -396,10 +472,45 @@
     "sounds": []
   },
   "crow": {
-    "candidates_seen": 0,
+    "candidates_seen": 18,
     "refused": [],
-    "silent": true,
-    "sounds": []
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "JarredGibb",
+        "id": "9d7687c2-810e-4c21-8216-c3137ceb0d2b",
+        "is": "a crow calling in the distance",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/JarredGibb/sounds/233132",
+        "seconds": 8.7,
+        "source": "freesound",
+        "title": "Crows - Calling in distance 1 - 96kHz.wav",
+        "url": "https://cdn.freesound.org/previews/233/233132_4056007-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "nichukabra",
+        "id": "c6789293-692c-4d79-be6d-934022f6d0b2",
+        "is": "a crow call",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/nichukabra/sounds/252685",
+        "seconds": 8.0,
+        "source": "freesound",
+        "title": "Crow call NK.wav",
+        "url": "https://cdn.freesound.org/previews/252/252685_3097190-hq.mp3"
+      }
+    ]
   },
   "deer": {
     "candidates_seen": 0,
@@ -632,6 +743,12 @@
       }
     ]
   },
+  "emu": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "excavator": {
     "candidates_seen": 20,
     "refused": [],
@@ -759,10 +876,28 @@
     ]
   },
   "firefly": {
-    "candidates_seen": 0,
+    "candidates_seen": 1,
     "refused": [],
-    "silent": true,
-    "sounds": []
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "Marvin_Chiriguaya",
+        "id": "387519d5-4f3f-4d78-9917-2a5d75fef053",
+        "is": "a firefly",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Marvin_Chiriguaya/sounds/735758",
+        "seconds": 14.8,
+        "source": "freesound",
+        "title": "Firefly",
+        "url": "https://cdn.freesound.org/previews/735/735758_15308663-hq.mp3"
+      }
+    ]
   },
   "flamingo": {
     "candidates_seen": 7,
@@ -814,8 +949,41 @@
     ]
   },
   "fly": {
-    "candidates_seen": 0,
-    "refused": [],
+    "candidates_seen": 8,
+    "refused": [
+      {
+        "title": "flys-I.wav",
+        "why": "unknown or unspecified sound, possibly edited or mislabeled"
+      },
+      {
+        "title": "Spaceship Fly-by, A",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Fly 1.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Fly",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Learn to Fly",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "One Chance to Fly Away - Junior Paes",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "fly.00.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "bee fly .mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1043,8 +1211,13 @@
     ]
   },
   "heron": {
-    "candidates_seen": 0,
-    "refused": [],
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "grey heron calls at night on lake",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1235,10 +1408,41 @@
     ]
   },
   "macaw": {
-    "candidates_seen": 0,
-    "refused": [],
-    "silent": true,
-    "sounds": []
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "fr0608bg Hyacinth Macaw 2.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "military_macaw.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "green_winged_macaw.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "felix.blume",
+        "id": "d42673a8-3b35-48c7-b30e-dab8816a6ab1",
+        "is": "a macaw parrot screaming in a park",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/504988",
+        "seconds": 14.1,
+        "source": "freesound",
+        "title": "Macaw Parrot screaming in a park",
+        "url": "https://cdn.freesound.org/previews/504/504988_1661766-hq.mp3"
+      }
+    ]
   },
   "monkey": {
     "candidates_seen": 25,
@@ -1274,10 +1478,37 @@
     "sounds": []
   },
   "moth": {
-    "candidates_seen": 0,
-    "refused": [],
-    "silent": true,
-    "sounds": []
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "horror animal moth.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "moth.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "kaonaya",
+        "id": "24625a7b-3a42-4439-a264-8215172dbac8",
+        "is": "a flying moth",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kaonaya/sounds/131339",
+        "seconds": 4.3,
+        "source": "freesound",
+        "title": "Flying moth 1.wav",
+        "url": "https://cdn.freesound.org/previews/131/131339_1513948-hq.mp3"
+      }
+    ]
   },
   "motorcycle": {
     "candidates_seen": 27,
@@ -1654,8 +1885,13 @@
     "sounds": []
   },
   "praying mantis": {
-    "candidates_seen": 0,
-    "refused": [],
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "Kcg-a\u0331manggang (praying mantis)",
+        "why": "a person or group speaking or reciting the name of the praying mantis in a language, possibly the Kenyah language, given the prefix 'Kcg-' which might be a language or dialect identifier"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1989,10 +2225,45 @@
     "sounds": []
   },
   "stork": {
-    "candidates_seen": 0,
-    "refused": [],
-    "silent": true,
-    "sounds": []
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "Storks in Poland - Nest near traffic.wav",
+        "why": "traffic noise"
+      },
+      {
+        "title": "20200624.stork.nest.02.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "20200624.stork.nest.01.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Cig\u00fce\u00f1as Blancas :: White Storks",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "be_a_hero_not_a_patriot",
+        "id": "6b9db754-4ed9-4b8b-b980-9836f93fdceb",
+        "is": "a field recording of storks and other environmental sounds",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/be_a_hero_not_a_patriot/sounds/476464",
+        "seconds": 302.7,
+        "source": "freesound",
+        "title": "village, field, meadow, storks clapping beaks, wind in trees and grass, very distant construction, birds, Czechia [Stereo].wav",
+        "url": "https://cdn.freesound.org/previews/476/476464_5804919-hq.mp3"
+      }
+    ]
   },
   "swan": {
     "candidates_seen": 19,
@@ -2334,10 +2605,50 @@
     "sounds": []
   },
   "wasp": {
-    "candidates_seen": 0,
-    "refused": [],
-    "silent": true,
-    "sounds": []
+    "candidates_seen": 9,
+    "refused": [
+      {
+        "title": "Mechanical Wasp.wav",
+        "why": "a mechanical device or sound effect imitating a wasp"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "szymalix",
+        "id": "ba93f10c-c293-4908-9ae2-3215a0d712c3",
+        "is": "a wasp making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/szymalix/sounds/570721",
+        "seconds": 13.8,
+        "source": "freesound",
+        "title": "wasp sound.wav",
+        "url": "https://cdn.freesound.org/previews/570/570721_8935557-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-23",
+        "creator": "Profispiesser",
+        "id": "a16b2af0-3f26-4ae1-a2ee-d9563343d89e",
+        "is": "a bee wasp passing on a field",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Profispiesser/sounds/519503",
+        "seconds": 1.0,
+        "source": "freesound",
+        "title": "FXSaSc Bee Wasp Passing on Field",
+        "url": "https://cdn.freesound.org/previews/519/519503_6667441-hq.mp3"
+      }
+    ]
   },
   "whale": {
     "candidates_seen": 16,

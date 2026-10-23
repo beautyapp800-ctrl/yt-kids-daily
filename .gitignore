@@ -14,6 +14,8 @@ logs/
 # and video 1 went up silent.
 !assets/music/*.mp3
 !assets/music/*.ogg
+# The game's effects, for the same reason - *.wav would have kept them off the runner too.
+!assets/sfx/*.wav
 
 # Python
 __pycache__/
@@ -36,3 +38,7 @@ output_full/
 
 # Demo covers made by hand while designing; the pipeline writes its own into output/.
 output_cover/
+
+# Working files: the effect search, and hand builds of the game format.
+data/sfx-candidates/
+output_game/

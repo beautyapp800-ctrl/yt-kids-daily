@@ -102,6 +102,15 @@ def main():
         print(f"music: FAILED: {e}")
         problems.append(f"the music could not be read: {e}")
 
+    # The game's effects, checked out like the music and excluded by the same kind of rule.
+    try:
+        from pipeline import game
+        names = [game.sfx(n).name for n in ("pop", "whoosh", "tick", "sting")]
+        print(f"effects: {', '.join(names)}")
+    except Exception as e:                                       # noqa: BLE001
+        print(f"effects: FAILED: {e}")
+        problems.append(f"the game's sound effects are missing: {e}")
+
     try:
         from pipeline import catalogue
         book = catalogue.load()
