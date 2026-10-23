@@ -1,7 +1,7 @@
 {
   "channel": "yt-kids",
   "language": "en-US",
-  "cards_per_video": 30,
+  "cards_per_video": 15,
   "card_seconds_min": 10,
   "card_seconds_max": 14,
   "target_duration_min": 8,
@@ -49,5 +49,5 @@
   "pitch_name": "+34Hz",
   "pitch_speech": "+18Hz",
   "music_under_voice_db": 12,
-  "min_theme_cards": 10
+  "min_theme_cards": 15
 }

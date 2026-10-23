@@ -43,9 +43,9 @@ SUBJECT_POOL = 3.0      # how many candidates to consider per card wanted
 # sooner than that. The arithmetic the family approach could never satisfy - thirty cards and
 # no repeat within five videos needs 150 distinct subjects, and the animals family has 52.
 
-THEME_REST = 7           # videos a theme sits out before it can come round again
+THEME_REST = 7           # a theme comes back no sooner than the 7th video: once a week
 SUBJECT_REST = 5         # videos a subject sits out, as asked
-MIN_THEME_CARDS = 10     # below this a themed video is too thin to be worth making
+MIN_THEME_CARDS = 15     # every video takes exactly this many; a smaller theme waits
 
 
 def theme_sizes(groups, clips, facts):
@@ -55,30 +55,38 @@ def theme_sizes(groups, clips, facts):
             for theme, items in groups.items()}
 
 
-def choose_theme(groups, recent, sizes, floor=MIN_THEME_CARDS):
-    """The theme for this video: the one that has waited longest and can fill a video.
+class NoThemeReady(RuntimeError):
+    """No theme can make today's video under the rules. Not a fault to retry: a decision."""
 
-    `recent` is the newest-first list of what the last videos were about. Least recently used,
-    because a fixed cycle through sorted names would put the thin themes in the same place
-    every week and a theme that grows past the floor would have to wait for its slot.
+
+def choose_theme(groups, recent, sizes, floor=MIN_THEME_CARDS, rest=THEME_REST):
+    """The theme for this video: one that can fill it and has rested a week.
+
+    Both are hard rules. A theme with fewer than `floor` subjects is not padded from another
+    theme - padding is what produced four videos called "30 Animals for Kids" - and a theme used
+    in the last `rest` videos does not come back early, because a theme twice in a week is the
+    same video twice in a week. When nothing qualifies there is no video, and the reason names
+    every theme's count and when it was last used, so whoever reads it can decide.
     """
-    ready = sorted(t for t, n in sizes.items() if n >= floor)
-    if not ready:
-        # Nothing can fill a video on its own. Say which was closest rather than silently
-        # falling back to a mixture, because the mixture is the thing being fixed.
-        best = max(sizes.items(), key=lambda kv: kv[1], default=("nothing", 0))
-        raise RuntimeError(
-            f"no theme has {floor} subjects with both a clip and a checked fact; the largest "
-            f"is {best[0]} with {best[1]}. Run scripts/grow.py, or lower min_theme_cards.")
-    used = [v.get("theme") for v in recent[:THEME_REST]]
-    # How long ago each was used: 0 is the video just made, and a theme not in the list at all
-    # has waited longer than the window can see.
+    # Once a week means a theme used seven videos ago is free today, so it is the six before
+    # this one that rule it out. Excluding seven would need eight themes to keep a daily rhythm.
+    used = [v.get("theme") for v in recent[:rest - 1]]
     ago = {}
     for distance, name in enumerate(used):
-        ago.setdefault(name, distance)
-    unseen = len(used) + 1
-    # Waited longest first; then the fullest theme, so a long video beats a thin one; then by
-    # name, so the choice is the same on a rerun.
+        ago.setdefault(name, distance + 1)
+    ready = [t for t, n in sizes.items() if n >= floor and t not in ago]
+    if not ready:
+        lines = []
+        for t, n in sorted(sizes.items(), key=lambda kv: -kv[1]):
+            why = []
+            if n < floor:
+                why.append(f"{n} of {floor} subjects")
+            if t in ago:
+                why.append(f"used {ago[t]} video(s) ago")
+            lines.append(f"{t}: " + ("; ".join(why) or "ready"))
+        raise NoThemeReady("no theme is ready for today's video - " + " | ".join(lines))
+    # Never used, or used longest ago, first; then the fullest; then by name for a stable rerun.
+    unseen = rest + 1
     return sorted(ready, key=lambda t: (-ago.get(t, unseen), -sizes[t], t))[0]
 
 
@@ -141,12 +149,13 @@ def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
 
     recent = db.recent_videos(max(THEME_REST, SUBJECT_REST) + 1)
     sizes = theme_sizes(groups, clips, fact_book)
-    theme = cfg.get("theme") or choose_theme(
-        groups, recent, sizes, int(cfg.get("min_theme_cards", MIN_THEME_CARDS)))
-    # Never more cards than the theme has: a themed video is as long as its theme allows, and
-    # padding it from elsewhere is what produced three identical videos.
+    floor_cards = int(cfg.get("min_theme_cards", MIN_THEME_CARDS))
+    theme = cfg.get("theme") or choose_theme(groups, recent, sizes, floor_cards)
+    # Exactly this many, every video, so every video is the same length. A theme that has more
+    # contributes a different fifteen each time it comes round; one that has fewer never got
+    # here.
     wanted = min(wanted, sizes[theme])
-    floor = min(floor, wanted)
+    floor = wanted
     distances = db.subjects_used_in_last(SUBJECT_REST)
     subjects = choose_subjects(groups, theme, int(wanted * SUBJECT_POOL), distances, rng)
     log.info("video %s: theme %r (%d subjects ready, last %d videos were %s), asking for %d cards",

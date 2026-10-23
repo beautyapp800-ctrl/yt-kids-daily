@@ -97,30 +97,33 @@ def test_a_theme_rests_before_coming_round_again(tmp):
     print("test_a_theme_rests_before_coming_round_again")
     sizes = {t: len(v) for t, v in GROUPS.items()}
     recent, picked = [], []
-    for n in range(len(GROUPS) * 2):
+    for _ in range(len(GROUPS) * 3):
         theme = plan.choose_theme(GROUPS, recent, sizes, floor=6)
         picked.append(theme)
         recent.insert(0, {"theme": theme})
     check(len(set(picked[:len(GROUPS)])) == len(GROUPS),
-          f"the first pass uses every theme once: {picked[:len(GROUPS)]}")
-    gaps = [j - i for i, t in enumerate(picked) for j in range(i + 1, len(picked)) if picked[j] == t]
-    check(min(gaps) >= len(GROUPS) - 1 if gaps else True,
-          f"and no theme comes back sooner than {len(GROUPS) - 1} videos later "
-          f"(smallest gap {min(gaps) if gaps else '-'})")
+          f"the first week uses every theme once: {picked[:len(GROUPS)]}")
+    gaps = [j - i for i in range(len(picked)) for j in range(i + 1, len(picked))
+            if picked[j] == picked[i] and picked[i] not in picked[i + 1:j]]
+    check(min(gaps) >= plan.THEME_REST,
+          f"seven themes keep a daily rhythm for three weeks, none back sooner than "
+          f"{plan.THEME_REST} videos (smallest gap {min(gaps)})")
 
 
-def test_a_theme_too_thin_for_a_video_is_not_used(tmp):
-    print("test_a_theme_too_thin_for_a_video_is_not_used")
-    sizes = {"birds": 4, "insects": 3, "wild animals": 14}
-    check(plan.choose_theme(GROUPS, [], sizes, floor=10) == "wild animals",
-          "only the theme that can fill a video is chosen")
+def test_a_theme_too_thin_or_too_recent_stops_the_day(tmp):
+    print("test_a_theme_too_thin_or_too_recent_stops_the_day")
+    sizes = {"birds": 11, "insects": 13, "wild animals": 15}
+    check(plan.choose_theme(GROUPS, [], sizes, floor=15) == "wild animals",
+          "only a theme with fifteen is chosen")
     try:
-        plan.choose_theme(GROUPS, [], {"birds": 4, "insects": 3}, floor=10)
-    except RuntimeError as e:
-        check("no theme has 10" in str(e) and "grow" in str(e),
-              f"and when none can, it says so and names the largest: {str(e)[:80]}")
+        plan.choose_theme(GROUPS, [{"theme": "wild animals"}], sizes, floor=15)
+    except plan.NoThemeReady as e:
+        text = str(e)
+        check("no theme is ready" in text, "the next day there is no video, on purpose")
+        check("wild animals: used 1 video(s) ago" in text and "insects: 13 of 15" in text,
+              "and the reason names every theme's count and when it was used")
         return
-    raise AssertionError("a video was planned from a theme that cannot fill it")
+    raise AssertionError("a theme was used twice running, or padded below fifteen")
 
 
 def test_a_subject_rests_five_videos(tmp):
@@ -180,7 +183,7 @@ if __name__ == "__main__":
         test_a_video_is_one_theme(tmp)
         test_three_videos_running_are_not_the_same_video(tmp)
         test_a_theme_rests_before_coming_round_again(tmp)
-        test_a_theme_too_thin_for_a_video_is_not_used(tmp)
+        test_a_theme_too_thin_or_too_recent_stops_the_day(tmp)
         test_a_subject_rests_five_videos(tmp)
         test_when_a_theme_is_small_the_held_back_return_oldest_first(tmp)
         test_no_clip_is_used_twice_in_a_video(tmp)

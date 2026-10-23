@@ -43,6 +43,14 @@ RULES = [
      "no footage and has to be drawn. The next run draws what is still missing; clips already "
      "downloaded are kept in the run cache."),
 
+    ("no-theme-ready", False,
+     r"no theme is ready",
+     "No video today, on purpose. Every theme either has fewer subjects than a video takes, or "
+     "was used within the last week - and the rule is one theme per video, not a mixture, and "
+     "no theme twice in seven days. The email lists every theme's count and when it was last "
+     "used. Nothing was uploaded and the daily rhythm is unchanged; the grow job keeps filling "
+     "the short themes. This needs a decision from you, not a retry."),
+
     ("catalogue-too-thin", False,
      r"only \d+ cards (could be planned|had a checked fact)",
      "The catalogues cannot supply enough cards for a video. Run `scripts/build_catalogue.py`, "

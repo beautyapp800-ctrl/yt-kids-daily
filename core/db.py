@@ -205,8 +205,11 @@ def recent_videos(limit=12):
     all judge variety from the same list."""
     import json as _json
     with _connect() as conn:
+        # Only videos that were planned. A day with no theme ready still creates a row and fails
+        # it; counting that row as "a video" would make a theme look a day older than it is.
         rows = conn.execute(
             "SELECT id, theme, seo_title, cover_subjects FROM videos "
+            "WHERE id IN (SELECT DISTINCT video_id FROM cards) "
             "ORDER BY id DESC LIMIT ?", (limit,)).fetchall()
     out = []
     for r in rows:
@@ -227,7 +230,8 @@ def subjects_used_in_last(videos_back):
     """
     with _connect() as conn:
         ids = [r["id"] for r in conn.execute(
-            "SELECT id FROM videos ORDER BY id DESC LIMIT ?", (videos_back,))]
+            "SELECT id FROM videos WHERE id IN (SELECT DISTINCT video_id FROM used_subjects) "
+            "ORDER BY id DESC LIMIT ?", (videos_back,))]
         if not ids:
             return {}
         marks = ",".join("?" * len(ids))
