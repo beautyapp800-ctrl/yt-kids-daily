@@ -64,10 +64,25 @@ def from_pool(theme, existing, count):
     answer was not a looser check but a pool written at the level a small child names things.
     """
     try:
-        pool = json.loads(POOL_FILE.read_text(encoding="utf-8")).get("pool") or {}
+        book = json.loads(POOL_FILE.read_text(encoding="utf-8"))
+        pool = book.get("pool") or {}
+        terms = book.get("search_terms") or {}
     except Exception:                                            # noqa: BLE001
         return []
-    return [s for s in pool.get(theme, []) if s not in existing][:count]
+    # Already tried and nothing confirmed: the describer said "bird" twelve times for a stork,
+    # and it will say it again tomorrow. Such a subject is tried again only if its search term
+    # has changed since, which is the one thing that could change the answer.
+    from pipeline import catalogue as _cat
+    clips = _cat.load()
+
+    def tried_and_failed(subject):
+        entry = clips.get(subject)
+        if not entry or entry.get("clips"):
+            return False
+        return entry.get("search_term", subject) == terms.get(subject, subject)
+
+    return [s for s in pool.get(theme, [])
+            if s not in existing and not tried_and_failed(s)][:count]
 
 
 def propose(theme, existing, count, account, token):

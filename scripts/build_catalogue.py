@@ -127,7 +127,7 @@ def main(argv=None):
             continue
         kept, rejected = catalogue.verify_subject(subject, hits, account, token, WORK, vision)
         data[subject] = {"clips": kept, "rejected": rejected,
-                         "candidates_seen": len(hits)}
+                         "candidates_seen": len(hits), "search_term": search_term(subject)}
         best = f"{kept[0]['prominence']:.2f}" if kept else "-"
         print(f"  {subject:14} {len(kept)} kept of {len(hits)} looked at, "
               f"best framing {best}"
