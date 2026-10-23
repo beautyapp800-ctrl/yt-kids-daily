@@ -89,12 +89,13 @@ def card_video(card, seconds, out_path, font=None):
                f"[v][lab]overlay=(W-w)/2:"
                f"'H-h-{LABEL_MARGIN}+max(0,({LABEL_RISE}-{LABEL_RISE}*t/{LABEL_FADE}))'")
     if card.get("clip_path"):
-        # -stream_loop so a short clip fills a long card without being slowed down.
+        # -stream_loop so a short clip fills a long card without being slowed down. There
+        # used to be a zoompan push-in here; measured on a still frame it never moved at all -
+        # with d=1 on a video input zoompan starts over on every frame - so it is gone.
         args = ["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(card["clip_path"]),
                 "-loop", "1", "-i", str(label), "-t", f"{seconds:.3f}", "-filter_complex",
                 f"[0:v]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
-                f"crop={WIDTH}:{HEIGHT},eq=saturation=1.30:contrast=1.10,"
-                f"zoompan=z='min(zoom+0.00035,1.08)':d=1:s={WIDTH}x{HEIGHT}:fps={FPS}[v];"
+                f"crop={WIDTH}:{HEIGHT},eq=saturation=1.30:contrast=1.10[v];"
                 f"{overlay}"]
     else:
         # A still gets a slow push in, so the frame is not dead for fourteen seconds.

@@ -171,6 +171,21 @@
       }
     ]
   },
+  "beetle": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Volkswagen Beetle Idle Sound.wav",
+        "why": "licence at the source is unknown: page could not be read: <urlopen error [Errno 11001] getaddrinfo failed>"
+      },
+      {
+        "title": "Beetle Museum Lobby",
+        "why": "licence at the source is unknown: page could not be read: <urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "boat": {
     "candidates_seen": 33,
     "refused": [
@@ -242,6 +257,12 @@
     "silent": true,
     "sounds": []
   },
+  "centipede": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "chicken": {
     "candidates_seen": 26,
     "refused": [],
@@ -282,6 +303,12 @@
         "url": "https://cdn.freesound.org/previews/708/708175_2061858-hq.mp3"
       }
     ]
+  },
+  "cockatoo": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "cow": {
     "candidates_seen": 41,
@@ -353,6 +380,24 @@
         "why": "an electronic music synthesizer sound"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "crane bird": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "cricket": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "crow": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -768,6 +813,12 @@
       }
     ]
   },
+  "fly": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "fox": {
     "candidates_seen": 14,
     "refused": [],
@@ -904,10 +955,45 @@
     ]
   },
   "grasshopper": {
-    "candidates_seen": 0,
+    "candidates_seen": 11,
     "refused": [],
-    "silent": true,
-    "sounds": []
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "straget",
+        "id": "8ea872e9-2cdd-4847-ba3f-20f5c6e2e68a",
+        "is": "a grasshopper making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/straget/sounds/401939",
+        "seconds": 24.8,
+        "source": "freesound",
+        "title": "Grasshopper",
+        "url": "https://cdn.freesound.org/previews/401/401939_7707368-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-22",
+        "creator": "straget",
+        "id": "f88ed025-8343-4b05-bfb1-31a2d0372551",
+        "is": "a grasshopper making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/straget/sounds/401856",
+        "seconds": 38.6,
+        "source": "freesound",
+        "title": "Grasshopper in neighbors\u00b4s tree",
+        "url": "https://cdn.freesound.org/previews/401/401856_7707368-hq.mp3"
+      }
+    ]
   },
   "hawk": {
     "candidates_seen": 0,
@@ -955,6 +1041,12 @@
         "url": "https://cdn.freesound.org/previews/436/436449_2213158-hq.mp3"
       }
     ]
+  },
+  "heron": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "horse": {
     "candidates_seen": 30,
@@ -1057,6 +1149,12 @@
     "silent": true,
     "sounds": []
   },
+  "kingfisher": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "ladybug": {
     "candidates_seen": 3,
     "refused": [
@@ -1136,6 +1234,12 @@
       }
     ]
   },
+  "macaw": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "monkey": {
     "candidates_seen": 25,
     "refused": [
@@ -1164,6 +1268,12 @@
     "sounds": []
   },
   "mosquito": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "moth": {
     "candidates_seen": 0,
     "refused": [],
     "silent": true,
@@ -1371,6 +1481,12 @@
         "url": "https://cdn.freesound.org/previews/675/675965_2524442-hq.mp3"
       }
     ]
+  },
+  "pelican": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "penguin": {
     "candidates_seen": 13,
@@ -1677,6 +1793,12 @@
     "silent": true,
     "sounds": []
   },
+  "seagull": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "seahorse": {
     "candidates_seen": 0,
     "refused": [],
@@ -1746,6 +1868,12 @@
         "url": "https://cdn.freesound.org/previews/88/88423_57789-hq.mp3"
       }
     ]
+  },
+  "snail": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "snake": {
     "candidates_seen": 0,
@@ -1855,6 +1983,12 @@
     "sounds": []
   },
   "stick insect": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "stork": {
     "candidates_seen": 0,
     "refused": [],
     "silent": true,
@@ -2193,6 +2327,18 @@
       }
     ]
   },
+  "vulture": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "wasp": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "whale": {
     "candidates_seen": 16,
     "refused": [
@@ -2287,6 +2433,18 @@
         "url": "https://cdn.freesound.org/previews/651/651193_801011-hq.mp3"
       }
     ]
+  },
+  "woodpecker": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "worm": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "yak": {
     "candidates_seen": 2,

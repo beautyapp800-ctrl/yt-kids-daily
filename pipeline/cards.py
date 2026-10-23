@@ -109,7 +109,12 @@ def fact_problems(fact, subject):
         out.append(f'"{text}" does not end in a full stop')
     if text.count(".") > 1 or ";" in text:
         out.append(f'"{text}" is more than one sentence')
-    long_words = [w for w in words if len(w) > LONG_WORD]
+    # The thing's own name is exempt. It is the one word the card exists to teach, and the
+    # rule was refusing every fact about a grasshopper, a caterpillar or a hummingbird for
+    # containing it - four of those subjects had footage and could never become a card.
+    own = {w.lower() for w in _words(subject)}
+    own |= {w + "s" for w in own} | {w + "es" for w in own}
+    long_words = [w for w in words if len(w) > LONG_WORD and w.lower() not in own]
     if long_words:
         out.append(f'"{text}" uses {", ".join(long_words)}, too long a word for a three-year-old')
     units = [w for w in words if w.lower() in UNITS]

@@ -148,6 +148,27 @@
       }
     ]
   },
+  "beetle": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A beetle has a hard back."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A beetle has six legs."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A beetle flies in the air."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A beetle eats food on plants."
+      }
+    ],
+    "refused": []
+  },
   "boat": {
     "facts": [
       {
@@ -251,7 +272,56 @@
     ]
   },
   "caterpillar": {
-    "facts": [],
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A caterpillar eats leaves."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A caterpillar crawls on the ground."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A caterpillar has a big body."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A caterpillar has many legs."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A caterpillar has soft legs.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A caterpillar has many legs, but they are not typically described as soft. They are usually small and fleshy, but also have a hard exoskeleton."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A caterpillar makes a cocoon.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A caterpillar makes a chrysalis, not a cocoon. Cocoons are made by moths."
+      }
+    ]
+  },
+  "centipede": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A centipede has many legs."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A centipede crawls on the ground."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A centipede eats small bugs."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A centipede has a long body."
+      }
+    ],
     "refused": []
   },
   "chicken": {
@@ -271,6 +341,27 @@
       {
         "checked": "2026-10-10",
         "fact": "A chicken scratches the ground."
+      }
+    ],
+    "refused": []
+  },
+  "cockatoo": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A cockatoo has soft feathers."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cockatoo makes loud noise."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cockatoo eats food."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cockatoo flaps its wings."
       }
     ],
     "refused": []
@@ -328,6 +419,90 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Crabs are primarily omnivores and their diet consists of algae, plankton, and small invertebrates like clams and worms, not typically small fish"
       }
     ]
+  },
+  "crane bird": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A crane bird has big wings."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A crane bird has soft feathers."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A crane bird flies high."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A crane bird builds a nest."
+      }
+    ],
+    "refused": []
+  },
+  "cricket": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A cricket jumps very fast."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cricket has big back legs."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cricket makes a loud noise."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cricket moves on the ground."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A cricket has big eyes.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Cricket eyes are relatively small and compound"
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cricket has a hard shell.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Cricket has an exoskeleton, not a hard shell"
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cricket has tiny wings.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Cricket wings are not tiny, they are large and membranous, allowing them to fly and produce sound."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A cricket eats small plants.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Crickets are omnivores and their diet consists mainly of dead plants, fungi, and insects, not small live plants"
+      }
+    ]
+  },
+  "crow": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A crow has black feathers."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A crow flies in the sky."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A crow makes loud noises."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A crow eats food from the ground."
+      }
+    ],
+    "refused": []
   },
   "deer": {
     "facts": [
@@ -638,6 +813,27 @@
       }
     ]
   },
+  "fly": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A fly has wings."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A fly can fly around."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A fly has big eyes."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A fly lands on food."
+      }
+    ],
+    "refused": []
+  },
   "fox": {
     "facts": [
       {
@@ -782,8 +978,46 @@
     ]
   },
   "grasshopper": {
-    "facts": [],
-    "refused": []
+    "facts": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A grasshopper jumps very high."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A grasshopper has big eyes."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A grasshopper has strong back legs."
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A grasshopper hops on the ground."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-23",
+        "fact": "A grasshopper has big wings.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Grasshoppers have wings, but they are not necessarily big"
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A grasshopper eats leaves.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Grasshoppers primarily eat plants, but their diet consists mainly of grasses, seeds, and stems, not leaves"
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A grasshopper makes a loud sound.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all grasshoppers make loud sounds, and the sound is typically made by males"
+      },
+      {
+        "checked": "2026-10-23",
+        "fact": "A grasshopper has a green body.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all grasshoppers have a green body, they can be various colors"
+      }
+    ]
   },
   "hawk": {
     "facts": [
@@ -832,6 +1066,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: A helicopter's spinning wings are called blades, not wings"
       }
     ]
+  },
+  "heron": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A heron catches fish in water."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A heron has long legs."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A heron flies with big wings."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A heron lives near a lake."
+      }
+    ],
+    "refused": []
   },
   "horse": {
     "facts": [
@@ -923,6 +1178,33 @@
     ],
     "refused": []
   },
+  "kingfisher": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A kingfisher catches fish."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A kingfisher has bright feathers."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A kingfisher flies over water."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A kingfisher lives near a river."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A kingfisher has a big beak.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A kingfisher actually has a long, pointed beak, not necessarily big."
+      }
+    ]
+  },
   "ladybug": {
     "facts": [
       {
@@ -1003,6 +1285,27 @@
       }
     ]
   },
+  "macaw": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A macaw has bright feathers."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A macaw can fly high."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A macaw has a big beak."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A macaw makes loud noise."
+      }
+    ],
+    "refused": []
+  },
   "monkey": {
     "facts": [
       {
@@ -1048,6 +1351,33 @@
         "checked": "2026-10-20",
         "fact": "A mosquito makes a buzzing sound.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Mosquitoes make a high-pitched whining or humming sound, not a buzzing sound"
+      }
+    ]
+  },
+  "moth": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A moth flies around light."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A moth has soft wings."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A moth hides in dark places."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A moth comes out at night."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A moth eats old clothes.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all moths eat old clothes, some moths do not eat at all as adults and the ones that do, mostly eat nectar or other substances"
       }
     ]
   },
@@ -1227,6 +1557,27 @@
       {
         "checked": "2026-10-10",
         "fact": "A peacock walks on its legs."
+      }
+    ],
+    "refused": []
+  },
+  "pelican": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A pelican has a big beak."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A pelican catches fish in water."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A pelican flaps its wings."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A pelican lives near the sea."
       }
     ],
     "refused": []
@@ -1513,6 +1864,33 @@
       }
     ]
   },
+  "seagull": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A seagull flies high."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A seagull finds food on beach."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A seagull makes loud noise."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A seagull has bright eyes."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A seagull has sharp wings.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Seagulls have sharp beaks and sharp claws, but their wings are not sharp."
+      }
+    ]
+  },
   "seahorse": {
     "facts": [
       {
@@ -1590,6 +1968,38 @@
         "checked": "2026-10-10",
         "fact": "A sheep gives us milk.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Sheep are not typically raised for milk, cows and goats are more common milk-producing animals"
+      }
+    ]
+  },
+  "snail": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A snail has a shell."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A snail moves slowly."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A snail carries its home."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A snail leaves a trail."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A snail eats leaves.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Snails primarily eat plants, but they tend to eat more stems, flowers, and fruits, rather than just leaves"
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A snail comes out at night.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Snails can come out at any time, not just at night"
       }
     ]
   },
@@ -1752,6 +2162,33 @@
       }
     ],
     "refused": []
+  },
+  "stork": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A stork flies in the air."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A stork has a big beak."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A stork builds a nest."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A stork has soft feathers."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A stork carries babies.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Storks do not actually carry babies. According to folklore, storks are said to deliver babies, but in reality, they are birds that do not have the ability to carry human babies."
+      }
+    ]
   },
   "strawberry": {
     "facts": [
@@ -1976,6 +2413,54 @@
       }
     ]
   },
+  "vulture": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A vulture flies high."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A vulture has sharp claws."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A vulture finds dead animals."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A vulture has big wings."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A vulture eats old food.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Vultures eat dead animals, not just old food"
+      }
+    ]
+  },
+  "wasp": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A wasp flies in the air."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A wasp has a big sting."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A wasp makes a nest."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A wasp eats sweet food."
+      }
+    ],
+    "refused": []
+  },
   "watermelon": {
     "facts": [
       {
@@ -2046,6 +2531,54 @@
       {
         "checked": "2026-10-10",
         "fact": "A wolf eats meat."
+      }
+    ],
+    "refused": []
+  },
+  "woodpecker": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A woodpecker pecks trees."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A woodpecker eats bugs."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A woodpecker flies up high."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A woodpecker has a strong beak."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A woodpecker has bright feathers.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The statement is too general, woodpeckers have a variety of feather colors and patterns, not all of them are bright"
+      }
+    ]
+  },
+  "worm": {
+    "facts": [
+      {
+        "checked": "2026-10-22",
+        "fact": "A worm moves in the ground."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A worm has a tiny mouth."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A worm eats old food."
+      },
+      {
+        "checked": "2026-10-22",
+        "fact": "A worm wiggles its body."
       }
     ],
     "refused": []

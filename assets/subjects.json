@@ -1,5 +1,6 @@
 {
   "birds": [
+    "crane bird",
     "eagle",
     "flamingo",
     "hawk",
@@ -7,6 +8,8 @@
     "owl",
     "parrot",
     "peacock",
+    "pelican",
+    "seagull",
     "swan"
   ],
   "farm animals": [
@@ -37,11 +40,17 @@
   "insects": [
     "ant",
     "bee",
+    "beetle",
     "butterfly",
+    "cricket",
     "dragonfly",
     "ladybug",
     "mosquito",
-    "spider"
+    "snail",
+    "spider",
+    "worm",
+    "grasshopper",
+    "caterpillar"
   ],
   "sea animals": [
     "whale",
