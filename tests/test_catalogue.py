@@ -91,6 +91,18 @@ def test_the_best_framed_clip_is_first():
           "and is zero when nothing matches")
 
 
+
+def test_every_added_column_can_be_written():
+    print("test_every_added_column_can_be_written")
+    # A column added by a migration but missing from the allow-list is written by nothing,
+    # and the first stage that tries raises. cover_subjects went out like that: the cover
+    # stage would have failed on the next daily run. Nothing but a whole run reached it.
+    from core import db
+    for table, column, _decl in db._MIGRATIONS:
+        allowed = db._VIDEO_FIELDS if table == "videos" else db._CARD_FIELDS
+        check(column in allowed, f"{table}.{column} can be written")
+
+
 if __name__ == "__main__":
     test_a_clip_is_never_used_twice_in_one_video()
     test_a_subject_with_nothing_left_is_drawn_rather_than_repeated()
@@ -98,4 +110,5 @@ if __name__ == "__main__":
     test_exclusions_can_be_carried_in()
     test_a_subject_with_no_clips_asks_for_a_drawing()
     test_the_best_framed_clip_is_first()
+    test_every_added_column_can_be_written()
     print("ALL CATALOGUE TESTS PASSED")

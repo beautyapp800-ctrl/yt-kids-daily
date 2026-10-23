@@ -68,16 +68,19 @@ CREATE TABLE IF NOT EXISTS used_subjects (
 
 _VIDEO_FIELDS = {"theme", "status", "title", "seo_title", "description", "tags", "duration_s",
                  "video_path", "thumbnail_path", "youtube_id", "published_at", "error",
-                 "attempts"}
+                 "attempts", "cover_subjects"}
 _CARD_FIELDS = {"fact", "clip_id", "clip_url", "clip_licence", "image_path", "video_source",
-                "sound_id", "sound_licence", "sound_url", "sound_attribution", "audio_path", "duration_s"}
+                "sound_id", "sound_licence", "sound_url", "sound_attribution", "audio_path", "duration_s",
+                "game_clip_id", "game_clip_url"}
 
 # Columns added after a database already existed. CREATE TABLE IF NOT EXISTS does not add a
 # column to a table that is already there, and this database is committed to git and outlives
 # every schema change, so new columns arrive here. Caught on the first one: sound_url was
 # added to the schema and the existing file carried on without it until an INSERT failed.
 _MIGRATIONS = [("cards", "sound_url", "TEXT"),
-               ("videos", "cover_subjects", "TEXT")]
+               ("videos", "cover_subjects", "TEXT"),
+               ("cards", "game_clip_id", "TEXT"),
+               ("cards", "game_clip_url", "TEXT")]
 
 MAX_ATTEMPTS = 3
 

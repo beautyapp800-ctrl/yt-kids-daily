@@ -1,0 +1,54 @@
+{
+  "pop": {
+    "file": "pop.wav",
+    "title": "Bubble Pop",
+    "creator": "Mafon2",
+    "page": "https://freesound.org/people/Mafon2/sounds/253956",
+    "licence": "cc0",
+    "licence_checked_at_source": true,
+    "evidence": "the page links the CC0 deed and no other licence",
+    "measured": {
+      "seconds": 0.115,
+      "attack": 0.0
+    }
+  },
+  "whoosh": {
+    "file": "whoosh.wav",
+    "title": "Funny Swish",
+    "creator": "deleted_user_6479820",
+    "page": "https://freesound.org/people/deleted_user_6479820/sounds/388005",
+    "licence": "cc0",
+    "licence_checked_at_source": true,
+    "evidence": "the page links the CC0 deed and no other licence",
+    "measured": {
+      "seconds": 0.234,
+      "attack": 0.042
+    }
+  },
+  "tick": {
+    "file": "tick.wav",
+    "title": "SFX Ambiance: Clock Tick",
+    "creator": "trullilulli",
+    "page": "https://freesound.org/people/trullilulli/sounds/422642",
+    "licence": "cc0",
+    "licence_checked_at_source": true,
+    "evidence": "the page links the CC0 deed and no other licence",
+    "measured": {
+      "seconds": 0.035,
+      "attack": 0.01
+    }
+  },
+  "sting": {
+    "file": "sting.wav",
+    "title": "Achievement Happy Beeps Jingle",
+    "creator": "CogFireStudios",
+    "page": "https://freesound.org/people/CogFireStudios/sounds/619838",
+    "licence": "cc0",
+    "licence_checked_at_source": true,
+    "evidence": "the page links the CC0 deed and no other licence",
+    "measured": {
+      "seconds": 1.862,
+      "attack": 0.009
+    }
+  }
+}
