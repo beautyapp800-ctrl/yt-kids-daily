@@ -81,6 +81,21 @@
       }
     ]
   },
+  "avocado": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Avocado in Vezo",
+        "why": "a place, possibly with ambient or environmental sounds"
+      },
+      {
+        "title": "it\u2019s an avocado.. thanks",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "bear": {
     "candidates_seen": 7,
     "refused": [
@@ -351,6 +366,53 @@
   "centipede": {
     "candidates_seen": 0,
     "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "cherry": {
+    "candidates_seen": 10,
+    "refused": [
+      {
+        "title": "Keyboard clicking typing Cherry Red Mechanical",
+        "why": "keyboard typing sounds"
+      },
+      {
+        "title": "Cherry Red Typing SFX 320KBPS MP3",
+        "why": "a typing sound effect"
+      },
+      {
+        "title": "leopold fc980m pd cherry mx black.flac",
+        "why": "a keyboard switch being activated"
+      },
+      {
+        "title": "crows (in cherry tree)",
+        "why": "crows"
+      },
+      {
+        "title": "Cherry (Instrumental Version)",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Cherry",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Cherry",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "k8 - \u041c\u0438\u0440 \u0412\u043e\u043a\u0440\u0443\u0433 \u0422\u0435\u0431\u044f feat. Cherry (Full Version)",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "K8 feat. \u0412\u0435\u0440\u043e\u043d\u0438\u043a\u0430 Cherry - \u0410 \u044f \u0432\u0441\u0435 \u0442\u0430\u043a\u0436\u0435(And I all also)",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Cherry Blossom (ISRC USUAN1100382)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -946,8 +1008,29 @@
     ]
   },
   "falcon": {
-    "candidates_seen": 0,
-    "refused": [],
+    "candidates_seen": 9,
+    "refused": [
+      {
+        "title": "Falcon Leg Bells 3.mp3",
+        "why": "bells, possibly on a falcon's leg, but not the sound of a falcon itself"
+      },
+      {
+        "title": "Falcon Leg Bells 1.mp3",
+        "why": "bells, likely from a falconry or costume context"
+      },
+      {
+        "title": "Falcon Leg Bells 5.mp3",
+        "why": "bells, possibly on a falconer's equipment"
+      },
+      {
+        "title": "Falcon Leg Bells 6.mp3",
+        "why": "bells, possibly on a falconry leg harness"
+      },
+      {
+        "title": "Falcon Leg Bells 2.mp3",
+        "why": "bells, possibly on a falcon's leg, but not the sound of a falcon itself"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1429,15 +1512,81 @@
     "sounds": []
   },
   "hummingbird": {
-    "candidates_seen": 2,
+    "candidates_seen": 9,
     "refused": [
       {
-        "title": "hummingbird fight and call.mp3",
-        "why": "licence at the source is by: the page links by 4.0"
+        "title": "Hummingbird Siren",
+        "why": "a siren"
       },
       {
-        "title": "hummingbird-at-feeder.wav",
-        "why": "licence at the source is by: the page links by 4.0"
+        "title": "Chirping Hummingbird",
+        "why": "a bird chirping, likely not a hummingbird as hummingbirds do not typically chirp"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-24",
+        "creator": "parabolix",
+        "id": "cb92bf08-bb91-44d9-9785-8c0f1a6c3327",
+        "is": "a hummingbird's sound, possibly slowed down",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/parabolix/sounds/518898",
+        "seconds": 139.8,
+        "source": "freesound",
+        "title": "slowed hummingbirds.wav",
+        "url": "https://cdn.freesound.org/previews/518/518898_1036771-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-24",
+        "creator": "jefftbyrd",
+        "id": "e6988a82-e2af-444d-94fd-70be1f74e8bd",
+        "is": "ambient sound of hummingbirds on Orcas Island, Washington",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/jefftbyrd/sounds/485561",
+        "seconds": 188.0,
+        "source": "freesound",
+        "title": "Hummingbirds on Orcas Island, Washington",
+        "url": "https://cdn.freesound.org/previews/485/485561_4174147-hq.mp3"
+      }
+    ]
+  },
+  "ibis": {
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "Ig-Onye ana agw\u1ecd ibi \u1ecd na-eto af\u1ecd aghagh\u1ecb iweta ihe o Deere n' aj\u1ecd \u1ecdh\u1ecba",
+        "why": "a person speaking in the Igbo language, possibly about a Deere tractor"
+      },
+      {
+        "title": "Ig-Erekwala \u1ecdk\u1ee5k\u1ecd nwere otu \u1ecdkpa n'ak\u1ee5k\u1ee5 ebe ibi",
+        "why": "a person speaking in the Igbo language"
+      },
+      {
+        "title": "Martinet blanc, ibis escarlata i m\u00e9s",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "<div class='fn'> Hadada Ibis (Bostrychia hagedash)</div>",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      },
+      {
+        "title": "Glossy Ibis (Plegadis falcinellus) call",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      },
+      {
+        "title": "Pl-ibis",
+        "why": "licence at the source is by: Commons says: cc by 2.5"
       }
     ],
     "silent": true,
@@ -1483,6 +1632,29 @@
     "silent": true,
     "sounds": []
   },
+  "kiwi": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "Kiwi Bird SFX.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Kiwi Bird 2 SFX.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Female-ni-brown-kiwi",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      },
+      {
+        "title": "Male-ni-brown-kiwi",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "ladybug": {
     "candidates_seen": 3,
     "refused": [
@@ -1505,6 +1677,33 @@
   "lamb": {
     "candidates_seen": 0,
     "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "lemon": {
+    "candidates_seen": 20,
+    "refused": [
+      {
+        "title": "Crushing a Lemon 1_",
+        "why": "the sound of crushing a lemon, likely a fruit being squeezed or compressed"
+      },
+      {
+        "title": "lemon sponge dorothy.MP3",
+        "why": "a person, likely Dorothy, talking or a song about lemon sponge"
+      },
+      {
+        "title": "Crushing a Lemon 1_3",
+        "why": "the sound of crushing a lemon, likely a fruit being squeezed or compressed"
+      },
+      {
+        "title": "Korg Mono-Poly - Big Lemon - E1 (Big Lemon-28-127-257P.aif)",
+        "why": "a synthesizer sound from a Korg Mono-Poly"
+      },
+      {
+        "title": "Korg Mono-Poly - Big Lemon - A#1 (Big Lemon-34-127-3PUD.aif)",
+        "why": "a Korg Mono-Poly synthesizer sound"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1659,6 +1858,21 @@
         "url": "https://cdn.freesound.org/previews/555/555096_7455632-hq.mp3"
       }
     ]
+  },
+  "mango": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Mango.mp3",
+        "why": "silence or no sound, as a mango does not make a distinct sound"
+      },
+      {
+        "title": "Cutting Mango 2 (cutting board).m4a",
+        "why": "a cutting action on a cutting board, possibly with a mango being cut"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "monkey": {
     "candidates_seen": 25,
@@ -1953,6 +2167,12 @@
     "silent": true,
     "sounds": []
   },
+  "peach": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "peacock": {
     "candidates_seen": 6,
     "refused": [],
@@ -1993,6 +2213,21 @@
         "url": "https://cdn.freesound.org/previews/675/675965_2524442-hq.mp3"
       }
     ]
+  },
+  "pear": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "En-uk-pear",
+        "why": "licence at the source is by: Commons says: cc by 3.0 us"
+      },
+      {
+        "title": "Pears From New Zealand",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "pelican": {
     "candidates_seen": 0,
@@ -2100,6 +2335,47 @@
       }
     ]
   },
+  "pigeon": {
+    "candidates_seen": 17,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-24",
+        "creator": "mcmikai",
+        "id": "836af996-d7d4-44fa-bb0d-33d3ccee84ea",
+        "is": "pigeons flying",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/mcmikai/sounds/532180",
+        "seconds": 5.6,
+        "source": "freesound",
+        "title": "Pigeons flying",
+        "url": "https://cdn.freesound.org/previews/532/532180_9735871-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-24",
+        "creator": "maciejadach",
+        "id": "68083053-c093-4903-aa1a-b5985d0d6c76",
+        "is": "pigeons making their sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/maciejadach/sounds/571338",
+        "seconds": 3.7,
+        "source": "freesound",
+        "title": "pigeons starting.wav",
+        "url": "https://cdn.freesound.org/previews/571/571338_12894506-hq.mp3"
+      }
+    ]
+  },
   "police car": {
     "candidates_seen": 19,
     "refused": [
@@ -2165,6 +2441,37 @@
     "silent": true,
     "sounds": []
   },
+  "potato": {
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "Bite potato chips",
+        "why": "a bag of potato chips being opened or bitten into"
+      },
+      {
+        "title": "potato chips2.wav",
+        "why": "a bag or packet of potato chips being opened or a similar crunchy snack sound"
+      },
+      {
+        "title": "Potato salad",
+        "why": "a person preparing or eating a salad made with potatoes"
+      },
+      {
+        "title": "potato chip bag.wav",
+        "why": "a bag of potato chips being opened or rustled"
+      },
+      {
+        "title": "Marbles drop into a potato chip can.MP3",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "En-uk-potato",
+        "why": "licence at the source is by: Commons says: cc by 3.0 us"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "praying mantis": {
     "candidates_seen": 1,
     "refused": [
@@ -2222,6 +2529,21 @@
         "url": "https://cdn.freesound.org/previews/186/186921_545448-hq.mp3"
       }
     ]
+  },
+  "roadrunner": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Nl-roadrunners",
+        "why": "a file or webpage about roadrunners, possibly from the Netherlands (NL), rather than the sound of the bird itself"
+      },
+      {
+        "title": "Nl-roadrunner",
+        "why": "a car or possibly an engine, the 'NL' prefix may indicate it is from the Netherlands"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "robin": {
     "candidates_seen": 5,
@@ -2474,30 +2796,13 @@
     "sounds": []
   },
   "sparrow": {
-    "candidates_seen": 6,
+    "candidates_seen": 5,
     "refused": [],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-22",
-        "creator": "felix.blume",
-        "id": "b7f7cd94-27d5-4310-a295-d46e342ae17b",
-        "is": "a sparrow singing and flying in the bush",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/felix.blume/sounds/177787",
-        "seconds": 178.9,
-        "source": "freesound",
-        "title": "Little sparrow singing and flying in the bush (Patagonia, Argentina)",
-        "url": "https://cdn.freesound.org/previews/177/177787_1661766-hq.mp3"
-      },
-      {
-        "attribution_required": false,
-        "checked": "2026-10-22",
+        "checked": "2026-10-24",
         "creator": "JPBILLINGSLEYJR",
         "id": "a071c4e8-2d9e-456d-81b0-979a2f50fec8",
         "is": "a chipping sparrow making its sound",
@@ -2511,6 +2816,23 @@
         "source": "freesound",
         "title": "Chipping sparrow",
         "url": "https://cdn.freesound.org/previews/465/465889_9786444-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-24",
+        "creator": "felix.blume",
+        "id": "b7f7cd94-27d5-4310-a295-d46e342ae17b",
+        "is": "a sparrow singing and flying in the bush",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/177787",
+        "seconds": 178.9,
+        "source": "freesound",
+        "title": "Little sparrow singing and flying in the bush (Patagonia, Argentina)",
+        "url": "https://cdn.freesound.org/previews/177/177787_1661766-hq.mp3"
       }
     ]
   },
@@ -2548,6 +2870,17 @@
       {
         "title": "Spider_Killed_Foley_01.wav",
         "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "spoonbill": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "roseate_spoonbill.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
       }
     ],
     "silent": true,
@@ -2819,42 +3152,13 @@
     "sounds": []
   },
   "toucan": {
-    "candidates_seen": 8,
-    "refused": [
-      {
-        "title": "Toco Toucan call (Ramphastos toco)",
-        "why": "licence at the source is by: Commons says: cc by 4.0"
-      },
-      {
-        "title": "Red-Billed Toucan",
-        "why": "licence at the source is by: Commons says: cc by 3.0"
-      },
-      {
-        "title": "red_billed_toucan.wav",
-        "why": "licence at the source is unknown: no licence link found on the page"
-      },
-      {
-        "title": "Toucans",
-        "why": "licence at the source is by: Commons says: cc by 3.0"
-      },
-      {
-        "title": "keel_billed_toucan.wav",
-        "why": "licence at the source is unknown: no licence link found on the page"
-      },
-      {
-        "title": "Chesnut-mandibled toucan",
-        "why": "licence at the source is by: Commons says: cc by 3.0"
-      },
-      {
-        "title": "Chesnut Mandibled Toucan",
-        "why": "licence at the source is by: Commons says: cc by 3.0"
-      }
-    ],
+    "candidates_seen": 13,
+    "refused": [],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-22",
+        "checked": "2026-10-24",
         "creator": "felix.blume",
         "id": "2331b723-a4b9-4870-aaf4-ea779a35e9e1",
         "is": "a toucan screaming in the Amazon Forest",
@@ -2868,6 +3172,23 @@
         "source": "freesound",
         "title": "Toucan screaming in the Amazon Forest (Venezuela)",
         "url": "https://cdn.freesound.org/previews/376/376669_1661766-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-24",
+        "creator": "felix.blume",
+        "id": "aa189b43-cbc6-4cb4-b501-ca563702ccc5",
+        "is": "a mix of forest sounds including a toucan",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/671452",
+        "seconds": 182.0,
+        "source": "freesound",
+        "title": "Forest river in the morning with waterflow, bird, toucan, insect, day cricket, subtle dew drops on foliage recorded in Amazon rainforest",
+        "url": "https://cdn.freesound.org/previews/671/671452_1661766-hq.mp3"
       }
     ]
   },

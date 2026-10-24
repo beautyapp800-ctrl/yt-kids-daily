@@ -9,6 +9,7 @@
     "parrot",
     "peacock",
     "pelican",
+    "pigeon",
     "seagull",
     "swan",
     "vulture"
@@ -31,16 +32,21 @@
     "turkey"
   ],
   "fruit and vegetables": [
-    "banana",
     "apple",
-    "orange",
-    "strawberry",
-    "watermelon",
-    "carrot",
-    "tomato",
+    "avocado",
+    "banana",
     "broccoli",
+    "carrot",
+    "cherry",
     "grapes",
-    "pineapple"
+    "lemon",
+    "orange",
+    "pear",
+    "pineapple",
+    "potato",
+    "strawberry",
+    "tomato",
+    "watermelon"
   ],
   "insects": [
     "ant",

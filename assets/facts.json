@@ -68,6 +68,43 @@
       }
     ]
   },
+  "avocado": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "An avocado grows on a tree."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "An avocado has a big seed."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "An avocado has a skin."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "An avocado has a pit inside."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-24",
+        "fact": "An avocado is green.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Some avocados are not green, they can be purple or black when ripe"
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "An avocado is soft inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The pit or stone in the center of an avocado is hard, not soft."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "An avocado tastes good.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all avocados taste good to all people"
+      }
+    ]
+  },
   "banana": {
     "facts": [
       {
@@ -382,6 +419,33 @@
       }
     ],
     "refused": []
+  },
+  "cherry": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A cherry grows on a tree."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A cherry has a pit inside."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A cherry is sweet to eat."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A cherry has a stem on it."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A cherry is red and juicy.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Some cherries are not red, they can be yellow or purple"
+      }
+    ]
   },
   "chicken": {
     "facts": [
@@ -1292,7 +1356,45 @@
     "refused": []
   },
   "hummingbird": {
-    "facts": [],
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A hummingbird flies very fast."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A hummingbird has bright feathers."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A hummingbird drinks nectar."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A hummingbird beats its wings."
+      }
+    ],
+    "refused": []
+  },
+  "ibis": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "An ibis has a long beak."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "An ibis finds food in water."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "An ibis has soft feathers."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "An ibis wades in water."
+      }
+    ],
     "refused": []
   },
   "jellyfish": {
@@ -1370,6 +1472,38 @@
       }
     ]
   },
+  "kiwi": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A kiwi has soft hair."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A kiwi has a sweet inside."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A kiwi has a hard skin."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A kiwi grows on a plant."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A kiwi grows on a vine.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A kiwi grows on a woody vine, but more accurately it grows on a kiwi plant which has a woody stem with vines or climbing stems."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A kiwi is small and green.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A kiwi is typically brown on the outside, not green. The green color is on the inside."
+      }
+    ]
+  },
   "ladybug": {
     "facts": [
       {
@@ -1419,6 +1553,27 @@
       {
         "checked": "2026-10-21",
         "fact": "A lamb runs with its mom."
+      }
+    ],
+    "refused": []
+  },
+  "lemon": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A lemon is sour."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A lemon has a yellow skin."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A lemon grows on a tree."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A lemon has juice."
       }
     ],
     "refused": []
@@ -1521,6 +1676,43 @@
         "checked": "2026-10-23",
         "fact": "A magpie sings a loud song.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Magpies do not sing songs like most birds, they make other sounds"
+      }
+    ]
+  },
+  "mango": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A mango grows on a tree."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A mango is sweet and juicy."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A mango has a sweet smell."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A mango has a hard pit inside."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A mango has a big pit.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A mango has a pit, but it's not typically described as big. The pit is actually the stone in the center of the mango."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A mango has soft skin.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Mango skin is not soft, it's usually thick and slightly fuzzy"
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A mango has a yellow skin.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Mango skin can be yellow, but also orange, red, green, or a combination of these colors"
       }
     ]
   },
@@ -1812,6 +2004,27 @@
       }
     ]
   },
+  "peach": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A peach grows on a tree."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A peach is sweet to eat."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A peach has a fuzzy skin."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A peach has a big stone."
+      }
+    ],
+    "refused": []
+  },
   "peacock": {
     "facts": [
       {
@@ -1832,6 +2045,33 @@
       }
     ],
     "refused": []
+  },
+  "pear": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A pear grows on a tree."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A pear is sweet to eat."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A pear has a skin."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A pear is juicy."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A pear has a pit.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A pear has seeds in the core, not a pit. Pits are typically found in stone fruits like peaches and plums."
+      }
+    ]
   },
   "pelican": {
     "facts": [
@@ -1902,6 +2142,27 @@
       }
     ]
   },
+  "pigeon": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A pigeon flies in the air."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A pigeon has soft feathers."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A pigeon eats food on ground."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A pigeon makes a cooing sound."
+      }
+    ],
+    "refused": []
+  },
   "pineapple": {
     "facts": [
       {
@@ -1964,6 +2225,33 @@
       }
     ],
     "refused": []
+  },
+  "potato": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A potato grows in the ground."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A potato has a skin."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A potato makes a yummy mash."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A potato has eyes."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A potato is brown and round.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Potatoes are often brown, but they can also be other colors and are not always round, they can be oval or irregularly shaped"
+      }
+    ]
   },
   "praying mantis": {
     "facts": [
@@ -2087,6 +2375,33 @@
       }
     ],
     "refused": []
+  },
+  "roadrunner": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A roadrunner runs very fast."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A roadrunner catches snakes."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A roadrunner finds food on ground."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A roadrunner has strong legs."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A roadrunner has bright feathers.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Roadrunners are known for their brown and white feathers, not bright feathers"
+      }
+    ]
   },
   "robin": {
     "facts": [
@@ -2428,6 +2743,38 @@
         "checked": "2026-10-10",
         "fact": "A spider runs very fast.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Spiders do not run, they walk or crawl"
+      }
+    ]
+  },
+  "spoonbill": {
+    "facts": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A spoonbill has a big bill."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A spoonbill lives near the water."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A spoonbill wades in the water."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A spoonbill has soft feathers."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-24",
+        "fact": "A spoonbill catches fish in water.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Spoonbills do not typically catch fish, they catch small aquatic creatures such as crustaceans, insects, and frogs."
+      },
+      {
+        "checked": "2026-10-24",
+        "fact": "A spoonbill eats small fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Spoonbills primarily eat small crustaceans, such as shrimp and crabs, as well as insects and other invertebrates, rather than small fish."
       }
     ]
   },
