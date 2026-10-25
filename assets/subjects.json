@@ -66,16 +66,23 @@
     "worm"
   ],
   "sea animals": [
-    "whale",
-    "dolphin",
-    "shark",
-    "octopus",
-    "sea turtle",
-    "jellyfish",
+    "clownfish",
     "crab",
-    "starfish",
+    "dolphin",
+    "hermit crab",
+    "jellyfish",
+    "lobster",
+    "octopus",
+    "penguin",
+    "sea turtle",
     "seahorse",
-    "penguin"
+    "seal",
+    "shark",
+    "shrimp",
+    "squid",
+    "starfish",
+    "stingray",
+    "whale"
   ],
   "transport": [
     "tractor",

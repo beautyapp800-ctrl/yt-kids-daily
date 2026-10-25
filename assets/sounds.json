@@ -457,6 +457,12 @@
       }
     ]
   },
+  "clownfish": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "cockatoo": {
     "candidates_seen": 13,
     "refused": [],
@@ -889,6 +895,29 @@
       }
     ]
   },
+  "eel": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "\u6349\u6ce5\u9c0d-catch the eels-9c4ef0801cdc150aebf775310d347145949f74e4.wav",
+        "why": "a person or people speaking or playing with the concept of catching eels, possibly with sound effects or music"
+      },
+      {
+        "title": "Eel disgust - vocal one shot.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "eel fishing 2.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "eel fishing 1.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "elephant": {
     "candidates_seen": 18,
     "refused": [
@@ -1012,11 +1041,11 @@
     "refused": [
       {
         "title": "Falcon Leg Bells 3.mp3",
-        "why": "bells, possibly on a falcon's leg, but not the sound of a falcon itself"
+        "why": "bells, possibly used on a falcon's leg"
       },
       {
         "title": "Falcon Leg Bells 1.mp3",
-        "why": "bells, likely from a falconry or costume context"
+        "why": "bells, possibly used on a falcon's leg"
       },
       {
         "title": "Falcon Leg Bells 5.mp3",
@@ -1024,11 +1053,11 @@
       },
       {
         "title": "Falcon Leg Bells 6.mp3",
-        "why": "bells, possibly on a falconry leg harness"
+        "why": "bells, possibly used on a falcon's leg"
       },
       {
         "title": "Falcon Leg Bells 2.mp3",
-        "why": "bells, possibly on a falcon's leg, but not the sound of a falcon itself"
+        "why": "bells, possibly on a falconry leg harness"
       }
     ],
     "silent": true,
@@ -1448,6 +1477,12 @@
       }
     ]
   },
+  "hermit crab": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "heron": {
     "candidates_seen": 1,
     "refused": [
@@ -1520,14 +1555,14 @@
       },
       {
         "title": "Chirping Hummingbird",
-        "why": "a bird chirping, likely not a hummingbird as hummingbirds do not typically chirp"
+        "why": "a bird chirping, likely not a hummingbird as they are known for their humming or buzzing sound, not chirping"
       }
     ],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-24",
+        "checked": "2026-10-25",
         "creator": "parabolix",
         "id": "cb92bf08-bb91-44d9-9785-8c0f1a6c3327",
         "is": "a hummingbird's sound, possibly slowed down",
@@ -1544,10 +1579,10 @@
       },
       {
         "attribution_required": false,
-        "checked": "2026-10-24",
+        "checked": "2026-10-25",
         "creator": "jefftbyrd",
         "id": "e6988a82-e2af-444d-94fd-70be1f74e8bd",
-        "is": "ambient sound of hummingbirds on Orcas Island, Washington",
+        "is": "a recording of hummingbirds in their natural environment on Orcas Island, Washington",
         "licence": "cc0",
         "licence_checked_at_source": true,
         "licence_evidence": "the page links the CC0 deed and no other licence",
@@ -1775,6 +1810,47 @@
     ],
     "silent": true,
     "sounds": []
+  },
+  "lobster": {
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "Lobster Boat Starting and Stopping",
+        "why": "a boat engine starting and stopping"
+      },
+      {
+        "title": "Lobster Breathing",
+        "why": "a person describing or imitating the sound of a lobster breathing, or possibly a sound effect"
+      },
+      {
+        "title": "Lobster Quadrille",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Daniel Birch - 02 - Blue Lobster",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-25",
+        "creator": "TRP",
+        "id": "5719c23c-9150-4229-8f0a-5348e486d0eb",
+        "is": "a lobster making breathing, clicking sounds in a watery environment",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/TRP/sounds/567727",
+        "seconds": 89.2,
+        "source": "freesound",
+        "title": "200612 Lobsters, breathing, clicking, watery, almost electrical 5pm.flac",
+        "url": "https://cdn.freesound.org/previews/567/567727_97550-hq.mp3"
+      }
+    ]
   },
   "macaw": {
     "candidates_seen": 4,
@@ -2483,6 +2559,12 @@
     "silent": true,
     "sounds": []
   },
+  "pufferfish": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "puffin": {
     "candidates_seen": 0,
     "refused": [],
@@ -2696,6 +2778,56 @@
     "silent": true,
     "sounds": []
   },
+  "sea lion": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "Sea Lion screaming in Caleta Portales (Chile)",
+        "why": "a person or people screaming, possibly at a location in Chile"
+      },
+      {
+        "title": "Sea Lion screaming in Caleta Portales (Chile)",
+        "why": "a person or people screaming, possibly at a location in Chile"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-25",
+        "creator": "vanoosbree",
+        "id": "bec0bee5-76bb-4113-82e0-2a017cbacde3",
+        "is": "sea lions",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/vanoosbree/sounds/274299",
+        "seconds": 234.4,
+        "source": "freesound",
+        "title": "Sea lions at Pier 39",
+        "url": "https://cdn.freesound.org/previews/274/274299_5062315-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-25",
+        "creator": "nifvimp",
+        "id": "91d710fc-80f1-4832-8326-81b703d360a3",
+        "is": "a sea lion",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/nifvimp/sounds/680735",
+        "seconds": 3.3,
+        "source": "freesound",
+        "title": "Sea Lion 3.wav",
+        "url": "https://cdn.freesound.org/previews/680/680735_14831112-hq.mp3"
+      }
+    ]
+  },
   "sea turtle": {
     "candidates_seen": 1,
     "refused": [
@@ -2718,6 +2850,60 @@
     "refused": [],
     "silent": true,
     "sounds": []
+  },
+  "seal": {
+    "candidates_seen": 10,
+    "refused": [
+      {
+        "title": "Door Close Heavy Metal Glass Slow Creak Seal Theatre",
+        "why": "a heavy metal glass door creaking shut"
+      },
+      {
+        "title": "Door Close Heavy Metal Glass Medium Creak Seal Theatre",
+        "why": "a creaking door"
+      },
+      {
+        "title": "Seal Up Vocal.wav",
+        "why": "a person or machine making a sealing or locking sound"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-25",
+        "creator": "RavenWolfProds",
+        "id": "4a9972bb-0c67-477f-985b-1c2e32f4e76e",
+        "is": "seal vocalizations",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/RavenWolfProds/sounds/503682",
+        "seconds": 39.0,
+        "source": "freesound",
+        "title": "Aquarium - Seal Vocalizations",
+        "url": "https://cdn.freesound.org/previews/503/503682_9619518-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-25",
+        "creator": "craigsmith",
+        "id": "470f0a2c-8637-40fb-9842-d491a93d2a50",
+        "is": "a seal making calls and flipper claps",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/craigsmith/sounds/675398",
+        "seconds": 24.6,
+        "source": "freesound",
+        "title": "S01-14_Seal call and flipper claps.wav",
+        "url": "https://cdn.freesound.org/previews/675/675398_2524442-hq.mp3"
+      }
+    ]
   },
   "shark": {
     "candidates_seen": 4,
@@ -2783,6 +2969,21 @@
       }
     ]
   },
+  "shrimp": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Bubba Gump Shrimp Company Restaurant Ambience.MP3",
+        "why": "restaurant ambience"
+      },
+      {
+        "title": "Septahelix - Shrimp Rich",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "snail": {
     "candidates_seen": 0,
     "refused": [],
@@ -2796,30 +2997,13 @@
     "sounds": []
   },
   "sparrow": {
-    "candidates_seen": 5,
+    "candidates_seen": 6,
     "refused": [],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-24",
-        "creator": "JPBILLINGSLEYJR",
-        "id": "a071c4e8-2d9e-456d-81b0-979a2f50fec8",
-        "is": "a chipping sparrow making its sound",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/JPBILLINGSLEYJR/sounds/465889",
-        "seconds": 33.0,
-        "source": "freesound",
-        "title": "Chipping sparrow",
-        "url": "https://cdn.freesound.org/previews/465/465889_9786444-hq.mp3"
-      },
-      {
-        "attribution_required": false,
-        "checked": "2026-10-24",
+        "checked": "2026-10-25",
         "creator": "felix.blume",
         "id": "b7f7cd94-27d5-4310-a295-d46e342ae17b",
         "is": "a sparrow singing and flying in the bush",
@@ -2833,6 +3017,23 @@
         "source": "freesound",
         "title": "Little sparrow singing and flying in the bush (Patagonia, Argentina)",
         "url": "https://cdn.freesound.org/previews/177/177787_1661766-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-25",
+        "creator": "JPBILLINGSLEYJR",
+        "id": "a071c4e8-2d9e-456d-81b0-979a2f50fec8",
+        "is": "a chipping sparrow making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/JPBILLINGSLEYJR/sounds/465889",
+        "seconds": 33.0,
+        "source": "freesound",
+        "title": "Chipping sparrow",
+        "url": "https://cdn.freesound.org/previews/465/465889_9786444-hq.mp3"
       }
     ]
   },
@@ -2886,6 +3087,35 @@
     "silent": true,
     "sounds": []
   },
+  "squid": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Korean text to speech pronouncing Hwang Jun-ho from Squid Game",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-25",
+        "creator": "stomachache",
+        "id": "d8858440-4187-41a7-8055-7f9bc6539a05",
+        "is": "a squid making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/stomachache/sounds/53265",
+        "seconds": 4.2,
+        "source": "freesound",
+        "title": "squid.wav",
+        "url": "https://cdn.freesound.org/previews/53/53265_177850-hq.mp3"
+      }
+    ]
+  },
   "squirrel": {
     "candidates_seen": 0,
     "refused": [],
@@ -2908,6 +3138,12 @@
     "sounds": []
   },
   "stick insect": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "stingray": {
     "candidates_seen": 0,
     "refused": [],
     "silent": true,
@@ -3158,7 +3394,7 @@
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-24",
+        "checked": "2026-10-25",
         "creator": "felix.blume",
         "id": "2331b723-a4b9-4870-aaf4-ea779a35e9e1",
         "is": "a toucan screaming in the Amazon Forest",
@@ -3175,7 +3411,7 @@
       },
       {
         "attribution_required": false,
-        "checked": "2026-10-24",
+        "checked": "2026-10-25",
         "creator": "felix.blume",
         "id": "aa189b43-cbc6-4cb4-b501-ca563702ccc5",
         "is": "a mix of forest sounds including a toucan",
@@ -3314,6 +3550,17 @@
   "vulture": {
     "candidates_seen": 0,
     "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "walrus": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "Walrus",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
     "silent": true,
     "sounds": []
   },

@@ -468,6 +468,48 @@
     ],
     "refused": []
   },
+  "clownfish": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A clownfish lives in the sea."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A clownfish hides in a hole."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A clownfish has little fins."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A clownfish finds food to eat."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A clownfish has bright orange skin.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Clownfish are typically bright orange with white stripes, not just bright orange"
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A clownfish swims with friends.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Clownfish are typically solitary or in pairs, not usually in groups of friends"
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A clownfish eats small fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Clownfish primarily eat algae, plankton, and small invertebrates, not small fish"
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A clownfish plays with seaweed.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Clownfish do not typically play with seaweed"
+      }
+    ]
+  },
   "cockatoo": {
     "facts": [
       {
@@ -846,6 +888,27 @@
       {
         "checked": "2026-10-10",
         "fact": "An eagle has big wings."
+      }
+    ],
+    "refused": []
+  },
+  "eel": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "An eel swims in water."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "An eel has a long body."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "An eel has sharp teeth."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "An eel lives in the sea."
       }
     ],
     "refused": []
@@ -1296,6 +1359,27 @@
       }
     ]
   },
+  "hermit crab": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A hermit crab has a shell."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A hermit crab walks sideways."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A hermit crab carries its home."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A hermit crab eats food."
+      }
+    ],
+    "refused": []
+  },
   "heron": {
     "facts": [
       {
@@ -1625,6 +1709,33 @@
       }
     ],
     "refused": []
+  },
+  "lobster": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A lobster has big claws."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A lobster lives in the sea."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A lobster has a hard shell."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A lobster swims in the water."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A lobster eats small fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: lobsters are opportunistic feeders and their diet consists of a variety of food sources, including algae, mollusks, and carrion, but not typically small fish"
+      }
+    ]
   },
   "macaw": {
     "facts": [
@@ -2280,6 +2391,48 @@
       }
     ]
   },
+  "pufferfish": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A pufferfish swims in the water."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A pufferfish blows up big."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A pufferfish lives in the ocean."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A pufferfish moves its tail."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A pufferfish has big spikes.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Pufferfish do not always have big spikes. They have spines that can be extended when they puff up."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A pufferfish eats small fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Pufferfish primarily eat algae and small invertebrates like mollusks and crustaceans, not small fish."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A pufferfish hides in a hole.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Pufferfish do not typically hide in holes, they inflate their bodies to defend themselves"
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A pufferfish has sharp points.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Pufferfish have spines, not sharp points"
+      }
+    ]
+  },
   "puffin": {
     "facts": [
       {
@@ -2505,6 +2658,27 @@
       }
     ]
   },
+  "sea lion": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A sea lion swims in the water."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A sea lion has flippers."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A sea lion eats fish."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A sea lion plays on the beach."
+      }
+    ],
+    "refused": []
+  },
   "sea turtle": {
     "facts": [
       {
@@ -2591,6 +2765,49 @@
       }
     ]
   },
+  "seal": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A seal swims in the water."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A seal eats fish."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A seal uses flippers to swim."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A seal has soft fur.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Seals have two layers of fur: a thick undercoat and a longer, coarser outer layer, but it's not typically described as soft"
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A seal plays on the ice.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all seals play on ice, some species live in warmer waters"
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A seal jumps up high.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Seals do not typically jump up high, they are semi-aquatic marine mammals that usually move by flipping or flopping on their bellies on land"
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A seal has a big nose.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Seals do not have a big nose, they have a short snout"
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A seal lives with friends.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Seals are typically solitary animals and only sometimes gather in large groups, but they do not always live with friends"
+      }
+    ]
+  },
   "shark": {
     "facts": [
       {
@@ -2638,6 +2855,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Sheep are not typically raised for milk, cows and goats are more common milk-producing animals"
       }
     ]
+  },
+  "shrimp": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A shrimp has a big tail."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A shrimp lives in water."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A shrimp has big eyes."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A shrimp has a hard shell."
+      }
+    ],
+    "refused": []
   },
   "snail": {
     "facts": [
@@ -2778,6 +3016,33 @@
       }
     ]
   },
+  "squid": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A squid has big eyes."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A squid swims in the water."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A squid has soft tentacles."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A squid hides in the dark."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A squid has a long body.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Squid have a long, slender mantle and a set of tentacles, but the body itself is not typically described as long"
+      }
+    ]
+  },
   "squirrel": {
     "facts": [
       {
@@ -2859,6 +3124,27 @@
       {
         "checked": "2026-10-20",
         "fact": "A stick insect walks slowly."
+      }
+    ],
+    "refused": []
+  },
+  "stingray": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A stingray swims in the water."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A stingray has a big flat body."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A stingray has a long tail."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A stingray hides in sand."
       }
     ],
     "refused": []
@@ -3158,6 +3444,33 @@
         "checked": "2026-10-22",
         "fact": "A vulture eats old food.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Vultures eat dead animals, not just old food"
+      }
+    ]
+  },
+  "walrus": {
+    "facts": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A walrus swims in the water."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A walrus has big teeth."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A walrus eats fish."
+      },
+      {
+        "checked": "2026-10-25",
+        "fact": "A walrus uses its tusks."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-25",
+        "fact": "A walrus has a big nose.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A walrus does not have a big nose, it has tusks and a snout"
       }
     ]
   },

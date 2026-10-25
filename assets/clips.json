@@ -2025,6 +2025,96 @@
       }
     ]
   },
+  "clownfish": {
+    "candidates_seen": 6,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/07/22/292831_large.mp4",
+        "id": 292831,
+        "licence": "Pixabay Content Licence",
+        "listed": "An orange and white fish, a coral reef, a blue background, a purple background, a yellow background, a red background, a green background, a white background, a blue and white background, a purple and white background, a yellow and white background, a red and white",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "clownfish",
+        "seconds": 20,
+        "structures": [],
+        "subject_area": 0.3598,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/07/22/292831_large.jpg",
+        "url": "https://pixabay.com/videos/id-292831/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/11/216282_small.mp4",
+        "id": 216282,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/11/216282_small.jpg",
+        "url": "https://pixabay.com/videos/id-216282/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/10/11/27784-365891099_small.mp4",
+        "id": 27784,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/10/11/27784-365891099_small.jpg",
+        "url": "https://pixabay.com/videos/id-27784/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/09/24/5663-184227059_medium.mp4",
+        "id": 5663,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 50,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/09/24/5663-184227059_medium.jpg",
+        "url": "https://pixabay.com/videos/id-5663/",
+        "why": "the model called it fish",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/09/23/5648-184227025_large.mp4",
+        "id": 5648,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "anemone",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/09/23/5648-184227025_large.jpg",
+        "url": "https://pixabay.com/videos/id-5648/",
+        "why": "the model called it anemone",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/09/32140-390688083_large.mp4",
+        "id": 32140,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "coral",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/09/32140-390688083_large.jpg",
+        "url": "https://pixabay.com/videos/id-32140/",
+        "why": "the model called it coral",
+        "width": 1920
+      }
+    ],
+    "search_term": "clownfish"
+  },
   "cockatoo": {
     "candidates_seen": 12,
     "clips": [],
@@ -3609,6 +3699,117 @@
       }
     ]
   },
+  "eel": {
+    "candidates_seen": 8,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/06/219676_small.mp4",
+        "id": 219676,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "snail",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/06/219676_small.jpg",
+        "url": "https://pixabay.com/videos/id-219676/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/26/156148-811878138_small.mp4",
+        "id": 156148,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.002,
+        "said": "fish",
+        "seconds": 32,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/26/156148-811878138_small.jpg",
+        "url": "https://pixabay.com/videos/id-156148/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/01/26/254703_large.mp4",
+        "id": 254703,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "fish",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/01/26/254703_large.jpg",
+        "url": "https://pixabay.com/videos/id-254703/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/31/126189-735667247_large.mp4",
+        "id": 126189,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "fish",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/31/126189-735667247_large.jpg",
+        "url": "https://pixabay.com/videos/id-126189/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/19/85683-591865449_small.mp4",
+        "id": 85683,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 45,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/19/85683-591865449_small.jpg",
+        "url": "https://pixabay.com/videos/id-85683/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/19/85684-590014730_small.mp4",
+        "id": 85684,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/19/85684-590014730_small.jpg",
+        "url": "https://pixabay.com/videos/id-85684/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/12/19/30364-380729062_large.mp4",
+        "id": 30364,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.928,
+        "said": "octopus",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/12/19/30364-380729062_large.jpg",
+        "url": "https://pixabay.com/videos/id-30364/",
+        "why": "the model called it octopus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/15/120389-720880490_large.mp4",
+        "id": 120389,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.629,
+        "said": "snake",
+        "seconds": 39,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/15/120389-720880490_large.jpg",
+        "url": "https://pixabay.com/videos/id-120389/",
+        "why": "the model called it snake",
+        "width": 1920
+      }
+    ],
+    "search_term": "eel"
+  },
   "elephant": {
     "candidates_seen": 12,
     "clips": [
@@ -4049,19 +4250,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2023/02/28/152563-803189221_large.mp4",
-        "id": 152563,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "bird",
-        "seconds": 10,
-        "thumbnail": "https://cdn.pixabay.com/video/2023/02/28/152563-803189221_large.jpg",
-        "url": "https://pixabay.com/videos/id-152563/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2022/09/17/131647-750753102_large.mp4",
         "id": 131647,
         "licence": "Pixabay Content Licence",
@@ -4070,6 +4258,19 @@
         "seconds": 25,
         "thumbnail": "https://cdn.pixabay.com/video/2022/09/17/131647-750753102_large.jpg",
         "url": "https://pixabay.com/videos/id-131647/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/02/28/152563-803189221_large.mp4",
+        "id": 152563,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/28/152563-803189221_large.jpg",
+        "url": "https://pixabay.com/videos/id-152563/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -5807,6 +6008,147 @@
       }
     ]
   },
+  "hermit crab": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/10/19/92545-636709870_large.mp4",
+        "id": 92545,
+        "licence": "Pixabay Content Licence",
+        "listed": "Crabs, sand, dirt, shells, rocks, and a beach.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "crab",
+        "seconds": 57,
+        "structures": [],
+        "subject_area": 0.0183,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/19/92545-636709870_large.jpg",
+        "url": "https://pixabay.com/videos/id-92545/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/23/47896-452144075_large.mp4",
+        "id": 47896,
+        "licence": "Pixabay Content Licence",
+        "listed": "A crab, a rock, a body of water, a reflection, a shore, a pond, a river, a lake, a stream, a waterfall, a beach, a shore, a pond, a river, a lake, a stream, a waterfall, a beach",
+        "people": 0,
+        "people_detected": 1,
+        "prominence": 0.998,
+        "said": "crab",
+        "seconds": 22,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/23/47896-452144075_large.jpg",
+        "url": "https://pixabay.com/videos/id-47896/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/07/21/3918-175665042_medium.mp4",
+        "id": 3918,
+        "licence": "Pixabay Content Licence",
+        "listed": "A crab, a rock, a sandy beach, a puddle, a crab leg, a crab claw, a crab antenna, a crab body, a crab eye, a crab foot, a crab tail, a crab shell,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.524,
+        "said": "crab",
+        "seconds": 14,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/07/21/3918-175665042_medium.jpg",
+        "url": "https://pixabay.com/videos/id-3918/",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/27/243619_medium.mp4",
+        "id": 243619,
+        "licence": "Pixabay Content Licence",
+        "listed": "A crab, a person, a beach, a rock, a sandy shore, a sunset, a body of water, a hole in the sand, a shell, a person in the water, a person on the beach, a person in the water, a person on the beach,",
+        "people": 2,
+        "people_detected": 2,
+        "prominence": 0.357,
+        "said": "crab",
+        "seconds": 15,
+        "structures": [],
+        "subject_area": 0.0006,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/27/243619_medium.jpg",
+        "url": "https://pixabay.com/videos/id-243619/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/19/128420-741495466_large.mp4",
+        "id": 128420,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.951,
+        "said": "snail",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/19/128420-741495466_large.jpg",
+        "url": "https://pixabay.com/videos/id-128420/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/28/148247-793718024_small.mp4",
+        "id": 148247,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.07,
+        "said": "shell",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/28/148247-793718024_small.jpg",
+        "url": "https://pixabay.com/videos/id-148247/",
+        "why": "the model called it shell",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/05/03/210550_large.mp4",
+        "id": 210550,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.043,
+        "said": "sand",
+        "seconds": 76,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/05/03/210550_large.jpg",
+        "url": "https://pixabay.com/videos/id-210550/",
+        "why": "the model called it sand",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/08/01/224226_small.mp4",
+        "id": 224226,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "spider",
+        "seconds": 38,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/08/01/224226_small.jpg",
+        "url": "https://pixabay.com/videos/id-224226/",
+        "why": "the model called it spider",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/06/20/286992_small.mp4",
+        "id": 286992,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 49,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/06/20/286992_small.jpg",
+        "url": "https://pixabay.com/videos/id-286992/",
+        "why": "the model called it fish",
+        "width": 1920
+      }
+    ],
+    "search_term": "hermit crab"
+  },
   "heron": {
     "candidates_seen": 12,
     "clips": [],
@@ -6276,19 +6618,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2022/12/30/144777-785282850_medium.mp4",
-        "id": 144777,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.252,
-        "said": "bird",
-        "seconds": 15,
-        "thumbnail": "https://cdn.pixabay.com/video/2022/12/30/144777-785282850_medium.jpg",
-        "url": "https://pixabay.com/videos/id-144777/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2019/09/17/26973-361107938_small.mp4",
         "id": 26973,
         "licence": "Pixabay Content Licence",
@@ -6298,6 +6627,19 @@
         "thumbnail": "https://cdn.pixabay.com/video/2019/09/17/26973-361107938_small.jpg",
         "url": "https://pixabay.com/videos/id-26973/",
         "why": "the model called it banana",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/30/144777-785282850_medium.mp4",
+        "id": 144777,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.252,
+        "said": "bird",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/30/144777-785282850_medium.jpg",
+        "url": "https://pixabay.com/videos/id-144777/",
+        "why": "the model called it bird",
         "width": 1920
       },
       {
@@ -6315,19 +6657,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2021/08/12/84860-586995599_small.mp4",
-        "id": 84860,
-        "licence": "Pixabay Content Licence",
-        "prominence": 1.0,
-        "said": "bird",
-        "seconds": 20,
-        "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84860-586995599_small.jpg",
-        "url": "https://pixabay.com/videos/id-84860/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.mp4",
         "id": 84861,
         "licence": "Pixabay Content Licence",
@@ -6336,6 +6665,19 @@
         "seconds": 20,
         "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.jpg",
         "url": "https://pixabay.com/videos/id-84861/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/12/84860-586995599_small.mp4",
+        "id": 84860,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84860-586995599_small.jpg",
+        "url": "https://pixabay.com/videos/id-84860/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -6354,14 +6696,14 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.mp4",
-        "id": 180811,
+        "clip": "https://cdn.pixabay.com/video/2021/10/19/92604-637274873_small.mp4",
+        "id": 92604,
         "licence": "Pixabay Content Licence",
-        "prominence": 1.0,
+        "prominence": 0.999,
         "said": "bird",
-        "seconds": 25,
-        "thumbnail": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.jpg",
-        "url": "https://pixabay.com/videos/id-180811/",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/19/92604-637274873_small.jpg",
+        "url": "https://pixabay.com/videos/id-92604/",
         "why": "the model called it bird",
         "width": 1920
       }
@@ -7686,6 +8028,87 @@
       }
     ],
     "search_term": "llama"
+  },
+  "lobster": {
+    "candidates_seen": 5,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/10/09/12403-238795669_large.mp4",
+        "id": 12403,
+        "licence": "Pixabay Content Licence",
+        "listed": "A man, a lobster, a bucket, a spoon, a bowl, a sign, a handbag, a person, a chair, a table, a shirt, a hat, a bowl, a bucket, a spoon, a handbag, a person,",
+        "people": 16,
+        "people_detected": 16,
+        "prominence": 0.102,
+        "said": "lobster",
+        "seconds": 14,
+        "structures": [],
+        "subject_area": 0.0276,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/10/09/12403-238795669_large.jpg",
+        "url": "https://pixabay.com/videos/id-12403/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/29/11607-231571864_large.mp4",
+        "id": 11607,
+        "licence": "Pixabay Content Licence",
+        "listed": "Crab, sauce, onions, garlic, cilantro, shrimp, lobster, scallops, clams, mussels, oysters, crab cake, crab legs, crab meat, crab claw, crab shell",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "lobster",
+        "seconds": 22,
+        "structures": [],
+        "subject_area": 0.4036,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/29/11607-231571864_large.jpg",
+        "url": "https://pixabay.com/videos/id-11607/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/16/180941-865216967_small.mp4",
+        "id": 180941,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.002,
+        "said": "crab",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/16/180941-865216967_small.jpg",
+        "url": "https://pixabay.com/videos/id-180941/",
+        "why": "the model called it crab",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/02/07/64455-510542001_small.mp4",
+        "id": 64455,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.977,
+        "said": "crab",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/07/64455-510542001_small.jpg",
+        "url": "https://pixabay.com/videos/id-64455/",
+        "why": "the model called it crab",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/16/180942-865216968_small.mp4",
+        "id": 180942,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.245,
+        "said": "crab",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/16/180942-865216968_small.jpg",
+        "url": "https://pixabay.com/videos/id-180942/",
+        "why": "the model called it crab",
+        "width": 1920
+      }
+    ],
+    "search_term": "lobster"
   },
   "macaw": {
     "candidates_seen": 12,
@@ -11124,6 +11547,12 @@
       }
     ]
   },
+  "pufferfish": {
+    "candidates_seen": 0,
+    "clips": [],
+    "rejected": [],
+    "search_term": "pufferfish"
+  },
   "puffin": {
     "candidates_seen": 12,
     "clips": [],
@@ -12153,6 +12582,169 @@
     ],
     "search_term": "scorpion"
   },
+  "sea lion": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/10/08/908-141851680_medium.mp4",
+        "id": 908,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.007,
+        "said": "diver",
+        "seconds": 77,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/10/08/908-141851680_medium.jpg",
+        "url": "https://pixabay.com/videos/id-908/",
+        "why": "the model called it diver",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/29/129597-744688811_large.mp4",
+        "id": 129597,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "seal",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/29/129597-744688811_large.jpg",
+        "url": "https://pixabay.com/videos/id-129597/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/06/01/3344-169076045_large.mp4",
+        "id": 3344,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.924,
+        "said": "polar bear",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/06/01/3344-169076045_large.jpg",
+        "url": "https://pixabay.com/videos/id-3344/",
+        "why": "the model called it polar bear",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/16/120524-721287015_small.mp4",
+        "id": 120524,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.283,
+        "said": "water",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/16/120524-721287015_small.jpg",
+        "url": "https://pixabay.com/videos/id-120524/",
+        "why": "the model called it water",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/11/16/139245-771796579_small.mp4",
+        "id": 139245,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "seal",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/11/16/139245-771796579_small.jpg",
+        "url": "https://pixabay.com/videos/id-139245/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/11/16/139248-771796589_small.mp4",
+        "id": 139248,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "seal",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/11/16/139248-771796589_small.jpg",
+        "url": "https://pixabay.com/videos/id-139248/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/11/16/139246-771796583_small.mp4",
+        "id": 139246,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "seal",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/11/16/139246-771796583_small.jpg",
+        "url": "https://pixabay.com/videos/id-139246/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/16/131556-750753039_small.mp4",
+        "id": 131556,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "seal",
+        "seconds": 34,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/16/131556-750753039_small.jpg",
+        "url": "https://pixabay.com/videos/id-131556/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/10/25/136350-764387876_small.mp4",
+        "id": 136350,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.358,
+        "said": "seal",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/25/136350-764387876_small.jpg",
+        "url": "https://pixabay.com/videos/id-136350/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/10/25/136355-764387891_small.mp4",
+        "id": 136355,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "seal",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/25/136355-764387891_small.jpg",
+        "url": "https://pixabay.com/videos/id-136355/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/27/132664-754563655_small.mp4",
+        "id": 132664,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "seal",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/27/132664-754563655_small.jpg",
+        "url": "https://pixabay.com/videos/id-132664/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/10/25/136354-764387888_large.mp4",
+        "id": 136354,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "seal",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/25/136354-764387888_large.jpg",
+        "url": "https://pixabay.com/videos/id-136354/",
+        "why": "the model called it seal",
+        "width": 1920
+      }
+    ],
+    "search_term": "sea lion"
+  },
   "sea turtle": {
     "candidates_seen": 12,
     "clips": [
@@ -12442,6 +13034,137 @@
     ],
     "rejected": []
   },
+  "seal": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/03/22/205259-926528122_large.mp4",
+        "id": 205259,
+        "licence": "Pixabay Content Licence",
+        "listed": "A seal, a rock, a beach, a wave, a paw, a nose, a mouth, a whisker, a furry ear, a wet surface, a sandy surface, a rocky surface, a wet rock, a sandy rock, a wet beach,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "seal",
+        "seconds": 10,
+        "structures": [],
+        "subject_area": 0.1887,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/03/22/205259-926528122_large.jpg",
+        "url": "https://pixabay.com/videos/id-205259/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/15/171604-845611858_large.mp4",
+        "id": 171604,
+        "licence": "Pixabay Content Licence",
+        "listed": "Seal, water, reflection, rocks, green water, blue water, ripples, pond, pool, aquarium, fish, seaweed, algae, rocks, water surface, water body, water body surface, water body ripples, water body reflection, water body",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "seal",
+        "seconds": 54,
+        "structures": [
+          "aquarium",
+          "pool"
+        ],
+        "subject_area": 0.1111,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/15/171604-845611858_large.jpg",
+        "url": "https://pixabay.com/videos/id-171604/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/02/27/261266_large.mp4",
+        "id": 261266,
+        "licence": "Pixabay Content Licence",
+        "listed": "Seals, rocks, water, sand, ocean, beach, sunlight, shadows, reflections, waves.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "seal",
+        "seconds": 12,
+        "structures": [],
+        "subject_area": 0.0153,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/02/27/261266_large.jpg",
+        "url": "https://pixabay.com/videos/id-261266/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/07/16/81695-577017248_small.mp4",
+        "id": 81695,
+        "licence": "Pixabay Content Licence",
+        "listed": "A brown bear, a dog, a seal, a dolphin, a whale, a seagull, a penguin, a walrus, a polar bear, a dog, a seal, a dolphin, a whale, a seagull, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "seal",
+        "seconds": 9,
+        "structures": [],
+        "subject_area": 0.4566,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/07/16/81695-577017248_small.jpg",
+        "url": "https://pixabay.com/videos/id-81695/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/10/08/908-141851680_medium.mp4",
+        "id": 908,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "diver",
+        "seconds": 77,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/10/08/908-141851680_medium.jpg",
+        "url": "https://pixabay.com/videos/id-908/",
+        "why": "the model called it diver",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/10/16/12480-238805548_large.mp4",
+        "id": 12480,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "water",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/10/16/12480-238805548_large.jpg",
+        "url": "https://pixabay.com/videos/id-12480/",
+        "why": "the model called it water",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/06/09/284575_small.mp4",
+        "id": 284575,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "penguins",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/06/09/284575_small.jpg",
+        "url": "https://pixabay.com/videos/id-284575/",
+        "why": "the model called it penguins",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/06/09/284571_small.mp4",
+        "id": 284571,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "ocean",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/06/09/284571_small.jpg",
+        "url": "https://pixabay.com/videos/id-284571/",
+        "why": "the model called it ocean",
+        "width": 1920
+      }
+    ],
+    "search_term": "seal animal"
+  },
   "shark": {
     "candidates_seen": 12,
     "clips": [
@@ -12673,6 +13396,178 @@
         "width": 3840
       }
     ]
+  },
+  "shrimp": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11659-231758756_large.mp4",
+        "id": 11659,
+        "licence": "Pixabay Content Licence",
+        "listed": "Noodles, shrimp, spinach, cilantro, and a flower.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "shrimp",
+        "seconds": 42,
+        "structures": [],
+        "subject_area": 0.0249,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11659-231758756_large.jpg",
+        "url": "https://pixabay.com/videos/id-11659/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11686-231758926_large.mp4",
+        "id": 11686,
+        "licence": "Pixabay Content Licence",
+        "listed": "Shrimp, noodles, green onions, red peppers, and chili sauce.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "shrimp",
+        "seconds": 24,
+        "structures": [],
+        "subject_area": 0.5072,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11686-231758926_large.jpg",
+        "url": "https://pixabay.com/videos/id-11686/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/10/07/133871-758336534_small.mp4",
+        "id": 133871,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/07/133871-758336534_small.jpg",
+        "url": "https://pixabay.com/videos/id-133871/",
+        "why": "the model called it fish",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/10/07/133870-758336530_small.mp4",
+        "id": 133870,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "aquarium",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/07/133870-758336530_small.jpg",
+        "url": "https://pixabay.com/videos/id-133870/",
+        "why": "the model called it aquarium",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/06/27/3625-172488382_large.mp4",
+        "id": 3625,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "food",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/06/27/3625-172488382_large.jpg",
+        "url": "https://pixabay.com/videos/id-3625/",
+        "why": "the model called it food",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11657-231758747_large.mp4",
+        "id": 11657,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "pan",
+        "seconds": 58,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11657-231758747_large.jpg",
+        "url": "https://pixabay.com/videos/id-11657/",
+        "why": "the model called it pan",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/29/11621-231571931_large.mp4",
+        "id": 11621,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "noodles",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/29/11621-231571931_large.jpg",
+        "url": "https://pixabay.com/videos/id-11621/",
+        "why": "the model called it noodles",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/29/11618-231571917_large.mp4",
+        "id": 11618,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "flower",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/29/11618-231571917_large.jpg",
+        "url": "https://pixabay.com/videos/id-11618/",
+        "why": "the model called it flower",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11671-231758822_large.mp4",
+        "id": 11671,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "food",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11671-231758822_large.jpg",
+        "url": "https://pixabay.com/videos/id-11671/",
+        "why": "the model called it food",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11714-231759036_large.mp4",
+        "id": 11714,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "sushi",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11714-231759036_large.jpg",
+        "url": "https://pixabay.com/videos/id-11714/",
+        "why": "the model called it sushi",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/29/11630-231581048_large.mp4",
+        "id": 11630,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "flower",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/29/11630-231581048_large.jpg",
+        "url": "https://pixabay.com/videos/id-11630/",
+        "why": "the model called it flower",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/29/11629-231581040_large.mp4",
+        "id": 11629,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "food",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/29/11629-231581040_large.jpg",
+        "url": "https://pixabay.com/videos/id-11629/",
+        "why": "the model called it food",
+        "width": 1920
+      }
+    ],
+    "search_term": "shrimp"
   },
   "snail": {
     "candidates_seen": 12,
@@ -13108,6 +14003,148 @@
     ],
     "search_term": "spoonbill"
   },
+  "squid": {
+    "candidates_seen": 10,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11702-231758991_large.mp4",
+        "id": 11702,
+        "licence": "Pixabay Content Licence",
+        "listed": "A grill, a fire, a skewer, a chicken, a lobster, a crab, a shrimp, a fish, a spider crab, a crab cake, a grilled lobster, a grilled crab, a grilled",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "squid",
+        "seconds": 27,
+        "structures": [],
+        "subject_area": 0.0118,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11702-231758991_large.jpg",
+        "url": "https://pixabay.com/videos/id-11702/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/10/27/1198-143842689_large.mp4",
+        "id": 1198,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "octopus",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/10/27/1198-143842689_large.jpg",
+        "url": "https://pixabay.com/videos/id-1198/",
+        "why": "the model called it octopus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/12/03/1498-147827932_medium.mp4",
+        "id": 1498,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "broccoli",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/12/03/1498-147827932_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1498/",
+        "why": "the model called it broccoli",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/12/03/1497-147827936_medium.mp4",
+        "id": 1497,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "broccoli",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/12/03/1497-147827936_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1497/",
+        "why": "the model called it broccoli",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/12/03/1496-147827939_medium.mp4",
+        "id": 1496,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "pan",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/12/03/1496-147827939_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1496/",
+        "why": "the model called it pan",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/12/03/1493-147827962_medium.mp4",
+        "id": 1493,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "pot",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/12/03/1493-147827962_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1493/",
+        "why": "the model called it pot",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/12/03/1494-147827972_medium.mp4",
+        "id": 1494,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "pan",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/12/03/1494-147827972_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1494/",
+        "why": "the model called it pan",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/11/23/57149-484330988_small.mp4",
+        "id": 57149,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "octopus",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/11/23/57149-484330988_small.jpg",
+        "url": "https://pixabay.com/videos/id-57149/",
+        "why": "the model called it octopus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/12/03/1491-147827952_medium.mp4",
+        "id": 1491,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "hand",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/12/03/1491-147827952_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1491/",
+        "why": "the model called it hand",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/08/23/227916_small.mp4",
+        "id": 227916,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "person",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/08/23/227916_small.jpg",
+        "url": "https://pixabay.com/videos/id-227916/",
+        "why": "the model called it person",
+        "width": 1920
+      }
+    ],
+    "search_term": "squid"
+  },
   "squirrel": {
     "candidates_seen": 12,
     "clips": [
@@ -13457,6 +14494,185 @@
         "width": 1920
       }
     ]
+  },
+  "stingray": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/26/156110-811878057_small.mp4",
+        "id": 156110,
+        "licence": "Pixabay Content Licence",
+        "listed": "A blue ocean, a stingray, a blue sky, and a sunny day.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.199,
+        "said": "stingray",
+        "seconds": 11,
+        "structures": [],
+        "subject_area": 0.0743,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/26/156110-811878057_small.jpg",
+        "url": "https://pixabay.com/videos/id-156110/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/01/19/13833-251868078_large.mp4",
+        "id": 13833,
+        "licence": "Pixabay Content Licence",
+        "listed": "Stingray, fish, water, blue, green, white, silver, shadows, light, reflections, ripples, bubbles, coral, seaweed, sand, ocean, aquarium, tank, water tank, underwater, underwater environment, underwater",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.086,
+        "said": "stingray",
+        "seconds": 8,
+        "structures": [
+          "aquarium",
+          "tank"
+        ],
+        "subject_area": 0.0775,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/01/19/13833-251868078_large.jpg",
+        "url": "https://pixabay.com/videos/id-13833/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/26/156109-811878054_large.mp4",
+        "id": 156109,
+        "licence": "Pixabay Content Licence",
+        "listed": "A blue ocean, a stingray, a blue and white fish, a blue and white fish, a blue and white fish, a blue and white fish, a blue and white fish, a blue and white fish, a blue and white fish, a blue and white fish, a blue and",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.013,
+        "said": "stingray",
+        "seconds": 18,
+        "structures": [],
+        "subject_area": 0.0795,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/26/156109-811878054_large.jpg",
+        "url": "https://pixabay.com/videos/id-156109/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/04/06/207042_large.mp4",
+        "id": 207042,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.997,
+        "said": "fish",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/04/06/207042_large.jpg",
+        "url": "https://pixabay.com/videos/id-207042/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/05/12/16165-269534746_large.mp4",
+        "id": 16165,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/05/12/16165-269534746_large.jpg",
+        "url": "https://pixabay.com/videos/id-16165/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/05/12/16164-269534743_large.mp4",
+        "id": 16164,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.191,
+        "said": "shark",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/05/12/16164-269534743_large.jpg",
+        "url": "https://pixabay.com/videos/id-16164/",
+        "why": "the model called it shark",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/04/18/208492_small.mp4",
+        "id": 208492,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.012,
+        "said": "shark",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/04/18/208492_small.jpg",
+        "url": "https://pixabay.com/videos/id-208492/",
+        "why": "the model called it shark",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/26/156147-811878135_small.mp4",
+        "id": 156147,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.483,
+        "said": "fish",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/26/156147-811878135_small.jpg",
+        "url": "https://pixabay.com/videos/id-156147/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/09/17/26955-361277954_large.mp4",
+        "id": 26955,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/09/17/26955-361277954_large.jpg",
+        "url": "https://pixabay.com/videos/id-26955/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/10/245967_large.mp4",
+        "id": 245967,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.603,
+        "said": "octopus",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/10/245967_large.jpg",
+        "url": "https://pixabay.com/videos/id-245967/",
+        "why": "the model called it octopus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/21/155552-810220687_small.mp4",
+        "id": 155552,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "shark",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/21/155552-810220687_small.jpg",
+        "url": "https://pixabay.com/videos/id-155552/",
+        "why": "the model called it shark",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/21/201432-915698647_small.mp4",
+        "id": 201432,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/21/201432-915698647_small.jpg",
+        "url": "https://pixabay.com/videos/id-201432/",
+        "why": "the model called it fish",
+        "width": 1920
+      }
+    ],
+    "search_term": "stingray"
   },
   "stork": {
     "candidates_seen": 12,
@@ -14951,6 +16167,26 @@
         "width": 1280
       }
     ]
+  },
+  "walrus": {
+    "candidates_seen": 1,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/12/03/6640-194334473_large.mp4",
+        "id": 6640,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "water",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/12/03/6640-194334473_large.jpg",
+        "url": "https://pixabay.com/videos/id-6640/",
+        "why": "the model called it water",
+        "width": 1920
+      }
+    ],
+    "search_term": "walrus"
   },
   "wasp": {
     "candidates_seen": 12,
