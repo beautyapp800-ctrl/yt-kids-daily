@@ -20,6 +20,33 @@
     ],
     "refused": []
   },
+  "ambulance": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "An ambulance helps people who are hurt."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "An ambulance has flashing lights."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "An ambulance has a special bed inside."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "An ambulance has a loud horn."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "An ambulance drives people to hospital.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: An ambulance drives sick or injured people to hospital, not just anyone."
+      }
+    ]
+  },
   "ant": {
     "facts": [
       {
@@ -206,6 +233,27 @@
     ],
     "refused": []
   },
+  "bicycle": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A bicycle has two wheels."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A bicycle has a seat."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A bicycle moves on the road."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A bicycle has pedals."
+      }
+    ],
+    "refused": []
+  },
   "boat": {
     "facts": [
       {
@@ -260,6 +308,38 @@
       }
     ]
   },
+  "bulldozer": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A bulldozer moves big rocks."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A bulldozer pushes dirt away."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A bulldozer makes a loud noise."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A bulldozer has a big strong blade."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A bulldozer has big strong wheels.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A bulldozer typically has tracks, not wheels."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A bulldozer digs the ground.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A bulldozer does not typically dig the ground, it is used for pushing and moving large amounts of soil, sand, or other materials."
+      }
+    ]
+  },
   "bumblebee": {
     "facts": [
       {
@@ -309,6 +389,27 @@
       {
         "checked": "2026-10-10",
         "fact": "A butterfly lands on a leaf."
+      }
+    ],
+    "refused": []
+  },
+  "car": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A car takes people places."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A car has wheels."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A car goes on the road."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A car has a door."
       }
     ],
     "refused": []
@@ -1168,6 +1269,27 @@
     ],
     "refused": []
   },
+  "garbage truck": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A garbage truck picks up trash."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A garbage truck has big wheels."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A garbage truck carries yucky things away."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A garbage truck beeps its horn."
+      }
+    ],
+    "refused": []
+  },
   "giraffe": {
     "facts": [
       {
@@ -1439,6 +1561,23 @@
     ],
     "refused": []
   },
+  "hot air balloon": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A hot air balloon flies high."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A hot air balloon carries people."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A hot air balloon has a big basket."
+      }
+    ],
+    "refused": []
+  },
   "hummingbird": {
     "facts": [
       {
@@ -1528,6 +1667,48 @@
       }
     ],
     "refused": []
+  },
+  "kestrel": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A kestrel has sharp eyes."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A kestrel sits on a nest."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A kestrel hunts for food."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A kestrel has soft feathers."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A kestrel flies high.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Kestrels are known for hovering in place, not necessarily flying high"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A kestrel catches small birds.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Kestrels primarily catch small mammals, insects, and worms, not small birds"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A kestrel flaps its wings.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Kestrels are known for hovering in place, they don't always flap their wings"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A kestrel perches on a tree.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Kestrels typically perch on a fence post, wire, or other elevated spot with a good view, but they are not typically known for perching on trees"
+      }
+    ]
   },
   "kingfisher": {
     "facts": [
@@ -1824,6 +2005,33 @@
         "checked": "2026-10-24",
         "fact": "A mango has a yellow skin.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Mango skin can be yellow, but also orange, red, green, or a combination of these colors"
+      }
+    ]
+  },
+  "mockingbird": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A mockingbird sings a song."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A mockingbird flies high."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A mockingbird eats bugs."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A mockingbird builds a nest."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A mockingbird has brown feathers.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A mockingbird's feathers are typically gray or white, not brown"
       }
     ]
   },
@@ -2583,6 +2791,33 @@
       }
     ]
   },
+  "rocket": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A rocket flies up high."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A rocket has big flames."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A rocket goes very fast."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A rocket has a sharp point."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A rocket carries people.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Most rockets do not carry people, they carry cargo or are unmanned"
+      }
+    ]
+  },
   "rooster": {
     "facts": [
       {
@@ -2630,6 +2865,49 @@
       }
     ],
     "refused": []
+  },
+  "scooter": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A scooter has wheels."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A scooter carries a person."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A scooter rolls on the ground."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A scooter goes very fast.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Scooters can go at various speeds, but they are generally not very fast, especially for a child of three who will likely be using a push scooter"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A scooter has a seat.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Most scooters do not have a seat"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A scooter has handles.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all scooters have handles, some are handleless or have a platform to stand on"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A scooter has pedals.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A scooter typically does not have pedals"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A scooter makes a fun noise.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all scooters make a fun noise"
+      }
+    ]
   },
   "scorpion": {
     "facts": [
@@ -2853,6 +3131,43 @@
         "checked": "2026-10-10",
         "fact": "A sheep gives us milk.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Sheep are not typically raised for milk, cows and goats are more common milk-producing animals"
+      }
+    ]
+  },
+  "ship": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A ship sails on the water."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A ship carries many people."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A ship goes across the sea."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A ship has a big anchor."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A ship has a big flag.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all ships have a big flag"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A ship has a big wheel.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all ships have a big wheel, many are controlled with more modern systems"
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A ship has a big horn.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all ships have a horn, and it's more commonly referred to as a whistle or a foghorn"
       }
     ]
   },
@@ -3203,6 +3518,38 @@
       }
     ]
   },
+  "submarine": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A submarine goes under the water."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A submarine carries people inside."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A submarine moves under the sea."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A submarine has a strong hull."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A submarine has a special door.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A submarine does not have a door in the classical sense, but rather hatches or locks that allow it to submerge and resurface."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A submarine has a big window.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Submarines typically do not have big windows, they have small portholes or no windows at all to maintain water pressure"
+      }
+    ]
+  },
   "swallow": {
     "facts": [
       {
@@ -3392,6 +3739,33 @@
       }
     ],
     "refused": []
+  },
+  "truck": {
+    "facts": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A truck carries big things."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A truck has big wheels."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A truck drives on a road."
+      },
+      {
+        "checked": "2026-10-26",
+        "fact": "A truck makes a loud noise."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-10-26",
+        "fact": "A truck has a big door.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all trucks have a big door, some have smaller doors or different types of openings"
+      }
+    ]
   },
   "turkey": {
     "facts": [

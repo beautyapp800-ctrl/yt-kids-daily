@@ -85,16 +85,24 @@
     "whale"
   ],
   "transport": [
-    "tractor",
-    "fire truck",
-    "train",
     "airplane",
-    "helicopter",
-    "excavator",
-    "school bus",
-    "police car",
+    "bicycle",
     "boat",
-    "motorcycle"
+    "car",
+    "excavator",
+    "fire truck",
+    "garbage truck",
+    "helicopter",
+    "hot air balloon",
+    "motorcycle",
+    "police car",
+    "rocket",
+    "school bus",
+    "ship",
+    "submarine",
+    "tractor",
+    "train",
+    "truck"
   ],
   "wild animals": [
     "bear",

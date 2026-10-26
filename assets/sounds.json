@@ -40,6 +40,12 @@
       }
     ]
   },
+  "ambulance": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "ant": {
     "candidates_seen": 14,
     "refused": [
@@ -201,6 +207,12 @@
     "silent": true,
     "sounds": []
   },
+  "bicycle": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "boat": {
     "candidates_seen": 33,
     "refused": [
@@ -248,6 +260,47 @@
         "source": "freesound",
         "title": "fishing boat engine onboard medium speed left side and gentle waves splash India.flac",
         "url": "https://cdn.freesound.org/previews/451/451395_612689-hq.mp3"
+      }
+    ]
+  },
+  "bulldozer": {
+    "candidates_seen": 7,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "esperri",
+        "id": "def990cf-509a-45cb-b72e-ea9a9fbc92d2",
+        "is": "a small bulldozer engine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/esperri/sounds/118974",
+        "seconds": 12.0,
+        "source": "freesound",
+        "title": "Small Bulldozer Engine.wav",
+        "url": "https://cdn.freesound.org/previews/118/118974_1990695-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "kijjaz",
+        "id": "161ea61d-fc73-42ae-b0b9-02f49ce1a97e",
+        "is": "a bulldozer",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kijjaz/sounds/389584",
+        "seconds": 88.0,
+        "source": "freesound",
+        "title": "20170406 A Bulldozer",
+        "url": "https://cdn.freesound.org/previews/389/389584_26950-hq.mp3"
       }
     ]
   },
@@ -313,6 +366,12 @@
         "why": "licence at the source is unknown: no verifier for www.jamendo.com"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "car": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -1301,6 +1360,47 @@
     "silent": true,
     "sounds": []
   },
+  "garbage truck": {
+    "candidates_seen": 17,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "cognito perceptu",
+        "id": "7cb5a634-6589-41f3-abf9-c17fd8cfa031",
+        "is": "a garbage truck",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/cognito%20perceptu/sounds/90856",
+        "seconds": 81.6,
+        "source": "freesound",
+        "title": "garbage truck local.wav",
+        "url": "https://cdn.freesound.org/previews/90/90856_57789-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "rodrigocswm",
+        "id": "11911edd-4b86-4d43-8f88-f435e253010a",
+        "is": "a garbage truck compacting garbage",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/rodrigocswm/sounds/449437",
+        "seconds": 14.8,
+        "source": "freesound",
+        "title": "Garbage truck compacting garbage",
+        "url": "https://cdn.freesound.org/previews/449/449437_8667144-hq.mp3"
+      }
+    ]
+  },
   "giraffe": {
     "candidates_seen": 0,
     "refused": [],
@@ -1546,55 +1646,30 @@
     "silent": true,
     "sounds": []
   },
-  "hummingbird": {
-    "candidates_seen": 9,
+  "hot air balloon": {
+    "candidates_seen": 3,
     "refused": [
       {
-        "title": "Hummingbird Siren",
-        "why": "a siren"
+        "title": "Hot Air Balloon",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
       },
       {
-        "title": "Chirping Hummingbird",
-        "why": "a bird chirping, likely not a hummingbird as they are known for their humming or buzzing sound, not chirping"
+        "title": "Balloon fire x2 long.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Balloon burner bursts.wav",
+        "why": "licence at the source is by: the page links by 4.0"
       }
     ],
-    "silent": false,
-    "sounds": [
-      {
-        "attribution_required": false,
-        "checked": "2026-10-25",
-        "creator": "parabolix",
-        "id": "cb92bf08-bb91-44d9-9785-8c0f1a6c3327",
-        "is": "a hummingbird's sound, possibly slowed down",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/parabolix/sounds/518898",
-        "seconds": 139.8,
-        "source": "freesound",
-        "title": "slowed hummingbirds.wav",
-        "url": "https://cdn.freesound.org/previews/518/518898_1036771-hq.mp3"
-      },
-      {
-        "attribution_required": false,
-        "checked": "2026-10-25",
-        "creator": "jefftbyrd",
-        "id": "e6988a82-e2af-444d-94fd-70be1f74e8bd",
-        "is": "a recording of hummingbirds in their natural environment on Orcas Island, Washington",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/jefftbyrd/sounds/485561",
-        "seconds": 188.0,
-        "source": "freesound",
-        "title": "Hummingbirds on Orcas Island, Washington",
-        "url": "https://cdn.freesound.org/previews/485/485561_4174147-hq.mp3"
-      }
-    ]
+    "silent": true,
+    "sounds": []
+  },
+  "hummingbird": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "ibis": {
     "candidates_seen": 6,
@@ -1656,6 +1731,25 @@
       {
         "title": "Nl-kangaroo-islandemoes",
         "why": "a demo or sound related to Kangaroo Island"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "kestrel": {
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "20190323.kestrel.male.female.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "20190323.kestrel.airplane.citynoise.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "20200423.kestrel.01.wav",
+        "why": "licence at the source is by: the page links by 4.0"
       }
     ],
     "silent": true,
@@ -1949,6 +2043,52 @@
     ],
     "silent": true,
     "sounds": []
+  },
+  "mockingbird": {
+    "candidates_seen": 11,
+    "refused": [
+      {
+        "title": "Bird-one Mockingbird with many songs.wav",
+        "why": "an electronic or synthesized sound, possibly from a device or software named Bird-one"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "AnthonyChan0",
+        "id": "0c1b3b3a-e988-4612-9931-c40da94285e9",
+        "is": "a mockingbird making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/AnthonyChan0/sounds/177956",
+        "seconds": 38.4,
+        "source": "freesound",
+        "title": "Florida Mockingbird in my backyard",
+        "url": "https://cdn.freesound.org/previews/177/177956_2886479-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "Douglas711",
+        "id": "d5ee58c8-8e7b-4819-b025-47a2d9109f88",
+        "is": "a mockingbird making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Douglas711/sounds/427368",
+        "seconds": 151.0,
+        "source": "freesound",
+        "title": "mockingbird at night.wav",
+        "url": "https://cdn.freesound.org/previews/427/427368_3609277-hq.mp3"
+      }
+    ]
   },
   "monkey": {
     "candidates_seen": 25,
@@ -2668,6 +2808,12 @@
       }
     ]
   },
+  "rocket": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "rooster": {
     "candidates_seen": 27,
     "refused": [],
@@ -2752,6 +2898,52 @@
         "source": "freesound",
         "title": "school bus truck ext idle engine close2.flac",
         "url": "https://cdn.freesound.org/previews/451/451668_612689-hq.mp3"
+      }
+    ]
+  },
+  "scooter": {
+    "candidates_seen": 9,
+    "refused": [
+      {
+        "title": "background of the side streets of Rhodes, scooter",
+        "why": "background noise of the side streets of Rhodes"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "druki",
+        "id": "c937533e-84af-40fa-b419-33259d36f7fc",
+        "is": "a Vespa scooter's old exhaust",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/druki/sounds/158891",
+        "seconds": 304.5,
+        "source": "freesound",
+        "title": "Vespa Scooter PX 200 GS old exhaust wav",
+        "url": "https://cdn.freesound.org/previews/158/158891_2559395-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "nickpursehouse",
+        "id": "81a58557-c92b-43aa-9efc-a2a008800533",
+        "is": "a scooter driving by",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/nickpursehouse/sounds/509522",
+        "seconds": 12.2,
+        "source": "freesound",
+        "title": "Scooter drive by .wav",
+        "url": "https://cdn.freesound.org/previews/509/509522_1665834-hq.mp3"
       }
     ]
   },
@@ -2969,6 +3161,33 @@
       }
     ]
   },
+  "ship": {
+    "candidates_seen": 14,
+    "refused": [
+      {
+        "title": "MUS 152 Ship Sound Design.mp3",
+        "why": "sound design or special effect of a ship"
+      },
+      {
+        "title": "Ship Sound design.wav",
+        "why": "sound design or special effect of a ship"
+      },
+      {
+        "title": "Ship Sound Design",
+        "why": "sound design or special effect of a ship"
+      },
+      {
+        "title": "Retro Alien Ship Sound Design_01.mp3",
+        "why": "a sound effect designed to represent a fictional alien ship"
+      },
+      {
+        "title": "Ship sound Design 2.wav",
+        "why": "sound design or special effect of a ship"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "shrimp": {
     "candidates_seen": 2,
     "refused": [
@@ -2997,13 +3216,13 @@
     "sounds": []
   },
   "sparrow": {
-    "candidates_seen": 6,
+    "candidates_seen": 4,
     "refused": [],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-25",
+        "checked": "2026-10-26",
         "creator": "felix.blume",
         "id": "b7f7cd94-27d5-4310-a295-d46e342ae17b",
         "is": "a sparrow singing and flying in the bush",
@@ -3020,7 +3239,7 @@
       },
       {
         "attribution_required": false,
-        "checked": "2026-10-25",
+        "checked": "2026-10-26",
         "creator": "JPBILLINGSLEYJR",
         "id": "a071c4e8-2d9e-456d-81b0-979a2f50fec8",
         "is": "a chipping sparrow making its sound",
@@ -3187,6 +3406,43 @@
         "source": "freesound",
         "title": "village, field, meadow, storks clapping beaks, wind in trees and grass, very distant construction, birds, Czechia [Stereo].wav",
         "url": "https://cdn.freesound.org/previews/476/476464_5804919-hq.mp3"
+      }
+    ]
+  },
+  "submarine": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "submarine sonar.mp3",
+        "why": "sonar equipment sound"
+      },
+      {
+        "title": "Stereotypical sinking submarine sound (NO REVERB).aif",
+        "why": "a stereotypical sound effect of a sinking submarine, likely created for media use"
+      },
+      {
+        "title": "Submarine submersion alarm_mono_wave.wav",
+        "why": "a submersion alarm sound effect"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-10-26",
+        "creator": "blaukreuz",
+        "id": "94bdd893-6c20-4467-8d32-b271c5c95195",
+        "is": "internal sounds of a submarine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/blaukreuz/sounds/465472",
+        "seconds": 246.4,
+        "source": "freesound",
+        "title": "Submarine internal",
+        "url": "https://cdn.freesound.org/previews/465/465472_623488-hq.mp3"
       }
     ]
   },
@@ -3509,6 +3765,12 @@
         "url": "https://cdn.freesound.org/previews/141/141273_2051721-hq.mp3"
       }
     ]
+  },
+  "truck": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "turkey": {
     "candidates_seen": 4,

@@ -90,6 +90,78 @@
       }
     ]
   },
+  "ambulance": {
+    "candidates_seen": 5,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/25/32853-394513898_large.mp4",
+        "id": 32853,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/25/32853-394513898_large.jpg",
+        "url": "https://pixabay.com/videos/id-32853/",
+        "why": "the model called it car",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/31/165252-832460065_small.mp4",
+        "id": 165252,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.935,
+        "said": "fire truck",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/31/165252-832460065_small.jpg",
+        "url": "https://pixabay.com/videos/id-165252/",
+        "why": "the model called it fire truck",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/09/30/27385-363513429_large.mp4",
+        "id": 27385,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/09/30/27385-363513429_large.jpg",
+        "url": "https://pixabay.com/videos/id-27385/",
+        "why": "the model called it car",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/29/144714-785579094_small.mp4",
+        "id": 144714,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.17,
+        "said": "car",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/29/144714-785579094_small.jpg",
+        "url": "https://pixabay.com/videos/id-144714/",
+        "why": "the model called it car",
+        "width": 1938
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/10/21/135840-764362048_large.mp4",
+        "id": 135840,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.178,
+        "said": "car",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/10/21/135840-764362048_large.jpg",
+        "url": "https://pixabay.com/videos/id-135840/",
+        "why": "the model called it car",
+        "width": 1920
+      }
+    ],
+    "search_term": "ambulance"
+  },
   "ant": {
     "candidates_seen": 12,
     "clips": [
@@ -837,6 +909,84 @@
       }
     ]
   },
+  "bicycle": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/09/14/88642-608445705_small.mp4",
+        "id": 88642,
+        "licence": "Pixabay Content Licence",
+        "listed": "A man riding a bicycle, a tree, a bicycle, a man wearing a hat, a tree, a bicycle, a tree, a bicycle, a tree, a bicycle, a tree, a bicycle, a tree, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.037,
+        "said": "bicycle",
+        "seconds": 40,
+        "structures": [],
+        "subject_area": 0.0085,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/09/14/88642-608445705_small.jpg",
+        "url": "https://pixabay.com/videos/id-88642/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/10/24/186364-877727696_small.mp4",
+        "id": 186364,
+        "licence": "Pixabay Content Licence",
+        "listed": "A man, a bicycle, a road, trees, leaves, a stop sign, a backpack, a helmet, and a blue shirt.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "bicycle",
+        "seconds": 42,
+        "structures": [],
+        "subject_area": 0.0402,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/10/24/186364-877727696_small.jpg",
+        "url": "https://pixabay.com/videos/id-186364/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/13/146420-789177047_large.mp4",
+        "id": 146420,
+        "licence": "Pixabay Content Licence",
+        "listed": "A person, a bicycle, a helmet, a building, a street light, a sidewalk, a road, a person riding a bicycle, a person walking a bicycle, a person riding a bicycle on a path, a person riding a",
+        "people": 2,
+        "people_detected": 2,
+        "prominence": 0.0,
+        "said": "bicycle",
+        "seconds": 20,
+        "structures": [
+          "building",
+          "street"
+        ],
+        "subject_area": 0.0278,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/13/146420-789177047_large.jpg",
+        "url": "https://pixabay.com/videos/id-146420/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/01/22/31480-387312377_small.mp4",
+        "id": 31480,
+        "licence": "Pixabay Content Licence",
+        "listed": "Bicycle, wheel, chain, pedal, gear, brake, handlebar, crank, spokes, rim, tire, chain, pedal, gear, brake, handlebar, crank, spokes, rim, tire, chain, pedal",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "bicycle",
+        "seconds": 29,
+        "structures": [],
+        "subject_area": 0.4673,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/01/22/31480-387312377_small.jpg",
+        "url": "https://pixabay.com/videos/id-31480/",
+        "width": 1920
+      }
+    ],
+    "rejected": [],
+    "search_term": "bicycle"
+  },
   "boat": {
     "candidates_seen": 12,
     "clips": [
@@ -1121,6 +1271,143 @@
       }
     ]
   },
+  "bulldozer": {
+    "candidates_seen": 10,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/07/08/3741-174188012_large.mp4",
+        "id": 3741,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "dirt",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/07/08/3741-174188012_large.jpg",
+        "url": "https://pixabay.com/videos/id-3741/",
+        "why": "the model called it dirt",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/07/23/10877-226635355_large.mp4",
+        "id": 10877,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/07/23/10877-226635355_large.jpg",
+        "url": "https://pixabay.com/videos/id-10877/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/12/08/192469-892744265_small.mp4",
+        "id": 192469,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/12/08/192469-892744265_small.jpg",
+        "url": "https://pixabay.com/videos/id-192469/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/26/10290-223159390_large.mp4",
+        "id": 10290,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/26/10290-223159390_large.jpg",
+        "url": "https://pixabay.com/videos/id-10290/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/21/10177-223148994_large.mp4",
+        "id": 10177,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/21/10177-223148994_large.jpg",
+        "url": "https://pixabay.com/videos/id-10177/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/26/10289-223159392_large.mp4",
+        "id": 10289,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "hay",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/26/10289-223159392_large.jpg",
+        "url": "https://pixabay.com/videos/id-10289/",
+        "why": "the model called it hay",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/26/10288-223159397_large.mp4",
+        "id": 10288,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/26/10288-223159397_large.jpg",
+        "url": "https://pixabay.com/videos/id-10288/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/25/10275-223159372_large.mp4",
+        "id": 10275,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/25/10275-223159372_large.jpg",
+        "url": "https://pixabay.com/videos/id-10275/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/09/17/12041-234530519_large.mp4",
+        "id": 12041,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/09/17/12041-234530519_large.jpg",
+        "url": "https://pixabay.com/videos/id-12041/",
+        "why": "the model called it truck",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/27/156302-812205606_large.mp4",
+        "id": 156302,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "construction",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/27/156302-812205606_large.jpg",
+        "url": "https://pixabay.com/videos/id-156302/",
+        "why": "the model called it construction",
+        "width": 1920
+      }
+    ],
+    "search_term": "bulldozer"
+  },
   "bumblebee": {
     "candidates_seen": 12,
     "clips": [],
@@ -1357,6 +1644,127 @@
       }
     ],
     "rejected": []
+  },
+  "car": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/10/31/28544-370332703_large.mp4",
+        "id": 28544,
+        "licence": "Pixabay Content Licence",
+        "listed": "A car, a building, a fence, a car, a car, a car, a car, a car, a car, a car, a car, a car, a car, a car, a car, a car, a car, a car, a car, a car",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.142,
+        "said": "car",
+        "seconds": 50,
+        "structures": [
+          "building"
+        ],
+        "subject_area": 0.499,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/10/31/28544-370332703_large.jpg",
+        "url": "https://pixabay.com/videos/id-28544/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/11/09/1295-145209438_large.mp4",
+        "id": 1295,
+        "licence": "Pixabay Content Licence",
+        "listed": "Car, tires, grass, dirt, rocks, trees, sky, dust, road, gravel, orange, blue, white, red, black, yellow, green, white, orange, blue, white, red, black, yellow, green, white, orange, blue, white",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 10,
+        "structures": [],
+        "subject_area": 0.2068,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/11/09/1295-145209438_large.jpg",
+        "url": "https://pixabay.com/videos/id-1295/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/10/12/184734-873923034_small.mp4",
+        "id": 184734,
+        "licence": "Pixabay Content Licence",
+        "listed": "Car, mountains, dirt road, sky, clouds, hills, snow, sand, dust, wind, windshield, windscreen, vehicle, tire, tires, wheels, tracks, trail, path, road, dirt, gravel, sand, dust, wind,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 10,
+        "structures": [],
+        "subject_area": 0.0027,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/10/12/184734-873923034_small.jpg",
+        "url": "https://pixabay.com/videos/id-184734/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/11/29/19627-304735769_small.mp4",
+        "id": 19627,
+        "licence": "Pixabay Content Licence",
+        "listed": "Cars, buildings, street lights, traffic lights, bridge, cityscape, tall buildings, street, highway, cars driving, traffic, street lights, traffic lights, bridge, cityscape, tall buildings, street, highway, cars driving, traffic, street lights, traffic lights, bridge",
+        "people": 0,
+        "people_detected": 1,
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 17,
+        "structures": [
+          "bridge",
+          "buildings",
+          "street"
+        ],
+        "subject_area": 0.0035,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/11/29/19627-304735769_small.jpg",
+        "url": "https://pixabay.com/videos/id-19627/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/02/14/2165-155327596_large.mp4",
+        "id": 2165,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "highway",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/02/14/2165-155327596_large.jpg",
+        "url": "https://pixabay.com/videos/id-2165/",
+        "why": "the model called it highway",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/04/05/22609-328810354_small.mp4",
+        "id": 22609,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/04/05/22609-328810354_small.jpg",
+        "url": "https://pixabay.com/videos/id-22609/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/02/23/336253_small.mp4",
+        "id": 336253,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bridge",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/02/23/336253_small.jpg",
+        "url": "https://pixabay.com/videos/id-336253/",
+        "why": "the model called it bridge",
+        "width": 1920
+      }
+    ],
+    "search_term": "car"
   },
   "carrot": {
     "candidates_seen": 12,
@@ -5092,6 +5500,142 @@
     ],
     "rejected": []
   },
+  "garbage truck": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47519-451623728_medium.mp4",
+        "id": 47519,
+        "licence": "Pixabay Content Licence",
+        "listed": "A white truck, a house, a road, a lawn, a sidewalk, a driveway, a car, a bench, a potted plant, a person, a dog, a chair, a dining table, a couch, a bed, a refriger",
+        "people": 3,
+        "people_detected": 3,
+        "prominence": 0.35,
+        "said": "truck",
+        "seconds": 15,
+        "structures": [
+          "house"
+        ],
+        "subject_area": 0.0723,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47519-451623728_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47519/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_medium.mp4",
+        "id": 47516,
+        "licence": "Pixabay Content Licence",
+        "listed": "A white truck, a house, a fence, a gate, a tree, a car, a bench, a potted plant, a dog, a person, a chair, a dining table, a bed, a suitcase, a backpack, a suitcase, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.142,
+        "said": "truck",
+        "seconds": 11,
+        "structures": [
+          "house"
+        ],
+        "subject_area": 0.04,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47516/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47518-451623722_medium.mp4",
+        "id": 47518,
+        "licence": "Pixabay Content Licence",
+        "listed": "A white truck, a man, a woman, a dog, a house, a fence, a tree, a bench, a car, a person, a chair, a potted plant, a person sitting on a bench, a person standing on the sidewalk, a person",
+        "people": 2,
+        "people_detected": 2,
+        "prominence": 0.018,
+        "said": "truck",
+        "seconds": 10,
+        "structures": [
+          "house"
+        ],
+        "subject_area": 0.0885,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47518-451623722_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47518/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47517-451623710_medium.mp4",
+        "id": 47517,
+        "licence": "Pixabay Content Licence",
+        "listed": "A white truck, a house, a tree, a fence, a mountain, a bike, a car, a bench, a person, a dog, a fence gate, a car, a bench, a person, a dog, a fence gate, a car",
+        "people": 1,
+        "people_detected": 1,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 24,
+        "structures": [
+          "house"
+        ],
+        "subject_area": 0.0599,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47517-451623710_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47517/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47515-451623699_medium.mp4",
+        "id": 47515,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "house",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47515-451623699_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47515/",
+        "why": "the model called it house",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/12/08/192469-892744265_small.mp4",
+        "id": 192469,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/12/08/192469-892744265_small.jpg",
+        "url": "https://pixabay.com/videos/id-192469/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47514-451623694_medium.mp4",
+        "id": 47514,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tiles",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47514-451623694_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47514/",
+        "why": "the model called it tiles",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47521-451623745_medium.mp4",
+        "id": 47521,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tree",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47521-451623745_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47521/",
+        "why": "the model called it tree",
+        "width": 1920
+      }
+    ],
+    "search_term": "garbage truck"
+  },
   "giraffe": {
     "candidates_seen": 12,
     "clips": [
@@ -6547,6 +7091,134 @@
       }
     ]
   },
+  "hot air balloon": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/10/12/184737-873923039_small.mp4",
+        "id": 184737,
+        "licence": "Pixabay Content Licence",
+        "listed": "A red, yellow, and orange hot air balloon, a red, yellow, and orange hot air balloon, a red, yellow, and orange hot air balloon, a red, yellow, and orange hot air balloon, a red, yellow, and orange hot",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "balloon",
+        "seconds": 15,
+        "structures": [],
+        "subject_area": 0.0069,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/10/12/184737-873923039_small.jpg",
+        "url": "https://pixabay.com/videos/id-184737/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/10/28/186845-879056530_large.mp4",
+        "id": 186845,
+        "licence": "Pixabay Content Licence",
+        "listed": "A woman, a road, a field, a hill, a car, a truck, a bus, a balloon, a kite, a hot air balloon, a woman wearing a jean jacket, a woman wearing a skirt, a woman wearing",
+        "people": 11,
+        "people_detected": 11,
+        "prominence": 1.0,
+        "said": "balloon",
+        "seconds": 19,
+        "structures": [],
+        "subject_area": 0.0402,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/10/28/186845-879056530_large.jpg",
+        "url": "https://pixabay.com/videos/id-186845/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/09/08/87829-602894447_small.mp4",
+        "id": 87829,
+        "licence": "Pixabay Content Licence",
+        "listed": "A hot air balloon, a mountain range, a field, a cloud, a hill, a forest, a kite, a parachute, a rainbow, a balloon, a kite, a parachute, a rainbow, a balloon, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "hot air balloon",
+        "seconds": 25,
+        "structures": [],
+        "subject_area": 0.0507,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/09/08/87829-602894447_small.jpg",
+        "url": "https://pixabay.com/videos/id-87829/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/02/25/14520-257440809_small.mp4",
+        "id": 14520,
+        "licence": "Pixabay Content Licence",
+        "listed": "A hot air balloon, a mountain, a snowy mountain, a rocky mountain, a yellow balloon, a blue sky, a white cloud, a red balloon, a white balloon, a red and white balloon, a white and red ballo",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.74,
+        "said": "balloon",
+        "seconds": 27,
+        "structures": [],
+        "subject_area": 0.0021,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/02/25/14520-257440809_small.jpg",
+        "url": "https://pixabay.com/videos/id-14520/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/30/133111-755975147_large.mp4",
+        "id": 133111,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.013,
+        "said": "sun",
+        "seconds": 41,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/30/133111-755975147_large.jpg",
+        "url": "https://pixabay.com/videos/id-133111/",
+        "why": "the model called it sun",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/30/133112-755975150_large.mp4",
+        "id": 133112,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.061,
+        "said": "sun",
+        "seconds": 41,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/30/133112-755975150_large.jpg",
+        "url": "https://pixabay.com/videos/id-133112/",
+        "why": "the model called it sun",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/30/133109-755975146_large.mp4",
+        "id": 133109,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.005,
+        "said": "sun",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/30/133109-755975146_large.jpg",
+        "url": "https://pixabay.com/videos/id-133109/",
+        "why": "the model called it sun",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/10/25/186416-878016882_small.mp4",
+        "id": 186416,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "kite",
+        "seconds": 41,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/10/25/186416-878016882_small.jpg",
+        "url": "https://pixabay.com/videos/id-186416/",
+        "why": "the model called it kite",
+        "width": 1920
+      }
+    ],
+    "search_term": "hot air balloon"
+  },
   "hummingbird": {
     "candidates_seen": 12,
     "clips": [],
@@ -6562,19 +7234,6 @@
         "thumbnail": "https://cdn.pixabay.com/video/2022/03/12/110462-689510229_small.jpg",
         "url": "https://pixabay.com/videos/id-110462/",
         "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2025/03/08/263456_small.mp4",
-        "id": 263456,
-        "licence": "Pixabay Content Licence",
-        "prominence": 1.0,
-        "said": "flower",
-        "seconds": 16,
-        "thumbnail": "https://cdn.pixabay.com/video/2025/03/08/263456_small.jpg",
-        "url": "https://pixabay.com/videos/id-263456/",
-        "why": "the model called it flower",
         "width": 1920
       },
       {
@@ -6644,19 +7303,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2024/07/18/221904_small.mp4",
-        "id": 221904,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.011,
-        "said": "flower",
-        "seconds": 40,
-        "thumbnail": "https://cdn.pixabay.com/video/2024/07/18/221904_small.jpg",
-        "url": "https://pixabay.com/videos/id-221904/",
-        "why": "the model called it flower",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.mp4",
         "id": 84861,
         "licence": "Pixabay Content Licence",
@@ -6666,6 +7312,19 @@
         "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.jpg",
         "url": "https://pixabay.com/videos/id-84861/",
         "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/18/221904_small.mp4",
+        "id": 221904,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.011,
+        "said": "flower",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/18/221904_small.jpg",
+        "url": "https://pixabay.com/videos/id-221904/",
+        "why": "the model called it flower",
         "width": 1920
       },
       {
@@ -6691,6 +7350,19 @@
         "seconds": 10,
         "thumbnail": "https://cdn.pixabay.com/video/2018/05/18/16281-270577603_small.jpg",
         "url": "https://pixabay.com/videos/id-16281/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.mp4",
+        "id": 180811,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.jpg",
+        "url": "https://pixabay.com/videos/id-180811/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -7022,6 +7694,117 @@
       }
     ],
     "rejected": []
+  },
+  "kestrel": {
+    "candidates_seen": 8,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/12/11/100313-657132685_large.mp4",
+        "id": 100313,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 28,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/12/11/100313-657132685_large.jpg",
+        "url": "https://pixabay.com/videos/id-100313/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/28/182645-869766585_large.mp4",
+        "id": 182645,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/28/182645-869766585_large.jpg",
+        "url": "https://pixabay.com/videos/id-182645/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/04/7018-198116993_large.mp4",
+        "id": 7018,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/04/7018-198116993_large.jpg",
+        "url": "https://pixabay.com/videos/id-7018/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/30/7595-201768364_large.mp4",
+        "id": 7595,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/30/7595-201768364_large.jpg",
+        "url": "https://pixabay.com/videos/id-7595/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/30/7594-201768284_large.mp4",
+        "id": 7594,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "owl",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/30/7594-201768284_large.jpg",
+        "url": "https://pixabay.com/videos/id-7594/",
+        "why": "the model called it owl",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/30/7593-201768279_large.mp4",
+        "id": 7593,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/30/7593-201768279_large.jpg",
+        "url": "https://pixabay.com/videos/id-7593/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/04/126669-736705656_large.mp4",
+        "id": 126669,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/04/126669-736705656_large.jpg",
+        "url": "https://pixabay.com/videos/id-126669/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/28/40499-425574053_large.mp4",
+        "id": 40499,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/28/40499-425574053_large.jpg",
+        "url": "https://pixabay.com/videos/id-40499/",
+        "why": "the model called it bird",
+        "width": 1920
+      }
+    ],
+    "search_term": "kestrel"
   },
   "kingfisher": {
     "candidates_seen": 12,
@@ -8597,6 +9380,26 @@
       }
     ],
     "search_term": "mango fruit"
+  },
+  "mockingbird": {
+    "candidates_seen": 1,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/04/24/348675_large.mp4",
+        "id": 348675,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/04/24/348675_large.jpg",
+        "url": "https://pixabay.com/videos/id-348675/",
+        "why": "the model called it bird",
+        "width": 1920
+      }
+    ],
+    "search_term": "mockingbird"
   },
   "monkey": {
     "candidates_seen": 12,
@@ -12253,6 +13056,165 @@
     ],
     "search_term": "robin bird"
   },
+  "rocket": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/10/235-135862236_large.mp4",
+        "id": 235,
+        "licence": "Pixabay Content Licence",
+        "listed": "Space shuttle, rocket, building, clouds, sky, smoke, tower, ladder, people, truck, car, airplane, satellite dish, and tower.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "rocket",
+        "seconds": 63,
+        "structures": [
+          "building",
+          "tower"
+        ],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/10/235-135862236_large.jpg",
+        "url": "https://pixabay.com/videos/id-235/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/07/8-135682271_large.mp4",
+        "id": 8,
+        "licence": "Pixabay Content Licence",
+        "listed": "Rocket, sky, space shuttle, smoke, cloud, night, stars, moon, sky, space shuttle, smoke, cloud, night, stars, moon, sky, space shuttle, smoke, cloud, night, stars, moon, sky, space shuttle",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "rocket",
+        "seconds": 16,
+        "structures": [],
+        "subject_area": 0.0789,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/07/8-135682271_large.jpg",
+        "url": "https://pixabay.com/videos/id-8/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/10/228-135860602_large.mp4",
+        "id": 228,
+        "licence": "Pixabay Content Licence",
+        "listed": "Rocket, space shuttle, clouds, trees, water, buildings, smoke, moon, stars, planes, rockets, spacecraft, boosters, shuttle, booster, space shuttle, rocket, booster, space shuttle, rocket,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "rocket",
+        "seconds": 61,
+        "structures": [
+          "buildings"
+        ],
+        "subject_area": 0.0012,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/10/228-135860602_large.jpg",
+        "url": "https://pixabay.com/videos/id-228/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/10/232-135861442_large.mp4",
+        "id": 232,
+        "licence": "Pixabay Content Licence",
+        "listed": "Rocket, sky, clouds, white, blue, orange, red, yellow, green, white clouds, blue sky, orange rocket, white clouds, blue sky, orange rocket, white clouds, blue sky, orange rocket, white clouds, blue sky, orange rocket, white",
+        "people": 0,
+        "people_detected": 1,
+        "prominence": 0.0,
+        "said": "rocket",
+        "seconds": 38,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/10/232-135861442_large.jpg",
+        "url": "https://pixabay.com/videos/id-232/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/06/32005-389724789_large.mp4",
+        "id": 32005,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fireworks",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/06/32005-389724789_large.jpg",
+        "url": "https://pixabay.com/videos/id-32005/",
+        "why": "the model called it fireworks",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/06/145506-787039586_large.mp4",
+        "id": 145506,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fireworks",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/06/145506-787039586_large.jpg",
+        "url": "https://pixabay.com/videos/id-145506/",
+        "why": "the model called it fireworks",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/12/365-136081982_medium.mp4",
+        "id": 365,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fireworks",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/12/365-136081982_medium.jpg",
+        "url": "https://pixabay.com/videos/id-365/",
+        "why": "the model called it fireworks",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/11/348-136022207_medium.mp4",
+        "id": 348,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fireworks",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/11/348-136022207_medium.jpg",
+        "url": "https://pixabay.com/videos/id-348/",
+        "why": "the model called it fireworks",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/10/234-135861923_large.mp4",
+        "id": 234,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "american flag",
+        "seconds": 38,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/10/234-135861923_large.jpg",
+        "url": "https://pixabay.com/videos/id-234/",
+        "why": "the model called it american flag",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/12/375-136120054_large.mp4",
+        "id": 375,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "scope",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/12/375-136120054_large.jpg",
+        "url": "https://pixabay.com/videos/id-375/",
+        "why": "the model called it scope",
+        "width": 1920
+      }
+    ],
+    "search_term": "rocket"
+  },
   "rooster": {
     "candidates_seen": 12,
     "clips": [
@@ -12491,6 +13453,169 @@
         "width": 1920
       }
     ]
+  },
+  "scooter": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/10/21/28146-368238542_large.mp4",
+        "id": 28146,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "woman",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/10/21/28146-368238542_large.jpg",
+        "url": "https://pixabay.com/videos/id-28146/",
+        "why": "the model called it woman",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/07/27/45697-446485386_small.mp4",
+        "id": 45697,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "people",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/27/45697-446485386_small.jpg",
+        "url": "https://pixabay.com/videos/id-45697/",
+        "why": "the model called it people",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/06/18/167768-838892798_small.mp4",
+        "id": 167768,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tree",
+        "seconds": 47,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/06/18/167768-838892798_small.jpg",
+        "url": "https://pixabay.com/videos/id-167768/",
+        "why": "the model called it tree",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/02/18/259264_small.mp4",
+        "id": 259264,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "field",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/02/18/259264_small.jpg",
+        "url": "https://pixabay.com/videos/id-259264/",
+        "why": "the model called it field",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/12/04/99704-654636728_small.mp4",
+        "id": 99704,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "traffic",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/12/04/99704-654636728_small.jpg",
+        "url": "https://pixabay.com/videos/id-99704/",
+        "why": "the model called it traffic",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/11/22/317454_small.mp4",
+        "id": 317454,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "dogs",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/11/22/317454_small.jpg",
+        "url": "https://pixabay.com/videos/id-317454/",
+        "why": "the model called it dogs",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/09/22/5638-183850414_large.mp4",
+        "id": 5638,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/09/22/5638-183850414_large.jpg",
+        "url": "https://pixabay.com/videos/id-5638/",
+        "why": "the model called it car",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/25/182265-868067038_large.mp4",
+        "id": 182265,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "skateboarder",
+        "seconds": 27,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/25/182265-868067038_large.jpg",
+        "url": "https://pixabay.com/videos/id-182265/",
+        "why": "the model called it skateboarder",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/11/41745-430090704_large.mp4",
+        "id": 41745,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "city",
+        "seconds": 67,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/11/41745-430090704_large.jpg",
+        "url": "https://pixabay.com/videos/id-41745/",
+        "why": "the model called it city",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/04/28/37421-414024494_large.mp4",
+        "id": 37421,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bike",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/04/28/37421-414024494_large.jpg",
+        "url": "https://pixabay.com/videos/id-37421/",
+        "why": "the model called it bike",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/13/113768-699653753_large.mp4",
+        "id": 113768,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "street",
+        "seconds": 66,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/13/113768-699653753_large.jpg",
+        "url": "https://pixabay.com/videos/id-113768/",
+        "why": "the model called it street",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/11/41746-430090714_large.mp4",
+        "id": 41746,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "road",
+        "seconds": 43,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/11/41746-430090714_large.jpg",
+        "url": "https://pixabay.com/videos/id-41746/",
+        "why": "the model called it road",
+        "width": 1920
+      }
+    ],
+    "search_term": "kick scooter"
   },
   "scorpion": {
     "candidates_seen": 6,
@@ -13397,6 +14522,158 @@
       }
     ]
   },
+  "ship": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/03/13/264433_small.mp4",
+        "id": 264433,
+        "licence": "Pixabay Content Licence",
+        "listed": "Boat, ship, crane, dock, water, boat, ship, crane, dock, water, boat, ship, crane, dock, water, boat, ship, crane, dock, water, boat, ship, crane, dock, water, boat, ship,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "ship",
+        "seconds": 18,
+        "structures": [],
+        "subject_area": 0.1007,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/13/264433_small.jpg",
+        "url": "https://pixabay.com/videos/id-264433/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/04/18/2849-163375551_large.mp4",
+        "id": 2849,
+        "licence": "Pixabay Content Licence",
+        "listed": "Cruise ship, swimming pool, water, buildings, boats, flags, people, umbrellas, water slide, water toys, water fountain, waterfall, water fountain, water slide, water toys, water fountain, waterfall, water f",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "cruise ship",
+        "seconds": 76,
+        "structures": [
+          "buildings",
+          "pool"
+        ],
+        "subject_area": 0.1406,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/04/18/2849-163375551_large.jpg",
+        "url": "https://pixabay.com/videos/id-2849/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/07/05/3713-173505175_large.mp4",
+        "id": 3713,
+        "licence": "Pixabay Content Licence",
+        "listed": "Ship, swimming pool, water, buildings, boats, mountains, trees, people, cars, trucks, and watercraft.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "ship",
+        "seconds": 20,
+        "structures": [
+          "buildings",
+          "pool"
+        ],
+        "subject_area": 0.1652,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/07/05/3713-173505175_large.jpg",
+        "url": "https://pixabay.com/videos/id-3713/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/08/13/175923-854230287_large.mp4",
+        "id": 175923,
+        "licence": "Pixabay Content Licence",
+        "listed": "Cruise ship, houses, cars, boats, mountains, water, grass, trees, buildings, parking lot, street, road, waterfront, dock, pier, lake, river, ocean, town, city, residential area, tourist area, recreational area, commercial area,",
+        "people": 7,
+        "people_detected": 7,
+        "prominence": 0.0,
+        "said": "cruise ship",
+        "seconds": 12,
+        "structures": [
+          "buildings",
+          "city",
+          "houses",
+          "street"
+        ],
+        "subject_area": 0.2476,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/13/175923-854230287_large.jpg",
+        "url": "https://pixabay.com/videos/id-175923/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/07/17/10715-226624864_large.mp4",
+        "id": 10715,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "clouds",
+        "seconds": 58,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/07/17/10715-226624864_large.jpg",
+        "url": "https://pixabay.com/videos/id-10715/",
+        "why": "the model called it clouds",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/20/237249_small.mp4",
+        "id": 237249,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.208,
+        "said": "boat",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/20/237249_small.jpg",
+        "url": "https://pixabay.com/videos/id-237249/",
+        "why": "the model called it boat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/05/12/23544-335833111_small.mp4",
+        "id": 23544,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.999,
+        "said": "bridge",
+        "seconds": 32,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/05/12/23544-335833111_small.jpg",
+        "url": "https://pixabay.com/videos/id-23544/",
+        "why": "the model called it bridge",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/28/33014-395456435_small.mp4",
+        "id": 33014,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "boats",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/28/33014-395456435_small.jpg",
+        "url": "https://pixabay.com/videos/id-33014/",
+        "why": "the model called it boats",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/18/236893_small.mp4",
+        "id": 236893,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.032,
+        "said": "boat",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/18/236893_small.jpg",
+        "url": "https://pixabay.com/videos/id-236893/",
+        "why": "the model called it boat",
+        "width": 1920
+      }
+    ],
+    "search_term": "ship"
+  },
   "shrimp": {
     "candidates_seen": 12,
     "clips": [
@@ -13790,19 +15067,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2021/02/21/65917-516089030_large.mp4",
-        "id": 65917,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "bird",
-        "seconds": 10,
-        "thumbnail": "https://cdn.pixabay.com/video/2021/02/21/65917-516089030_large.jpg",
-        "url": "https://pixabay.com/videos/id-65917/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2022/02/25/108895-682116261_large.mp4",
         "id": 108895,
         "licence": "Pixabay Content Licence",
@@ -13811,6 +15075,19 @@
         "seconds": 35,
         "thumbnail": "https://cdn.pixabay.com/video/2022/02/25/108895-682116261_large.jpg",
         "url": "https://pixabay.com/videos/id-108895/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/02/21/65917-516089030_large.mp4",
+        "id": 65917,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/21/65917-516089030_large.jpg",
+        "url": "https://pixabay.com/videos/id-65917/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -13829,19 +15106,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2024/08/05/224958_large.mp4",
-        "id": 224958,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "bird",
-        "seconds": 39,
-        "thumbnail": "https://cdn.pixabay.com/video/2024/08/05/224958_large.jpg",
-        "url": "https://pixabay.com/videos/id-224958/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2024/08/15/226574_small.mp4",
         "id": 226574,
         "licence": "Pixabay Content Licence",
@@ -13851,6 +15115,19 @@
         "thumbnail": "https://cdn.pixabay.com/video/2024/08/15/226574_small.jpg",
         "url": "https://pixabay.com/videos/id-226574/",
         "why": "the model called it plant",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/08/05/224958_large.mp4",
+        "id": 224958,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 39,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/08/05/224958_large.jpg",
+        "url": "https://pixabay.com/videos/id-224958/",
+        "why": "the model called it bird",
         "width": 1920
       },
       {
@@ -14924,6 +16201,174 @@
       }
     ]
   },
+  "submarine": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/18/200992-914924512_large.mp4",
+        "id": 200992,
+        "licence": "Pixabay Content Licence",
+        "listed": "A submarine, a sunset, clouds, a person, a boat, a sunset, a boat, a sunset, a boat, a sunset, a boat, a sunset, a boat, a sunset, a boat, a sunset, a boat, a sun",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.999,
+        "said": "submarine",
+        "seconds": 13,
+        "structures": [],
+        "subject_area": 0.0047,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/18/200992-914924512_large.jpg",
+        "url": "https://pixabay.com/videos/id-200992/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/03/14/204165-923582470_small.mp4",
+        "id": 204165,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "aquarium",
+        "seconds": 36,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/03/14/204165-923582470_small.jpg",
+        "url": "https://pixabay.com/videos/id-204165/",
+        "why": "the model called it aquarium",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/02/14/258241_small.mp4",
+        "id": 258241,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "water",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/02/14/258241_small.jpg",
+        "url": "https://pixabay.com/videos/id-258241/",
+        "why": "the model called it water",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/17/155123-809859923_small.mp4",
+        "id": 155123,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/17/155123-809859923_small.jpg",
+        "url": "https://pixabay.com/videos/id-155123/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/04/18/208492_small.mp4",
+        "id": 208492,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "shark",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/04/18/208492_small.jpg",
+        "url": "https://pixabay.com/videos/id-208492/",
+        "why": "the model called it shark",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/18/200993-914924518_large.mp4",
+        "id": 200993,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "ship",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/18/200993-914924518_large.jpg",
+        "url": "https://pixabay.com/videos/id-200993/",
+        "why": "the model called it ship",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/18/200991-914924503_large.mp4",
+        "id": 200991,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.527,
+        "said": "ship",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/18/200991-914924503_large.jpg",
+        "url": "https://pixabay.com/videos/id-200991/",
+        "why": "the model called it ship",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/08/14/175998-854526233_large.mp4",
+        "id": 175998,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "jellyfish",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/14/175998-854526233_large.jpg",
+        "url": "https://pixabay.com/videos/id-175998/",
+        "why": "the model called it jellyfish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/05/13/211849_small.mp4",
+        "id": 211849,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fish",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/05/13/211849_small.jpg",
+        "url": "https://pixabay.com/videos/id-211849/",
+        "why": "the model called it fish",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/08/29/373323_small.mp4",
+        "id": 373323,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.611,
+        "said": "boat",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/08/29/373323_small.jpg",
+        "url": "https://pixabay.com/videos/id-373323/",
+        "why": "the model called it boat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/02/26/336939_small.mp4",
+        "id": 336939,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "duck",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/02/26/336939_small.jpg",
+        "url": "https://pixabay.com/videos/id-336939/",
+        "why": "the model called it duck",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/09/20/305328_small.mp4",
+        "id": 305328,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "plant",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/09/20/305328_small.jpg",
+        "url": "https://pixabay.com/videos/id-305328/",
+        "why": "the model called it plant",
+        "width": 1920
+      }
+    ],
+    "search_term": "submarine"
+  },
   "swallow": {
     "candidates_seen": 12,
     "clips": [],
@@ -15828,6 +17273,104 @@
         "width": 1920
       }
     ]
+  },
+  "truck": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_medium.mp4",
+        "id": 47516,
+        "licence": "Pixabay Content Licence",
+        "listed": "A white truck, a house, a fence, a gate, a tree, a car, a van, a truck, a car, a van, a truck, a car, a van, a truck, a car, a van, a truck, a car",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.142,
+        "said": "truck",
+        "seconds": 11,
+        "structures": [
+          "house"
+        ],
+        "subject_area": 0.04,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47516/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/18/143479-782374009_small.mp4",
+        "id": 143479,
+        "licence": "Pixabay Content Licence",
+        "listed": "A truck, a train, a street, a parking lot, a building, a road, a sidewalk, a car, a traffic light, a street light, a pole, a fence, a wall, a bench, a tree, a box, a container, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 9,
+        "structures": [
+          "building",
+          "street",
+          "wall"
+        ],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/18/143479-782374009_small.jpg",
+        "url": "https://pixabay.com/videos/id-143479/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/19/217279_small.mp4",
+        "id": 217279,
+        "licence": "Pixabay Content Licence",
+        "listed": "A truck, a field, a tree, a fence, a car, a person, a grassy area, a dirt road, a sky, a car, a person, a grassy area, a dirt road, a sky, a car, a person, a grass",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 13,
+        "structures": [],
+        "subject_area": 0.0546,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/19/217279_small.jpg",
+        "url": "https://pixabay.com/videos/id-217279/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/12/200276-912384794_small.mp4",
+        "id": 200276,
+        "licence": "Pixabay Content Licence",
+        "listed": "An orange truck, a large orange machine, a small orange machine, a window, a door, a building, a car, a bus, a train, a person, a bench, a chair, a potted plant, a clock, a car, a bus, a train,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 10,
+        "structures": [
+          "building",
+          "window"
+        ],
+        "subject_area": 0.2873,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/12/200276-912384794_small.jpg",
+        "url": "https://pixabay.com/videos/id-200276/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/28/53582-475000650_medium.mp4",
+        "id": 53582,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "highway",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/28/53582-475000650_medium.jpg",
+        "url": "https://pixabay.com/videos/id-53582/",
+        "why": "the model called it highway",
+        "width": 1920
+      }
+    ],
+    "search_term": "truck"
   },
   "turkey": {
     "candidates_seen": 12,
