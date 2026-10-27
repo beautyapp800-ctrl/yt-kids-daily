@@ -1096,29 +1096,8 @@
     ]
   },
   "falcon": {
-    "candidates_seen": 9,
-    "refused": [
-      {
-        "title": "Falcon Leg Bells 3.mp3",
-        "why": "bells, possibly used on a falcon's leg"
-      },
-      {
-        "title": "Falcon Leg Bells 1.mp3",
-        "why": "bells, possibly used on a falcon's leg"
-      },
-      {
-        "title": "Falcon Leg Bells 5.mp3",
-        "why": "bells, possibly on a falconer's equipment"
-      },
-      {
-        "title": "Falcon Leg Bells 6.mp3",
-        "why": "bells, possibly used on a falcon's leg"
-      },
-      {
-        "title": "Falcon Leg Bells 2.mp3",
-        "why": "bells, possibly on a falconry leg harness"
-      }
-    ],
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -2768,45 +2747,10 @@
     "sounds": []
   },
   "robin": {
-    "candidates_seen": 5,
-    "refused": [
-      {
-        "title": "Oriental magpie-robin call",
-        "why": "an Oriental magpie-robin"
-      },
-      {
-        "title": "Bird Whistling, Robin, Single, 13.wav",
-        "why": "licence at the source is by: the page links by 4.0"
-      },
-      {
-        "title": "Sea tide Waves At Robin Hoods Bay 24/07/2013",
-        "why": "licence at the source is by: the page links by 4.0"
-      },
-      {
-        "title": "Robin - Monkey",
-        "why": "licence at the source is by: the page links by 3.0"
-      }
-    ],
-    "silent": false,
-    "sounds": [
-      {
-        "attribution_required": false,
-        "checked": "2026-10-23",
-        "creator": "fiezewarthog",
-        "id": "91feca4f-a61a-4996-9ea6-b150886404fe",
-        "is": "a robin making its call",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/fiezewarthog/sounds/504923",
-        "seconds": 10.0,
-        "source": "freesound",
-        "title": "Robin Calling.wav",
-        "url": "https://cdn.freesound.org/previews/504/504923_10950637-hq.mp3"
-      }
-    ]
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "rocket": {
     "candidates_seen": 0,
@@ -3216,45 +3160,10 @@
     "sounds": []
   },
   "sparrow": {
-    "candidates_seen": 4,
+    "candidates_seen": 0,
     "refused": [],
-    "silent": false,
-    "sounds": [
-      {
-        "attribution_required": false,
-        "checked": "2026-10-26",
-        "creator": "felix.blume",
-        "id": "b7f7cd94-27d5-4310-a295-d46e342ae17b",
-        "is": "a sparrow singing and flying in the bush",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/felix.blume/sounds/177787",
-        "seconds": 178.9,
-        "source": "freesound",
-        "title": "Little sparrow singing and flying in the bush (Patagonia, Argentina)",
-        "url": "https://cdn.freesound.org/previews/177/177787_1661766-hq.mp3"
-      },
-      {
-        "attribution_required": false,
-        "checked": "2026-10-26",
-        "creator": "JPBILLINGSLEYJR",
-        "id": "a071c4e8-2d9e-456d-81b0-979a2f50fec8",
-        "is": "a chipping sparrow making its sound",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/JPBILLINGSLEYJR/sounds/465889",
-        "seconds": 33.0,
-        "source": "freesound",
-        "title": "Chipping sparrow",
-        "url": "https://cdn.freesound.org/previews/465/465889_9786444-hq.mp3"
-      }
-    ]
+    "silent": true,
+    "sounds": []
   },
   "spider": {
     "candidates_seen": 8,

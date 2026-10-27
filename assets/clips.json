@@ -4580,19 +4580,6 @@
     "rejected": [
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2022/04/18/114414-701051085_large.mp4",
-        "id": 114414,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "hawk",
-        "seconds": 29,
-        "thumbnail": "https://cdn.pixabay.com/video/2022/04/18/114414-701051085_large.jpg",
-        "url": "https://pixabay.com/videos/id-114414/",
-        "why": "the model called it hawk",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2022/04/18/114412-701051079_large.mp4",
         "id": 114412,
         "licence": "Pixabay Content Licence",
@@ -4602,6 +4589,19 @@
         "thumbnail": "https://cdn.pixabay.com/video/2022/04/18/114412-701051079_large.jpg",
         "url": "https://pixabay.com/videos/id-114412/",
         "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/18/114414-701051085_large.mp4",
+        "id": 114414,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "hawk",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/18/114414-701051085_large.jpg",
+        "url": "https://pixabay.com/videos/id-114414/",
+        "why": "the model called it hawk",
         "width": 1920
       },
       {
@@ -4619,19 +4619,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2022/09/17/131649-750753107_large.mp4",
-        "id": 131649,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "eagle",
-        "seconds": 29,
-        "thumbnail": "https://cdn.pixabay.com/video/2022/09/17/131649-750753107_large.jpg",
-        "url": "https://pixabay.com/videos/id-131649/",
-        "why": "the model called it eagle",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2023/09/28/182645-869766585_large.mp4",
         "id": 182645,
         "licence": "Pixabay Content Licence",
@@ -4641,6 +4628,19 @@
         "thumbnail": "https://cdn.pixabay.com/video/2023/09/28/182645-869766585_large.jpg",
         "url": "https://pixabay.com/videos/id-182645/",
         "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/17/131649-750753107_large.mp4",
+        "id": 131649,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "eagle",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/17/131649-750753107_large.jpg",
+        "url": "https://pixabay.com/videos/id-131649/",
+        "why": "the model called it eagle",
         "width": 1920
       },
       {
@@ -7303,19 +7303,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.mp4",
-        "id": 84861,
-        "licence": "Pixabay Content Licence",
-        "prominence": 1.0,
-        "said": "bird",
-        "seconds": 20,
-        "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.jpg",
-        "url": "https://pixabay.com/videos/id-84861/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2024/07/18/221904_small.mp4",
         "id": 221904,
         "licence": "Pixabay Content Licence",
@@ -7342,6 +7329,19 @@
       },
       {
         "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.mp4",
+        "id": 84861,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/12/84861-586995606_small.jpg",
+        "url": "https://pixabay.com/videos/id-84861/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2018/05/18/16281-270577603_small.mp4",
         "id": 16281,
         "licence": "Pixabay Content Licence",
@@ -7355,19 +7355,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.mp4",
-        "id": 180811,
-        "licence": "Pixabay Content Licence",
-        "prominence": 1.0,
-        "said": "bird",
-        "seconds": 25,
-        "thumbnail": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.jpg",
-        "url": "https://pixabay.com/videos/id-180811/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2021/10/19/92604-637274873_small.mp4",
         "id": 92604,
         "licence": "Pixabay Content Licence",
@@ -7376,6 +7363,19 @@
         "seconds": 20,
         "thumbnail": "https://cdn.pixabay.com/video/2021/10/19/92604-637274873_small.jpg",
         "url": "https://pixabay.com/videos/id-92604/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.mp4",
+        "id": 180811,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/09/16/180811-865223825_large.jpg",
+        "url": "https://pixabay.com/videos/id-180811/",
         "why": "the model called it bird",
         "width": 1920
       }
@@ -12977,19 +12977,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2026/07/28/367122_small.mp4",
-        "id": 367122,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.11,
-        "said": "bird",
-        "seconds": 9,
-        "thumbnail": "https://cdn.pixabay.com/video/2026/07/28/367122_small.jpg",
-        "url": "https://pixabay.com/videos/id-367122/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2023/03/07/153699-806177963_small.mp4",
         "id": 153699,
         "licence": "Pixabay Content Licence",
@@ -12998,6 +12985,19 @@
         "seconds": 23,
         "thumbnail": "https://cdn.pixabay.com/video/2023/03/07/153699-806177963_small.jpg",
         "url": "https://pixabay.com/videos/id-153699/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/07/28/367122_small.mp4",
+        "id": 367122,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.11,
+        "said": "bird",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/07/28/367122_small.jpg",
+        "url": "https://pixabay.com/videos/id-367122/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -13042,14 +13042,14 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2021/12/16/101737-658820150_large.mp4",
-        "id": 101737,
+        "clip": "https://cdn.pixabay.com/video/2021/02/20/65778-515379492_large.mp4",
+        "id": 65778,
         "licence": "Pixabay Content Licence",
         "prominence": 0.0,
         "said": "bird",
-        "seconds": 15,
-        "thumbnail": "https://cdn.pixabay.com/video/2021/12/16/101737-658820150_large.jpg",
-        "url": "https://pixabay.com/videos/id-101737/",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/20/65778-515379492_large.jpg",
+        "url": "https://pixabay.com/videos/id-65778/",
         "why": "the model called it bird",
         "width": 1920
       }
@@ -18353,19 +18353,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2016/05/25/3285-168129560_large.mp4",
-        "id": 3285,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "bird",
-        "seconds": 33,
-        "thumbnail": "https://cdn.pixabay.com/video/2016/05/25/3285-168129560_large.jpg",
-        "url": "https://pixabay.com/videos/id-3285/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2024/12/14/246671_small.mp4",
         "id": 246671,
         "licence": "Pixabay Content Licence",
@@ -18374,6 +18361,19 @@
         "seconds": 13,
         "thumbnail": "https://cdn.pixabay.com/video/2024/12/14/246671_small.jpg",
         "url": "https://pixabay.com/videos/id-246671/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/05/25/3285-168129560_large.mp4",
+        "id": 3285,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 33,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/05/25/3285-168129560_large.jpg",
+        "url": "https://pixabay.com/videos/id-3285/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -18405,19 +18405,6 @@
       },
       {
         "attribution_required": false,
-        "clip": "https://cdn.pixabay.com/video/2026/10/10/381829_small.mp4",
-        "id": 381829,
-        "licence": "Pixabay Content Licence",
-        "prominence": 0.0,
-        "said": "bird",
-        "seconds": 16,
-        "thumbnail": "https://cdn.pixabay.com/video/2026/10/10/381829_small.jpg",
-        "url": "https://pixabay.com/videos/id-381829/",
-        "why": "the model called it bird",
-        "width": 1920
-      },
-      {
-        "attribution_required": false,
         "clip": "https://cdn.pixabay.com/video/2019/04/02/22529-328008855_small.mp4",
         "id": 22529,
         "licence": "Pixabay Content Licence",
@@ -18426,6 +18413,19 @@
         "seconds": 15,
         "thumbnail": "https://cdn.pixabay.com/video/2019/04/02/22529-328008855_small.jpg",
         "url": "https://pixabay.com/videos/id-22529/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/10/10/381829_small.mp4",
+        "id": 381829,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/10/10/381829_small.jpg",
+        "url": "https://pixabay.com/videos/id-381829/",
         "why": "the model called it bird",
         "width": 1920
       },
@@ -18468,7 +18468,8 @@
         "why": "the model called it bird",
         "width": 1920
       }
-    ]
+    ],
+    "search_term": "woodpecker"
   },
   "worm": {
     "candidates_seen": 12,
