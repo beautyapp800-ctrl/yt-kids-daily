@@ -1716,21 +1716,8 @@
     "sounds": []
   },
   "kestrel": {
-    "candidates_seen": 3,
-    "refused": [
-      {
-        "title": "20190323.kestrel.male.female.wav",
-        "why": "licence at the source is by: the page links by 4.0"
-      },
-      {
-        "title": "20190323.kestrel.airplane.citynoise.wav",
-        "why": "licence at the source is by: the page links by 4.0"
-      },
-      {
-        "title": "20200423.kestrel.01.wav",
-        "why": "licence at the source is by: the page links by 4.0"
-      }
-    ],
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -2024,21 +2011,21 @@
     "sounds": []
   },
   "mockingbird": {
-    "candidates_seen": 11,
+    "candidates_seen": 10,
     "refused": [
       {
         "title": "Bird-one Mockingbird with many songs.wav",
-        "why": "an electronic or synthesized sound, possibly from a device or software named Bird-one"
+        "why": "an electronic or synthesized sound, possibly from a device or equipment named 'Bird-one'"
       }
     ],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-26",
+        "checked": "2026-10-28",
         "creator": "AnthonyChan0",
         "id": "0c1b3b3a-e988-4612-9931-c40da94285e9",
-        "is": "a mockingbird making its own sound",
+        "is": "a mockingbird in someone's backyard",
         "licence": "cc0",
         "licence_checked_at_source": true,
         "licence_evidence": "the page links the CC0 deed and no other licence",
@@ -2052,20 +2039,20 @@
       },
       {
         "attribution_required": false,
-        "checked": "2026-10-26",
-        "creator": "Douglas711",
-        "id": "d5ee58c8-8e7b-4819-b025-47a2d9109f88",
+        "checked": "2026-10-28",
+        "creator": "joshs",
+        "id": "1e078516-d4af-45a8-a692-b290f0812d88",
         "is": "a mockingbird making its own sound",
         "licence": "cc0",
         "licence_checked_at_source": true,
         "licence_evidence": "the page links the CC0 deed and no other licence",
         "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "licence_version": "1.0",
-        "page": "https://freesound.org/people/Douglas711/sounds/427368",
-        "seconds": 151.0,
+        "page": "https://freesound.org/people/joshs/sounds/431914",
+        "seconds": 389.9,
         "source": "freesound",
-        "title": "mockingbird at night.wav",
-        "url": "https://cdn.freesound.org/previews/427/427368_3609277-hq.mp3"
+        "title": "Mockingbird",
+        "url": "https://cdn.freesound.org/previews/431/431914_435608-hq.mp3"
       }
     ]
   },
@@ -2732,17 +2719,8 @@
     ]
   },
   "roadrunner": {
-    "candidates_seen": 2,
-    "refused": [
-      {
-        "title": "Nl-roadrunners",
-        "why": "a file or webpage about roadrunners, possibly from the Netherlands (NL), rather than the sound of the bird itself"
-      },
-      {
-        "title": "Nl-roadrunner",
-        "why": "a car or possibly an engine, the 'NL' prefix may indicate it is from the Netherlands"
-      }
-    ],
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
