@@ -1102,37 +1102,10 @@
     "sounds": []
   },
   "finch": {
-    "candidates_seen": 3,
-    "refused": [
-      {
-        "title": "Crow and finch",
-        "why": "a crow"
-      },
-      {
-        "title": "Finch and woodpecker 190329_1326.wav",
-        "why": "licence at the source is by: the page links by 4.0"
-      }
-    ],
-    "silent": false,
-    "sounds": [
-      {
-        "attribution_required": false,
-        "checked": "2026-10-22",
-        "creator": "petebuchwald",
-        "id": "6771a8fb-2167-4a72-a4b5-bcda4acc9128",
-        "is": "a finch in a cage",
-        "licence": "cc0",
-        "licence_checked_at_source": true,
-        "licence_evidence": "the page links the CC0 deed and no other licence",
-        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "licence_version": "1.0",
-        "page": "https://freesound.org/people/petebuchwald/sounds/271357",
-        "seconds": 309.9,
-        "source": "freesound",
-        "title": "Zebra Finch in Cage (stereo).wav",
-        "url": "https://cdn.freesound.org/previews/271/271357_2367139-hq.mp3"
-      }
-    ]
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
   },
   "fire truck": {
     "candidates_seen": 20,
