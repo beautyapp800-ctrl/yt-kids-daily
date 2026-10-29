@@ -88,6 +88,29 @@ Levels are measured on the mixed turns, not assumed: the voice is the same in bo
 sting 4 dB under. The effects are CC0, each licence read on its Freesound page
 (`assets/sfx/licences.json`, found by `scripts/find_sfx.py`).
 
+## A Short a day
+
+New children's channels find their first viewers through Shorts, so every video has one
+(`pipeline/short.py`): 1080x1920, 30 to 45 seconds, three turns of the day's game - a piece of
+the frame, the question on screen and spoken, 3-2-1, the reveal, the name and the real sound -
+and a closing card sending the child to the full video. Turns with a real sound come first: it is
+the channel's hook. Standing up, the picture is a 4:5 slice of the clip in the board's sky, with
+the question in the band above it; a 9:16 slice took a third of the frame and cut the wolf in
+two. The slice is centred on where the frame's detail is, the riddle is a 1.9x piece of it (2.4x
+left only fur on a phone), and the reveal and the cut to the playing clip are made exactly as in
+the long video. Made for kids, public at the same moment as the full video, recorded in the
+database so a rerun cannot upload it twice, and never able to fail the day: a Short that cannot
+be made is a warning in the email.
+
+Nothing new is generated: clips, sounds, questions and answers come from the long video, and the
+one new line ("Watch all fifteen in the full video!") is the same free voice. No Cloudflare
+neurons.
+
+Quota, read from Google's page on 29 October (updated 15 October): videos.insert has its own
+bucket of 100 calls a day per Google Cloud project, apart from the 10,000 general units.
+yt-factory and yt-kids share one project, so their four daily uploads are 4 of 100;
+thumbnails.set is 50 general units each, 100 a day for the two long videos.
+
 ## One video, one theme
 
 A video is one theme - farm animals, or birds, or vehicles - and never a mixture. The first

@@ -70,6 +70,12 @@ def _upload(video_id, cfg, account, token):
     return upload.run(video_id, cfg)
 
 
+def _short(video_id, cfg, account, token):
+    from pipeline import short
+    # Never fails the day: short.run catches its own errors and records "no Short today".
+    return short.run(video_id, cfg, db, output_dir(video_id))
+
+
 # (stage name, function, video status while the stage runs)
 STAGES = [
     ("plan", _plan, "planning"),
@@ -81,6 +87,8 @@ STAGES = [
     ("seo", _seo, "seo"),
     ("thumbnail", _thumbnail, "thumbnail"),
     ("upload", _upload, "uploading"),
+    # The day's Short, after the full video it points to is on YouTube.
+    ("short", _short, "uploading"),
 ]
 
 

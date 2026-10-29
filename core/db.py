@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS used_subjects (
 
 _VIDEO_FIELDS = {"theme", "status", "title", "seo_title", "description", "tags", "duration_s",
                  "video_path", "thumbnail_path", "youtube_id", "published_at", "error",
-                 "attempts", "cover_subjects"}
+                 "attempts", "cover_subjects", "short_youtube_id"}
 _CARD_FIELDS = {"fact", "clip_id", "clip_url", "clip_licence", "image_path", "video_source",
                 "sound_id", "sound_licence", "sound_url", "sound_attribution", "audio_path", "duration_s",
                 "game_clip_id", "game_clip_url"}
@@ -80,7 +80,8 @@ _CARD_FIELDS = {"fact", "clip_id", "clip_url", "clip_licence", "image_path", "vi
 _MIGRATIONS = [("cards", "sound_url", "TEXT"),
                ("videos", "cover_subjects", "TEXT"),
                ("cards", "game_clip_id", "TEXT"),
-               ("cards", "game_clip_url", "TEXT")]
+               ("cards", "game_clip_url", "TEXT"),
+               ("videos", "short_youtube_id", "TEXT")]
 
 MAX_ATTEMPTS = 3
 

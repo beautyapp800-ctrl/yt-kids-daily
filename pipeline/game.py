@@ -249,6 +249,16 @@ def _scaled_about_centre(img, scale):
                          (s, 0, cx - s * cx, 0, s, cy - s * cy), Image.BICUBIC)
 
 
+def _scaled_about_centre_size(img, scale, width, height):
+    """_scaled_about_centre for a frame of any size - the Short's is 1080x1920."""
+    if abs(scale - 1.0) < 1e-6:
+        return img
+    s = 1.0 / scale
+    cx, cy = width / 2, height / 2
+    return img.transform((width, height), Image.AFFINE,
+                         (s, 0, cx - s * cx, 0, s, cy - s * cy), Image.BICUBIC)
+
+
 def _paste_centre(frame, overlay, scale, alpha, centre=(WIDTH / 2, HEIGHT / 2)):
     if scale <= 0.01 or alpha <= 0.01:
         return

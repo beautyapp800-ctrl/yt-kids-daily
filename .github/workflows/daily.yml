@@ -95,6 +95,8 @@ jobs:
             output/${{ steps.state.outputs.video_id }}/images
             output/${{ steps.state.outputs.video_id }}/sounds
             output/${{ steps.state.outputs.video_id }}/audio
+            output/${{ steps.state.outputs.video_id }}/game_clips
+            output/${{ steps.state.outputs.video_id }}/short_uploaded.json
           key: video-${{ steps.state.outputs.video_id }}-${{ github.run_id }}
           restore-keys: |
             video-${{ steps.state.outputs.video_id }}-
@@ -113,6 +115,8 @@ jobs:
             output/${{ steps.state.outputs.video_id }}/images
             output/${{ steps.state.outputs.video_id }}/sounds
             output/${{ steps.state.outputs.video_id }}/audio
+            output/${{ steps.state.outputs.video_id }}/game_clips
+            output/${{ steps.state.outputs.video_id }}/short_uploaded.json
           key: video-${{ steps.state.outputs.video_id }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Keep the finished video downloadable
