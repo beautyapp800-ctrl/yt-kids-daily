@@ -126,6 +126,38 @@ def test_a_theme_too_thin_or_too_recent_stops_the_day(tmp):
     raise AssertionError("a theme was used twice running, or padded below fifteen")
 
 
+def test_six_full_themes_still_make_a_video_every_day(tmp):
+    """The outage of 30 October - 4 November: birds 13 of 15, the other six all used within
+    the week, and no video at all, which kept the week from ever moving on."""
+    print("test_six_full_themes_still_make_a_video_every_day")
+    sizes = {"birds": 13, "farm animals": 15, "fruit and vegetables": 15, "insects": 15,
+             "sea animals": 17, "transport": 16, "wild animals": 15}
+    recent = [{"theme": t} for t in ("wild animals", "insects", "transport", "sea animals",
+                                     "fruit and vegetables", "farm animals")]
+    first = plan.choose_theme(GROUPS, recent, sizes, floor=15)
+    check(first == "farm animals",
+          f"the theme that rested longest comes back a day early: {first}")
+    picked = []
+    for _ in range(18):
+        theme = plan.choose_theme(GROUPS, recent, sizes, floor=15)
+        picked.append(theme)
+        recent.insert(0, {"theme": theme})
+    check("birds" not in picked, "a theme under the floor is still never padded")
+    gaps = [j - i for i in range(len(picked)) for j in range(i + 1, len(picked))
+            if picked[j] == picked[i] and picked[i] not in picked[i + 1:j]]
+    check(min(gaps) == plan.THEME_REST_MIN,
+          f"three weeks of daily videos, no theme back sooner than {plan.THEME_REST_MIN} "
+          f"(smallest gap {min(gaps)})")
+    try:
+        plan.choose_theme(GROUPS, recent[:5], {t: n for t, n in sizes.items()
+                                               if t in {r['theme'] for r in recent[:5]}},
+                          floor=15)
+    except plan.NoThemeReady:
+        check(True, "five full themes cannot keep the subjects' rest, so the day still stops")
+        return
+    raise AssertionError("a theme came back inside its subjects' five-video rest")
+
+
 def test_a_subject_rests_five_videos(tmp):
     print("test_a_subject_rests_five_videos")
     rng = random.Random(1)
@@ -184,6 +216,7 @@ if __name__ == "__main__":
         test_three_videos_running_are_not_the_same_video(tmp)
         test_a_theme_rests_before_coming_round_again(tmp)
         test_a_theme_too_thin_or_too_recent_stops_the_day(tmp)
+        test_six_full_themes_still_make_a_video_every_day(tmp)
         test_a_subject_rests_five_videos(tmp)
         test_when_a_theme_is_small_the_held_back_return_oldest_first(tmp)
         test_no_clip_is_used_twice_in_a_video(tmp)

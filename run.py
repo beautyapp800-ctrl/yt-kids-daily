@@ -144,6 +144,9 @@ def main():
     parser = argparse.ArgumentParser(description="yt-kids: one video a day")
     parser.add_argument("--dry-run", action="store_true",
                         help="show the stages without touching the database")
+    parser.add_argument("--backfill", action="store_true",
+                        help="after an outage: take the next free slot from tomorrow "
+                             "instead of rebuilding the buffer three days out")
     args = parser.parse_args()
 
     try:
@@ -151,6 +154,9 @@ def main():
     except ConfigError as e:
         log.error("config error: %s", e)
         return 2
+    if args.backfill:
+        cfg["backfill"] = True
+        log.info("backfill: this video takes the next free slot from tomorrow")
     if args.dry_run:
         log.info("dry-run: stages would run in order: %s", " -> ".join(s[0] for s in STAGES))
         return 0

@@ -123,9 +123,6 @@ def main(argv=None):
     left = headroom.videos_left(recent, cfg.get("cards_per_video", 25))
     fresh = len(headroom.fresh_subjects(recent))
     print(f"{fresh} fresh subjects = {left} video(s) of {cfg.get('cards_per_video', 25)} cards")
-    if left >= HEADROOM_VIDEOS and not args.force:
-        print(f"at least {HEADROOM_VIDEOS} videos of headroom; nothing to do")
-        return 0
 
     # The themes that cannot fill a video, neediest first - not the thinnest overall. A video
     # is one theme now, so a theme below the floor is a video that cannot be made, while the
@@ -134,6 +131,14 @@ def main(argv=None):
     sizes = _plan.theme_sizes(groups, _cat.load(), json.loads(
         (ROOT / "assets" / "facts.json").read_text(encoding="utf-8")))
     floor = int(cfg.get("min_theme_cards", _plan.MIN_THEME_CARDS))
+    # The headroom alone is not a reason to stop. It used to be checked first, and with 76 fresh
+    # subjects ("5 videos") this returned every day from 30 October while birds sat at 13 of
+    # 15 - the theme below the floor that left six themes for seven days and no video at all.
+    below = [t for t, n in sizes.items() if n < floor]
+    if left >= HEADROOM_VIDEOS and not below and not args.force:
+        print(f"at least {HEADROOM_VIDEOS} videos of headroom and every theme at the "
+              f"{floor}-card floor; nothing to do")
+        return 0
     target = int(cfg.get("cards_per_video", 25))
     # Closest to the floor first, not thinnest: a theme two short of fifteen is a video next
     # week, one seven short is not, and every theme over the line is a day that has a video.

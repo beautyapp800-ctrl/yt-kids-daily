@@ -41,13 +41,17 @@ def finished_today(now=None):
     return row[0] if row else None
 
 
-def decide(now=None):
+def decide(now=None, backfill=False):
     """(run, reason)."""
     unfinished = db.oldest_unfinished(db.MAX_ATTEMPTS)
     if unfinished:
         attempts = (unfinished.get("attempts") or 0) + 1
         return True, (f"video {unfinished['id']} is unfinished (attempt {attempts} of "
                       f"{db.MAX_ATTEMPTS}), carrying it on")
+    if backfill:
+        # Started by hand to fill the days an outage left empty. Each takes the next free
+        # slot (pipeline/upload.py), so two in a day are two different publication days.
+        return True, "backfill started by hand: a video for the next free slot"
     done = finished_today(now)
     if done is None:
         return True, "nothing has been finished today, starting a video"
@@ -62,7 +66,7 @@ def main():
     # unnecessary, and the run itself will say so.
     try:
         db.init_db()
-        run, reason = decide()
+        run, reason = decide(backfill="--backfill" in sys.argv)
     except Exception as e:                                       # noqa: BLE001
         run, reason = True, f"could not tell whether there is work ({e}); running anyway"
     print(f"run={'true' if run else 'false'}")

@@ -117,7 +117,11 @@ def publish_at(cfg, now=None, last_scheduled=None):
         # the channel is already out of rhythm, so the buffer is built again from today
         # rather than chased. Otherwise the next free slot is taken, which keeps the videos
         # one a day and spends buffer - not continuity - on a day that was lost.
-        if last_local >= local - timedelta(days=days):
+        #
+        # A backfill (run.py --backfill, started by hand) is how the buffer is built again
+        # WITHOUT the dark days: three of them in a row take tomorrow, the day after and the
+        # day after that, and the next scheduled run carries on from the last of them.
+        if cfg.get("backfill") or last_local >= local - timedelta(days=days):
             after_queue = at_publish_time(last_local + timedelta(days=1))
             floor = at_publish_time(local + timedelta(days=MIN_LEAD_DAYS))
             when = max(after_queue, floor)

@@ -26,6 +26,11 @@ on:
     - cron: "27 2 * * *"          # 02:27 UTC, off the hour on purpose
     - cron: "53 10 * * *"         # and again, far enough after to know how the first ended
   workflow_dispatch:
+    inputs:
+      backfill:
+        description: "After an outage: a video for the next free slot from tomorrow, even if one was finished today"
+        type: boolean
+        default: false
 
 concurrency:
   group: daily
@@ -48,7 +53,11 @@ jobs:
         with:
           python-version: "3.11"
       - id: guard
-        run: python scripts/ci_should_run.py | tee -a "$GITHUB_OUTPUT"
+        env:
+          BACKFILL: ${{ inputs.backfill }}
+        run: |
+          flag=""; if [ "$BACKFILL" = "true" ]; then flag="--backfill"; fi
+          python scripts/ci_should_run.py $flag | tee -a "$GITHUB_OUTPUT"
       - run: echo "${{ steps.guard.outputs.reason }}" >> "$GITHUB_STEP_SUMMARY"
 
   produce:
@@ -104,7 +113,11 @@ jobs:
       - name: Produce and upload the video
         id: run
         continue-on-error: true   # the steps below must run either way
-        run: python run.py
+        env:
+          BACKFILL: ${{ inputs.backfill }}
+        run: |
+          flag=""; if [ "$BACKFILL" = "true" ]; then flag="--backfill"; fi
+          python run.py $flag
 
       - name: Save what this run produced, for the next one
         if: always()

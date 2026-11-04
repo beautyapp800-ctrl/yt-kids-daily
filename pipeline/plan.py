@@ -46,6 +46,10 @@ SUBJECT_POOL = 3.0      # how many candidates to consider per card wanted
 THEME_REST = 7           # a theme comes back no sooner than the 7th video: once a week
 SUBJECT_REST = 5         # videos a subject sits out, as asked
 MIN_THEME_CARDS = 15     # every video takes exactly this many; a smaller theme waits
+# The earliest a theme may come back when the week cannot be kept: the first video at which
+# its subjects have rested the five they were asked to. Below this the same subjects would be
+# back inside their own rest, which is the same video again, not a day saved.
+THEME_REST_MIN = SUBJECT_REST + 1
 
 
 def theme_sizes(groups, clips, facts):
@@ -59,14 +63,21 @@ class NoThemeReady(RuntimeError):
     """No theme can make today's video under the rules. Not a fault to retry: a decision."""
 
 
-def choose_theme(groups, recent, sizes, floor=MIN_THEME_CARDS, rest=THEME_REST):
+def choose_theme(groups, recent, sizes, floor=MIN_THEME_CARDS, rest=THEME_REST,
+                 rest_min=THEME_REST_MIN):
     """The theme for this video: one that can fill it and has rested a week.
 
-    Both are hard rules. A theme with fewer than `floor` subjects is not padded from another
-    theme - padding is what produced four videos called "30 Animals for Kids" - and a theme used
-    in the last `rest` videos does not come back early, because a theme twice in a week is the
-    same video twice in a week. When nothing qualifies there is no video, and the reason names
-    every theme's count and when it was last used, so whoever reads it can decide.
+    The floor is a hard rule: a theme with fewer than `floor` subjects is not padded from
+    another theme - padding is what produced four videos called "30 Animals for Kids".
+
+    The week is a preference that gives way to the daily video, and only as far as `rest_min`.
+    Seven themes keep it exactly; six do not, and from 30 October to 4 November the channel
+    published nothing because birds had 13 cards of 15, six themes were all inside their week,
+    and with no video made the week never moved on. The owner's rule is one video a day, so
+    when no theme has rested the week, the one that has rested longest comes back - provided
+    it has rested `rest_min` videos, so its subjects have had the rest they were asked to.
+    Below that there is still no video, and the reason names every theme's count and when it
+    was last used, so whoever reads it can decide.
     """
     # Once a week means a theme used seven videos ago is free today, so it is the six before
     # this one that rule it out. Excluding seven would need eight themes to keep a daily rhythm.
@@ -75,7 +86,16 @@ def choose_theme(groups, recent, sizes, floor=MIN_THEME_CARDS, rest=THEME_REST):
     for distance, name in enumerate(used):
         ago.setdefault(name, distance + 1)
     ready = [t for t, n in sizes.items() if n >= floor and t not in ago]
+    unseen = rest + 1
     if not ready:
+        early = [t for t, n in sizes.items() if n >= floor and ago.get(t, unseen) >= rest_min]
+        if early:
+            pick = sorted(early, key=lambda t: (-ago.get(t, unseen), -sizes[t], t))[0]
+            short = [f"{t} {n} of {floor}" for t, n in sizes.items() if n < floor]
+            log.warning("no theme has rested %d videos; %r comes back after %d so the day has "
+                        "a video (below the floor: %s)", rest, pick, ago.get(pick, unseen),
+                        ", ".join(short) or "none")
+            return pick
         lines = []
         for t, n in sorted(sizes.items(), key=lambda kv: -kv[1]):
             why = []
@@ -86,7 +106,6 @@ def choose_theme(groups, recent, sizes, floor=MIN_THEME_CARDS, rest=THEME_REST):
             lines.append(f"{t}: " + ("; ".join(why) or "ready"))
         raise NoThemeReady("no theme is ready for today's video - " + " | ".join(lines))
     # Never used, or used longest ago, first; then the fullest; then by name for a stable rerun.
-    unseen = rest + 1
     return sorted(ready, key=lambda t: (-ago.get(t, unseen), -sizes[t], t))[0]
 
 
