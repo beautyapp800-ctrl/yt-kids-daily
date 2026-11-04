@@ -158,6 +158,25 @@ def test_six_full_themes_still_make_a_video_every_day(tmp):
     raise AssertionError("a theme came back inside its subjects' five-video rest")
 
 
+def test_the_real_catalogue_gives_every_theme_a_full_video(tmp):
+    """The condition whose absence stopped the channel from 30 October to 4 November: birds had
+    13 cards of the 15 a video takes, six full themes left a week of seven, and no video was
+    made. Read from the files the daily run reads."""
+    print("test_the_real_catalogue_gives_every_theme_a_full_video")
+    import json
+    from pipeline import catalogue
+    root = Path(__file__).resolve().parent.parent / "assets"
+    groups = json.loads((root / "subjects.json").read_text(encoding="utf-8"))
+    facts = json.loads((root / "facts.json").read_text(encoding="utf-8"))
+    sizes = plan.theme_sizes(groups, catalogue.load(), facts)
+    thin = {t: n for t, n in sizes.items() if n < plan.MIN_THEME_CARDS}
+    check(not thin, f"every theme has {plan.MIN_THEME_CARDS} cards with a clip and a fact "
+                    f"(short: {thin or 'none'})")
+    check(len(sizes) >= plan.THEME_REST,
+          f"and there are {plan.THEME_REST} themes, so a theme can rest a week "
+          f"and the channel still posts every day ({len(sizes)})")
+
+
 def test_a_subject_rests_five_videos(tmp):
     print("test_a_subject_rests_five_videos")
     rng = random.Random(1)
@@ -217,6 +236,7 @@ if __name__ == "__main__":
         test_a_theme_rests_before_coming_round_again(tmp)
         test_a_theme_too_thin_or_too_recent_stops_the_day(tmp)
         test_six_full_themes_still_make_a_video_every_day(tmp)
+        test_the_real_catalogue_gives_every_theme_a_full_video(tmp)
         test_a_subject_rests_five_videos(tmp)
         test_when_a_theme_is_small_the_held_back_return_oldest_first(tmp)
         test_no_clip_is_used_twice_in_a_video(tmp)

@@ -1,18 +1,24 @@
 {
   "birds": [
     "crane bird",
+    "duck",
     "eagle",
     "flamingo",
     "hawk",
+    "hummingbird",
     "ostrich",
     "owl",
     "parrot",
     "peacock",
     "pelican",
+    "penguin",
     "pigeon",
+    "rooster",
     "seagull",
     "swan",
-    "vulture"
+    "toucan",
+    "vulture",
+    "woodpecker"
   ],
   "farm animals": [
     "cat",
