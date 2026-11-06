@@ -12363,8 +12363,51 @@
     "search_term": "pufferfish"
   },
   "puffin": {
-    "candidates_seen": 12,
-    "clips": [],
+    "candidates_seen": 16,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/09/23/50656-461022972_small.mp4",
+        "confirmed_by": "visual review of the frame, not the describer",
+        "confirmed_on": "2026-11-06",
+        "id": 50656,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/09/23/50656-461022972_small.jpg",
+        "url": "https://pixabay.com/videos/id-50656/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/09/23/50657-461022977_small.mp4",
+        "confirmed_by": "visual review of the frame, not the describer",
+        "confirmed_on": "2026-11-06",
+        "id": 50657,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bird",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/09/23/50657-461022977_small.jpg",
+        "url": "https://pixabay.com/videos/id-50657/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/02/12/150425-798441097_small.mp4",
+        "confirmed_by": "visual review of the frame, not the describer",
+        "confirmed_on": "2026-11-06",
+        "id": 150425,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.4,
+        "said": "bird",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/12/150425-798441097_small.jpg",
+        "url": "https://pixabay.com/videos/id-150425/",
+        "width": 1920
+      }
+    ],
     "rejected": [
       {
         "attribution_required": false,
@@ -12523,7 +12566,7 @@
         "width": 1920
       }
     ],
-    "search_term": "puffin bird"
+    "search_term": "puffin"
   },
   "quail": {
     "candidates_seen": 8,
