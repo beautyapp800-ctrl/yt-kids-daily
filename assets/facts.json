@@ -20,6 +20,27 @@
     ],
     "refused": []
   },
+  "alpaca": {
+    "facts": [
+      {
+        "checked": "2026-11-06",
+        "fact": "An alpaca has soft fur."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "An alpaca eats grass."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "An alpaca gives warm wool."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "An alpaca lives on a farm."
+      }
+    ],
+    "refused": []
+  },
   "ambulance": {
     "facts": [
       {
@@ -307,6 +328,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Broccoli grows on a plant above the ground, with its roots in the ground"
       }
     ]
+  },
+  "bull": {
+    "facts": [
+      {
+        "checked": "2026-11-06",
+        "fact": "A bull has big horns."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A bull lives on a farm."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A bull runs in a field."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A bull eats grass."
+      }
+    ],
+    "refused": []
   },
   "bulldozer": {
     "facts": [
@@ -790,6 +832,33 @@
       }
     ],
     "refused": []
+  },
+  "cucumber": {
+    "facts": [
+      {
+        "checked": "2026-11-06",
+        "fact": "A cucumber grows in the garden."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A cucumber is green and juicy."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A cucumber has seeds inside."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A cucumber tastes good in salad."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-06",
+        "fact": "A cucumber has a soft skin.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A cucumber's skin is generally considered to be thin and edible, but not necessarily soft"
+      }
+    ]
   },
   "deer": {
     "facts": [
@@ -2131,6 +2200,27 @@
     ],
     "refused": []
   },
+  "mouse": {
+    "facts": [
+      {
+        "checked": "2026-11-06",
+        "fact": "A mouse runs on the floor."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A mouse has a long tail."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A mouse likes to hide."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A mouse eats food."
+      }
+    ],
+    "refused": []
+  },
   "mule": {
     "facts": [
       {
@@ -2205,6 +2295,33 @@
       }
     ],
     "refused": []
+  },
+  "onion": {
+    "facts": [
+      {
+        "checked": "2026-11-06",
+        "fact": "An onion grows in the ground."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "An onion has a strong smell."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "An onion is used in food."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "An onion has a skin."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-06",
+        "fact": "An onion makes people cry.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Onions themselves do not make people cry, the gas they release when cut does"
+      }
+    ]
   },
   "orange": {
     "facts": [
@@ -2665,6 +2782,38 @@
         "checked": "2026-10-23",
         "fact": "A puffin has a big beak.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A puffin's beak is actually fairly small, but very colorful and distinctive."
+      }
+    ]
+  },
+  "pumpkin": {
+    "facts": [
+      {
+        "checked": "2026-11-06",
+        "fact": "A pumpkin grows in a garden."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A pumpkin has a hard skin."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A pumpkin has a stem."
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A pumpkin has lines on it."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-06",
+        "fact": "A pumpkin is orange.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all pumpkins are orange, some are white, yellow, or other colors"
+      },
+      {
+        "checked": "2026-11-06",
+        "fact": "A pumpkin has soft seeds inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Pumpkin seeds are hard, not soft"
       }
     ]
   },

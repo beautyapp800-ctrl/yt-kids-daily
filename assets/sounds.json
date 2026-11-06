@@ -40,6 +40,35 @@
       }
     ]
   },
+  "alpaca": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "AMB follo\u0301n llamas y alpacas",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-06",
+        "creator": "gtg777",
+        "id": "f6a73ef1-f42d-4f18-827c-84f2489f8e07",
+        "is": "an alpaca making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/gtg777/sounds/623809",
+        "seconds": 15.4,
+        "source": "freesound",
+        "title": "Alpaca noises",
+        "url": "https://cdn.freesound.org/previews/623/623809_13545269-hq.mp3"
+      }
+    ]
+  },
   "ambulance": {
     "candidates_seen": 0,
     "refused": [],
@@ -260,6 +289,55 @@
         "source": "freesound",
         "title": "fishing boat engine onboard medium speed left side and gentle waves splash India.flac",
         "url": "https://cdn.freesound.org/previews/451/451395_612689-hq.mp3"
+      }
+    ]
+  },
+  "bull": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "Two bulls singing in the desert of Arizona",
+        "why": "singing, likely human voices"
+      },
+      {
+        "title": "Bulls and cows in a field in Missouri, USA.",
+        "why": "a field ambiance with possibly cows and other farm animals, but not specifically a bull making its sound"
+      },
+      {
+        "title": "Bull Island Seabirds.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "bull 6 (C).wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "bull 3 (B).wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "bull 1 (B).wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-06",
+        "creator": "felix.blume",
+        "id": "c53a91d2-f649-4b0b-bba3-7d335c5f3afd",
+        "is": "a bull mooing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/390464",
+        "seconds": 249.0,
+        "source": "freesound",
+        "title": "Bull mooing a little",
+        "url": "https://cdn.freesound.org/previews/390/390464_1661766-hq.mp3"
       }
     ]
   },
@@ -721,6 +799,33 @@
         "url": "https://cdn.freesound.org/previews/252/252685_3097190-hq.mp3"
       }
     ]
+  },
+  "cucumber": {
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "Cucumber in Vezo",
+        "why": "a place, possibly with ambient or environmental sounds"
+      },
+      {
+        "title": "En-in-cucumber",
+        "why": "unknown or possibly a made-up word, cucumbers do not make sounds"
+      },
+      {
+        "title": "Munching on a Cucumber.wav",
+        "why": "a person eating or chewing on a cucumber"
+      },
+      {
+        "title": "Biting a Cucumber.wav",
+        "why": "a person biting into a cucumber or another crunchy food"
+      },
+      {
+        "title": "Cucumber splash",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "deer": {
     "candidates_seen": 0,
@@ -2136,6 +2241,33 @@
       }
     ]
   },
+  "mouse": {
+    "candidates_seen": 16,
+    "refused": [
+      {
+        "title": "Mouse Sounds Pack",
+        "why": "a collection of sound effects"
+      },
+      {
+        "title": "Mouse click sounds",
+        "why": "a computer mouse click sound"
+      },
+      {
+        "title": "Mouse Clicks.wav",
+        "why": "computer mouse clicks"
+      },
+      {
+        "title": "Mouse clicks and scroll wheel",
+        "why": "computer mouse sounds"
+      },
+      {
+        "title": "corsair mouse buttons and scroll.wav",
+        "why": "computer mouse buttons and scroll wheel sounds"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "mule": {
     "candidates_seen": 0,
     "refused": [],
@@ -2210,6 +2342,33 @@
       {
         "title": "Death of an Octopus - slowed 20 percent",
         "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "onion": {
+    "candidates_seen": 12,
+    "refused": [
+      {
+        "title": "Spring Onion Sounds",
+        "why": "a person or a synthesizer saying the words 'Spring Onion' or possibly a sound effect for a video about spring onions, but not an actual onion making a sound"
+      },
+      {
+        "title": "Crispy Spring Onion",
+        "why": "a person eating or biting into a crispy spring onion"
+      },
+      {
+        "title": "Crispy Spring Onion 3",
+        "why": "a food, possibly being chopped, fried or eaten, with 'crispy' and 'spring' suggesting a culinary context rather than an onion making a natural sound"
+      },
+      {
+        "title": "cut onions.wav",
+        "why": "a knife or blade cutting through an onion"
+      },
+      {
+        "title": "Frying Pan (Chicken and Onion).wav",
+        "why": "a frying pan with chicken and onion being cooked"
       }
     ],
     "silent": true,
@@ -2647,6 +2806,49 @@
   "puffin": {
     "candidates_seen": 0,
     "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "pumpkin": {
+    "candidates_seen": 9,
+    "refused": [
+      {
+        "title": "Pumpkin Seed Crackle.flac",
+        "why": "a bag of pumpkin seeds being cracked or opened"
+      },
+      {
+        "title": "Pumpkin Banging",
+        "why": "a banging or hitting sound, possibly of a pumpkin but more likely an object being banged or hit, not a sound made by a pumpkin itself"
+      },
+      {
+        "title": "Pumpkin#01.wav",
+        "why": "silence or no sound, pumpkins do not make sounds on their own"
+      },
+      {
+        "title": "Pumpkin#02.wav",
+        "why": "silence or unknown, pumpkins do not make sounds"
+      },
+      {
+        "title": "Pumpkin#04.wav",
+        "why": "silence or unknown, pumpkins do not make sounds"
+      },
+      {
+        "title": "haunted house noises at Anderson's Pleasant Patch Pumpkins 2016.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Pumpkin [Trip Hop]",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Mashi Pumpkins Bombastic",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "pumpkin proud ass.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
     "silent": true,
     "sounds": []
   },

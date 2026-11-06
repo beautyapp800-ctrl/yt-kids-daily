@@ -90,6 +90,104 @@
       }
     ]
   },
+  "alpaca": {
+    "candidates_seen": 7,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/11/123847-729035801_large.mp4",
+        "id": 123847,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "goat",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/11/123847-729035801_large.jpg",
+        "url": "https://pixabay.com/videos/id-123847/",
+        "why": "the model called it goat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/05/04/116026-707531317_large.mp4",
+        "id": 116026,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "llama",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/05/04/116026-707531317_large.jpg",
+        "url": "https://pixabay.com/videos/id-116026/",
+        "why": "the model called it llama",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/05/04/116028-707531323_large.mp4",
+        "id": 116028,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "goat",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/05/04/116028-707531323_large.jpg",
+        "url": "https://pixabay.com/videos/id-116028/",
+        "why": "the model called it goat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/08/110099-686962691_large.mp4",
+        "id": 110099,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "llama",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/08/110099-686962691_large.jpg",
+        "url": "https://pixabay.com/videos/id-110099/",
+        "why": "the model called it llama",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/16/163299-830865488_large.mp4",
+        "id": 163299,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "lamb",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/16/163299-830865488_large.jpg",
+        "url": "https://pixabay.com/videos/id-163299/",
+        "why": "the model called it lamb",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/05/04/116023-707531306_large.mp4",
+        "id": 116023,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "llama",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/05/04/116023-707531306_large.jpg",
+        "url": "https://pixabay.com/videos/id-116023/",
+        "why": "the model called it llama",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/12/04/319733_small.mp4",
+        "id": 319733,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bear",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/12/04/319733_small.jpg",
+        "url": "https://pixabay.com/videos/id-319733/",
+        "why": "the model called it bear",
+        "width": 1920
+      }
+    ],
+    "search_term": "alpaca"
+  },
   "ambulance": {
     "candidates_seen": 5,
     "clips": [],
@@ -1270,6 +1368,182 @@
         "width": 3840
       }
     ]
+  },
+  "bull": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/31/63662-507811632_large.mp4",
+        "id": 63662,
+        "licence": "Pixabay Content Licence",
+        "listed": "A brown cow, a river, grass, a cow's horns, a cow's face, a cow's nose, a cow's mouth, a cow's ear, a cow's tail, a cow's legs, a cow's belly, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "bull",
+        "seconds": 20,
+        "structures": [],
+        "subject_area": 0.156,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/31/63662-507811632_large.jpg",
+        "url": "https://pixabay.com/videos/id-63662/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/31/63665-507811639_large.mp4",
+        "id": 63665,
+        "licence": "Pixabay Content Licence",
+        "listed": "A large brown bull, a tree, a branch, a grassy area, a water source, a cow, a horn, a tree branch, a cow horn, a cow's head, a cow's nose, a cow's mouth, a cow's ear, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "bull",
+        "seconds": 12,
+        "structures": [],
+        "subject_area": 0.1146,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/31/63665-507811639_large.jpg",
+        "url": "https://pixabay.com/videos/id-63665/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/31/63663-507811635_large.mp4",
+        "id": 63663,
+        "licence": "Pixabay Content Licence",
+        "listed": "A large brown cow, a river, a tree, grass, a branch, a rock, a watering hole, a cow's head, horns, a cow's nose, a cow's mouth, a cow's tongue, a cow's chin, a cow",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "bull",
+        "seconds": 12,
+        "structures": [],
+        "subject_area": 0.2505,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/31/63663-507811635_large.jpg",
+        "url": "https://pixabay.com/videos/id-63663/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/02/29/2341-157269923_large.mp4",
+        "id": 2341,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/02/29/2341-157269923_large.jpg",
+        "url": "https://pixabay.com/videos/id-2341/",
+        "why": "the model called it cow",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/25/125468-733814321_large.mp4",
+        "id": 125468,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/25/125468-733814321_large.jpg",
+        "url": "https://pixabay.com/videos/id-125468/",
+        "why": "the model called it cow",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/31/63664-507811637_large.mp4",
+        "id": 63664,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/31/63664-507811637_large.jpg",
+        "url": "https://pixabay.com/videos/id-63664/",
+        "why": "the model called it cow",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/03/19/8439-209165721_large.mp4",
+        "id": 8439,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/03/19/8439-209165721_large.jpg",
+        "url": "https://pixabay.com/videos/id-8439/",
+        "why": "the model called it cow",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/06/08/76905-560684429_large.mp4",
+        "id": 76905,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cows",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/06/08/76905-560684429_large.jpg",
+        "url": "https://pixabay.com/videos/id-76905/",
+        "why": "the model called it cows",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/06/08/76906-560684424_large.mp4",
+        "id": 76906,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cows",
+        "seconds": 37,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/06/08/76906-560684424_large.jpg",
+        "url": "https://pixabay.com/videos/id-76906/",
+        "why": "the model called it cows",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/02/19/151336-800680820_large.mp4",
+        "id": 151336,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/19/151336-800680820_large.jpg",
+        "url": "https://pixabay.com/videos/id-151336/",
+        "why": "the model called it cow",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/08/02/368140_large.mp4",
+        "id": 368140,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/08/02/368140_large.jpg",
+        "url": "https://pixabay.com/videos/id-368140/",
+        "why": "the model called it cow",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/06/245198_small.mp4",
+        "id": 245198,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cow",
+        "seconds": 49,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/06/245198_small.jpg",
+        "url": "https://pixabay.com/videos/id-245198/",
+        "why": "the model called it cow",
+        "width": 1920
+      }
+    ],
+    "search_term": "bull cattle"
   },
   "bulldozer": {
     "candidates_seen": 10,
@@ -3305,6 +3579,12 @@
         "width": 1920
       }
     ]
+  },
+  "cucumber": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [],
+    "search_term": "cucumber"
   },
   "deer": {
     "candidates_seen": 12,
@@ -9890,6 +10170,49 @@
       }
     ]
   },
+  "mouse": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/11/19/139660-773418010_large.mp4",
+        "id": 139660,
+        "licence": "Pixabay Content Licence",
+        "listed": "Two mice, a rock, a tree branch, a pile of food, a log, a stone, a wooden fence, and a background of green leaves.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "mouse",
+        "seconds": 27,
+        "structures": [],
+        "subject_area": 0.1499,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/11/19/139660-773418010_large.jpg",
+        "url": "https://pixabay.com/videos/id-139660/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/11/19/139658-773417997_large.mp4",
+        "id": 139658,
+        "licence": "Pixabay Content Licence",
+        "listed": "A mouse, a rock, a piece of bread, a tree, a leaf, a fence, a wall, a pile of hay, a log, a branch, a green plant, a yellow plant, a brown plant, a green leaf, a brown leaf, a yellow leaf,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "mouse",
+        "seconds": 32,
+        "structures": [
+          "wall"
+        ],
+        "subject_area": 0.0893,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/11/19/139658-773417997_large.jpg",
+        "url": "https://pixabay.com/videos/id-139658/",
+        "width": 1920
+      }
+    ],
+    "rejected": [],
+    "search_term": "mouse animal"
+  },
   "mule": {
     "candidates_seen": 8,
     "clips": [],
@@ -10120,6 +10443,12 @@
         "width": 1920
       }
     ]
+  },
+  "onion": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [],
+    "search_term": "onion"
   },
   "orange": {
     "candidates_seen": 12,
@@ -12567,6 +12896,12 @@
       }
     ],
     "search_term": "puffin"
+  },
+  "pumpkin": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [],
+    "search_term": "pumpkin"
   },
   "quail": {
     "candidates_seen": 8,
