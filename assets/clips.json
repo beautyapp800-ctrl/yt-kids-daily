@@ -1007,6 +1007,182 @@
       }
     ]
   },
+  "bell pepper": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/11/61669-500316010_small.mp4",
+        "id": 61669,
+        "licence": "Pixabay Content Licence",
+        "listed": "carrots, peppers, onions, oranges, apples, pears, and broccoli.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.986,
+        "said": "peppers",
+        "seconds": 22,
+        "structures": [],
+        "subject_area": 0.4276,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/11/61669-500316010_small.jpg",
+        "url": "https://pixabay.com/videos/id-61669/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/05/9592-220321589_large.mp4",
+        "id": 9592,
+        "licence": "Pixabay Content Licence",
+        "listed": "A person, a bowl, a knife, a spoon, a grill, a tomato, a pepper, a banana, a bowl of fruit, a bowl of vegetables, a hand, a finger, a thumb, a wrist, a grill",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "pepper",
+        "seconds": 10,
+        "structures": [],
+        "subject_area": 0.2014,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/05/9592-220321589_large.jpg",
+        "url": "https://pixabay.com/videos/id-9592/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/02/06/21198-315829560_large.mp4",
+        "id": 21198,
+        "licence": "Pixabay Content Licence",
+        "listed": "Peppercorns, peppercorns, peppercorns, peppercorns, peppercorns, peppercorns, peppercorns, peppercorns, peppercorns, peppercorns,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "pepper",
+        "seconds": 23,
+        "structures": [],
+        "subject_area": 0.1783,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/02/06/21198-315829560_large.jpg",
+        "url": "https://pixabay.com/videos/id-21198/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/02/9504-220204064_large.mp4",
+        "id": 9504,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.089,
+        "said": "meat",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/02/9504-220204064_large.jpg",
+        "url": "https://pixabay.com/videos/id-9504/",
+        "why": "the model called it meat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/05/9593-220321595_large.mp4",
+        "id": 9593,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.341,
+        "said": "tomato",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/05/9593-220321595_large.jpg",
+        "url": "https://pixabay.com/videos/id-9593/",
+        "why": "the model called it tomato",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/05/9589-220321585_large.mp4",
+        "id": 9589,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "meat",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/05/9589-220321585_large.jpg",
+        "url": "https://pixabay.com/videos/id-9589/",
+        "why": "the model called it meat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/06/03/9523-220204091_large.mp4",
+        "id": 9523,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "grill",
+        "seconds": 28,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/06/03/9523-220204091_large.jpg",
+        "url": "https://pixabay.com/videos/id-9523/",
+        "why": "the model called it grill",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/08/18/371274_small.mp4",
+        "id": 371274,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tree",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/08/18/371274_small.jpg",
+        "url": "https://pixabay.com/videos/id-371274/",
+        "why": "the model called it tree",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/09/04/87546-602317637_large.mp4",
+        "id": 87546,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "squash",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/09/04/87546-602317637_large.jpg",
+        "url": "https://pixabay.com/videos/id-87546/",
+        "why": "the model called it squash",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/03/31/156878-813735363_small.mp4",
+        "id": 156878,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "pizza",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/03/31/156878-813735363_small.jpg",
+        "url": "https://pixabay.com/videos/id-156878/",
+        "why": "the model called it pizza",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/05/219619_small.mp4",
+        "id": 219619,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "meat",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/05/219619_small.jpg",
+        "url": "https://pixabay.com/videos/id-219619/",
+        "why": "the model called it meat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/29/11638-231758689_large.mp4",
+        "id": 11638,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "hand",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/29/11638-231758689_large.jpg",
+        "url": "https://pixabay.com/videos/id-11638/",
+        "why": "the model called it hand",
+        "width": 1920
+      }
+    ],
+    "search_term": "bell pepper"
+  },
   "bicycle": {
     "candidates_seen": 12,
     "clips": [
@@ -2991,6 +3167,97 @@
       }
     ],
     "search_term": "cockroach"
+  },
+  "corn": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/27/86568-593944967_medium.mp4",
+        "id": 86568,
+        "licence": "Pixabay Content Licence",
+        "listed": "Corn, corn stalks, green leaves, green plants, tall plants, sunlight, sky, field, plants, ears of corn, stalks, leaves, plants, sunlight, sky, field, ears of corn, stalks, leaves, plants, sunlight, sky, field,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.991,
+        "said": "corn",
+        "seconds": 14,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/27/86568-593944967_medium.jpg",
+        "url": "https://pixabay.com/videos/id-86568/",
+        "width": 1922
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/11/04/12752-241674243_large.mp4",
+        "id": 12752,
+        "licence": "Pixabay Content Licence",
+        "listed": "A field of corn, a tree, power lines, a house, a field of wheat, a field of corn, a field of wheat, a field of corn, a field of wheat, a field of corn, a field of wheat, a field of corn, a field",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.359,
+        "said": "corn",
+        "seconds": 12,
+        "structures": [
+          "house"
+        ],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/11/04/12752-241674243_large.jpg",
+        "url": "https://pixabay.com/videos/id-12752/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/09/01/301141_small.mp4",
+        "id": 301141,
+        "licence": "Pixabay Content Licence",
+        "listed": "A corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant, a corn plant,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.103,
+        "said": "corn",
+        "seconds": 15,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/09/01/301141_small.jpg",
+        "url": "https://pixabay.com/videos/id-301141/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/09/01/301140_small.mp4",
+        "id": 301140,
+        "licence": "Pixabay Content Licence",
+        "listed": "corn, corn cob, corn kernels, corn husk, corn silk, corn plant, green plant, yellow plant, leaf, stalk, plant, field, plantation, crop, vegetation, plant life, plant growth, plant development, plant maturity,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.091,
+        "said": "corn",
+        "seconds": 12,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/09/01/301140_small.jpg",
+        "url": "https://pixabay.com/videos/id-301140/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/03/29/268554_small.mp4",
+        "id": 268554,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "field",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/29/268554_small.jpg",
+        "url": "https://pixabay.com/videos/id-268554/",
+        "why": "the model called it field",
+        "width": 1920
+      }
+    ],
+    "search_term": "corn cob"
   },
   "cow": {
     "candidates_seen": 12,
@@ -8838,6 +9105,169 @@
     ],
     "search_term": "lemon"
   },
+  "lettuce": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/19/201105-914557911_small.mp4",
+        "id": 201105,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "field",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/19/201105-914557911_small.jpg",
+        "url": "https://pixabay.com/videos/id-201105/",
+        "why": "the model called it field",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/25/132533-753956291_small.mp4",
+        "id": 132533,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "hot dog",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/25/132533-753956291_small.jpg",
+        "url": "https://pixabay.com/videos/id-132533/",
+        "why": "the model called it hot dog",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11691-231758938_large.mp4",
+        "id": 11691,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "chicken",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11691-231758938_large.jpg",
+        "url": "https://pixabay.com/videos/id-11691/",
+        "why": "the model called it chicken",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/04/15/71125-537986747_small.mp4",
+        "id": 71125,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "salad",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/04/15/71125-537986747_small.jpg",
+        "url": "https://pixabay.com/videos/id-71125/",
+        "why": "the model called it salad",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/30/11659-231758756_large.mp4",
+        "id": 11659,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "shrimp",
+        "seconds": 42,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/30/11659-231758756_large.jpg",
+        "url": "https://pixabay.com/videos/id-11659/",
+        "why": "the model called it shrimp",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/08/29/11608-231571870_large.mp4",
+        "id": 11608,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cucumber",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/08/29/11608-231571870_large.jpg",
+        "url": "https://pixabay.com/videos/id-11608/",
+        "why": "the model called it cucumber",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/04/15/36008-409042503_large.mp4",
+        "id": 36008,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "hand",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/04/15/36008-409042503_large.jpg",
+        "url": "https://pixabay.com/videos/id-36008/",
+        "why": "the model called it hand",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/10/16/1012-142621206_large.mp4",
+        "id": 1012,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "food",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/10/16/1012-142621206_large.jpg",
+        "url": "https://pixabay.com/videos/id-1012/",
+        "why": "the model called it food",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/04/38020-416330556_large.mp4",
+        "id": 38020,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "onion",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/04/38020-416330556_large.jpg",
+        "url": "https://pixabay.com/videos/id-38020/",
+        "why": "the model called it onion",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/04/38021-416330536_large.mp4",
+        "id": 38021,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "pepper",
+        "seconds": 35,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/04/38021-416330536_large.jpg",
+        "url": "https://pixabay.com/videos/id-38021/",
+        "why": "the model called it pepper",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/19/237095_small.mp4",
+        "id": 237095,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "cucumber",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/19/237095_small.jpg",
+        "url": "https://pixabay.com/videos/id-237095/",
+        "why": "the model called it cucumber",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/12/41849-431406640_small.mp4",
+        "id": 41849,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bridge",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/12/41849-431406640_small.jpg",
+        "url": "https://pixabay.com/videos/id-41849/",
+        "why": "the model called it bridge",
+        "width": 1920
+      }
+    ],
+    "search_term": "lettuce"
+  },
   "lion": {
     "candidates_seen": 12,
     "clips": [
@@ -9666,6 +10096,78 @@
       }
     ],
     "search_term": "mango fruit"
+  },
+  "millipede": {
+    "candidates_seen": 5,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/01/02/1807-150669665_medium.mp4",
+        "id": 1807,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "grass",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/01/02/1807-150669665_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1807/",
+        "why": "the model called it grass",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/14/52370-468233792_large.mp4",
+        "id": 52370,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "worm",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/14/52370-468233792_large.jpg",
+        "url": "https://pixabay.com/videos/id-52370/",
+        "why": "the model called it worm",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/11/30/6597-193848528_large.mp4",
+        "id": 6597,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mushroom",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/11/30/6597-193848528_large.jpg",
+        "url": "https://pixabay.com/videos/id-6597/",
+        "why": "the model called it mushroom",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/02/12/150288-798440949_large.mp4",
+        "id": 150288,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "leaves",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/02/12/150288-798440949_large.jpg",
+        "url": "https://pixabay.com/videos/id-150288/",
+        "why": "the model called it leaves",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/10/14/382762_large.mp4",
+        "id": 382762,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "worm",
+        "seconds": 58,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/10/14/382762_large.jpg",
+        "url": "https://pixabay.com/videos/id-382762/",
+        "why": "the model called it worm",
+        "width": 1920
+      }
+    ],
+    "search_term": "millipede"
   },
   "mockingbird": {
     "candidates_seen": 1,
@@ -15230,6 +15732,169 @@
     ],
     "search_term": "shrimp"
   },
+  "slug": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/08/03/295206_small.mp4",
+        "id": 295206,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.999,
+        "said": "worm",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/08/03/295206_small.jpg",
+        "url": "https://pixabay.com/videos/id-295206/",
+        "why": "the model called it worm",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/16/163303-827461436_large.mp4",
+        "id": 163303,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/16/163303-827461436_large.jpg",
+        "url": "https://pixabay.com/videos/id-163303/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/05/84039-584871021_small.mp4",
+        "id": 84039,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/05/84039-584871021_small.jpg",
+        "url": "https://pixabay.com/videos/id-84039/",
+        "why": "the model called it snail",
+        "width": 1998
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/05/30/75835-557015889_large.mp4",
+        "id": 75835,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.261,
+        "said": "leaf",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/05/30/75835-557015889_large.jpg",
+        "url": "https://pixabay.com/videos/id-75835/",
+        "why": "the model called it leaf",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/06/08/24272-341474094_large.mp4",
+        "id": 24272,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "snake",
+        "seconds": 41,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/06/08/24272-341474094_large.jpg",
+        "url": "https://pixabay.com/videos/id-24272/",
+        "why": "the model called it snake",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/04/14/2799-162896272_large.mp4",
+        "id": 2799,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/04/14/2799-162896272_large.jpg",
+        "url": "https://pixabay.com/videos/id-2799/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/11/123795-729019691_large.mp4",
+        "id": 123795,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 57,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/11/123795-729019691_large.jpg",
+        "url": "https://pixabay.com/videos/id-123795/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/11/123796-729019695_large.mp4",
+        "id": 123796,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/11/123796-729019695_large.jpg",
+        "url": "https://pixabay.com/videos/id-123796/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/11/123794-729019687_large.mp4",
+        "id": 123794,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/11/123794-729019687_large.jpg",
+        "url": "https://pixabay.com/videos/id-123794/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/05/04/3014-165457901_large.mp4",
+        "id": 3014,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/05/04/3014-165457901_large.jpg",
+        "url": "https://pixabay.com/videos/id-3014/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/03/31/15302-262921859_large.mp4",
+        "id": 15302,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/03/31/15302-262921859_large.jpg",
+        "url": "https://pixabay.com/videos/id-15302/",
+        "why": "the model called it snail",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/07/02/43680-436237738_small.mp4",
+        "id": 43680,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snail",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/02/43680-436237738_small.jpg",
+        "url": "https://pixabay.com/videos/id-43680/",
+        "why": "the model called it snail",
+        "width": 1920
+      }
+    ],
+    "search_term": "slug animal"
+  },
   "snail": {
     "candidates_seen": 12,
     "clips": [
@@ -17003,6 +17668,39 @@
         "width": 3840
       }
     ]
+  },
+  "termite": {
+    "candidates_seen": 2,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/02/13/258034_small.mp4",
+        "id": 258034,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "ants",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/02/13/258034_small.jpg",
+        "url": "https://pixabay.com/videos/id-258034/",
+        "why": "the model called it ants",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/02/13/258035_medium.mp4",
+        "id": 258035,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "ants",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/02/13/258035_medium.jpg",
+        "url": "https://pixabay.com/videos/id-258035/",
+        "why": "the model called it ants",
+        "width": 2172
+      }
+    ],
+    "search_term": "termite"
   },
   "tiger": {
     "candidates_seen": 12,

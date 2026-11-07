@@ -236,6 +236,37 @@
     "silent": true,
     "sounds": []
   },
+  "bell pepper": {
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "Long Wet Pepper Crunch with Rip.wav",
+        "why": "a person eating or biting into a crunchy vegetable, likely a bell pepper, but not the bell pepper itself making a sound"
+      },
+      {
+        "title": "bell_pepper_1_processed.wav",
+        "why": "a processed sound, possibly a bell or other object being struck or manipulated, but not a bell pepper making its own sound"
+      },
+      {
+        "title": "bell_pepper_3_processed.wav",
+        "why": "a processed audio file, possibly of a bell or other object, but not a bell pepper making a sound as bell peppers do not make audible sounds"
+      },
+      {
+        "title": "bell_pepper_2_processed.wav",
+        "why": "a processed audio file, possibly an edited or manipulated sound, but not a recording of an actual bell pepper making its own sound"
+      },
+      {
+        "title": "Bell pepper squeezing.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Bell Pepper Squeak 1.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "bicycle": {
     "candidates_seen": 0,
     "refused": [],
@@ -673,6 +704,33 @@
         "url": "https://cdn.freesound.org/previews/459/459476_6232598-hq.mp3"
       }
     ]
+  },
+  "corn": {
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "wind light breeze whips through grass aspen sparse corn gusts rustle.flac",
+        "why": "wind blowing through grass and aspen with sparse corn, causing rustling"
+      },
+      {
+        "title": "popping corn.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Grist Mill - Corn Down Hatch.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Pop-Corn.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Bees on a corn, red shoulder, chickens ambience 07/14/2020",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "cow": {
     "candidates_seen": 41,
@@ -1880,6 +1938,33 @@
     "silent": true,
     "sounds": []
   },
+  "lettuce": {
+    "candidates_seen": 10,
+    "refused": [
+      {
+        "title": "chopping-lettuce.wav",
+        "why": "a knife chopping or a similar sharp object hitting something, likely a vegetable or other food item"
+      },
+      {
+        "title": "Lettuce Hit 2.wav",
+        "why": "a song or music track"
+      },
+      {
+        "title": "Lettuce Hit 3.wav",
+        "why": "a song or music track"
+      },
+      {
+        "title": "Lettuce Hit.wav",
+        "why": "a person saying 'let it'"
+      },
+      {
+        "title": "one plant grows with lettuce.wav",
+        "why": "a plant growing"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "lion": {
     "candidates_seen": 14,
     "refused": [
@@ -2085,6 +2170,12 @@
         "why": "a cutting action on a cutting board, possibly with a mango being cut"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "millipede": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   },
@@ -3300,6 +3391,17 @@
     "silent": true,
     "sounds": []
   },
+  "slug": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "drums_130_fatback slugs",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "snail": {
     "candidates_seen": 0,
     "refused": [],
@@ -3655,6 +3757,47 @@
         "source": "freesound",
         "title": "Trumpeter Swans fly land splash loud calls 2pm TTP A 190401.flac",
         "url": "https://cdn.freesound.org/previews/574/574430_97550-hq.mp3"
+      }
+    ]
+  },
+  "termite": {
+    "candidates_seen": 4,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-07",
+        "creator": "Floreto",
+        "id": "230ca475-3372-4c35-8ca3-f50a3d4950ee",
+        "is": "the sound of termites",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Floreto/sounds/554725",
+        "seconds": 18.9,
+        "source": "freesound",
+        "title": "Termites Sound [ Anay in tagalog ].m4a",
+        "url": "https://cdn.freesound.org/previews/554/554725_12013314-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-07",
+        "creator": "Vivekk21",
+        "id": "e24f3ead-416f-4038-965c-911b033bf039",
+        "is": "termites eating bamboo at night",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Vivekk21/sounds/724207",
+        "seconds": 20.2,
+        "source": "freesound",
+        "title": "Termites eating bamboo in night",
+        "url": "https://cdn.freesound.org/previews/724/724207_9199158-hq.mp3"
       }
     ]
   },

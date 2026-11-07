@@ -254,6 +254,33 @@
     ],
     "refused": []
   },
+  "bell pepper": {
+    "facts": [
+      {
+        "checked": "2026-11-07",
+        "fact": "A bell pepper grows on a plant."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A bell pepper has a sweet taste."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A bell pepper has a shiny skin."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A bell pepper has seeds inside."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-07",
+        "fact": "A bell pepper is green.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all bell peppers are green, they come in various colors such as red, yellow, and orange"
+      }
+    ]
+  },
   "bicycle": {
     "facts": [
       {
@@ -694,6 +721,48 @@
       }
     ],
     "refused": []
+  },
+  "corn": {
+    "facts": [
+      {
+        "checked": "2026-11-07",
+        "fact": "Corn grows on a farm."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Corn has a leafy green top."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Corn grows on a big plant."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Corn has a fuzzy part."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-07",
+        "fact": "Corn is yellow and sweet.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all corn is yellow, some varieties are white, pink, or other colors"
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Corn has a soft middle.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The middle of corn is not always soft, it has a hard seed in the middle"
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Corn has a hard outside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The outside of corn is not always hard, the outside of the kernel is hard but the outside of the ear of corn is a soft husk"
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Corn has a soft inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The inside of corn is not always soft, the inside of the kernel is hard"
+      }
+    ]
   },
   "cow": {
     "facts": [
@@ -1912,6 +1981,27 @@
     ],
     "refused": []
   },
+  "lettuce": {
+    "facts": [
+      {
+        "checked": "2026-11-07",
+        "fact": "Lettuce is a green food."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Lettuce has soft leaves."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Lettuce grows in the ground."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "Lettuce is good to eat."
+      }
+    ],
+    "refused": []
+  },
   "lion": {
     "facts": [
       {
@@ -2076,6 +2166,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Mango skin can be yellow, but also orange, red, green, or a combination of these colors"
       }
     ]
+  },
+  "millipede": {
+    "facts": [
+      {
+        "checked": "2026-11-07",
+        "fact": "A millipede has many legs."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A millipede moves on the ground."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A millipede eats old plants."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A millipede has a hard back."
+      }
+    ],
+    "refused": []
   },
   "mockingbird": {
     "facts": [
@@ -3341,6 +3452,33 @@
     ],
     "refused": []
   },
+  "slug": {
+    "facts": [
+      {
+        "checked": "2026-11-07",
+        "fact": "A slug is wet."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A slug moves slowly."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A slug has a soft body."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A slug leaves a trail."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-07",
+        "fact": "A slug eats old leaves.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: slugs primarily eat fresh leaves, algae, and fungi, not old leaves"
+      }
+    ]
+  },
   "snail": {
     "facts": [
       {
@@ -3744,6 +3882,38 @@
         "checked": "2026-10-10",
         "fact": "A swan has a big beak.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A swan's beak is relatively small."
+      }
+    ]
+  },
+  "termite": {
+    "facts": [
+      {
+        "checked": "2026-11-07",
+        "fact": "A termite eats wood."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A termite lives in a group."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A termite works with friends."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A termite hides in dirt."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-07",
+        "fact": "A termite has a big head.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Termites have distinct body parts, including a head, thorax, and abdomen, but their head is not particularly big compared to their body."
+      },
+      {
+        "checked": "2026-11-07",
+        "fact": "A termite builds a home.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Termites do not build homes alone, they build complex social nests called colonies"
       }
     ]
   },
