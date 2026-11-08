@@ -89,6 +89,27 @@
     ],
     "refused": []
   },
+  "aphid": {
+    "facts": [
+      {
+        "checked": "2026-11-08",
+        "fact": "An aphid eats plants."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "An aphid has a tiny body."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "An aphid has little legs."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "An aphid lives on a leaf."
+      }
+    ],
+    "refused": []
+  },
   "apple": {
     "facts": [
       {
@@ -638,6 +659,27 @@
     ],
     "refused": []
   },
+  "cicada": {
+    "facts": [
+      {
+        "checked": "2026-11-08",
+        "fact": "A cicada makes a loud noise."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A cicada has big wings."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A cicada sings very loud."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A cicada flies high."
+      }
+    ],
+    "refused": []
+  },
   "clownfish": {
     "facts": [
       {
@@ -878,6 +920,33 @@
         "checked": "2026-10-22",
         "fact": "A cricket eats small plants.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Crickets are omnivores and their diet consists mainly of dead plants, fungi, and insects, not small live plants"
+      }
+    ]
+  },
+  "crocodile": {
+    "facts": [
+      {
+        "checked": "2026-11-08",
+        "fact": "A crocodile has sharp teeth."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A crocodile eats fish."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A crocodile has hard skin."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A crocodile swims very fast."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-08",
+        "fact": "A crocodile lives in the water.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Crocodiles live in and out of the water, they are semi-aquatic"
       }
     ]
   },
@@ -1657,6 +1726,70 @@
       {
         "checked": "2026-10-22",
         "fact": "A heron lives near a lake."
+      }
+    ],
+    "refused": []
+  },
+  "hippo": {
+    "facts": [
+      {
+        "checked": "2026-11-08",
+        "fact": "A hippo eats grass."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hippo has big teeth."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hippo plays in the mud."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-08",
+        "fact": "A hippo lives in the water.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Hippos live in rivers and lakes but spend a lot of time on land"
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hippo has a big nose.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A hippo has a relatively small nose, but a large mouth and nostrils"
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hippo runs very fast.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Hippos are not typically known for running very fast. They can run, but not as fast as many other animals."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hippo has soft skin.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: hippos have almost hairless, smooth skin but it is not soft, it is actually quite thick and tough"
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hippo has big ears.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Hippos actually have small ears."
+      }
+    ]
+  },
+  "hornet": {
+    "facts": [
+      {
+        "checked": "2026-11-08",
+        "fact": "A hornet flies in air."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hornet has a big sting."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hornet lives in a nest."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A hornet makes a loud buzz."
       }
     ],
     "refused": []
@@ -2996,6 +3129,43 @@
       }
     ],
     "refused": []
+  },
+  "rhino": {
+    "facts": [
+      {
+        "checked": "2026-11-08",
+        "fact": "A rhino has a big horn."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A rhino eats lots of grass."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A rhino has tough skin."
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A rhino drinks lots of water."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-08",
+        "fact": "A rhino runs very fast.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Rhinos are not very fast runners"
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A rhino lives with friends.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Rhinos are typically solitary animals and only sometimes live in small groups"
+      },
+      {
+        "checked": "2026-11-08",
+        "fact": "A rhino has a long nose.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A rhino does not have a long nose, it has a distinctive horn"
+      }
+    ]
   },
   "roadrunner": {
     "facts": [

@@ -116,6 +116,12 @@
       }
     ]
   },
+  "aphid": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "avocado": {
     "candidates_seen": 2,
     "refused": [
@@ -625,6 +631,47 @@
       }
     ]
   },
+  "cicada": {
+    "candidates_seen": 19,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-08",
+        "creator": "cupido-1",
+        "id": "a835d066-07de-4a60-aed3-fa2f59344ba8",
+        "is": "a cicada making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/cupido-1/sounds/529572",
+        "seconds": 29.4,
+        "source": "freesound",
+        "title": "cicada sound",
+        "url": "https://cdn.freesound.org/previews/529/529572_1030167-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-08",
+        "creator": "cyberthilop",
+        "id": "0a0a0cfa-86d6-433e-ad12-0f0adeb18144",
+        "is": "a cicada making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/cyberthilop/sounds/561321",
+        "seconds": 24.9,
+        "source": "freesound",
+        "title": "Cicada sound",
+        "url": "https://cdn.freesound.org/previews/561/561321_12398429-hq.mp3"
+      }
+    ]
+  },
   "clownfish": {
     "candidates_seen": 0,
     "refused": [],
@@ -814,6 +861,17 @@
   "cricket": {
     "candidates_seen": 0,
     "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "crocodile": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "What is it like to be a crocodile?",
+        "why": "narration or a person speaking about being a crocodile"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -1703,6 +1761,72 @@
     "refused": [
       {
         "title": "grey heron calls at night on lake",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "hippo": {
+    "candidates_seen": 8,
+    "refused": [
+      {
+        "title": "The purple hippo universe next door",
+        "why": "a science fiction or fantasy themed audio, possibly music or narration, related to the title 'The purple hippo universe next door'"
+      },
+      {
+        "title": "Virtahevot \u00e4\u00e4ntelev\u00e4t / Hippopotamus, hippos making sounds nearby in the river",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Hippo Grunts Roar",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Hippo-Gargouillis+amb oiseaux.aif",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Hippo, oiseaux, gnous2.aif",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Hippo-Pet.aif",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Flying Hippos",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Hippo, oiseaux, gnous.aif",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "hornet": {
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "F-18 hornet pass 01.wav",
+        "why": "an F-18 Hornet jet passing by"
+      },
+      {
+        "title": "F/A18 Hornet flyover",
+        "why": "an F/A-18 Hornet jet flyover"
+      },
+      {
+        "title": "High speed pass by US Navy FA/18 Super Hornet fighter jets",
+        "why": "US Navy FA/18 Super Hornet fighter jets flying by"
+      },
+      {
+        "title": "Fujitsu Hornet V60 - 4200rpm - FDB",
+        "why": "a Fujitsu computer fan or hard drive spinning at 4200rpm"
+      },
+      {
+        "title": "Zumbido de marimbondo na mata | Hornets buzzing in the woods",
         "why": "licence at the source is by: the page links by 4.0"
       }
     ],
@@ -2983,6 +3107,37 @@
         "url": "https://cdn.freesound.org/previews/186/186921_545448-hq.mp3"
       }
     ]
+  },
+  "rhino": {
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "Infected rhino roars",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "Rhino-26.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Rhino-24.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Goodge St - Tottenham court road ambience:Horrible man in spearmint rhino.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Rhino Banging Food Bag against Cage",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Great and Rhino Hornbill",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "roadrunner": {
     "candidates_seen": 0,
