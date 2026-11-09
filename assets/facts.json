@@ -462,6 +462,27 @@
       }
     ]
   },
+  "bus": {
+    "facts": [
+      {
+        "checked": "2026-11-09",
+        "fact": "A bus takes people places."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A bus has big wheels."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A bus carries many people."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A bus drives on the road."
+      }
+    ],
+    "refused": []
+  },
   "butterfly": {
     "facts": [
       {
@@ -4055,6 +4076,27 @@
       }
     ]
   },
+  "taxi": {
+    "facts": [
+      {
+        "checked": "2026-11-09",
+        "fact": "A taxi takes people places."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A taxi has a driver."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A taxi has wheels."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A taxi goes on roads."
+      }
+    ],
+    "refused": []
+  },
   "termite": {
     "facts": [
       {
@@ -4228,6 +4270,33 @@
       }
     ],
     "refused": []
+  },
+  "tram": {
+    "facts": [
+      {
+        "checked": "2026-11-09",
+        "fact": "A tram takes people."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A tram goes on rails."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A tram has many seats."
+      },
+      {
+        "checked": "2026-11-09",
+        "fact": "A tram moves on tracks."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-09",
+        "fact": "A tram has big wheels.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Trams have metal wheels with a circular metal rim, but they are not typically described as 'big' compared to other vehicles"
+      }
+    ]
   },
   "truck": {
     "facts": [

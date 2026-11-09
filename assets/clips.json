@@ -2184,6 +2184,105 @@
     ],
     "search_term": "bumblebee"
   },
+  "bus": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/11/26/29507-375947255_large.mp4",
+        "id": 29507,
+        "licence": "Pixabay Content Licence",
+        "listed": "A bus, a street, a bus stop, a fence, a building, a traffic light, a car, a person, a bench, a bus stop sign, a bus stop pole, a bus stop barrier, a bus stop barrier pole, a bus stop barrier pole",
+        "people": 9,
+        "people_detected": 9,
+        "prominence": 0.918,
+        "said": "bus",
+        "seconds": 36,
+        "structures": [
+          "building",
+          "street"
+        ],
+        "subject_area": 0.348,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/11/26/29507-375947255_large.jpg",
+        "url": "https://pixabay.com/videos/id-29507/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/13/142755-780943401_small.mp4",
+        "id": 142755,
+        "licence": "Pixabay Content Licence",
+        "listed": "Bus, television, fire extinguisher, people, benches, handbags, backpacks, bottles, and a window.",
+        "people": 9,
+        "people_detected": 9,
+        "prominence": 0.0,
+        "said": "bus",
+        "seconds": 45,
+        "structures": [
+          "window"
+        ],
+        "subject_area": 0.0784,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/13/142755-780943401_small.jpg",
+        "url": "https://pixabay.com/videos/id-142755/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/09/38590-418590043_large.mp4",
+        "id": 38590,
+        "licence": "Pixabay Content Licence",
+        "listed": "A woman, a bus, a car, a traffic light, a street, a building, a bus stop, a bench, a traffic light, a street, a building, a bus stop, a bench, a traffic light, a street, a building, a bus stop, a",
+        "people": 2,
+        "people_detected": 2,
+        "prominence": 0.0,
+        "said": "bus",
+        "seconds": 49,
+        "structures": [
+          "building",
+          "street"
+        ],
+        "subject_area": 0.0875,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/09/38590-418590043_large.jpg",
+        "url": "https://pixabay.com/videos/id-38590/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/02/15/21437-317457594_large.mp4",
+        "id": 21437,
+        "licence": "Pixabay Content Licence",
+        "listed": "A red, white, and blue bus, a blue car, a tree, a building, a traffic light, a newspaper box, a fire hydrant, a person, a clock, a truck, a traffic sign, a bus stop, a bench, a traffic light, a clock",
+        "people": 3,
+        "people_detected": 3,
+        "prominence": 0.0,
+        "said": "bus",
+        "seconds": 11,
+        "structures": [
+          "building"
+        ],
+        "subject_area": 0.0581,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/02/15/21437-317457594_large.jpg",
+        "url": "https://pixabay.com/videos/id-21437/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/04/215268_large.mp4",
+        "id": 215268,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bridge",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/04/215268_large.jpg",
+        "url": "https://pixabay.com/videos/id-215268/",
+        "why": "the model called it bridge",
+        "width": 1920
+      }
+    ],
+    "search_term": "bus"
+  },
   "butterfly": {
     "candidates_seen": 12,
     "clips": [
@@ -13791,11 +13890,11 @@
         "id": 266760,
         "licence": "Pixabay Content Licence",
         "prominence": 1.0,
-        "said": "grasshopper",
+        "said": "ladybug",
         "seconds": 12,
         "thumbnail": "https://cdn.pixabay.com/video/2025/03/22/266760_small.jpg",
         "url": "https://pixabay.com/videos/id-266760/",
-        "why": "the model called it grasshopper",
+        "why": "the model called it ladybug",
         "width": 1920
       },
       {
@@ -13902,7 +14001,8 @@
         "why": "the model called it woman",
         "width": 1920
       }
-    ]
+    ],
+    "search_term": "praying mantis"
   },
   "pufferfish": {
     "candidates_seen": 0,
@@ -17591,11 +17691,11 @@
         "id": 14815,
         "licence": "Pixabay Content Licence",
         "prominence": 0.0,
-        "said": "beetle",
+        "said": "bee",
         "seconds": 27,
         "thumbnail": "https://cdn.pixabay.com/video/2018/03/05/14815-258992063_large.jpg",
         "url": "https://pixabay.com/videos/id-14815/",
-        "why": "the model called it beetle",
+        "why": "the model called it bee",
         "width": 1920
       },
       {
@@ -17611,7 +17711,8 @@
         "why": "the model called it butterfly",
         "width": 1920
       }
-    ]
+    ],
+    "search_term": "stick insect"
   },
   "stingray": {
     "candidates_seen": 12,
@@ -18461,6 +18562,174 @@
       }
     ]
   },
+  "taxi": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/05/31961-389724712_large.mp4",
+        "id": 31961,
+        "licence": "Pixabay Content Licence",
+        "listed": "A red car, a police officer, a woman, a traffic light, a potted plant, a handbag, a person, a car, a traffic light, a potted plant, a handbag, a person, a car, a traffic light, a potted plant, a hand",
+        "people": 16,
+        "people_detected": 16,
+        "prominence": 0.0,
+        "said": "taxi",
+        "seconds": 13,
+        "structures": [],
+        "subject_area": 0.0763,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/05/31961-389724712_large.jpg",
+        "url": "https://pixabay.com/videos/id-31961/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/10/16/1052-142621416_large.mp4",
+        "id": 1052,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/10/16/1052-142621416_large.jpg",
+        "url": "https://pixabay.com/videos/id-1052/",
+        "why": "the model called it car",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/10/16/1043-142621372_large.mp4",
+        "id": 1043,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "traffic light",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/10/16/1043-142621372_large.jpg",
+        "url": "https://pixabay.com/videos/id-1043/",
+        "why": "the model called it traffic light",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/04/11/15519-865412862_large.mp4",
+        "id": 15519,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bus",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/04/11/15519-865412862_large.jpg",
+        "url": "https://pixabay.com/videos/id-15519/",
+        "why": "the model called it bus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/05/31967-389724733_large.mp4",
+        "id": 31967,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bus",
+        "seconds": 38,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/05/31967-389724733_large.jpg",
+        "url": "https://pixabay.com/videos/id-31967/",
+        "why": "the model called it bus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/02/07/7709-203079877_large.mp4",
+        "id": 7709,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/02/07/7709-203079877_large.jpg",
+        "url": "https://pixabay.com/videos/id-7709/",
+        "why": "the model called it car",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/05/31958-389713831_large.mp4",
+        "id": 31958,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bus",
+        "seconds": 34,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/05/31958-389713831_large.jpg",
+        "url": "https://pixabay.com/videos/id-31958/",
+        "why": "the model called it bus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/01/30/31787-388997508_large.mp4",
+        "id": 31787,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "traffic",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/01/30/31787-388997508_large.jpg",
+        "url": "https://pixabay.com/videos/id-31787/",
+        "why": "the model called it traffic",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/12/04/99704-654636728_small.mp4",
+        "id": 99704,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "traffic",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/12/04/99704-654636728_small.jpg",
+        "url": "https://pixabay.com/videos/id-99704/",
+        "why": "the model called it traffic",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/02/15/21438-317457608_large.mp4",
+        "id": 21438,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/02/15/21438-317457608_large.jpg",
+        "url": "https://pixabay.com/videos/id-21438/",
+        "why": "the model called it car",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/09/03/87444-602291841_small.mp4",
+        "id": 87444,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "city",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/09/03/87444-602291841_small.jpg",
+        "url": "https://pixabay.com/videos/id-87444/",
+        "why": "the model called it city",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/01/29/63331-506377495_large.mp4",
+        "id": 63331,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "car",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/01/29/63331-506377495_large.jpg",
+        "url": "https://pixabay.com/videos/id-63331/",
+        "why": "the model called it car",
+        "width": 1920
+      }
+    ],
+    "search_term": "taxi"
+  },
   "termite": {
     "candidates_seen": 2,
     "clips": [],
@@ -19152,6 +19421,169 @@
         "width": 1920
       }
     ]
+  },
+  "tram": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/01/06/30984-384234061_large.mp4",
+        "id": 30984,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bridge",
+        "seconds": 41,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/01/06/30984-384234061_large.jpg",
+        "url": "https://pixabay.com/videos/id-30984/",
+        "why": "the model called it bridge",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/10/06/91060-629483767_small.mp4",
+        "id": 91060,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "city",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/10/06/91060-629483767_small.jpg",
+        "url": "https://pixabay.com/videos/id-91060/",
+        "why": "the model called it city",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/04/11/15519-865412862_large.mp4",
+        "id": 15519,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bus",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/04/11/15519-865412862_large.jpg",
+        "url": "https://pixabay.com/videos/id-15519/",
+        "why": "the model called it bus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/09/08/730-138678094_medium.mp4",
+        "id": 730,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "train",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/09/08/730-138678094_medium.jpg",
+        "url": "https://pixabay.com/videos/id-730/",
+        "why": "the model called it train",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/07/170476-843561676_small.mp4",
+        "id": 170476,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "train",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/07/170476-843561676_small.jpg",
+        "url": "https://pixabay.com/videos/id-170476/",
+        "why": "the model called it train",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/06/16/120546-721287102_small.mp4",
+        "id": 120546,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "train",
+        "seconds": 35,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/06/16/120546-721287102_small.jpg",
+        "url": "https://pixabay.com/videos/id-120546/",
+        "why": "the model called it train",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/01/18/147041-790648837_small.mp4",
+        "id": 147041,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bus",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/01/18/147041-790648837_small.jpg",
+        "url": "https://pixabay.com/videos/id-147041/",
+        "why": "the model called it bus",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/30/173836-850026278_small.mp4",
+        "id": 173836,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bridge",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/30/173836-850026278_small.jpg",
+        "url": "https://pixabay.com/videos/id-173836/",
+        "why": "the model called it bridge",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/07/170484-843561694_small.mp4",
+        "id": 170484,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "train",
+        "seconds": 32,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/07/170484-843561694_small.jpg",
+        "url": "https://pixabay.com/videos/id-170484/",
+        "why": "the model called it train",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/05/19/212635_small.mp4",
+        "id": 212635,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "train",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/05/19/212635_small.jpg",
+        "url": "https://pixabay.com/videos/id-212635/",
+        "why": "the model called it train",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/07/170485-843752595_small.mp4",
+        "id": 170485,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bridge",
+        "seconds": 32,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/07/170485-843752595_small.jpg",
+        "url": "https://pixabay.com/videos/id-170485/",
+        "why": "the model called it bridge",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/22/42862-433910685_small.mp4",
+        "id": 42862,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bridge",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/22/42862-433910685_small.jpg",
+        "url": "https://pixabay.com/videos/id-42862/",
+        "why": "the model called it bridge",
+        "width": 1920
+      }
+    ],
+    "search_term": "tram"
   },
   "truck": {
     "candidates_seen": 12,

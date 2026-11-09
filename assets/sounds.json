@@ -469,6 +469,64 @@
       }
     ]
   },
+  "bus": {
+    "candidates_seen": 17,
+    "refused": [
+      {
+        "title": "2005 New Flyer D40LF MiWay Bus Sound",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "weird alien like bus sounds",
+        "why": "a sound effect or possibly a sci-fi sound"
+      },
+      {
+        "title": "Speedy bus sound",
+        "why": "a generic or fictional representation of a bus sound, possibly for media or entertainment purposes"
+      },
+      {
+        "title": "Bus Motor/Engine Sound Loop",
+        "why": "a bus engine or motor sound, not necessarily a complete bus"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-09",
+        "creator": "Julian_JJ",
+        "id": "e2f3d661-7a44-413a-ba4b-e6883facae31",
+        "is": "a bus",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Julian_JJ/sounds/714167",
+        "seconds": 5.7,
+        "source": "freesound",
+        "title": "Bus sound",
+        "url": "https://cdn.freesound.org/previews/714/714167_15500615-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-09",
+        "creator": "Ryding",
+        "id": "85a9a0a3-0e0f-423a-b4aa-90257b1014cf",
+        "is": "a bus passing by",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Ryding/sounds/110130",
+        "seconds": 43.4,
+        "source": "freesound",
+        "title": "Bus passing by.wav",
+        "url": "https://cdn.freesound.org/previews/110/110130_981397-hq.mp3"
+      }
+    ]
+  },
   "butterfly": {
     "candidates_seen": 2,
     "refused": [
@@ -723,19 +781,19 @@
     "candidates_seen": 3,
     "refused": [
       {
-        "title": "\u0422\u0430\u0440\u0430\u043a\u0430\u043d ( Cockroach)",
-        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
-      },
-      {
         "title": "Delicious-cockroach-puree_Apocalyptic_Radio_by_OnlyTheGhosts.wav",
         "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "\u0422\u0430\u0440\u0430\u043a\u0430\u043d ( Cockroach)",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
       }
     ],
     "silent": false,
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-23",
+        "checked": "2026-11-09",
         "creator": "Spoxe",
         "id": "aec8931a-8ac9-460e-bf34-45588a854f8a",
         "is": "a hissing cockroach",
@@ -3002,11 +3060,19 @@
     "sounds": []
   },
   "praying mantis": {
-    "candidates_seen": 1,
+    "candidates_seen": 3,
     "refused": [
       {
         "title": "Kcg-a\u0331manggang (praying mantis)",
-        "why": "a person or group speaking or reciting the name of the praying mantis in a language, possibly the Kenyah language, given the prefix 'Kcg-' which might be a language or dialect identifier"
+        "why": "a person or group speaking or reciting the name of the praying mantis in the Kcg-a\u0331manggang language or dialect"
+      },
+      {
+        "title": "Mantis_religiosa.wav",
+        "why": "a file named after the scientific name of the praying mantis, but no information about the actual content"
+      },
+      {
+        "title": "Praying Mantis",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
       }
     ],
     "silent": true,
@@ -3915,6 +3981,51 @@
       }
     ]
   },
+  "taxi": {
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "Landing sounds and Taxi messages.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "DN KP - taxi 02",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Taxi",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "Fr-taxi",
+        "why": "licence at the source is by: Commons says: cc by 2.0 fr"
+      },
+      {
+        "title": "Plane Cessna Taxi Prop wash.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-09",
+        "creator": "nickcase",
+        "id": "9ebb5a20-598e-4074-b8b8-e3862adf9a8d",
+        "is": "the sound inside a taxi",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/nickcase/sounds/553137",
+        "seconds": 147.2,
+        "source": "freesound",
+        "title": "Inside a taxi",
+        "url": "https://cdn.freesound.org/previews/553/553137_6613710-hq.mp3"
+      }
+    ]
+  },
   "termite": {
     "candidates_seen": 4,
     "refused": [],
@@ -4123,6 +4234,47 @@
         "source": "freesound",
         "title": "Train horn, Departs",
         "url": "https://cdn.freesound.org/previews/141/141273_2051721-hq.mp3"
+      }
+    ]
+  },
+  "tram": {
+    "candidates_seen": 21,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-09",
+        "creator": "migweis",
+        "id": "262849af-4a87-4969-8d60-53d9dbf38ff4",
+        "is": "a tram",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/migweis/sounds/713414",
+        "seconds": 5.7,
+        "source": "freesound",
+        "title": "tram sound",
+        "url": "https://cdn.freesound.org/previews/713/713414_15480866-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-09",
+        "creator": "migweis",
+        "id": "a096219e-856f-4f9e-98a1-9a3908633e2e",
+        "is": "a tram",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/migweis/sounds/713398",
+        "seconds": 6.6,
+        "source": "freesound",
+        "title": "tram sound",
+        "url": "https://cdn.freesound.org/previews/713/713398_15480866-hq.mp3"
       }
     ]
   },

@@ -99,6 +99,7 @@
     "airplane",
     "bicycle",
     "boat",
+    "bus",
     "car",
     "excavator",
     "fire truck",
@@ -111,6 +112,7 @@
     "school bus",
     "ship",
     "submarine",
+    "taxi",
     "tractor",
     "train",
     "truck"
