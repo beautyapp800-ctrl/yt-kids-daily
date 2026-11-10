@@ -504,6 +504,27 @@
     ],
     "refused": []
   },
+  "calf": {
+    "facts": [
+      {
+        "checked": "2026-11-10",
+        "fact": "A calf runs in a field."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A calf drinks milk."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A calf has a fluffy coat."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A calf kicks its legs."
+      }
+    ],
+    "refused": []
+  },
   "car": {
     "facts": [
       {
@@ -2864,6 +2885,27 @@
     ],
     "refused": []
   },
+  "piglet": {
+    "facts": [
+      {
+        "checked": "2026-11-10",
+        "fact": "A piglet runs on a farm."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A piglet drinks milk from mom."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A piglet has a curly tail."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A piglet plays with friends."
+      }
+    ],
+    "refused": []
+  },
   "pineapple": {
     "facts": [
       {
@@ -3081,6 +3123,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Pumpkin seeds are hard, not soft"
       }
     ]
+  },
+  "puppy": {
+    "facts": [
+      {
+        "checked": "2026-11-10",
+        "fact": "A puppy wags its tail."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A puppy licks your hand."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A puppy runs and plays."
+      },
+      {
+        "checked": "2026-11-10",
+        "fact": "A puppy has soft fur."
+      }
+    ],
+    "refused": []
   },
   "quail": {
     "facts": [

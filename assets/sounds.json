@@ -542,6 +542,51 @@
     "silent": true,
     "sounds": []
   },
+  "calf": {
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "Cow and calf",
+        "why": "a cow and possibly its calf, but primarily a cow"
+      },
+      {
+        "title": "Broken Radio 2 (Calf Bass Enhancer artifacts)",
+        "why": "audio artifacts from a bass enhancer"
+      },
+      {
+        "title": "Cow Eating Calf Feed",
+        "why": "a cow eating"
+      },
+      {
+        "title": "Folklore of the santal parganas , bompas, 12 - The Changed Calf",
+        "why": "a reading or narration from a book about folklore"
+      },
+      {
+        "title": "Calf And Cow.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-10",
+        "creator": "TheKingOfGeeks360",
+        "id": "f8960da0-c8c5-44bc-933d-433871f645f7",
+        "is": "a calf bawling",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/TheKingOfGeeks360/sounds/790631",
+        "seconds": 5.1,
+        "source": "freesound",
+        "title": "Bovines - Cattle; Calf Bawling, Some Walla in Background",
+        "url": "https://cdn.freesound.org/previews/790/790631_15895934-hq.mp3"
+      }
+    ]
+  },
   "car": {
     "candidates_seen": 0,
     "refused": [],
@@ -1439,7 +1484,7 @@
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-10-23",
+        "checked": "2026-11-10",
         "creator": "Marvin_Chiriguaya",
         "id": "387519d5-4f3f-4d78-9917-2a5d75fef053",
         "is": "a firefly",
@@ -2963,6 +3008,39 @@
       }
     ]
   },
+  "piglet": {
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "Porsas r\u00f6hkii ja kiljuu / A piglet oinking and squealling in the pen",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Porsas kiljuu sikalassa / A piglet squealling loudly in the piggery",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-10",
+        "creator": "Foleyhaven https://freesound.org/people/Foleyhaven/",
+        "id": "658def1f-14c6-4b12-bea5-77e59f33f1bf",
+        "is": "a piglet squealing",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "Commons says: cc0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+        "licence_version": "1.0",
+        "page": "https://commons.wikimedia.org/w/index.php?curid=127147199",
+        "seconds": 1.4,
+        "source": "wikimedia_audio",
+        "title": "618483 foleyhaven piglet-squeal-01",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/618483_foleyhaven_piglet-squeal-01.flac"
+      }
+    ]
+  },
   "police car": {
     "candidates_seen": 19,
     "refused": [
@@ -3064,7 +3142,7 @@
     "refused": [
       {
         "title": "Kcg-a\u0331manggang (praying mantis)",
-        "why": "a person or group speaking or reciting the name of the praying mantis in the Kcg-a\u0331manggang language or dialect"
+        "why": "a person or group saying or singing the words 'Kcg-a\u0331manggang (praying mantis)' or possibly a different sound altogether, but not a praying mantis making its own sound"
       },
       {
         "title": "Mantis_religiosa.wav",
@@ -3132,6 +3210,56 @@
     ],
     "silent": true,
     "sounds": []
+  },
+  "puppy": {
+    "candidates_seen": 8,
+    "refused": [
+      {
+        "title": "Chihuahua Puppy Singing",
+        "why": "a person or animal singing, likely a human singing in a style imitating a Chihuahua puppy"
+      },
+      {
+        "title": "Kcg-Nggwona\u0331bwu (puppy)",
+        "why": "a person speaking or reciting a phrase, possibly in a language other than English"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-10",
+        "creator": "AustinXYZ",
+        "id": "992950fc-0f01-467d-8c43-942c0c738eba",
+        "is": "a Chihuahua puppy whining",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/AustinXYZ/sounds/350593",
+        "seconds": 1.1,
+        "source": "freesound",
+        "title": "Chihuahua Puppy Whine",
+        "url": "https://cdn.freesound.org/previews/350/350593_6433555-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-10",
+        "creator": "Speaker: JohnAnkerBow Authors of the article",
+        "id": "8afae170-b8ae-4d65-9220-e1861f2a74b2",
+        "is": "a puppy making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "Commons says: cc0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+        "licence_version": "1.0",
+        "page": "https://commons.wikimedia.org/w/index.php?curid=80009256",
+        "seconds": 307.8,
+        "source": "wikimedia_audio",
+        "title": "Puppy",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Puppy.ogg"
+      }
+    ]
   },
   "quail": {
     "candidates_seen": 1,
