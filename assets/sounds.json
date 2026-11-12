@@ -838,7 +838,7 @@
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-11-09",
+        "checked": "2026-11-12",
         "creator": "Spoxe",
         "id": "aec8931a-8ac9-460e-bf34-45588a854f8a",
         "is": "a hissing cockroach",
@@ -1420,16 +1420,72 @@
     ]
   },
   "falcon": {
-    "candidates_seen": 0,
-    "refused": [],
+    "candidates_seen": 9,
+    "refused": [
+      {
+        "title": "Falcon Leg Bells 3.mp3",
+        "why": "bells, possibly used on a falcon's leg"
+      },
+      {
+        "title": "Falcon Leg Bells 1.mp3",
+        "why": "bells, possibly on a falconer's equipment or a costume"
+      },
+      {
+        "title": "Falcon Leg Bells 5.mp3",
+        "why": "bells, possibly on a falconer's equipment or a costume"
+      },
+      {
+        "title": "Falcon Leg Bells 6.mp3",
+        "why": "bells, possibly on a falconer's equipment"
+      },
+      {
+        "title": "Falcon Leg Bells 2.mp3",
+        "why": "bells, possibly on a falconer's equipment"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
   "finch": {
-    "candidates_seen": 0,
+    "candidates_seen": 4,
     "refused": [],
-    "silent": true,
-    "sounds": []
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-12",
+        "creator": "TRP",
+        "id": "62ba1f6e-cfe7-4764-aee6-0fbf120c3590",
+        "is": "a house finch making its songs and calls",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/TRP/sounds/566418",
+        "seconds": 311.0,
+        "source": "freesound",
+        "title": "200401 House Finch extended songs calls roof TORONTO 6pm.wav",
+        "url": "https://cdn.freesound.org/previews/566/566418_97550-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-12",
+        "creator": "petebuchwald",
+        "id": "6771a8fb-2167-4a72-a4b5-bcda4acc9128",
+        "is": "a zebra finch in a cage",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/petebuchwald/sounds/271357",
+        "seconds": 309.9,
+        "source": "freesound",
+        "title": "Zebra Finch in Cage (stereo).wav",
+        "url": "https://cdn.freesound.org/previews/271/271357_2367139-hq.mp3"
+      }
+    ]
   },
   "fire truck": {
     "candidates_seen": 20,
@@ -3142,11 +3198,11 @@
     "refused": [
       {
         "title": "Kcg-a\u0331manggang (praying mantis)",
-        "why": "a person or group saying or singing the words 'Kcg-a\u0331manggang (praying mantis)' or possibly a different sound altogether, but not a praying mantis making its own sound"
+        "why": "a person or group speaking or reciting the name of the praying mantis in a possibly indigenous language"
       },
       {
         "title": "Mantis_religiosa.wav",
-        "why": "a file named after the scientific name of the praying mantis, but no information about the actual content"
+        "why": "a file named after the scientific name of the praying mantis, but no indication it is an actual recording of the insect's sound"
       },
       {
         "title": "Praying Mantis",
@@ -3764,10 +3820,45 @@
     "sounds": []
   },
   "sparrow": {
-    "candidates_seen": 0,
+    "candidates_seen": 6,
     "refused": [],
-    "silent": true,
-    "sounds": []
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-12",
+        "creator": "felix.blume",
+        "id": "b7f7cd94-27d5-4310-a295-d46e342ae17b",
+        "is": "a sparrow singing and flying in the bush",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/177787",
+        "seconds": 178.9,
+        "source": "freesound",
+        "title": "Little sparrow singing and flying in the bush (Patagonia, Argentina)",
+        "url": "https://cdn.freesound.org/previews/177/177787_1661766-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-12",
+        "creator": "JPBILLINGSLEYJR",
+        "id": "a071c4e8-2d9e-456d-81b0-979a2f50fec8",
+        "is": "a chipping sparrow making its sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/JPBILLINGSLEYJR/sounds/465889",
+        "seconds": 33.0,
+        "source": "freesound",
+        "title": "Chipping sparrow",
+        "url": "https://cdn.freesound.org/previews/465/465889_9786444-hq.mp3"
+      }
+    ]
   },
   "spider": {
     "candidates_seen": 8,
@@ -4194,6 +4285,25 @@
         "url": "https://cdn.freesound.org/previews/724/724207_9199158-hq.mp3"
       }
     ]
+  },
+  "tick": {
+    "candidates_seen": 3,
+    "refused": [
+      {
+        "title": "Clock ticks close to mic.wav",
+        "why": "a clock ticking"
+      },
+      {
+        "title": "Clock Tick",
+        "why": "a clock ticking"
+      },
+      {
+        "title": "mab-clock-tick-20080713.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "tiger": {
     "candidates_seen": 4,

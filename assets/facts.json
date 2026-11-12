@@ -4192,6 +4192,27 @@
       }
     ]
   },
+  "tick": {
+    "facts": [
+      {
+        "checked": "2026-11-12",
+        "fact": "A tick bites an animal."
+      },
+      {
+        "checked": "2026-11-12",
+        "fact": "A tick lives on animals."
+      },
+      {
+        "checked": "2026-11-12",
+        "fact": "A tick has tiny legs."
+      },
+      {
+        "checked": "2026-11-12",
+        "fact": "A tick sucks blood."
+      }
+    ],
+    "refused": []
+  },
   "tiger": {
     "facts": [
       {
