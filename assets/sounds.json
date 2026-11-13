@@ -279,6 +279,12 @@
     "silent": true,
     "sounds": []
   },
+  "blueberry": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "boat": {
     "candidates_seen": 33,
     "refused": [
@@ -537,6 +543,53 @@
       {
         "title": "Flutter By, Butterfly",
         "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "cabbage": {
+    "candidates_seen": 10,
+    "refused": [
+      {
+        "title": "Cabbage being chopped 2.wav",
+        "why": "a chopping sound, likely of a knife on a cutting board"
+      },
+      {
+        "title": "cabbage squeaks",
+        "why": "a mouse or other small rodent squeaking"
+      },
+      {
+        "title": "En-us-jazz cabbage",
+        "why": "jazz music"
+      },
+      {
+        "title": "Chinese cabbage in Vezo",
+        "why": "a place or possibly a person, Vezo, with no clear relation to the sound a cabbage would make"
+      },
+      {
+        "title": "Cabbage Pancake Beat.wav",
+        "why": "electronic music or a beat"
+      },
+      {
+        "title": "Kung Fu Cabbage - Processed.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "cabbage_2_piezo_44_24.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "cabbage_4_wooden_cutter_piezo_44_24.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "cabbage_3_wooden_cutter_piezo_44_24.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "cabbage_1_piezo_44_24.wav",
+        "why": "licence at the source is by: the page links by 4.0"
       }
     ],
     "silent": true,
@@ -1424,23 +1477,23 @@
     "refused": [
       {
         "title": "Falcon Leg Bells 3.mp3",
-        "why": "bells, possibly used on a falcon's leg"
+        "why": "bells, likely from a falconry equipment"
       },
       {
         "title": "Falcon Leg Bells 1.mp3",
-        "why": "bells, possibly on a falconer's equipment or a costume"
+        "why": "bells, likely from a falconry or costume context"
       },
       {
         "title": "Falcon Leg Bells 5.mp3",
-        "why": "bells, possibly on a falconer's equipment or a costume"
+        "why": "bells, possibly used on a falcon's leg"
       },
       {
         "title": "Falcon Leg Bells 6.mp3",
-        "why": "bells, possibly on a falconer's equipment"
+        "why": "bells, likely from a falconry or costume context"
       },
       {
         "title": "Falcon Leg Bells 2.mp3",
-        "why": "bells, possibly on a falconer's equipment"
+        "why": "bells, likely from a falconry or costume context"
       }
     ],
     "silent": true,
@@ -2648,6 +2701,33 @@
     "silent": true,
     "sounds": []
   },
+  "mushroom": {
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "Mushrooms Frying",
+        "why": "sizzling or frying sound, likely of food being cooked"
+      },
+      {
+        "title": "Atmos Mushroom",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Chopping mushrooms",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "160712_FX_Flies buzzing on Weird Mushroom M-RX.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Chopping mushrooms vigorously",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "nightingale": {
     "candidates_seen": 8,
     "refused": [
@@ -3396,10 +3476,45 @@
     "sounds": []
   },
   "robin": {
-    "candidates_seen": 0,
+    "candidates_seen": 6,
     "refused": [],
-    "silent": true,
-    "sounds": []
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-13",
+        "creator": "Saurmandal",
+        "id": "303ed188-f7d3-48cd-a7c2-155f41a4cb5d",
+        "is": "an Oriental magpie-robin making its call",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "Commons says: cc0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+        "licence_version": "1.0",
+        "page": "https://commons.wikimedia.org/w/index.php?curid=166417522",
+        "seconds": 1.4,
+        "source": "wikimedia_audio",
+        "title": "Oriental magpie-robin call",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Oriental_magpie-robin_call.ogg"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-13",
+        "creator": "fiezewarthog",
+        "id": "91feca4f-a61a-4996-9ea6-b150886404fe",
+        "is": "a robin making its call",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/fiezewarthog/sounds/504923",
+        "seconds": 10.0,
+        "source": "freesound",
+        "title": "Robin Calling.wav",
+        "url": "https://cdn.freesound.org/previews/504/504923_10950637-hq.mp3"
+      }
+    ]
   },
   "rocket": {
     "candidates_seen": 0,
@@ -3826,7 +3941,7 @@
     "sounds": [
       {
         "attribution_required": false,
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "creator": "felix.blume",
         "id": "b7f7cd94-27d5-4310-a295-d46e342ae17b",
         "is": "a sparrow singing and flying in the bush",
@@ -3843,7 +3958,7 @@
       },
       {
         "attribution_required": false,
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "creator": "JPBILLINGSLEYJR",
         "id": "a071c4e8-2d9e-456d-81b0-979a2f50fec8",
         "is": "a chipping sparrow making its sound",

@@ -323,6 +323,38 @@
     ],
     "refused": []
   },
+  "blueberry": {
+    "facts": [
+      {
+        "checked": "2026-11-13",
+        "fact": "A blueberry grows on a bush."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A blueberry is small and juicy."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A blueberry is sweet."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A blueberry has a skin."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-13",
+        "fact": "A blueberry has a little seed.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A blueberry does not have a single little seed, it has many tiny seeds."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A blueberry is purple when it is ripe.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A blueberry is typically purple-blue, but the statement says it is purple when ripe, which is partially incorrect as the color can vary"
+      }
+    ]
+  },
   "boat": {
     "facts": [
       {
@@ -503,6 +535,43 @@
       }
     ],
     "refused": []
+  },
+  "cabbage": {
+    "facts": [
+      {
+        "checked": "2026-11-13",
+        "fact": "A cabbage has big green leaves."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A cabbage is good to eat."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A cabbage grows with other cabbages."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A cabbage makes a yummy soup."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-13",
+        "fact": "A cabbage grows in the ground.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A cabbage grows above the ground, its roots are in the ground"
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A cabbage has a hard head.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A cabbage head is typically firm, but not hard"
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A cabbage has a strong smell.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Cabbages are often described as having a mild or neutral smell, rather than a strong one"
+      }
+    ]
   },
   "calf": {
     "facts": [
@@ -2531,6 +2600,48 @@
         "checked": "2026-10-22",
         "fact": "A mule carries people.",
         "why": "llama-3.3-70b-instruct-fp8-fast: not all mules carry people"
+      }
+    ]
+  },
+  "mushroom": {
+    "facts": [
+      {
+        "checked": "2026-11-13",
+        "fact": "A mushroom has a little cap."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A mushroom has a stem."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A mushroom has a funny shape."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A mushroom grows with other mushrooms."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-13",
+        "fact": "A mushroom grows in the ground.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Mushrooms grow in the ground, but also in other places like trees, decaying wood, and on other surfaces"
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A mushroom is soft and squishy.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The stem (stipe) of a mushroom is typically not soft and squishy, it's often firm."
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A mushroom grows under trees.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Mushrooms can grow in various locations, not just under trees"
+      },
+      {
+        "checked": "2026-11-13",
+        "fact": "A mushroom grows in the dark.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Mushrooms typically grow in a variety of lighting conditions and often require some light to grow, not exclusively in the dark"
       }
     ]
   },
