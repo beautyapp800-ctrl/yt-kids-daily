@@ -305,9 +305,23 @@ def background(video_id):
     return Image.alpha_composite(out, confetti).convert("RGB")
 
 
+def cover_word(theme):
+    """The word on the cover for a theme: the catalogue theme's own short "cover" (assets/
+    themes.json - "SWIMMERS", not "ANIMALS THAT SWIM"), else the old table, else the name."""
+    key = (theme or "").lower()
+    try:
+        from pipeline import plan as _plan
+        for entry in _plan.load_themes():
+            if entry["name"].lower() == key and entry.get("cover"):
+                return entry["cover"]
+    except Exception:                                            # noqa: BLE001
+        pass
+    return COVER_WORD.get(key, (theme or "FIRST WORDS").upper())
+
+
 def title_text(video_id, theme, count):
     """('30 ANIMALS', 'for Kids') - the number is how many cards the video really has."""
-    word = COVER_WORD.get((theme or "").lower(), (theme or "FIRST WORDS").upper())
+    word = cover_word(theme)
     return f"{count} {word}", "for Kids"
 
 

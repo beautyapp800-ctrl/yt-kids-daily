@@ -37,7 +37,9 @@ def _plan(video_id, cfg, account, token):
     from pipeline import plan
     groups = json.loads((Path(__file__).parent / "assets" / "subjects.json")
                         .read_text(encoding="utf-8"))
-    return plan.run(video_id, cfg, account, token, groups)
+    # The theme catalogue: each theme once ever, no video sharing more than 30% of its subjects
+    # with another (pipeline/plan.py, since the move to the new channel).
+    return plan.run(video_id, cfg, account, token, groups, themes=plan.load_themes())
 
 
 def _media(video_id, cfg, account, token):
@@ -162,6 +164,9 @@ def main():
         return 0
 
     account, token, _pixabay = credentials()
+    # Everything below works for this channel only: the Moo Toot videos stay in the database
+    # but are not carried on with, queued after, or compared against.
+    db.CHANNEL = cfg.get("youtube_channel_id")
     db.init_db()
     existing = db.oldest_unfinished(MAX_ATTEMPTS)
     if existing:

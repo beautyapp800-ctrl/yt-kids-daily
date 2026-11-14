@@ -85,7 +85,13 @@ def build_report(now=None, window_h=DEFAULT_WINDOW_H, owner="", run_url="", chec
     lines, alerts = [], []
 
     produced = finished_since(since)
-    if produced:
+    queue_now = db.scheduled_after(now)
+    if not produced and len(queue_now) >= THIN_QUEUE:
+        # Since the move to the new channel the schedule is three videos a week and the run
+        # only builds when the queue is short, so most days add nothing - and that is not news.
+        lines.append(f"- No new video today, and none was needed: {len(queue_now)} are "
+                     f"already scheduled.")
+    elif produced:
         for v in produced:
             name = v.get("seo_title") or v.get("title") or f"video {v['id']}"
             lines.append(f"- Added to the queue today: **{name}** "
@@ -180,6 +186,7 @@ def main(argv=None):
     parser.add_argument("--no-token-check", action="store_true",
                         help="skip the YouTube token check (for offline tests)")
     args = parser.parse_args(argv)
+    db.use_configured_channel()
     db.init_db()
     message, alert = build_report(window_h=args.window_hours, owner=args.owner,
                                   run_url=args.run_url, check_token=not args.no_token_check)

@@ -342,7 +342,7 @@ def build(video_id, cfg, db, output_dir):
 
     count = len(cards)
     theme = (video.get("theme") or "animals").lower()
-    words = thumbnail.COVER_WORD.get(theme, theme.upper())
+    words = thumbnail.cover_word(theme)
     end_line = work / "end.mp3"
     if not end_line.exists():
         tts.say_part(f"Watch all {count} in the full video!", "cue", end_line, cfg)
@@ -470,7 +470,7 @@ def _run(video_id, cfg, db, output_dir, service=None):
     upload.assert_mandatory_flags(body)
     if service is None:
         from core import youtube
-        service = youtube.build_service(youtube.load_credentials())
+        service = youtube.checked_service(cfg)
     response, _stats = upload.upload_video(service, body, out / "short.mp4",
                                            out / "short_session.json")
     youtube_id = response.get("id")

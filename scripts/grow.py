@@ -85,6 +85,41 @@ def from_pool(theme, existing, count):
             if s not in existing and not tried_and_failed(s)][:count]
 
 
+# How many unused themes ahead the grow job works for. The channel publishes three a week,
+# so six is two weeks of themes being made ready before they are reached.
+THEMES_AHEAD = 6
+
+
+def upcoming_missing(themes, videos, ready, clips, terms, ahead=THEMES_AHEAD):
+    """[(category, subject)] the next unused themes still lack, in the order they are needed.
+
+    Since the move to the new channel a theme is used once, ever, and no video may share more
+    than 30% with another (pipeline/plan.py), so the catalogue has to keep ahead of the themes:
+    a theme with thirteen of its fifteen subjects is a video that does not exist. A subject
+    already tried with no clip found is not tried again under the same search term.
+    """
+    used = {v.get("theme_id") for v in videos if v.get("theme_id")}
+    out, seen, themes_counted = [], set(), 0
+    for theme in [t for t in themes if t["id"] not in used]:
+        if themes_counted >= ahead:
+            break
+        wanted = []
+        for subject in theme["subjects"]:
+            entry = clips.get(subject)
+            failed = bool(entry) and not entry.get("clips") and \
+                entry.get("search_term", subject) == terms.get(subject, subject)
+            if subject in ready or subject in seen or failed:
+                continue
+            wanted.append(subject)
+        # The window is themes that still lack something: a complete theme is not work.
+        if wanted:
+            themes_counted += 1
+        for subject in wanted:
+            seen.add(subject)
+            out.append((theme.get("category") or "wild animals", subject))
+    return out
+
+
 def propose(theme, existing, count, account, token):
     prompt = f"""Theme: {theme}
 
@@ -117,8 +152,33 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     cfg = config.load_config()
+    db.CHANNEL = cfg.get("youtube_channel_id")
     db.init_db()
     groups = json.loads(SUBJECTS.read_text(encoding="utf-8"))
+
+    # First what the next themes are missing: that is what decides whether there is a video.
+    from pipeline import catalogue as _cat, plan as _plan
+    book = json.loads((ROOT / "assets" / "facts.json").read_text(encoding="utf-8"))
+    clips_now = _cat.load()
+    try:
+        terms = json.loads(POOL_FILE.read_text(encoding="utf-8")).get("search_terms") or {}
+    except Exception:                                            # noqa: BLE001
+        terms = {}
+    needed = upcoming_missing(_plan.load_themes(), db.channel_videos(),
+                              _plan.ready_subjects(clips_now, book), clips_now, terms)
+    if needed:
+        print(f"the next {THEMES_AHEAD} unused themes lack {len(needed)} subject(s): "
+              + ", ".join(s for _c, s in needed))
+        if args.dry_run:
+            return 0
+        account, token, _pixabay = config.credentials()
+        if not (account and token):
+            print("needs CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN")
+            return 2
+        added = {}
+        for category, subject in needed[:args.batch]:
+            added.setdefault(category, []).append(subject)
+        return build_and_keep(added, groups)
     recent = db.subjects_used_recently(headroom.RECENT_VIDEOS)
     left = headroom.videos_left(recent, cfg.get("cards_per_video", 25))
     fresh = len(headroom.fresh_subjects(recent))
@@ -187,10 +247,15 @@ def main(argv=None):
     except LLMError as e:
         print(f"could not ask for subjects: {str(e)[:100]}")
         return 1
-    flat = [s for items in added.values() for s in items]
-    if not flat:
+    if not any(added.values()):
         print("the model proposed nothing usable")
         return 0
+    return build_and_keep(added, groups)
+
+
+def build_and_keep(added, groups):
+    """Run the three builders on the new subjects; list the ones that came out complete."""
+    flat = [s for items in added.values() for s in items]
     print("proposed:", {t: v for t, v in added.items()})
 
     import build_catalogue
@@ -214,7 +279,7 @@ def main(argv=None):
     complete = set(headroom.complete_subjects())
     kept = {t: [s for s in v if s in complete] for t, v in added.items()}
     for theme, names in kept.items():
-        groups[theme] = sorted(set(groups[theme]) | set(names))
+        groups[theme] = sorted(set(groups.get(theme, [])) | set(names))
     SUBJECTS.write_text(json.dumps(groups, indent=2, sort_keys=True), encoding="utf-8")
     total = sum(len(v) for v in kept.values())
     print(f"\n{total} of {len(flat)} proposed subjects are complete and now on the list"

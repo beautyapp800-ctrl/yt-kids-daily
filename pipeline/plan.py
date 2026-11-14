@@ -52,6 +52,122 @@ MIN_THEME_CARDS = 15     # every video takes exactly this many; a smaller theme 
 THEME_REST_MIN = SUBJECT_REST + 1
 
 
+# --- the theme catalogue (since the move to the new channel, 14 November 2026) ------------
+#
+# Moo Toot had 0 views after three weeks, and the owner's reading was repetition: seven themes
+# going round every eight days, the same fifteen farm animals under three titles. The rules on
+# the new channel are his:
+#
+#   - a theme is used ONCE, ever (assets/themes.json, each with its own id);
+#   - no video shares more than max_subject_overlap (30%) of its subjects with any other video
+#     the channel has - checked when the plan is made and again before upload, and a plan that
+#     breaks it is not built;
+#   - when no theme can be built under those rules, the answer is a bigger catalogue (grow.py
+#     works on the subjects the next unused themes are missing), never a repeat.
+
+THEMES_FILE = Path(__file__).resolve().parent.parent / "assets" / "themes.json"
+DEFAULT_OVERLAP = 0.30
+
+
+def load_themes(path=None):
+    import json
+    path = Path(path or THEMES_FILE)
+    return json.loads(path.read_text(encoding="utf-8"))["themes"] if path.exists() else []
+
+
+def theme_by_id(theme_id, themes=None):
+    for t in (themes if themes is not None else load_themes()):
+        if t["id"] == theme_id:
+            return t
+    return None
+
+
+def overlap_cap(wanted, share=DEFAULT_OVERLAP):
+    """Most subjects a video of `wanted` cards may share with any one other: 4 of 15 at 30%."""
+    return int(wanted * share + 1e-9)
+
+
+def pick_subjects(theme, ready, videos, wanted, share=DEFAULT_OVERLAP, rng=None):
+    """(subjects, None) for this theme under the overlap rule, or (None, why not).
+
+    Least-used on the channel first, so a theme that could be made either from fresh subjects
+    or from familiar ones is made from fresh ones; then, one at a time, a subject is taken
+    only if it keeps every earlier video at or under the cap.
+    """
+    import collections
+    cap = overlap_cap(wanted, share)
+    pool = [s for s in theme["subjects"] if s in ready]
+    if len(pool) < wanted:
+        return None, f"{len(pool)} of {wanted} subjects ready"
+    uses = collections.Counter(s for v in videos for s in v["subjects"])
+    (rng or random.Random(0)).shuffle(pool)
+    pool.sort(key=lambda s: uses[s])
+    shared = {v["id"]: 0 for v in videos}
+    chosen = []
+    for s in pool:
+        hits = [v["id"] for v in videos if s in v["subjects"]]
+        if any(shared[h] + 1 > cap for h in hits):
+            continue
+        chosen.append(s)
+        for h in hits:
+            shared[h] += 1
+        if len(chosen) == wanted:
+            return chosen, None
+    return None, (f"only {len(chosen)} of {wanted} subjects fit without sharing more than "
+                  f"{cap} with an earlier video")
+
+
+def choose_from_catalogue(themes, ready, videos, wanted, share=DEFAULT_OVERLAP, rng=None):
+    """(theme, subjects): the first theme in the catalogue's order that the channel has never
+    used and that can be filled under the overlap rule. Raises NoThemeReady naming every theme
+    and why it cannot be today's."""
+    used = {v.get("theme_id") for v in videos if v.get("theme_id")}
+    reasons = []
+    for theme in themes:
+        if theme["id"] in used:
+            continue
+        subjects, why = pick_subjects(theme, ready, videos, wanted, share, rng)
+        if subjects:
+            return theme, subjects
+        reasons.append(f"{theme['id']}: {why}")
+    raise NoThemeReady("no unused theme can be made without repeating the channel - "
+                       + (" | ".join(reasons) or "every theme in assets/themes.json is used")
+                       + ". Grow the catalogue (scripts/grow.py) or add themes; a repeat is "
+                         "not an option")
+
+
+def repeat_problems(video_id, share=None, channel=None):
+    """Why this video would repeat the channel, or [] if it does not.
+
+    The automatic check the owner asked for: more than `share` of its subjects in common with
+    any other video of the channel, or a theme the channel has already had. Called at the end
+    of the plan and again by the upload stage.
+    """
+    if share is None:
+        share = DEFAULT_OVERLAP
+        try:
+            from core.config import load_config
+            share = float(load_config().get("max_subject_overlap", DEFAULT_OVERLAP))
+        except Exception:                                        # noqa: BLE001
+            pass
+    videos = db.channel_videos(channel)
+    this = next((v for v in videos if v["id"] == video_id), None)
+    if this is None or not this["subjects"]:
+        return []
+    out = []
+    mine = this["subjects"]
+    for other in videos:
+        if other["id"] == video_id:
+            continue
+        common = mine & other["subjects"]
+        if len(common) > len(mine) * share + 1e-9:
+            out.append(f"{len(common)} of {len(mine)} subjects ({len(common) / len(mine):.0%}) "
+                       f"are also in video {other['id']} ({', '.join(sorted(common))})")
+        if this.get("theme_id") and this["theme_id"] == other.get("theme_id"):
+            out.append(f"theme {this['theme_id']!r} was already video {other['id']}")
+    return out
+
+
 def theme_sizes(groups, clips, facts):
     """{theme: how many of its subjects could actually be a card today}."""
     return {theme: sum(1 for s in items
@@ -155,13 +271,20 @@ def dominant_theme(subjects, groups, fallback):
 
 
 def run(video_id, cfg, account, token, groups, clips=None, sounds_module=None,
-        rng=None, facts=None, sound_book=None):
-    """Write the whole plan into the database. Returns True, or raises with a reason."""
+        rng=None, facts=None, sound_book=None, themes=None):
+    """Write the whole plan into the database. Returns True, or raises with a reason.
+
+    With `themes` (the catalogue in assets/themes.json, which run.py passes) a theme is used
+    once ever and the overlap rule holds; without it, the old rotation over `groups`.
+    """
     rng = rng or random.Random(int(video_id) * 7919)
     clips = clips if clips is not None else catalogue.load()
     fact_book = facts if facts is not None else _load_facts()
     sound_book = sound_book if sound_book is not None else _load_sounds()
     wanted = int(cfg.get("cards_per_video", 25))
+    if themes is not None:
+        return _run_catalogue(video_id, cfg, themes, clips, fact_book, sound_book,
+                              sounds_module, rng, wanted)
     # The floor is relative: a configuration asking for eight cards means eight, and should
     # not be refused by a constant written for the full-length format.
     floor = min(MIN_CARDS, wanted)
@@ -314,3 +437,68 @@ def _sound_queries(subject):
             seen.add(q)
             unique.append(q)
     return unique
+
+
+def ready_subjects(clips, facts):
+    return {s for s in set(clips) | set(facts)
+            if (clips.get(s) or {}).get("clips") and (facts.get(s) or {}).get("facts")}
+
+
+def _run_catalogue(video_id, cfg, themes, clips, fact_book, sound_book, sounds_module, rng,
+                   wanted):
+    share = float(cfg.get("max_subject_overlap", DEFAULT_OVERLAP))
+    db.clear_cards(video_id)                       # a plan that did not stand starts clean
+    videos = [v for v in db.channel_videos() if v["id"] != video_id]
+    ready = ready_subjects(clips, fact_book)
+    theme, subjects = choose_from_catalogue(themes, ready, videos, wanted, share, rng)
+    log.info("video %s: theme %r (%s), %d subjects, at most %d shared with any of the "
+             "channel's %d earlier video(s)", video_id, theme["name"], theme["id"],
+             len(subjects), overlap_cap(wanted, share), len(videos))
+
+    with_clip = catalogue.pick_clips(subjects, clips)
+    plan = [(s, c) for s, c in with_clip if c is not None]
+    if len(plan) < wanted:
+        raise RuntimeError(f"theme {theme['id']}: only {len(plan)} of {wanted} subjects got "
+                           f"a clip of their own")
+    sounded = bool(theme.get("sounded", True))
+    for idx, (subject, clip) in enumerate(plan):
+        choices = (fact_book.get(subject) or {}).get("facts") or []
+        fact = choices[rng.randrange(len(choices))]["fact"]
+        entry = sound_book.get(subject) or {}
+        sound = None
+        if sounded and entry.get("sounds"):
+            sound = entry["sounds"][rng.randrange(len(entry["sounds"]))]
+        sounds_module = sounds_module or _default_sounds()
+        db.add_card(
+            video_id, idx, subject, fact=fact,
+            clip_id=str(clip["id"]), clip_url=clip.get("clip"),
+            clip_licence=clip.get("licence"), video_source="stock",
+            sound_id=(sound or {}).get("id"), sound_licence=(sound or {}).get("licence"),
+            sound_url=(sound or {}).get("url"),
+            sound_attribution=sounds_module.attribution_line(sound) if sound else None)
+
+    used = {str(c["id"]) for _s, c in plan}
+    for card in db.get_cards(video_id):
+        options = (clips.get(card["subject"]) or {}).get("clips") or []
+        other = next((c for c in options if str(c["id"]) not in used), None)
+        if other:
+            used.add(str(other["id"]))
+            db.update_card(card["id"], game_clip_id=str(other["id"]),
+                           game_clip_url=other.get("clip"))
+
+    db.remember_subjects(video_id, [s for s, _ in plan])
+    db.update_video(video_id, theme=theme["name"], theme_id=theme["id"],
+                    title=f"{len(plan)} {theme['name']} for Kids")
+    # The rule, checked on what was actually written, not on what was meant to be.
+    problems = repeat_problems(video_id, share)
+    if problems:
+        db.clear_cards(video_id)
+        raise RuntimeError("the plan repeats the channel and is not built: "
+                           + "; ".join(problems))
+    db.log_event(video_id, "plan", "info",
+                 f"{len(plan)} cards on theme {theme['id']} ({theme['name']}), "
+                 f"{sum(1 for c in db.get_cards(video_id) if c.get('sound_id'))} with a sound; "
+                 f"most shared with one earlier video: "
+                 f"{max([len({s for s, _ in plan} & v['subjects']) for v in videos] or [0])}"
+                 f" of {len(plan)}")
+    return True

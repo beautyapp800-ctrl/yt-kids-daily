@@ -134,6 +134,12 @@ def main():
             from core import youtube
             creds = youtube.load_credentials()
             print(f"youtube token: loads and refreshes (valid={creds.valid})")
+            # Which channel it uploads to, before anything is made for it: the old Moo Toot
+            # token is still a working token.
+            from core.config import load_config as _load
+            cid, title, handle = youtube.verify_channel(
+                youtube.build_service(creds), _load().get("youtube_channel_id"), creds)
+            print(f"youtube token: channel {title!r} {handle} ({cid}) - the configured one")
         except Exception as e:                                   # noqa: BLE001
             print(f"youtube token: FAILED: {e}")
             problems.append(f"the YouTube token does not work: {e}")

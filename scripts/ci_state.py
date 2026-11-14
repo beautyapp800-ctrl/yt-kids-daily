@@ -32,6 +32,7 @@ def next_video_id():
 
 
 def main():
+    db.use_configured_channel()
     db.init_db()
     existing = db.oldest_unfinished(db.MAX_ATTEMPTS)
     if existing:

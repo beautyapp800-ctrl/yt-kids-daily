@@ -1,0 +1,985 @@
+{
+  "about": "One entry per video, used once ever on the channel (pipeline/plan.py). Order is the order they are tried in; a theme that cannot be filled today under the 30% overlap rule is skipped and tried again next time. 'subjects' may name things the catalogue does not have yet - scripts/grow.py builds those first, for the next unused themes. 'seeds' are what YouTube autocomplete is asked for the title (pipeline/seo.py); 'category' is the subjects.json group a newly grown subject joins; 'sounded' says whether the cards get real sounds.",
+  "themes": [
+    {
+      "id": "farm-animal-sounds",
+      "name": "Farm Animals",
+      "cover": "FARM ANIMALS",
+      "category": "farm animals",
+      "sounded": true,
+      "seeds": [
+        "farm animals for toddlers",
+        "farm animal sounds for kids",
+        "farm animals for kids"
+      ],
+      "keywords": [
+        "farm"
+      ],
+      "blurb": "A morning on the farm: who moos, who baas and who says cock-a-doodle-doo.",
+      "subjects": [
+        "cow",
+        "pig",
+        "sheep",
+        "horse",
+        "goat",
+        "chicken",
+        "rooster",
+        "duck",
+        "turkey",
+        "donkey",
+        "bull",
+        "cat",
+        "dog",
+        "lamb",
+        "llama",
+        "ram",
+        "puppy",
+        "mouse"
+      ],
+      "suggestions": [
+        "farm animals for toddlers",
+        "farm animals for toddlers educational",
+        "farm animals for toddlers real",
+        "farm animals for kids",
+        "farm animals for babies",
+        "farm animals for kindergarten",
+        "farm animal sounds for kids"
+      ]
+    },
+    {
+      "id": "ocean-animals",
+      "name": "Ocean Animals",
+      "cover": "OCEAN ANIMALS",
+      "category": "sea animals",
+      "sounded": true,
+      "seeds": [
+        "ocean animals for kids",
+        "sea animals for toddlers",
+        "under the sea animals for kids"
+      ],
+      "keywords": [
+        "ocean",
+        "sea"
+      ],
+      "blurb": "Down into the blue: fish, shells and the biggest animals in the world.",
+      "subjects": [
+        "dolphin",
+        "whale",
+        "shark",
+        "octopus",
+        "sea turtle",
+        "seahorse",
+        "clownfish",
+        "jellyfish",
+        "crab",
+        "lobster",
+        "starfish",
+        "stingray",
+        "seal",
+        "squid",
+        "shrimp",
+        "hermit crab",
+        "walrus",
+        "sea lion",
+        "orca",
+        "manta ray",
+        "pufferfish"
+      ],
+      "suggestions": [
+        "ocean animals for kids",
+        "ocean animals for preschool",
+        "ocean animals for toddlers",
+        "ocean animals for kindergarten",
+        "ocean animals for babies",
+        "ocean animals for preschool read aloud",
+        "sea animals for toddlers",
+        "sea animals for toddlers educational",
+        "sea animals for toddlers to learn",
+        "sea animals for toddlers abc",
+        "sea animals for toddlers 1 hour"
+      ]
+    },
+    {
+      "id": "things-that-go",
+      "name": "Things That Go",
+      "cover": "THINGS THAT GO",
+      "category": "transport",
+      "sounded": true,
+      "seeds": [
+        "things that go for toddlers",
+        "vehicles for kids",
+        "vehicle sounds for toddlers"
+      ],
+      "keywords": [
+        "go",
+        "vehicle",
+        "car",
+        "truck"
+      ],
+      "blurb": "Vroom, toot and whoosh: things with wheels, wings and engines.",
+      "subjects": [
+        "car",
+        "bus",
+        "train",
+        "truck",
+        "tractor",
+        "fire truck",
+        "garbage truck",
+        "excavator",
+        "airplane",
+        "helicopter",
+        "boat",
+        "ship",
+        "submarine",
+        "motorcycle",
+        "bicycle",
+        "taxi",
+        "rocket",
+        "hot air balloon"
+      ],
+      "suggestions": [
+        "things that go for toddlers",
+        "vehicles for kids",
+        "vehicles for toddlers",
+        "vehicles for toddlers learning",
+        "vehicles for preschool",
+        "vehicles for babies",
+        "vehicle sounds for toddlers",
+        "guess the vehicle sounds for toddlers",
+        "race car sounds for toddlers",
+        "different car sounds for toddlers"
+      ]
+    },
+    {
+      "id": "birds",
+      "name": "Birds",
+      "cover": "BIRDS",
+      "category": "birds",
+      "sounded": true,
+      "seeds": [
+        "birds for kids",
+        "bird sounds for toddlers",
+        "birds for toddlers"
+      ],
+      "keywords": [
+        "bird"
+      ],
+      "blurb": "Feathers, beaks and songs: big birds, tiny birds and birds that cannot fly.",
+      "subjects": [
+        "owl",
+        "eagle",
+        "parrot",
+        "flamingo",
+        "peacock",
+        "swan",
+        "pigeon",
+        "toucan",
+        "hummingbird",
+        "woodpecker",
+        "pelican",
+        "ostrich",
+        "seagull",
+        "hawk",
+        "vulture",
+        "puffin",
+        "crane bird",
+        "penguin",
+        "stork",
+        "crow",
+        "macaw",
+        "robin"
+      ],
+      "suggestions": [
+        "birds for kids",
+        "bird sounds for toddlers",
+        "bird sounds for babies",
+        "bird sounds for preschool",
+        "bird sounds for kids",
+        "birds for toddlers",
+        "birds for toddlers to watch",
+        "birds name for toddlers",
+        "birds sounds for toddlers",
+        "baby birds for toddlers",
+        "angry birds for toddlers"
+      ]
+    },
+    {
+      "id": "safari-and-forest",
+      "name": "Wild Animals",
+      "cover": "WILD ANIMALS",
+      "category": "wild animals",
+      "sounded": true,
+      "seeds": [
+        "wild animals for kids",
+        "wild animal sounds for toddlers",
+        "safari animals for kids"
+      ],
+      "keywords": [
+        "wild",
+        "safari",
+        "zoo"
+      ],
+      "blurb": "From the savanna to the woods: roars, howls and very long necks.",
+      "subjects": [
+        "lion",
+        "tiger",
+        "elephant",
+        "giraffe",
+        "zebra",
+        "hippo",
+        "rhino",
+        "monkey",
+        "bear",
+        "wolf",
+        "fox",
+        "deer",
+        "kangaroo",
+        "rabbit",
+        "squirrel",
+        "frog",
+        "snake"
+      ],
+      "suggestions": [
+        "wild animals for kids",
+        "wild animals for toddlers",
+        "wild animals for preschool",
+        "wild animals for kindergarten",
+        "wild animals for babies",
+        "wild animals for children",
+        "wild animal sounds for toddlers",
+        "wild animal sounds for preschoolers",
+        "wild animal sounds for kids",
+        "safari animals for kids",
+        "zoo animals for kids",
+        "safari animals for toddlers"
+      ]
+    },
+    {
+      "id": "bugs-and-insects",
+      "name": "Bugs and Insects",
+      "cover": "BUGS",
+      "category": "insects",
+      "sounded": true,
+      "seeds": [
+        "bugs for kids",
+        "insects for toddlers",
+        "bugs and insects for kids"
+      ],
+      "keywords": [
+        "bug",
+        "insect"
+      ],
+      "blurb": "Tiny legs, shiny wings: the little creatures in the grass and on the leaves.",
+      "subjects": [
+        "ant",
+        "bee",
+        "butterfly",
+        "ladybug",
+        "caterpillar",
+        "grasshopper",
+        "cricket",
+        "dragonfly",
+        "beetle",
+        "dung beetle",
+        "spider",
+        "snail",
+        "worm",
+        "mosquito",
+        "scorpion",
+        "moth",
+        "firefly",
+        "bumblebee",
+        "praying mantis"
+      ],
+      "suggestions": [
+        "bugs for kids",
+        "bugs for toddlers",
+        "bugs for preschoolers",
+        "bugs for kindergarten",
+        "insects for toddlers",
+        "real insects for toddlers",
+        "insects name for toddlers",
+        "learn insects for toddlers",
+        "insects sounds for toddlers"
+      ]
+    },
+    {
+      "id": "fruits-and-vegetables",
+      "name": "Fruits and Vegetables",
+      "cover": "FRUITS & VEGGIES",
+      "category": "fruit and vegetables",
+      "sounded": false,
+      "seeds": [
+        "fruits and vegetables for kids",
+        "fruits for toddlers",
+        "vegetables for toddlers"
+      ],
+      "keywords": [
+        "fruit",
+        "vegetable",
+        "veggie"
+      ],
+      "blurb": "Crunchy, juicy, sweet and green: food from the garden and the orchard.",
+      "subjects": [
+        "apple",
+        "banana",
+        "orange",
+        "strawberry",
+        "grapes",
+        "watermelon",
+        "pineapple",
+        "pear",
+        "cherry",
+        "lemon",
+        "blueberry",
+        "avocado",
+        "carrot",
+        "broccoli",
+        "tomato",
+        "corn",
+        "potato",
+        "cabbage",
+        "bell pepper",
+        "mushroom"
+      ],
+      "suggestions": [
+        "fruits and vegetables for kids",
+        "fruits and vegetables for toddlers",
+        "fruits and vegetables for babies",
+        "fruits and vegetables for preschoolers",
+        "fruits and vegetables for kindergarten",
+        "fruits for toddlers",
+        "fruits for toddlers to learn",
+        "fruits for toddlers to eat",
+        "fruits name for toddlers",
+        "dancing fruits for toddlers",
+        "dry fruits for toddlers"
+      ]
+    },
+    {
+      "id": "animals-that-swim",
+      "name": "Animals That Swim",
+      "cover": "SWIMMERS",
+      "category": "sea animals",
+      "sounded": true,
+      "seeds": [
+        "animals that swim",
+        "animals that swim for kids",
+        "animals that live in water"
+      ],
+      "keywords": [
+        "swim",
+        "water"
+      ],
+      "blurb": "Splash! Animals at home in rivers, ponds and the sea.",
+      "subjects": [
+        "dolphin",
+        "whale",
+        "shark",
+        "seal",
+        "penguin",
+        "duck",
+        "swan",
+        "frog",
+        "hippo",
+        "octopus",
+        "sea turtle",
+        "crab",
+        "pelican",
+        "jellyfish",
+        "otter",
+        "sea lion",
+        "crocodile",
+        "walrus",
+        "stingray",
+        "clownfish",
+        "lobster",
+        "seahorse",
+        "puffin"
+      ],
+      "suggestions": [
+        "animals that swim for kindergarten"
+      ]
+    },
+    {
+      "id": "animals-that-fly",
+      "name": "Animals That Fly",
+      "cover": "FLYERS",
+      "category": "birds",
+      "sounded": true,
+      "seeds": [
+        "animals that fly",
+        "animals that fly for kids",
+        "flying animals for kids"
+      ],
+      "keywords": [
+        "fly",
+        "flying"
+      ],
+      "blurb": "Up in the air: wings that flap, buzz and glide.",
+      "subjects": [
+        "eagle",
+        "owl",
+        "parrot",
+        "flamingo",
+        "swan",
+        "pelican",
+        "hummingbird",
+        "toucan",
+        "seagull",
+        "pigeon",
+        "hawk",
+        "bee",
+        "butterfly",
+        "dragonfly",
+        "ladybug",
+        "mosquito",
+        "moth",
+        "firefly",
+        "bumblebee",
+        "stork",
+        "crow",
+        "falcon",
+        "macaw",
+        "vulture",
+        "woodpecker"
+      ],
+      "suggestions": [
+        "animals that fly for kindergarten",
+        "things that fly for preschool",
+        "things that fly for toddlers",
+        "flying animals for kindergarten"
+      ]
+    },
+    {
+      "id": "big-animals",
+      "name": "Big Animals",
+      "cover": "BIG ANIMALS",
+      "category": "wild animals",
+      "sounded": true,
+      "seeds": [
+        "big animals for kids",
+        "biggest animals for kids",
+        "big and small animals for kids"
+      ],
+      "keywords": [
+        "big",
+        "biggest"
+      ],
+      "blurb": "Huge, tall and heavy: the giants of the land and the sea.",
+      "subjects": [
+        "elephant",
+        "giraffe",
+        "hippo",
+        "rhino",
+        "whale",
+        "bear",
+        "lion",
+        "tiger",
+        "horse",
+        "bull",
+        "cow",
+        "ostrich",
+        "kangaroo",
+        "zebra",
+        "shark",
+        "camel",
+        "gorilla",
+        "polar bear",
+        "moose",
+        "bison",
+        "walrus",
+        "orca",
+        "crocodile"
+      ],
+      "suggestions": [
+        "big animals for toddlers"
+      ]
+    },
+    {
+      "id": "vehicles-that-help",
+      "name": "Helper Vehicles",
+      "cover": "HELPER TRUCKS",
+      "category": "transport",
+      "sounded": true,
+      "seeds": [
+        "rescue vehicles for kids",
+        "emergency vehicles for kids",
+        "construction vehicles for kids"
+      ],
+      "keywords": [
+        "rescue",
+        "emergency",
+        "construction",
+        "truck"
+      ],
+      "blurb": "Vehicles with a job to do: digging, lifting, rescuing and cleaning up.",
+      "subjects": [
+        "fire truck",
+        "garbage truck",
+        "ambulance",
+        "tow truck",
+        "excavator",
+        "bulldozer",
+        "dump truck",
+        "cement mixer",
+        "crane truck",
+        "forklift",
+        "tractor",
+        "snow plough",
+        "truck",
+        "helicopter",
+        "bus",
+        "taxi",
+        "train",
+        "van"
+      ],
+      "suggestions": [
+        "emergency vehicles for kids",
+        "rescue vehicles for toddlers",
+        "rescue trucks for toddlers",
+        "emergency vehicles for preschoolers",
+        "emergency vehicles for kindergarten",
+        "emergency vehicles for toddlers",
+        "construction vehicles for kids",
+        "construction vehicles for toddlers",
+        "construction vehicles for toddlers blippi",
+        "construction vehicles for preschoolers",
+        "construction vehicles for toddlers learning"
+      ]
+    },
+    {
+      "id": "jungle-animals",
+      "name": "Jungle Animals",
+      "cover": "JUNGLE ANIMALS",
+      "category": "wild animals",
+      "sounded": true,
+      "seeds": [
+        "jungle animals for kids",
+        "jungle animal sounds for toddlers",
+        "rainforest animals for kids"
+      ],
+      "keywords": [
+        "jungle",
+        "rainforest"
+      ],
+      "blurb": "Deep in the rainforest: bright birds, swinging monkeys and quiet snakes.",
+      "subjects": [
+        "monkey",
+        "tiger",
+        "toucan",
+        "parrot",
+        "snake",
+        "frog",
+        "elephant",
+        "gorilla",
+        "sloth",
+        "chimpanzee",
+        "leopard",
+        "macaw",
+        "crocodile",
+        "lizard",
+        "hummingbird",
+        "butterfly",
+        "hippo",
+        "lemur",
+        "panda",
+        "cockatoo"
+      ],
+      "suggestions": [
+        "jungle animals for kids",
+        "rainforest animals for kids",
+        "jungle animals for toddlers",
+        "jungle animals for preschool",
+        "jungle animals for babies",
+        "jungle animal sounds for toddlers",
+        "rainforest animals for preschoolers",
+        "rainforest animals for toddlers",
+        "rainforest animals for kindergarten"
+      ]
+    },
+    {
+      "id": "fruits",
+      "name": "Fruits",
+      "cover": "FRUITS",
+      "category": "fruit and vegetables",
+      "sounded": false,
+      "seeds": [
+        "fruits for kids",
+        "fruit names for toddlers",
+        "learn fruits for kids"
+      ],
+      "keywords": [
+        "fruit"
+      ],
+      "blurb": "Sweet and juicy: fruit from the tree, the vine and the bush.",
+      "subjects": [
+        "apple",
+        "banana",
+        "orange",
+        "strawberry",
+        "grapes",
+        "watermelon",
+        "pineapple",
+        "pear",
+        "cherry",
+        "lemon",
+        "blueberry",
+        "peach",
+        "mango",
+        "kiwi",
+        "raspberry",
+        "coconut",
+        "melon",
+        "plum",
+        "apricot",
+        "fig",
+        "avocado"
+      ],
+      "suggestions": [
+        "fruits for kids",
+        "fruits for kids learning",
+        "fruits for babies",
+        "fruits for toddlers",
+        "fruit names for toddlers",
+        "learn fruit names for toddlers",
+        "fruit names for kids",
+        "fruit names for babies",
+        "100 fruits name for toddlers",
+        "fruit names for baby learning",
+        "learn fruits for toddlers",
+        "learn fruits for baby"
+      ]
+    },
+    {
+      "id": "animals-of-the-cold",
+      "name": "Animals in the Snow",
+      "cover": "SNOW ANIMALS",
+      "category": "wild animals",
+      "sounded": true,
+      "seeds": [
+        "arctic animals for kids",
+        "polar animals for kids",
+        "winter animals for kids"
+      ],
+      "keywords": [
+        "arctic",
+        "polar",
+        "winter",
+        "snow"
+      ],
+      "blurb": "Brrr! Thick fur, warm feathers and animals that love the ice.",
+      "subjects": [
+        "penguin",
+        "polar bear",
+        "seal",
+        "walrus",
+        "whale",
+        "orca",
+        "puffin",
+        "wolf",
+        "fox",
+        "deer",
+        "moose",
+        "owl",
+        "sea lion",
+        "narwhal",
+        "rabbit",
+        "bison",
+        "seagull",
+        "husky"
+      ],
+      "suggestions": [
+        "arctic animals for kids",
+        "polar animals for kids",
+        "arctic animals for preschoolers",
+        "arctic animals for toddlers",
+        "arctic animals for kindergarten",
+        "polar bears for kids",
+        "polar bear adaptations for kids",
+        "polar bear sounds for kids",
+        "polar animals for kindergarten"
+      ]
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetables",
+      "cover": "VEGGIES",
+      "category": "fruit and vegetables",
+      "sounded": false,
+      "seeds": [
+        "vegetables for kids",
+        "vegetable names for toddlers",
+        "learn vegetables for kids"
+      ],
+      "keywords": [
+        "vegetable",
+        "veggie"
+      ],
+      "blurb": "From the garden patch: crunchy, leafy and good for growing.",
+      "subjects": [
+        "carrot",
+        "broccoli",
+        "tomato",
+        "corn",
+        "potato",
+        "cabbage",
+        "bell pepper",
+        "mushroom",
+        "onion",
+        "cucumber",
+        "pumpkin",
+        "lettuce",
+        "garlic",
+        "eggplant",
+        "zucchini",
+        "celery",
+        "radish",
+        "spinach",
+        "peas",
+        "avocado"
+      ],
+      "suggestions": [
+        "vegetables for kids",
+        "vegetables for toddlers",
+        "vegetable names for toddlers",
+        "vegetable names for babies",
+        "fruits vegetables name for toddlers",
+        "vegetable names for kids",
+        "learn vegetables for toddlers",
+        "learning vegetables for baby",
+        "learning vegetables for preschoolers",
+        "learn fruits and vegetables for toddlers"
+      ]
+    },
+    {
+      "id": "baby-animals",
+      "name": "Baby Animals",
+      "cover": "BABY ANIMALS",
+      "category": "farm animals",
+      "sounded": true,
+      "seeds": [
+        "baby animals for kids",
+        "baby animals for toddlers",
+        "cute baby animals for kids"
+      ],
+      "keywords": [
+        "baby"
+      ],
+      "blurb": "Little ones and their families: puppies, lambs, kittens and more.",
+      "subjects": [
+        "puppy",
+        "lamb",
+        "kitten",
+        "calf",
+        "piglet",
+        "duckling",
+        "pony",
+        "cat",
+        "dog",
+        "sheep",
+        "cow",
+        "pig",
+        "duck",
+        "chicken",
+        "horse",
+        "goat",
+        "rabbit",
+        "hen",
+        "goose",
+        "alpaca"
+      ],
+      "suggestions": [
+        "baby animals for kids",
+        "baby animals for toddlers",
+        "baby animals for babies",
+        "baby animals for kindergarten",
+        "baby animals for preschool",
+        "baby animals for classroom",
+        "baby animals for infants",
+        "baby animals for toddlers sounds",
+        "baby animals for toddlers relaxing",
+        "baby farm animals for toddlers"
+      ]
+    },
+    {
+      "id": "crawl-hop-slither",
+      "name": "Animals That Hop and Crawl",
+      "cover": "HOP & CRAWL",
+      "category": "insects",
+      "sounded": true,
+      "seeds": [
+        "animals that hop",
+        "animals that crawl for kids",
+        "animal movements for kids"
+      ],
+      "keywords": [
+        "hop",
+        "crawl",
+        "move"
+      ],
+      "blurb": "Hop, crawl, wiggle and slither: all the ways animals get around.",
+      "subjects": [
+        "kangaroo",
+        "rabbit",
+        "frog",
+        "grasshopper",
+        "cricket",
+        "snake",
+        "worm",
+        "snail",
+        "caterpillar",
+        "spider",
+        "crab",
+        "lizard",
+        "centipede",
+        "slug",
+        "ant",
+        "beetle",
+        "scorpion",
+        "tortoise",
+        "millipede",
+        "hermit crab"
+      ],
+      "suggestions": [
+        "animal movements for kids",
+        "animal movements for kindergarten",
+        "animal movements for preschoolers",
+        "animal movements for toddlers"
+      ]
+    },
+    {
+      "id": "sky-and-water-transport",
+      "name": "Boats and Planes",
+      "cover": "BOATS & PLANES",
+      "category": "transport",
+      "sounded": true,
+      "seeds": [
+        "boats for kids",
+        "airplanes for kids",
+        "things that fly for kids"
+      ],
+      "keywords": [
+        "boat",
+        "plane",
+        "fly"
+      ],
+      "blurb": "Over the waves and up in the clouds.",
+      "subjects": [
+        "airplane",
+        "helicopter",
+        "hot air balloon",
+        "rocket",
+        "boat",
+        "ship",
+        "submarine",
+        "sailboat",
+        "ferry",
+        "seagull",
+        "train",
+        "steam train",
+        "tram",
+        "scooter",
+        "race car",
+        "motorcycle",
+        "bicycle"
+      ],
+      "suggestions": [
+        "boats for kids",
+        "boats for toddlers",
+        "boats for preschoolers",
+        "things that fly for toddlers",
+        "things that fly for preschool",
+        "animals that fly for kindergarten"
+      ]
+    },
+    {
+      "id": "pets",
+      "name": "Pets",
+      "cover": "PETS",
+      "category": "farm animals",
+      "sounded": true,
+      "seeds": [
+        "pets for kids",
+        "pet animals for kids",
+        "pets for toddlers"
+      ],
+      "keywords": [
+        "pet"
+      ],
+      "blurb": "The animals that live with us at home.",
+      "subjects": [
+        "dog",
+        "cat",
+        "puppy",
+        "kitten",
+        "rabbit",
+        "mouse",
+        "parrot",
+        "pigeon",
+        "pony",
+        "tortoise",
+        "goldfish",
+        "hamster",
+        "guinea pig",
+        "budgie",
+        "cockatoo",
+        "lizard",
+        "snail",
+        "duck"
+      ],
+      "suggestions": [
+        "pets for kids",
+        "pets for preschool",
+        "pets for toddlers",
+        "pets for kindergarten",
+        "pet animals for kids"
+      ]
+    },
+    {
+      "id": "garden-creatures",
+      "name": "Garden Friends",
+      "cover": "GARDEN FRIENDS",
+      "category": "insects",
+      "sounded": true,
+      "seeds": [
+        "garden animals for kids",
+        "garden bugs for kids",
+        "minibeasts for kids"
+      ],
+      "keywords": [
+        "garden",
+        "minibeast"
+      ],
+      "blurb": "Lift a leaf and look closely: who lives in the garden?",
+      "subjects": [
+        "ladybug",
+        "bee",
+        "butterfly",
+        "snail",
+        "worm",
+        "ant",
+        "spider",
+        "caterpillar",
+        "slug",
+        "bumblebee",
+        "hedgehog",
+        "robin",
+        "frog",
+        "squirrel",
+        "moth",
+        "beetle",
+        "grasshopper",
+        "dragonfly",
+        "mole",
+        "wasp"
+      ],
+      "suggestions": [
+        "garden bugs for toddlers",
+        "minibeasts for kids",
+        "minibeasts for kindergarten",
+        "minibeasts for toddlers"
+      ]
+    }
+  ]
+}

@@ -65,10 +65,13 @@ def due_videos(now, grace_minutes):
         conn.row_factory = sqlite3.Row
         settled = {r[0] for r in conn.execute(
             "SELECT video_id FROM events WHERE message IN (?, ?)", (CONFIRMED, IGNORED))}
+        # This channel's videos only: the Moo Toot ones were made private by hand when the
+        # project moved, and must not be reported as failing to go public.
+        where, args = db._scope(None)
         rows = [dict(r) for r in conn.execute(
             "SELECT * FROM videos WHERE youtube_id IS NOT NULL AND youtube_id != '' "
-            "AND published_at IS NOT NULL AND published_at <= ? ORDER BY published_at",
-            (cutoff.replace("+00:00", "Z"),))]
+            "AND published_at IS NOT NULL AND published_at <= ?" + where +
+            " ORDER BY published_at", (cutoff.replace("+00:00", "Z"), *args))]
     return [r for r in rows if r["id"] not in settled]
 
 
@@ -112,6 +115,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     now = datetime.now(timezone.utc)
+    db.use_configured_channel()
     db.init_db()
     for video_id in args.ignore:
         db.log_event(video_id, "publish", "info", IGNORED)

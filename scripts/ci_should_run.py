@@ -16,6 +16,9 @@ So the workflow has two crons, and this decides what the later one does:
   that rescues a dropped or failed first cron.
 - a video was already finished today                 -> do nothing. Two videos in one day
   would put two videos on the same publication day.
+- the queue already holds config.queue_target videos   -> do nothing. Since the move to the
+  new channel there are three publication days a week (Tue, Thu, Sat), not seven, so the daily
+  crons only build when the queue is short.
 
 Lines are KEY=value so the output can be appended straight to $GITHUB_OUTPUT.
 """
@@ -41,7 +44,7 @@ def finished_today(now=None):
     return row[0] if row else None
 
 
-def decide(now=None, backfill=False):
+def decide(now=None, backfill=False, queue_target=2):
     """(run, reason)."""
     unfinished = db.oldest_unfinished(db.MAX_ATTEMPTS)
     if unfinished:
@@ -52,6 +55,10 @@ def decide(now=None, backfill=False):
         # Started by hand to fill the days an outage left empty. Each takes the next free
         # slot (pipeline/upload.py), so two in a day are two different publication days.
         return True, "backfill started by hand: a video for the next free slot"
+    waiting = db.scheduled_after(now or datetime.now(timezone.utc))
+    if len(waiting) >= queue_target:
+        return False, (f"{len(waiting)} video(s) already scheduled (the queue holds "
+                       f"{queue_target}); the next is built when one goes out")
     done = finished_today(now)
     if done is None:
         return True, "nothing has been finished today, starting a video"
@@ -65,8 +72,16 @@ def main():
     # dark day. The wrong answer in the other direction costs one run that turns out to be
     # unnecessary, and the run itself will say so.
     try:
+        cfg = {}
+        try:
+            from core.config import load_config
+            cfg = load_config()
+        except Exception:                                        # noqa: BLE001
+            pass
+        db.CHANNEL = cfg.get("youtube_channel_id")
         db.init_db()
-        run, reason = decide(backfill="--backfill" in sys.argv)
+        run, reason = decide(backfill="--backfill" in sys.argv,
+                             queue_target=int(cfg.get("queue_target", 2)))
     except Exception as e:                                       # noqa: BLE001
         run, reason = True, f"could not tell whether there is work ({e}); running anyway"
     print(f"run={'true' if run else 'false'}")

@@ -1,5 +1,7 @@
 {
   "channel": "yt-kids",
+  "youtube_channel_id": "UCX71CVp9h0wn762YHzdo0QQ",
+  "youtube_channel_note": "the channel every upload must go to; the token is checked against this id before anything is sent (was Moo Toot until 14 November 2026)",
   "language": "en-US",
   "cards_per_video": 15,
   "card_seconds_min": 10,
@@ -18,9 +20,15 @@
   "fade_in_s": 2,
   "fade_out_s": 3,
   "publish_time": "16:00",
+  "publish_weekdays": [
+    "Tue",
+    "Thu",
+    "Sat"
+  ],
+  "queue_target": 2,
   "publish_days_ahead": 3,
   "schedule_publish": true,
-  "timezone": "Europe/Kiev",
+  "timezone": "Europe/Kyiv",
   "youtube_publish": true,
   "privacy_status": "private",
   "made_for_kids": true,
@@ -49,5 +57,6 @@
   "pitch_name": "+34Hz",
   "pitch_speech": "+18Hz",
   "music_under_voice_db": 12,
-  "min_theme_cards": 15
+  "min_theme_cards": 15,
+  "max_subject_overlap": 0.3
 }

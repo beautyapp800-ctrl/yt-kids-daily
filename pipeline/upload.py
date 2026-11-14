@@ -46,7 +46,29 @@ CONTAINS_SYNTHETIC_MEDIA = True
 CATEGORY_ID = "27"               # Education
 DEFAULT_PUBLISH_TIME = "16:00"   # local, config.publish_time: morning in the US, when
                                  # a parent turns the tablet on
-DEFAULT_PUBLISH_TIMEZONE = "Europe/Kiev"
+DEFAULT_PUBLISH_TIMEZONE = "Europe/Kyiv"
+WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+
+def zone(name):
+    """The zone, by its current name or its old one. "Europe/Kiev" stopped resolving on the
+    GitHub runners on 13 November 2026 - Ubuntu moved the old names to tzdata-legacy - and
+    four runs in a row failed at the upload for it. The tzdata package in requirements.txt
+    carries both names; this is the second line of defence."""
+    from zoneinfo import ZoneInfoNotFoundError
+    try:
+        return ZoneInfo(name)
+    except ZoneInfoNotFoundError:
+        if name == "Europe/Kiev":
+            return ZoneInfo("Europe/Kyiv")
+        raise
+
+
+def allowed_weekdays(cfg):
+    """{0..6} the channel publishes on (config.publish_weekdays, e.g. Tue Thu Sat); all seven
+    when the config does not say."""
+    days = (cfg or {}).get("publish_weekdays") or WEEKDAYS
+    return {WEEKDAYS.index(str(d)[:3].title()) for d in days}
 DEFAULT_DAYS_AHEAD = 3
 # How close to now a slot may be once the queue is driving the choice. One day, so a video
 # always has a night of YouTube processing behind it before anyone is sent to it, and a run
@@ -98,13 +120,22 @@ def publish_at(cfg, now=None, last_scheduled=None):
     summer and UTC+2 in winter, so 21:00 local is 18:00Z for part of the year and 19:00Z for
     the rest, and an offset written down once would be wrong for half of it.
     """
-    zone = ZoneInfo(cfg.get("timezone") or DEFAULT_PUBLISH_TIMEZONE)
+    tz = zone(cfg.get("timezone") or DEFAULT_PUBLISH_TIMEZONE)
     hour, _, minute = (cfg.get("publish_time") or DEFAULT_PUBLISH_TIME).partition(":")
     days = int(cfg.get("publish_days_ahead", DEFAULT_DAYS_AHEAD))
-    local = (now or datetime.now(timezone.utc)).astimezone(zone)
+    local = (now or datetime.now(timezone.utc)).astimezone(tz)
+    allowed = allowed_weekdays(cfg)
 
     def at_publish_time(moment):
-        return moment.replace(hour=int(hour), minute=int(minute or 0), second=0, microsecond=0)
+        moment = moment.replace(hour=int(hour), minute=int(minute or 0), second=0,
+                                microsecond=0)
+        # Only on the channel's publishing days (Tuesday, Thursday, Saturday since the move
+        # to the new channel). The wall-clock time is set again after each step, so a step
+        # across the change to winter time still lands on 16:00.
+        while moment.weekday() not in allowed:
+            moment = (moment + timedelta(days=1)).replace(hour=int(hour),
+                                                          minute=int(minute or 0))
+        return moment
 
     # The buffer the configuration asks for, measured from today.
     when = at_publish_time(local + timedelta(days=days))
@@ -112,7 +143,7 @@ def publish_at(cfg, now=None, last_scheduled=None):
     if last_scheduled is not None:
         if isinstance(last_scheduled, str):
             last_scheduled = datetime.fromisoformat(last_scheduled.replace("Z", "+00:00"))
-        last_local = last_scheduled.astimezone(zone)
+        last_local = last_scheduled.astimezone(tz)
         # A queue that ran dry longer ago than the buffer itself is not a queue any more:
         # the channel is already out of rhythm, so the buffer is built again from today
         # rather than chased. Otherwise the next free slot is taken, which keeps the videos
@@ -127,7 +158,7 @@ def publish_at(cfg, now=None, last_scheduled=None):
             when = max(after_queue, floor)
 
     while when <= local + timedelta(minutes=MIN_LEAD_MINUTES):
-        when += timedelta(days=1)
+        when = at_publish_time(when + timedelta(days=1))
     return when.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
@@ -394,6 +425,13 @@ def run(video_id, cfg, service=None, sleep=time.sleep):
         db.update_video(video_id, status="published")
         return True
 
+    # The plan already refused a repeat; this is the same check at the last moment before
+    # anything leaves the machine, against whatever the channel has by now.
+    from pipeline import plan as _plan
+    repeated = _plan.repeat_problems(video_id)
+    if repeated:
+        raise UploadError("not uploaded, it repeats the channel: " + "; ".join(repeated))
+
     body = build_body(video, cfg)
     assert_mandatory_flags(body)
     media_path, thumb_path = video.get("video_path"), video.get("thumbnail_path")
@@ -404,7 +442,9 @@ def run(video_id, cfg, service=None, sleep=time.sleep):
     if service is None:
         from core import youtube
         try:
-            service = youtube.build_service(youtube.load_credentials())
+            # Checked against config.youtube_channel_id first: the Moo Toot token is still a
+            # valid token, and it must not be the one that uploads.
+            service = youtube.checked_service(cfg)
         except youtube.AuthError as e:
             raise UploadError(str(e)) from e
 

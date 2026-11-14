@@ -110,6 +110,84 @@ def title_for(theme, card_count, with_sounds, video_id=0, recent_titles=()):
     return ordered[0]
 
 
+# --- since the move to the new channel: titles from real searches ---------------------------
+#
+# The owner's rule: each title is built on a search people really type, from YouTube's own
+# autocomplete (core/suggest.py), and no two videos of the channel share a title or a search.
+# The search leads; the part after the bar says what is in the video and rotates, so even two
+# themes found by the same kind of search do not read alike.
+
+TAILS = ["{n} {name} with Real Sounds",
+         "Learn {n} {name} and Play Guess Who",
+         "Name {n} {name} and Guess Them All",
+         "{n} Real {name} for Little Learners"]
+QUIET_TAILS = ["Learn {n} {name} and Play Guess Who",
+               "Name {n} {name} and Guess Them All",
+               "{n} Real {name} for Little Learners"]
+
+
+def catalogue_title(theme, card_count, with_sounds, video_id, taken_titles, taken_queries,
+                    opener=None):
+    """(title, query) for a catalogue theme, or (None, None) if no usable search was found."""
+    from core import suggest
+    taken_titles = {t.strip().lower() for t in taken_titles if t}
+    taken_queries = {q.strip().lower() for q in taken_queries if q}
+    queries = [q for q in suggest.candidates(theme, opener) if q not in taken_queries]
+    # The search that names the most of the theme first ("fruits and vegetables for kids"
+    # for fruits AND vegetables, not "fruits for toddlers"); then the audience the channel is
+    # for, toddlers before babies; then the plainest, fewer words being what more people typed.
+    name_words = {w for w in theme["name"].lower().split() if len(w) > 3}
+    audience = ["toddlers", "toddler", "kids", "preschool", "preschoolers", "kindergarten",
+                "children", "babies", "baby"]
+
+    def rank(q):
+        words = q.split()
+        named = sum(1 for w in name_words if w in words)
+        heard = min([audience.index(w) for w in words if w in audience] or [len(audience)])
+        return (-named, heard, len(words), q)
+    queries.sort(key=rank)
+    tails = TAILS if with_sounds else QUIET_TAILS
+    start = int(video_id) % len(tails)
+    for query in queries:
+        lead = suggest.title_case(query)
+        for tail in tails[start:] + tails[:start]:
+            title = f"{lead} | {tail.format(n=card_count, name=theme['name'])}"
+            if len(title) <= MAX_TITLE and title.lower() not in taken_titles:
+                return title, query
+    return None, None
+
+
+DESCRIPTION_OPENINGS = [
+    "{blurb} {n} {name_lower} for toddlers and preschoolers, shown in real video, named "
+    "slowly, and then played as a guessing game.",
+    "{n} {name_lower}, one at a time: a real clip, the name said clearly, {sound_part}and one "
+    "small thing to remember. {blurb}",
+    "Made for children aged 2 to 6. {blurb} After all {n} have been met, the guessing game "
+    "begins: a piece of the picture, a countdown, and the answer.",
+]
+
+
+def catalogue_description(theme, cards, attributions, variant, query):
+    """The description for a catalogue theme. The opening rotates with the channel's video
+    count and the theme's own line and search lead it, so no two read alike."""
+    n = len(cards)
+    sounded = sum(1 for c in cards if c.get("sound_id"))
+    opening = DESCRIPTION_OPENINGS[variant % len(DESCRIPTION_OPENINGS)].format(
+        blurb=theme.get("blurb", ""), n=n, name_lower=theme["name"].lower(),
+        sound_part="the real sound it makes, " if sounded else "")
+    parts = [opening.strip(), "", f"In this video ({query}):",
+             "\n".join(f"- {c['subject'].title()}" for c in cards), "",
+             "Pause after each name so your child can say it back. Best watched together."]
+    if sounded:
+        parts += ["", f"{sounded} of the {n} have a real recorded sound."]
+    if attributions:
+        parts += ["", "Sounds used under Creative Commons Attribution:"]
+        parts += [f"- {line}" for line in attributions]
+    parts += ["", "This channel is made for children. Comments are turned off, which is what "
+                  "YouTube requires of videos made for kids."]
+    return "\n".join(parts)
+
+
 def description_for(theme, cards, attributions):
     """What is in the video, in order, and where the sounds came from."""
     what, _hook = THEME_WORDS.get(theme.lower(), (theme.title(), ""))
@@ -161,17 +239,34 @@ def run(video_id, cfg, db, output_dir=None):
         raise RuntimeError("there are no cards to describe")
     theme = video.get("theme") or "animals and machines"
     with_sounds = any(c.get("sound_id") for c in cards)
-
-    # Not this video's own earlier title: a rerun must not avoid itself.
-    recent = [v.get("seo_title") for v in db.recent_videos(11) if v["id"] != video_id]
-    title = title_for(theme, len(cards), with_sounds, video_id, recent)
-    if title.strip().lower() in {t.strip().lower() for t in recent if t}:
-        log.warning("this title has been used by a recent video and no other shape was free: "
-                    "%r", title)
     attributions = [c["sound_attribution"] for c in cards
                     if c.get("sound_attribution")]
-    description = description_for(theme, cards, attributions)
-    tags = tags_for(theme, cards)
+
+    from pipeline import plan as _plan
+    entry = _plan.theme_by_id(video.get("theme_id")) if video.get("theme_id") else None
+    query = None
+    if entry is not None:
+        # Every other video of the channel, ever - not just the recent ones: a title or a
+        # search used once is used up. Not this video's own: a rerun must not avoid itself.
+        others = [v for v in db.channel_videos() if v["id"] != video_id]
+        title, query = catalogue_title(entry, len(cards), with_sounds, video_id,
+                                       [v.get("seo_title") for v in others],
+                                       [v.get("title_query") for v in others])
+        if title is None:
+            raise RuntimeError(f"no YouTube search for theme {entry['id']} is left unused; "
+                               f"add seeds to assets/themes.json rather than repeat a title")
+        description = catalogue_description(entry, cards, attributions, len(others), query)
+        tags = tags_for(theme, cards)
+        tags = [query] + [t for t in tags if t != query]
+    else:
+        # Not this video's own earlier title: a rerun must not avoid itself.
+        recent = [v.get("seo_title") for v in db.recent_videos(11) if v["id"] != video_id]
+        title = title_for(theme, len(cards), with_sounds, video_id, recent)
+        if title.strip().lower() in {t.strip().lower() for t in recent if t}:
+            log.warning("this title has been used by a recent video and no other shape was "
+                        "free: %r", title)
+        description = description_for(theme, cards, attributions)
+        tags = tags_for(theme, cards)
 
     if len(title) > MAX_TITLE:
         raise RuntimeError(f"title is {len(title)} characters, YouTube allows {MAX_TITLE}")
@@ -180,7 +275,8 @@ def run(video_id, cfg, db, output_dir=None):
             "utf-8", "ignore") + "..."
 
     db.update_video(video_id, seo_title=title, description=description,
-                    tags=json.dumps(tags, ensure_ascii=False))
+                    tags=json.dumps(tags, ensure_ascii=False),
+                    **({"title_query": query} if query else {}))
     log.info("title (%d chars): %s", len(title), title)
     log.info("%d tags, description %d bytes, %d sound attribution(s)",
              len(tags), len(description.encode("utf-8")), len(attributions))

@@ -68,7 +68,8 @@ CREATE TABLE IF NOT EXISTS used_subjects (
 
 _VIDEO_FIELDS = {"theme", "status", "title", "seo_title", "description", "tags", "duration_s",
                  "video_path", "thumbnail_path", "youtube_id", "published_at", "error",
-                 "attempts", "cover_subjects", "short_youtube_id"}
+                 "attempts", "cover_subjects", "short_youtube_id", "channel", "theme_id",
+                 "title_query"}
 _CARD_FIELDS = {"fact", "clip_id", "clip_url", "clip_licence", "image_path", "video_source",
                 "sound_id", "sound_licence", "sound_url", "sound_attribution", "audio_path", "duration_s",
                 "game_clip_id", "game_clip_url"}
@@ -81,7 +82,26 @@ _MIGRATIONS = [("cards", "sound_url", "TEXT"),
                ("videos", "cover_subjects", "TEXT"),
                ("cards", "game_clip_id", "TEXT"),
                ("cards", "game_clip_url", "TEXT"),
-               ("videos", "short_youtube_id", "TEXT")]
+               ("videos", "short_youtube_id", "TEXT"),
+               ("videos", "channel", "TEXT"),
+               ("videos", "theme_id", "TEXT"),
+               ("videos", "title_query", "TEXT")]
+
+# The channel this process works for: config.youtube_channel_id, set by run.py and the scripts
+# once the config is read. The project moved from Moo Toot to another channel on 14 November
+# 2026 and the database kept every Moo Toot video, so everything that judges "the channel" -
+# the queue, the next slot, what may not be repeated, which video to carry on with - looks only
+# at this channel's videos. None (tests, old callers) means every video.
+CHANNEL = None
+LEGACY_CHANNEL = "moo-toot"       # what the videos made before the move are marked with
+
+
+def _scope(channel, alias=""):
+    """(" AND <alias>channel = ?", [channel]) for the current channel, or ("", [])."""
+    channel = channel if channel is not None else CHANNEL
+    if not channel:
+        return "", []
+    return f" AND {alias}channel = ?", [channel]
 
 MAX_ATTEMPTS = 3
 
@@ -114,12 +134,16 @@ def _migrate(conn):
         existing = {r["name"] for r in conn.execute(f"PRAGMA table_info({table})")}
         if column not in existing:
             conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
+            if (table, column) == ("videos", "channel"):
+                # Everything already in the database was made for Moo Toot.
+                conn.execute("UPDATE videos SET channel = ?", (LEGACY_CHANNEL,))
 
 
-def create_video(theme):
+def create_video(theme, channel=None):
     with _connect() as conn:
-        return conn.execute("INSERT INTO videos (created_at, theme, status) "
-                            "VALUES (?, ?, 'pending')", (_now(), theme)).lastrowid
+        return conn.execute("INSERT INTO videos (created_at, theme, status, channel) "
+                            "VALUES (?, ?, 'pending', ?)",
+                            (_now(), theme, channel if channel is not None else CHANNEL)).lastrowid
 
 
 def get_video(video_id):
@@ -184,13 +208,15 @@ def finished_stages(video_id):
     return {stage for stage, ok in done.items() if ok}
 
 
-def oldest_unfinished(max_attempts=MAX_ATTEMPTS, max_age_days=7):
+def oldest_unfinished(max_attempts=MAX_ATTEMPTS, max_age_days=7, channel=None):
     cutoff = (datetime.now(timezone.utc) - timedelta(days=max_age_days)).isoformat()
+    where, args = _scope(channel)
     with _connect() as conn:
         row = conn.execute(
             "SELECT * FROM videos WHERE status NOT IN ('published', 'ready') "
-            "AND COALESCE(attempts, 0) < ? AND created_at >= ? ORDER BY created_at, id LIMIT 1",
-            (max_attempts, cutoff)).fetchone()
+            "AND COALESCE(attempts, 0) < ? AND created_at >= ?" + where +
+            " ORDER BY created_at, id LIMIT 1",
+            (max_attempts, cutoff, *args)).fetchone()
         return dict(row) if row else None
 
 
@@ -203,7 +229,7 @@ def subjects_used_recently(videos_back=6):
     return {r["subject"] for r in rows}
 
 
-def recent_videos(limit=12):
+def recent_videos(limit=12, channel=None):
     """The last few videos, newest first - what they were about, what they were called, and
     which pictures were on their covers. One query, so the planner, the titles and the cover
     all judge variety from the same list."""
@@ -211,10 +237,11 @@ def recent_videos(limit=12):
     with _connect() as conn:
         # Only videos that were planned. A day with no theme ready still creates a row and fails
         # it; counting that row as "a video" would make a theme look a day older than it is.
+        where, args = _scope(channel)
         rows = conn.execute(
             "SELECT id, theme, seo_title, cover_subjects FROM videos "
-            "WHERE id IN (SELECT DISTINCT video_id FROM cards) "
-            "ORDER BY id DESC LIMIT ?", (limit,)).fetchall()
+            "WHERE id IN (SELECT DISTINCT video_id FROM cards)" + where +
+            " ORDER BY id DESC LIMIT ?", (*args, limit)).fetchall()
     out = []
     for r in rows:
         try:
@@ -257,17 +284,18 @@ def remember_subjects(video_id, subjects):
                          "VALUES (?, ?, ?)", [(s, video_id, _now()) for s in subjects])
 
 
-def last_scheduled_publish():
+def last_scheduled_publish(channel=None):
     """The latest publishAt already handed to YouTube, as an aware datetime, or None.
 
     The queue decides the next slot, not the clock - the same lesson yt-factory learned when
     every scheduled run started hours late and "now plus three days" started skipping days.
     """
     latest = None
+    where, args = _scope(channel)
     with _connect() as conn:
         rows = conn.execute("SELECT published_at FROM videos WHERE published_at IS NOT NULL "
                             "AND published_at != '' AND youtube_id IS NOT NULL "
-                            "AND youtube_id != ''").fetchall()
+                            "AND youtube_id != ''" + where, args).fetchall()
     for row in rows:
         try:
             when = datetime.fromisoformat(str(row[0]).replace("Z", "+00:00"))
@@ -280,13 +308,14 @@ def last_scheduled_publish():
     return latest
 
 
-def scheduled_after(moment):
+def scheduled_after(moment, channel=None):
     rows = []
+    where, args = _scope(channel)
     with _connect() as conn:
         for row in conn.execute("SELECT id, seo_title, title, youtube_id, published_at "
                                 "FROM videos WHERE published_at IS NOT NULL "
                                 "AND published_at != '' AND youtube_id IS NOT NULL "
-                                "AND youtube_id != ''"):
+                                "AND youtube_id != ''" + where, args):
             try:
                 when = datetime.fromisoformat(str(row["published_at"]).replace("Z", "+00:00"))
             except (TypeError, ValueError):
@@ -296,3 +325,38 @@ def scheduled_after(moment):
             if when > moment:
                 rows.append({**dict(row), "when": when})
     return sorted(rows, key=lambda r: r["when"])
+
+
+def channel_videos(channel=None):
+    """Every video of the channel that got as far as a plan, oldest first: id, theme_id,
+    titles, and the set of subjects on its cards. What the no-repeat rules are judged against.
+
+    A video counts once it has cards, not once it is public: one that is planned or queued is
+    already a promise of those subjects, and the next plan must not repeat it.
+    """
+    where, args = _scope(channel, "v.")
+    with _connect() as conn:
+        videos = [dict(r) for r in conn.execute(
+            "SELECT v.id, v.theme, v.theme_id, v.seo_title, v.title_query, v.youtube_id, "
+            "v.published_at, v.status FROM videos v "
+            "WHERE v.id IN (SELECT DISTINCT video_id FROM cards)" + where +
+            " ORDER BY v.id", args)]
+        for v in videos:
+            v["subjects"] = {r["subject"] for r in conn.execute(
+                "SELECT subject FROM cards WHERE video_id = ?", (v["id"],))}
+    return videos
+
+
+def clear_cards(video_id):
+    """Forget a plan that did not stand, so the next attempt starts clean."""
+    with _connect() as conn:
+        conn.execute("DELETE FROM cards WHERE video_id = ?", (video_id,))
+        conn.execute("DELETE FROM used_subjects WHERE video_id = ?", (video_id,))
+
+
+def use_configured_channel():
+    """Set CHANNEL from config.youtube_channel_id, for the scripts that run on their own."""
+    global CHANNEL
+    from core.config import load_config
+    CHANNEL = load_config().get("youtube_channel_id")
+    return CHANNEL
