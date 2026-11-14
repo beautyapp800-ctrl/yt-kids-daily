@@ -323,6 +323,33 @@
     ],
     "refused": []
   },
+  "bison": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A bison has big horns."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A bison eats grass."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A bison runs in a field."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A bison has a big head."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A bison has soft fur.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Bison have a thick, coarse coat of fur"
+      }
+    ]
+  },
   "blueberry": {
     "facts": [
       {
@@ -594,6 +621,27 @@
     ],
     "refused": []
   },
+  "camel": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A camel has a big hump."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A camel walks on sand."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A camel eats dry food."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A camel has long eyelashes."
+      }
+    ],
+    "refused": []
+  },
   "car": {
     "facts": [
       {
@@ -698,6 +746,38 @@
         "checked": "2026-10-23",
         "fact": "A caterpillar makes a cocoon.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A caterpillar makes a chrysalis, not a cocoon. Cocoons are made by moths."
+      }
+    ]
+  },
+  "cement mixer": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A cement mixer spins around."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A cement mixer makes loud noise."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A cement mixer has big wheels."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A cement mixer moves on roads."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A cement mixer carries wet mud.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A cement mixer carries cement, not wet mud. It mixes cement, water, and other aggregates to create concrete."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A cement mixer mixes wet stuff.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A cement mixer mixes dry stuff with water to make it wet, it doesn't mix wet stuff"
       }
     ]
   },
@@ -992,6 +1072,27 @@
     ],
     "refused": []
   },
+  "crane truck": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A crane truck lifts heavy things."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A crane truck has a big arm."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A crane truck drives on big wheels."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A crane truck moves big things around."
+      }
+    ],
+    "refused": []
+  },
   "cricket": {
     "facts": [
       {
@@ -1243,6 +1344,27 @@
       {
         "checked": "2026-10-10",
         "fact": "A duck goes quack."
+      }
+    ],
+    "refused": []
+  },
+  "dump truck": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A dump truck carries big things."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A dump truck has big wheels."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A dump truck lifts up its back."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A dump truck drives on roads."
       }
     ],
     "refused": []
@@ -1545,6 +1667,33 @@
     ],
     "refused": []
   },
+  "forklift": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A forklift lifts heavy things."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A forklift moves things around."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A forklift carries boxes up high."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A forklift has a long strong arm."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A forklift has big strong wheels.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Forklifts typically have small, sturdy wheels or tires, often with a solid or puncture-proof design, rather than big strong wheels"
+      }
+    ]
+  },
   "fox": {
     "facts": [
       {
@@ -1678,6 +1827,27 @@
       {
         "checked": "2026-10-21",
         "fact": "A goose has a loud call."
+      }
+    ],
+    "refused": []
+  },
+  "gorilla": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A gorilla is big."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A gorilla has strong arms."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A gorilla eats food."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A gorilla lives in a group."
       }
     ],
     "refused": []
@@ -2411,6 +2581,39 @@
       }
     ]
   },
+  "manta ray": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A manta ray swims in the sea."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A manta ray has big wings."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A manta ray glides slowly."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A manta ray eats small fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Manta rays primarily eat plankton, krill, and small crustaceans, not small fish."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A manta ray jumps out water.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Manta rays do not typically jump out of the water"
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A manta ray finds food on the bottom.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Manta rays find food in the water column, not on the bottom"
+      }
+    ]
+  },
   "millipede": {
     "facts": [
       {
@@ -2479,6 +2682,49 @@
       }
     ],
     "refused": []
+  },
+  "moose": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A moose runs in the forest."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A moose eats plants."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A moose drinks water."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A moose has big ears.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Moose do not have big ears, they have large ears but they are actually relatively small compared to their body size. Moose have large antlers and a distinctive set of features, but big ears are not a characteristic typically associated with them."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A moose has a big nose.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A moose does not have a notably big nose, it has a distinctive set of features including a large set of antlers and a long snout, but not specifically a big nose"
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A moose has sharp horns.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Moose have antlers, not horns"
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A moose lives with its mom.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Moose do not always live with their mom, they often leave their mother's side after about a year"
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A moose has soft fur.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Moose have coarse, thick fur, not soft fur"
+      }
+    ]
   },
   "mosquito": {
     "facts": [
@@ -2747,6 +2993,27 @@
       }
     ]
   },
+  "orca": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "An orca swims in the water."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "An orca has a big fin."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "An orca eats fish."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "An orca jumps out water."
+      }
+    ],
+    "refused": []
+  },
   "ostrich": {
     "facts": [
       {
@@ -2767,6 +3034,33 @@
       }
     ],
     "refused": []
+  },
+  "otter": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "An otter swims in water."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "An otter has soft fur."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "An otter catches fish."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "An otter has a long tail."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "An otter plays on land.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Otters do play, but they are semi-aquatic and spend most of their time in the water, not on land"
+      }
+    ]
   },
   "owl": {
     "facts": [
@@ -3037,6 +3331,38 @@
       }
     ],
     "refused": []
+  },
+  "polar bear": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A polar bear has white fur."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A polar bear likes cold water."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A polar bear has sharp claws."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A polar bear has a big nose."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A polar bear eats fish.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Polar bears primarily eat seals, not fish"
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A polar bear runs on snow.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Polar bears run on land, ice, and snow, but saying they run 'on snow' is too specific and limiting."
+      }
+    ]
   },
   "police car": {
     "facts": [
@@ -3817,6 +4143,27 @@
     ],
     "refused": []
   },
+  "sloth": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A sloth climbs trees."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A sloth has sharp claws."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A sloth eats leaves."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A sloth hangs upside down."
+      }
+    ],
+    "refused": []
+  },
   "slug": {
     "facts": [
       {
@@ -3900,6 +4247,33 @@
         "checked": "2026-10-20",
         "fact": "A snake has sharp teeth.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Snakes do not have teeth, they have fangs or venom-delivery systems"
+      }
+    ]
+  },
+  "snow plough": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A snow plough clears the road."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A snow plough pushes snow away."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A snow plough has a big blade."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A snow plough makes roads safe."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A snow plough has big wheels.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Snow ploughs typically have tracks or large, heavy-duty tires, but not necessarily 'big wheels' in the conventional sense"
       }
     ]
   },
@@ -4424,6 +4798,38 @@
     ],
     "refused": []
   },
+  "tow truck": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A tow truck pulls a broken car."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A tow truck helps a car that is stuck."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A tow truck drives to help cars."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A tow truck has big wheels."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A tow truck has big strong hooks.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Tow trucks typically have a boom or a winch with a cable, not big strong hooks"
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A tow truck carries a car home.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A tow truck does not typically carry a car home, it tows a car to a repair shop or other location."
+      }
+    ]
+  },
   "tractor": {
     "facts": [
       {
@@ -4544,6 +4950,38 @@
         "checked": "2026-10-21",
         "fact": "A turkey has a big tail.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A turkey has a big fan of feathers, but it is not a tail in the classical sense, it is called a 'tail fan' or 'train'"
+      }
+    ]
+  },
+  "van": {
+    "facts": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A van has big wheels."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A van goes on the road."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A van drives to many places."
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A van carries big things."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-14",
+        "fact": "A van carries people.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: not all vans carry people, some carry goods or cargo"
+      },
+      {
+        "checked": "2026-11-14",
+        "fact": "A van has a big door.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all vans have a big door, some have smaller doors or sliding doors"
       }
     ]
   },

@@ -1424,6 +1424,117 @@
     "rejected": [],
     "search_term": "bicycle"
   },
+  "bison": {
+    "candidates_seen": 8,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/08/41469-429396832_large.mp4",
+        "id": 41469,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "buffalo",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/08/41469-429396832_large.jpg",
+        "url": "https://pixabay.com/videos/id-41469/",
+        "why": "the model called it buffalo",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/10/127478-743515479_large.mp4",
+        "id": 127478,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "buffalo",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/10/127478-743515479_large.jpg",
+        "url": "https://pixabay.com/videos/id-127478/",
+        "why": "the model called it buffalo",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/06/01/3355-169097260_large.mp4",
+        "id": 3355,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "buffalo",
+        "seconds": 63,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/06/01/3355-169097260_large.jpg",
+        "url": "https://pixabay.com/videos/id-3355/",
+        "why": "the model called it buffalo",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/16/200827-913897692_small.mp4",
+        "id": 200827,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.957,
+        "said": "bull",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/16/200827-913897692_small.jpg",
+        "url": "https://pixabay.com/videos/id-200827/",
+        "why": "the model called it bull",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/08/18/176706-856056265_small.mp4",
+        "id": 176706,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "bull",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/08/18/176706-856056265_small.jpg",
+        "url": "https://pixabay.com/videos/id-176706/",
+        "why": "the model called it bull",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/03/112763-696336255_large.mp4",
+        "id": 112763,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "zebra",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/03/112763-696336255_large.jpg",
+        "url": "https://pixabay.com/videos/id-112763/",
+        "why": "the model called it zebra",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/19/32612-393990032_large.mp4",
+        "id": 32612,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "buffalo",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/19/32612-393990032_large.jpg",
+        "url": "https://pixabay.com/videos/id-32612/",
+        "why": "the model called it buffalo",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/18/247510_large.mp4",
+        "id": 247510,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bull",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/18/247510_large.jpg",
+        "url": "https://pixabay.com/videos/id-247510/",
+        "why": "the model called it bull",
+        "width": 1920
+      }
+    ],
+    "search_term": "bison"
+  },
   "blueberry": {
     "candidates_seen": 12,
     "clips": [
@@ -2856,6 +2967,83 @@
     ],
     "search_term": "calf"
   },
+  "camel": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/27/112040-695204669_large.mp4",
+        "id": 112040,
+        "licence": "Pixabay Content Licence",
+        "listed": "Camel, rope, sand, sky, backpack, saddle, harness, blue rope, white clouds, desert, mountains, sun, shadows, sand dunes.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "camel",
+        "seconds": 19,
+        "structures": [],
+        "subject_area": 0.1789,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/27/112040-695204669_large.jpg",
+        "url": "https://pixabay.com/videos/id-112040/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/27/112039-695204665_large.mp4",
+        "id": 112039,
+        "licence": "Pixabay Content Licence",
+        "listed": "A camel, a palm tree, a field, a dirt road, a green field, a desert, a sandy area, a grassy field, a tree, a bush, a fence, a dirt path, a dirt road, a sandy area, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "camel",
+        "seconds": 12,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/27/112039-695204665_large.jpg",
+        "url": "https://pixabay.com/videos/id-112039/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/08/02/83599-586073431_large.mp4",
+        "id": 83599,
+        "licence": "Pixabay Content Licence",
+        "listed": "A woman, a camel, a desert, a dirt field, a sky, a cloud, a hat, a scarf, a hand, a clock, a grassy area, a sandy surface, a person, a horse, a dog, a car, a truck,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "camel",
+        "seconds": 14,
+        "structures": [],
+        "subject_area": 0.216,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/08/02/83599-586073431_large.jpg",
+        "url": "https://pixabay.com/videos/id-83599/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/19/217298_large.mp4",
+        "id": 217298,
+        "licence": "Pixabay Content Licence",
+        "listed": "A camel, a tree, a bush, a grassy area, a dirt path, a rock, a fence, a building, a bench, a person, a dog, a horse, a bird, a car, a truck, a chair, a dining table",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "camel",
+        "seconds": 38,
+        "structures": [
+          "building"
+        ],
+        "subject_area": 0.3593,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/19/217298_large.jpg",
+        "url": "https://pixabay.com/videos/id-217298/",
+        "width": 1920
+      }
+    ],
+    "rejected": [],
+    "search_term": "camel"
+  },
   "car": {
     "candidates_seen": 12,
     "clips": [
@@ -3315,6 +3503,178 @@
         "width": 1920
       }
     ]
+  },
+  "cement mixer": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/16/7382-200092347_large.mp4",
+        "id": 7382,
+        "licence": "Pixabay Content Licence",
+        "listed": "A person, a knob, a dial, a button, a screen, a hand, a finger, a thumb, a mixer, a power button, a channel, a number, a letter, a word, a number pad, a volume control, a power button, a channel",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "mixer",
+        "seconds": 20,
+        "structures": [],
+        "subject_area": 0.093,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/16/7382-200092347_large.jpg",
+        "url": "https://pixabay.com/videos/id-7382/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/05/03/8944-215890456_large.mp4",
+        "id": 8944,
+        "licence": "Pixabay Content Licence",
+        "listed": "A bowl, a spoon, a mixer, a blender, a dough, a batter, a flour, a sugar, a butter, a milk, a cream, a cheese, a chocolate, a vanilla, a cake, a cookie",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "mixer",
+        "seconds": 25,
+        "structures": [],
+        "subject_area": 0.5018,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/05/03/8944-215890456_large.jpg",
+        "url": "https://pixabay.com/videos/id-8944/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/07/20/45103-442509274_small.mp4",
+        "id": 45103,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "blender",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/20/45103-442509274_small.jpg",
+        "url": "https://pixabay.com/videos/id-45103/",
+        "why": "the model called it blender",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/11/03/1258-144566586_medium.mp4",
+        "id": 1258,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crowd",
+        "seconds": 51,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/11/03/1258-144566586_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1258/",
+        "why": "the model called it crowd",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/11/03/1257-144566582_medium.mp4",
+        "id": 1257,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crowd",
+        "seconds": 59,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/11/03/1257-144566582_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1257/",
+        "why": "the model called it crowd",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/04/03/2662-161442863_large.mp4",
+        "id": 2662,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "guitar",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/04/03/2662-161442863_large.jpg",
+        "url": "https://pixabay.com/videos/id-2662/",
+        "why": "the model called it guitar",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/19/217308_large.mp4",
+        "id": 217308,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "table",
+        "seconds": 28,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/19/217308_large.jpg",
+        "url": "https://pixabay.com/videos/id-217308/",
+        "why": "the model called it table",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/07/25/125466-733802474_large.mp4",
+        "id": 125466,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "record player",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/07/25/125466-733802474_large.jpg",
+        "url": "https://pixabay.com/videos/id-125466/",
+        "why": "the model called it record player",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/06/17/24490-342750180_small.mp4",
+        "id": 24490,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "man",
+        "seconds": 26,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/06/17/24490-342750180_small.jpg",
+        "url": "https://pixabay.com/videos/id-24490/",
+        "why": "the model called it man",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/06/15/24458-342750111_small.mp4",
+        "id": 24458,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "man",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/06/15/24458-342750111_small.jpg",
+        "url": "https://pixabay.com/videos/id-24458/",
+        "why": "the model called it man",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/03/03/2361-157591480_large.mp4",
+        "id": 2361,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "machine",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/03/03/2361-157591480_large.jpg",
+        "url": "https://pixabay.com/videos/id-2361/",
+        "why": "the model called it machine",
+        "width": 1280
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/04/13/35867-408654189_large.mp4",
+        "id": 35867,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "guitar",
+        "seconds": 27,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/04/13/35867-408654189_large.jpg",
+        "url": "https://pixabay.com/videos/id-35867/",
+        "why": "the model called it guitar",
+        "width": 1920
+      }
+    ],
+    "search_term": "cement mixer"
   },
   "centipede": {
     "candidates_seen": 0,
@@ -4410,6 +4770,176 @@
     ],
     "rejected": []
   },
+  "crane truck": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/19/52885-471089081_medium.mp4",
+        "id": 52885,
+        "licence": "Pixabay Content Licence",
+        "listed": "Cars, trucks, construction equipment, people, buildings, trees, and a dirt road.",
+        "people": 2,
+        "people_detected": 2,
+        "prominence": 0.397,
+        "said": "truck",
+        "seconds": 24,
+        "structures": [
+          "buildings"
+        ],
+        "subject_area": 0.0172,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/19/52885-471089081_medium.jpg",
+        "url": "https://pixabay.com/videos/id-52885/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/12/41826-431406547_medium.mp4",
+        "id": 41826,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crane",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/12/41826-431406547_medium.jpg",
+        "url": "https://pixabay.com/videos/id-41826/",
+        "why": "the model called it crane",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/12/41828-431406550_medium.mp4",
+        "id": 41828,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crane",
+        "seconds": 42,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/12/41828-431406550_medium.jpg",
+        "url": "https://pixabay.com/videos/id-41828/",
+        "why": "the model called it crane",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/19/52888-471156118_medium.mp4",
+        "id": 52888,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "construction",
+        "seconds": 32,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/19/52888-471156118_medium.jpg",
+        "url": "https://pixabay.com/videos/id-52888/",
+        "why": "the model called it construction",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/19/52890-471156119_medium.mp4",
+        "id": 52890,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "construction site",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/19/52890-471156119_medium.jpg",
+        "url": "https://pixabay.com/videos/id-52890/",
+        "why": "the model called it construction site",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/19/52886-471089084_medium.mp4",
+        "id": 52886,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crane",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/19/52886-471089084_medium.jpg",
+        "url": "https://pixabay.com/videos/id-52886/",
+        "why": "the model called it crane",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/19/52887-471089089_medium.mp4",
+        "id": 52887,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/19/52887-471089089_medium.jpg",
+        "url": "https://pixabay.com/videos/id-52887/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/02/16/32458-392248996_small.mp4",
+        "id": 32458,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crane",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/02/16/32458-392248996_small.jpg",
+        "url": "https://pixabay.com/videos/id-32458/",
+        "why": "the model called it crane",
+        "width": 2048
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/12/41827-431406540_medium.mp4",
+        "id": 41827,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crane",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/12/41827-431406540_medium.jpg",
+        "url": "https://pixabay.com/videos/id-41827/",
+        "why": "the model called it crane",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/12/41825-431406537_medium.mp4",
+        "id": 41825,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.003,
+        "said": "construction",
+        "seconds": 41,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/12/41825-431406537_medium.jpg",
+        "url": "https://pixabay.com/videos/id-41825/",
+        "why": "the model called it construction",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/12/41824-431406532_medium.mp4",
+        "id": 41824,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crane",
+        "seconds": 29,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/12/41824-431406532_medium.jpg",
+        "url": "https://pixabay.com/videos/id-41824/",
+        "why": "the model called it crane",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/07/199646-910995876_small.mp4",
+        "id": 199646,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.036,
+        "said": "car",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/07/199646-910995876_small.jpg",
+        "url": "https://pixabay.com/videos/id-199646/",
+        "why": "the model called it car",
+        "width": 1920
+      }
+    ],
+    "search_term": "crane truck"
+  },
   "cricket": {
     "candidates_seen": 12,
     "clips": [
@@ -5415,6 +5945,146 @@
       }
     ],
     "rejected": []
+  },
+  "dump truck": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_medium.mp4",
+        "id": 47516,
+        "licence": "Pixabay Content Licence",
+        "listed": "A white van, a house, a fence, a gate, a truck, a tree, a car, a bench, a building, a car, a truck, a car, a truck, a car, a truck, a car, a truck, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.142,
+        "said": "truck",
+        "seconds": 11,
+        "structures": [
+          "building",
+          "house"
+        ],
+        "subject_area": 0.04,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47516/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/15/127958-739732528_large.mp4",
+        "id": 127958,
+        "licence": "Pixabay Content Licence",
+        "listed": "A yellow construction vehicle, a white truck, a building under construction, a building with scaffolding, a building with a red roof, a building with a yellow roof, a building with a blue roof, a building with a white roof, a building with a red brick wall, a",
+        "people": 0,
+        "people_detected": 2,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 19,
+        "structures": [
+          "building",
+          "roof",
+          "wall"
+        ],
+        "subject_area": 0.2647,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/15/127958-739732528_large.jpg",
+        "url": "https://pixabay.com/videos/id-127958/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/18/143479-782374009_small.mp4",
+        "id": 143479,
+        "licence": "Pixabay Content Licence",
+        "listed": "A truck, a train, a car, a street, a parking lot, a building, a road, a sidewalk, a traffic light, a street light, a pole, a fence, a tree, a box, a container, a crate, a pallet,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 9,
+        "structures": [
+          "building",
+          "street"
+        ],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/18/143479-782374009_small.jpg",
+        "url": "https://pixabay.com/videos/id-143479/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/12/200276-912384794_small.mp4",
+        "id": 200276,
+        "licence": "Pixabay Content Licence",
+        "listed": "An orange truck, a large orange machine, a small orange machine, a window, a door, a mirror, a windshield, a steering wheel, a side mirror, a truck cab, a truck bed, a truck door, a truck window, a tr",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 10,
+        "structures": [
+          "window"
+        ],
+        "subject_area": 0.2873,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/12/200276-912384794_small.jpg",
+        "url": "https://pixabay.com/videos/id-200276/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/28/53582-475000650_medium.mp4",
+        "id": 53582,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "highway",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/28/53582-475000650_medium.jpg",
+        "url": "https://pixabay.com/videos/id-53582/",
+        "why": "the model called it highway",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/05/27/282082_small.mp4",
+        "id": 282082,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "trees",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/05/27/282082_small.jpg",
+        "url": "https://pixabay.com/videos/id-282082/",
+        "why": "the model called it trees",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47515-451623699_medium.mp4",
+        "id": 47515,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "house",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47515-451623699_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47515/",
+        "why": "the model called it house",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/06/12/41826-431406547_medium.mp4",
+        "id": 41826,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "crane",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/06/12/41826-431406547_medium.jpg",
+        "url": "https://pixabay.com/videos/id-41826/",
+        "why": "the model called it crane",
+        "width": 1920
+      }
+    ],
+    "search_term": "dump truck"
   },
   "dung beetle": {
     "candidates_seen": 12,
@@ -6948,6 +7618,63 @@
     ],
     "search_term": "housefly insect"
   },
+  "forklift": {
+    "candidates_seen": 3,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/07/02/43628-436237622_large.mp4",
+        "id": 43628,
+        "licence": "Pixabay Content Licence",
+        "listed": "A blue truck, a blue tractor, a blue car, a blue truck cab, a blue truck door, a blue truck hood, a blue truck tire, a blue truck wheel, a blue truck bumper, a blue truck grill",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.999,
+        "said": "forklift",
+        "seconds": 10,
+        "structures": [],
+        "subject_area": 0.5068,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/02/43628-436237622_large.jpg",
+        "url": "https://pixabay.com/videos/id-43628/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/04/29/209883_small.mp4",
+        "id": 209883,
+        "licence": "Pixabay Content Licence",
+        "listed": "A man, a forklift, a cart, a shelf, a box, a pallet, a truck, a light, a wall, a ceiling, a floor, a bench, a table, a chair, a bowl, a cup, a bottle,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.969,
+        "said": "forklift",
+        "seconds": 28,
+        "structures": [
+          "wall"
+        ],
+        "subject_area": 0.0239,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/04/29/209883_small.jpg",
+        "url": "https://pixabay.com/videos/id-209883/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/02/01/255909_small.mp4",
+        "id": 255909,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.259,
+        "said": "bag",
+        "seconds": 37,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/02/01/255909_small.jpg",
+        "url": "https://pixabay.com/videos/id-255909/",
+        "why": "the model called it bag",
+        "width": 1920
+      }
+    ],
+    "search_term": "forklift"
+  },
   "fox": {
     "candidates_seen": 12,
     "clips": [
@@ -7557,6 +8284,99 @@
         "width": 1920
       }
     ]
+  },
+  "gorilla": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/08/22/128698-742053479_small.mp4",
+        "id": 128698,
+        "licence": "Pixabay Content Licence",
+        "listed": "A gorilla, a leaf, a tree, a bush, a branch, a plant, a flower, a stem, a leafy plant, a green plant, a leafy bush, a green bush, a leafy tree, a green tree, a leafy stem, a leaf",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "gorilla",
+        "seconds": 14,
+        "structures": [],
+        "subject_area": 0.3801,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/08/22/128698-742053479_small.jpg",
+        "url": "https://pixabay.com/videos/id-128698/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/09/01/87157-601077042_small.mp4",
+        "id": 87157,
+        "licence": "Pixabay Content Licence",
+        "listed": "A gorilla, a piece of food, a dirt ground, a tree, a bush, a grassy area, a rock, a dirt path, a field, a forest, a hill, a tree branch, a leaf, a flower, a grassy hillside, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "gorilla",
+        "seconds": 16,
+        "structures": [],
+        "subject_area": 0.2256,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/09/01/87157-601077042_small.jpg",
+        "url": "https://pixabay.com/videos/id-87157/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/09/12/49785-459795222_small.mp4",
+        "id": 49785,
+        "licence": "Pixabay Content Licence",
+        "listed": "A gorilla, a tree, a forest, a branch, a leaf, a banana, a hand, a mouth, a nose, a chin, a neck, a head, a hair, a tree trunk, a forest floor, a forest background.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "gorilla",
+        "seconds": 20,
+        "structures": [],
+        "subject_area": 0.424,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/09/12/49785-459795222_small.jpg",
+        "url": "https://pixabay.com/videos/id-49785/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/31/112427-694704482_large.mp4",
+        "id": 112427,
+        "licence": "Pixabay Content Licence",
+        "listed": "A gorilla, a carrot, a rock wall, a grassy area, a building, a doorway, a window, a tree, a bush, a fence, a grassy field, a dirt road, a rock, a tree trunk, a tree branch,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "gorilla",
+        "seconds": 35,
+        "structures": [
+          "building",
+          "wall",
+          "window"
+        ],
+        "subject_area": 0.3002,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/31/112427-694704482_large.jpg",
+        "url": "https://pixabay.com/videos/id-112427/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/25/164517-830865498_large.mp4",
+        "id": 164517,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "giraffe",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/25/164517-830865498_large.jpg",
+        "url": "https://pixabay.com/videos/id-164517/",
+        "why": "the model called it giraffe",
+        "width": 1920
+      }
+    ],
+    "search_term": "gorilla"
   },
   "grapes": {
     "candidates_seen": 12,
@@ -11413,6 +12233,169 @@
     ],
     "search_term": "mango fruit"
   },
+  "manta ray": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/01/19/13833-251868078_large.mp4",
+        "id": 13833,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.914,
+        "said": "stingray",
+        "seconds": 8,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/01/19/13833-251868078_large.jpg",
+        "url": "https://pixabay.com/videos/id-13833/",
+        "why": "the model called it stingray",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/01/14/1917-152081339_medium.mp4",
+        "id": 1917,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "island",
+        "seconds": 22,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/01/14/1917-152081339_medium.jpg",
+        "url": "https://pixabay.com/videos/id-1917/",
+        "why": "the model called it island",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/22/237673_small.mp4",
+        "id": 237673,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "sun",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/22/237673_small.jpg",
+        "url": "https://pixabay.com/videos/id-237673/",
+        "why": "the model called it sun",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/11/04/19136-298891273_small.mp4",
+        "id": 19136,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "clouds",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/11/04/19136-298891273_small.jpg",
+        "url": "https://pixabay.com/videos/id-19136/",
+        "why": "the model called it clouds",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/18/111177-689949799_small.mp4",
+        "id": 111177,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tree",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/18/111177-689949799_small.jpg",
+        "url": "https://pixabay.com/videos/id-111177/",
+        "why": "the model called it tree",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/09/24/89489-614024835_large.mp4",
+        "id": 89489,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "lighthouse",
+        "seconds": 44,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/09/24/89489-614024835_large.jpg",
+        "url": "https://pixabay.com/videos/id-89489/",
+        "why": "the model called it lighthouse",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/19/189813-887078786_small.mp4",
+        "id": 189813,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "trees",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/19/189813-887078786_small.jpg",
+        "url": "https://pixabay.com/videos/id-189813/",
+        "why": "the model called it trees",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2019/10/07/27594-365460614_medium.mp4",
+        "id": 27594,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "lens",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2019/10/07/27594-365460614_medium.jpg",
+        "url": "https://pixabay.com/videos/id-27594/",
+        "why": "the model called it lens",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/03/27/112083-692839466_small.mp4",
+        "id": 112083,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "black",
+        "seconds": 20,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/03/27/112083-692839466_small.jpg",
+        "url": "https://pixabay.com/videos/id-112083/",
+        "why": "the model called it black",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/01/15/31282-385265674_large.mp4",
+        "id": 31282,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "palm tree",
+        "seconds": 16,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/01/15/31282-385265674_large.jpg",
+        "url": "https://pixabay.com/videos/id-31282/",
+        "why": "the model called it palm tree",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/05/09/9041-217261015_small.mp4",
+        "id": 9041,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "clouds",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/05/09/9041-217261015_small.jpg",
+        "url": "https://pixabay.com/videos/id-9041/",
+        "why": "the model called it clouds",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/03/22/68741-530514395_small.mp4",
+        "id": 68741,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "sun",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/03/22/68741-530514395_small.jpg",
+        "url": "https://pixabay.com/videos/id-68741/",
+        "why": "the model called it sun",
+        "width": 2048
+      }
+    ],
+    "search_term": "manta ray"
+  },
   "millipede": {
     "candidates_seen": 5,
     "clips": [],
@@ -11592,6 +12575,95 @@
         "width": 1920
       }
     ]
+  },
+  "moose": {
+    "candidates_seen": 9,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/20/222133_large.mp4",
+        "id": 222133,
+        "licence": "Pixabay Content Licence",
+        "listed": "A moose, a grassy field, a body of water, a pond, a forest, a lake, a grassy hill, a bush, a tree, a grassy area, a water source, a plant, a field, a body of water, a pond, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "moose",
+        "seconds": 12,
+        "structures": [],
+        "subject_area": 0.3216,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/20/222133_large.jpg",
+        "url": "https://pixabay.com/videos/id-222133/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/07/21/222215_large.mp4",
+        "id": 222215,
+        "licence": "Pixabay Content Licence",
+        "listed": "A moose, a body of water, grass, a forest, a river, a waterfall, a stream, a pond, a lake, a field, a forest, a stream, a pond, a lake, a field, a forest, a stream, a pond,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "moose",
+        "seconds": 29,
+        "structures": [],
+        "subject_area": 0.2468,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/07/21/222215_large.jpg",
+        "url": "https://pixabay.com/videos/id-222215/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/21/242450_small.mp4",
+        "id": 242450,
+        "licence": "Pixabay Content Licence",
+        "listed": "A moose, a tree, a grassy field, a rock, a fence post, a grassy area, a tree trunk, a tree branch, a tree stump, a tree bark, a tree root, a tree leaf, a tree twig, a tree stem",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "moose",
+        "seconds": 9,
+        "structures": [],
+        "subject_area": 0.3611,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/21/242450_small.jpg",
+        "url": "https://pixabay.com/videos/id-242450/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/14/189139-884652058_small.mp4",
+        "id": 189139,
+        "licence": "Pixabay Content Licence",
+        "listed": "A moose, a stick, a grassy field, a tree, a sky, a head, a neck, a back, a tail, a leg, a hoof, a nose, a mouth, a tongue, a fur, a horn, a grass, a sky, a head,",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "moose",
+        "seconds": 17,
+        "structures": [],
+        "subject_area": 0.2121,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/14/189139-884652058_small.jpg",
+        "url": "https://pixabay.com/videos/id-189139/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/07/06/3723-173719869_large.mp4",
+        "id": 3723,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "stuffed animal",
+        "seconds": 45,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/07/06/3723-173719869_large.jpg",
+        "url": "https://pixabay.com/videos/id-3723/",
+        "why": "the model called it stuffed animal",
+        "width": 1920
+      }
+    ],
+    "search_term": "moose"
   },
   "mosquito": {
     "candidates_seen": 10,
@@ -12526,6 +13598,26 @@
       }
     ]
   },
+  "orca": {
+    "candidates_seen": 1,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/03/29/268569_large.mp4",
+        "id": 268569,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "door",
+        "seconds": 67,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/03/29/268569_large.jpg",
+        "url": "https://pixabay.com/videos/id-268569/",
+        "why": "the model called it door",
+        "width": 1920
+      }
+    ],
+    "search_term": "orca"
+  },
   "ostrich": {
     "candidates_seen": 12,
     "clips": [
@@ -12603,6 +13695,91 @@
       }
     ],
     "rejected": []
+  },
+  "otter": {
+    "candidates_seen": 6,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/01/10/251835_small.mp4",
+        "id": 251835,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "seal",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/01/10/251835_small.jpg",
+        "url": "https://pixabay.com/videos/id-251835/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2021/02/18/65595-515085078_large.mp4",
+        "id": 65595,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "alligator",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2021/02/18/65595-515085078_large.jpg",
+        "url": "https://pixabay.com/videos/id-65595/",
+        "why": "the model called it alligator",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/09/26/306490_small.mp4",
+        "id": 306490,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.989,
+        "said": "owl",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/09/26/306490_small.jpg",
+        "url": "https://pixabay.com/videos/id-306490/",
+        "why": "the model called it owl",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/06/01/3342-169076026_large.mp4",
+        "id": 3342,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.015,
+        "said": "seal",
+        "seconds": 44,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/06/01/3342-169076026_large.jpg",
+        "url": "https://pixabay.com/videos/id-3342/",
+        "why": "the model called it seal",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/09/01/301139_small.mp4",
+        "id": 301139,
+        "licence": "Pixabay Content Licence",
+        "prominence": 1.0,
+        "said": "owl",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/09/01/301139_small.jpg",
+        "url": "https://pixabay.com/videos/id-301139/",
+        "why": "the model called it owl",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/07/23/45402-443057229_small.mp4",
+        "id": 45402,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tree",
+        "seconds": 51,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/07/23/45402-443057229_small.jpg",
+        "url": "https://pixabay.com/videos/id-45402/",
+        "why": "the model called it tree",
+        "width": 2048
+      }
+    ],
+    "search_term": "otter"
   },
   "owl": {
     "candidates_seen": 12,
@@ -14102,6 +15279,84 @@
         "width": 1920
       }
     ]
+  },
+  "polar bear": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2016/12/03/6643-194317668_large.mp4",
+        "id": 6643,
+        "licence": "Pixabay Content Licence",
+        "listed": "A polar bear, a rock, a mouth, a nose, a white bear, a white bear's head, a white bear's ear, a white bear's eye, a white bear's paw, a white bear's leg, a white bear's belly",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "polar bear",
+        "seconds": 22,
+        "structures": [],
+        "subject_area": 0.1998,
+        "thumbnail": "https://cdn.pixabay.com/video/2016/12/03/6643-194317668_large.jpg",
+        "url": "https://pixabay.com/videos/id-6643/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/08/09/17715-284467858_small.mp4",
+        "id": 17715,
+        "licence": "Pixabay Content Licence",
+        "listed": "Polar bear, rock, water, snow, ice, bear, paw, mouth, nose, ear, head, fur, white, black, brown, white, black, brown, white, black, brown, white, black, brown, white, black, brown, white, black",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "polar bear",
+        "seconds": 28,
+        "structures": [],
+        "subject_area": 0.2221,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/08/09/17715-284467858_small.jpg",
+        "url": "https://pixabay.com/videos/id-17715/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/02/12/107526-678970937_large.mp4",
+        "id": 107526,
+        "licence": "Pixabay Content Licence",
+        "listed": "A polar bear, a baby polar bear, snow, a wall, a building, a snowy hill, a snowy ground, a snowy surface, a white bear, a white baby bear, a white polar bear, a white bear cub, a white cub, a white baby bear cub",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "polar bear",
+        "seconds": 34,
+        "structures": [
+          "building",
+          "wall"
+        ],
+        "subject_area": 0.1086,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/02/12/107526-678970937_large.jpg",
+        "url": "https://pixabay.com/videos/id-107526/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/07/141957-778907177_small.mp4",
+        "id": 141957,
+        "licence": "Pixabay Content Licence",
+        "listed": "A polar bear, water, splashes, waves, and a rock.",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.996,
+        "said": "polar bear",
+        "seconds": 13,
+        "structures": [],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/07/141957-778907177_small.jpg",
+        "url": "https://pixabay.com/videos/id-141957/",
+        "width": 1920
+      }
+    ],
+    "rejected": [],
+    "search_term": "polar bear"
   },
   "police car": {
     "candidates_seen": 12,
@@ -17546,6 +18801,44 @@
     ],
     "search_term": "shrimp"
   },
+  "sloth": {
+    "candidates_seen": 2,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/09/245673_large.mp4",
+        "id": 245673,
+        "licence": "Pixabay Content Licence",
+        "listed": "A sloth, a tree, leaves, branches, a sky, a sun, a green background, a blue background, a red background, a yellow background, a brown background, a white background, a green leaf, a red leaf, a yellow leaf, a blue leaf, a brown leaf",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 1.0,
+        "said": "sloth",
+        "seconds": 17,
+        "structures": [],
+        "subject_area": 0.1229,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/09/245673_large.jpg",
+        "url": "https://pixabay.com/videos/id-245673/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/05/18/39424-422737429_large.mp4",
+        "id": 39424,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "plant",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/05/18/39424-422737429_large.jpg",
+        "url": "https://pixabay.com/videos/id-39424/",
+        "why": "the model called it plant",
+        "width": 1920
+      }
+    ],
+    "search_term": "sloth"
+  },
   "slug": {
     "candidates_seen": 12,
     "clips": [],
@@ -17858,6 +19151,169 @@
       }
     ],
     "rejected": []
+  },
+  "snow plough": {
+    "candidates_seen": 12,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/09/19/131818-751352945_large.mp4",
+        "id": 131818,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 32,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/09/19/131818-751352945_large.jpg",
+        "url": "https://pixabay.com/videos/id-131818/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/14/246616_small.mp4",
+        "id": 246616,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tractor",
+        "seconds": 13,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/14/246616_small.jpg",
+        "url": "https://pixabay.com/videos/id-246616/",
+        "why": "the model called it tractor",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/11/25/243237_small.mp4",
+        "id": 243237,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "corn",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/11/25/243237_small.jpg",
+        "url": "https://pixabay.com/videos/id-243237/",
+        "why": "the model called it corn",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/11/142579-780232342_large.mp4",
+        "id": 142579,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tree",
+        "seconds": 45,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/11/142579-780232342_large.jpg",
+        "url": "https://pixabay.com/videos/id-142579/",
+        "why": "the model called it tree",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/12/188778-883818276_small.mp4",
+        "id": 188778,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "snow",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/12/188778-883818276_small.jpg",
+        "url": "https://pixabay.com/videos/id-188778/",
+        "why": "the model called it snow",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/03/04/202877-919288692_small.mp4",
+        "id": 202877,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/03/04/202877-919288692_small.jpg",
+        "url": "https://pixabay.com/videos/id-202877/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/05/06/277097_large.mp4",
+        "id": 277097,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/05/06/277097_large.jpg",
+        "url": "https://pixabay.com/videos/id-277097/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/11/28/191159-889246512_small.mp4",
+        "id": 191159,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "bird",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/11/28/191159-889246512_small.jpg",
+        "url": "https://pixabay.com/videos/id-191159/",
+        "why": "the model called it bird",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/02/09/333600_small.mp4",
+        "id": 333600,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tree",
+        "seconds": 24,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/02/09/333600_small.jpg",
+        "url": "https://pixabay.com/videos/id-333600/",
+        "why": "the model called it tree",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/12/246391_small.mp4",
+        "id": 246391,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "sun",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/12/246391_small.jpg",
+        "url": "https://pixabay.com/videos/id-246391/",
+        "why": "the model called it sun",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/10/06/234930_small.mp4",
+        "id": 234930,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/10/06/234930_small.jpg",
+        "url": "https://pixabay.com/videos/id-234930/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/02/10/333819_small.mp4",
+        "id": 333819,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "horse",
+        "seconds": 21,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/02/10/333819_small.jpg",
+        "url": "https://pixabay.com/videos/id-333819/",
+        "why": "the model called it horse",
+        "width": 1920
+      }
+    ],
+    "search_term": "snow plough"
   },
   "sparrow": {
     "candidates_seen": 12,
@@ -20275,6 +21731,133 @@
     ],
     "search_term": "toucan"
   },
+  "tow truck": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/04/27/37377-413555936_large.mp4",
+        "id": 37377,
+        "licence": "Pixabay Content Licence",
+        "listed": "A large tanker truck, a white truck, a semi-truck, a road, a highway, a bridge, a metal structure, a metal roof, a metal wall, a metal fence, a metal barrier, a metal railing, a metal grate, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.992,
+        "said": "truck",
+        "seconds": 22,
+        "structures": [
+          "bridge",
+          "roof",
+          "wall"
+        ],
+        "subject_area": 0.3261,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/04/27/37377-413555936_large.jpg",
+        "url": "https://pixabay.com/videos/id-37377/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_medium.mp4",
+        "id": 47516,
+        "licence": "Pixabay Content Licence",
+        "listed": "A white van, a fence, a gate, a truck, a house, a tree, a car, a bench, a potted plant, a dog, a person, a chair, a dining table, a bed, a sink, a toilet, a re",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.142,
+        "said": "truck",
+        "seconds": 11,
+        "structures": [
+          "house"
+        ],
+        "subject_area": 0.04,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47516-451623701_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47516/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/12/18/143479-782374009_small.mp4",
+        "id": 143479,
+        "licence": "Pixabay Content Licence",
+        "listed": "A truck, a train, a car, a road, a parking lot, a building, a street, a sidewalk, a parking space, a traffic light, a street light, a pole, a fence, a truck, a train, a car, a road",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 9,
+        "structures": [
+          "building",
+          "street"
+        ],
+        "subject_area": null,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/12/18/143479-782374009_small.jpg",
+        "url": "https://pixabay.com/videos/id-143479/",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/02/12/200276-912384794_small.mp4",
+        "id": 200276,
+        "licence": "Pixabay Content Licence",
+        "listed": "An orange truck, a large orange machine, a small orange machine, a window, a door, a building, a car, a bus, a train, a person, a bench, a chair, a potted plant, a clock, a sink, a toilet, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "truck",
+        "seconds": 10,
+        "structures": [
+          "building",
+          "window"
+        ],
+        "subject_area": 0.2873,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/02/12/200276-912384794_small.jpg",
+        "url": "https://pixabay.com/videos/id-200276/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/10/28/53582-475000650_medium.mp4",
+        "id": 53582,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "highway",
+        "seconds": 40,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/10/28/53582-475000650_medium.jpg",
+        "url": "https://pixabay.com/videos/id-53582/",
+        "why": "the model called it highway",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2025/05/27/282082_small.mp4",
+        "id": 282082,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "tree",
+        "seconds": 19,
+        "thumbnail": "https://cdn.pixabay.com/video/2025/05/27/282082_small.jpg",
+        "url": "https://pixabay.com/videos/id-282082/",
+        "why": "the model called it tree",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2020/08/18/47515-451623699_medium.mp4",
+        "id": 47515,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "house",
+        "seconds": 23,
+        "thumbnail": "https://cdn.pixabay.com/video/2020/08/18/47515-451623699_medium.jpg",
+        "url": "https://pixabay.com/videos/id-47515/",
+        "why": "the model called it house",
+        "width": 1920
+      }
+    ],
+    "search_term": "tow truck"
+  },
   "tractor": {
     "candidates_seen": 12,
     "clips": [
@@ -20874,6 +22457,176 @@
       }
     ],
     "search_term": "wild turkey bird"
+  },
+  "van": {
+    "candidates_seen": 12,
+    "clips": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2017/01/12/7272-199224775_large.mp4",
+        "id": 7272,
+        "licence": "Pixabay Content Licence",
+        "listed": "A car, a body of water, a fence, a tree, a cloud, a boat, a truck, a bus, a bench, a person, a building, a grassy area, a forest, a tree, a cloud, a bus, a bench, a",
+        "people": 0,
+        "people_detected": 0,
+        "prominence": 0.0,
+        "said": "van",
+        "seconds": 10,
+        "structures": [
+          "building"
+        ],
+        "subject_area": 0.016,
+        "thumbnail": "https://cdn.pixabay.com/video/2017/01/12/7272-199224775_large.jpg",
+        "url": "https://pixabay.com/videos/id-7272/",
+        "width": 1920
+      }
+    ],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/07/31/367684_small.mp4",
+        "id": 367684,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 12,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/07/31/367684_small.jpg",
+        "url": "https://pixabay.com/videos/id-367684/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/06/30/218798_small.mp4",
+        "id": 218798,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "road",
+        "seconds": 17,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/06/30/218798_small.jpg",
+        "url": "https://pixabay.com/videos/id-218798/",
+        "why": "the model called it road",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/10/171009-844444293_small.mp4",
+        "id": 171009,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "highway",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/10/171009-844444293_small.jpg",
+        "url": "https://pixabay.com/videos/id-171009/",
+        "why": "the model called it highway",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/11/09/138333-769222052_medium.mp4",
+        "id": 138333,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "beach",
+        "seconds": 25,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/11/09/138333-769222052_medium.jpg",
+        "url": "https://pixabay.com/videos/id-138333/",
+        "why": "the model called it beach",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/05/31/118791-715736231_small.mp4",
+        "id": 118791,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "road",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/05/31/118791-715736231_small.jpg",
+        "url": "https://pixabay.com/videos/id-118791/",
+        "why": "the model called it road",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/07/21/172591-847860519_small.mp4",
+        "id": 172591,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 9,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/07/21/172591-847860519_small.jpg",
+        "url": "https://pixabay.com/videos/id-172591/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/07/28/366953_small.mp4",
+        "id": 366953,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/07/28/366953_small.jpg",
+        "url": "https://pixabay.com/videos/id-366953/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/08/14/370446_small.mp4",
+        "id": 370446,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 18,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/08/14/370446_small.jpg",
+        "url": "https://pixabay.com/videos/id-370446/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/07/15/364191_small.mp4",
+        "id": 364191,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "trees",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/07/15/364191_small.jpg",
+        "url": "https://pixabay.com/videos/id-364191/",
+        "why": "the model called it trees",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/08/14/370442_small.mp4",
+        "id": 370442,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/08/14/370442_small.jpg",
+        "url": "https://pixabay.com/videos/id-370442/",
+        "why": "the model called it mountain",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2026/09/07/374808_small.mp4",
+        "id": 374808,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mountain",
+        "seconds": 10,
+        "thumbnail": "https://cdn.pixabay.com/video/2026/09/07/374808_small.jpg",
+        "url": "https://pixabay.com/videos/id-374808/",
+        "why": "the model called it mountain",
+        "width": 1920
+      }
+    ],
+    "search_term": "delivery van"
   },
   "vulture": {
     "candidates_seen": 12,

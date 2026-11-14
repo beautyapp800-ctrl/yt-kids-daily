@@ -279,6 +279,47 @@
     "silent": true,
     "sounds": []
   },
+  "bison": {
+    "candidates_seen": 4,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "Nivatius",
+        "id": "1029c627-6f71-44bd-9e9e-95d03d49e71d",
+        "is": "a bison bellowing at Yellowstone National Park",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Nivatius/sounds/519594",
+        "seconds": 30.4,
+        "source": "freesound",
+        "title": "Bison bellowing - Yellowstone National Park",
+        "url": "https://cdn.freesound.org/previews/519/519594_7143328-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "felix.blume",
+        "id": "256ce16b-230e-4b32-8d8a-856619a5729d",
+        "is": "a herd of bisons making sounds such as chewing, grazing, breathing, grunting and walking, with birds in the background",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/felix.blume/sounds/640977",
+        "seconds": 174.7,
+        "source": "freesound",
+        "title": "A herd of bisons recorded from the center at night, bisons chewing, grazing, breathing, grunting and walking, birds in Oklahoma",
+        "url": "https://cdn.freesound.org/previews/640/640977_1661766-hq.mp3"
+      }
+    ]
+  },
   "blueberry": {
     "candidates_seen": 0,
     "refused": [],
@@ -640,6 +681,47 @@
       }
     ]
   },
+  "camel": {
+    "candidates_seen": 3,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "craigsmith",
+        "id": "7e4ab390-420d-4636-8890-ebc4df6adb00",
+        "is": "camels grunting and calling with birds in the background",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/craigsmith/sounds/675449",
+        "seconds": 27.6,
+        "source": "freesound",
+        "title": "S30-27 Camels grunt and call; birds in bg.wav",
+        "url": "https://cdn.freesound.org/previews/675/675449_2524442-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "craigsmith",
+        "id": "236cbd6a-667f-4378-860b-a6859fec7687",
+        "is": "a camel grunt",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/craigsmith/sounds/437937",
+        "seconds": 23.4,
+        "source": "freesound",
+        "title": "G12-05-Camel Grunt.wav",
+        "url": "https://cdn.freesound.org/previews/437/437937_2524442-hq.mp3"
+      }
+    ]
+  },
   "car": {
     "candidates_seen": 0,
     "refused": [],
@@ -692,6 +774,47 @@
     "refused": [],
     "silent": true,
     "sounds": []
+  },
+  "cement mixer": {
+    "candidates_seen": 6,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "Breviceps",
+        "id": "cf3a4d6b-c0a0-42a2-aa37-454efd7fbcda",
+        "is": "a concrete mixer",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Breviceps/sounds/464647",
+        "seconds": 23.9,
+        "source": "freesound",
+        "title": "Concrete Mixer",
+        "url": "https://cdn.freesound.org/previews/464/464647_9159316-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "SampleDiaries",
+        "id": "fb81c0bc-a038-45a6-ad11-176c914afedf",
+        "is": "a cement mixer",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/SampleDiaries/sounds/449122",
+        "seconds": 51.5,
+        "source": "freesound",
+        "title": "Cement Mixer, Tip and Clean.wav",
+        "url": "https://cdn.freesound.org/previews/449/449122_7153932-hq.mp3"
+      }
+    ]
   },
   "centipede": {
     "candidates_seen": 0,
@@ -1014,6 +1137,30 @@
     "silent": true,
     "sounds": []
   },
+  "crane truck": {
+    "candidates_seen": 1,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "kyles",
+        "id": "1d27fb02-bbcd-4e4e-8ecd-228acf5079ba",
+        "is": "a large diesel vehicle, likely a dump truck or crane truck, revving its engine and possibly lifting a heavy object",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/637499",
+        "seconds": 26.6,
+        "source": "freesound",
+        "title": "dump truck or big machine crane hoist large object industrial diesel rev.flac",
+        "url": "https://cdn.freesound.org/previews/637/637499_612689-hq.mp3"
+      }
+    ]
+  },
   "cricket": {
     "candidates_seen": 0,
     "refused": [],
@@ -1281,6 +1428,52 @@
         "source": "freesound",
         "title": "Duck Quack - Sound Effect (HD).mp3",
         "url": "https://cdn.freesound.org/previews/515/515408_10319640-hq.mp3"
+      }
+    ]
+  },
+  "dump truck": {
+    "candidates_seen": 17,
+    "refused": [
+      {
+        "title": "recycling_truck.m4a",
+        "why": "a recycling truck"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "jberkuta14",
+        "id": "e2369e30-e8c2-4d8f-94c8-6b67154356b2",
+        "is": "a dump truck",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/jberkuta14/sounds/134897",
+        "seconds": 18.5,
+        "source": "freesound",
+        "title": "Dump Truck",
+        "url": "https://cdn.freesound.org/previews/134/134897_2392879-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "kyles",
+        "id": "95d27979-8e3f-48d1-8a82-a080d8cbc3fb",
+        "is": "a dump truck engine",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/406194",
+        "seconds": 28.6,
+        "source": "freesound",
+        "title": "dump truck engine work loud close pull away.wav",
+        "url": "https://cdn.freesound.org/previews/406/406194_612689-hq.mp3"
       }
     ]
   },
@@ -1698,6 +1891,56 @@
     "silent": true,
     "sounds": []
   },
+  "forklift": {
+    "candidates_seen": 19,
+    "refused": [
+      {
+        "title": "forklift stacking blocks.flac",
+        "why": "blocks being stacked, possibly with sound effects or a simulation of a forklift"
+      },
+      {
+        "title": "school bus truck destroy crush smash window break metal bend wreck crunch with forklift yes a forklift because why not.flac",
+        "why": "a school bus being destroyed"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "peridactyloptrix",
+        "id": "6bb02f1f-fd9e-4328-b4b0-86448ee9d6c6",
+        "is": "a forklift's reverse beeping sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/peridactyloptrix/sounds/221927",
+        "seconds": 21.1,
+        "source": "freesound",
+        "title": "Forklift reverse beeping",
+        "url": "https://cdn.freesound.org/previews/221/221927_2737063-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "kyles",
+        "id": "0a5b819e-dff8-4942-965a-a9c9518ec48d",
+        "is": "a forklift making hydraulic movements",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/451867",
+        "seconds": 254.9,
+        "source": "freesound",
+        "title": "forklift warehouse aisle maneuver several takes hydraulic movement closeup.flac",
+        "url": "https://cdn.freesound.org/previews/451/451867_612689-hq.mp3"
+      }
+    ]
+  },
   "fox": {
     "candidates_seen": 14,
     "refused": [],
@@ -1871,6 +2114,43 @@
         "source": "wikimedia_audio",
         "title": "Red-breasted Goose call (Branta ruficollis)",
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Red-breasted_Goose_call_%28Branta_ruficollis%29.ogg"
+      }
+    ]
+  },
+  "gorilla": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "Alien Gorilla Roar",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "En-us-gorilla in the room",
+        "why": "a person speaking the phrase 'gorilla in the room'"
+      },
+      {
+        "title": "Enraged Gorillas",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "Ihopethisworks",
+        "id": "a11d726a-0ff3-49bf-b91c-bc1052ddec1b",
+        "is": "a gorilla",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Ihopethisworks/sounds/178188",
+        "seconds": 11.4,
+        "source": "freesound",
+        "title": "G-Gorilla_1-2.aif",
+        "url": "https://cdn.freesound.org/previews/178/178188_3085891-hq.mp3"
       }
     ]
   },
@@ -2509,6 +2789,17 @@
     "silent": true,
     "sounds": []
   },
+  "manta ray": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "Dance of the Manta Ray by Steven Booth",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "millipede": {
     "candidates_seen": 0,
     "refused": [],
@@ -2583,6 +2874,29 @@
       {
         "title": "honda-monkey-sound-8",
         "why": "a Honda Monkey motorcycle sound"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "moose": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "moose ceratops",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "m '...butchered his moose...'",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "chill moose beat 808 drums - 120 BPM",
+        "why": "electronic drum beat"
+      },
+      {
+        "title": "A Moose (Once Bit My Sister)",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
       }
     ],
     "silent": true,
@@ -2828,11 +3142,75 @@
     "silent": true,
     "sounds": []
   },
+  "orca": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Hummingbirds on Orcas Island, Washington",
+        "why": "hummingbirds on Orcas Island, Washington"
+      },
+      {
+        "title": "Little Glass Men - 03 - Orca",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "ostrich": {
     "candidates_seen": 0,
     "refused": [],
     "silent": true,
     "sounds": []
+  },
+  "otter": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "Otter Drummer.flac",
+        "why": "a drummer or drumming sound, possibly with 'Otter' being a brand or username"
+      },
+      {
+        "title": "Nixuss Game - wait at the baja lake with the otter.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "otters.wav",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "Otters Squeaking.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Auckland Zoo otter Jin has been found alive",
+        "why": "licence at the source is by: Commons says: cc by 2.5"
+      },
+      {
+        "title": "Rosa (sea otter)",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      }
+    ],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "marmar182",
+        "id": "a72d97b2-c996-43c7-9687-011e008451dd",
+        "is": "an otter making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/marmar182/sounds/572680",
+        "seconds": 5.6,
+        "source": "freesound",
+        "title": "otters.mp3",
+        "url": "https://cdn.freesound.org/previews/572/572680_12936666-hq.mp3"
+      }
+    ]
   },
   "owl": {
     "candidates_seen": 32,
@@ -3174,6 +3552,30 @@
         "source": "wikimedia_audio",
         "title": "618483 foleyhaven piglet-squeal-01",
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/618483_foleyhaven_piglet-squeal-01.flac"
+      }
+    ]
+  },
+  "polar bear": {
+    "candidates_seen": 1,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "Clagnar",
+        "id": "9a9f114a-a186-4ca2-8e3f-7ad047db52a0",
+        "is": "a polar bear making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/Clagnar/sounds/588556",
+        "seconds": 12.0,
+        "source": "freesound",
+        "title": "Polar Bear",
+        "url": "https://cdn.freesound.org/previews/588/588556_236062-hq.mp3"
       }
     ]
   },
@@ -3911,6 +4313,21 @@
     "silent": true,
     "sounds": []
   },
+  "sloth": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Electronic Minute No 260 - Sloth Chaos.wav",
+        "why": "electronic music or sound effects"
+      },
+      {
+        "title": "sloth cycles.wav",
+        "why": "a bicycle or exercise machine"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "slug": {
     "candidates_seen": 1,
     "refused": [
@@ -3931,6 +4348,21 @@
   "snake": {
     "candidates_seen": 0,
     "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "snow plough": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "Lumiaura, kuorma-auto, ohi / A truck with snowplough passing by, plough rattling",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Lumiaura, kuorma-auto, ajoa / A truck with snowplough, driving inside, plough rattling",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
     "silent": true,
     "sounds": []
   },
@@ -4508,6 +4940,47 @@
       }
     ]
   },
+  "tow truck": {
+    "candidates_seen": 3,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "kyles",
+        "id": "fef20af5-a39e-4218-b9c0-d795efd8a9eb",
+        "is": "a tow truck's horn",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/637603",
+        "seconds": 9.9,
+        "source": "freesound",
+        "title": "horn tow truck before snow clearing truck nearby echo.flac",
+        "url": "https://cdn.freesound.org/previews/637/637603_612689-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-14",
+        "creator": "kyles",
+        "id": "af9b8dce-b683-4683-86d4-8185297e1562",
+        "is": "a horn of a tow truck",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/kyles/sounds/637602",
+        "seconds": 9.3,
+        "source": "freesound",
+        "title": "horn tow truck before snow clearing close clean.flac",
+        "url": "https://cdn.freesound.org/previews/637/637602_612689-hq.mp3"
+      }
+    ]
+  },
   "tractor": {
     "candidates_seen": 30,
     "refused": [],
@@ -4673,6 +5146,29 @@
         "url": "https://cdn.freesound.org/previews/678/678192_2243933-hq.mp3"
       }
     ]
+  },
+  "van": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "Mini Van Drive-by.wav",
+        "why": "a Mini (brand) vehicle driving by"
+      },
+      {
+        "title": "Beatrix Wilhelmina Armgard, prinses van Oranje-Nassau",
+        "why": "a person, possibly royalty, being named or introduced"
+      },
+      {
+        "title": "Shutting van sliding door.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Van sliding door close",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "vulture": {
     "candidates_seen": 0,
