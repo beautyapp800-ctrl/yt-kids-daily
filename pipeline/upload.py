@@ -157,6 +157,11 @@ def publish_at(cfg, now=None, last_scheduled=None):
             floor = at_publish_time(local + timedelta(days=MIN_LEAD_DAYS))
             when = max(after_queue, floor)
 
+    # A backfill with nothing scheduled on this channel yet - the very first video after the
+    # move to the new channel - takes the first slot from tomorrow, not the one three days out.
+    if last_scheduled is None and cfg.get("backfill"):
+        when = at_publish_time(local + timedelta(days=MIN_LEAD_DAYS))
+
     while when <= local + timedelta(minutes=MIN_LEAD_MINUTES):
         when = at_publish_time(when + timedelta(days=1))
     return when.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")

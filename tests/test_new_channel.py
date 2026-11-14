@@ -2,7 +2,7 @@
 
 What the owner asked for, each held by a check:
   - nothing is uploaded unless the token answers for config.youtube_channel_id;
-  - Tuesday, Thursday and Saturday at 16:00 Kyiv, and "Europe/Kiev" no longer breaks it;
+  - Sunday, Tuesday and Thursday at 16:00 Kyiv, and "Europe/Kiev" no longer breaks it;
   - a theme is used once ever; no video shares more than 30% of its subjects with another,
     checked at the plan and again before upload; the Moo Toot videos are not the new
     channel's history;
@@ -66,26 +66,36 @@ def add_video(subjects, theme_id=None, channel=NEW, youtube_id=None, published_a
 
 # --- the schedule --------------------------------------------------------------------------
 
-def test_tuesday_thursday_saturday_at_four_in_kyiv():
-    print("test_tuesday_thursday_saturday_at_four_in_kyiv")
+def test_sunday_tuesday_thursday_at_four_in_kyiv():
+    print("test_sunday_tuesday_thursday_at_four_in_kyiv")
     cfg = {"timezone": "Europe/Kyiv", "publish_time": "16:00", "publish_days_ahead": 3,
-           "publish_weekdays": ["Tue", "Thu", "Sat"]}
+           "publish_weekdays": ["Sun", "Tue", "Thu"]}
     saturday = datetime(2026, 11, 14, 10, 0, tzinfo=timezone.utc)
     first = upload.publish_at(cfg, saturday)
     check(first == "2026-11-17T14:00:00Z",
           f"three days from Saturday 14 Nov is Tuesday 17 Nov, 16:00 Kyiv = 14:00Z ({first})")
     after_tue = upload.publish_at(cfg, saturday, last_scheduled="2026-11-17T14:00:00Z")
     check(after_tue == "2026-11-19T14:00:00Z", f"after Tuesday comes Thursday ({after_tue})")
-    after_sat = upload.publish_at(cfg, saturday, last_scheduled="2026-11-21T14:00:00Z")
-    check(after_sat == "2026-11-24T14:00:00Z", f"after Saturday comes Tuesday ({after_sat})")
+    after_thu = upload.publish_at(cfg, saturday, last_scheduled="2026-11-19T14:00:00Z")
+    check(after_thu == "2026-11-22T14:00:00Z", f"after Thursday comes Sunday ({after_thu})")
+    after_sun = upload.publish_at(cfg, saturday, last_scheduled="2026-11-22T14:00:00Z")
+    check(after_sun == "2026-11-24T14:00:00Z", f"after Sunday comes Tuesday ({after_sun})")
+    evening = datetime(2026, 11, 14, 18, 5, tzinfo=timezone.utc)      # Saturday 20:05 Kyiv
+    backfill = upload.publish_at({**cfg, "backfill": True}, evening)
+    check(backfill == "2026-11-15T14:00:00Z",
+          f"a backfill with an empty queue takes Sunday 15 Nov 16:00 Kyiv ({backfill})")
+    late = upload.publish_at({**cfg, "backfill": True},
+                             datetime(2026, 11, 15, 9, 0, tzinfo=timezone.utc))
+    check(late == "2026-11-17T14:00:00Z",
+          f"run on Sunday itself, the first slot is the next one, Tuesday ({late})")
     days = set()
     last = None
     for _ in range(12):
         last = upload.publish_at(cfg, saturday, last_scheduled=last)
         days.add(datetime.fromisoformat(last.replace("Z", "+00:00")).astimezone(
             upload.zone("Europe/Kyiv")).strftime("%a %H:%M"))
-    check(days == {"Tue 16:00", "Thu 16:00", "Sat 16:00"},
-          f"twelve slots in a row land only on Tue/Thu/Sat 16:00 ({sorted(days)})")
+    check(days == {"Sun 16:00", "Tue 16:00", "Thu 16:00"},
+          f"twelve slots in a row land only on Sun/Tue/Thu 16:00 ({sorted(days)})")
     summer = upload.publish_at({**cfg, "timezone": "Europe/Kiev"},
                                datetime(2026, 6, 1, 8, 0, tzinfo=timezone.utc))
     check(summer.endswith("T13:00:00Z"),
@@ -283,7 +293,7 @@ def test_grow_works_for_the_next_themes_that_lack_something():
 if __name__ == "__main__":
     with tempfile.TemporaryDirectory() as d:
         tmp = Path(d)
-        test_tuesday_thursday_saturday_at_four_in_kyiv()
+        test_sunday_tuesday_thursday_at_four_in_kyiv()
         test_the_real_catalogue_never_repeats_a_theme_or_more_than_30_percent()
         test_a_plan_or_upload_that_repeats_the_channel_is_refused(tmp)
         test_moo_toot_is_not_the_new_channel_s_history(tmp)

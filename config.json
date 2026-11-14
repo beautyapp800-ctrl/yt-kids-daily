@@ -21,9 +21,9 @@
   "fade_out_s": 3,
   "publish_time": "16:00",
   "publish_weekdays": [
+    "Sun",
     "Tue",
-    "Thu",
-    "Sat"
+    "Thu"
   ],
   "queue_target": 2,
   "publish_days_ahead": 3,

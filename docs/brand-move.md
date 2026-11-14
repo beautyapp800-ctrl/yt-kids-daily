@@ -32,7 +32,7 @@ thing is shown, named slowly, and heard - the real moo, the real splash, the rea
 a pause so your child can say the word back. Then comes "Guess who?": a small piece of the
 picture, a countdown, and the big reveal.
 
-New videos every Tuesday, Thursday and Saturday.
+New videos every Sunday, Tuesday and Thursday.
 
 Every video has a new set of animals, vehicles and foods - nothing is repeated.
 
