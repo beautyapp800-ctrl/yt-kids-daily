@@ -122,6 +122,12 @@
     "silent": true,
     "sounds": []
   },
+  "apricot": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
   "avocado": {
     "candidates_seen": 2,
     "refused": [
@@ -910,6 +916,47 @@
       }
     ]
   },
+  "chimpanzee": {
+    "candidates_seen": 6,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-15",
+        "creator": "craigsmith",
+        "id": "fd73426e-cf37-4385-9c12-3d6f6d089508",
+        "is": "a chimpanzee",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/craigsmith/sounds/678059",
+        "seconds": 12.2,
+        "source": "freesound",
+        "title": "S27-29a Chimpanzee-Noisy Before Demo.wav",
+        "url": "https://cdn.freesound.org/previews/678/678059_2524442-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-15",
+        "creator": "Musahfm",
+        "id": "b2a8d92e-3ac2-4c4b-a6fc-e6a4000283cf",
+        "is": "a chimpanzee making its own sound",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "Commons says: cc0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+        "licence_version": "1.0",
+        "page": "https://commons.wikimedia.org/w/index.php?curid=98116398",
+        "seconds": 1.1,
+        "source": "wikimedia_audio",
+        "title": "Dag-Kpara(Chimpanzees)",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Dag-Kpara%28Chimpanzees%29.ogg"
+      }
+    ]
+  },
   "cicada": {
     "candidates_seen": 19,
     "refused": [],
@@ -1030,6 +1077,41 @@
         "url": "https://cdn.freesound.org/previews/459/459476_6232598-hq.mp3"
       }
     ]
+  },
+  "coconut": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "Coconut Pop.mp3",
+        "why": "a pop music or sound effect"
+      },
+      {
+        "title": "ZXAudiocraft - Glass - Coconut Shaker 011.wav",
+        "why": "a coconut shaker, likely a musical instrument"
+      },
+      {
+        "title": "Coconut lorikeet (warning call)",
+        "why": "a coconut lorikeet bird making a warning call"
+      },
+      {
+        "title": "coconut sounds",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Horse galloping (coconut shells) version 1",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "wood metal impact soft coconut hit",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Coconut_knocking",
+        "why": "licence at the source is by: the page links by 4.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "corn": {
     "candidates_seen": 5,
@@ -1547,6 +1629,17 @@
     "silent": true,
     "sounds": []
   },
+  "eggplant": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "Eggplant in Vezo",
+        "why": "a place or possibly a recipe named Vezo, with no relation to the sound an eggplant would make"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "elephant": {
     "candidates_seen": 18,
     "refused": [
@@ -1687,6 +1780,29 @@
       {
         "title": "Falcon Leg Bells 2.mp3",
         "why": "bells, likely from a falconry or costume context"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "fig": {
+    "candidates_seen": 4,
+    "refused": [
+      {
+        "title": "Fig Leaf Times Two (ISRC USUAN1200096)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "Fig Leaf Rag (ISRC USUAN1100701)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "Fig Leaf Rag - distressed (ISRC USUAN1100702)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "devine fig bars.wav",
+        "why": "licence at the source is by: the page links by 3.0"
       }
     ],
     "silent": true,
@@ -2028,6 +2144,37 @@
         "url": "https://cdn.freesound.org/previews/449/449437_8667144-hq.mp3"
       }
     ]
+  },
+  "garlic": {
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "Garlic salt.wav",
+        "why": "a container or grinder of garlic salt being opened or operated"
+      },
+      {
+        "title": "Garlic cloves",
+        "why": "silence or no sound, as garlic does not make a sound on its own"
+      },
+      {
+        "title": "En-elephant garlic",
+        "why": "an elephant"
+      },
+      {
+        "title": "Garlic Press.m4a",
+        "why": "a garlic press being used"
+      },
+      {
+        "title": "Garlic roll and peel.m4a",
+        "why": "a person rolling and peeling garlic"
+      },
+      {
+        "title": "mijingiri garlic killers",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "giraffe": {
     "candidates_seen": 0,
@@ -2402,6 +2549,47 @@
     "silent": true,
     "sounds": []
   },
+  "husky": {
+    "candidates_seen": 7,
+    "refused": [],
+    "silent": false,
+    "sounds": [
+      {
+        "attribution_required": false,
+        "checked": "2026-11-15",
+        "creator": "exe2be",
+        "id": "8ded90ee-d9d5-4ddc-b30e-ae3ca62a79bc",
+        "is": "a husky dog barking and making sounds",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/exe2be/sounds/535458",
+        "seconds": 4.1,
+        "source": "freesound",
+        "title": "Husky dog barking and 'talking'",
+        "url": "https://cdn.freesound.org/previews/535/535458_2587400-hq.mp3"
+      },
+      {
+        "attribution_required": false,
+        "checked": "2026-11-15",
+        "creator": "SoundsLikeYukon",
+        "id": "8d536a16-7169-4735-9aa8-6e8eb84e0aa2",
+        "is": "husky sled dogs barking",
+        "licence": "cc0",
+        "licence_checked_at_source": true,
+        "licence_evidence": "the page links the CC0 deed and no other licence",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licence_version": "1.0",
+        "page": "https://freesound.org/people/SoundsLikeYukon/sounds/795949",
+        "seconds": 108.5,
+        "source": "freesound",
+        "title": "Alaskan husky sled dogs barking",
+        "url": "https://cdn.freesound.org/previews/795/795949_1544275-hq.mp3"
+      }
+    ]
+  },
   "ibis": {
     "candidates_seen": 6,
     "refused": [
@@ -2554,6 +2742,47 @@
     "silent": true,
     "sounds": []
   },
+  "lemur": {
+    "candidates_seen": 0,
+    "refused": [],
+    "silent": true,
+    "sounds": []
+  },
+  "leopard": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "WAR-LEOPARD, TANK- PASSING BY CLOSE-Leopard tank passing by, changes gears-0002.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "WAR-LEOPARD, TANK- PASSING BY CLOSE-Leopard tank passing by, changes gears-0001.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "WAR-LEOPARD, TANK- PASSING BY CLOSE-Leopard tank passing by, changes gears-0003.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "WAR-TANK, LEOPARD-ENGINE STAND BY-Leopard 2A4 48000 cc diesel engine close by-0003.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "WAR-TANK-ENGINE RUNNING-Leopard 2A4 engine running-0001.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Leopard Print Elevator (ISRC USUAN1500077)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "WAR-LEOPARD, TANK-ENGINE, THROTTLES-Leopard 2A4 engine, throttle-0002.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "lettuce": {
     "candidates_seen": 10,
     "refused": [
@@ -2634,6 +2863,77 @@
         "url": "https://cdn.freesound.org/previews/69/69570_706955-hq.mp3"
       }
     ]
+  },
+  "lizard": {
+    "candidates_seen": 16,
+    "refused": [
+      {
+        "title": "Lizard Man",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "Pig Lizard FX Loop.wav",
+        "why": "a sound effect, possibly a loop of a pig or other animal sound"
+      },
+      {
+        "title": "ZH1_Windmill Farm The Lizard April 2013 Creaking Barn 03 Front.flac",
+        "why": "a creaking barn"
+      },
+      {
+        "title": "Lizard eye blink.mp3",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "lizard snarl",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "D211 Boat, Lizard and Clever Fish.WAV",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "<div class='fn'> Lizard Buzzard (Kaupifalco monogrammicus)</div>",
+        "why": "licence at the source is by: Commons says: cc by 4.0"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - Deserted Dunes Welcome Weary Feet",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - Polygondwanaland",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - Searching...",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - Loyalty",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - Horology",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - Tetrachromacy",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - Inner Cell",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - The Fourth Colour",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      },
+      {
+        "title": "King Gizzard &amp; the Lizard Wizard - The Castle In The Air",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "llama": {
     "candidates_seen": 2,
@@ -2795,6 +3095,33 @@
       {
         "title": "Dance of the Manta Ray by Steven Booth",
         "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
+  "melon": {
+    "candidates_seen": 11,
+    "refused": [
+      {
+        "title": "Smashing Peppers and Melons",
+        "why": "smashing or hitting objects, possibly peppers and melons"
+      },
+      {
+        "title": "Melon Rip.wav",
+        "why": "a ripping sound, possibly of fabric or plastic"
+      },
+      {
+        "title": "melon-stab-take1.wav",
+        "why": "a stabbing or piercing sound, possibly for a sound effect"
+      },
+      {
+        "title": "melon-chop-take2.wav",
+        "why": "a chopping or editing sound effect, likely from a recording studio or video production"
+      },
+      {
+        "title": "melon-stab-take3.wav",
+        "why": "a stabbing or piercing sound, possibly for a sound effect"
       }
     ],
     "silent": true,
@@ -3042,6 +3369,17 @@
     "silent": true,
     "sounds": []
   },
+  "narwhal": {
+    "candidates_seen": 1,
+    "refused": [
+      {
+        "title": "Narwhal Craving",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "nightingale": {
     "candidates_seen": 8,
     "refused": [
@@ -3252,6 +3590,41 @@
         "url": "https://cdn.freesound.org/previews/159/159726_401105-hq.mp3"
       }
     ]
+  },
+  "panda": {
+    "candidates_seen": 7,
+    "refused": [
+      {
+        "title": "12. soft panda koala (roomtone)",
+        "why": "a koala"
+      },
+      {
+        "title": "Alien Panda",
+        "why": "licence at the source is unknown: no licence link found on the page"
+      },
+      {
+        "title": "Engine On Fiat Panda 2007 Internal 01.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Engine On Fiat Panda 2007 Internal 02.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Chengdu Pandas 1.wav",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "Old Fiat Panda Door Open and Close",
+        "why": "licence at the source is by: the page links by 4.0"
+      },
+      {
+        "title": "O Panda Pindo",
+        "why": "licence at the source is unknown: no verifier for www.jamendo.com"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "parrot": {
     "candidates_seen": 15,
@@ -3555,6 +3928,33 @@
       }
     ]
   },
+  "plum": {
+    "candidates_seen": 5,
+    "refused": [
+      {
+        "title": "KEY Sugar Plum Fairy (JH).mp3",
+        "why": "music from the ballet The Nutcracker, specifically the Sugar Plum Fairy piece"
+      },
+      {
+        "title": "Dance of the Sugar Plum Fairies (ISRC USUAN1100270)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "Tchaikovsky - Dance of the Sugar Plum Fairy - The Nutcracker",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "Dance of the Sugar Plum Fairy (ISRC USUAN1100625)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "Sugar Plum Breakdown (ISRC USUAN1100624)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "polar bear": {
     "candidates_seen": 1,
     "refused": [],
@@ -3839,6 +4239,37 @@
         "url": "https://cdn.freesound.org/previews/186/186921_545448-hq.mp3"
       }
     ]
+  },
+  "raspberry": {
+    "candidates_seen": 6,
+    "refused": [
+      {
+        "title": "Blowing Raspberry Sound.mp3",
+        "why": "a person making a raspberry sound, likely with their lips"
+      },
+      {
+        "title": "raspberry- epiano riff 5",
+        "why": "an electronic piano riff"
+      },
+      {
+        "title": "Blowing raspberry singing exercise 2",
+        "why": "a person blowing a raspberry, likely for a singing exercise"
+      },
+      {
+        "title": "Blowing raspberry singing exercise 1",
+        "why": "a person blowing a raspberry, likely for a singing exercise"
+      },
+      {
+        "title": "Raspberry",
+        "why": "licence at the source is by: the page links by 3.0"
+      },
+      {
+        "title": "Yozhik the hedgehog in the fog tea with raspberry jam.wav",
+        "why": "licence at the source is by: the page links by 3.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
   },
   "rhino": {
     "candidates_seen": 6,
@@ -5375,6 +5806,12 @@
         "why": "licence at the source is by: the page links by 4.0"
       }
     ],
+    "silent": true,
+    "sounds": []
+  },
+  "zucchini": {
+    "candidates_seen": 0,
+    "refused": [],
     "silent": true,
     "sounds": []
   }

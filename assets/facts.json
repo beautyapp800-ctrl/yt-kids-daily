@@ -137,6 +137,27 @@
       }
     ]
   },
+  "apricot": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "An apricot grows on a tree."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "An apricot is sweet."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "An apricot has a pit."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "An apricot is juicy."
+      }
+    ],
+    "refused": []
+  },
   "avocado": {
     "facts": [
       {
@@ -850,6 +871,33 @@
     ],
     "refused": []
   },
+  "chimpanzee": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A chimpanzee climbs trees."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A chimpanzee eats fruit."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A chimpanzee swings its arms."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A chimpanzee plays with friends."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A chimpanzee has a furry face.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A chimpanzee's face is not furry, it is bare skin"
+      }
+    ]
+  },
   "cicada": {
     "facts": [
       {
@@ -954,6 +1002,49 @@
       }
     ],
     "refused": []
+  },
+  "coconut": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A coconut grows on a tree."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A coconut has a hard shell."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A coconut falls from a tree."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A coconut has soft white inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The inside of a coconut is hard white, not soft."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A coconut has brown hair.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A coconut does not have hair, it has a hard brown shell"
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A coconut has a sweet smell.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Coconuts do not typically have a sweet smell"
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A coconut has a sweet inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The inside of a coconut is not sweet, it is the coconut water and meat that can be sweet, but the meat is more often described as rich and nutty."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A coconut has a big hole.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A coconut does not have a big hole."
+      }
+    ]
   },
   "corn": {
     "facts": [
@@ -1454,6 +1545,43 @@
     ],
     "refused": []
   },
+  "eggplant": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "An eggplant grows in a garden."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "An eggplant gets eaten by people."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "An eggplant has a shiny skin."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "An eggplant has a stem."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-15",
+        "fact": "An eggplant is purple.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Not all eggplants are purple, some can be white, green, or other colors"
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "An eggplant has a green top.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The top of an eggplant is usually purple, not green."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "An eggplant has a soft inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The inside of an eggplant is typically spongy and filled with seeds, not soft"
+      }
+    ]
+  },
   "elephant": {
     "facts": [
       {
@@ -1549,6 +1677,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: Falcons do not build nests, they typically nest on cliff ledges or take over nests built by other birds"
       }
     ]
+  },
+  "fig": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A fig grows on a tree."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A fig is sweet."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A fig has soft skin."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A fig has seeds inside."
+      }
+    ],
+    "refused": []
   },
   "finch": {
     "facts": [
@@ -1753,6 +1902,27 @@
       {
         "checked": "2026-10-26",
         "fact": "A garbage truck beeps its horn."
+      }
+    ],
+    "refused": []
+  },
+  "garlic": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "Garlic makes food taste good."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "Garlic smells very strong."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "Garlic grows in the ground."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "Garlic has a hard skin."
       }
     ],
     "refused": []
@@ -2151,6 +2321,27 @@
     ],
     "refused": []
   },
+  "husky": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A husky has a fluffy coat."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A husky pulls a sled."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A husky wags its tail."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A husky runs very fast."
+      }
+    ],
+    "refused": []
+  },
   "ibis": {
     "facts": [
       {
@@ -2395,6 +2586,48 @@
     ],
     "refused": []
   },
+  "lemur": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A lemur climbs trees."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A lemur has a long tail."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A lemur eats fruit."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A lemur plays with friends."
+      }
+    ],
+    "refused": []
+  },
+  "leopard": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A leopard has spots."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A leopard climbs trees."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A leopard runs very fast."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A leopard has sharp claws."
+      }
+    ],
+    "refused": []
+  },
   "lettuce": {
     "facts": [
       {
@@ -2442,6 +2675,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: not all lions have a big mane, only males typically do"
       }
     ]
+  },
+  "lizard": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A lizard runs on the ground."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A lizard has sharp claws."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A lizard eats small bugs."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A lizard has a long tail."
+      }
+    ],
+    "refused": []
   },
   "llama": {
     "facts": [
@@ -2611,6 +2865,33 @@
         "checked": "2026-11-14",
         "fact": "A manta ray finds food on the bottom.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Manta rays find food in the water column, not on the bottom"
+      }
+    ]
+  },
+  "melon": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A melon grows on a vine."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A melon is sweet to eat."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A melon has a hard skin."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A melon has juicy pulp."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A melon has a soft inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The inside of a melon is typically firm and juicy, not soft."
       }
     ]
   },
@@ -2891,6 +3172,33 @@
       }
     ]
   },
+  "narwhal": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A narwhal swims in cold water."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A narwhal lives in the sea."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A narwhal eats fish."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A narwhal dives very deep."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A narwhal has a big horn.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Narwhals do not have a horn, they have a tusk that resembles a horn"
+      }
+    ]
+  },
   "nightingale": {
     "facts": [
       {
@@ -3079,6 +3387,27 @@
       {
         "checked": "2026-10-10",
         "fact": "An owl makes a loud hoot."
+      }
+    ],
+    "refused": []
+  },
+  "panda": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A panda eats food."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A panda has soft fur."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A panda climbs trees."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A panda holds bamboo."
       }
     ],
     "refused": []
@@ -3331,6 +3660,38 @@
       }
     ],
     "refused": []
+  },
+  "plum": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A plum grows on a tree."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A plum is sweet to eat."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A plum has a stone inside."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A plum grows on a branch."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A plum is purple.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Plums can be other colors, such as red, yellow, or green"
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A plum has soft skin.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: plum skin is typically tender but not necessarily soft"
+      }
+    ]
   },
   "polar bear": {
     "facts": [
@@ -3650,6 +4011,50 @@
       }
     ],
     "refused": []
+  },
+  "raspberry": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A raspberry grows on a bush."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A raspberry is juicy."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A raspberry is sweet.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Raspberries are typically tart, not sweet"
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A raspberry has soft seeds.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Raspberries do not have soft seeds, they have a hollow center and are covered in small, hard seeds."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A raspberry is red.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Raspberries are typically a mix of red and yellow when they are not yet ripe, and some varieties are yellow, purple, or black when they are ripe."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A raspberry has a green top.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The top of a raspberry is typically white or light-colored, not green. The green part is the leaves and stem that the raspberry grows on."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A raspberry has a sweet smell.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Raspberries do not typically have a strong sweet smell"
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A raspberry grows on a stem.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Raspberries grow on canes, not stems"
+      }
+    ]
   },
   "rhino": {
     "facts": [
@@ -5233,6 +5638,49 @@
         "checked": "2026-10-10",
         "fact": "A zebra has black stripes.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A zebra has both black and white stripes."
+      }
+    ]
+  },
+  "zucchini": {
+    "facts": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A zucchini grows in a garden."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A zucchini tastes good when cooked."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A zucchini has many small seeds."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-15",
+        "fact": "A zucchini is green.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Some zucchinis are yellow or other colors"
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A zucchini has a soft skin.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The skin of a zucchini is generally considered to be edible and tender, but it is not typically described as soft. It is more accurate to describe it as thin and edible."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A zucchini has a big flower.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A zucchini has both a male and a female flower, and they are not typically described as big, especially in comparison to the zucchini itself"
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A zucchini has a long stem.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A zucchini typically has a short stem, not a long one."
+      },
+      {
+        "checked": "2026-11-15",
+        "fact": "A zucchini has a funny shape.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: The shape of a zucchini is typically cylindrical or elongated, not necessarily 'funny'"
       }
     ]
   }
