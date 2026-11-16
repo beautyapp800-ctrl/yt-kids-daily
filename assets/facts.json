@@ -457,6 +457,33 @@
       }
     ]
   },
+  "budgie": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A budgie can fly."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A budgie has soft feathers."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A budgie eats food from a dish."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A budgie lives in a cage."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A budgie sings a happy song.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Budgies do not sing songs like humans do, they make sounds like chirping and tweeting"
+      }
+    ]
+  },
   "bull": {
     "facts": [
       {
@@ -767,6 +794,33 @@
         "checked": "2026-10-23",
         "fact": "A caterpillar makes a cocoon.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A caterpillar makes a chrysalis, not a cocoon. Cocoons are made by moths."
+      }
+    ]
+  },
+  "celery": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "Celery is green and crunchy."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Celery grows in the ground."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Celery has a big stalk."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Celery is good to eat."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "Celery has big green leaves.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Celery typically has small green leaves at the top, not big ones"
       }
     ]
   },
@@ -1439,6 +1493,33 @@
     ],
     "refused": []
   },
+  "duckling": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A duckling swims in water."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A duckling follows its mother."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A duckling eats tiny bugs."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A duckling has a little beak."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A duckling has soft feathers.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Ducklings are covered in down, not feathers, when they hatch. They develop feathers later."
+      }
+    ]
+  },
   "dump truck": {
     "facts": [
       {
@@ -1675,6 +1756,33 @@
         "checked": "2026-10-21",
         "fact": "A falcon builds a nest.",
         "why": "llama-3.3-70b-instruct-fp8-fast: Falcons do not build nests, they typically nest on cliff ledges or take over nests built by other birds"
+      }
+    ]
+  },
+  "ferry": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A ferry carries people across water."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A ferry takes cars on it."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A ferry goes on the sea."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A ferry sails to an island."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A ferry has big wheels.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A ferry does not have big wheels, it has propellers or other propulsion systems"
       }
     ]
   },
@@ -1980,6 +2088,27 @@
       }
     ]
   },
+  "goldfish": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A goldfish swims in water."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A goldfish has shiny scales."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A goldfish eats fish food."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A goldfish lives in a bowl."
+      }
+    ],
+    "refused": []
+  },
   "goose": {
     "facts": [
       {
@@ -2091,6 +2220,48 @@
       }
     ]
   },
+  "guinea pig": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A guinea pig eats food."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A guinea pig has soft fur."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A guinea pig runs around."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A guinea pig makes cute sounds."
+      }
+    ],
+    "refused": []
+  },
+  "hamster": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A hamster runs on a wheel."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hamster eats food."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hamster has soft fur."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hamster hides in its cage."
+      }
+    ],
+    "refused": []
+  },
   "hawk": {
     "facts": [
       {
@@ -2111,6 +2282,43 @@
       }
     ],
     "refused": []
+  },
+  "hedgehog": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A hedgehog has sharp spikes."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hedgehog curls up tight."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hedgehog eats small bugs."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hedgehog digs in dirt."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A hedgehog runs at night.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Hedgehogs are not exclusively nocturnal and can be active during the day as well"
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hedgehog has big eyes.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Hedgehogs actually have small eyes"
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hedgehog has soft fur.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A hedgehog's fur is not soft, it has sharp spines"
+      }
+    ]
   },
   "helicopter": {
     "facts": [
@@ -2138,6 +2346,27 @@
         "why": "llama-3.3-70b-instruct-fp8-fast: A helicopter's spinning wings are called blades, not wings"
       }
     ]
+  },
+  "hen": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A hen lays eggs."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hen has soft feathers."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hen gives us eggs to eat."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A hen goes cluck."
+      }
+    ],
+    "refused": []
   },
   "hermit crab": {
     "facts": [
@@ -2477,6 +2706,33 @@
         "checked": "2026-10-22",
         "fact": "A kingfisher has a big beak.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A kingfisher actually has a long, pointed beak, not necessarily big."
+      }
+    ]
+  },
+  "kitten": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A kitten plays with a ball."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A kitten has soft fur."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A kitten chases its tail."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A kitten drinks milk from its mom."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A kitten purrs when happy.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Kittens also purr when scared, stressed, or self-soothing"
       }
     ]
   },
@@ -3529,6 +3785,27 @@
       }
     ]
   },
+  "peas": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "Peas grow in a garden."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Peas are green and small."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Peas are sweet to eat."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Peas come in a pod."
+      }
+    ],
+    "refused": []
+  },
   "pelican": {
     "facts": [
       {
@@ -3991,6 +4268,70 @@
     ],
     "refused": []
   },
+  "race car": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A race car goes very fast."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A race car has a loud engine."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A race car has a driver."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A race car has a bright color."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A race car has big wheels.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Race cars typically have small, wide wheels, not big wheels in the sense of diameter."
+      }
+    ]
+  },
+  "radish": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A radish grows in the ground."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A radish has a green top."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A radish is crunchy to eat."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A radish makes a yummy salad."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A radish is red inside.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Radishes are typically white, pink, or black inside, not always red"
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A radish tastes sweet.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Radishes are known for their spicy or pungent flavor, not sweet"
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A radish has a long root.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Most radish roots are short and round, not long"
+      }
+    ]
+  },
   "ram": {
     "facts": [
       {
@@ -4198,6 +4539,38 @@
         "checked": "2026-10-10",
         "fact": "A rooster says cock a doodle.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A rooster says 'cock-a-doodle-doo'"
+      }
+    ]
+  },
+  "sailboat": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A sailboat sails on the water."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A sailboat has a big sail."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A sailboat floats on the sea."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A sailboat has a captain."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A sailboat has a big rope.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A sailboat typically has multiple ropes, not just one big rope. The ropes on a sailboat are often referred to as sheets, halyards, or lines."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A sailboat goes very fast.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Sailboats do not always go very fast, their speed depends on the wind and other factors"
       }
     ]
   },
@@ -4730,6 +5103,27 @@
       }
     ]
   },
+  "spinach": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "Spinach is a green food."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Spinach grows in the ground."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Spinach is good to eat."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "Spinach helps keep us strong."
+      }
+    ],
+    "refused": []
+  },
   "spoonbill": {
     "facts": [
       {
@@ -4850,6 +5244,33 @@
         "checked": "2026-10-10",
         "fact": "A starfish has many little eyes.",
         "why": "llama-3.3-70b-instruct-fp8-fast: A starfish does not have many little eyes, it has eye spots that can detect light and dark"
+      }
+    ]
+  },
+  "steam train": {
+    "facts": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A steam train blows loud whistles."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A steam train has big wheels."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A steam train pulls cars along tracks."
+      },
+      {
+        "checked": "2026-11-16",
+        "fact": "A steam train makes lots of smoke."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-16",
+        "fact": "A steam train carries people.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: Most steam trains carry freight, not people"
       }
     ]
   },
