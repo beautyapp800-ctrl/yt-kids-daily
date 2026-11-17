@@ -453,6 +453,33 @@ def run(video_id, cfg, service=None, sleep=time.sleep):
         except youtube.AuthError as e:
             raise UploadError(str(e)) from e
 
+
+    # owner 17.11 (core/ytguard.py, the same in every channel): the marker [ref: mootoot/<id>] ends the
+    # description; the whole list of the channel's videos is read first - the video already there is
+    # recorded, not uploaded again; the slot stays the plan's (a Short shares its video's day); when the
+    # list cannot be read in full nothing is uploaded
+    from core import ytguard
+    marker = ytguard.ref("mootoot", video_id)
+    snip = body["snippet"]
+    if marker not in snip["description"]:
+        snip["description"] = (snip["description"][:5000 - len(marker) - 2].rstrip() + "\n\n" + marker).lstrip()
+    if hasattr(service, "channels"):
+        try:
+            channel_videos = ytguard.all_uploads(service)
+        except ytguard.Doubt as e:
+            raise UploadError(f"not sure the channel was read in full, nothing uploaded: {e}") from e
+        same = ytguard.find_existing(channel_videos, marker, snip["title"])
+        if same:
+            log.warning("video %s is on the channel already as %s; recorded, not uploaded again",
+                        video_id, same["id"])
+            db.update_video(video_id, youtube_id=same["id"])
+            db.update_video(video_id, status="published")
+            return True
+        # the slot itself is not moved here: a Short shares its video's day by design (owner 14.11)
+    else:
+        log.warning("the token cannot read the channel (youtube.upload only): the shared guard waits for a "
+                    "token with youtube.readonly; the database and the upload marker still stop a second upload")
+
     out = output_dir(video_id)
     privacy = body["status"]["privacyStatus"]
     scheduled = body["status"].get("publishAt")
