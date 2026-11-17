@@ -3199,6 +3199,38 @@
       }
     ]
   },
+  "mole": {
+    "facts": [
+      {
+        "checked": "2026-11-17",
+        "fact": "A mole digs in the ground."
+      },
+      {
+        "checked": "2026-11-17",
+        "fact": "A mole has soft black fur."
+      },
+      {
+        "checked": "2026-11-17",
+        "fact": "A mole lives in a hole."
+      },
+      {
+        "checked": "2026-11-17",
+        "fact": "A mole makes a tunnel."
+      }
+    ],
+    "refused": [
+      {
+        "checked": "2026-11-17",
+        "fact": "A mole has big front teeth.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A mole does not have big front teeth, it has a distinctive set of front teeth but they are not particularly big, moles are also known for their long, sharp claws and powerful front legs."
+      },
+      {
+        "checked": "2026-11-17",
+        "fact": "A mole digs with its hands.",
+        "why": "llama-3.3-70b-instruct-fp8-fast: A mole digs with its front legs and long claws, not its hands."
+      }
+    ]
+  },
   "monkey": {
     "facts": [
       {

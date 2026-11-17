@@ -3566,6 +3566,21 @@
       }
     ]
   },
+  "mole": {
+    "candidates_seen": 2,
+    "refused": [
+      {
+        "title": "BioAcoustica Mole Cricket 19-05-2014 clip three (3) BRIAN HARRISON",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      },
+      {
+        "title": "Attack of the Mole Men (ISRC USUAN1100321)",
+        "why": "licence at the source is by: Commons says: cc by 3.0"
+      }
+    ],
+    "silent": true,
+    "sounds": []
+  },
   "monkey": {
     "candidates_seen": 25,
     "refused": [

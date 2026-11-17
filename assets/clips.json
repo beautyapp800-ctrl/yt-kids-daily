@@ -15226,6 +15226,117 @@
     ],
     "search_term": "mockingbird"
   },
+  "mole": {
+    "candidates_seen": 8,
+    "clips": [],
+    "rejected": [
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/14/246672_small.mp4",
+        "id": 246672,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "mound",
+        "seconds": 39,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/14/246672_small.jpg",
+        "url": "https://pixabay.com/videos/id-246672/",
+        "why": "the model called it mound",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/03/161579-823944367_medium.mp4",
+        "id": 161579,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "hill",
+        "seconds": 31,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/03/161579-823944367_medium.jpg",
+        "url": "https://pixabay.com/videos/id-161579/",
+        "why": "the model called it hill",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/08/28/228675_medium.mp4",
+        "id": 228675,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "church",
+        "seconds": 38,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/08/28/228675_medium.jpg",
+        "url": "https://pixabay.com/videos/id-228675/",
+        "why": "the model called it church",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2024/12/27/249180_small.mp4",
+        "id": 249180,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "clouds",
+        "seconds": 15,
+        "thumbnail": "https://cdn.pixabay.com/video/2024/12/27/249180_small.jpg",
+        "url": "https://pixabay.com/videos/id-249180/",
+        "why": "the model called it clouds",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2023/05/03/161577-823973279_medium.mp4",
+        "id": 161577,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "goat",
+        "seconds": 30,
+        "thumbnail": "https://cdn.pixabay.com/video/2023/05/03/161577-823973279_medium.jpg",
+        "url": "https://pixabay.com/videos/id-161577/",
+        "why": "the model called it goat",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2022/04/25/115073-703067925_small.mp4",
+        "id": 115073,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "building",
+        "seconds": 11,
+        "thumbnail": "https://cdn.pixabay.com/video/2022/04/25/115073-703067925_small.jpg",
+        "url": "https://pixabay.com/videos/id-115073/",
+        "why": "the model called it building",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2015/08/08/97-135735453_large.mp4",
+        "id": 97,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "fisherman",
+        "seconds": 14,
+        "thumbnail": "https://cdn.pixabay.com/video/2015/08/08/97-135735453_large.jpg",
+        "url": "https://pixabay.com/videos/id-97/",
+        "why": "the model called it fisherman",
+        "width": 1920
+      },
+      {
+        "attribution_required": false,
+        "clip": "https://cdn.pixabay.com/video/2018/05/12/16167-269541555_large.mp4",
+        "id": 16167,
+        "licence": "Pixabay Content Licence",
+        "prominence": 0.0,
+        "said": "beach",
+        "seconds": 60,
+        "thumbnail": "https://cdn.pixabay.com/video/2018/05/12/16167-269541555_large.jpg",
+        "url": "https://pixabay.com/videos/id-16167/",
+        "why": "the model called it beach",
+        "width": 1920
+      }
+    ],
+    "search_term": "mole"
+  },
   "monkey": {
     "candidates_seen": 12,
     "clips": [
