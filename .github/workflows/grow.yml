@@ -85,4 +85,4 @@ jobs:
         run: |
           number=$(gh issue list --label run-log --state open --json number --jq '.[0].number // empty')
           if [ -z "$number" ]; then exit 0; fi
-          gh issue comment "$number" --body "@${{ github.repository_owner }} **Growing the catalogues failed.** The daily video run is not affected, but the supply of new subjects is not being replenished. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          : gh issue comment "$number" --body "@${{ github.repository_owner }} **Growing the catalogues failed.** The daily video run is not affected, but the supply of new subjects is not being replenished. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
